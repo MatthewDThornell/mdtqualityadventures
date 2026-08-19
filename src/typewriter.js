@@ -1,5 +1,5 @@
 export function initTypewriter(el, phrases, options = {}) {
-  const { typeSpeed = 55, deleteSpeed = 28, holdTime = 1600, pauseTime = 350 } = options;
+  const { typeSpeed = 55, deleteSpeed = 28, holdTime = 1600, pauseTime = 350, loop = true } = options;
 
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -20,6 +20,9 @@ export function initTypewriter(el, phrases, options = {}) {
       charIndex++;
       el.textContent = phrase.slice(0, charIndex);
       if (charIndex === phrase.length) {
+        if (!loop && phraseIndex === phrases.length - 1) {
+          return; // fully typed, and nothing left to loop back to — stop here for good
+        }
         deleting = true;
         timeoutId = setTimeout(tick, holdTime);
         return;

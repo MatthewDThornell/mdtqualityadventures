@@ -7,7 +7,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 const coverCanvas = document.getElementById('cover-canvas');
 const coverScene = initCoverScene(coverCanvas);
 
-initTypewriter(document.getElementById('eyebrowText'), ['A journal, kept by']);
+initTypewriter(document.getElementById('eyebrowText'), ['A journal, kept by'], { loop: false });
 initTypewriter(document.getElementById('taglineText'), [
   'Software QA Engineer & Quality Advocate',
   'AI Test Engineer',
