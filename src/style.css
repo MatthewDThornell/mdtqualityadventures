@@ -465,9 +465,22 @@ a:hover {
 }
 
 .timeline-org {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-weight: 600;
   color: var(--teal-bright);
   margin: 0 0 0.4rem;
+}
+
+.timeline-logo {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  background: var(--parchment);
+  border-radius: 5px;
+  padding: 3px;
+  flex-shrink: 0;
 }
 
 /* Origins photo gallery */
