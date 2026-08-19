@@ -14,6 +14,11 @@ initTypewriter(document.getElementById('taglineText'), [
   'Human First Quality Engineer',
   'Team Builder',
   'Friend',
+  'Former Lead QA Engineer at ConexED',
+  'Former Test Automation Engineer at Legrand',
+  'Colleague Who Genuinely Cares',
+  'Teller of Dad Jokes',
+  'Hunter of Bugs',
 ]);
 
 const coverObserver = new IntersectionObserver(
