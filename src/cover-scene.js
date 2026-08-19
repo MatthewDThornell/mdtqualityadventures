@@ -1,4 +1,10 @@
 const CHARSET = '01{}<>/\\=+*✓✗ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+const WORDS = [
+  'JAVASCRIPT', 'TYPESCRIPT', 'PYTHON', 'PLAYWRIGHT', 'CYPRESS', 'SELENIUM',
+  'APPIUM', 'POSTMAN', 'JENKINS', 'DOCKER', 'GITHUB', 'AZURE', 'AUTOMATION',
+  'REGRESSION', 'COVERAGE', 'QUALITY', 'SCRUM', 'CI/CD', 'API', 'QA',
+];
+const WORD_COLUMN_CHANCE = 0.18;
 const FONT_SIZE = 16;
 const TRAIL_LENGTH = 14;
 const BRASS = '201, 161, 90';
@@ -8,12 +14,23 @@ function randomChar() {
   return CHARSET[(Math.random() * CHARSET.length) | 0];
 }
 
+function randomWord() {
+  return WORDS[(Math.random() * WORDS.length) | 0];
+}
+
 function makeColumn(totalRows) {
   return {
     head: -((Math.random() * totalRows) | 0),
     speed: 4 + Math.random() * 5, // rows per second
     color: Math.random() < 0.5 ? BRASS : TEAL,
+    word: Math.random() < WORD_COLUMN_CHANCE ? randomWord() : null,
   };
+}
+
+function charAtRow(col, row) {
+  if (!col.word) return randomChar();
+  const i = ((row % col.word.length) + col.word.length) % col.word.length;
+  return col.word[i];
 }
 
 export function initCoverScene(canvas) {
@@ -59,7 +76,7 @@ export function initCoverScene(canvas) {
         const alpha = (1 - t / TRAIL_LENGTH) * 0.4;
         if (alpha <= 0.01) continue;
         ctx.fillStyle = `rgba(${col.color}, ${alpha.toFixed(3)})`;
-        ctx.fillText(randomChar(), x, row * FONT_SIZE);
+        ctx.fillText(charAtRow(col, row), x, row * FONT_SIZE);
       }
     });
   }
