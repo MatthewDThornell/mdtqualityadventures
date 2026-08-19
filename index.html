@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Matthew D Thornell — Software QA Engineer. A journal of the quality choices, projects, and people along the way." />
+    <title>MDT Quality Adventures</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sky" aria-hidden="true">
+      <div class="stars"></div>
+      <div class="mist mist-a"></div>
+      <div class="mist mist-b"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-row">
+        <a class="brand" href="#top">MDT Quality Adventures</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="siteNav">
+          <a href="#origins">Origins</a>
+          <a href="#experience">Skills &amp; Experience</a>
+          <a href="#fieldnotes">Field Notes</a>
+          <a href="#letters">Letters</a>
+          <a href="#mentees">Mentees</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="top" class="cover">
+        <canvas id="cover-canvas" aria-hidden="true"></canvas>
+        <div class="container">
+          <p class="eyebrow">A journal, kept by</p>
+          <h1>Matthew D Thornell</h1>
+          <p class="tagline">Software QA Engineer &amp; Quality Advocate</p>
+          <p class="cover-quote">
+            &ldquo;Quality isn&rsquo;t just a process &mdash; it&rsquo;s a shared mindset, built one choice at a time.&rdquo;
+          </p>
+          <a class="scroll-cue" href="#origins">
+            <span>Begin the journey</span>
+            <svg width="16" height="24" viewBox="0 0 16 24" fill="none" aria-hidden="true">
+              <path d="M8 1v20M8 21l6-6M8 21l-6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <div class="trail" aria-hidden="true"></div>
+
+      <section id="origins" class="chapter" data-waypoint="I">
+        <div class="container chapter-inner">
+          <div class="waypoint">I</div>
+          <div class="page">
+            <p class="chapter-label">Chapter I</p>
+            <h2>Origins</h2>
+            <p>
+              I lost my dad as a teenager. Not long after, a mentor asked me one question that
+              has quietly shaped every choice since: <em>&ldquo;Now that your life is in your
+              own hands, will you work to make it a quality one? What quality choices are you
+              going to make that define you?&rdquo;</em>
+            </p>
+            <p>
+              That question became a career. I build software quality for a living &mdash;
+              automation, pipelines, coverage, culture &mdash; but underneath it, it&rsquo;s the
+              same question, asked over and over: is this the quality choice?
+            </p>
+            <p>
+              Born and raised in Utah, I still spend as much time outdoors as I can. When
+              I&rsquo;m not testing software, I&rsquo;m usually making something with my hands
+              &mdash; hats, art, woodworking &mdash; anything where quality is something you can
+              actually hold.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="chapter" data-waypoint="II">
+        <div class="container chapter-inner">
+          <div class="waypoint">II</div>
+          <div class="page page-wide">
+            <p class="chapter-label">Chapter II</p>
+            <h2>Skills &amp; Experience</h2>
+            <p class="chapter-intro">
+              Seven-plus years building QA from the ground up &mdash; frameworks, pipelines,
+              and the teams that use them.
+            </p>
+
+            <ol class="timeline">
+              <li>
+                <div class="timeline-when">Nov 2025 &ndash; Jul 2026 &middot; Columbia, MO (Remote)</div>
+                <h3>Software QA Engineer, QA Coach/Architect</h3>
+                <p class="timeline-org">Veterans United Home Loans</p>
+                <p>
+                  Built Playwright automation from scratch, taking coverage from 0% to 80%.
+                  Architected in-house dashboards, alerts, and quality gates; ran department-wide
+                  QA training and demos.
+                </p>
+              </li>
+              <li>
+                <div class="timeline-when">Jul 2025 &ndash; Oct 2025 &middot; Draper, UT (Hybrid)</div>
+                <h3>Software Quality Engineer, Quality Advocate</h3>
+                <p class="timeline-org">Seekwell / 1-800-Contacts</p>
+                <p>
+                  Stabilized flaky Cypress/Playwright suites, automated complex A/B experiment
+                  releases, and built observability metrics into customer-facing releases.
+                </p>
+              </li>
+              <li>
+                <div class="timeline-when">Feb 2022 &ndash; Nov 2024 &middot; Omaha, NE (Remote)</div>
+                <h3>Sr. Software QA Engineer, Scrum Master</h3>
+                <p class="timeline-org">Werner Enterprises</p>
+                <p>
+                  Designed enterprise QA reporting in Power BI, implemented BDD/TDD suites
+                  (Playwright, Selenium C#), and built compliance checklists spanning PII, SOX,
+                  ADA, and HIPAA/FERPA.
+                </p>
+              </li>
+              <li>
+                <div class="timeline-when">Dec 2020 &ndash; Feb 2022 &middot; Salt Lake City, UT (Hybrid)</div>
+                <h3>Lead Software QA Engineer</h3>
+                <p class="timeline-org">ConexED</p>
+                <p>
+                  Built QA process from scratch and migrated 400+ manual test cases into Cypress
+                  automation, cutting regression testing time by 60%.
+                </p>
+              </li>
+              <li>
+                <div class="timeline-when">Jul 2019 &ndash; Sep 2020 &middot; Pleasant Grove, UT (Hybrid)</div>
+                <h3>Test Automation Engineer &rarr; QA Team Lead</h3>
+                <p class="timeline-org">Legrand</p>
+                <p>
+                  Promoted to lead a four-person QA team; converted legacy Python automation to
+                  Robot Framework and stood up a reliable 24-hour test cycle.
+                </p>
+              </li>
+              <li>
+                <div class="timeline-when">Apr 2019 &ndash; Jul 2019 &middot; Lehi, UT</div>
+                <h3>Jr. Software QA Engineer, Apprenticeship</h3>
+                <p class="timeline-org">DevMountain</p>
+                <p>
+                  Software Quality Assurance Engineering, 3.8 GPA &mdash; manual testing,
+                  automation fundamentals, and first exposure to API testing.
+                </p>
+              </li>
+            </ol>
+
+            <div class="kit">
+              <div class="kit-group">
+                <h3 class="kit-title">Automation Frameworks</h3>
+                <ul class="tags">
+                  <li>Playwright</li><li>Cypress</li><li>Selenium</li><li>Appium</li><li>Robot Framework</li>
+                </ul>
+              </div>
+              <div class="kit-group">
+                <h3 class="kit-title">Languages</h3>
+                <ul class="tags">
+                  <li>TypeScript</li><li>JavaScript</li><li>Python</li><li>C#</li><li>SQL</li>
+                </ul>
+              </div>
+              <div class="kit-group">
+                <h3 class="kit-title">CI/CD &amp; API</h3>
+                <ul class="tags">
+                  <li>GitHub Actions</li><li>Azure Pipelines</li><li>Jenkins</li><li>Postman</li><li>K6</li>
+                </ul>
+              </div>
+              <div class="kit-group">
+                <h3 class="kit-title">Project &amp; Reporting</h3>
+                <ul class="tags">
+                  <li>Jira</li><li>Azure DevOps</li><li>Power BI</li><li>Slack</li><li>Figma</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="badges">
+              <div class="badge">
+                <span class="badge-mark">✓</span>
+                <span>ISTQB &mdash; Certified Tester Foundation Level</span>
+              </div>
+              <div class="badge">
+                <span class="badge-mark">✓</span>
+                <span>Scrum Alliance &mdash; Professional Scrum Master</span>
+              </div>
+            </div>
+
+            <div class="speaking-note">
+              <img src="/images/speaking.jpg" alt="Matthew speaking at an Association for Software Testing conference" loading="lazy" />
+              <p>Speaking at the Association for Software Testing (AST) conference.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fieldnotes" class="chapter" data-waypoint="III">
+        <div class="container chapter-inner">
+          <div class="waypoint">III</div>
+          <div class="page page-wide">
+            <p class="chapter-label">Chapter III</p>
+            <h2>Field Notes</h2>
+            <p class="chapter-intro">A few entries from the work itself.</p>
+
+            <div class="card-grid">
+              <article class="card">
+                <h3>Zero to 80% coverage</h3>
+                <p class="card-meta">Veterans United Home Loans</p>
+                <p>
+                  Built a Playwright automation framework from scratch, taking quality code
+                  coverage from 0% to 80% while standing up in-house dashboards, alerts, and
+                  guards that kept the whole team honest.
+                </p>
+              </article>
+              <article class="card">
+                <img class="card-photo" src="/images/werner-truck.jpg" alt="Matthew at the Werner Enterprises visitor center" loading="lazy" />
+                <h3>Quality by the numbers</h3>
+                <p class="card-meta">Werner Enterprises</p>
+                <p>
+                  Designed enterprise-level QA reporting in Power BI &mdash; visual test
+                  breakdowns, pass/fail trends, and risk assessments &mdash; alongside
+                  compliance checklists covering PII, SOX, ADA, and HIPAA/FERPA.
+                </p>
+              </article>
+              <article class="card">
+                <img class="card-photo" src="/images/conexed-team.jpg" alt="The ConexED QA and engineering team" loading="lazy" />
+                <h3>400+ tests, 60% faster</h3>
+                <p class="card-meta">ConexED</p>
+                <p>
+                  Migrated 400+ manual test cases into Cypress automation from the ground up,
+                  cutting regression testing time by 60% and building the QA process the team
+                  still runs on.
+                </p>
+              </article>
+              <article class="card">
+                <img class="card-photo" src="/images/1800contacts-team.jpg" alt="The Seekwell / 1-800-Contacts team on a river tubing outing" loading="lazy" />
+                <h3>Stabilizing under pressure</h3>
+                <p class="card-meta">Seekwell / 1-800-Contacts</p>
+                <p>
+                  Stabilized flaky automation inside live pipelines, automated complex A/B
+                  experiment releases, and built observability metrics that surfaced real
+                  customer behavior.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="letters" class="chapter" data-waypoint="IV">
+        <div class="container chapter-inner">
+          <div class="waypoint">IV</div>
+          <div class="page page-wide">
+            <p class="chapter-label">Chapter IV</p>
+            <h2>Letters from the Road</h2>
+            <p class="chapter-intro">Words from people I&rsquo;ve worked alongside.</p>
+
+            <div class="letters">
+              <blockquote class="letter">
+                <p>
+                  &ldquo;Matthew&rsquo;s greatest strength is his holistic vision of quality. He
+                  regularly asked thoughtful, challenging questions that helped teams identify
+                  risks, clarify expectations, and improve solutions before they reached
+                  customers. &hellip; Matthew is the type of professional who leaves an
+                  organization stronger than he found it.&rdquo;
+                </p>
+                <footer>Nathan Gearke &mdash; Group Engineering Manager, Veterans United Home Loans</footer>
+              </blockquote>
+              <blockquote class="letter">
+                <p>
+                  &ldquo;The amount of responsibility he is able to manage on his own is very
+                  impressive, all while he is creating better strategies and implementing
+                  methodologies to improve the quality of the product without being asked.&rdquo;
+                </p>
+                <footer>Andrew Sylvester &mdash; Sr. Software Engineer, ConexED</footer>
+              </blockquote>
+              <blockquote class="letter">
+                <p>
+                  &ldquo;Matthew brings energy, insight, and skills to the team every day. &hellip;
+                  He also brings his QA acumen to the team and really moved the needle in
+                  advancing our testing methodology.&rdquo;
+                </p>
+                <footer>Tod Mcconahay &mdash; Scrum Master, Werner Enterprises</footer>
+              </blockquote>
+              <blockquote class="letter">
+                <p>
+                  &ldquo;Matthew taught me the importance of encouraging others and celebrating
+                  small wins to be a good leader. &hellip; I am confident that he will thrive
+                  wherever he ends up!&rdquo;
+                </p>
+                <footer>Vivian Nguyen &mdash; Software QA Engineer, Werner Enterprises</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="mentees" class="chapter" data-waypoint="V">
+        <div class="container chapter-inner">
+          <div class="waypoint">V</div>
+          <div class="page page-wide">
+            <p class="chapter-label">Chapter V</p>
+            <h2>Paying It Forward</h2>
+            <p class="chapter-intro">Quality is a mindset worth passing on.</p>
+
+            <div class="stat-callout">
+              <span class="stat-number">15+</span>
+              <span class="stat-desc">people I&rsquo;ve mentored into Software QA and Development careers</span>
+            </div>
+
+            <p>
+              Some of my favorite work happens outside the sprint &mdash; teaching manual
+              testing fundamentals, pairing on a first automation script, or just being a
+              sounding board for someone figuring out where they fit in tech. A few of the
+              people behind that number:
+            </p>
+
+            <div class="mentee-grid">
+              <figure class="mentee">
+                <img src="/images/mentee-vivian-nguyen.jpg" alt="Vivian Nguyen" loading="lazy" />
+                <figcaption>Vivian Nguyen</figcaption>
+              </figure>
+              <figure class="mentee">
+                <img src="/images/mentee-tristan-lundgreen.jpg" alt="Tristan Lundgreen" loading="lazy" />
+                <figcaption>Tristan Lundgreen</figcaption>
+              </figure>
+              <figure class="mentee">
+                <img src="/images/mentee-stockton-nielson.jpg" alt="Stockton Nielson" loading="lazy" />
+                <figcaption>Stockton Nielson</figcaption>
+              </figure>
+            </div>
+            <p class="mentee-note">&hellip; and a dozen more across the years.</p>
+
+            <div class="journey-grid">
+              <div class="journey">Manual Tester <span aria-hidden="true">&rarr;</span> Automation Engineer</div>
+              <div class="journey">Career Switcher <span aria-hidden="true">&rarr;</span> Jr. QA Engineer</div>
+              <div class="journey">QA Engineer <span aria-hidden="true">&rarr;</span> Scrum Master</div>
+              <div class="journey">Bootcamp Grad <span aria-hidden="true">&rarr;</span> Software QA Engineer</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="chapter chapter-final" data-waypoint="VI">
+        <div class="container chapter-inner">
+          <div class="waypoint">VI</div>
+          <div class="page">
+            <p class="chapter-label">Chapter VI</p>
+            <h2>Send Word</h2>
+            <p>The journal ends here &mdash; but the story keeps going. Reach out any time.</p>
+            <ul class="contact-list">
+              <li><a href="mailto:MatthewDavidThornell@gmail.com">MatthewDavidThornell@gmail.com</a></li>
+              <li><a href="tel:+18016608758">(801) 660-8758</a></li>
+              <li><a href="https://www.linkedin.com/in/matthew-d-thornell/" target="_blank" rel="noopener">linkedin.com/in/matthew-d-thornell</a></li>
+              <li><a href="https://github.com/MatthewDThornell" target="_blank" rel="noopener">github.com/MatthewDThornell</a></li>
+              <li><a href="https://qap.dev" target="_blank" rel="noopener">qap.dev</a></li>
+            </ul>
+            <a class="resume-btn" href="/resume.pdf" download>Download the Resume</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Matthew D Thornell &mdash; MDT Quality Adventures</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
