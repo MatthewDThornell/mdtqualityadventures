@@ -3,12 +3,17 @@ const WORDS = [
   'JAVASCRIPT', 'TYPESCRIPT', 'PYTHON', 'PLAYWRIGHT', 'CYPRESS', 'SELENIUM',
   'APPIUM', 'POSTMAN', 'JENKINS', 'DOCKER', 'GITHUB', 'AZURE', 'AUTOMATION',
   'REGRESSION', 'COVERAGE', 'QUALITY', 'SCRUM', 'CI/CD', 'API', 'QA',
+  'QA MENTOR', 'FRIEND', 'CONTINUAL LEARNING', 'TROUBLE SHOOTER',
+  'SEEKS FIRST TO UNDERSTAND', 'BUG HUNTER',
+  'SOFTWARE DEVELOPMENT ENGINEER IN TEST', 'PROACTIVE HUMANIZATION',
+  'WEB AUTOMATION', 'IOS AUTOMATION',
 ];
 const WORD_COLUMN_CHANCE = 0.18;
 const FONT_SIZE = 16;
 const TRAIL_LENGTH = 14;
 const BRASS = '201, 161, 90';
 const TEAL = '107, 156, 137';
+const WORD_HIGHLIGHT = '221, 185, 117'; // brighter brass, so spelled-out words pop against the noise
 
 // deterministic pseudo-random char, stable per (column, row) so nothing
 // flickers — the only motion cue is the actual scroll, kept consistent
@@ -78,9 +83,9 @@ export function initCoverScene(canvas) {
       for (let t = 0; t < TRAIL_LENGTH; t++) {
         const row = Math.floor(col.head) - t;
         if (row < 0 || row * FONT_SIZE > height) continue;
-        const alpha = (1 - t / TRAIL_LENGTH) * 0.4;
+        const alpha = (1 - t / TRAIL_LENGTH) * (col.word ? 0.85 : 0.4);
         if (alpha <= 0.01) continue;
-        ctx.fillStyle = `rgba(${col.color}, ${alpha.toFixed(3)})`;
+        ctx.fillStyle = `rgba(${col.word ? WORD_HIGHLIGHT : col.color}, ${alpha.toFixed(3)})`;
         ctx.fillText(charAtRow(col, row, i), x, row * FONT_SIZE);
       }
     });
