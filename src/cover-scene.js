@@ -31,7 +31,7 @@ function randomWord() {
 function makeColumn(totalRows) {
   return {
     head: -((Math.random() * totalRows) | 0),
-    speed: 4 + Math.random() * 5, // rows per second
+    speed: 8 + Math.random() * 10, // rows per second (2x)
     color: Math.random() < 0.5 ? BRASS : TEAL,
     word: Math.random() < WORD_COLUMN_CHANCE ? randomWord() : null,
   };
@@ -107,7 +107,7 @@ export function initCoverScene(canvas) {
       for (let t = 0; t < TRAIL_LENGTH; t++) {
         const row = Math.floor(col.head) - t;
         if (row < 0 || row * FONT_SIZE > height) continue;
-        const alpha = (1 - t / TRAIL_LENGTH) * (col.word ? 0.85 : 0.4) * zoneMult;
+        const alpha = (1 - t / TRAIL_LENGTH) * (col.word ? 0.95 : 0.52) * zoneMult;
         if (alpha <= 0.01) continue;
         ctx.fillStyle = `rgba(${col.word ? WORD_HIGHLIGHT : col.color}, ${alpha.toFixed(3)})`;
         ctx.fillText(charAtRow(col, row, i), x, row * FONT_SIZE);
