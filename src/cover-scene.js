@@ -56,6 +56,23 @@ export function initCoverScene(canvas) {
   let height = 0;
   let totalRows = 0;
   let columns = [];
+  let textZone = null; // { left, right } of the cover's text column, in canvas-local px
+
+  const TEXT_ZONE_PAD = 40; // breathing room beyond the measured text edges
+  const TEXT_ZONE_FADE = 100; // width of the soft transition back to full brightness
+  const TEXT_ZONE_MIN = 0.08; // how dim the rain gets directly behind the text
+
+  function textZoneMultiplier(x) {
+    if (!textZone) return 1;
+    const left = textZone.left - TEXT_ZONE_PAD;
+    const right = textZone.right + TEXT_ZONE_PAD;
+    if (x >= left && x <= right) return TEXT_ZONE_MIN;
+    const distOut = x < left ? left - x : x - right;
+    if (distOut >= TEXT_ZONE_FADE) return 1;
+    const t = distOut / TEXT_ZONE_FADE;
+    const eased = t * t * (3 - 2 * t); // smoothstep
+    return TEXT_ZONE_MIN + (1 - TEXT_ZONE_MIN) * eased;
+  }
 
   function resize() {
     const rect = canvas.parentElement.getBoundingClientRect();
@@ -73,6 +90,12 @@ export function initCoverScene(canvas) {
     totalRows = Math.ceil(height / FONT_SIZE) + TRAIL_LENGTH;
     const columnCount = Math.ceil(width / FONT_SIZE);
     columns = Array.from({ length: columnCount }, () => makeColumn(totalRows));
+
+    const textEl = canvas.parentElement.querySelector('.container');
+    if (textEl) {
+      const textRect = textEl.getBoundingClientRect();
+      textZone = { left: textRect.left - rect.left, right: textRect.right - rect.left };
+    }
   }
 
   function drawFrame() {
@@ -80,10 +103,11 @@ export function initCoverScene(canvas) {
 
     columns.forEach((col, i) => {
       const x = i * FONT_SIZE;
+      const zoneMult = textZoneMultiplier(x);
       for (let t = 0; t < TRAIL_LENGTH; t++) {
         const row = Math.floor(col.head) - t;
         if (row < 0 || row * FONT_SIZE > height) continue;
-        const alpha = (1 - t / TRAIL_LENGTH) * (col.word ? 0.85 : 0.4);
+        const alpha = (1 - t / TRAIL_LENGTH) * (col.word ? 0.85 : 0.4) * zoneMult;
         if (alpha <= 0.01) continue;
         ctx.fillStyle = `rgba(${col.word ? WORD_HIGHLIGHT : col.color}, ${alpha.toFixed(3)})`;
         ctx.fillText(charAtRow(col, row, i), x, row * FONT_SIZE);
