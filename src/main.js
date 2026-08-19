@@ -15,8 +15,8 @@ initTypewriter(document.getElementById('taglineText'), [
   'Team Builder',
   'Friend',
   'Former Lead QA Engineer at ConexED',
-  'Former Test Automation Engineer at Legrand',
-  'Colleague Who Genuinely Cares',
+  'Former Test Automation Engineer at LeGrand',
+  'Colleague who genuinely cares',
   'Teller of Dad Jokes',
   'Hunter of Bugs',
 ]);
