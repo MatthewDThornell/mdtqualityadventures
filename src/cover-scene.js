@@ -10,8 +10,13 @@ const TRAIL_LENGTH = 14;
 const BRASS = '201, 161, 90';
 const TEAL = '107, 156, 137';
 
-function randomChar() {
-  return CHARSET[(Math.random() * CHARSET.length) | 0];
+// deterministic pseudo-random char, stable per (column, row) so nothing
+// flickers — the only motion cue is the actual scroll, kept consistent
+// across every column whether it's spelling a word or not
+function hashChar(seed) {
+  const x = Math.sin(seed * 12.9898) * 43758.5453;
+  const frac = x - Math.floor(x);
+  return CHARSET[(frac * CHARSET.length) | 0];
 }
 
 function randomWord() {
@@ -27,8 +32,8 @@ function makeColumn(totalRows) {
   };
 }
 
-function charAtRow(col, row) {
-  if (!col.word) return randomChar();
+function charAtRow(col, row, columnIndex) {
+  if (!col.word) return hashChar(columnIndex * 9973 + row);
   const i = ((row % col.word.length) + col.word.length) % col.word.length;
   return col.word[i];
 }
@@ -76,7 +81,7 @@ export function initCoverScene(canvas) {
         const alpha = (1 - t / TRAIL_LENGTH) * 0.4;
         if (alpha <= 0.01) continue;
         ctx.fillStyle = `rgba(${col.color}, ${alpha.toFixed(3)})`;
-        ctx.fillText(charAtRow(col, row), x, row * FONT_SIZE);
+        ctx.fillText(charAtRow(col, row, i), x, row * FONT_SIZE);
       }
     });
   }
