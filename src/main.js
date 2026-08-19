@@ -1,10 +1,20 @@
 import './style.css';
 import { initCoverScene } from './cover-scene.js';
+import { initTypewriter } from './typewriter.js';
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
 const coverCanvas = document.getElementById('cover-canvas');
 const coverScene = initCoverScene(coverCanvas);
+
+initTypewriter(document.getElementById('eyebrowText'), ['A journal, kept by']);
+initTypewriter(document.getElementById('taglineText'), [
+  'Software QA Engineer & Quality Advocate',
+  'AI Test Engineer',
+  'Human First Quality Engineer',
+  'Team Builder',
+  'Friend',
+]);
 
 const coverObserver = new IntersectionObserver(
   (entries) => {

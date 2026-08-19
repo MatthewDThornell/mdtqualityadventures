@@ -234,6 +234,19 @@ a:hover {
   color: var(--brass-bright);
   letter-spacing: 0.03em;
   margin-bottom: 2rem;
+  min-height: 3.5rem;
+}
+
+.typewriter::after {
+  content: '|';
+  margin-left: 0.1em;
+  color: currentColor;
+  animation: blink-cursor 1s step-end infinite;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .cover-quote {
@@ -802,7 +815,8 @@ a:hover {
 
   .stars,
   .mist,
-  .scroll-cue svg {
+  .scroll-cue svg,
+  .typewriter::after {
     animation: none;
   }
 
