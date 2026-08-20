@@ -15,41 +15,47 @@ initTypewriter(document.getElementById('taglineText'), [
   'Team Builder',
   'Friend',
   {
-    text: 'Former Lead QA Engineer at ConexED',
+    text: 'Former Lead QA Engineer at\nConexED',
     segments: [
       brandSegment('Lead QA Engineer', 'brand-conexed', null),
-      brandSegment('ConexED', 'brand-conexed', 'https://www.conexed.com/'),
+      brandSegment('ConexED', 'brand-conexed', 'https://www.conexed.com/', '/images/logos/conexed.png', true),
     ],
   },
   {
-    text: 'Former Test Automation Engineer at LeGrand',
+    text: 'Former Test Automation Engineer at\nLeGrand',
     segments: [
       brandSegment('Test Automation Engineer', 'brand-legrand', null),
-      brandSegment('LeGrand', 'brand-legrand', 'https://www.legrand.us/'),
+      brandSegment('LeGrand', 'brand-legrand', 'https://www.legrand.us/', '/images/logos/legrand.png', true),
     ],
   },
   'Colleague who genuinely cares',
   'Teller of Dad Jokes',
   'Hunter of Bugs',
   {
-    text: 'Former Software Quality Engineer at Seekwell/1-800-Contacts',
+    text: 'Software Quality Engineer at\nSeekwell/1-800-Contacts',
     segments: [
       brandSegment('Software Quality Engineer', 'brand-seekwell', null),
-      brandSegment('Seekwell/1-800-Contacts', 'brand-seekwell', null),
+      brandSegment('Seekwell/1-800-Contacts', 'brand-seekwell', null, '/images/logos/1800contacts.png', true),
     ],
   },
   {
-    text: 'Former Software QA Engineer and Scrum Master at Werner Enterprises',
+    text: 'Former Sr. Software QA Engineer at\nWerner Enterprises',
     segments: [
-      brandSegment('Software QA Engineer and Scrum Master', 'brand-werner', null),
-      brandSegment('Werner Enterprises', 'brand-werner', 'https://www.werner.com/'),
+      brandSegment('Sr. Software QA Engineer', 'brand-werner', null),
+      brandSegment('Werner Enterprises', 'brand-werner', 'https://www.werner.com/', '/images/logos/werner.png', true),
     ],
   },
   {
-    text: "Former QA Coach and Architect at Veteran's United Home Loans",
+    text: 'Former QA Coach and Architect at\nVeterans United',
     segments: [
       brandSegment('QA Coach and Architect', 'brand-veterans-united', null),
-      brandSegment("Veteran's United Home Loans", 'brand-veterans-united', 'https://www.veteransunited.com/'),
+      brandSegment(
+        'Veterans United',
+        'brand-veterans-united',
+        'https://www.veteransunited.com/',
+        '/images/logos/veterans-united.png',
+        true
+      ),
     ],
   },
   'QA Mentor',

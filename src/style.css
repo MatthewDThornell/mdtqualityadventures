@@ -234,7 +234,9 @@ a:hover {
   color: var(--brass-bright);
   letter-spacing: 0.03em;
   margin-bottom: 2rem;
-  min-height: 3.5rem;
+  min-height: 4.75rem;
+  white-space: pre-line;
+  line-height: 1.8;
 }
 
 .typewriter::after {
@@ -492,6 +494,17 @@ a:hover {
 
 .brand-link:hover {
   text-decoration: underline;
+}
+
+.tagline-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  background: var(--parchment);
+  border-radius: 5px;
+  padding: 3px;
+  vertical-align: -6px;
+  margin-right: 0.35rem;
 }
 
 .brand-veterans-united {

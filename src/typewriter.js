@@ -2,13 +2,16 @@ function escapeHtml(str) {
   return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
-export function brandSegment(term, className, href) {
+export function brandSegment(term, className, href, logoSrc, logoBothSides = false) {
   return {
     term,
-    render: (t) =>
-      href
-        ? `<a class="brand-link ${className}" href="${href}" target="_blank" rel="noopener">${t}</a>`
-        : `<span class="brand-link ${className}">${t}</span>`,
+    render: (t) => {
+      const logo = logoSrc ? `<img class="tagline-logo" src="${logoSrc}" alt="" loading="lazy" />` : '';
+      const inner = logoBothSides ? `${logo}${t}${logo}` : `${logo}${t}`;
+      return href
+        ? `<a class="brand-link ${className}" href="${href}" target="_blank" rel="noopener">${inner}</a>`
+        : `<span class="brand-link ${className}">${inner}</span>`;
+    },
   };
 }
 
