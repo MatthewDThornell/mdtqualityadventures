@@ -25,7 +25,10 @@ initTypewriter(document.getElementById('taglineText'), [
   'Colleague who genuinely cares',
   'Teller of Dad Jokes',
   'Hunter of Bugs',
-  'Former Software Quality Engineer at 1-800-Contacts',
+  {
+    text: 'Former Software Quality Engineer at Seekwell/1-800-Contacts',
+    highlight: { term: 'Seekwell', className: 'brand-seekwell', href: null },
+  },
   {
     text: 'Former Software QA Engineer and Scrum Master at Werner Enterprises',
     highlight: { term: 'Werner Enterprises', className: 'brand-werner', href: 'https://www.werner.com/' },
