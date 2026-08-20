@@ -483,6 +483,46 @@ a:hover {
   flex-shrink: 0;
 }
 
+/* Brand-colored, bolded company name links */
+.brand-link {
+  font-weight: 700;
+  text-decoration: none;
+  background-repeat: no-repeat;
+}
+
+.brand-link:hover {
+  text-decoration: underline;
+}
+
+.brand-veterans-united {
+  background-image: linear-gradient(90deg, #e0344a, #f4f4f4, #3d7cc9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.brand-legrand {
+  color: #e2374a;
+}
+
+.brand-seekwell {
+  background-image: linear-gradient(90deg, #2d7ff9, #2fc7b6, #ff8a75);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.brand-conexed {
+  background-image: linear-gradient(90deg, #3d8bf2, #f5922d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.brand-werner {
+  color: #4a90d9;
+}
+
 /* Origins photo gallery */
 .origin-gallery {
   display: grid;
@@ -740,32 +780,97 @@ a:hover {
   margin: 0 0.15rem;
 }
 
-/* Letters */
-.letters {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
+/* Recommendations */
+.rec-grid {
+  columns: 2;
+  column-gap: 1.5rem;
   margin-top: 1.5rem;
 }
 
-.letter {
-  margin: 0;
-  padding: 1.5rem 1.5rem 1.25rem;
+.rec-card {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  column-gap: 0.85rem;
+  row-gap: 0.15rem;
+  break-inside: avoid;
+  margin: 0 0 1.5rem;
+  padding: 1.5rem;
   background: rgba(255, 255, 255, 0.03);
-  border-left: 3px solid var(--brass);
-  border-radius: 0 6px 6px 0;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 6px;
 }
 
-.letter p {
+.rec-avatar {
+  grid-row: 1 / 3;
+  grid-column: 1;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--brass);
+}
+
+.rec-avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rec-avatar-initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--brass);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.rec-card h3 {
+  grid-column: 2;
+  grid-row: 1;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.rec-card h3 a {
+  color: var(--parchment);
+  text-decoration: none;
+}
+
+.rec-card h3 a:hover {
+  color: var(--brass-bright);
+}
+
+.rec-title {
+  grid-column: 2;
+  grid-row: 2;
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.rec-card blockquote {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 1rem 0 0;
+}
+
+.rec-card blockquote p {
   font-style: italic;
-  margin: 0 0 0.75rem;
+  font-size: 0.92rem;
+  margin: 0;
   color: var(--text-primary);
 }
 
-.letter footer {
-  font-family: var(--font-ui);
-  font-size: 0.78rem;
-  color: var(--text-muted);
+@media (max-width: 720px) {
+  .rec-grid {
+    columns: 1;
+  }
 }
 
 /* Contact */

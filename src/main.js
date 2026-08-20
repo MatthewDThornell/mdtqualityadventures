@@ -14,14 +14,30 @@ initTypewriter(document.getElementById('taglineText'), [
   'Human First Quality Engineer',
   'Team Builder',
   'Friend',
-  'Former Lead QA Engineer at ConexED',
-  'Former Test Automation Engineer at LeGrand',
+  {
+    text: 'Former Lead QA Engineer at ConexED',
+    highlight: { term: 'ConexED', className: 'brand-conexed', href: 'https://www.conexed.com/' },
+  },
+  {
+    text: 'Former Test Automation Engineer at LeGrand',
+    highlight: { term: 'LeGrand', className: 'brand-legrand', href: 'https://www.legrand.us/' },
+  },
   'Colleague who genuinely cares',
   'Teller of Dad Jokes',
   'Hunter of Bugs',
   'Former Software Quality Engineer at 1-800-Contacts',
-  'Former Software QA Engineer and Scrum Master at Werner Enterprises',
-  "Former QA Coach and Architect at Veteran's United Home Loans",
+  {
+    text: 'Former Software QA Engineer and Scrum Master at Werner Enterprises',
+    highlight: { term: 'Werner Enterprises', className: 'brand-werner', href: 'https://www.werner.com/' },
+  },
+  {
+    text: "Former QA Coach and Architect at Veteran's United Home Loans",
+    highlight: {
+      term: "Veteran's United Home Loans",
+      className: 'brand-veterans-united',
+      href: 'https://www.veteransunited.com/',
+    },
+  },
   'QA Mentor',
 ]);
 
