@@ -10,27 +10,19 @@ const coverScene = initCoverScene(coverCanvas);
 initTypewriter(document.getElementById('eyebrowText'), ['A journal, kept by'], { loop: false });
 initTypewriter(document.getElementById('taglineText'), [
   'Software QA Engineer & Quality Advocate',
-  'AI Test Engineer',
-  'Human First Quality Engineer',
-  'Team Builder',
-  'Friend',
   {
-    text: 'Former Lead QA Engineer at\nConexED',
+    text: 'Former QA Coach and Architect at\nVeterans United',
     segments: [
-      brandSegment('Lead QA Engineer', 'brand-conexed', null),
-      brandSegment('ConexED', 'brand-conexed', 'https://www.conexed.com/', '/images/logos/conexed.png', true),
+      brandSegment('QA Coach and Architect', 'brand-veterans-united', null),
+      brandSegment(
+        'Veterans United',
+        'brand-veterans-united',
+        'https://www.veteransunited.com/',
+        '/images/logos/veterans-united.png',
+        true
+      ),
     ],
   },
-  {
-    text: 'Former Test Automation Engineer at\nLeGrand',
-    segments: [
-      brandSegment('Test Automation Engineer', 'brand-legrand', null),
-      brandSegment('LeGrand', 'brand-legrand', 'https://www.legrand.us/', '/images/logos/legrand.png', true),
-    ],
-  },
-  'Colleague who genuinely cares',
-  'Teller of Dad Jokes',
-  'Hunter of Bugs',
   {
     text: 'Software Quality Engineer at\nSeekwell/1-800-Contacts',
     segments: [
@@ -46,19 +38,27 @@ initTypewriter(document.getElementById('taglineText'), [
     ],
   },
   {
-    text: 'Former QA Coach and Architect at\nVeterans United',
+    text: 'Former Lead QA Engineer at\nConexED',
     segments: [
-      brandSegment('QA Coach and Architect', 'brand-veterans-united', null),
-      brandSegment(
-        'Veterans United',
-        'brand-veterans-united',
-        'https://www.veteransunited.com/',
-        '/images/logos/veterans-united.png',
-        true
-      ),
+      brandSegment('Lead QA Engineer', 'brand-conexed', null),
+      brandSegment('ConexED', 'brand-conexed', 'https://www.conexed.com/', '/images/logos/conexed.png', true),
     ],
   },
+  {
+    text: 'Former Test Automation Engineer at\nLeGrand',
+    segments: [
+      brandSegment('Test Automation Engineer', 'brand-legrand', null),
+      brandSegment('LeGrand', 'brand-legrand', 'https://www.legrand.us/', '/images/logos/legrand.png', true),
+    ],
+  },
+  'AI Test Engineer',
+  'Human First Quality Engineer',
+  'Team Builder',
   'QA Mentor',
+  'Friend',
+  'Colleague who genuinely cares',
+  'Teller of Dad Jokes',
+  'Hunter of Bugs',
 ]);
 
 const coverObserver = new IntersectionObserver(
