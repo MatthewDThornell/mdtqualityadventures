@@ -24,7 +24,7 @@ initTypewriter(document.getElementById('taglineText'), [
     ],
   },
   {
-    text: 'Software Quality Engineer at\nSeekwell/1-800-Contacts',
+    text: 'Former Software Quality Engineer at\nSeekwell/1-800-Contacts',
     segments: [
       brandSegment('Software Quality Engineer', 'brand-seekwell', null),
       brandSegment('Seekwell/1-800-Contacts', 'brand-seekwell', null, '/images/logos/1800contacts.png', true),

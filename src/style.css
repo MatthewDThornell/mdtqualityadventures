@@ -886,6 +886,18 @@ a:hover {
   }
 }
 
+@media (max-width: 480px) {
+  .cover .tagline {
+    font-size: 0.92rem;
+    min-height: 4.4rem;
+  }
+
+  .tagline-logo {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 /* Contact */
 .contact-list {
   list-style: none;
