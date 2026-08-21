@@ -105,7 +105,10 @@ if (prefersReducedMotion) {
         }
       });
     },
-    { threshold: 0.15, rootMargin: '0px 0px -10% 0px' }
+    // threshold: 0 fires as soon as any part of a chapter enters the viewport, so this
+    // works regardless of how tall a chapter's content is (a percentage-based threshold
+    // like 0.15 can never be reached for chapters taller than ~7x the viewport height)
+    { threshold: 0, rootMargin: '0px 0px -10% 0px' }
   );
 
   chapters.forEach((chapter) => observer.observe(chapter));
