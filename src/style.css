@@ -832,7 +832,7 @@ a:hover {
 .mentee {
   margin: 0;
   text-align: center;
-  width: 100px;
+  width: 140px;
 }
 
 .mentee img {
@@ -847,8 +847,21 @@ a:hover {
 
 .mentee figcaption {
   font-family: var(--font-ui);
-  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.mentee-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--parchment);
+}
+
+.mentee-role {
+  font-size: 0.72rem;
   color: var(--text-muted);
+  line-height: 1.3;
 }
 
 .mentee-note {
