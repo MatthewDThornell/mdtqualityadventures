@@ -74,11 +74,24 @@ export function initCoverScene(canvas) {
     return TEXT_ZONE_MIN + (1 - TEXT_ZONE_MIN) * eased;
   }
 
+  const textEl = document.querySelector('.cover .container');
+
+  function updateTextZone() {
+    if (!textEl) return;
+    const textRect = textEl.getBoundingClientRect();
+    // only dim behind the cover text while it's actually on screen; once the
+    // visitor scrolls past it, textRect.bottom < 0 and the zone stops applying
+    if (textRect.bottom < 0 || textRect.top > height) {
+      textZone = null;
+      return;
+    }
+    textZone = { left: textRect.left, right: textRect.right };
+  }
+
   function resize() {
-    const rect = canvas.parentElement.getBoundingClientRect();
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
-    width = rect.width;
-    height = rect.height;
+    width = window.innerWidth;
+    height = window.innerHeight;
     canvas.width = width * dpr;
     canvas.height = height * dpr;
     canvas.style.width = `${width}px`;
@@ -90,16 +103,11 @@ export function initCoverScene(canvas) {
     totalRows = Math.ceil(height / FONT_SIZE) + TRAIL_LENGTH;
     const columnCount = Math.ceil(width / FONT_SIZE);
     columns = Array.from({ length: columnCount }, () => makeColumn(totalRows));
-
-    const textEl = canvas.parentElement.querySelector('.container');
-    if (textEl) {
-      const textRect = textEl.getBoundingClientRect();
-      textZone = { left: textRect.left - rect.left, right: textRect.right - rect.left };
-    }
   }
 
   function drawFrame() {
     ctx.clearRect(0, 0, width, height);
+    updateTextZone();
 
     columns.forEach((col, i) => {
       const x = i * FONT_SIZE;

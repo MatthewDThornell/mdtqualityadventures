@@ -61,19 +61,15 @@ initTypewriter(document.getElementById('taglineText'), [
   'Hunter of Bugs',
 ]);
 
-const coverObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        coverScene.resume();
-      } else {
-        coverScene.pause();
-      }
-    });
-  },
-  { threshold: 0 }
-);
-coverObserver.observe(document.getElementById('top'));
+// the rain now runs as a fixed background across the whole site, so pause it
+// only when the tab itself isn't visible (saves battery/CPU in a background tab)
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) {
+    coverScene.pause();
+  } else {
+    coverScene.resume();
+  }
+});
 
 const navToggle = document.getElementById('navToggle');
 const siteNav = document.getElementById('siteNav');
