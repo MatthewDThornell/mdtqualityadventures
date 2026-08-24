@@ -7,7 +7,11 @@ document.getElementById('year').textContent = new Date().getFullYear();
 const coverCanvas = document.getElementById('cover-canvas');
 const coverScene = initCoverScene(coverCanvas);
 
-initTypewriter(document.getElementById('eyebrowText'), ['A journal, kept by'], { loop: false });
+initTypewriter(
+  document.getElementById('eyebrowText'),
+  ['A career portfolio, written by', 'A career built around quality'],
+  { loop: false }
+);
 initTypewriter(document.getElementById('taglineText'), [
   'Software QA Engineer & Quality Advocate',
   {
@@ -45,20 +49,21 @@ initTypewriter(document.getElementById('taglineText'), [
     ],
   },
   {
-    text: 'Former Test Automation Engineer at\nLeGrand',
+    text: 'Former Test Automation Engineer at\nLegrand',
     segments: [
       brandSegment('Test Automation Engineer', 'brand-legrand', null),
-      brandSegment('LeGrand', 'brand-legrand', 'https://www.legrand.us/', '/images/logos/legrand.png', true),
+      brandSegment('Legrand', 'brand-legrand', 'https://www.legrand.us/', '/images/logos/legrand.png', true),
     ],
   },
   'AI Test Engineer',
   'Human First Quality Engineer',
   'Team Builder',
   'QA Mentor',
-  'Friend',
-  'Colleague who genuinely cares',
   'Teller of Dad Jokes',
-  'Hunter of Bugs',
+  'Reliable by nature. Relentless about quality.',
+  'I break code first, so our customers don’t.',
+  'I don’t test to say no. I test to make yes possible.',
+  'Break some code here, add tests there, build confidence everywhere.',
 ]);
 
 // the rain now runs as a fixed background across the whole site, so pause it
@@ -108,4 +113,56 @@ if (prefersReducedMotion) {
   );
 
   chapters.forEach((chapter) => observer.observe(chapter));
+}
+
+// floating up/down control so long chapters (Recommendations, Professional
+// Experience) don't require manual scrolling to jump between sections
+const chapterNav = document.querySelector('.chapter-nav');
+const chapterUpBtn = document.getElementById('chapterUp');
+const chapterDownBtn = document.getElementById('chapterDown');
+
+if (chapterNav && chapterUpBtn && chapterDownBtn) {
+  const stops = [document.getElementById('top'), ...chapters];
+  const HEADER_OFFSET = 88;
+
+  const currentStopIndex = () => {
+    // a short final section can never scroll its top past HEADER_OFFSET (there's
+    // nothing left below it to scroll), so treat "maxed out scroll" as the last stop
+    const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+    if (atBottom) return stops.length - 1;
+
+    let idx = 0;
+    stops.forEach((stop, i) => {
+      if (stop.getBoundingClientRect().top - HEADER_OFFSET <= 0) idx = i;
+    });
+    return idx;
+  };
+
+  const goToStop = (index) => {
+    const target = stops[index];
+    if (!target) return;
+    target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' });
+  };
+
+  const updateChapterNav = () => {
+    const idx = currentStopIndex();
+    chapterUpBtn.disabled = idx <= 0;
+    chapterDownBtn.disabled = idx >= stops.length - 1;
+    chapterNav.classList.toggle('is-visible', window.scrollY > 80);
+  };
+
+  chapterUpBtn.addEventListener('click', () => goToStop(currentStopIndex() - 1));
+  chapterDownBtn.addEventListener('click', () => goToStop(currentStopIndex() + 1));
+
+  let navTicking = false;
+  window.addEventListener('scroll', () => {
+    if (navTicking) return;
+    navTicking = true;
+    requestAnimationFrame(() => {
+      updateChapterNav();
+      navTicking = false;
+    });
+  });
+
+  updateChapterNav();
 }

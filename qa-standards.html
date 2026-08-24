@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Matthew D Thornell's QA engineering standards: best-practice code, test case templates, commenting conventions, and bug report templates." />
+    <meta name="theme-color" content="#0f1216" />
+    <link rel="canonical" href="https://mdtqualityadventures.com/qa-standards.html" />
+    <title>QA Standards — MDT Quality Adventures</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MDT Quality Adventures" />
+    <meta property="og:title" content="QA Standards — Matthew D Thornell" />
+    <meta property="og:description" content="A living reference of best-practice code, test case templates, commenting conventions, and bug report templates." />
+    <meta property="og:url" content="https://mdtqualityadventures.com/qa-standards.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="QA Standards — Matthew D Thornell" />
+    <meta name="twitter:description" content="A living reference of best-practice code, test case templates, commenting conventions, and bug report templates." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sky" aria-hidden="true">
+      <div class="stars"></div>
+      <div class="mist mist-a"></div>
+      <div class="mist mist-b"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-row">
+        <a class="brand" href="/">MDT Quality Adventures</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="siteNav">
+          <a href="/#origins">About Me</a>
+          <a href="/#experience">Professional Experience</a>
+          <a href="/#fieldnotes">Accomplishments</a>
+          <a href="/qa-standards.html" aria-current="page">QA Standards</a>
+          <a href="/#letters">Recommendations</a>
+          <a href="/#mentors">Mentors</a>
+          <a href="/#mentees">Mentees</a>
+          <a href="/#volunteer">Volunteer</a>
+          <a href="/#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="standards-hero">
+        <div class="container">
+          <h1>QA Standards</h1>
+          <p>
+            A living reference of the standards I hold my own testing work to: best-practice
+            code, test case templates, commenting conventions, and bug report templates.
+          </p>
+        </div>
+      </section>
+
+      <nav class="standards-subnav" aria-label="QA Standards sections">
+        <a href="#best-practices">Best Practice Code</a>
+        <a href="#test-templates">Test Case Templates</a>
+        <a href="#comment-templates">Commenting Templates</a>
+        <a href="#bug-template">Bug Report Template</a>
+      </nav>
+
+      <section id="best-practices" class="standards-section">
+        <div class="container">
+          <h2>Best Practice Code</h2>
+          <p class="standards-intro">
+            A few principles I hold every automation suite to, with a quick before/after so the
+            reasoning is concrete rather than abstract.
+          </p>
+
+          <div class="standard-item">
+            <h3>Locator Strategy</h3>
+            <p>
+              Structural selectors break the moment a class name or DOM depth changes. Role and
+              test-id locators describe intent instead of markup, so they survive redesigns.
+            </p>
+            <div class="code-block">
+              <div class="code-block-head">
+                <span class="code-block-label">Avoid · Playwright TypeScript</span>
+                <button class="code-copy-btn" type="button">Copy</button>
+              </div>
+              <pre><code>// Breaks the moment a class name or DOM depth changes
+await page.locator('div.container &gt; ul &gt; li:nth-child(3) &gt; button.btn-primary').click();</code></pre>
+            </div>
+            <div class="code-block">
+              <div class="code-block-head">
+                <span class="code-block-label">Prefer · Playwright TypeScript</span>
+                <button class="code-copy-btn" type="button">Copy</button>
+              </div>
+              <pre><code>// Survives most markup and styling changes, and reads like a spec
+await page.getByTestId('checkout-submit').click();
+
+// When there's no test-id, an accessible role query works just as well
+await page.getByRole('button', { name: 'Submit order' }).click();</code></pre>
+            </div>
+          </div>
+
+          <div class="standard-item">
+            <h3>No Hard Sleeps</h3>
+            <p>
+              A fixed <code>waitForTimeout</code> is either too short under load or wastes time
+              on every run. Assertions that auto-retry wait exactly as long as needed and no
+              longer.
+            </p>
+            <div class="code-block">
+              <div class="code-block-head">
+                <span class="code-block-label">Avoid · Playwright TypeScript</span>
+                <button class="code-copy-btn" type="button">Copy</button>
+              </div>
+              <pre><code>await page.click('#save-button');
+await page.waitForTimeout(3000); // guessing how long the save takes
+expect(await page.locator('.toast-success').isVisible()).toBe(true);</code></pre>
+            </div>
+            <div class="code-block">
+              <div class="code-block-head">
+                <span class="code-block-label">Prefer · Playwright TypeScript</span>
+                <button class="code-copy-btn" type="button">Copy</button>
+              </div>
+              <pre><code>await page.click('#save-button');
+await expect(page.locator('.toast-success')).toBeVisible(); // retries until it appears or times out</code></pre>
+            </div>
+          </div>
+
+          <div class="standard-item">
+            <h3>Reusable Soft Assertions</h3>
+            <p>
+              A hard assertion stops a test at the first failure, hiding every other broken
+              expectation behind it. Collecting failures and verifying once at the end surfaces
+              everything wrong with a page in a single run.
+            </p>
+            <div class="code-block">
+              <div class="code-block-head">
+                <span class="code-block-label">C# · NUnit</span>
+                <button class="code-copy-btn" type="button">Copy</button>
+              </div>
+              <pre><code>public sealed class SoftAssertions
+{
+    private readonly List&lt;Exception&gt; _failures = new();
+
+    public void Check(Action assertion, string label)
+    {
+        try
+        {
+            assertion();
+        }
+        catch (Exception ex)
+        {
+            _failures.Add(new Exception($"{label}: {ex.Message}"));
+        }
+    }
+
+    public void Verify()
+    {
+        if (_failures.Count == 0) return;
+        var messages = string.Join("\n", _failures.Select(f =&gt; f.Message));
+        throw new AssertionException($"{_failures.Count} soft assertion(s) failed:\n{messages}");
+    }
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="test-templates" class="standards-section">
+        <div class="container">
+          <h2>Test Case Templates</h2>
+          <p class="standards-intro">
+            Copy/paste starting points for new tests, structured so the intent of each test is
+            readable before you even look at the assertions.
+          </p>
+
+          <div class="standard-item">
+            <h3>Playwright + NUnit — Given/When/Then Smoke Test</h3>
+            <p>Category tags keep the smoke suite runnable independently from full regression.</p>
+            <div class="code-block">
+              <div class="code-block-head">
+                <span class="code-block-label">C# · NUnit</span>
+                <button class="code-copy-btn" type="button">Copy</button>
+              </div>
+              <pre><code>[Test]
+[Category("smoke")]
+[Category("regression")]
+public async Task Test_Login_ValidCredentials_RedirectsToDashboard()
+{
+    // Given I am on the login page
+    await Page.GotoAsync(Config.BaseUrl + "/login");
+
+    // When I submit valid credentials
+    await Page.FillAsync("#email", Config.TestUser.Email);
+    await Page.FillAsync("#password", Config.TestUser.Password);
+    await Page.ClickAsync("#login-submit");
+
+    // Then I land on the dashboard
+    await Expect(Page).ToHaveURLAsync(new Regex(".*/dashboard"));
+    await Expect(Page.Locator("h1")).ToContainTextAsync("Welcome back");
+}</code></pre>
+            </div>
+          </div>
+
+          <div class="standard-item">
+            <h3>Cypress — Test Structure &amp; Custom Commands</h3>
+            <p>
+              Shared setup lives in a custom command, not repeated in every test, so each test
+              body is just the behavior actually under test.
+            </p>
+            <div class="code-block">
+              <div class="code-block-head">
+                <span class="code-block-label">JavaScript · Cypress</span>
+                <button class="code-copy-btn" type="button">Copy</button>
+              </div>
+              <pre><code>describe('Checkout flow', () =&gt; {
+  beforeEach(() =&gt; {
+    cy.login(Cypress.env('testUser')); // custom command, keeps setup out of each test
+    cy.visit('/cart');
+  });
+
+  it('lets a signed-in user complete checkout with a saved card', () =&gt; {
+    cy.get('[data-cy=checkout-button]').click();
+    cy.get('[data-cy=saved-card-0]').click();
+    cy.get('[data-cy=place-order]').click();
+
+    cy.get('[data-cy=order-confirmation]').should('be.visible');
+    cy.get('[data-cy=order-number]').invoke('text').should('match', /^ORD-\d+$/);
+  });
+});</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="comment-templates" class="standards-section">
+        <div class="container">
+          <h2>Commenting Templates</h2>
+          <p class="standards-intro">
+            Comments that explain intent and impact age far better than comments that narrate
+            what the code already says.
+          </p>
+
+          <div class="standard-item">
+            <h3>What It Tests / Why It Matters</h3>
+            <p>
+              A two-line header above every test so a failure report is legible to someone who
+              has never opened the test file.
+            </p>
+            <div class="code-block">
+              <div class="code-block-head">
+                <span class="code-block-label">C# · NUnit</span>
+                <button class="code-copy-btn" type="button">Copy</button>
+              </div>
+              <pre><code>// What It Tests: The checkout page shows an inline error when a declined card is submitted.
+// Why It Matters: A silent failure here leaves the customer stuck with no path to complete an order.
+[Test]
+public async Task Test_Checkout_DeclinedCard_ShowsInlineError() { /* ... */ }</code></pre>
+            </div>
+          </div>
+
+          <div class="standard-item">
+            <h3>C# XML Doc Comments</h3>
+            <p>Every public helper gets a summary, so IntelliSense carries the "why," not just the signature.</p>
+            <div class="code-block">
+              <div class="code-block-head">
+                <span class="code-block-label">C#</span>
+                <button class="code-copy-btn" type="button">Copy</button>
+              </div>
+              <pre><code>/// &lt;summary&gt;
+/// Waits for the given locator to become visible, then clicks it. Retries the wait once if
+/// the element detaches mid-check (common on pages that re-render after a websocket push).
+/// &lt;/summary&gt;
+/// &lt;param name="locator"&gt;The element to wait for and click.&lt;/param&gt;
+/// &lt;param name="timeoutMs"&gt;Max time to wait before failing, in milliseconds.&lt;/param&gt;
+public async Task ClickWhenStableAsync(ILocator locator, int timeoutMs = 5000)
+{
+    // ...
+}</code></pre>
+            </div>
+          </div>
+
+          <div class="standard-item">
+            <h3>JSDoc</h3>
+            <p>Same idea in JavaScript — types and defaults documented at the call site, not just in the implementation.</p>
+            <div class="code-block">
+              <div class="code-block-head">
+                <span class="code-block-label">JavaScript</span>
+                <button class="code-copy-btn" type="button">Copy</button>
+              </div>
+              <pre><code>/**
+ * Polls the given selector until its text matches `expected` or the timeout elapses.
+ *
+ * @param {string} selector - CSS selector for the element to poll.
+ * @param {string} expected - Exact text content to wait for.
+ * @param {number} [timeoutMs=5000] - How long to keep polling before throwing.
+ * @returns {Promise&lt;void&gt;}
+ */
+async function waitForText(selector, expected, timeoutMs = 5000) {
+  // ...
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="bug-template" class="standards-section">
+        <div class="container">
+          <h2>Bug Report Template</h2>
+          <p class="standards-intro">
+            A structure that gives a developer everything needed to reproduce a defect without a
+            follow-up thread, whatever tracker it ends up in.
+          </p>
+
+          <div class="standard-item">
+            <div class="code-block">
+              <div class="code-block-head">
+                <span class="code-block-label">Markdown</span>
+                <button class="code-copy-btn" type="button">Copy</button>
+              </div>
+              <pre><code>## Summary
+One sentence describing the defect.
+
+## Environment
+- Browser/App version:
+- OS:
+- Environment: (local / staging / production)
+
+## Preconditions
+What state the system needs to be in before reproducing.
+
+## Steps to Reproduce
+1.
+2.
+3.
+
+## Expected Result
+
+
+## Actual Result
+
+
+## Severity / Priority
+Severity: (blocker / critical / major / minor / trivial)
+Priority: (P1 / P2 / P3)
+
+## Evidence
+Screenshots, screen recording, console logs, network traces.
+
+## Additional Notes
+Anything that doesn't fit above — workarounds, related tickets, frequency.</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Matthew D Thornell, MDT Quality Adventures</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/qa-standards.js"></script>
+  </body>
+</html>

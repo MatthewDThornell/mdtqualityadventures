@@ -9,8 +9,11 @@ const WORDS = [
   'WEB AUTOMATION', 'IOS AUTOMATION',
 ];
 const WORD_COLUMN_CHANCE = 0.18;
-const FONT_SIZE = 16;
-const TRAIL_LENGTH = 14;
+const FONT_SIZE = 22;
+const TRAIL_LENGTH = 9;
+const TARGET_FPS = 30;
+const FRAME_INTERVAL = 1000 / TARGET_FPS;
+const TEXT_ZONE_REFRESH_FRAMES = 6; // getBoundingClientRect() forces a layout read; no need every frame
 const BRASS = '201, 161, 90';
 const TEAL = '107, 156, 137';
 const WORD_HIGHLIGHT = '221, 185, 117'; // brighter brass, so spelled-out words pop against the noise
@@ -75,6 +78,7 @@ export function initCoverScene(canvas) {
   }
 
   const textEl = document.querySelector('.cover .container');
+  let drawCount = 0;
 
   function updateTextZone() {
     if (!textEl) return;
@@ -89,7 +93,10 @@ export function initCoverScene(canvas) {
   }
 
   function resize() {
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    // capped at 1: this is a decorative background of scrambled single
+    // characters, not legible text — retina sharpness isn't worth 4x the
+    // pixels (and fillText/GPU cost) on a high-DPI display
+    const dpr = 1;
     width = window.innerWidth;
     height = window.innerHeight;
     canvas.width = width * dpr;
@@ -97,7 +104,9 @@ export function initCoverScene(canvas) {
     canvas.style.width = `${width}px`;
     canvas.style.height = `${height}px`;
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    ctx.font = `${FONT_SIZE}px "Spectral", monospace`;
+    // plain monospace, not the "Spectral" webfont: system fonts rasterize
+    // noticeably cheaper per glyph, and at this size nobody can tell
+    ctx.font = `${FONT_SIZE}px monospace`;
     ctx.textBaseline = 'top';
 
     totalRows = Math.ceil(height / FONT_SIZE) + TRAIL_LENGTH;
@@ -107,7 +116,8 @@ export function initCoverScene(canvas) {
 
   function drawFrame() {
     ctx.clearRect(0, 0, width, height);
-    updateTextZone();
+    if (drawCount % TEXT_ZONE_REFRESH_FRAMES === 0) updateTextZone();
+    drawCount++;
 
     columns.forEach((col, i) => {
       const x = i * FONT_SIZE;
@@ -125,13 +135,26 @@ export function initCoverScene(canvas) {
 
   let frameId = null;
   let lastTime = 0;
+  let accumulator = 0;
 
   function tick(now) {
-    const delta = lastTime ? (now - lastTime) / 1000 : 0;
+    const delta = lastTime ? now - lastTime : 0;
     lastTime = now;
+    accumulator += delta;
+
+    // decouples actual redraw work from the monitor's native refresh rate —
+    // on a 120/144Hz display the un-throttled loop was doing 2-4x the
+    // fillText/layout work of a 60Hz one for a visual effect that doesn't
+    // benefit from it, which is most of where the reported GPU load came from
+    if (accumulator < FRAME_INTERVAL) {
+      frameId = requestAnimationFrame(tick);
+      return;
+    }
+    const stepSeconds = accumulator / 1000;
+    accumulator = 0;
 
     columns.forEach((col) => {
-      col.head += col.speed * delta;
+      col.head += col.speed * stepSeconds;
       if ((col.head - TRAIL_LENGTH) * FONT_SIZE > height) {
         Object.assign(col, makeColumn(totalRows));
       }
@@ -144,6 +167,7 @@ export function initCoverScene(canvas) {
   function start() {
     if (frameId === null && !prefersReducedMotion) {
       lastTime = 0;
+      accumulator = 0;
       frameId = requestAnimationFrame(tick);
     }
   }

@@ -42,8 +42,11 @@
           <a href="#origins">About Me</a>
           <a href="#experience">Professional Experience</a>
           <a href="#fieldnotes">Accomplishments</a>
+          <a href="/qa-standards.html">QA Standards</a>
           <a href="#letters">Recommendations</a>
+          <a href="#mentors">Mentors</a>
           <a href="#mentees">Mentees</a>
+          <a href="#volunteer">Volunteer</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
@@ -52,11 +55,11 @@
     <main>
       <section id="top" class="cover">
         <div class="container">
-          <p class="eyebrow typewriter" id="eyebrowText">A journal, kept by</p>
+          <p class="eyebrow typewriter" id="eyebrowText">A career portfolio, written by</p>
           <h1>Matthew D Thornell</h1>
           <p class="tagline typewriter" id="taglineText">Software QA Engineer &amp; Quality Advocate</p>
           <p class="cover-quote">
-            &ldquo;Quality isn&rsquo;t just a process. It&rsquo;s a shared mindset, built one choice at a time.&rdquo;
+            &ldquo;Quality isn&rsquo;t something we test in. It&rsquo;s something we build in.&rdquo;
           </p>
           <a class="scroll-cue" href="#origins">
             <span>Who am I?</span>
@@ -73,33 +76,44 @@
         <div class="container chapter-inner">
           <div class="waypoint">I</div>
           <div class="page page-wide">
+            <svg class="about-seal" viewBox="0 0 100 100" aria-hidden="true">
+              <path id="sealArc" d="M 11,37.3 A 41,41 0 0 1 89,37.3" fill="none" />
+              <circle cx="50" cy="50" r="44" />
+              <circle cx="50" cy="50" r="36" />
+              <text font-size="6.5" letter-spacing="1.1">
+                <textPath href="#sealArc" startOffset="50%" text-anchor="middle">MANNERS MAKETH MAN</textPath>
+              </text>
+              <text x="50" y="63" text-anchor="middle" class="about-seal-monogram">M</text>
+            </svg>
             <p class="chapter-label">Chapter I</p>
             <h2>About Me</h2>
+
+            <div class="origin-lead">
+              <figure class="origin-photo">
+                <img src="/images/matthew-hat.jpg" alt="Matthew wearing one of his handmade hats" loading="lazy" />
+              </figure>
+            </div>
+
             <p class="origin-lede">Quality.</p>
             <p>
-              It&rsquo;s a philosophy that is deeply ingrained in my character and a standard I
-              strive to uphold every day. I believe quality is reflected in everything we do,
-              from the choices we make and the attitudes we carry, to the relationships we
-              build, the way we care for what we own, and the routines we create.
-            </p>
-            <p>
-              Making quality choices is something we can all strive for. While we may not
-              have control over everything that happens to us, we do have control over the
-              standards we set for ourselves and how we choose to respond to the experiences
-              we face each day.
+              To me, quality isn&rsquo;t a checklist. It&rsquo;s a mindset: the standards I
+              hold myself to, the way I treat people, and the choices I make when no one&rsquo;s
+              checking my work. That mindset followed me into software testing, and eventually
+              became a career. I don&rsquo;t see QA as just finding bugs. It&rsquo;s
+              understanding how something is supposed to work, questioning what could go wrong,
+              and helping the people building it make it better.
             </p>
 
             <h3 class="origin-subhead">Roots</h3>
             <p>
-              My name is Matthew David Thornell, carrying both British and Filipino heritage.
-              My mother immigrated from the Philippines with nothing but grit and gratitude,
-              working hard for every bit of ground she earned and never taking a single
-              opportunity for granted. My father was a man of quiet toughness: an accomplished
-              psychologist who later reinvented himself as a software developer. His love for
-              his family, the wisdom he picked up along the way, and his genuine curiosity for
-              technology all shaped who I am. He passed away in 2014, and that loss is why this
-              field has never just been a job to me. There&rsquo;s a deeper meaning behind every
-              quality choice I make.
+              That perspective was shaped long before I got into technology. I was born and
+              raised in Utah, carrying both Filipino and British heritage. My mother immigrated
+              to the U.S. from the Philippines with little more than grit and gratitude. My
+              father, a psychologist who later reinvented himself as a software developer,
+              passed away in 2014 from multiple myeloma. Watching the people around me adapt to
+              hard circumstances taught me something I still carry: life doesn&rsquo;t always
+              give you control over what happens, but you always have control over what you do
+              next. That&rsquo;s shaped who I am, and how I approach the work.
             </p>
 
             <div class="origin-gallery">
@@ -111,15 +125,14 @@
               </figure>
             </div>
 
-            <h3 class="origin-subhead">Utah, and Who I Am</h3>
+            <h3 class="origin-subhead">Utah, and the Questions I Keep Asking</h3>
             <p>
-              Born and raised in Utah, I&rsquo;ve got a real love for the outdoors, for
-              thrilling experiences, for trying new things and putting myself out there. At my
-              core, I&rsquo;m a genuine soul who wants to do good in this world, and I try to
-              instill that same sense of quality in the people around me, not just in the code.
-              Outside of work, you&rsquo;ll usually find me cooking something new, building
-              things meant to last with my own two hands, or finding a way to make something
-              that already works, work a little better.
+              Outside of work, I&rsquo;m usually doing something that pulls me away from a
+              screen: Utah&rsquo;s mountains, off-grid camping, building something with my own
+              two hands, or taking things apart just to see how they work. That same curiosity
+              is how I test software. I want to know how something actually works, what happens
+              when I push it, and how we can make it better. That&rsquo;s the simplest way to
+              describe my approach to QA.
             </p>
 
             <div class="origin-gallery">
@@ -133,56 +146,27 @@
                 <img src="/images/matthew-mountains.jpg" alt="Matthew in the mountains" loading="lazy" />
               </figure>
               <figure class="origin-photo">
-                <img src="/images/matthew-hat.jpg" alt="Matthew wearing one of his handmade hats" loading="lazy" />
-              </figure>
-              <figure class="origin-photo">
                 <img src="/images/pets.jpg" alt="Matthew's dog and cat" loading="lazy" />
-              </figure>
-            </div>
-
-            <div class="origin-gallery">
-              <figure class="origin-photo">
-                <img src="/images/food-eggs.jpg" alt="Bacon and scrambled eggs on toast, cooked by Matthew" loading="lazy" />
-              </figure>
-              <figure class="origin-photo">
-                <img src="/images/food-sandwiches.jpg" alt="Beef tenderloin sandwiches, cooked by Matthew" loading="lazy" />
-              </figure>
-              <figure class="origin-photo">
-                <img src="/images/food-wellington.jpg" alt="A beef Wellington, cooked by Matthew" loading="lazy" />
               </figure>
             </div>
 
             <h3 class="origin-subhead">The People Who Shaped Me</h3>
             <p>
-              My grandmother was my idol, a rare mix of sharp intelligence and hard-earned
-              wisdom. From taking care of yourself to facing life&rsquo;s harder chapters, she
-              shaped so much of who I am today.
-            </p>
-            <p>
-              And then there&rsquo;s Alex Zhukovsky, a close friend of my father&rsquo;s who
-              became my QA mentor. Today he&rsquo;s an AI Test Automation Architect, but back
-              then, after I lost my dad, he stepped up without being asked. He introduced me to
-              the world of QA, and more than that, he&rsquo;s the one who asked me the question
-              that still guides me every day: <em>&ldquo;Now that your life is in your own
-              hands, will you work to make it a quality one? What quality choices are you going
-              to make that define you?&rdquo;</em> That question became the reason this whole
-              site exists.
+              My grandmother was one of the people I admired most: sharp intelligence paired
+              with hard-earned wisdom, the kind that comes from living through hard chapters
+              without letting them define you.
             </p>
 
-            <div class="origin-gallery">
+            <div class="origin-lead">
               <figure class="origin-photo">
                 <img class="face-top" src="/images/grandmother.jpg" alt="Matthew's grandmother" loading="lazy" />
-              </figure>
-              <figure class="origin-photo">
-                <img src="/images/alex-zhukovsky.jpg" alt="Alex Zhukovsky, Matthew's QA mentor" loading="lazy" />
               </figure>
             </div>
 
             <p class="origin-motto">
-              If I had to sum up how I try to live, I&rsquo;d point to a phrase I&rsquo;ve
-              carried with me for years: <em>&ldquo;Manners maketh man.&rdquo;</em> Quality,
-              to me, isn&rsquo;t just about the work. It&rsquo;s about how you treat people
-              along the way.
+              If I had to sum up how I try to live, it&rsquo;s a phrase I&rsquo;ve carried for
+              years: <em>&ldquo;Manners maketh man.&rdquo;</em> Quality isn&rsquo;t just about
+              the work. It&rsquo;s about how you treat people along the way.
             </p>
           </div>
         </div>
@@ -387,7 +371,9 @@
 
             <div class="rec-grid">
               <article class="rec-card">
-                <div class="rec-avatar rec-avatar-initials" aria-hidden="true">NG</div>
+                <div class="rec-avatar">
+                  <img src="/images/rec-nathan-gearke.jpg" alt="Nathan Gearke" loading="lazy" />
+                </div>
                 <h3>Nathan Gearke</h3>
                 <p class="rec-title">Group Engineering Manager, Veterans United Home Loans</p>
                 <blockquote>
@@ -714,11 +700,84 @@
         </div>
       </section>
 
-      <section id="mentees" class="chapter" data-waypoint="V">
+      <section id="mentors" class="chapter" data-waypoint="V">
         <div class="container chapter-inner">
           <div class="waypoint">V</div>
           <div class="page page-wide">
             <p class="chapter-label">Chapter V</p>
+            <h2>Mentors</h2>
+            <p class="chapter-intro">The people whose quality I admired, and tried to carry forward.</p>
+
+            <div class="mentor-grid">
+              <article class="mentor-card">
+                <div class="mentor-avatar">
+                  <img src="/images/alex-zhukovsky.jpg" alt="Alex Zhukovsky" loading="lazy" />
+                </div>
+                <h3>Alex Zhukovsky</h3>
+                <p class="mentor-title">My first QA mentor &middot; AI Test Automation Architect</p>
+                <p class="mentor-story">
+                  After I lost my dad, Alex stepped in as a close friend of his and introduced
+                  me to QA. He asked me a question I&rsquo;ve never forgotten:
+                  <em>&ldquo;Now that your life is in your own hands, will you work to make it
+                  a quality one?&rdquo;</em> I&rsquo;ve spent years since figuring out what
+                  that actually meant to me. I kept some of what I was taught, set the rest
+                  aside, and built a philosophy that&rsquo;s genuinely mine. That&rsquo;s the
+                  real answer to his question, and it&rsquo;s why this site exists.
+                </p>
+              </article>
+
+              <article class="mentor-card">
+                <a class="mentor-avatar" href="https://www.linkedin.com/in/carlos-kidman/" target="_blank" rel="noopener">
+                  <img src="/images/mentor-carlos-kidman.jpg" alt="Carlos Kidman" loading="lazy" />
+                </a>
+                <h3><a href="https://www.linkedin.com/in/carlos-kidman/" target="_blank" rel="noopener">Carlos Kidman</a></h3>
+                <p class="mentor-title">Quality community leader &middot; Seekwell / 1-800-Contacts</p>
+                <p class="mentor-story">
+                  Carlos was an influential mentor early in my career: always hosting
+                  in-person meetups, giving back to the quality community, and one of the
+                  most phenomenal speakers our field has. We worked together daily at
+                  Seekwell/1-800-Contacts, collaborating on things I&rsquo;m still proud of.
+                </p>
+              </article>
+
+              <article class="mentor-card">
+                <a class="mentor-avatar" href="https://www.linkedin.com/in/qajlarson/" target="_blank" rel="noopener">
+                  <img src="/images/mentor-aj-larson.jpg" alt="AJ Larson" loading="lazy" />
+                </a>
+                <h3><a href="https://www.linkedin.com/in/qajlarson/" target="_blank" rel="noopener">AJ Larson</a></h3>
+                <p class="mentor-title">My first QA teacher &middot; Quality Director &amp; Instructor, DevMountain</p>
+                <p class="mentor-story">
+                  AJ was my very first official QA teacher, the Quality Director and
+                  Instructor at DevMountain. At 20, I felt lost in a lot of ways and
+                  didn&rsquo;t know what I didn&rsquo;t know, let alone how to ask for help.
+                  AJ saw that in me with real sensitivity, and helped build a safe place to
+                  try the unknown.
+                </p>
+              </article>
+
+              <article class="mentor-card">
+                <a class="mentor-avatar" href="https://www.linkedin.com/in/tim-velasquez-80880223/" target="_blank" rel="noopener">
+                  <img src="/images/mentor-tim-velasquez.jpg" alt="Tim Velasquez" loading="lazy" />
+                </a>
+                <h3><a href="https://www.linkedin.com/in/tim-velasquez-80880223/" target="_blank" rel="noopener">Tim Velasquez</a></h3>
+                <p class="mentor-title">Set my quality foundations, analytical and technical</p>
+                <p class="mentor-story">
+                  Genuinely one of my favorite people to work with and learn from, hands
+                  down. Tim helped set my quality foundations, not just analytically but
+                  technically too. We&rsquo;re similar people, and working with him felt
+                  like having an older version of myself showing me the way.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="mentees" class="chapter" data-waypoint="VI">
+        <div class="container chapter-inner">
+          <div class="waypoint">VI</div>
+          <div class="page page-wide">
+            <p class="chapter-label">Chapter VI</p>
             <h2>Paying It Forward</h2>
             <p class="chapter-intro">Quality is a mindset worth passing on.</p>
 
@@ -747,7 +806,7 @@
                 <img src="/images/mentee-tristan-lundgreen.jpg" alt="Tristan Lundgreen" loading="lazy" />
                 <figcaption>
                   <span class="mentee-name">Tristan Lundgreen</span>
-                  <span class="mentee-role">Sunwest Bank</span>
+                  <span class="mentee-role">SDET, Sunwest</span>
                 </figcaption>
               </figure>
               <figure class="mentee">
@@ -771,24 +830,128 @@
                   <span class="mentee-role">QA Intern with 99+ experience</span>
                 </figcaption>
               </figure>
+              <figure class="mentee">
+                <a href="https://www.linkedin.com/in/tyler-high-a6b352388/" target="_blank" rel="noopener">
+                  <img src="/images/mentee-tyler-high.jpg" alt="Tyler High" loading="lazy" />
+                </a>
+                <figcaption>
+                  <span class="mentee-name"><a href="https://www.linkedin.com/in/tyler-high-a6b352388/" target="_blank" rel="noopener">Tyler High</a></span>
+                  <span class="mentee-role">Business Owner, High Bjorn Detail</span>
+                </figcaption>
+              </figure>
+              <figure class="mentee">
+                <a href="https://www.linkedin.com/in/alex-fergestad/" target="_blank" rel="noopener">
+                  <img src="/images/rec-alex-fergestad.jpg" alt="Alex Fergestad" loading="lazy" />
+                </a>
+                <figcaption>
+                  <span class="mentee-name"><a href="https://www.linkedin.com/in/alex-fergestad/" target="_blank" rel="noopener">Alex Fergestad</a></span>
+                  <span class="mentee-role">Software QA Analyst, Old Republic Professional</span>
+                </figcaption>
+              </figure>
+              <figure class="mentee">
+                <a href="https://www.linkedin.com/in/aaron-forkel/" target="_blank" rel="noopener">
+                  <img src="/images/rec-aaron-forkel.jpg" alt="Aaron Forkel" loading="lazy" />
+                </a>
+                <figcaption>
+                  <span class="mentee-name"><a href="https://www.linkedin.com/in/aaron-forkel/" target="_blank" rel="noopener">Aaron Forkel</a></span>
+                  <span class="mentee-role">Software Support Engineer, MasterControl</span>
+                </figcaption>
+              </figure>
+              <figure class="mentee">
+                <a href="https://www.linkedin.com/in/callumpayne-sw/" target="_blank" rel="noopener">
+                  <img src="/images/rec-callum-payne.jpg" alt="Callum Payne" loading="lazy" />
+                </a>
+                <figcaption>
+                  <span class="mentee-name"><a href="https://www.linkedin.com/in/callumpayne-sw/" target="_blank" rel="noopener">Callum Payne</a></span>
+                  <span class="mentee-role">QA Engineer, Glass Atlas</span>
+                </figcaption>
+              </figure>
             </div>
             <p class="mentee-note">&hellip; and a dozen more across the years.</p>
 
             <div class="journey-grid">
               <div class="journey">Manual Tester <span aria-hidden="true">&rarr;</span> Automation Engineer</div>
-              <div class="journey">Career Switcher <span aria-hidden="true">&rarr;</span> Jr. QA Engineer</div>
-              <div class="journey">QA Engineer <span aria-hidden="true">&rarr;</span> Scrum Master</div>
-              <div class="journey">Bootcamp Grad <span aria-hidden="true">&rarr;</span> Software QA Engineer</div>
+              <div class="journey">Factory Worker <span aria-hidden="true">&rarr;</span> Software Support Engineer</div>
+              <div class="journey">Metallurgy Mining Specialist <span aria-hidden="true">&rarr;</span> SDET</div>
+              <div class="journey">Warehouse Sorter <span aria-hidden="true">&rarr;</span> Quality Assurance Analyst</div>
+              <div class="journey">Car Detailer <span aria-hidden="true">&rarr;</span> Business Owner</div>
+              <div class="journey">Mannequin <span aria-hidden="true">&rarr;</span> QA Man who Can!</div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="chapter chapter-final" data-waypoint="VI">
+      <section id="volunteer" class="chapter" data-waypoint="VII">
         <div class="container chapter-inner">
-          <div class="waypoint">VI</div>
+          <div class="waypoint">VII</div>
+          <div class="page page-wide">
+            <p class="chapter-label">Chapter VII</p>
+            <h2>Volunteer</h2>
+            <p class="chapter-intro">Quality doesn&rsquo;t clock out. Here&rsquo;s where I chase it outside of work.</p>
+
+            <h3 class="origin-subhead">Volunteering</h3>
+            <div class="card-grid">
+              <article class="card">
+                <h3>Hosting Gentleman&rsquo;s Game</h3>
+                <p class="card-meta">Volunteer Host &middot; Monthly Board Game Night</p>
+                <p>
+                  I volunteer to host monthly board game nights with QA engineers and friends:
+                  a space built for collaboration and unfiltered, authentic conversation, where
+                  anyone can show up and talk shop about anything QA.
+                </p>
+                <div class="gg-strip">
+                  <img src="/images/gg-sign.jpg" alt="The Gentleman's Game neon sign" loading="lazy" />
+                  <img src="/images/gg-game-night.jpg" alt="A Gentleman's Game board game night" loading="lazy" />
+                </div>
+              </article>
+            </div>
+
+            <h3 class="origin-subhead">Other Quality Adventures</h3>
+            <div class="card-grid">
+              <article class="card">
+                <img class="card-photo" src="/images/patricks-logo.jpg" alt="Patrick's" loading="lazy" />
+                <h3>Selected as a Test Pilot</h3>
+                <p class="card-meta"><a href="https://patricks.co/" target="_blank" rel="noopener">Patrick&rsquo;s</a> &middot; Product Reviewer &amp; QA Volunteer</p>
+                <p>
+                  Selected for Patrick&rsquo;s Test Pilot program: hands-on hardware quality
+                  control testing of hair, skin, and health products, including the SF1 Sea
+                  Salt Foam, LB1 Ultra Matte Lip Balm, SL2 Super Leggera Ultra Matte
+                  Moisturizer, and HP1 Hair Powder. I try each release, evaluate the customer
+                  experience, and write formal reviews ahead of launch. I also volunteered to
+                  bring my QA background to patricks.co itself, automating it in Cypress and
+                  Playwright and pushing myself to work modern GenAI tools into the process.
+                </p>
+                <div class="product-strip">
+                  <img src="/images/patricks-products-1.jpg" alt="Patrick's Test Pilot products: S2 conditioner, M1 shampoo, and FS1 face scrub" loading="lazy" />
+                  <img src="/images/patricks-products-2.jpg" alt="Patrick's SH+ shampoo, CD+ conditioner, and RD1 recovery and defence treatment" loading="lazy" />
+                </div>
+              </article>
+              <article class="card">
+                <h3>Pre-Alpha Game Tester</h3>
+                <p class="card-meta">League of Legends, World of Warcraft, Halo &amp; more</p>
+                <p>
+                  Invited into pre-alpha and early access testing for League of Legends, World
+                  of Warcraft, and Halo, plus private servers like Stormforge&rsquo;s take on
+                  Mists of Pandaria. I test game mechanics, push map boundaries, report bugs
+                  and exploits, and write macros that chain abilities together for faster,
+                  more optimized play.
+                </p>
+                <div class="game-strip" aria-hidden="true">
+                  <img src="/images/game-lol.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-wow-mop.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-halo.jpg" alt="" loading="lazy" />
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="chapter chapter-final" data-waypoint="VIII">
+        <div class="container chapter-inner">
+          <div class="waypoint">VIII</div>
           <div class="page">
-            <p class="chapter-label">Chapter VI</p>
+            <p class="chapter-label">Chapter VIII</p>
             <h2>Send Word</h2>
             <p>The journal ends here, but the story keeps going. Reach out any time.</p>
             <ul class="contact-list">
@@ -809,6 +972,20 @@
         <p>&copy; <span id="year"></span> Matthew D Thornell, MDT Quality Adventures</p>
       </div>
     </footer>
+
+    <nav class="chapter-nav" aria-label="Chapter navigation">
+      <button class="chapter-nav-btn" id="chapterUp" type="button" aria-label="Previous chapter">
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M4 13l6-6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <div class="chapter-nav-divider" aria-hidden="true"></div>
+      <button class="chapter-nav-btn" id="chapterDown" type="button" aria-label="Next chapter">
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M4 7l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </nav>
 
     <script type="module" src="/src/main.js"></script>
   </body>
