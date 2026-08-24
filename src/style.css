@@ -262,6 +262,15 @@ a:hover {
   color: var(--parchment-dim);
   max-width: 32rem;
   margin: 0 auto 3rem;
+  transition: opacity 0.3s ease;
+}
+
+.cover-quote::before {
+  content: '\201C';
+}
+
+.cover-quote::after {
+  content: '\201D';
 }
 
 .scroll-cue {

@@ -1,11 +1,26 @@
 import './style.css';
 import { initCoverScene } from './cover-scene.js';
 import { initTypewriter, brandSegment } from './typewriter.js';
+import { initQuoteRotator } from './quote-rotator.js';
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
 const coverCanvas = document.getElementById('cover-canvas');
 const coverScene = initCoverScene(coverCanvas);
+
+const coverQuoteEl = document.getElementById('coverQuote');
+const quoteRotator = initQuoteRotator(coverQuoteEl, [
+  'Quality isn’t something we test in. It’s something we build in.',
+  'Quality is a choice, not a checklist.',
+  'The details aren’t the work. The details are what make the work.',
+  'Good enough is easy. Good work takes intention.',
+  'A good QA engineer finds problems. A great one helps the team solve them.',
+  'Quality belongs to everyone who touches the product.',
+  'Do good work, treat people well, and leave things better than you found them.',
+  'The quality of a life is shaped by the choices made every day.',
+]);
+coverQuoteEl.addEventListener('mouseenter', () => quoteRotator.pause());
+coverQuoteEl.addEventListener('mouseleave', () => quoteRotator.resume());
 
 initTypewriter(
   document.getElementById('eyebrowText'),
@@ -71,8 +86,10 @@ initTypewriter(document.getElementById('taglineText'), [
 document.addEventListener('visibilitychange', () => {
   if (document.hidden) {
     coverScene.pause();
+    quoteRotator.pause();
   } else {
     coverScene.resume();
+    quoteRotator.resume();
   }
 });
 
