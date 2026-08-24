@@ -9,7 +9,7 @@ const WORDS = [
   'WEB AUTOMATION', 'IOS AUTOMATION',
 ];
 const WORD_COLUMN_CHANCE = 0.18;
-const FONT_SIZE = 22;
+const FONT_SIZE = 20;
 const TRAIL_LENGTH = 9;
 const TARGET_FPS = 30;
 const FRAME_INTERVAL = 1000 / TARGET_FPS;
@@ -17,6 +17,23 @@ const TEXT_ZONE_REFRESH_FRAMES = 6; // getBoundingClientRect() forces a layout r
 const BRASS = '201, 161, 90';
 const TEAL = '107, 156, 137';
 const WORD_HIGHLIGHT = '221, 185, 117'; // brighter brass, so spelled-out words pop against the noise
+
+// word columns borrow the site's own display typeface, so the words that
+// surface out of the noise read as intentional/branded rather than random
+const WORD_FONT = `italic 500 ${FONT_SIZE}px "Cormorant Garamond", serif`;
+// noise columns stay mostly in the familiar code-rain monospace, with an
+// occasional italic/bold variant so the background isn't perfectly uniform
+const NOISE_FONTS = [
+  `${FONT_SIZE}px monospace`,
+  `${FONT_SIZE}px monospace`,
+  `${FONT_SIZE}px monospace`,
+  `italic ${FONT_SIZE}px monospace`,
+  `bold ${FONT_SIZE}px monospace`,
+];
+
+function randomNoiseFont() {
+  return NOISE_FONTS[(Math.random() * NOISE_FONTS.length) | 0];
+}
 
 // deterministic pseudo-random char, stable per (column, row) so nothing
 // flickers — the only motion cue is the actual scroll, kept consistent
@@ -32,11 +49,13 @@ function randomWord() {
 }
 
 function makeColumn(totalRows) {
+  const word = Math.random() < WORD_COLUMN_CHANCE ? randomWord() : null;
   return {
     head: -((Math.random() * totalRows) | 0),
     speed: 8 + Math.random() * 10, // rows per second (2x)
     color: Math.random() < 0.5 ? BRASS : TEAL,
-    word: Math.random() < WORD_COLUMN_CHANCE ? randomWord() : null,
+    word,
+    font: word ? WORD_FONT : randomNoiseFont(),
   };
 }
 
@@ -122,6 +141,7 @@ export function initCoverScene(canvas) {
     columns.forEach((col, i) => {
       const x = i * FONT_SIZE;
       const zoneMult = textZoneMultiplier(x);
+      ctx.font = col.font;
       for (let t = 0; t < TRAIL_LENGTH; t++) {
         const row = Math.floor(col.head) - t;
         if (row < 0 || row * FONT_SIZE > height) continue;
