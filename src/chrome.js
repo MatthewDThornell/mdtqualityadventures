@@ -146,12 +146,39 @@ export function initInkCursor(el) {
   if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
+  const CURSOR_LAG = 0.18;
+  const SETTLE_DISTANCE = 0.5; // px; how close x/y must ease to target before the idle loop stops itself
+
   const root = document.documentElement;
   let targetX = 0;
   let targetY = 0;
   let x = 0;
   let y = 0;
   let active = false;
+  let looping = false;
+
+  // Only keeps requestAnimationFrame going while there's actual easing left to
+  // do — either the pen is still active, or it just deactivated and x/y
+  // haven't finished catching up to the last target yet. Without this the
+  // loop would otherwise run forever from page load on every visit, even for
+  // the vast majority of visitors who never right-click to use the pen.
+  function tick() {
+    x += (targetX - x) * CURSOR_LAG;
+    y += (targetY - y) * CURSOR_LAG;
+    el.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+
+    if (!active && Math.abs(targetX - x) < SETTLE_DISTANCE && Math.abs(targetY - y) < SETTLE_DISTANCE) {
+      looping = false;
+      return;
+    }
+    requestAnimationFrame(tick);
+  }
+
+  function startLoop() {
+    if (looping) return;
+    looping = true;
+    requestAnimationFrame(tick);
+  }
 
   function hide() {
     active = false;
@@ -167,6 +194,7 @@ export function initInkCursor(el) {
       x = targetX;
       y = targetY;
       el.classList.add('is-active');
+      startLoop();
     }
   });
 
@@ -174,14 +202,11 @@ export function initInkCursor(el) {
   window.addEventListener('mouseup', (event) => {
     if (event.button === 2) hide();
   });
-
-  function raf() {
-    x += (targetX - x) * 0.18;
-    y += (targetY - y) * 0.18;
-    el.style.transform = `translate3d(${x}px, ${y}px, 0)`;
-    requestAnimationFrame(raf);
-  }
-  requestAnimationFrame(raf);
+  // Alt-Tabbing away while the right mouse button is still held never fires
+  // mouseup, so without this the glow is left stuck fully opaque on screen —
+  // initQuillCursor's own deactivate() already handles this same blur path
+  // for the pen-active class itself.
+  window.addEventListener('blur', hide);
 }
 
 // A trail of small falling code glyphs (mostly 0/1, with an occasional
@@ -335,6 +360,24 @@ export function initInkTrail(canvas) {
     sparkles = [];
   });
 
+  // draw() below stops rescheduling itself once there's nothing left to
+  // animate (pen inactive and every point/sparkle has faded) — without this
+  // the loop would otherwise run forever from page load on every visit, doing
+  // a full clearRect plus two array filters every frame, even for the vast
+  // majority of visitors who never right-click to use the pen. Right-mousedown
+  // is tracked directly here (same trigger initQuillCursor itself listens
+  // for) rather than threaded through as a callback, so this stays self-
+  // contained instead of requiring every caller to wire it up.
+  let looping = false;
+  function startDraw() {
+    if (looping) return;
+    looping = true;
+    requestAnimationFrame(draw);
+  }
+  window.addEventListener('mousedown', (event) => {
+    if (event.button === 2) startDraw();
+  });
+
   function drawSparkle(s, now, scrollX, scrollY) {
     const age = now - s.t;
     const lifeRatio = Math.max(0, 1 - age / s.life);
@@ -394,7 +437,11 @@ export function initInkTrail(canvas) {
 
     sparkles.forEach((s) => drawSparkle(s, now, scrollX, scrollY));
 
+    const stillPenActive = document.documentElement.classList.contains('pen-active');
+    if (!stillPenActive && points.length === 0 && sparkles.length === 0) {
+      looping = false;
+      return;
+    }
     requestAnimationFrame(draw);
   }
-  requestAnimationFrame(draw);
 }

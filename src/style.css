@@ -55,6 +55,23 @@ button:focus-visible,
   border-radius: 2px;
 }
 
+/* Standard visually-hidden pattern: present for assistive tech, invisible and
+   out of layout for sighted users. Used to give the typewriter-animated
+   eyebrow/tagline (see .typewriter below and src/typewriter.js) one stable,
+   complete string to read, since the animated text itself is aria-hidden and
+   passes through empty/partial/mid-cycle states a screen reader could land on. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .skip-link {
   position: absolute;
   top: -100px;
@@ -1082,7 +1099,11 @@ html.pen-active .typewriter .tw-quill {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--teal);
+  /* var(--teal) measures under the 4.5:1 WCAG AA threshold at this size
+     against the page/panel backgrounds; --teal-bright clears it (~5.2-6:1)
+     and is already used for small uppercase labels elsewhere (.eyebrow,
+     .card-meta) */
+  color: var(--teal-bright);
   margin: 0 0 0.25rem;
 }
 
