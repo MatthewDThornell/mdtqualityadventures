@@ -49,24 +49,25 @@
 
     <header class="site-header">
       <div class="container nav-row">
-        <a class="brand" href="/">MDT Quality Adventures</a>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <a class="brand" href="/" data-testid="nav-brand">MDT Quality Adventures</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" data-testid="nav-toggle">
           <span></span><span></span><span></span>
         </button>
-        <!-- Keep this list, its order, and its labels identical to the .site-nav in index.html and
-             test-automation-university.html (just with /# prefixes where needed) other than which link
-             carries aria-current="page" — these three pages don't share markup, so nothing else enforces it -->
+        <!-- Keep this list, its order, its labels, and its data-testid values identical to the
+             .site-nav in index.html and test-automation-university.html (just with /# prefixes
+             where needed) other than which link carries aria-current="page" — these three pages
+             don't share markup, so nothing else enforces it -->
         <nav class="site-nav" id="siteNav">
-          <a href="/#experience">Professional Experience</a>
-          <a href="/#fieldnotes">Accomplishments</a>
-          <a href="/qa-standards.html" aria-current="page">QA Standards</a>
-          <a href="/test-automation-university.html">TAU</a>
-          <a href="/#letters">Recommendations</a>
-          <a href="/#origins">About Me</a>
-          <a href="/#mentors">Mentors</a>
-          <a href="/#mentees">Mentees</a>
-          <a href="/#volunteer">Adventures</a>
-          <a href="/#contact">Contact</a>
+          <a href="/#experience" data-testid="nav-link-experience">Professional Experience</a>
+          <a href="/#fieldnotes" data-testid="nav-link-accomplishments">Accomplishments</a>
+          <a href="/qa-standards.html" aria-current="page" data-testid="nav-link-qa-standards">QA Standards</a>
+          <a href="/test-automation-university.html" data-testid="nav-link-tau">TAU</a>
+          <a href="/#letters" data-testid="nav-link-recommendations">Recommendations</a>
+          <a href="/#origins" data-testid="nav-link-about-me">About Me</a>
+          <a href="/#mentors" data-testid="nav-link-mentors">Mentors</a>
+          <a href="/#mentees" data-testid="nav-link-mentees">Mentees</a>
+          <a href="/#volunteer" data-testid="nav-link-adventures">Adventures</a>
+          <a href="/#contact" data-testid="nav-link-contact">Contact</a>
         </nav>
       </div>
     </header>
@@ -85,9 +86,9 @@
 
       <section class="standards-repos">
         <div class="container">
-          <div class="github-card">
+          <div class="github-card" data-testid="github-card">
             <div class="github-card-header">
-              <img src="/images/logos/github.png" alt="" class="github-icon" />
+              <img src="/images/logos/github.png" alt="" class="github-icon" loading="lazy" />
               <div>
                 <h3><a href="https://github.com/MatthewDThornell" target="_blank" rel="noopener">@MatthewDThornell</a></h3>
                 <p class="card-meta">On GitHub</p>
@@ -407,7 +408,7 @@
             <div class="code-block">
               <div class="code-block-head">
                 <span class="code-block-label">Avoid · Playwright TypeScript</span>
-                <button class="code-copy-btn" type="button">Copy</button>
+                <button class="code-copy-btn" type="button" data-testid="standards-copy-btn-locator-strategy-avoid">Copy</button>
               </div>
               <pre><code>// Breaks the moment a class name or DOM depth changes
 await page.locator('div.container &gt; ul &gt; li:nth-child(3) &gt; button.btn-primary').click();</code></pre>
@@ -415,7 +416,7 @@ await page.locator('div.container &gt; ul &gt; li:nth-child(3) &gt; button.btn-p
             <div class="code-block">
               <div class="code-block-head">
                 <span class="code-block-label">Prefer · Playwright TypeScript</span>
-                <button class="code-copy-btn" type="button">Copy</button>
+                <button class="code-copy-btn" type="button" data-testid="standards-copy-btn-locator-strategy-prefer">Copy</button>
               </div>
               <pre><code>// Survives most markup and styling changes, and reads like a spec
 await page.getByTestId('checkout-submit').click();
@@ -435,7 +436,7 @@ await page.getByRole('button', { name: 'Submit order' }).click();</code></pre>
             <div class="code-block">
               <div class="code-block-head">
                 <span class="code-block-label">Avoid · Playwright TypeScript</span>
-                <button class="code-copy-btn" type="button">Copy</button>
+                <button class="code-copy-btn" type="button" data-testid="standards-copy-btn-no-hard-sleeps-avoid">Copy</button>
               </div>
               <pre><code>await page.click('#save-button');
 await page.waitForTimeout(3000); // guessing how long the save takes
@@ -444,7 +445,7 @@ expect(await page.locator('.toast-success').isVisible()).toBe(true);</code></pre
             <div class="code-block">
               <div class="code-block-head">
                 <span class="code-block-label">Prefer · Playwright TypeScript</span>
-                <button class="code-copy-btn" type="button">Copy</button>
+                <button class="code-copy-btn" type="button" data-testid="standards-copy-btn-no-hard-sleeps-prefer">Copy</button>
               </div>
               <pre><code>await page.click('#save-button');
 await expect(page.locator('.toast-success')).toBeVisible(); // retries until it appears or times out</code></pre>
@@ -461,7 +462,7 @@ await expect(page.locator('.toast-success')).toBeVisible(); // retries until it 
             <div class="code-block">
               <div class="code-block-head">
                 <span class="code-block-label">C# · NUnit</span>
-                <button class="code-copy-btn" type="button">Copy</button>
+                <button class="code-copy-btn" type="button" data-testid="standards-copy-btn-soft-assertions">Copy</button>
               </div>
               <pre><code>public sealed class SoftAssertions
 {
@@ -505,7 +506,7 @@ await expect(page.locator('.toast-success')).toBeVisible(); // retries until it 
             <div class="code-block">
               <div class="code-block-head">
                 <span class="code-block-label">C# · NUnit</span>
-                <button class="code-copy-btn" type="button">Copy</button>
+                <button class="code-copy-btn" type="button" data-testid="standards-copy-btn-smoke-test-template">Copy</button>
               </div>
               <pre><code>[Test]
 [Category("smoke")]
@@ -536,7 +537,7 @@ public async Task Test_Login_ValidCredentials_RedirectsToDashboard()
             <div class="code-block">
               <div class="code-block-head">
                 <span class="code-block-label">JavaScript · Cypress</span>
-                <button class="code-copy-btn" type="button">Copy</button>
+                <button class="code-copy-btn" type="button" data-testid="standards-copy-btn-cypress-template">Copy</button>
               </div>
               <pre><code>describe('Checkout flow', () =&gt; {
   beforeEach(() =&gt; {
@@ -575,7 +576,7 @@ public async Task Test_Login_ValidCredentials_RedirectsToDashboard()
             <div class="code-block">
               <div class="code-block-head">
                 <span class="code-block-label">C# · NUnit</span>
-                <button class="code-copy-btn" type="button">Copy</button>
+                <button class="code-copy-btn" type="button" data-testid="standards-copy-btn-comment-template">Copy</button>
               </div>
               <pre><code>// What It Tests: The checkout page shows an inline error when a declined card is submitted.
 // Why It Matters: A silent failure here leaves the customer stuck with no path to complete an order.
@@ -590,7 +591,7 @@ public async Task Test_Checkout_DeclinedCard_ShowsInlineError() { /* ... */ }</c
             <div class="code-block">
               <div class="code-block-head">
                 <span class="code-block-label">C#</span>
-                <button class="code-copy-btn" type="button">Copy</button>
+                <button class="code-copy-btn" type="button" data-testid="standards-copy-btn-xml-doc-comments">Copy</button>
               </div>
               <pre><code>/// &lt;summary&gt;
 /// Waits for the given locator to become visible, then clicks it. Retries the wait once if
@@ -611,7 +612,7 @@ public async Task ClickWhenStableAsync(ILocator locator, int timeoutMs = 5000)
             <div class="code-block">
               <div class="code-block-head">
                 <span class="code-block-label">JavaScript</span>
-                <button class="code-copy-btn" type="button">Copy</button>
+                <button class="code-copy-btn" type="button" data-testid="standards-copy-btn-jsdoc">Copy</button>
               </div>
               <pre><code>/**
  * Polls the given selector until its text matches `expected` or the timeout elapses.
@@ -641,7 +642,7 @@ async function waitForText(selector, expected, timeoutMs = 5000) {
             <div class="code-block">
               <div class="code-block-head">
                 <span class="code-block-label">Markdown</span>
-                <button class="code-copy-btn" type="button">Copy</button>
+                <button class="code-copy-btn" type="button" data-testid="standards-copy-btn-bug-report-template">Copy</button>
               </div>
               <pre><code>## Summary
 One sentence describing the defect.

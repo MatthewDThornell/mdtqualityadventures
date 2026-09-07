@@ -77,24 +77,25 @@
 
     <header class="site-header">
       <div class="container nav-row">
-        <a class="brand" href="#top">MDT Quality Adventures</a>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <a class="brand" href="#top" data-testid="nav-brand">MDT Quality Adventures</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" data-testid="nav-toggle">
           <span></span><span></span><span></span>
         </button>
-        <!-- Keep this list, its order, and its labels identical to the .site-nav in qa-standards.html and
-             test-automation-university.html (those copies use /# prefixes and carry aria-current="page" on
-             their own link instead) — these three pages don't share markup, so nothing else enforces it -->
+        <!-- Keep this list, its order, its labels, and its data-testid values identical to the
+             .site-nav in qa-standards.html and test-automation-university.html (those copies use
+             /# prefixes and carry aria-current="page" on their own link instead) — these three
+             pages don't share markup, so nothing else enforces it -->
         <nav class="site-nav" id="siteNav">
-          <a href="#experience">Professional Experience</a>
-          <a href="#fieldnotes">Accomplishments</a>
-          <a href="/qa-standards.html">QA Standards</a>
-          <a href="/test-automation-university.html">TAU</a>
-          <a href="#letters">Recommendations</a>
-          <a href="#origins">About Me</a>
-          <a href="#mentors">Mentors</a>
-          <a href="#mentees">Mentees</a>
-          <a href="#volunteer">Adventures</a>
-          <a href="#contact">Contact</a>
+          <a href="#experience" data-testid="nav-link-experience">Professional Experience</a>
+          <a href="#fieldnotes" data-testid="nav-link-accomplishments">Accomplishments</a>
+          <a href="/qa-standards.html" data-testid="nav-link-qa-standards">QA Standards</a>
+          <a href="/test-automation-university.html" data-testid="nav-link-tau">TAU</a>
+          <a href="#letters" data-testid="nav-link-recommendations">Recommendations</a>
+          <a href="#origins" data-testid="nav-link-about-me">About Me</a>
+          <a href="#mentors" data-testid="nav-link-mentors">Mentors</a>
+          <a href="#mentees" data-testid="nav-link-mentees">Mentees</a>
+          <a href="#volunteer" data-testid="nav-link-adventures">Adventures</a>
+          <a href="#contact" data-testid="nav-link-contact">Contact</a>
         </nav>
       </div>
     </header>
@@ -102,17 +103,17 @@
     <main id="main-content">
       <section id="top" class="cover">
         <div class="container">
-          <span class="sr-only">A career portfolio, written by</span>
-          <p class="eyebrow typewriter" id="eyebrowText" aria-hidden="true">A career portfolio, written by</p>
-          <h1>Matthew D Thornell</h1>
-          <span class="sr-only">Software QA Engineer &amp; Quality Advocate</span>
-          <p class="tagline typewriter" id="taglineText" aria-hidden="true">Software QA Engineer &amp; Quality Advocate</p>
+          <span class="sr-only" data-testid="hero-eyebrow-static">A career portfolio, written by</span>
+          <p class="eyebrow typewriter" id="eyebrowText" aria-hidden="true" data-testid="hero-eyebrow">A career portfolio, written by</p>
+          <h1 data-testid="hero-heading">Matthew D Thornell</h1>
+          <span class="sr-only" data-testid="hero-tagline-static">Software QA Engineer &amp; Quality Advocate</span>
+          <p class="tagline typewriter" id="taglineText" aria-hidden="true" data-testid="hero-tagline">Software QA Engineer &amp; Quality Advocate</p>
 
-          <section id="careerTrail" class="career-trail" aria-live="polite">
+          <section id="careerTrail" class="career-trail" aria-live="polite" data-testid="career-trail">
             <ul class="career-trail-list" id="careerTrailList"></ul>
           </section>
 
-          <a class="scroll-cue" href="#chapter-one" aria-label="Who am I? Scroll down to find out">
+          <a class="scroll-cue" href="#chapter-one" aria-label="Who am I? Scroll down to find out" data-testid="hero-scroll-cue">
             <svg width="20" height="30" viewBox="0 0 16 24" fill="none" aria-hidden="true">
               <path d="M8 1v20M8 21l6-6M8 21l-6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -177,7 +178,7 @@
             </div>
 
             <div class="credential-links">
-              <a class="credential-btn" href="/resume.pdf" download>
+              <a class="credential-btn" href="/resume.pdf" download data-testid="credential-btn-resume">
                 <span class="credential-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none">
                     <path d="M6 2h9l5 5v15H6V2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
@@ -187,7 +188,7 @@
                 </span>
                 Download the Resume
               </a>
-              <a class="credential-btn" href="/letter-of-recommendation.pdf" download>
+              <a class="credential-btn" href="/letter-of-recommendation.pdf" download data-testid="credential-btn-letter">
                 <span class="credential-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none">
                     <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6" />
@@ -196,7 +197,7 @@
                 </span>
                 Letter of Recommendation
               </a>
-              <a class="credential-btn" href="https://www.linkedin.com/in/matthew-d-thornell/" target="_blank" rel="noopener">
+              <a class="credential-btn" href="https://www.linkedin.com/in/matthew-d-thornell/" target="_blank" rel="noopener" data-testid="credential-btn-linkedin">
                 <span class="credential-icon" aria-hidden="true">
                   <svg viewBox="0 0 128 128" fill="currentColor">
                     <path d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3zM39.17 107H21.06V48.73h18.11zm-9-66.21a10.5 10.5 0 1110.49-10.5 10.5 10.5 0 01-10.54 10.48zM107 107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53V48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75z" />
@@ -204,7 +205,7 @@
                 </span>
                 LinkedIn Profile
               </a>
-              <a class="credential-btn" href="https://github.com/MatthewDThornell" target="_blank" rel="noopener">
+              <a class="credential-btn" href="https://github.com/MatthewDThornell" target="_blank" rel="noopener" data-testid="credential-btn-github">
                 <span class="credential-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
@@ -215,7 +216,7 @@
             </div>
 
             <ol class="timeline">
-              <li>
+              <li data-testid="timeline-item-veterans-united">
                 <div class="timeline-when">Nov 2025 &ndash; Jul 2026 &middot; Columbia, MO (Remote)</div>
                 <h3>Software QA Engineer, QA Coach/Architect</h3>
                 <p class="timeline-org"><img class="timeline-logo" src="/images/logos/veterans-united.png" alt="" loading="lazy" /><a class="brand-link brand-veterans-united" href="https://www.veteransunited.com/" target="_blank" rel="noopener">Veterans United Home Loans</a></p>
@@ -225,7 +226,7 @@
                   QA training and demos.
                 </p>
               </li>
-              <li>
+              <li data-testid="timeline-item-seekwell-1800contacts">
                 <div class="timeline-when">Jul 2025 &ndash; Oct 2025 &middot; Draper, UT (Hybrid)</div>
                 <h3>Software Quality Engineer, Quality Advocate</h3>
                 <p class="timeline-org"><img class="timeline-logo" src="/images/logos/1800contacts.png" alt="" loading="lazy" /><a class="brand-link brand-seekwell" href="https://www.seekwell.com/" target="_blank" rel="noopener">Seekwell</a> / <a class="brand-link brand-seekwell" href="https://www.1800contacts.com/" target="_blank" rel="noopener">1-800-Contacts</a></p>
@@ -234,7 +235,7 @@
                   releases, and built observability metrics into customer-facing releases.
                 </p>
               </li>
-              <li>
+              <li data-testid="timeline-item-werner">
                 <div class="timeline-when">Feb 2022 &ndash; Nov 2024 &middot; Omaha, NE (Remote)</div>
                 <h3>Sr. Software QA Engineer, Scrum Master</h3>
                 <p class="timeline-org"><img class="timeline-logo" src="/images/logos/werner.png" alt="" loading="lazy" /><a class="brand-link brand-werner" href="https://www.werner.com/" target="_blank" rel="noopener">Werner Enterprises</a></p>
@@ -244,7 +245,7 @@
                   ADA, and HIPAA/FERPA.
                 </p>
               </li>
-              <li>
+              <li data-testid="timeline-item-conexed">
                 <div class="timeline-when">Dec 2020 &ndash; Feb 2022 &middot; Salt Lake City, UT (Hybrid)</div>
                 <h3>Lead Software QA Engineer</h3>
                 <p class="timeline-org"><img class="timeline-logo" src="/images/logos/conexed.png" alt="" loading="lazy" /><a class="brand-link brand-conexed" href="https://www.conexed.com/" target="_blank" rel="noopener">ConexED</a></p>
@@ -253,7 +254,7 @@
                   automation, cutting regression testing time by 60%.
                 </p>
               </li>
-              <li>
+              <li data-testid="timeline-item-legrand">
                 <div class="timeline-when">Jul 2019 &ndash; Sep 2020 &middot; Pleasant Grove, UT (Hybrid)</div>
                 <h3>Test Automation Engineer &rarr; QA Team Lead</h3>
                 <p class="timeline-org"><img class="timeline-logo" src="/images/logos/legrand.png" alt="" loading="lazy" /><a class="brand-link brand-legrand" href="https://www.legrand.us/" target="_blank" rel="noopener">Legrand</a></p>
@@ -262,7 +263,7 @@
                   Robot Framework and stood up a reliable 24-hour test cycle.
                 </p>
               </li>
-              <li>
+              <li data-testid="timeline-item-devmountain">
                 <div class="timeline-when">Apr 2019 &ndash; Jul 2019 &middot; Lehi, UT</div>
                 <h3>Jr. Software QA Engineer, Apprenticeship</h3>
                 <p class="timeline-org"><img class="timeline-logo" src="/images/logos/devmountain.png" alt="" loading="lazy" />DevMountain</p>
@@ -312,7 +313,7 @@
             <p class="chapter-intro">A few entries from the work itself.</p>
 
             <div class="card-grid">
-              <article class="card">
+              <article class="card" data-testid="accomplishment-card-veterans-united-coverage">
                 <h3>Zero to 80% coverage</h3>
                 <p class="card-meta"><img class="timeline-logo" src="/images/logos/veterans-united.png" alt="" loading="lazy" /><a class="brand-link brand-veterans-united" href="https://www.veteransunited.com/" target="_blank" rel="noopener">Veterans United Home Loans</a></p>
                 <p>
@@ -321,7 +322,7 @@
                   guards that kept the whole team honest.
                 </p>
               </article>
-              <article class="card">
+              <article class="card" data-testid="accomplishment-card-werner-reporting">
                 <img class="card-photo" src="/images/werner-truck.jpg" alt="Matthew at the Werner Enterprises visitor center" loading="lazy" />
                 <h3>Quality by the numbers</h3>
                 <p class="card-meta"><img class="timeline-logo" src="/images/logos/werner.png" alt="" loading="lazy" /><a class="brand-link brand-werner" href="https://www.werner.com/" target="_blank" rel="noopener">Werner Enterprises</a></p>
@@ -331,7 +332,7 @@
                   compliance checklists covering PII, SOX, ADA, and HIPAA/FERPA.
                 </p>
               </article>
-              <article class="card">
+              <article class="card" data-testid="accomplishment-card-conexed-migration">
                 <img class="card-photo" src="/images/conexed-team.jpg" alt="The ConexED QA and engineering team" loading="lazy" />
                 <h3>400+ tests, 60% faster</h3>
                 <p class="card-meta"><img class="timeline-logo" src="/images/logos/conexed.png" alt="" loading="lazy" /><a class="brand-link brand-conexed" href="https://www.conexed.com/" target="_blank" rel="noopener">ConexED</a></p>
@@ -341,7 +342,7 @@
                   still runs on.
                 </p>
               </article>
-              <article class="card">
+              <article class="card" data-testid="accomplishment-card-seekwell-stabilizing">
                 <img class="card-photo" src="/images/1800contacts-team.jpg" alt="The Seekwell / 1-800-Contacts team on a river tubing outing" loading="lazy" />
                 <h3>Stabilizing under pressure</h3>
                 <p class="card-meta"><img class="timeline-logo" src="/images/logos/1800contacts.png" alt="" loading="lazy" /><a class="brand-link brand-seekwell" href="https://www.seekwell.com/" target="_blank" rel="noopener">Seekwell</a> / <a class="brand-link brand-seekwell" href="https://www.1800contacts.com/" target="_blank" rel="noopener">1-800-Contacts</a></p>
@@ -351,7 +352,7 @@
                   customer behavior.
                 </p>
               </article>
-              <article class="card">
+              <article class="card" data-testid="accomplishment-card-cast-speaking">
                 <img class="card-photo" src="/images/speaking.jpg" alt="Matthew speaking at a CAST conference session" loading="lazy" />
                 <h3>Asking the Right Questions</h3>
                 <p class="card-meta">CAST 2025 &middot; <a href="https://www.associationforsoftwaretesting.org/" target="_blank" rel="noopener">Association for Software Testing</a></p>
@@ -375,7 +376,7 @@
             <p class="chapter-intro">Words from people I&rsquo;ve worked alongside.</p>
 
             <div class="rec-grid">
-              <article class="rec-card">
+              <article class="rec-card" data-testid="rec-card-nathan-gearke">
                 <a class="rec-avatar" href="https://www.linkedin.com/in/nathan-gearke/" target="_blank" rel="noopener">
                   <img src="/images/rec-nathan-gearke.jpg" alt="Nathan Gearke" loading="lazy" />
                 </a>
@@ -392,7 +393,7 @@
                 </blockquote>
               </article>
 
-              <article class="rec-card">
+              <article class="rec-card" data-testid="rec-card-samantha-reynolds">
                 <a class="rec-avatar" href="https://www.linkedin.com/in/samantha-reynoldssm/" target="_blank" rel="noopener">
                   <img src="/images/rec-samantha-reynolds.jpg" alt="Samantha Reynolds" loading="lazy" />
                 </a>
@@ -409,7 +410,7 @@
                 </blockquote>
               </article>
 
-              <article class="rec-card">
+              <article class="rec-card" data-testid="rec-card-ronald-white">
                 <a class="rec-avatar" href="https://www.linkedin.com/in/whiterjr/" target="_blank" rel="noopener">
                   <img src="/images/rec-ronald-white.jpg" alt="Ronald White" loading="lazy" />
                 </a>
@@ -428,7 +429,7 @@
                 </blockquote>
               </article>
 
-              <article class="rec-card">
+              <article class="rec-card" data-testid="rec-card-tod-mcconahay">
                 <a class="rec-avatar" href="https://www.linkedin.com/in/tod-mcconahay-spc-rte-582a0222/" target="_blank" rel="noopener">
                   <img src="/images/rec-tod-mcconahay.jpg" alt="Tod McConahay" loading="lazy" />
                 </a>
@@ -446,7 +447,7 @@
                 </blockquote>
               </article>
 
-              <article class="rec-card">
+              <article class="rec-card" data-testid="rec-card-andrew-sylvester">
                 <a class="rec-avatar" href="https://www.linkedin.com/in/andrew-sylvester36/" target="_blank" rel="noopener">
                   <img src="/images/rec-andrew-sylvester.jpg" alt="Andrew Sylvester" loading="lazy" />
                 </a>
@@ -467,7 +468,7 @@
                 </blockquote>
               </article>
 
-              <article class="rec-card">
+              <article class="rec-card" data-testid="rec-card-stephanie-brunsvik">
                 <a class="rec-avatar" href="https://www.linkedin.com/in/stephanie-brunsvik-32172911b/" target="_blank" rel="noopener">
                   <img src="/images/rec-stephanie-brunsvik.jpg" alt="Stephanie Brunsvik" loading="lazy" />
                 </a>
@@ -485,7 +486,7 @@
                 </blockquote>
               </article>
 
-              <article class="rec-card">
+              <article class="rec-card" data-testid="rec-card-blake-johnson">
                 <a class="rec-avatar" href="https://www.linkedin.com/in/webguyblake/" target="_blank" rel="noopener">
                   <img src="/images/rec-blake-johnson.jpg" alt="Blake Johnson" loading="lazy" />
                 </a>
@@ -503,7 +504,7 @@
                 </blockquote>
               </article>
 
-              <article class="rec-card">
+              <article class="rec-card" data-testid="rec-card-rafael-juarez">
                 <a class="rec-avatar" href="https://www.linkedin.com/in/rafael-j-3a2668140/" target="_blank" rel="noopener">
                   <img src="/images/rec-rafael-juarez.jpg" alt="Rafael Juarez" loading="lazy" />
                 </a>
@@ -522,7 +523,7 @@
                 </blockquote>
               </article>
 
-              <article class="rec-card">
+              <article class="rec-card" data-testid="rec-card-michael-gorham">
                 <a class="rec-avatar" href="https://www.linkedin.com/in/mtbikemike/" target="_blank" rel="noopener">
                   <img src="/images/rec-michael-gorham.jpg" alt="Michael Gorham" loading="lazy" />
                 </a>
@@ -544,7 +545,7 @@
                 </blockquote>
               </article>
 
-              <article class="rec-card">
+              <article class="rec-card" data-testid="rec-card-jeordin-callister">
                 <a class="rec-avatar" href="https://www.linkedin.com/in/jeordincallister/" target="_blank" rel="noopener">
                   <img src="/images/rec-jeordin-callister.jpg" alt="Jeordin Callister" loading="lazy" />
                 </a>
@@ -742,7 +743,7 @@
 
             <div class="mentor-grid">
               <!-- Intentionally not a link to a LinkedIn profile — Alex asked specifically not to have one added -->
-              <article class="mentor-card">
+              <article class="mentor-card" data-testid="mentor-card-alex-zhukovsky">
                 <div class="mentor-avatar">
                   <img src="/images/alex-zhukovsky.jpg" alt="Alex Zhukovsky" loading="lazy" />
                 </div>
@@ -759,7 +760,7 @@
                 </p>
               </article>
 
-              <article class="mentor-card">
+              <article class="mentor-card" data-testid="mentor-card-carlos-kidman">
                 <a class="mentor-avatar" href="https://www.linkedin.com/in/carlos-kidman/" target="_blank" rel="noopener">
                   <img src="/images/mentor-carlos-kidman.jpg" alt="Carlos Kidman" loading="lazy" />
                 </a>
@@ -773,7 +774,7 @@
                 </p>
               </article>
 
-              <article class="mentor-card">
+              <article class="mentor-card" data-testid="mentor-card-aj-larson">
                 <a class="mentor-avatar" href="https://www.linkedin.com/in/qajlarson/" target="_blank" rel="noopener">
                   <img src="/images/mentor-aj-larson.jpg" alt="AJ Larson" loading="lazy" />
                 </a>
@@ -788,7 +789,7 @@
                 </p>
               </article>
 
-              <article class="mentor-card">
+              <article class="mentor-card" data-testid="mentor-card-tim-velasquez">
                 <a class="mentor-avatar" href="https://www.linkedin.com/in/tim-velasquez-80880223/" target="_blank" rel="noopener">
                   <img src="/images/mentor-tim-velasquez.jpg" alt="Tim Velasquez" loading="lazy" />
                 </a>
@@ -828,7 +829,7 @@
 
             <h3 class="origin-subhead">Where Are They Now?</h3>
             <div class="mentee-grid">
-              <figure class="mentee">
+              <figure class="mentee" data-testid="mentee-card-vivian-nguyen">
                 <a href="https://www.linkedin.com/in/vivian-nguyen-bb2694244/" target="_blank" rel="noopener">
                   <img src="/images/mentee-vivian-nguyen.jpg" alt="Vivian Nguyen" loading="lazy" />
                 </a>
@@ -837,7 +838,7 @@
                   <span class="mentee-role">Software QA Engineer, Werner Enterprises</span>
                 </figcaption>
               </figure>
-              <figure class="mentee">
+              <figure class="mentee" data-testid="mentee-card-tristan-lundgreen">
                 <a href="https://www.linkedin.com/in/tristan-lundgreen/" target="_blank" rel="noopener">
                   <img src="/images/mentee-tristan-lundgreen.jpg" alt="Tristan Lundgreen" loading="lazy" />
                 </a>
@@ -846,7 +847,7 @@
                   <span class="mentee-role">SDET, Sunwest Bank</span>
                 </figcaption>
               </figure>
-              <figure class="mentee">
+              <figure class="mentee" data-testid="mentee-card-stockton-nielson">
                 <a href="https://www.linkedin.com/in/stockton-nielson/" target="_blank" rel="noopener">
                   <img src="/images/mentee-stockton-nielson.jpg" alt="Stockton Nielson" loading="lazy" />
                 </a>
@@ -855,7 +856,7 @@
                   <span class="mentee-role">Sr. SDET, Verisk</span>
                 </figcaption>
               </figure>
-              <figure class="mentee">
+              <figure class="mentee" data-testid="mentee-card-cameron-smith">
                 <a href="https://www.linkedin.com/in/cameron-jay-smith/" target="_blank" rel="noopener">
                   <img src="/images/mentee-cameron-smith.jpg" alt="Cameron Smith" loading="lazy" />
                 </a>
@@ -864,14 +865,14 @@
                   <span class="mentee-role">Software Quality Assurance Engineer, Tyler Technologies</span>
                 </figcaption>
               </figure>
-              <figure class="mentee">
+              <figure class="mentee" data-testid="mentee-card-quaid">
                 <img src="/images/mentee-quaid.jpg" alt="Quaid" loading="lazy" />
                 <figcaption>
                   <span class="mentee-name">Quaid</span>
                   <span class="mentee-role">QA Intern with 99+ years of experience.</span>
                 </figcaption>
               </figure>
-              <figure class="mentee">
+              <figure class="mentee" data-testid="mentee-card-tyler-high">
                 <a href="https://www.linkedin.com/in/tyler-high-a6b352388/" target="_blank" rel="noopener">
                   <img src="/images/mentee-tyler-high.jpg" alt="Tyler High" loading="lazy" />
                 </a>
@@ -880,7 +881,7 @@
                   <span class="mentee-role">Business Owner, High Bjorn Detail</span>
                 </figcaption>
               </figure>
-              <figure class="mentee">
+              <figure class="mentee" data-testid="mentee-card-alex-fergestad">
                 <a href="https://www.linkedin.com/in/alex-fergestad/" target="_blank" rel="noopener">
                   <img src="/images/rec-alex-fergestad.jpg" alt="Alex Fergestad" loading="lazy" />
                 </a>
@@ -889,7 +890,7 @@
                   <span class="mentee-role">Software QA Analyst, Old Republic Professional</span>
                 </figcaption>
               </figure>
-              <figure class="mentee">
+              <figure class="mentee" data-testid="mentee-card-aaron-forkel">
                 <a href="https://www.linkedin.com/in/aaron-forkel/" target="_blank" rel="noopener">
                   <img src="/images/rec-aaron-forkel.jpg" alt="Aaron Forkel" loading="lazy" />
                 </a>
@@ -898,7 +899,7 @@
                   <span class="mentee-role">Software Support Engineer, MasterControl</span>
                 </figcaption>
               </figure>
-              <figure class="mentee">
+              <figure class="mentee" data-testid="mentee-card-callum-payne">
                 <a href="https://www.linkedin.com/in/callumpayne-sw/" target="_blank" rel="noopener">
                   <img src="/images/rec-callum-payne.jpg" alt="Callum Payne" loading="lazy" />
                 </a>
@@ -907,7 +908,7 @@
                   <span class="mentee-role">QA Engineer, Glass Atlas</span>
                 </figcaption>
               </figure>
-              <figure class="mentee">
+              <figure class="mentee" data-testid="mentee-card-cj-johnson">
                 <a href="https://www.linkedin.com/in/cj-j-825266103" target="_blank" rel="noopener">
                   <img src="/images/mentee-cj-johnson.jpg" alt="CJ Johnson" loading="lazy" />
                 </a>
@@ -930,7 +931,7 @@
 
             <h3 class="origin-subhead">In Their Own Words</h3>
             <div class="rec-grid">
-              <article class="rec-card">
+              <article class="rec-card" data-testid="rec-card-vivian-nguyen">
                 <a class="rec-avatar" href="https://www.linkedin.com/in/vivian-nguyen-bb2694244/" target="_blank" rel="noopener">
                   <img src="/images/mentee-vivian-nguyen.jpg" alt="Vivian Nguyen" loading="lazy" />
                 </a>
@@ -954,7 +955,7 @@
                 </blockquote>
               </article>
 
-              <article class="rec-card">
+              <article class="rec-card" data-testid="rec-card-alex-fergestad">
                 <a class="rec-avatar" href="https://www.linkedin.com/in/alex-fergestad/" target="_blank" rel="noopener">
                   <img src="/images/rec-alex-fergestad.jpg" alt="Alex Fergestad" loading="lazy" />
                 </a>
@@ -979,7 +980,7 @@
                 </blockquote>
               </article>
 
-              <article class="rec-card">
+              <article class="rec-card" data-testid="rec-card-aaron-forkel">
                 <a class="rec-avatar" href="https://www.linkedin.com/in/aaron-forkel/" target="_blank" rel="noopener">
                   <img src="/images/rec-aaron-forkel.jpg" alt="Aaron Forkel" loading="lazy" />
                 </a>
@@ -1004,7 +1005,7 @@
                 </blockquote>
               </article>
 
-              <article class="rec-card">
+              <article class="rec-card" data-testid="rec-card-tristan-lundgreen">
                 <a class="rec-avatar" href="https://www.linkedin.com/in/tristan-lundgreen/" target="_blank" rel="noopener">
                   <img src="/images/mentee-tristan-lundgreen.jpg" alt="Tristan Lundgreen" loading="lazy" />
                 </a>
@@ -1026,7 +1027,7 @@
                 </blockquote>
               </article>
 
-              <article class="rec-card">
+              <article class="rec-card" data-testid="rec-card-callum-payne">
                 <a class="rec-avatar" href="https://www.linkedin.com/in/callumpayne-sw/" target="_blank" rel="noopener">
                   <img src="/images/rec-callum-payne.jpg" alt="Callum Payne" loading="lazy" />
                 </a>
@@ -1048,7 +1049,7 @@
                 </blockquote>
               </article>
 
-              <article class="rec-card">
+              <article class="rec-card" data-testid="rec-card-stockton-nielson">
                 <a class="rec-avatar" href="https://www.linkedin.com/in/stockton-nielson/" target="_blank" rel="noopener">
                   <img src="/images/mentee-stockton-nielson.jpg" alt="Stockton Nielson" loading="lazy" />
                 </a>
@@ -1071,7 +1072,7 @@
                 </blockquote>
               </article>
 
-              <article class="rec-card">
+              <article class="rec-card" data-testid="rec-card-cj-johnson">
                 <a class="rec-avatar" href="https://www.linkedin.com/in/cj-j-825266103" target="_blank" rel="noopener">
                   <img src="/images/mentee-cj-johnson.jpg" alt="CJ Johnson" loading="lazy" />
                 </a>
@@ -1104,7 +1105,7 @@
 
             <h3 class="origin-subhead">Volunteering</h3>
             <div class="card-grid">
-              <article class="card">
+              <article class="card" data-testid="adventure-card-gentlemans-game">
                 <h3>Hosting Gentleman&rsquo;s Game</h3>
                 <p class="card-meta">Volunteer Host &middot; Monthly Board Game Night</p>
                 <p>
@@ -1121,7 +1122,7 @@
 
             <h3 class="origin-subhead">Other Quality Adventures</h3>
             <div class="card-grid">
-              <article class="card">
+              <article class="card" data-testid="adventure-card-patricks-test-pilot">
                 <img class="card-photo" src="/images/patricks-logo.jpg" alt="Patrick's" loading="lazy" />
                 <h3>Test Pilot</h3>
                 <p class="card-meta"><a href="https://patricks.co/" target="_blank" rel="noopener">Patrick&rsquo;s</a> &middot; Product Reviewer &amp; QA Volunteer</p>
@@ -1141,7 +1142,7 @@
                   <img src="/images/patricks-products-4.jpg" alt="Patrick's WE1 Deodorant, WE2 Moisturizer, and WE3 Eye Serum" loading="lazy" />
                 </div>
               </article>
-              <article class="card">
+              <article class="card" data-testid="adventure-card-game-tester">
                 <div class="platform-header" aria-hidden="true">
                   <span class="platform-badge"><img src="/images/logos/platforms/xbox.svg" alt="" loading="lazy" /></span>
                   <span class="platform-badge"><img src="/images/logos/platforms/steam.svg" alt="" loading="lazy" /></span>
@@ -1196,7 +1197,7 @@
 
             <h3 class="origin-subhead">Team Building</h3>
             <div class="card-grid">
-              <article class="card">
+              <article class="card" data-testid="adventure-card-legrand-skydiving">
                 <img class="card-photo card-photo-top" src="/images/skydive-legrand-qa.jpg" alt="Matthew and the local Legrand QA engineers suited up together before a skydive" loading="lazy" />
                 <h3>Skydiving with the QA Team</h3>
                 <p class="card-meta"><img class="timeline-logo" src="/images/logos/legrand.png" alt="" loading="lazy" /><a class="brand-link brand-legrand" href="https://www.legrand.us/" target="_blank" rel="noopener">Legrand</a></p>
@@ -1206,7 +1207,7 @@
                   than jumping out of a plane together.
                 </p>
               </article>
-              <article class="card">
+              <article class="card" data-testid="adventure-card-conexed-summit">
                 <img class="card-photo" src="/images/conexed-grand-america.jpg" alt="The ConexED team at a summit at the Grand America hotel" loading="lazy" />
                 <h3>ConexED Summit at Grand America</h3>
                 <p class="card-meta"><img class="timeline-logo" src="/images/logos/conexed.png" alt="" loading="lazy" /><a class="brand-link brand-conexed" href="https://www.conexed.com/" target="_blank" rel="noopener">ConexED</a> &middot; <a href="https://www.grandamerica.com/" target="_blank" rel="noopener">Grand America</a></p>
@@ -1216,7 +1217,7 @@
                   to explore new ways to improve education for students across the board.
                 </p>
               </article>
-              <article class="card">
+              <article class="card" data-testid="adventure-card-seekwell-provo-river">
                 <img class="card-photo" src="/images/seekwell-provo-river.jpg" alt="The Seekwell team floating down the Provo River" loading="lazy" />
                 <h3>Floating the Provo River with Seekwell</h3>
                 <p class="card-meta"><img class="timeline-logo" src="/images/logos/1800contacts.png" alt="" loading="lazy" /><a class="brand-link brand-seekwell" href="https://www.seekwell.com/" target="_blank" rel="noopener">Seekwell</a></p>
@@ -1242,7 +1243,7 @@
             <p>The journal ends here, but the story keeps going. Reach out any time.</p>
             <ul class="contact-list">
               <li>
-                <a class="contact-row" href="mailto:MatthewDavidThornell@gmail.com">
+                <a class="contact-row" href="mailto:MatthewDavidThornell@gmail.com" data-testid="contact-link-email">
                   <span class="contact-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none">
                       <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6" />
@@ -1253,7 +1254,7 @@
                 </a>
               </li>
               <li>
-                <a class="contact-row" href="tel:+18016608758">
+                <a class="contact-row" href="tel:+18016608758" data-testid="contact-link-phone">
                   <span class="contact-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none">
                       <path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
@@ -1263,7 +1264,7 @@
                 </a>
               </li>
               <li>
-                <a class="contact-row" href="https://www.linkedin.com/in/matthew-d-thornell/" target="_blank" rel="noopener">
+                <a class="contact-row" href="https://www.linkedin.com/in/matthew-d-thornell/" target="_blank" rel="noopener" data-testid="contact-link-linkedin">
                   <span class="contact-icon" aria-hidden="true">
                     <svg viewBox="0 0 128 128" fill="currentColor">
                       <path d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3zM39.17 107H21.06V48.73h18.11zm-9-66.21a10.5 10.5 0 1110.49-10.5 10.5 10.5 0 01-10.54 10.48zM107 107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53V48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75z" />
@@ -1273,7 +1274,7 @@
                 </a>
               </li>
               <li>
-                <a class="contact-row" href="https://github.com/MatthewDThornell" target="_blank" rel="noopener">
+                <a class="contact-row" href="https://github.com/MatthewDThornell" target="_blank" rel="noopener" data-testid="contact-link-github">
                   <span class="contact-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="currentColor">
                       <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
@@ -1283,7 +1284,7 @@
                 </a>
               </li>
               <li>
-                <a class="contact-row" href="https://qap.dev" target="_blank" rel="noopener">
+                <a class="contact-row" href="https://qap.dev" target="_blank" rel="noopener" data-testid="contact-link-qap">
                   <span class="contact-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none">
                       <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6" />
@@ -1294,7 +1295,7 @@
                 </a>
               </li>
             </ul>
-            <a class="resume-btn" href="/resume.pdf" download>Download the Resume</a>
+            <a class="resume-btn" href="/resume.pdf" download data-testid="contact-resume-btn">Download the Resume</a>
           </div>
         </div>
       </section>

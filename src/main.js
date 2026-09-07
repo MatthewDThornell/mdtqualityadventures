@@ -114,14 +114,24 @@ function buildTrailLine(segments) {
   return `${logoImg}${titleHtml}${logoImg}`;
 }
 
+// data-testid="career-trail-item-<company-slug>" convention, see README#automation-ids
+function slugify(text) {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
 function addToCareerTrail(phrase) {
   // only the "Former X at Y" phrases carry segments — the current role and the
   // whimsical one-liners aren't career history, so they don't belong in the trail
   if (!phrase.segments || seenCareerPhrases.has(phrase.text)) return;
   seenCareerPhrases.add(phrase.text);
 
+  const logoSeg = phrase.segments.find((s) => s.logoSrc);
   const li = document.createElement('li');
   li.className = 'career-trail-item';
+  li.dataset.testid = `career-trail-item-${slugify(logoSeg.term)}`;
   li.innerHTML = buildTrailLine(phrase.segments);
   careerTrailList.appendChild(li);
   // force a style flush so the transition below plays instead of the item just appearing

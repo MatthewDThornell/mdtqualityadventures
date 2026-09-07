@@ -68,6 +68,9 @@ document.querySelectorAll('.tau-course-toggle').forEach((button) => {
     const iframe = document.createElement('iframe');
     iframe.src = `https://www.youtube.com/embed/${videoId}`;
     iframe.title = courseName;
+    // scoped per video-id rather than a single shared id, since a viewer can
+    // have more than one course's embed open at once
+    iframe.dataset.testid = `tau-video-embed-${videoId}`;
     iframe.loading = 'lazy';
     iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
     iframe.allowFullscreen = true;
