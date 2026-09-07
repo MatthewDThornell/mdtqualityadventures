@@ -480,11 +480,32 @@ export function initCoverScene(canvas, options = {}) {
   }
 
   function resume() {
-    resize();
+    // resize() rebuilds every column with fresh random words/snippets, so
+    // only pay for that when the viewport actually changed while hidden —
+    // otherwise every tab-switch-back re-randomizes the whole rain for no
+    // visible reason.
+    if (window.innerWidth !== width || window.innerHeight !== height) {
+      resize();
+    }
     start();
   }
 
-  window.addEventListener('resize', resize);
+  // dragging a window edge fires resize dozens of times a second; resize()
+  // rebuilds every column (Array.from + makeColumn per column) each time,
+  // which is real layout/GC work for a purely cosmetic background. Debounce
+  // to one rebuild after the drag settles — the canvas just stretches via
+  // its CSS width/height in between, imperceptible during a fast drag.
+  const RESIZE_DEBOUNCE_MS = 150;
+  let resizeTimer = null;
+  function scheduleResize() {
+    if (resizeTimer !== null) clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      resizeTimer = null;
+      resize();
+    }, RESIZE_DEBOUNCE_MS);
+  }
+
+  window.addEventListener('resize', scheduleResize);
   resize();
 
   if (prefersReducedMotion) {

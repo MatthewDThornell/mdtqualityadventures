@@ -14,7 +14,8 @@
     "test:smoke": "playwright test --grep @smoke",
     "test:headed": "playwright test --headed",
     "test:ui": "playwright test --ui",
-    "test:report": "playwright show-report"
+    "test:report": "playwright show-report",
+    "optimize:images": "node scripts/optimize-images.mjs"
   },
   "devDependencies": {
     "@playwright/test": "^1.63.0",
