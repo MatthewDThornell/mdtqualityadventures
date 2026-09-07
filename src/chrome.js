@@ -137,8 +137,8 @@ export function initScrollRibbon(fillEl) {
   update();
 }
 
-// A soft ink-glow that trails the mouse with a bit of lag — only while the
-// quill is active (right-click held, see initQuillCursor), so the default
+// A soft brass/teal glow that trails the mouse with a bit of lag — only while
+// the quill is active (right-click held, see initQuillCursor), so the default
 // cursor stays plain and this reads as something the pen does, not ambient
 // page decoration. Skipped on touch devices and under reduced-motion.
 export function initInkCursor(el) {
@@ -184,37 +184,39 @@ export function initInkCursor(el) {
   requestAnimationFrame(raf);
 }
 
-// A brass ink stroke that draws itself along the cursor's path and fades like
-// wet ink drying, rather than a single glow dot. Only accumulates points while
-// the quill is active (right-click held, see initQuillCursor) — points already
-// laid down keep fading naturally after release, like lifting the pen off the
-// page. Also keeps dripping a point at the last known spot on an interval
-// while held even if the mouse doesn't move, like a leaking nib, rather than
-// only landing ink in response to movement. Same desktop/fine-pointer +
+// A trail of small falling code glyphs (mostly 0/1, with an occasional
+// bracket/symbol) that streams out along the cursor's path, like the page's
+// own digital-rain background (see cover-scene.js, which this reuses the
+// brass/teal palette from) responding to the pen. Only accumulates points
+// while the quill is active (right-click held, see initQuillCursor) — points
+// already laid down keep fading naturally after release, like the pen lifting
+// off the page. Also keeps dripping a glyph at the last known spot on an
+// interval while held even if the mouse doesn't move, rather than only
+// landing characters in response to movement. Same desktop/fine-pointer +
 // reduced-motion gating as initInkCursor.
 //
 // Each point remembers when it landed and holds full opacity for HOLD_MS
 // before fading over FADE_MS — every frame the whole trail is cleared and
-// redrawn from the point buffer with per-segment opacity based on that point's
+// redrawn from the point buffer with per-glyph opacity based on that point's
 // own age, rather than eroding the whole canvas uniformly every frame (which
-// made even just-drawn ink start dimming immediately instead of staying wet).
-// Once past HOLD_MS a point also eases downward (fallOffset), so the tail of
-// the trail visibly sags/drips as it dries rather than fading in place.
+// made even just-drawn glyphs start dimming immediately instead of staying
+// crisp). Once past HOLD_MS a point also eases downward (fallOffset), so the
+// tail of the trail visibly sinks as it fades, echoing the rain falling
+// behind it rather than just fading in place.
 //
-// A handful of small sparkle particles also spawn per mousemove and per drip,
-// drifting down with a touch of gravity and fading over their own short life —
-// the "magic" falling out of the pen tip alongside the ink itself, whether the
-// pen is moving or just held still.
+// A handful of smaller sparkle glyphs also spawn per trail point and per
+// drip, drifting down with a touch of gravity and fading over their own short
+// life — stray characters flaking off the main trail, whether the pen is
+// moving or just held still.
 //
-// Every point is stamped with the id of the stroke it belongs to (bumped on
-// each right-mousedown), and a segment is only drawn between two points that
-// share a stroke id — otherwise a point still fading from a previous stroke
-// (drawn, released, and then the pen pressed again elsewhere before it fully
-// fades) would get connected to the new stroke with a straight line across
-// the page, reading as one continuous scribble instead of two separate marks.
+// New trail points are only spawned once the pointer has moved roughly one
+// character-cell's width (MIN_POINT_SPACING) since the last one, rather than
+// on every mousemove — mousemove fires far more often than that, and without
+// the throttle the glyphs would land close enough to overlap into an
+// unreadable smear instead of reading as a spaced-out string of characters.
 //
-// Points are remembered in page coordinates (event.pageX/pageY) so ink stays
-// put at whatever spot on the page it was drawn — but the canvas itself
+// Points are remembered in page coordinates (event.pageX/pageY) so glyphs
+// stay put at whatever spot on the page they landed — but the canvas itself
 // stays viewport-sized and fixed (cheap to clear every frame), translating
 // each point by the *current* scroll offset only at draw time. An earlier
 // version instead sized the canvas to the whole ~18,000px document, which
@@ -233,12 +235,30 @@ export function initInkTrail(canvas) {
   const HOLD_MS = 400;
   const FADE_MS = 1400;
   const FALL_DISTANCE = 40; // how far a point has sagged by the time it fully fades, in CSS px
+  const TRAIL_FONT_SIZE = 13;
+  const MIN_POINT_SPACING = 16; // px between trail glyphs, roughly one character cell
+
+  // Same brass/teal duo the digital-rain background (cover-scene.js) draws
+  // its own columns in, so this reads as the same effect rather than a
+  // clashing second color scheme layered on top.
+  const TRAIL_BRASS = '221, 185, 117'; // --brass-bright
+  const TRAIL_TEAL = '107, 156, 137'; // --teal-bright
+  // weighted toward 0/1 with a handful of code-ish symbols mixed in
+  const TRAIL_CHARS = ['0', '1', '0', '1', '0', '1', '0', '1', '0', '1', '{', '}', '<', '>'];
+
+  function randomTrailChar() {
+    return TRAIL_CHARS[(Math.random() * TRAIL_CHARS.length) | 0];
+  }
+
+  function randomTrailColor() {
+    return Math.random() < 0.55 ? TRAIL_BRASS : TRAIL_TEAL;
+  }
 
   // eased droop running across the point's *entire* life (not gated behind
-  // HOLD_MS like the fade is) — gravity pulling the wet ink down the page as
-  // it dries, same spirit as the sparkles' fall. Deliberately on its own
+  // HOLD_MS like the fade is) — gravity pulling each glyph down the page as
+  // it fades, same spirit as the sparkles' fall. Deliberately on its own
   // clock rather than tied to the fade-out progress: tying the two together
-  // made the sag only become noticeable once the ink was already too faint
+  // made the sag only become noticeable once the glyph was already too faint
   // to see it happening.
   function fallOffset(age) {
     const progress = Math.max(0, Math.min(1, age / (HOLD_MS + FADE_MS)));
@@ -259,20 +279,20 @@ export function initInkTrail(canvas) {
 
   let points = [];
   let sparkles = [];
-  const SPARKLE_COLORS = ['221,185,117', '243,234,217']; // brass-bright, parchment
 
   function spawnSparkles(x, y) {
     const count = 1 + Math.floor(Math.random() * 2);
     for (let i = 0; i < count; i++) {
       sparkles.push({
-        x: x + (Math.random() - 0.5) * 8,
-        y: y + (Math.random() - 0.5) * 8,
+        x: x + (Math.random() - 0.5) * 10,
+        y: y + (Math.random() - 0.5) * 10,
         vx: (Math.random() - 0.5) * 0.4,
-        vy: 0.3 + Math.random() * 0.4,
-        size: 1.5 + Math.random() * 2,
+        vy: 0.35 + Math.random() * 0.45,
+        size: 8 + Math.random() * 3,
+        char: randomTrailChar(),
         t: performance.now(),
-        life: 700 + Math.random() * 500,
-        color: SPARKLE_COLORS[Math.floor(Math.random() * SPARKLE_COLORS.length)],
+        life: 650 + Math.random() * 450,
+        color: randomTrailColor(),
       });
     }
   }
@@ -284,25 +304,29 @@ export function initInkTrail(canvas) {
   let lastDripTime = 0;
   const DRIP_INTERVAL_MS = 90;
 
-  // bumped every time the pen is freshly pressed down (right-mousedown, same
-  // trigger as initQuillCursor's activation) and stamped onto every point as
-  // it lands. Two points only get a line drawn between them if they share a
-  // stroke id — otherwise a still-fading point from a previous stroke (e.g.
-  // one drawn, released, scrolled away from, then the pen pressed again
-  // somewhere else on the page while it's within its ~1.8s fade window) would
-  // get a straight line connecting it to wherever the new stroke starts,
-  // looking like one continuous scribble across two unrelated drawings.
-  let strokeId = 0;
-  window.addEventListener('mousedown', (event) => {
-    if (event.button === 2) strokeId++;
-  });
+  function spawnGlyphPoint(x, y) {
+    points.push({ x, y, t: performance.now(), char: randomTrailChar(), color: randomTrailColor() });
+  }
+
+  // last spot a trail glyph actually landed, distinct from lastX/lastY (every
+  // mousemove) — spawnGlyphPoint only fires once the pointer has moved past
+  // MIN_POINT_SPACING from here, so the trail reads as spaced-out characters
+  let lastSpawnX = 0;
+  let lastSpawnY = 0;
+  let hasSpawned = false;
 
   window.addEventListener('mousemove', (event) => {
     lastX = event.pageX;
     lastY = event.pageY;
     if (!document.documentElement.classList.contains('pen-active')) return;
-    points.push({ x: lastX, y: lastY, t: performance.now(), stroke: strokeId });
+    const dx = lastX - lastSpawnX;
+    const dy = lastY - lastSpawnY;
+    if (hasSpawned && dx * dx + dy * dy < MIN_POINT_SPACING * MIN_POINT_SPACING) return;
+    spawnGlyphPoint(lastX, lastY);
     spawnSparkles(lastX, lastY);
+    lastSpawnX = lastX;
+    lastSpawnY = lastY;
+    hasSpawned = true;
     lastDripTime = performance.now();
   });
 
@@ -320,23 +344,15 @@ export function initInkTrail(canvas) {
     s.y += s.vy;
     s.vy += 0.012;
 
-    const size = s.size * (0.4 + 0.6 * lifeRatio);
     const rx = s.x - scrollX;
     const ry = s.y - scrollY;
-    ctx.save();
-    ctx.globalAlpha = lifeRatio;
-    ctx.strokeStyle = `rgb(${s.color})`;
-    ctx.lineWidth = 1;
-    ctx.lineCap = 'round';
-    ctx.shadowColor = `rgb(${s.color})`;
-    ctx.shadowBlur = 3;
-    ctx.beginPath();
-    ctx.moveTo(rx - size, ry);
-    ctx.lineTo(rx + size, ry);
-    ctx.moveTo(rx, ry - size);
-    ctx.lineTo(rx, ry + size);
-    ctx.stroke();
-    ctx.restore();
+    ctx.font = `700 ${s.size.toFixed(1)}px "JetBrains Mono", ui-monospace, monospace`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillStyle = `rgba(${s.color}, ${lifeRatio.toFixed(3)})`;
+    ctx.shadowColor = `rgba(${s.color}, ${(0.7 * lifeRatio).toFixed(3)})`;
+    ctx.shadowBlur = 4;
+    ctx.fillText(s.char, rx, ry);
   }
 
   function draw() {
@@ -346,10 +362,10 @@ export function initInkTrail(canvas) {
 
     // holding the pen still (no mousemove) would otherwise mean no new points
     // ever land, since those only used to come from the mousemove listener —
-    // this keeps the tip "leaking" a drip at the last known spot on an
-    // interval, so the ink keeps landing even without moving the mouse
+    // this keeps the tip "leaking" a glyph at the last known spot on an
+    // interval, so the trail keeps growing even without moving the mouse
     if (document.documentElement.classList.contains('pen-active') && now - lastDripTime > DRIP_INTERVAL_MS) {
-      points.push({ x: lastX, y: lastY, t: now, stroke: strokeId });
+      spawnGlyphPoint(lastX, lastY);
       spawnSparkles(lastX, lastY);
       lastDripTime = now;
     }
@@ -358,28 +374,23 @@ export function initInkTrail(canvas) {
     sparkles = sparkles.filter((s) => now - s.t < s.life);
 
     ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+    ctx.font = `700 ${TRAIL_FONT_SIZE}px "JetBrains Mono", ui-monospace, monospace`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
 
-    for (let i = 1; i < points.length; i++) {
-      const point = points[i];
-      const prev = points[i - 1];
-      if (point.stroke !== prev.stroke) continue;
-
+    points.forEach((point) => {
       const age = now - point.t;
       const opacity = age <= HOLD_MS ? 1 : Math.max(0, 1 - (age - HOLD_MS) / FADE_MS);
-      if (opacity <= 0) continue;
+      if (opacity <= 0) return;
 
-      const prevFall = fallOffset(now - prev.t);
       const fall = fallOffset(age);
-      ctx.beginPath();
-      ctx.moveTo(prev.x - scrollX, prev.y - scrollY + prevFall);
-      ctx.lineTo(point.x - scrollX, point.y - scrollY + fall);
-      ctx.lineCap = 'round';
-      ctx.lineWidth = 2.5;
-      ctx.strokeStyle = `rgba(221, 185, 117, ${0.3 * opacity})`;
-      ctx.shadowColor = `rgba(201, 161, 90, ${0.35 * opacity})`;
-      ctx.shadowBlur = 4;
-      ctx.stroke();
-    }
+      const rx = point.x - scrollX;
+      const ry = point.y - scrollY + fall;
+      ctx.fillStyle = `rgba(${point.color}, ${(0.9 * opacity).toFixed(3)})`;
+      ctx.shadowColor = `rgba(${point.color}, ${(0.55 * opacity).toFixed(3)})`;
+      ctx.shadowBlur = 5;
+      ctx.fillText(point.char, rx, ry);
+    });
 
     sparkles.forEach((s) => drawSparkle(s, now, scrollX, scrollY));
 

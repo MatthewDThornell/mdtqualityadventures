@@ -227,12 +227,13 @@ html.pen-active .magic-word:hover {
   100% { transform: scale(1); opacity: 1; }
 }
 
-/* Ink-trail canvas: the actual drawn stroke following the pointer, sitting
-   just beneath .ink-cursor's glow so the glow reads as the "wet" leading tip
-   of the line trailing behind it. Desktop/fine-pointer only (see chrome.js).
-   Stays viewport-sized and fixed (cheap to clear every frame) — chrome.js
-   remembers each point's page position and offsets by scroll at draw time
-   instead, so ink still stays put on the page without an enormous canvas. */
+/* Ink-trail canvas: the falling brass/teal code glyphs drawn along the
+   pointer's path, sitting just beneath .ink-cursor's glow so the glow reads
+   as the leading tip of the trail behind it. Desktop/fine-pointer only (see
+   chrome.js). Stays viewport-sized and fixed (cheap to clear every frame) —
+   chrome.js remembers each point's page position and offsets by scroll at
+   draw time instead, so glyphs still stay put on the page without an
+   enormous canvas. */
 .ink-trail-canvas {
   position: fixed;
   inset: 0;
@@ -242,19 +243,24 @@ html.pen-active .magic-word:hover {
   z-index: 55;
 }
 
-/* Quill cursor: right-click (held) swaps the system arrow for a quill-pen
-   icon everywhere on the page, including over links/buttons that otherwise
-   set their own cursor — !important is deliberate here, since this is a
-   momentary explicit toggle (see initQuillCursor in chrome.js) rather than
-   the page's normal cursor. */
+/* Quill cursor: right-click (held) swaps the system arrow for a small
+   glowing binary-glyph badge everywhere on the page, including over
+   links/buttons that otherwise set their own cursor — !important is
+   deliberate here, since this is a momentary explicit toggle (see
+   initQuillCursor in chrome.js) rather than the page's normal cursor.
+   Matches the brass/teal palette of the glyph trail it draws (see
+   .ink-trail-canvas above) rather than the quill-pen icon used elsewhere on
+   the site (typewriter, intro flourish), since this is the one quill-themed
+   element that visually clashed with the site's code-rain motif. */
 html.pen-active,
 html.pen-active * {
-  cursor: url('/cursors/quill-cursor.svg') 2 63, auto !important;
+  cursor: url('/cursors/matrix-cursor.svg') 20 20, auto !important;
 }
 
-/* Ink-cursor: a soft glow that trails the mouse with a little lag, like an
-   ink blot following a pen. Desktop/fine-pointer only (see chrome.js), and
-   the element starts fully transparent until the first real mousemove. */
+/* Ink-cursor: a soft brass/teal glow that trails the mouse with a little
+   lag, reading as the "live" leading edge of the glyph trail behind it.
+   Desktop/fine-pointer only (see chrome.js), and the element starts fully
+   transparent until the first real mousemove. */
 .ink-cursor {
   position: fixed;
   top: 0;
@@ -263,7 +269,7 @@ html.pen-active * {
   height: 22px;
   margin: -11px 0 0 -11px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(221, 185, 117, 0.55) 0%, rgba(201, 161, 90, 0.22) 45%, transparent 72%);
+  background: radial-gradient(circle, rgba(107, 156, 137, 0.5) 0%, rgba(221, 185, 117, 0.25) 45%, transparent 72%);
   pointer-events: none;
   z-index: 60;
   opacity: 0;
