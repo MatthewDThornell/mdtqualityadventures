@@ -14,10 +14,24 @@ npm run preview   # serve the dist/ build locally
 
 No `.env`, no credentials, no backend — everything is static.
 
+## Testing
+
+```bash
+npx playwright test           # full suite
+npm run test:smoke            # @smoke-tagged tests only
+npm run test:ui               # Playwright's interactive UI mode
+npm run test:report           # open the HTML report from the last run
+```
+
+See `tests/AUTHORING_GUIDE.md` for the test-writing conventions (page objects, naming, locator
+strategy) before adding a new test.
+
 ## Deploy
 
-Netlify auto-builds `dist/` from `netlify.toml` on every push to `main`. There's no CI gate in
-front of that yet, so a clean `npm run build` locally before pushing is the only check.
+Netlify auto-builds `dist/` from `netlify.toml` on every push to `main`. `.github/workflows/ci.yml`
+also runs a full build plus the `@smoke` test suite on every push/PR to `main` — it doesn't gate
+the Netlify deploy itself (Netlify builds independently, and a red CI run on `main` doesn't stop
+it), but it does surface a broken build or a regressed smoke path as a GitHub check.
 
 ## Structure
 

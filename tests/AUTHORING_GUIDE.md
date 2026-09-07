@@ -15,10 +15,11 @@ TypeScript + `@playwright/test`, testing a site we own — not a third-party pro
 - Native `expect.soft()` and `test.step()` stand in for OptumPlaywright's custom `SoftAssertions`
   and `TestStep()` helpers — Playwright Test already does both natively, so there's no equivalent
   infrastructure to build here.
-- `playwright.config.ts` boots the Vite **dev server** (`npm run dev`) automatically via
-  `webServer` — no separate step needed before `npm test`. Swap to `npm run build && npm run
-  preview` for a production-parity run once CI is wired up (see the site's own README, "Worth
-  Doing" item on GitHub Actions).
+- `playwright.config.ts` boots a server automatically via `webServer` — no separate step needed
+  before `npm test`. Locally that's the Vite **dev server** (`npm run dev`), for fast hot-reloading
+  authoring; in CI (`.github/workflows/ci.yml`, which sets `CI=true`) it's a real **production
+  build** served via `npm run build && npm run preview`, so CI runs against what actually gets
+  deployed rather than the dev server.
 
 ## 2. File Structure
 

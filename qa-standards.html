@@ -17,7 +17,7 @@
     <meta property="og:image" content="https://mdtqualityadventures.com/images/og-cover.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Matthew D Thornell — A career portfolio, written by. Software QA Engineer & Quality Advocate." />
+    <meta property="og:image:alt" content="A career portfolio, written by Matthew D Thornell — Software QA Engineer & Quality Advocate." />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="QA Standards — Matthew D Thornell" />
     <meta name="twitter:description" content="A living reference of my tech stack, best-practice code, test case templates, commenting conventions, and bug report templates." />
@@ -90,7 +90,11 @@
             <div class="github-card-header">
               <img src="/images/logos/github.png" alt="" class="github-icon" loading="lazy" />
               <div>
-                <h3><a href="https://github.com/MatthewDThornell" target="_blank" rel="noopener">@MatthewDThornell</a></h3>
+                <!-- Not a real heading: reads as a byline over "On GitHub" below it,
+                     not a section label. It's also the first thing on the page after
+                     the h1, so keeping it a heading skipped straight to the first h2
+                     ("Tech Stack") much further down — a genuine WCAG 1.3.1 issue. -->
+                <p class="github-username"><a href="https://github.com/MatthewDThornell" target="_blank" rel="noopener">@MatthewDThornell</a></p>
                 <p class="card-meta">On GitHub</p>
               </div>
             </div>

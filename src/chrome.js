@@ -14,6 +14,7 @@
 // the page's own text and doodling in the margin at the same time.
 export function initQuillCursor({ onActivate, onDeactivate } = {}) {
   if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   const root = document.documentElement;
   let active = false;

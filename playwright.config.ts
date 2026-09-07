@@ -1,10 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
 
-// Testing against the dev server, not a production build — this is our own
-// app (unlike OptumPlaywright's live-third-party-site suite), so a fast,
-// hot-reloading local server is the right default for day-to-day authoring.
-// Swap to `npm run build && npm run preview` (see tests/AUTHORING_GUIDE.md)
-// once CI is wired up, for a production-parity run.
+// Locally: the dev server, for fast hot-reloading authoring. In CI
+// (.github/workflows/ci.yml sets CI=true): a real production build served via
+// `vite preview`, for a run that matches what actually gets deployed.
 const PORT = 5173;
 const BASE_URL = `http://localhost:${PORT}`;
 
@@ -38,9 +36,11 @@ export default defineConfig({
   ],
 
   webServer: {
-    command: 'npm run dev -- --port 5173 --strictPort',
+    command: process.env.CI
+      ? 'npm run build && npm run preview -- --port 5173 --strictPort'
+      : 'npm run dev -- --port 5173 --strictPort',
     url: BASE_URL,
     reuseExistingServer: !process.env.CI,
-    timeout: 30_000,
+    timeout: 60_000,
   },
 });
