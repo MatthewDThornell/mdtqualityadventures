@@ -14,7 +14,11 @@ export function initQuoteRotator(el, quotes) {
 
   let index = 0;
   let timeoutId = null;
-  let paused = false;
+  // a count rather than a boolean, since hover-pause, tab-visibility-pause, and
+  // pen-hold-pause can all be active independently — e.g. releasing the pen
+  // while the mouse still happens to be hovering the quote must not resume it
+  // early just because that one source let go
+  let pauseCount = 0;
 
   function swap() {
     el.style.opacity = '0';
@@ -27,20 +31,20 @@ export function initQuoteRotator(el, quotes) {
   }
 
   function start() {
-    if (timeoutId === null && !paused) {
+    if (timeoutId === null && pauseCount === 0) {
       timeoutId = setTimeout(swap, ROTATE_INTERVAL);
     }
   }
 
   function pause() {
-    paused = true;
+    pauseCount++;
     clearTimeout(timeoutId);
     timeoutId = null;
   }
 
   function resume() {
-    paused = false;
-    start();
+    pauseCount = Math.max(0, pauseCount - 1);
+    if (pauseCount === 0) start();
   }
 
   start();

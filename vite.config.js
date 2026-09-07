@@ -10,6 +10,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         qaStandards: resolve(__dirname, 'qa-standards.html'),
+        testAutomationUniversity: resolve(__dirname, 'test-automation-university.html'),
       },
     },
   },

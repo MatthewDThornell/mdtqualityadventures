@@ -14,17 +14,51 @@
     <meta property="og:title" content="Matthew D Thornell — MDT Quality Adventures" />
     <meta property="og:description" content="A journal of the quality choices, projects, and people along the way." />
     <meta property="og:url" content="https://mdtqualityadventures.com/" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="https://mdtqualityadventures.com/images/og-cover.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Matthew D Thornell — A career portfolio, written by. Software QA Engineer & Quality Advocate." />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Matthew D Thornell — MDT Quality Adventures" />
     <meta name="twitter:description" content="A journal of the quality choices, projects, and people along the way." />
+    <meta name="twitter:image" content="https://mdtqualityadventures.com/images/og-cover.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=Caveat:wght@500;600;700&family=JetBrains+Mono:wght@500;600&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- One-time cover-page flourish, homepage only — see initIntroSignature
+         in src/chrome.js (called from src/main.js) and .intro-overlay in
+         style.css. The inline script right after it runs synchronously
+         during HTML parsing (before the deferred module scripts), so a
+         repeat visit this session — or reduced-motion — hides it before it
+         ever paints, instead of flashing it for a frame. -->
+    <div class="intro-overlay" id="introOverlay" aria-hidden="true">
+      <div class="intro-signature">
+        <p class="intro-eyebrow">MDT Quality Adventures</p>
+        <h2 class="intro-title">
+          Matthew D Thornell
+          <span class="intro-quill"></span>
+        </h2>
+        <span class="intro-rule"></span>
+      </div>
+    </div>
+    <script>
+      (function () {
+        var seen = sessionStorage.getItem('mdt-intro-seen') === '1';
+        var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (seen || reduced) {
+          document.getElementById('introOverlay').style.display = 'none';
+          sessionStorage.setItem('mdt-intro-seen', '1');
+        }
+      })();
+    </script>
+
     <div class="sky" aria-hidden="true">
       <div class="stars"></div>
       <div class="mist mist-a"></div>
@@ -32,36 +66,52 @@
     </div>
     <canvas id="cover-canvas" aria-hidden="true"></canvas>
 
+    <!-- Shared page chrome (scroll ribbon + ink cursor + ink trail) — keep in
+         sync across index.html, qa-standards.html, and
+         test-automation-university.html, same as .site-nav. Driven by src/chrome.js. -->
+    <div class="scroll-ribbon" aria-hidden="true">
+      <div class="scroll-ribbon-fill" id="scrollRibbonFill"><span class="scroll-ribbon-tab"></span></div>
+    </div>
+    <canvas class="ink-trail-canvas" id="inkTrailCanvas" aria-hidden="true"></canvas>
+    <div class="ink-cursor" id="inkCursor" aria-hidden="true"></div>
+
     <header class="site-header">
       <div class="container nav-row">
         <a class="brand" href="#top">MDT Quality Adventures</a>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
+        <!-- Keep this list, its order, and its labels identical to the .site-nav in qa-standards.html and
+             test-automation-university.html (those copies use /# prefixes and carry aria-current="page" on
+             their own link instead) — these three pages don't share markup, so nothing else enforces it -->
         <nav class="site-nav" id="siteNav">
-          <a href="#origins">About Me</a>
           <a href="#experience">Professional Experience</a>
           <a href="#fieldnotes">Accomplishments</a>
           <a href="/qa-standards.html">QA Standards</a>
+          <a href="/test-automation-university.html">TAU</a>
           <a href="#letters">Recommendations</a>
+          <a href="#origins">About Me</a>
           <a href="#mentors">Mentors</a>
           <a href="#mentees">Mentees</a>
-          <a href="#volunteer">Volunteer</a>
+          <a href="#volunteer">Adventures</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <section id="top" class="cover">
         <div class="container">
           <p class="eyebrow typewriter" id="eyebrowText">A career portfolio, written by</p>
           <h1>Matthew D Thornell</h1>
           <p class="tagline typewriter" id="taglineText">Software QA Engineer &amp; Quality Advocate</p>
-          <p class="cover-quote" id="coverQuote">Quality isn&rsquo;t something we test in. It&rsquo;s something we build in.</p>
-          <a class="scroll-cue" href="#origins">
-            <span>Who am I?</span>
-            <svg width="16" height="24" viewBox="0 0 16 24" fill="none" aria-hidden="true">
+
+          <section id="careerTrail" class="career-trail" aria-live="polite">
+            <ul class="career-trail-list" id="careerTrailList"></ul>
+          </section>
+
+          <a class="scroll-cue" href="#chapter-one" aria-label="Who am I? Scroll down to find out">
+            <svg width="20" height="30" viewBox="0 0 16 24" fill="none" aria-hidden="true">
               <path d="M8 1v20M8 21l6-6M8 21l-6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </a>
@@ -70,9 +120,475 @@
 
       <div class="trail" aria-hidden="true"></div>
 
-      <section id="origins" class="chapter" data-waypoint="I">
+      <section id="chapter-one" class="chapter chapter-opener" data-waypoint="1">
         <div class="container chapter-inner">
-          <div class="waypoint">I</div>
+          <div class="waypoint">1</div>
+          <div class="page page-opener">
+            <svg class="opener-seal opener-seal-left" viewBox="0 0 100 100" aria-hidden="true">
+              <path id="workSealArcLeft" d="M 11,37.3 A 41,41 0 0 1 89,37.3" fill="none" />
+              <circle cx="50" cy="50" r="44" />
+              <circle cx="50" cy="50" r="36" />
+              <text class="opener-seal-arc" font-size="6.5" letter-spacing="1.1">
+                <textPath href="#workSealArcLeft" startOffset="50%" text-anchor="middle">TESTED &middot; VERIFIED &middot; SHIPPED</textPath>
+              </text>
+              <text x="50" y="59" text-anchor="middle" class="opener-seal-glyph">&lt;/&gt;</text>
+            </svg>
+            <svg class="opener-seal opener-seal-right" viewBox="0 0 100 100" aria-hidden="true">
+              <path id="workSealArcRight" d="M 11,37.3 A 41,41 0 0 1 89,37.3" fill="none" />
+              <circle cx="50" cy="50" r="44" />
+              <circle cx="50" cy="50" r="36" />
+              <text class="opener-seal-arc" font-size="6.5" letter-spacing="1.1">
+                <textPath href="#workSealArcRight" startOffset="50%" text-anchor="middle">BUILT WITH INTENTION</textPath>
+              </text>
+              <text x="50" y="60" text-anchor="middle" class="opener-seal-glyph">&#10003;</text>
+            </svg>
+            <p class="chapter-label">Chapter One</p>
+            <h2>The Work</h2>
+            <p class="opener-intro">
+              My professional experience, credentials, and the people who&rsquo;ve worked
+              alongside me.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="chapter" data-waypoint="1.1">
+        <div class="container chapter-inner">
+          <div class="waypoint">1.1</div>
+          <div class="page page-wide">
+            <p class="chapter-label">Chapter 1 &middot; Page 1</p>
+            <h2>Professional Experience</h2>
+            <p class="chapter-intro">
+              Seven-plus years building QA from the ground up: frameworks, pipelines,
+              and the teams that use them.
+            </p>
+
+            <div class="badges">
+              <div class="badge">
+                <img class="badge-logo" src="/images/logos/istqb.png" alt="" loading="lazy" />
+                <span>ISTQB: Certified Tester Foundation Level</span>
+              </div>
+              <div class="badge">
+                <img class="badge-logo" src="/images/logos/scrum-alliance.webp" alt="" loading="lazy" />
+                <span>Scrum Alliance: Professional Scrum Master</span>
+              </div>
+            </div>
+
+            <div class="credential-links">
+              <a class="credential-btn" href="/resume.pdf" download>
+                <span class="credential-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M6 2h9l5 5v15H6V2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                    <path d="M15 2v5h5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                    <path d="M9 12h6M9 15.5h6M9 8.5h3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                  </svg>
+                </span>
+                Download the Resume
+              </a>
+              <a class="credential-btn" href="/letter-of-recommendation.pdf" download>
+                <span class="credential-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6" />
+                    <path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                Letter of Recommendation
+              </a>
+              <a class="credential-btn" href="https://www.linkedin.com/in/matthew-d-thornell/" target="_blank" rel="noopener">
+                <span class="credential-icon" aria-hidden="true">
+                  <svg viewBox="0 0 128 128" fill="currentColor">
+                    <path d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3zM39.17 107H21.06V48.73h18.11zm-9-66.21a10.5 10.5 0 1110.49-10.5 10.5 10.5 0 01-10.54 10.48zM107 107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53V48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75z" />
+                  </svg>
+                </span>
+                LinkedIn Profile
+              </a>
+              <a class="credential-btn" href="https://github.com/MatthewDThornell" target="_blank" rel="noopener">
+                <span class="credential-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                  </svg>
+                </span>
+                GitHub
+              </a>
+            </div>
+
+            <ol class="timeline">
+              <li>
+                <div class="timeline-when">Nov 2025 &ndash; Jul 2026 &middot; Columbia, MO (Remote)</div>
+                <h3>Software QA Engineer, QA Coach/Architect</h3>
+                <p class="timeline-org"><img class="timeline-logo" src="/images/logos/veterans-united.png" alt="" loading="lazy" /><a class="brand-link brand-veterans-united" href="https://www.veteransunited.com/" target="_blank" rel="noopener">Veterans United Home Loans</a></p>
+                <p>
+                  Built Playwright automation from scratch, taking coverage from 0% to 80%.
+                  Architected in-house dashboards, alerts, and quality gates; ran department-wide
+                  QA training and demos.
+                </p>
+              </li>
+              <li>
+                <div class="timeline-when">Jul 2025 &ndash; Oct 2025 &middot; Draper, UT (Hybrid)</div>
+                <h3>Software Quality Engineer, Quality Advocate</h3>
+                <p class="timeline-org"><img class="timeline-logo" src="/images/logos/1800contacts.png" alt="" loading="lazy" /><a class="brand-link brand-seekwell" href="https://www.seekwell.com/" target="_blank" rel="noopener">Seekwell</a> / <a class="brand-link brand-seekwell" href="https://www.1800contacts.com/" target="_blank" rel="noopener">1-800-Contacts</a></p>
+                <p>
+                  Stabilized flaky Cypress/Playwright suites, automated complex A/B experiment
+                  releases, and built observability metrics into customer-facing releases.
+                </p>
+              </li>
+              <li>
+                <div class="timeline-when">Feb 2022 &ndash; Nov 2024 &middot; Omaha, NE (Remote)</div>
+                <h3>Sr. Software QA Engineer, Scrum Master</h3>
+                <p class="timeline-org"><img class="timeline-logo" src="/images/logos/werner.png" alt="" loading="lazy" /><a class="brand-link brand-werner" href="https://www.werner.com/" target="_blank" rel="noopener">Werner Enterprises</a></p>
+                <p>
+                  Designed enterprise QA reporting in Power BI, implemented BDD/TDD suites
+                  (Playwright, Selenium C#), and built compliance checklists spanning PII, SOX,
+                  ADA, and HIPAA/FERPA.
+                </p>
+              </li>
+              <li>
+                <div class="timeline-when">Dec 2020 &ndash; Feb 2022 &middot; Salt Lake City, UT (Hybrid)</div>
+                <h3>Lead Software QA Engineer</h3>
+                <p class="timeline-org"><img class="timeline-logo" src="/images/logos/conexed.png" alt="" loading="lazy" /><a class="brand-link brand-conexed" href="https://www.conexed.com/" target="_blank" rel="noopener">ConexED</a></p>
+                <p>
+                  Built QA process from scratch and migrated 400+ manual test cases into Cypress
+                  automation, cutting regression testing time by 60%.
+                </p>
+              </li>
+              <li>
+                <div class="timeline-when">Jul 2019 &ndash; Sep 2020 &middot; Pleasant Grove, UT (Hybrid)</div>
+                <h3>Test Automation Engineer &rarr; QA Team Lead</h3>
+                <p class="timeline-org"><img class="timeline-logo" src="/images/logos/legrand.png" alt="" loading="lazy" /><a class="brand-link brand-legrand" href="https://www.legrand.us/" target="_blank" rel="noopener">Legrand</a></p>
+                <p>
+                  Promoted to lead a four-person QA team; converted legacy Python automation to
+                  Robot Framework and stood up a reliable 24-hour test cycle.
+                </p>
+              </li>
+              <li>
+                <div class="timeline-when">Apr 2019 &ndash; Jul 2019 &middot; Lehi, UT</div>
+                <h3>Jr. Software QA Engineer, Apprenticeship</h3>
+                <p class="timeline-org"><img class="timeline-logo" src="/images/logos/devmountain.png" alt="" loading="lazy" />DevMountain</p>
+                <p>
+                  Software Quality Assurance Engineering, 3.8 GPA, with manual testing,
+                  automation fundamentals, and first exposure to API testing.
+                </p>
+              </li>
+            </ol>
+
+            <div class="kit">
+              <div class="kit-group">
+                <h3 class="kit-title">Automation Frameworks</h3>
+                <ul class="tags">
+                  <li>Playwright</li><li>Cypress</li><li>Selenium</li><li>Appium</li><li>Robot Framework</li>
+                </ul>
+              </div>
+              <div class="kit-group">
+                <h3 class="kit-title">Languages</h3>
+                <ul class="tags">
+                  <li>TypeScript</li><li>JavaScript</li><li>Python</li><li>C#</li><li>SQL</li>
+                </ul>
+              </div>
+              <div class="kit-group">
+                <h3 class="kit-title">CI/CD &amp; API</h3>
+                <ul class="tags">
+                  <li>GitHub Actions</li><li>Azure Pipelines</li><li>Jenkins</li><li>Postman</li><li>K6</li>
+                </ul>
+              </div>
+              <div class="kit-group">
+                <h3 class="kit-title">Project &amp; Reporting</h3>
+                <ul class="tags">
+                  <li>Jira</li><li>Azure DevOps</li><li>Power BI</li><li>Slack</li><li>Figma</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fieldnotes" class="chapter" data-waypoint="1.2">
+        <div class="container chapter-inner">
+          <div class="waypoint">1.2</div>
+          <div class="page page-wide">
+            <p class="chapter-label">Chapter 1 &middot; Page 2</p>
+            <h2>Accomplishments</h2>
+            <p class="chapter-intro">A few entries from the work itself.</p>
+
+            <div class="card-grid">
+              <article class="card">
+                <h3>Zero to 80% coverage</h3>
+                <p class="card-meta"><img class="timeline-logo" src="/images/logos/veterans-united.png" alt="" loading="lazy" /><a class="brand-link brand-veterans-united" href="https://www.veteransunited.com/" target="_blank" rel="noopener">Veterans United Home Loans</a></p>
+                <p>
+                  Built a Playwright automation framework from scratch, taking quality code
+                  coverage from 0% to 80% while standing up in-house dashboards, alerts, and
+                  guards that kept the whole team honest.
+                </p>
+              </article>
+              <article class="card">
+                <img class="card-photo" src="/images/werner-truck.jpg" alt="Matthew at the Werner Enterprises visitor center" loading="lazy" />
+                <h3>Quality by the numbers</h3>
+                <p class="card-meta"><img class="timeline-logo" src="/images/logos/werner.png" alt="" loading="lazy" /><a class="brand-link brand-werner" href="https://www.werner.com/" target="_blank" rel="noopener">Werner Enterprises</a></p>
+                <p>
+                  Designed enterprise-level QA reporting in Power BI, including visual test
+                  breakdowns, pass/fail trends, and risk assessments, alongside
+                  compliance checklists covering PII, SOX, ADA, and HIPAA/FERPA.
+                </p>
+              </article>
+              <article class="card">
+                <img class="card-photo" src="/images/conexed-team.jpg" alt="The ConexED QA and engineering team" loading="lazy" />
+                <h3>400+ tests, 60% faster</h3>
+                <p class="card-meta"><img class="timeline-logo" src="/images/logos/conexed.png" alt="" loading="lazy" /><a class="brand-link brand-conexed" href="https://www.conexed.com/" target="_blank" rel="noopener">ConexED</a></p>
+                <p>
+                  Migrated 400+ manual test cases into Cypress automation from the ground up,
+                  cutting regression testing time by 60% and building the QA process the team
+                  still runs on.
+                </p>
+              </article>
+              <article class="card">
+                <img class="card-photo" src="/images/1800contacts-team.jpg" alt="The Seekwell / 1-800-Contacts team on a river tubing outing" loading="lazy" />
+                <h3>Stabilizing under pressure</h3>
+                <p class="card-meta"><img class="timeline-logo" src="/images/logos/1800contacts.png" alt="" loading="lazy" /><a class="brand-link brand-seekwell" href="https://www.seekwell.com/" target="_blank" rel="noopener">Seekwell</a> / <a class="brand-link brand-seekwell" href="https://www.1800contacts.com/" target="_blank" rel="noopener">1-800-Contacts</a></p>
+                <p>
+                  Stabilized flaky automation inside live pipelines, automated complex A/B
+                  experiment releases, and built observability metrics that surfaced real
+                  customer behavior.
+                </p>
+              </article>
+              <article class="card">
+                <img class="card-photo" src="/images/speaking.jpg" alt="Matthew speaking at a CAST conference session" loading="lazy" />
+                <h3>Asking the Right Questions</h3>
+                <p class="card-meta">CAST 2025 &middot; <a href="https://www.associationforsoftwaretesting.org/" target="_blank" rel="noopener">Association for Software Testing</a></p>
+                <p>
+                  Spoke at CAST 2025 on asking the right questions to your team during story
+                  planning: the moment where the highest-leverage quality questions can still
+                  shape a feature before a line of code gets written.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="letters" class="chapter" data-waypoint="1.3">
+        <div class="container chapter-inner">
+          <div class="waypoint">1.3</div>
+          <div class="page page-wide">
+            <p class="chapter-label">Chapter 1 &middot; Page 3</p>
+            <h2>Recommendations</h2>
+            <p class="chapter-intro">Words from people I&rsquo;ve worked alongside.</p>
+
+            <div class="rec-grid">
+              <article class="rec-card">
+                <a class="rec-avatar" href="https://www.linkedin.com/in/nathan-gearke/" target="_blank" rel="noopener">
+                  <img src="/images/rec-nathan-gearke.jpg" alt="Nathan Gearke" loading="lazy" />
+                </a>
+                <h3><a href="https://www.linkedin.com/in/nathan-gearke/" target="_blank" rel="noopener">Nathan Gearke</a></h3>
+                <p class="rec-title">Group Engineering Manager, Veterans United Home Loans</p>
+                <blockquote>
+                  <p>
+                    &ldquo;Matthew&rsquo;s greatest strength is his holistic vision of quality. He
+                    regularly asked thoughtful, challenging questions that helped teams identify
+                    risks, clarify expectations, and improve solutions before they reached
+                    customers. &hellip; Matthew is the type of professional who leaves an
+                    organization stronger than he found it.&rdquo;
+                  </p>
+                </blockquote>
+              </article>
+
+              <article class="rec-card">
+                <a class="rec-avatar" href="https://www.linkedin.com/in/samantha-reynoldssm/" target="_blank" rel="noopener">
+                  <img src="/images/rec-samantha-reynolds.jpg" alt="Samantha Reynolds" loading="lazy" />
+                </a>
+                <h3><a href="https://www.linkedin.com/in/samantha-reynoldssm/" target="_blank" rel="noopener">Samantha Reynolds</a></h3>
+                <p class="rec-title">Teammate</p>
+                <blockquote>
+                  <p>
+                    &ldquo;Matthew is an amazing and valuable component to any team he is a part
+                    of. I have had the pleasure of working with Matthew on multiple teams and his
+                    knowledge and passion around QA and ability to share that with the team is
+                    truly an important piece to any delivery. He is reliable, humble, and most
+                    importantly hard working!&rdquo;
+                  </p>
+                </blockquote>
+              </article>
+
+              <article class="rec-card">
+                <a class="rec-avatar" href="https://www.linkedin.com/in/whiterjr/" target="_blank" rel="noopener">
+                  <img src="/images/rec-ronald-white.jpg" alt="Ronald White" loading="lazy" />
+                </a>
+                <h3><a href="https://www.linkedin.com/in/whiterjr/" target="_blank" rel="noopener">Ronald White</a></h3>
+                <p class="rec-title">Principal Product Owner</p>
+                <blockquote>
+                  <p>
+                    &ldquo;Matthew is a very knowledgeable and skilled Quality Engineer. He was
+                    instrumental with the testing of key bugs/enhancements and always provided
+                    recommendations regarding process improvement as it pertains to agile
+                    practices. Not only did he disclose known software issues, but he also asked
+                    the right clarifying questions during all the scrum ceremonies. Moreover, his
+                    technical acumen, attention to detail, and leadership are valuable. Therefore,
+                    he would be an asset to any organization.&rdquo;
+                  </p>
+                </blockquote>
+              </article>
+
+              <article class="rec-card">
+                <a class="rec-avatar" href="https://www.linkedin.com/in/tod-mcconahay-spc-rte-582a0222/" target="_blank" rel="noopener">
+                  <img src="/images/rec-tod-mcconahay.jpg" alt="Tod McConahay" loading="lazy" />
+                </a>
+                <h3><a href="https://www.linkedin.com/in/tod-mcconahay-spc-rte-582a0222/" target="_blank" rel="noopener">Tod McConahay</a></h3>
+                <p class="rec-title">Scrum Master, Werner Enterprises</p>
+                <blockquote>
+                  <p>
+                    &ldquo;It is easy for me to write that it is my pleasure to work with Matthew
+                    Daily. Matthew brings energy, insight, and skills to the team every day.
+                    Matthew has filled in for me as Scrum Master and does a great job. He also
+                    brings his QA acumen to the team and really moved the needle in advancing our
+                    testing methodology. Any team or organization would benefit from including
+                    Matthew.&rdquo;
+                  </p>
+                </blockquote>
+              </article>
+
+              <article class="rec-card">
+                <a class="rec-avatar" href="https://www.linkedin.com/in/andrew-sylvester36/" target="_blank" rel="noopener">
+                  <img src="/images/rec-andrew-sylvester.jpg" alt="Andrew Sylvester" loading="lazy" />
+                </a>
+                <h3><a href="https://www.linkedin.com/in/andrew-sylvester36/" target="_blank" rel="noopener">Andrew Sylvester</a></h3>
+                <p class="rec-title">Software Engineer, ConexED</p>
+                <blockquote>
+                  <p>
+                    &ldquo;It was an absolute pleasure working with Matthew. As a software
+                    engineer, he made my job so much easier, by creating detailed processes for
+                    reporting bugs and handing assignments back to me when they needed attention.
+                    The amount of responsibility he is able to manage on his own is very
+                    impressive, all while he is creating better strategies and implementing
+                    methodologies to improve the quality of the product without being asked. If
+                    you know Matthew, you know he will take pride in his work, and will give it
+                    his all 100% of the time. Any organization would be lucky to have
+                    him.&rdquo;
+                  </p>
+                </blockquote>
+              </article>
+
+              <article class="rec-card">
+                <a class="rec-avatar" href="https://www.linkedin.com/in/stephanie-brunsvik-32172911b/" target="_blank" rel="noopener">
+                  <img src="/images/rec-stephanie-brunsvik.jpg" alt="Stephanie Brunsvik" loading="lazy" />
+                </a>
+                <h3><a href="https://www.linkedin.com/in/stephanie-brunsvik-32172911b/" target="_blank" rel="noopener">Stephanie Brunsvik</a></h3>
+                <p class="rec-title">Full Stack Web Developer, Problem Solver</p>
+                <blockquote>
+                  <p>
+                    &ldquo;Im always impressed by Matthew&rsquo;s tenacity and strong work ethic,
+                    He is quick to volunteer to help and goes the extra mile to ensure his work is
+                    done on time. His tests are very thorough and well executed and is always
+                    eager to learn more about the technology he is testing. Finally his
+                    entertaining presence in meetings is also a continuous delight, In short
+                    he&rsquo;s a great guy!&rdquo;
+                  </p>
+                </blockquote>
+              </article>
+
+              <article class="rec-card">
+                <a class="rec-avatar" href="https://www.linkedin.com/in/webguyblake/" target="_blank" rel="noopener">
+                  <img src="/images/rec-blake-johnson.jpg" alt="Blake Johnson" loading="lazy" />
+                </a>
+                <h3><a href="https://www.linkedin.com/in/webguyblake/" target="_blank" rel="noopener">Blake Johnson, CSPO</a></h3>
+                <p class="rec-title">AI First Leader | Team Builder | Product Owner</p>
+                <blockquote>
+                  <p>
+                    &ldquo;I have had the pleasure to be up late with Matthew, patching code,
+                    testing, fixing and patching again. Matthew is always ready to help, jump in,
+                    and get his hands dirty so we can deliver quality to our customers. Matthew
+                    always has a fun story to tell and is ready with a kind word to help a
+                    colleague when their feeling low. QA is a thankless job but without Matthew we
+                    could not do what we do as developers. Thank you Matthew.&rdquo;
+                  </p>
+                </blockquote>
+              </article>
+
+              <article class="rec-card">
+                <a class="rec-avatar" href="https://www.linkedin.com/in/rafael-j-3a2668140/" target="_blank" rel="noopener">
+                  <img src="/images/rec-rafael-juarez.jpg" alt="Rafael Juarez" loading="lazy" />
+                </a>
+                <h3><a href="https://www.linkedin.com/in/rafael-j-3a2668140/" target="_blank" rel="noopener">Rafael Juarez</a></h3>
+                <p class="rec-title">Tech-minded | Blue Ribbon Winner | Build and Fixing</p>
+                <blockquote>
+                  <p>
+                    &ldquo;Many of the people that you work with through out your life, are seen
+                    as an &lsquo;average employee&rsquo;. I would categorize Matt as level apart. I
+                    have worked with Matt closely in a few capacities, and was able to see his
+                    effortless ability to learn the intricacies of his new role. He constantly
+                    demonstrates an adaptive and ingenious approach to his position and has become
+                    an integral member of our team. I would highly recommend Matt for a QA, but he
+                    is capable of being exceptional at any position.&rdquo;
+                  </p>
+                </blockquote>
+              </article>
+
+              <article class="rec-card">
+                <a class="rec-avatar" href="https://www.linkedin.com/in/mtbikemike/" target="_blank" rel="noopener">
+                  <img src="/images/rec-michael-gorham.jpg" alt="Michael Gorham" loading="lazy" />
+                </a>
+                <h3><a href="https://www.linkedin.com/in/mtbikemike/" target="_blank" rel="noopener">Michael Gorham</a></h3>
+                <p class="rec-title">CTO at ConexED</p>
+                <blockquote>
+                  <p>
+                    &ldquo;Matt is hands down the most positive and energetic person on our team.
+                    Matt is also very detail oriented. He is always ready, willing and able to
+                    help and is very generous with his time. Matt stays up late during our release
+                    nights to perform hands on validation tests &mdash; this speaks volumes to his
+                    dedication, enthusiasm and loyalty. From setting up external automation tools
+                    to writing Selenium scripts, Matt is ConexED&rsquo;s Quality Assurance expert.
+                    When demand for ConexED skyrocketed 2,000% due to the need to virtualize
+                    student support to combat the spread of COVID, Matt was instrumental in
+                    documenting bugs, testing fixes and ensuring issues found by QA flowed quickly
+                    through our Agile development process.&rdquo;
+                  </p>
+                </blockquote>
+              </article>
+
+              <article class="rec-card">
+                <a class="rec-avatar" href="https://www.linkedin.com/in/jeordincallister/" target="_blank" rel="noopener">
+                  <img src="/images/rec-jeordin-callister.jpg" alt="Jeordin Callister" loading="lazy" />
+                </a>
+                <h3><a href="https://www.linkedin.com/in/jeordincallister/" target="_blank" rel="noopener">Jeordin Callister</a></h3>
+                <p class="rec-title">Software Engineer</p>
+                <blockquote>
+                  <p>
+                    &ldquo;Matthew is a dedicated and efficient QA engineer. Having him join our
+                    organization has drastically improved the testing and implementation of code.
+                    Quick to jump into leadership roles, and assertive when it comes to improving
+                    the product.&rdquo;
+                  </p>
+                </blockquote>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="chapter-two" class="chapter chapter-opener" data-waypoint="2">
+        <div class="container chapter-inner">
+          <div class="waypoint">2</div>
+          <div class="page page-opener">
+            <svg class="opener-seal opener-seal-left" viewBox="0 0 100 100" aria-hidden="true">
+              <circle cx="50" cy="50" r="44" />
+              <circle cx="50" cy="50" r="36" />
+              <text x="50" y="61" text-anchor="middle" class="opener-seal-glyph">&#9825;</text>
+            </svg>
+            <svg class="opener-seal opener-seal-right" viewBox="0 0 100 100" aria-hidden="true">
+              <circle cx="50" cy="50" r="44" />
+              <circle cx="50" cy="50" r="36" />
+              <text x="50" y="58" text-anchor="middle" class="opener-seal-glyph">&#8734;</text>
+            </svg>
+            <p class="chapter-label">Chapter Two</p>
+            <h2>The Person</h2>
+            <p class="opener-intro">
+              Who am I? My roots, the people who shaped it, and why quality is so important
+              to me.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="origins" class="chapter" data-waypoint="2.1">
+        <div class="container chapter-inner">
+          <div class="waypoint">2.1</div>
           <div class="page page-wide">
             <svg class="about-seal" viewBox="0 0 100 100" aria-hidden="true">
               <path id="sealArc" d="M 11,37.3 A 41,41 0 0 1 89,37.3" fill="none" />
@@ -83,7 +599,7 @@
               </text>
               <text x="50" y="63" text-anchor="middle" class="about-seal-monogram">M</text>
             </svg>
-            <p class="chapter-label">Chapter I</p>
+            <p class="chapter-label">Chapter 2 &middot; Page 1</p>
             <h2>About Me</h2>
 
             <div class="origin-lead">
@@ -93,6 +609,7 @@
             </div>
 
             <p class="origin-lede">Quality.</p>
+            <p class="about-quote" id="aboutQuote">Quality isn&rsquo;t something we test in. It&rsquo;s something we build in.</p>
             <p>
               To me, quality isn&rsquo;t a checklist. It&rsquo;s a mindset: the standards I
               hold myself to, the way I treat people, and the choices I make when no one&rsquo;s
@@ -164,6 +681,46 @@
               </figure>
             </div>
 
+            <h3 class="origin-subhead">Learn, Earn, Return</h3>
+            <blockquote class="origin-quote">
+              <p>
+                &ldquo;There are three parts to your life. One part you learn, the other part you
+                earn, the next part you return.&rdquo;
+              </p>
+              <cite>/ Denzel Washington</cite>
+            </blockquote>
+            <p>
+              I try to live in all three at once, not take them in turns. I&rsquo;m still
+              learning constantly: new tools, new AI-assisted workflows, new ways to
+              think about quality. I earn through the work itself. And I return it by
+              mentoring the next wave of QA engineers, many of whom I met back when I was
+              still figuring this out myself. Doing all three at the same time, instead of
+              waiting your turn for each one, is what actually opens doors of opportunity.
+            </p>
+
+            <h3 class="origin-subhead">Habits I Try to Live By</h3>
+            <p>
+              Stephen Covey&rsquo;s <em>The 7 Habits of Highly Effective People</em> is a
+              framework I keep coming back to, not because I&rsquo;ve mastered it, but
+              because it&rsquo;s a good measuring stick:
+            </p>
+            <ol class="habits-list">
+              <li>Be Proactive</li>
+              <li>Begin with the End in Mind</li>
+              <li>Put First Things First</li>
+              <li>Think Win-Win</li>
+              <li>Seek First to Understand, Then to Be Understood</li>
+              <li>Synergize</li>
+              <li>Sharpen the Saw</li>
+            </ol>
+            <p>
+              A few of these show up directly in how I work: seeking to understand before
+              being understood is half of what makes someone good at QA, thinking win-win is
+              what makes cross-team collaboration actually hold up, and sharpening the saw is
+              why I&rsquo;m still learning new tools years into this career instead of
+              coasting on what I already know.
+            </p>
+
             <p class="origin-motto">
               If I had to sum up how I try to live, it&rsquo;s a phrase I&rsquo;ve carried for
               years: <em>&ldquo;Manners maketh man.&rdquo;</em> Quality isn&rsquo;t just about
@@ -173,543 +730,16 @@
         </div>
       </section>
 
-      <section id="experience" class="chapter" data-waypoint="II">
+      <section id="mentors" class="chapter" data-waypoint="2.2">
         <div class="container chapter-inner">
-          <div class="waypoint">II</div>
+          <div class="waypoint">2.2</div>
           <div class="page page-wide">
-            <p class="chapter-label">Chapter II</p>
-            <h2>Professional Experience</h2>
-            <p class="chapter-intro">
-              Seven-plus years building QA from the ground up: frameworks, pipelines,
-              and the teams that use them.
-            </p>
-
-            <ol class="timeline">
-              <li>
-                <div class="timeline-when">Nov 2025 &ndash; Jul 2026 &middot; Columbia, MO (Remote)</div>
-                <h3>Software QA Engineer, QA Coach/Architect</h3>
-                <p class="timeline-org"><img class="timeline-logo" src="/images/logos/veterans-united.png" alt="" loading="lazy" /><a class="brand-link brand-veterans-united" href="https://www.veteransunited.com/" target="_blank" rel="noopener">Veterans United Home Loans</a></p>
-                <p>
-                  Built Playwright automation from scratch, taking coverage from 0% to 80%.
-                  Architected in-house dashboards, alerts, and quality gates; ran department-wide
-                  QA training and demos.
-                </p>
-              </li>
-              <li>
-                <div class="timeline-when">Jul 2025 &ndash; Oct 2025 &middot; Draper, UT (Hybrid)</div>
-                <h3>Software Quality Engineer, Quality Advocate</h3>
-                <p class="timeline-org"><img class="timeline-logo" src="/images/logos/1800contacts.png" alt="" loading="lazy" /><span class="brand-link brand-seekwell">Seekwell / 1-800-Contacts</span></p>
-                <p>
-                  Stabilized flaky Cypress/Playwright suites, automated complex A/B experiment
-                  releases, and built observability metrics into customer-facing releases.
-                </p>
-              </li>
-              <li>
-                <div class="timeline-when">Feb 2022 &ndash; Nov 2024 &middot; Omaha, NE (Remote)</div>
-                <h3>Sr. Software QA Engineer, Scrum Master</h3>
-                <p class="timeline-org"><img class="timeline-logo" src="/images/logos/werner.png" alt="" loading="lazy" /><a class="brand-link brand-werner" href="https://www.werner.com/" target="_blank" rel="noopener">Werner Enterprises</a></p>
-                <p>
-                  Designed enterprise QA reporting in Power BI, implemented BDD/TDD suites
-                  (Playwright, Selenium C#), and built compliance checklists spanning PII, SOX,
-                  ADA, and HIPAA/FERPA.
-                </p>
-              </li>
-              <li>
-                <div class="timeline-when">Dec 2020 &ndash; Feb 2022 &middot; Salt Lake City, UT (Hybrid)</div>
-                <h3>Lead Software QA Engineer</h3>
-                <p class="timeline-org"><img class="timeline-logo" src="/images/logos/conexed.png" alt="" loading="lazy" /><a class="brand-link brand-conexed" href="https://www.conexed.com/" target="_blank" rel="noopener">ConexED</a></p>
-                <p>
-                  Built QA process from scratch and migrated 400+ manual test cases into Cypress
-                  automation, cutting regression testing time by 60%.
-                </p>
-              </li>
-              <li>
-                <div class="timeline-when">Jul 2019 &ndash; Sep 2020 &middot; Pleasant Grove, UT (Hybrid)</div>
-                <h3>Test Automation Engineer &rarr; QA Team Lead</h3>
-                <p class="timeline-org"><img class="timeline-logo" src="/images/logos/legrand.png" alt="" loading="lazy" /><a class="brand-link brand-legrand" href="https://www.legrand.us/" target="_blank" rel="noopener">Legrand</a></p>
-                <p>
-                  Promoted to lead a four-person QA team; converted legacy Python automation to
-                  Robot Framework and stood up a reliable 24-hour test cycle.
-                </p>
-              </li>
-              <li>
-                <div class="timeline-when">Apr 2019 &ndash; Jul 2019 &middot; Lehi, UT</div>
-                <h3>Jr. Software QA Engineer, Apprenticeship</h3>
-                <p class="timeline-org"><img class="timeline-logo" src="/images/logos/devmountain.png" alt="" loading="lazy" />DevMountain</p>
-                <p>
-                  Software Quality Assurance Engineering, 3.8 GPA, with manual testing,
-                  automation fundamentals, and first exposure to API testing.
-                </p>
-              </li>
-            </ol>
-
-            <div class="kit">
-              <div class="kit-group">
-                <h3 class="kit-title">Automation Frameworks</h3>
-                <ul class="tags">
-                  <li>Playwright</li><li>Cypress</li><li>Selenium</li><li>Appium</li><li>Robot Framework</li>
-                </ul>
-              </div>
-              <div class="kit-group">
-                <h3 class="kit-title">Languages</h3>
-                <ul class="tags">
-                  <li>TypeScript</li><li>JavaScript</li><li>Python</li><li>C#</li><li>SQL</li>
-                </ul>
-              </div>
-              <div class="kit-group">
-                <h3 class="kit-title">CI/CD &amp; API</h3>
-                <ul class="tags">
-                  <li>GitHub Actions</li><li>Azure Pipelines</li><li>Jenkins</li><li>Postman</li><li>K6</li>
-                </ul>
-              </div>
-              <div class="kit-group">
-                <h3 class="kit-title">Project &amp; Reporting</h3>
-                <ul class="tags">
-                  <li>Jira</li><li>Azure DevOps</li><li>Power BI</li><li>Slack</li><li>Figma</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="badges">
-              <div class="badge">
-                <span class="badge-mark">✓</span>
-                <span>ISTQB: Certified Tester Foundation Level</span>
-              </div>
-              <div class="badge">
-                <span class="badge-mark">✓</span>
-                <span>Scrum Alliance: Professional Scrum Master</span>
-              </div>
-            </div>
-
-            <div class="speaking-note">
-              <img src="/images/speaking.jpg" alt="Matthew speaking at an Association for Software Testing conference" loading="lazy" />
-              <p>Speaking at the Association for Software Testing (AST) conference.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="fieldnotes" class="chapter" data-waypoint="III">
-        <div class="container chapter-inner">
-          <div class="waypoint">III</div>
-          <div class="page page-wide">
-            <p class="chapter-label">Chapter III</p>
-            <h2>Accomplishments</h2>
-            <p class="chapter-intro">A few entries from the work itself.</p>
-
-            <div class="card-grid">
-              <article class="card">
-                <h3>Zero to 80% coverage</h3>
-                <p class="card-meta">Veterans United Home Loans</p>
-                <p>
-                  Built a Playwright automation framework from scratch, taking quality code
-                  coverage from 0% to 80% while standing up in-house dashboards, alerts, and
-                  guards that kept the whole team honest.
-                </p>
-              </article>
-              <article class="card">
-                <img class="card-photo" src="/images/werner-truck.jpg" alt="Matthew at the Werner Enterprises visitor center" loading="lazy" />
-                <h3>Quality by the numbers</h3>
-                <p class="card-meta">Werner Enterprises</p>
-                <p>
-                  Designed enterprise-level QA reporting in Power BI, including visual test
-                  breakdowns, pass/fail trends, and risk assessments, alongside
-                  compliance checklists covering PII, SOX, ADA, and HIPAA/FERPA.
-                </p>
-              </article>
-              <article class="card">
-                <img class="card-photo" src="/images/conexed-team.jpg" alt="The ConexED QA and engineering team" loading="lazy" />
-                <h3>400+ tests, 60% faster</h3>
-                <p class="card-meta">ConexED</p>
-                <p>
-                  Migrated 400+ manual test cases into Cypress automation from the ground up,
-                  cutting regression testing time by 60% and building the QA process the team
-                  still runs on.
-                </p>
-              </article>
-              <article class="card">
-                <img class="card-photo" src="/images/1800contacts-team.jpg" alt="The Seekwell / 1-800-Contacts team on a river tubing outing" loading="lazy" />
-                <h3>Stabilizing under pressure</h3>
-                <p class="card-meta">Seekwell / 1-800-Contacts</p>
-                <p>
-                  Stabilized flaky automation inside live pipelines, automated complex A/B
-                  experiment releases, and built observability metrics that surfaced real
-                  customer behavior.
-                </p>
-              </article>
-            </div>
-
-            <div class="github-card">
-              <div class="github-card-header">
-                <img src="/images/logos/github.png" alt="" class="github-icon" />
-                <div>
-                  <h3><a href="https://github.com/MatthewDThornell" target="_blank" rel="noopener">@MatthewDThornell</a></h3>
-                  <p class="card-meta">On GitHub</p>
-                </div>
-              </div>
-              <div class="github-repos">
-                <a class="github-repo" href="https://github.com/MatthewDThornell/mdtqualityadventures" target="_blank" rel="noopener">
-                  <span class="repo-name">mdtqualityadventures</span>
-                  <span class="repo-lang"><span class="lang-dot lang-html"></span>HTML</span>
-                </a>
-                <a class="github-repo" href="https://github.com/MatthewDThornell/Heavy-Lifting-QA-Automation" target="_blank" rel="noopener">
-                  <span class="repo-name">Heavy-Lifting-QA-Automation</span>
-                  <span class="repo-lang"><span class="lang-dot lang-csharp"></span>C#</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="letters" class="chapter" data-waypoint="IV">
-        <div class="container chapter-inner">
-          <div class="waypoint">IV</div>
-          <div class="page page-wide">
-            <p class="chapter-label">Chapter IV</p>
-            <h2>Recommendations</h2>
-            <p class="chapter-intro">Words from people I&rsquo;ve worked alongside.</p>
-
-            <div class="rec-grid">
-              <article class="rec-card">
-                <div class="rec-avatar">
-                  <img src="/images/rec-nathan-gearke.jpg" alt="Nathan Gearke" loading="lazy" />
-                </div>
-                <h3>Nathan Gearke</h3>
-                <p class="rec-title">Group Engineering Manager, Veterans United Home Loans</p>
-                <blockquote>
-                  <p>
-                    &ldquo;Matthew&rsquo;s greatest strength is his holistic vision of quality. He
-                    regularly asked thoughtful, challenging questions that helped teams identify
-                    risks, clarify expectations, and improve solutions before they reached
-                    customers. &hellip; Matthew is the type of professional who leaves an
-                    organization stronger than he found it.&rdquo;
-                  </p>
-                </blockquote>
-              </article>
-
-              <article class="rec-card">
-                <a class="rec-avatar" href="https://www.linkedin.com/in/samantha-reynoldssm/" target="_blank" rel="noopener">
-                  <img src="/images/rec-samantha-reynolds.jpg" alt="Samantha Reynolds" loading="lazy" />
-                </a>
-                <h3><a href="https://www.linkedin.com/in/samantha-reynoldssm/" target="_blank" rel="noopener">Samantha Reynolds</a></h3>
-                <p class="rec-title">Teammate</p>
-                <blockquote>
-                  <p>
-                    &ldquo;Matthew is an amazing and valuable component to any team he is a part
-                    of. I have had the pleasure of working with Matthew on multiple teams and his
-                    knowledge and passion around QA and ability to share that with the team is
-                    truly an important piece to any delivery. He is reliable, humble, and most
-                    importantly hard working!&rdquo;
-                  </p>
-                </blockquote>
-              </article>
-
-              <article class="rec-card">
-                <a class="rec-avatar" href="https://www.linkedin.com/in/vivian-nguyen-bb2694244/" target="_blank" rel="noopener">
-                  <img src="/images/mentee-vivian-nguyen.jpg" alt="Vivian Nguyen" loading="lazy" />
-                </a>
-                <h3><a href="https://www.linkedin.com/in/vivian-nguyen-bb2694244/" target="_blank" rel="noopener">Vivian Nguyen</a></h3>
-                <p class="rec-title">Software QA Engineer at Werner Enterprises</p>
-                <blockquote>
-                  <p>
-                    &ldquo;Starting my internship at Werner Enterprises, Matthew played a key role
-                    in mentoring my growth in QA. He had a knack for explaining complex ideas
-                    clearly and was an excellent communicator. Within our team and the IT
-                    organization, he stood out as a positive force, creating an atmosphere of
-                    support. Matthew taught me the importance of encouraging others and
-                    celebrating small wins to be a good leader. As a QA, building positive
-                    relationships with developers is crucial, and Matthew showed me how!
-                    Additionally, Matthew continuously explored methods to enhance our workflow.
-                    His dedication extended to refining and standardizing processes, showcasing
-                    his commitment to efficiency and excellence. I am proud to say I got the
-                    opportunity to learn from him, and I am confident that he will thrive wherever
-                    he ends up!&rdquo;
-                  </p>
-                </blockquote>
-              </article>
-
-              <article class="rec-card">
-                <a class="rec-avatar" href="https://www.linkedin.com/in/alex-fergestad/" target="_blank" rel="noopener">
-                  <img src="/images/rec-alex-fergestad.jpg" alt="Alex Fergestad" loading="lazy" />
-                </a>
-                <h3><a href="https://www.linkedin.com/in/alex-fergestad/" target="_blank" rel="noopener">Alex Fergestad</a></h3>
-                <p class="rec-title">QA Analyst @ Old Republic Professional</p>
-                <blockquote>
-                  <p>
-                    &ldquo;While interning at Werner Enterprises, I&rsquo;m excited to say that
-                    Matthew has had a big impact on me during my journey of going into the tech
-                    industry and being a software QA engineer! He offered advice ranging from
-                    software QA to overall life advice, in which most mentors do not offer.
-                    Matthew knows how to be personal, relatable, and trustworthy, and I
-                    couldn&rsquo;t have had a more engaging mentor while interning at Werner! One
-                    thing I do have to point out is that Matthew was not assigned to mentor me, he
-                    volunteered himself to take me underneath his wing and help me with whatever
-                    questions I had with Werner, and how to live life in a quality way. Matthew
-                    helped me in ways other mentors couldn&rsquo;t in the company, and I thank him
-                    so much for it! He is such a unique person, and I am so thankful to have met
-                    him in the company and hear his perspective on things! Thank you,
-                    Matthew!&rdquo;
-                  </p>
-                </blockquote>
-              </article>
-
-              <article class="rec-card">
-                <a class="rec-avatar" href="https://www.linkedin.com/in/whiterjr/" target="_blank" rel="noopener">
-                  <img src="/images/rec-ronald-white.jpg" alt="Ronald White" loading="lazy" />
-                </a>
-                <h3><a href="https://www.linkedin.com/in/whiterjr/" target="_blank" rel="noopener">Ronald White</a></h3>
-                <p class="rec-title">Principal Product Owner</p>
-                <blockquote>
-                  <p>
-                    &ldquo;Matthew is a very knowledgeable and skilled Quality Engineer. He was
-                    instrumental with the testing of key bugs/enhancements and always provided
-                    recommendations regarding process improvement as it pertains to agile
-                    practices. Not only did he disclose known software issues, but he also asked
-                    the right clarifying questions during all the scrum ceremonies. Moreover, his
-                    technical acumen, attention to detail, and leadership are valuable. Therefore,
-                    he would be an asset to any organization.&rdquo;
-                  </p>
-                </blockquote>
-              </article>
-
-              <article class="rec-card">
-                <a class="rec-avatar" href="https://www.linkedin.com/in/aaron-forkel/" target="_blank" rel="noopener">
-                  <img src="/images/rec-aaron-forkel.jpg" alt="Aaron Forkel" loading="lazy" />
-                </a>
-                <h3><a href="https://www.linkedin.com/in/aaron-forkel/" target="_blank" rel="noopener">Aaron Forkel</a></h3>
-                <p class="rec-title">Software Support Engineer</p>
-                <blockquote>
-                  <p>
-                    &ldquo;Matthew has been a close friend of mine for many years. He has shown a
-                    consistent and genuine drive to develop his skills and be an effective member
-                    of his teams, a natural, but friendly and fair leader, and a mentor to all
-                    those who seek him. He has worked with a multitude of products and services,
-                    using coding languages such as JavaScript, Python, and C++. He has honed his
-                    existing skills in APIs, Software Development + Automation, and Test Case
-                    Management. He has also built skills in framework development and management
-                    and project management (i.e Scrum Master). He has been invaluable to me in my
-                    software journey, helping me numerous times with everything from system and
-                    software initialization, to obstacles in project development. I would
-                    recommend him as an indispensable resource to anyone who needs a committed and
-                    efficient team player. You couldn&rsquo;t make a better choice than going with
-                    Matthew.&rdquo;
-                  </p>
-                </blockquote>
-              </article>
-
-              <article class="rec-card">
-                <a class="rec-avatar" href="https://www.linkedin.com/in/tristan-lundgreen/" target="_blank" rel="noopener">
-                  <img src="/images/mentee-tristan-lundgreen.jpg" alt="Tristan Lundgreen" loading="lazy" />
-                </a>
-                <h3><a href="https://www.linkedin.com/in/tristan-lundgreen/" target="_blank" rel="noopener">Tristan Lundgreen</a></h3>
-                <p class="rec-title">QA Engineer, Artist, Cyberpunk</p>
-                <blockquote>
-                  <p>
-                    &ldquo;Of all the people I&rsquo;ve worked with, Matthew has left one of the
-                    most meaningful, impactful marks on me. His vision for his own life&mdash;a
-                    life focused on quality from the bottom up&mdash;inspired me to start looking
-                    at the world from a perspective I&rsquo;d never considered. Moreover, his
-                    genuinely exceptional work ethic and instruction helped to completely
-                    transform my own professional abilities and the abilities of many whom
-                    he&rsquo;s worked with. Matthew is well positioned as an incredible engineer
-                    who, most invaluably, shares his expertise with anyone he can, bringing up not
-                    only any team he&rsquo;s on, but our entire industry with him. I couldn&rsquo;t
-                    recommend anyone more.&rdquo;
-                  </p>
-                </blockquote>
-              </article>
-
-              <article class="rec-card">
-                <a class="rec-avatar" href="https://www.linkedin.com/in/tod-mcconahay-spc-rte-582a0222/" target="_blank" rel="noopener">
-                  <img src="/images/rec-tod-mcconahay.jpg" alt="Tod McConahay" loading="lazy" />
-                </a>
-                <h3><a href="https://www.linkedin.com/in/tod-mcconahay-spc-rte-582a0222/" target="_blank" rel="noopener">Tod McConahay</a></h3>
-                <p class="rec-title">Scrum Master, Werner Enterprises</p>
-                <blockquote>
-                  <p>
-                    &ldquo;It is easy for me to write that it is my pleasure to work with Matthew
-                    Daily. Matthew brings energy, insight, and skills to the team every day.
-                    Matthew has filled in for me as Scrum Master and does a great job. He also
-                    brings his QA acumen to the team and really moved the needle in advancing our
-                    testing methodology. Any team or organization would benefit from including
-                    Matthew.&rdquo;
-                  </p>
-                </blockquote>
-              </article>
-
-              <article class="rec-card">
-                <a class="rec-avatar" href="https://www.linkedin.com/in/andrew-sylvester36/" target="_blank" rel="noopener">
-                  <img src="/images/rec-andrew-sylvester.jpg" alt="Andrew Sylvester" loading="lazy" />
-                </a>
-                <h3><a href="https://www.linkedin.com/in/andrew-sylvester36/" target="_blank" rel="noopener">Andrew Sylvester</a></h3>
-                <p class="rec-title">Software Engineer, ConexED</p>
-                <blockquote>
-                  <p>
-                    &ldquo;It was an absolute pleasure working with Matthew. As a software
-                    engineer, he made my job so much easier, by creating detailed processes for
-                    reporting bugs and handing assignments back to me when they needed attention.
-                    The amount of responsibility he is able to manage on his own is very
-                    impressive, all while he is creating better strategies and implementing
-                    methodologies to improve the quality of the product without being asked. If
-                    you know Matthew, you know he will take pride in his work, and will give it
-                    his all 100% of the time. Any organization would be lucky to have
-                    him.&rdquo;
-                  </p>
-                </blockquote>
-              </article>
-
-              <article class="rec-card">
-                <a class="rec-avatar" href="https://www.linkedin.com/in/callumpayne-sw/" target="_blank" rel="noopener">
-                  <img src="/images/rec-callum-payne.jpg" alt="Callum Payne" loading="lazy" />
-                </a>
-                <h3><a href="https://www.linkedin.com/in/callumpayne-sw/" target="_blank" rel="noopener">Callum Payne</a></h3>
-                <p class="rec-title">QA Engineer</p>
-                <blockquote>
-                  <p>
-                    &ldquo;It was an mind-opening experience being mentored by Matthew, not only
-                    did he teach me the technicalities of Software QA; he also taught me how to
-                    effectively improve myself and how to approach situations emotionally and
-                    professionally to get the best outcome of any situation. He took it upon
-                    himself to be my guide at a time that I felt lost with zero expectations of
-                    getting anything in return and yet i owe him the world for what he has done
-                    for me, I don&rsquo;t think I could have had a better mentor and friend than
-                    him and anyone that gets his attention in the future will not only feel like
-                    they have won the lottery with who they got, but are in for the most
-                    comforting learning experience of their life.&rdquo;
-                  </p>
-                </blockquote>
-              </article>
-
-              <article class="rec-card">
-                <a class="rec-avatar" href="https://www.linkedin.com/in/stephanie-brunsvik-32172911b/" target="_blank" rel="noopener">
-                  <img src="/images/rec-stephanie-brunsvik.jpg" alt="Stephanie Brunsvik" loading="lazy" />
-                </a>
-                <h3><a href="https://www.linkedin.com/in/stephanie-brunsvik-32172911b/" target="_blank" rel="noopener">Stephanie Brunsvik</a></h3>
-                <p class="rec-title">Full Stack Web Developer, Problem Solver</p>
-                <blockquote>
-                  <p>
-                    &ldquo;Im always impressed by Matthew&rsquo;s tenacity and strong work ethic,
-                    He is quick to volunteer to help and goes the extra mile to ensure his work is
-                    done on time. His tests are very thorough and well executed and is always
-                    eager to learn more about the technology he is testing. Finally his
-                    entertaining presence in meetings is also a continuous delight, In short
-                    he&rsquo;s a great guy!&rdquo;
-                  </p>
-                </blockquote>
-              </article>
-
-              <article class="rec-card">
-                <a class="rec-avatar" href="https://www.linkedin.com/in/webguyblake/" target="_blank" rel="noopener">
-                  <img src="/images/rec-blake-johnson.jpg" alt="Blake Johnson" loading="lazy" />
-                </a>
-                <h3><a href="https://www.linkedin.com/in/webguyblake/" target="_blank" rel="noopener">Blake Johnson, CSPO</a></h3>
-                <p class="rec-title">AI First Leader | Team Builder | Product Owner</p>
-                <blockquote>
-                  <p>
-                    &ldquo;I have had the pleasure to be up late with Matthew, patching code,
-                    testing, fixing and patching again. Matthew is always ready to help, jump in,
-                    and get his hands dirty so we can deliver quality to our customers. Matthew
-                    always has a fun story to tell and is ready with a kind word to help a
-                    colleague when their feeling low. QA is a thankless job but without Matthew we
-                    could not do what we do as developers. Thank you Matthew.&rdquo;
-                  </p>
-                </blockquote>
-              </article>
-
-              <article class="rec-card">
-                <a class="rec-avatar" href="https://www.linkedin.com/in/stockton-nielson/" target="_blank" rel="noopener">
-                  <img src="/images/mentee-stockton-nielson.jpg" alt="Stockton Nielson" loading="lazy" />
-                </a>
-                <h3><a href="https://www.linkedin.com/in/stockton-nielson/" target="_blank" rel="noopener">Stockton Nielson</a></h3>
-                <p class="rec-title">Sr. SDET</p>
-                <blockquote>
-                  <p>
-                    &ldquo;Matthew Thornell is one of the rare cases in which we find genuine
-                    altruism. I was able to feel kindness and integrate it into my life, He taught
-                    me the value of putting time and kindness into someone. His ability to radiate
-                    an aura of quality and knowledge will let him go far in any opportunity he
-                    chooses to pursue. Matt can easily learn and study anything he puts his mind
-                    to. If he does not know it already he soon will. In terms of technical skills
-                    Matthew taught me how to have a quality mindset as well as how agile workflows
-                    move and function, he taught me cypress automation, test pad, Jira, and
-                    Zephyr in terms of job skills he taught me how to write test cases and bug
-                    reports. Matthew is an amazing mentor and anybody would be lucky to be
-                    mentored by him.&rdquo;
-                  </p>
-                </blockquote>
-              </article>
-
-              <article class="rec-card">
-                <a class="rec-avatar" href="https://www.linkedin.com/in/rafael-j-3a2668140/" target="_blank" rel="noopener">
-                  <img src="/images/rec-rafael-juarez.jpg" alt="Rafael Juarez" loading="lazy" />
-                </a>
-                <h3><a href="https://www.linkedin.com/in/rafael-j-3a2668140/" target="_blank" rel="noopener">Rafael Juarez</a></h3>
-                <p class="rec-title">Tech-minded | Blue Ribbon Winner | Build and Fixing</p>
-                <blockquote>
-                  <p>
-                    &ldquo;Many of the people that you work with through out your life, are seen
-                    as an &lsquo;average employee&rsquo;. I would categorize Matt as level apart. I
-                    have worked with Matt closely in a few capacities, and was able to see his
-                    effortless ability to learn the intricacies of his new role. He constantly
-                    demonstrates an adaptive and ingenious approach to his position and has become
-                    an integral member of our team. I would highly recommend Matt for a QA, but he
-                    is capable of being exceptional at any position.&rdquo;
-                  </p>
-                </blockquote>
-              </article>
-
-              <article class="rec-card">
-                <a class="rec-avatar" href="https://www.linkedin.com/in/mtbikemike/" target="_blank" rel="noopener">
-                  <img src="/images/rec-michael-gorham.jpg" alt="Michael Gorham" loading="lazy" />
-                </a>
-                <h3><a href="https://www.linkedin.com/in/mtbikemike/" target="_blank" rel="noopener">Michael Gorham</a></h3>
-                <p class="rec-title">CTO at ConexED</p>
-                <blockquote>
-                  <p>
-                    &ldquo;Matt is hands down the most positive and energetic person on our team.
-                    Matt is also very detail oriented. He is always ready, willing and able to
-                    help and is very generous with his time. Matt stays up late during our release
-                    nights to perform hands on validation tests &mdash; this speaks volumes to his
-                    dedication, enthusiasm and loyalty. From setting up external automation tools
-                    to writing Selenium scripts, Matt is ConexED&rsquo;s Quality Assurance expert.
-                    When demand for ConexED skyrocketed 2,000% due to the need to virtualize
-                    student support to combat the spread of COVID, Matt was instrumental in
-                    documenting bugs, testing fixes and ensuring issues found by QA flowed quickly
-                    through our Agile development process.&rdquo;
-                  </p>
-                </blockquote>
-              </article>
-
-              <article class="rec-card">
-                <a class="rec-avatar" href="https://www.linkedin.com/in/jeordincallister/" target="_blank" rel="noopener">
-                  <img src="/images/rec-jeordin-callister.jpg" alt="Jeordin Callister" loading="lazy" />
-                </a>
-                <h3><a href="https://www.linkedin.com/in/jeordincallister/" target="_blank" rel="noopener">Jeordin Callister</a></h3>
-                <p class="rec-title">Software Engineer</p>
-                <blockquote>
-                  <p>
-                    &ldquo;Matthew is a dedicated and efficient QA engineer. Having him join our
-                    organization has drastically improved the testing and implementation of code.
-                    Quick to jump into leadership roles, and assertive when it comes to improving
-                    the product.&rdquo;
-                  </p>
-                </blockquote>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="mentors" class="chapter" data-waypoint="V">
-        <div class="container chapter-inner">
-          <div class="waypoint">V</div>
-          <div class="page page-wide">
-            <p class="chapter-label">Chapter V</p>
+            <p class="chapter-label">Chapter 2 &middot; Page 2</p>
             <h2>Mentors</h2>
             <p class="chapter-intro">The people whose quality I admired, and tried to carry forward.</p>
 
             <div class="mentor-grid">
+              <!-- Intentionally not a link to a LinkedIn profile — Alex asked specifically not to have one added -->
               <article class="mentor-card">
                 <div class="mentor-avatar">
                   <img src="/images/alex-zhukovsky.jpg" alt="Alex Zhukovsky" loading="lazy" />
@@ -774,11 +804,11 @@
         </div>
       </section>
 
-      <section id="mentees" class="chapter" data-waypoint="VI">
+      <section id="mentees" class="chapter" data-waypoint="2.3">
         <div class="container chapter-inner">
-          <div class="waypoint">VI</div>
+          <div class="waypoint">2.3</div>
           <div class="page page-wide">
-            <p class="chapter-label">Chapter VI</p>
+            <p class="chapter-label">Chapter 2 &middot; Page 3</p>
             <h2>Paying It Forward</h2>
             <p class="chapter-intro">Quality is a mindset worth passing on.</p>
 
@@ -797,38 +827,46 @@
             <h3 class="origin-subhead">Where Are They Now?</h3>
             <div class="mentee-grid">
               <figure class="mentee">
-                <img src="/images/mentee-vivian-nguyen.jpg" alt="Vivian Nguyen" loading="lazy" />
+                <a href="https://www.linkedin.com/in/vivian-nguyen-bb2694244/" target="_blank" rel="noopener">
+                  <img src="/images/mentee-vivian-nguyen.jpg" alt="Vivian Nguyen" loading="lazy" />
+                </a>
                 <figcaption>
-                  <span class="mentee-name">Vivian Nguyen</span>
+                  <span class="mentee-name"><a href="https://www.linkedin.com/in/vivian-nguyen-bb2694244/" target="_blank" rel="noopener">Vivian Nguyen</a></span>
                   <span class="mentee-role">Software QA Engineer, Werner Enterprises</span>
                 </figcaption>
               </figure>
               <figure class="mentee">
-                <img src="/images/mentee-tristan-lundgreen.jpg" alt="Tristan Lundgreen" loading="lazy" />
+                <a href="https://www.linkedin.com/in/tristan-lundgreen/" target="_blank" rel="noopener">
+                  <img src="/images/mentee-tristan-lundgreen.jpg" alt="Tristan Lundgreen" loading="lazy" />
+                </a>
                 <figcaption>
-                  <span class="mentee-name">Tristan Lundgreen</span>
-                  <span class="mentee-role">SDET, Sunwest</span>
+                  <span class="mentee-name"><a href="https://www.linkedin.com/in/tristan-lundgreen/" target="_blank" rel="noopener">Tristan Lundgreen</a></span>
+                  <span class="mentee-role">SDET, Sunwest Bank</span>
                 </figcaption>
               </figure>
               <figure class="mentee">
-                <img src="/images/mentee-stockton-nielson.jpg" alt="Stockton Nielson" loading="lazy" />
+                <a href="https://www.linkedin.com/in/stockton-nielson/" target="_blank" rel="noopener">
+                  <img src="/images/mentee-stockton-nielson.jpg" alt="Stockton Nielson" loading="lazy" />
+                </a>
                 <figcaption>
-                  <span class="mentee-name">Stockton Nielson</span>
+                  <span class="mentee-name"><a href="https://www.linkedin.com/in/stockton-nielson/" target="_blank" rel="noopener">Stockton Nielson</a></span>
                   <span class="mentee-role">Sr. SDET, Verisk</span>
                 </figcaption>
               </figure>
               <figure class="mentee">
-                <img src="/images/mentee-cameron-smith.jpg" alt="Cameron Smith" loading="lazy" />
+                <a href="https://www.linkedin.com/in/cameron-jay-smith/" target="_blank" rel="noopener">
+                  <img src="/images/mentee-cameron-smith.jpg" alt="Cameron Smith" loading="lazy" />
+                </a>
                 <figcaption>
-                  <span class="mentee-name">Cameron Smith</span>
-                  <span class="mentee-role">Quality Assurance Analyst, Tyler Technologies</span>
+                  <span class="mentee-name"><a href="https://www.linkedin.com/in/cameron-jay-smith/" target="_blank" rel="noopener">Cameron Smith</a></span>
+                  <span class="mentee-role">Software Quality Assurance Engineer, Tyler Technologies</span>
                 </figcaption>
               </figure>
               <figure class="mentee">
                 <img src="/images/mentee-quaid.jpg" alt="Quaid" loading="lazy" />
                 <figcaption>
                   <span class="mentee-name">Quaid</span>
-                  <span class="mentee-role">QA Intern with 99+ experience</span>
+                  <span class="mentee-role">QA Intern with 99+ years of experience.</span>
                 </figcaption>
               </figure>
               <figure class="mentee">
@@ -867,6 +905,15 @@
                   <span class="mentee-role">QA Engineer, Glass Atlas</span>
                 </figcaption>
               </figure>
+              <figure class="mentee">
+                <a href="https://www.linkedin.com/in/cj-j-825266103" target="_blank" rel="noopener">
+                  <img src="/images/mentee-cj-johnson.jpg" alt="CJ Johnson" loading="lazy" />
+                </a>
+                <figcaption>
+                  <span class="mentee-name"><a href="https://www.linkedin.com/in/cj-j-825266103" target="_blank" rel="noopener">CJ Johnson</a></span>
+                  <span class="mentee-role">Associate Software Engineer, Fairlawn</span>
+                </figcaption>
+              </figure>
             </div>
             <p class="mentee-note">&hellip; and a dozen more across the years.</p>
 
@@ -878,16 +925,179 @@
               <div class="journey">Car Detailer <span aria-hidden="true">&rarr;</span> Business Owner</div>
               <div class="journey">Mannequin <span aria-hidden="true">&rarr;</span> QA Man who Can!</div>
             </div>
+
+            <h3 class="origin-subhead">In Their Own Words</h3>
+            <div class="rec-grid">
+              <article class="rec-card">
+                <a class="rec-avatar" href="https://www.linkedin.com/in/vivian-nguyen-bb2694244/" target="_blank" rel="noopener">
+                  <img src="/images/mentee-vivian-nguyen.jpg" alt="Vivian Nguyen" loading="lazy" />
+                </a>
+                <h3><a href="https://www.linkedin.com/in/vivian-nguyen-bb2694244/" target="_blank" rel="noopener">Vivian Nguyen</a></h3>
+                <p class="rec-title">Software QA Engineer at Werner Enterprises</p>
+                <blockquote>
+                  <p>
+                    &ldquo;Starting my internship at Werner Enterprises, Matthew played a key role
+                    in mentoring my growth in QA. He had a knack for explaining complex ideas
+                    clearly and was an excellent communicator. Within our team and the IT
+                    organization, he stood out as a positive force, creating an atmosphere of
+                    support. Matthew taught me the importance of encouraging others and
+                    celebrating small wins to be a good leader. As a QA, building positive
+                    relationships with developers is crucial, and Matthew showed me how!
+                    Additionally, Matthew continuously explored methods to enhance our workflow.
+                    His dedication extended to refining and standardizing processes, showcasing
+                    his commitment to efficiency and excellence. I am proud to say I got the
+                    opportunity to learn from him, and I am confident that he will thrive wherever
+                    he ends up!&rdquo;
+                  </p>
+                </blockquote>
+              </article>
+
+              <article class="rec-card">
+                <a class="rec-avatar" href="https://www.linkedin.com/in/alex-fergestad/" target="_blank" rel="noopener">
+                  <img src="/images/rec-alex-fergestad.jpg" alt="Alex Fergestad" loading="lazy" />
+                </a>
+                <h3><a href="https://www.linkedin.com/in/alex-fergestad/" target="_blank" rel="noopener">Alex Fergestad</a></h3>
+                <p class="rec-title">QA Analyst @ Old Republic Professional</p>
+                <blockquote>
+                  <p>
+                    &ldquo;While interning at Werner Enterprises, I&rsquo;m excited to say that
+                    Matthew has had a big impact on me during my journey of going into the tech
+                    industry and being a software QA engineer! He offered advice ranging from
+                    software QA to overall life advice, in which most mentors do not offer.
+                    Matthew knows how to be personal, relatable, and trustworthy, and I
+                    couldn&rsquo;t have had a more engaging mentor while interning at Werner! One
+                    thing I do have to point out is that Matthew was not assigned to mentor me, he
+                    volunteered himself to take me underneath his wing and help me with whatever
+                    questions I had with Werner, and how to live life in a quality way. Matthew
+                    helped me in ways other mentors couldn&rsquo;t in the company, and I thank him
+                    so much for it! He is such a unique person, and I am so thankful to have met
+                    him in the company and hear his perspective on things! Thank you,
+                    Matthew!&rdquo;
+                  </p>
+                </blockquote>
+              </article>
+
+              <article class="rec-card">
+                <a class="rec-avatar" href="https://www.linkedin.com/in/aaron-forkel/" target="_blank" rel="noopener">
+                  <img src="/images/rec-aaron-forkel.jpg" alt="Aaron Forkel" loading="lazy" />
+                </a>
+                <h3><a href="https://www.linkedin.com/in/aaron-forkel/" target="_blank" rel="noopener">Aaron Forkel</a></h3>
+                <p class="rec-title">Software Support Engineer</p>
+                <blockquote>
+                  <p>
+                    &ldquo;Matthew has been a close friend of mine for many years. He has shown a
+                    consistent and genuine drive to develop his skills and be an effective member
+                    of his teams, a natural, but friendly and fair leader, and a mentor to all
+                    those who seek him. He has worked with a multitude of products and services,
+                    using coding languages such as JavaScript, Python, and C++. He has honed his
+                    existing skills in APIs, Software Development + Automation, and Test Case
+                    Management. He has also built skills in framework development and management
+                    and project management (i.e Scrum Master). He has been invaluable to me in my
+                    software journey, helping me numerous times with everything from system and
+                    software initialization, to obstacles in project development. I would
+                    recommend him as an indispensable resource to anyone who needs a committed and
+                    efficient team player. You couldn&rsquo;t make a better choice than going with
+                    Matthew.&rdquo;
+                  </p>
+                </blockquote>
+              </article>
+
+              <article class="rec-card">
+                <a class="rec-avatar" href="https://www.linkedin.com/in/tristan-lundgreen/" target="_blank" rel="noopener">
+                  <img src="/images/mentee-tristan-lundgreen.jpg" alt="Tristan Lundgreen" loading="lazy" />
+                </a>
+                <h3><a href="https://www.linkedin.com/in/tristan-lundgreen/" target="_blank" rel="noopener">Tristan Lundgreen</a></h3>
+                <p class="rec-title">QA Engineer, Artist, Cyberpunk</p>
+                <blockquote>
+                  <p>
+                    &ldquo;Of all the people I&rsquo;ve worked with, Matthew has left one of the
+                    most meaningful, impactful marks on me. His vision for his own life&mdash;a
+                    life focused on quality from the bottom up&mdash;inspired me to start looking
+                    at the world from a perspective I&rsquo;d never considered. Moreover, his
+                    genuinely exceptional work ethic and instruction helped to completely
+                    transform my own professional abilities and the abilities of many whom
+                    he&rsquo;s worked with. Matthew is well positioned as an incredible engineer
+                    who, most invaluably, shares his expertise with anyone he can, bringing up not
+                    only any team he&rsquo;s on, but our entire industry with him. I couldn&rsquo;t
+                    recommend anyone more.&rdquo;
+                  </p>
+                </blockquote>
+              </article>
+
+              <article class="rec-card">
+                <a class="rec-avatar" href="https://www.linkedin.com/in/callumpayne-sw/" target="_blank" rel="noopener">
+                  <img src="/images/rec-callum-payne.jpg" alt="Callum Payne" loading="lazy" />
+                </a>
+                <h3><a href="https://www.linkedin.com/in/callumpayne-sw/" target="_blank" rel="noopener">Callum Payne</a></h3>
+                <p class="rec-title">QA Engineer</p>
+                <blockquote>
+                  <p>
+                    &ldquo;It was an mind-opening experience being mentored by Matthew, not only
+                    did he teach me the technicalities of Software QA; he also taught me how to
+                    effectively improve myself and how to approach situations emotionally and
+                    professionally to get the best outcome of any situation. He took it upon
+                    himself to be my guide at a time that I felt lost with zero expectations of
+                    getting anything in return and yet i owe him the world for what he has done
+                    for me, I don&rsquo;t think I could have had a better mentor and friend than
+                    him and anyone that gets his attention in the future will not only feel like
+                    they have won the lottery with who they got, but are in for the most
+                    comforting learning experience of their life.&rdquo;
+                  </p>
+                </blockquote>
+              </article>
+
+              <article class="rec-card">
+                <a class="rec-avatar" href="https://www.linkedin.com/in/stockton-nielson/" target="_blank" rel="noopener">
+                  <img src="/images/mentee-stockton-nielson.jpg" alt="Stockton Nielson" loading="lazy" />
+                </a>
+                <h3><a href="https://www.linkedin.com/in/stockton-nielson/" target="_blank" rel="noopener">Stockton Nielson</a></h3>
+                <p class="rec-title">Sr. SDET</p>
+                <blockquote>
+                  <p>
+                    &ldquo;Matthew Thornell is one of the rare cases in which we find genuine
+                    altruism. I was able to feel kindness and integrate it into my life, He taught
+                    me the value of putting time and kindness into someone. His ability to radiate
+                    an aura of quality and knowledge will let him go far in any opportunity he
+                    chooses to pursue. Matt can easily learn and study anything he puts his mind
+                    to. If he does not know it already he soon will. In terms of technical skills
+                    Matthew taught me how to have a quality mindset as well as how agile workflows
+                    move and function, he taught me cypress automation, test pad, Jira, and
+                    Zephyr in terms of job skills he taught me how to write test cases and bug
+                    reports. Matthew is an amazing mentor and anybody would be lucky to be
+                    mentored by him.&rdquo;
+                  </p>
+                </blockquote>
+              </article>
+
+              <article class="rec-card">
+                <a class="rec-avatar" href="https://www.linkedin.com/in/cj-j-825266103" target="_blank" rel="noopener">
+                  <img src="/images/mentee-cj-johnson.jpg" alt="CJ Johnson" loading="lazy" />
+                </a>
+                <h3><a href="https://www.linkedin.com/in/cj-j-825266103" target="_blank" rel="noopener">CJ Johnson</a></h3>
+                <p class="rec-title">Associate Software Engineer, Fairlawn</p>
+                <blockquote>
+                  <p>
+                    &ldquo;Matthew is an invaluable resource in the Quality Assurance field.
+                    Reporting to Matthew during my project has been both humbling and enlightening.
+                    His ability to remain calm and professional while maintaining an air of
+                    excitement has resonated with me during my own QA experience. His desire to
+                    grow his knowledge both professionally and off the clock has been such an
+                    inspiration. I guarantee anyone who walks away after engaging with Matthew will
+                    be walking away a better human being.&rdquo;
+                  </p>
+                </blockquote>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="volunteer" class="chapter" data-waypoint="VII">
+      <section id="volunteer" class="chapter" data-waypoint="2.4">
         <div class="container chapter-inner">
-          <div class="waypoint">VII</div>
+          <div class="waypoint">2.4</div>
           <div class="page page-wide">
-            <p class="chapter-label">Chapter VII</p>
-            <h2>Volunteer</h2>
+            <p class="chapter-label">Chapter 2 &middot; Page 4</p>
+            <h2>Adventures</h2>
             <p class="chapter-intro">Quality doesn&rsquo;t clock out. Here&rsquo;s where I chase it outside of work.</p>
 
             <h3 class="origin-subhead">Volunteering</h3>
@@ -911,56 +1121,176 @@
             <div class="card-grid">
               <article class="card">
                 <img class="card-photo" src="/images/patricks-logo.jpg" alt="Patrick's" loading="lazy" />
-                <h3>Selected as a Test Pilot</h3>
+                <h3>Test Pilot</h3>
                 <p class="card-meta"><a href="https://patricks.co/" target="_blank" rel="noopener">Patrick&rsquo;s</a> &middot; Product Reviewer &amp; QA Volunteer</p>
                 <p>
-                  Selected for Patrick&rsquo;s Test Pilot program: hands-on hardware quality
-                  control testing of hair, skin, and health products, including the SF1 Sea
-                  Salt Foam, LB1 Ultra Matte Lip Balm, SL2 Super Leggera Ultra Matte
-                  Moisturizer, and HP1 Hair Powder. I try each release, evaluate the customer
-                  experience, and write formal reviews ahead of launch. I also volunteered to
-                  bring my QA background to patricks.co itself, automating it in Cypress and
-                  Playwright and pushing myself to work modern GenAI tools into the process.
+                  Hands-on hardware quality control testing for hair, skin, and health
+                  products: the SF1 Sea Salt Foam, LB1 Ultra Matte Lip Balm, SL2 Super
+                  Leggera Ultra Matte Moisturizer, and HP1 Hair Powder. I try each release,
+                  evaluate the customer experience, and write formal reviews ahead of launch.
+                  I also volunteered to bring my QA background to patricks.co itself,
+                  automating it in Cypress and Playwright while pushing myself to work modern
+                  GenAI tools into the process.
                 </p>
                 <div class="product-strip">
                   <img src="/images/patricks-products-1.jpg" alt="Patrick's Test Pilot products: S2 conditioner, M1 shampoo, and FS1 face scrub" loading="lazy" />
                   <img src="/images/patricks-products-2.jpg" alt="Patrick's SH+ shampoo, CD+ conditioner, and RD1 recovery and defence treatment" loading="lazy" />
+                  <img src="/images/patricks-products-3.jpg" alt="Two Patrick's product bottles on a bathroom counter" loading="lazy" />
+                  <img src="/images/patricks-products-4.jpg" alt="Patrick's WE1 Deodorant, WE2 Moisturizer, and WE3 Eye Serum" loading="lazy" />
                 </div>
               </article>
               <article class="card">
-                <h3>Pre-Alpha Game Tester</h3>
+                <div class="platform-header" aria-hidden="true">
+                  <span class="platform-badge"><img src="/images/logos/platforms/xbox.svg" alt="" loading="lazy" /></span>
+                  <span class="platform-badge"><img src="/images/logos/platforms/steam.svg" alt="" loading="lazy" /></span>
+                  <span class="platform-badge"><img src="/images/logos/platforms/nintendogamecube.svg" alt="" loading="lazy" /></span>
+                  <span class="platform-badge"><img src="/images/logos/platforms/nintendoswitch.svg" alt="" loading="lazy" /></span>
+                  <span class="platform-badge"><img src="/images/logos/platforms/wii.svg" alt="" loading="lazy" /></span>
+                  <span class="platform-badge"><img src="/images/logos/platforms/playstation.svg" alt="" loading="lazy" /></span>
+                </div>
+                <h3>Game Tester</h3>
                 <p class="card-meta">League of Legends, World of Warcraft, Halo &amp; more</p>
                 <p>
-                  Invited into pre-alpha and early access testing for League of Legends, World
-                  of Warcraft, and Halo, plus private servers like Stormforge&rsquo;s take on
-                  Mists of Pandaria. I test game mechanics, push map boundaries, report bugs
-                  and exploits, and write macros that chain abilities together for faster,
-                  more optimized play.
+                  I was invited into pre-alpha and early access testing for League of Legends,
+                  World of Warcraft, and Halo, along with private servers like
+                  Stormforge&rsquo;s Mists of Pandaria build. I test game mechanics, push map
+                  boundaries, report bugs and exploits, and write macros that chain abilities
+                  together for faster, more optimized play. Beyond that, when I go back
+                  through a game I&rsquo;ve already finished, I treat the replay as its own
+                  testing pass: evaluating the player experience and hunting for bugs and
+                  exploits along the way.
                 </p>
                 <div class="game-strip" aria-hidden="true">
                   <img src="/images/game-lol.jpg" alt="" loading="lazy" />
                   <img src="/images/game-wow-mop.jpg" alt="" loading="lazy" />
                   <img src="/images/game-halo.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-witcher3.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-halo-mcc.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-gears-of-war.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-rdr.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-apex-legends.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-pubg.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-cod.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-diablo3.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-hollow-knight.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-doom.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-titanfall.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-tf2.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-palworld.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-helldivers.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-warcraft3.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-half-life-2.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-battlefront2.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-botw.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-vesperia.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-l4d2.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-mario-kart.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-smash-ultimate.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-r6-siege.jpg" alt="" loading="lazy" />
+                  <img src="/images/game-destiny.jpg" alt="" loading="lazy" />
                 </div>
+              </article>
+            </div>
+
+            <h3 class="origin-subhead">Team Building</h3>
+            <div class="card-grid">
+              <article class="card">
+                <img class="card-photo card-photo-top" src="/images/skydive-legrand-qa.jpg" alt="Matthew and the local Legrand QA engineers suited up together before a skydive" loading="lazy" />
+                <h3>Skydiving with the QA Team</h3>
+                <p class="card-meta"><img class="timeline-logo" src="/images/logos/legrand.png" alt="" loading="lazy" /><a class="brand-link brand-legrand" href="https://www.legrand.us/" target="_blank" rel="noopener">Legrand</a></p>
+                <p>
+                  A Legrand photo of the local QA engineers who went skydiving together with me.
+                  Quality is built on trust, and there&rsquo;s no faster way to build it with a team
+                  than jumping out of a plane together.
+                </p>
+              </article>
+              <article class="card">
+                <img class="card-photo" src="/images/conexed-grand-america.jpg" alt="The ConexED team at a summit at the Grand America hotel" loading="lazy" />
+                <h3>ConexED Summit at Grand America</h3>
+                <p class="card-meta"><img class="timeline-logo" src="/images/logos/conexed.png" alt="" loading="lazy" /><a class="brand-link brand-conexed" href="https://www.conexed.com/" target="_blank" rel="noopener">ConexED</a> &middot; <a href="https://www.grandamerica.com/" target="_blank" rel="noopener">Grand America</a></p>
+                <p>
+                  A ConexED team summit at the Grand America hotel: we ate together, ran through
+                  team-building exercises, and networked with high-end educators from around Utah
+                  to explore new ways to improve education for students across the board.
+                </p>
+              </article>
+              <article class="card">
+                <img class="card-photo" src="/images/seekwell-provo-river.jpg" alt="The Seekwell team floating down the Provo River" loading="lazy" />
+                <h3>Floating the Provo River with Seekwell</h3>
+                <p class="card-meta"><img class="timeline-logo" src="/images/logos/1800contacts.png" alt="" loading="lazy" /><a class="brand-link brand-seekwell" href="https://www.seekwell.com/" target="_blank" rel="noopener">Seekwell</a></p>
+                <p>
+                  A Seekwell team outing floating down the Provo River, taking in Utah&rsquo;s
+                  natural landscape while working to stay together as one unit the whole way down:
+                  a simple team-building exercise that says a lot about how well a team
+                  communicates.
+                </p>
               </article>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="chapter chapter-final" data-waypoint="VIII">
+      <section id="contact" class="chapter chapter-final" data-waypoint="epilogue">
         <div class="container chapter-inner">
-          <div class="waypoint">VIII</div>
+          <div class="waypoint"><span class="waypoint-diamond" aria-hidden="true"></span></div>
           <div class="page">
-            <p class="chapter-label">Chapter VIII</p>
+            <p class="chapter-label">Epilogue</p>
+            <div class="chapter-end-mark" aria-hidden="true"><span></span><i></i><span></span></div>
             <h2>Send Word</h2>
             <p>The journal ends here, but the story keeps going. Reach out any time.</p>
             <ul class="contact-list">
-              <li><a href="mailto:MatthewDavidThornell@gmail.com">MatthewDavidThornell@gmail.com</a></li>
-              <li><a href="tel:+18016608758">(801) 660-8758</a></li>
-              <li><a href="https://www.linkedin.com/in/matthew-d-thornell/" target="_blank" rel="noopener">linkedin.com/in/matthew-d-thornell</a></li>
-              <li><a href="https://github.com/MatthewDThornell" target="_blank" rel="noopener">github.com/MatthewDThornell</a></li>
-              <li><a href="https://qap.dev" target="_blank" rel="noopener">qap.dev</a></li>
+              <li>
+                <a class="contact-row" href="mailto:MatthewDavidThornell@gmail.com">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6" />
+                      <path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  <span>MatthewDavidThornell@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a class="contact-row" href="tel:+18016608758">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  <span>(801) 660-8758</span>
+                </a>
+              </li>
+              <li>
+                <a class="contact-row" href="https://www.linkedin.com/in/matthew-d-thornell/" target="_blank" rel="noopener">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg viewBox="0 0 128 128" fill="currentColor">
+                      <path d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3zM39.17 107H21.06V48.73h18.11zm-9-66.21a10.5 10.5 0 1110.49-10.5 10.5 10.5 0 01-10.54 10.48zM107 107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53V48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75z" />
+                    </svg>
+                  </span>
+                  <span>linkedin.com/in/matthew-d-thornell</span>
+                </a>
+              </li>
+              <li>
+                <a class="contact-row" href="https://github.com/MatthewDThornell" target="_blank" rel="noopener">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                    </svg>
+                  </span>
+                  <span>github.com/MatthewDThornell</span>
+                </a>
+              </li>
+              <li>
+                <a class="contact-row" href="https://qap.dev" target="_blank" rel="noopener">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6" />
+                      <path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9S9.5 5.5 12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  <span>qap.dev</span>
+                </a>
+              </li>
             </ul>
             <a class="resume-btn" href="/resume.pdf" download>Download the Resume</a>
           </div>

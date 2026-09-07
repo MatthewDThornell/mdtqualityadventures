@@ -16,6 +16,7 @@
   --font-body: "Spectral", Georgia, serif;
   --font-ui: "Inter", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
+  --font-cursive: "Caveat", cursive;
   color-scheme: dark;
 }
 
@@ -42,6 +43,36 @@ a {
 
 a:hover {
   color: var(--brass-bright);
+}
+
+/* every focusable element gets the same visible ring — otherwise keyboard focus
+   relies on inconsistent, sometimes-invisible browser defaults across elements */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--brass-bright);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 100;
+  background: var(--brass);
+  color: var(--ink);
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
 }
 
 .container {
@@ -118,6 +149,132 @@ a:hover {
   to { transform: translate(-8vw, -6vw); }
 }
 
+/* Scroll-progress ribbon: a bookmark-style brass fill tracking how far into
+   the page the visitor has read, sitting above the header (z-index) so it
+   reads as a persistent frame around the page rather than page content. */
+.scroll-ribbon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100vh;
+  background: rgba(201, 161, 90, 0.12);
+  z-index: 50;
+  pointer-events: none;
+}
+
+.scroll-ribbon-fill {
+  position: relative;
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(to bottom, var(--brass-bright), var(--brass));
+}
+
+.scroll-ribbon-tab {
+  position: absolute;
+  bottom: -4.5px;
+  right: 4px;
+  width: 9px;
+  height: 9px;
+  background: var(--brass-bright);
+  transform: rotate(45deg);
+  box-shadow: 0 0 6px rgba(221, 185, 117, 0.6);
+}
+
+@media (max-width: 1040px) {
+  .scroll-ribbon {
+    display: none;
+  }
+}
+
+/* Magic words: hovering a word gives it a quick brass glow that then fades
+   slowly back to normal, like it caught a little of the pen's magic as you
+   read. Gated behind html.pen-active (right-click held, see initQuillCursor
+   in chrome.js) so it's part of the same "magic pen" mode as the ink trail
+   and cursor, rather than firing on every ordinary hover. The asymmetric
+   timing is deliberate — :hover's own (short) transition governs entering
+   the glow, while this base rule's (long) transition governs the return trip
+   once the pointer moves off, giving a fast-in/slow-out feel without any JS
+   driving the fade itself. Words are wrapped in these spans by initMagicWords
+   in chrome.js, which also handles the reduced-motion/touch gating.
+
+   The longer a word is held under hover, the more it swells — via a keyframe
+   animation rather than a transition, since a transition can only interpolate
+   to one fixed end value and would just stop growing once it got there. If
+   the pointer leaves before the pop, the animation stops applying and this
+   rule's own transform transition eases it back down instead of snapping. */
+.magic-word {
+  display: inline-block;
+  transform: scale(1);
+  transition: color 1.8s ease-out, text-shadow 1.8s ease-out, transform 0.3s ease-out;
+}
+
+html.pen-active .magic-word:hover {
+  position: relative;
+  z-index: 5;
+  transition: color 0.12s ease-out, text-shadow 0.12s ease-out;
+  color: var(--brass-bright);
+  text-shadow: 0 0 6px rgba(221, 185, 117, 0.9), 0 0 14px rgba(201, 161, 90, 0.55);
+  animation: magic-word-pop 2.2s ease-in forwards;
+}
+
+@keyframes magic-word-pop {
+  0% { transform: scale(1); }
+  60% { transform: scale(1.7); }
+  82% { transform: scale(2.3); }
+  90% { transform: scale(2.6); }
+  94% { transform: scale(0.55); opacity: 0.3; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Ink-trail canvas: the actual drawn stroke following the pointer, sitting
+   just beneath .ink-cursor's glow so the glow reads as the "wet" leading tip
+   of the line trailing behind it. Desktop/fine-pointer only (see chrome.js).
+   Stays viewport-sized and fixed (cheap to clear every frame) — chrome.js
+   remembers each point's page position and offsets by scroll at draw time
+   instead, so ink still stays put on the page without an enormous canvas. */
+.ink-trail-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 55;
+}
+
+/* Quill cursor: right-click (held) swaps the system arrow for a quill-pen
+   icon everywhere on the page, including over links/buttons that otherwise
+   set their own cursor — !important is deliberate here, since this is a
+   momentary explicit toggle (see initQuillCursor in chrome.js) rather than
+   the page's normal cursor. */
+html.pen-active,
+html.pen-active * {
+  cursor: url('/cursors/quill-cursor.svg') 2 63, auto !important;
+}
+
+/* Ink-cursor: a soft glow that trails the mouse with a little lag, like an
+   ink blot following a pen. Desktop/fine-pointer only (see chrome.js), and
+   the element starts fully transparent until the first real mousemove. */
+.ink-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  margin: -11px 0 0 -11px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(221, 185, 117, 0.55) 0%, rgba(201, 161, 90, 0.22) 45%, transparent 72%);
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  will-change: transform;
+}
+
+.ink-cursor.is-active {
+  opacity: 1;
+}
+
 /* Header */
 .site-header {
   position: sticky;
@@ -188,6 +345,19 @@ a:hover {
   width: 22px;
   height: 2px;
   background: var(--brass-bright);
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 /* Cover */
@@ -224,6 +394,131 @@ a:hover {
   margin-bottom: 0.75rem;
 }
 
+/* One-time "cover page" flourish shown before the real hero on a visitor's
+   first load this session — the site's name writing itself in, like opening
+   a journal to its title page. Hidden instantly (before this CSS even
+   matters) by the inline script next to it in index.html if sessionStorage
+   already has the seen-flag, or if the visitor prefers reduced motion, so
+   repeat visits and motion-sensitive visitors never see it at all. See
+   initIntroSignature in chrome.js for the bookkeeping that removes it from
+   the DOM once the animation below finishes.
+   The `to` state below sets visibility: hidden (not just opacity: 0) so
+   that even if JS never runs at all, this overlay stops blocking clicks and
+   scroll on its own, purely from this animation finishing. */
+.intro-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ink);
+  animation: intro-fade-out 0.6s ease-in 2.5s forwards;
+}
+
+.intro-signature {
+  position: relative;
+  width: min(90vw, 640px);
+  text-align: center;
+}
+
+.intro-eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--teal-bright);
+  margin: 0;
+  opacity: 0;
+  animation: intro-fade-in 0.5s ease-out 0.1s forwards;
+}
+
+.intro-title {
+  display: inline-block;
+  position: relative;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2rem, 6vw, 3.4rem);
+  color: var(--parchment);
+  margin: 0.4rem 0 0;
+  clip-path: inset(0 100% 0 0);
+  animation: intro-reveal 1.3s cubic-bezier(0.65, 0, 0.35, 1) 0.5s forwards;
+}
+
+.intro-quill {
+  position: absolute;
+  top: -0.7rem;
+  right: -1.7rem;
+  width: 34px;
+  height: 34px;
+  background: url('/cursors/quill-cursor.svg') center / contain no-repeat;
+  opacity: 0;
+  transform: rotate(38deg) scale(0.6) translateY(-6px);
+  animation: intro-quill-settle 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 1.75s forwards;
+}
+
+.intro-rule {
+  display: block;
+  width: 0;
+  height: 2px;
+  margin: 1.1rem auto 0;
+  background: linear-gradient(90deg, transparent, var(--brass-bright), transparent);
+  animation: intro-rule-draw 0.5s ease-out 2.1s forwards;
+}
+
+@keyframes intro-fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes intro-reveal {
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes intro-quill-settle {
+  0% {
+    opacity: 0;
+    transform: rotate(38deg) scale(0.6) translateY(-6px);
+  }
+  70% {
+    opacity: 1;
+    transform: rotate(8deg) scale(1.05) translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(14deg) scale(1) translateY(0);
+  }
+}
+
+@keyframes intro-rule-draw {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: min(70%, 220px);
+  }
+}
+
+@keyframes intro-fade-out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-overlay {
+    display: none !important;
+  }
+}
+
 .cover h1 {
   font-family: var(--font-display);
   font-size: clamp(2.6rem, 7vw, 4.5rem);
@@ -233,14 +528,15 @@ a:hover {
 }
 
 .cover .tagline {
-  font-family: var(--font-ui);
-  font-size: 1.05rem;
+  font-family: var(--font-cursive);
+  font-weight: 600;
+  font-size: 1.7rem;
   color: var(--brass-bright);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
   margin-bottom: 2rem;
   min-height: 4.75rem;
   white-space: pre-line;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 .typewriter::after {
@@ -250,40 +546,221 @@ a:hover {
   animation: blink-cursor 1s step-end infinite;
 }
 
+/* The pen (see .tw-quill above) is gone entirely while pen-active — this
+   swaps the blinking pipe for a small squiggle that jitters in place instead
+   of blinking, standing in for "the next letter, still wanted, but the pen
+   that would write it is off drawing ink elsewhere right now". */
+html.pen-active .typewriter::after {
+  content: '~';
+  display: inline-block;
+  animation: tw-cursor-squiggle 0.6s ease-in-out infinite;
+}
+
+@keyframes tw-cursor-squiggle {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+}
+
+/* Once a !loop typewriter (see the eyebrow line) permanently finishes its
+   last phrase for good, typewriter.js adds this class — there's nothing
+   left to ever type again, so both the cursor and the pen disappear for
+   good instead of sitting there blinking/squiggling at a line that will
+   never change again. Two classes on one element beats the pen-active
+   squiggle rule above on specificity regardless of source order, so this
+   wins even if the pen happens to still be held when it finishes. */
+.typewriter.tw-finished::after,
+.typewriter.tw-finished .tw-quill {
+  display: none;
+}
+
+/* Same brass/parchment ink used throughout — the canvas ink trail
+   (initInkTrail in chrome.js) and this pen are meant to read as the one
+   pen, so their glow colors are the same rgb triples on purpose. */
+.eyebrow.typewriter {
+  --tw-rest-color: var(--teal-bright);
+}
+
+.cover .tagline.typewriter {
+  --tw-rest-color: var(--brass-bright);
+}
+
+/* Once a finished line has held its full length for a while, the whole thing
+   fades away together (see startFade/finishFade in typewriter.js) rather
+   than being backspaced character by character — ink drying up and lifting
+   off the page, not erased, keeping this in the same theme as the canvas
+   ink trail's own fade and every other ink effect on the site. */
+.tw-text {
+  transition: opacity 0.7s ease-in;
+}
+
+.tw-text.tw-text-fading {
+  opacity: 0;
+}
+
+/* The role/title half of a "Former X at Y" phrase (see brandSegment.render
+   in typewriter.js) — no brand color here, just an underline, since the
+   career-trail entry below is about to give this same role its own
+   permanent highlight the moment this phrase finishes typing. */
+.tw-role {
+  text-decoration: underline;
+  text-decoration-color: rgba(221, 185, 117, 0.7);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+/* Each landed letter (see appendChar in typewriter.js) flashes hot-gold, wet-
+   ink bright, then eases down to this line's own resting color over ~1.1s —
+   the same "lands bright, dries to its resting shade" idea as the ink
+   trail's per-point fade, just on letters instead of canvas pixels. Every
+   char before the newest one keeps its own already-finished animation state
+   (animation-fill-mode: forwards), so only the freshest letter is ever mid-
+   glow at a time — this is why appendChar only ever adds one span instead of
+   re-rendering the whole string, which would restart every letter's glow at
+   once. */
+.tw-char-landing {
+  animation: tw-char-land 1.1s ease-out forwards;
+}
+
+@keyframes tw-char-land {
+  0% {
+    color: #fdf3d9;
+    text-shadow:
+      0 0 6px rgba(253, 238, 192, 0.95),
+      0 0 16px rgba(221, 185, 117, 0.75),
+      0 0 28px rgba(201, 161, 90, 0.5);
+  }
+  100% {
+    color: var(--tw-rest-color);
+    text-shadow: 0 0 0 transparent;
+  }
+}
+
+/* The quill tip that appears to be doing the writing. position: absolute and
+   placed by positionQuill() in typewriter.js (measuring exactly where the
+   last character of text ends) rather than left in normal inline flow —
+   an in-flow version was tried first, but it either threw off text-align:
+   center's width math (shifted the visible text left, since the quill only
+   ever added width on one side) or, when balanced with a same-width spacer
+   before the text, misaligned multi-line phrases from each other (the
+   spacer and quill end up on different lines, so each line centers as a
+   *unit* but the two lines' actual text drifts apart from each other and
+   from the centered career-trail list below). Out of flow entirely, it
+   can't distort centering at all — the parent .typewriter below is what
+   gives it something to measure top/left against. Sized in em so it scales
+   with whichever element's font-size it's sitting in (the small-caps
+   eyebrow vs. the much larger cursive tagline). Glows with the same brass
+   drop-shadow as the ink trail/real cursor, so it reads as the same pen
+   rather than a decoration bolted on separately. */
+.typewriter {
+  position: relative;
+}
+
+.typewriter .tw-quill {
+  position: absolute;
+  width: 0.85em;
+  height: 0.85em;
+  margin-left: 0.12em;
+  background: url('/cursors/quill-cursor.svg') center / contain no-repeat;
+  transform: rotate(22deg);
+  transform-origin: 20% 80%;
+  filter: drop-shadow(0 0 3px rgba(221, 185, 117, 0.65)) drop-shadow(0 0 7px rgba(201, 161, 90, 0.4));
+  transition: opacity 0.4s ease, filter 0.4s ease;
+}
+
+/* A quick nib-down tap each time a letter lands (triggered from tapQuill()
+   in typewriter.js by re-adding this class) — replaces an earlier version
+   that wiggled continuously and idly whether anything was being typed or
+   not, which read as aimless rather than as the pen actually doing work. */
+.typewriter .tw-quill.is-writing {
+  animation: tw-quill-tap 0.25s ease-out;
+}
+
+@keyframes tw-quill-tap {
+  0% {
+    transform: rotate(22deg) translateY(0);
+  }
+  40% {
+    transform: rotate(30deg) translateY(2px);
+  }
+  100% {
+    transform: rotate(22deg) translateY(0);
+  }
+}
+
+/* The pen can't be both here writing this line and off drawing ink at the
+   mouse at the same time — while html.pen-active is set (see
+   initQuillCursor's onActivate/onDeactivate wiring in main.js, which is also
+   what actually freezes the typing itself), the pen fully disappears from
+   here rather than just dimming, since it's genuinely elsewhere; the
+   squiggle on .typewriter::after below (in its place) is what signals "still
+   wants to keep writing" while it's gone. */
+html.pen-active .typewriter .tw-quill {
+  opacity: 0;
+}
+
+/* A little burst of brass/parchment/warm-white glitter off the nib each time
+   a letter lands (see spawnInkSpark in typewriter.js) — same palette and
+   drift-and-fade motion language as the canvas ink trail's own sparkles,
+   just DOM/CSS-driven since there are far too few of these at once to need
+   a canvas for it. Self-removing via the animationend listener in JS.
+   tw-spark-delay staggers a few of them so a burst doesn't read as one flat
+   simultaneous flash, and the fall keyframe pulses scale/opacity on the way
+   out (rather than just a linear fade) so each fleck actually twinkles,
+   closer to how glitter catches the light than a plain fading dot would. */
+.tw-spark {
+  position: absolute;
+  left: 55%;
+  top: 35%;
+  width: var(--tw-spark-size, 3px);
+  height: var(--tw-spark-size, 3px);
+  border-radius: 50%;
+  background: var(--tw-spark-color, var(--brass-bright));
+  box-shadow: 0 0 5px var(--tw-spark-color, var(--brass-bright));
+  animation: tw-spark-fall 0.8s ease-out var(--tw-spark-delay, 0ms) forwards;
+  animation-fill-mode: both;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes tw-spark-fall {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.3) rotate(0deg);
+  }
+  15% {
+    opacity: 1;
+    transform: translate(calc(var(--tw-spark-x) * 0.15), calc(var(--tw-spark-y) * 0.15)) scale(1.3) rotate(var(--tw-spark-rotate));
+  }
+  55% {
+    opacity: 1;
+    transform: translate(calc(var(--tw-spark-x) * 0.6), calc(var(--tw-spark-y) * 0.55)) scale(0.7) rotate(var(--tw-spark-rotate));
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--tw-spark-x), var(--tw-spark-y)) scale(1) rotate(var(--tw-spark-rotate));
+  }
+}
+
 @keyframes blink-cursor {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
 
-.cover-quote {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 1.3rem;
-  color: var(--parchment-dim);
-  max-width: 32rem;
-  margin: 0 auto 3rem;
-  transition: opacity 0.3s ease;
-}
 
-.cover-quote::before {
-  content: '\201C';
-}
-
-.cover-quote::after {
-  content: '\201D';
-}
-
+/* Just the arrow now (see index.html) — no "Who am I?" label, since it sits
+   below the roles instead of above them and reads fine as a plain wayfinding
+   nudge without it; the accessible name moved to an aria-label on the link
+   itself so screen readers still get it. Glows brass like the rest of the
+   site's ink effects rather than sitting there as a plain grey UI chevron —
+   "a magic arrow" rather than a scroll-hint icon. */
 .scroll-cue {
   display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  font-family: var(--font-ui);
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
   text-decoration: none;
-  color: var(--parchment-dim);
+  color: var(--brass-bright);
 }
 
 .scroll-cue:hover {
@@ -291,12 +768,21 @@ a:hover {
 }
 
 .scroll-cue svg {
-  animation: bob 2s ease-in-out infinite;
+  animation: bob 2s ease-in-out infinite, scroll-cue-glow 2s ease-in-out infinite;
 }
 
 @keyframes bob {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(6px); }
+}
+
+@keyframes scroll-cue-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px rgba(221, 185, 117, 0.5)) drop-shadow(0 0 5px rgba(201, 161, 90, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 5px rgba(221, 185, 117, 0.85)) drop-shadow(0 0 12px rgba(201, 161, 90, 0.55));
+  }
 }
 
 /* Chapter navigation (floating up/down jump control) */
@@ -317,13 +803,18 @@ a:hover {
   opacity: 0;
   transform: translateY(8px);
   pointer-events: none;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s;
 }
 
+/* visibility:hidden (not just opacity/pointer-events) so these buttons drop out of
+   tab order while faded out — otherwise keyboard users tab into invisible buttons */
 .chapter-nav.is-visible {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
+  visibility: visible;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .chapter-nav-btn {
@@ -340,9 +831,13 @@ a:hover {
   transition: background 0.2s ease, transform 0.15s ease, opacity 0.2s ease;
 }
 
-.chapter-nav-btn:hover:not(:disabled) {
-  background: rgba(201, 161, 90, 0.15);
-  transform: scale(1.08);
+/* (hover: hover) keeps this off touchscreens — without it, tapping the button on
+   mobile leaves the highlight stuck on since there's no real pointer to "leave" */
+@media (hover: hover) {
+  .chapter-nav-btn:hover:not(:disabled) {
+    background: rgba(201, 161, 90, 0.15);
+    transform: scale(1.08);
+  }
 }
 
 .chapter-nav-btn:active:not(:disabled) {
@@ -492,6 +987,87 @@ a:hover {
 
 .page-wide {
   padding: 2.75rem 3.5rem;
+}
+
+/* Chapter-opener: a book-style "part title" page announcing a new tier
+   (Chapter One / Chapter Two) — reuses .page for the same flip-in reveal
+   and card sizing as every other chapter, just sparser content */
+.page-opener {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4.5rem 3rem;
+}
+
+.page-opener .chapter-label {
+  font-size: 0.85rem;
+}
+
+.page-opener h2 {
+  font-size: clamp(2.4rem, 5vw, 3.25rem);
+}
+
+.opener-intro {
+  font-family: var(--font-ui);
+  color: var(--text-muted);
+  max-width: 32rem;
+  font-size: 1.05rem;
+  text-wrap: balance;
+}
+
+/* Small wax-seal-style medallions flanking a chapter-opener's centered text,
+   reusing the .about-seal circle-and-glyph language so the motif reads as
+   part of the site's existing visual vocabulary rather than a new one */
+.opener-seal {
+  position: absolute;
+  top: 50%;
+  width: 108px;
+  height: 108px;
+  transform: translateY(-50%);
+  opacity: 0.55;
+}
+
+.opener-seal-left {
+  left: 3rem;
+}
+
+.opener-seal-right {
+  right: 3rem;
+}
+
+.opener-seal circle {
+  fill: none;
+  stroke: var(--brass);
+  stroke-width: 1.2;
+}
+
+.opener-seal-glyph {
+  font-family: var(--font-mono);
+  font-size: 26px;
+  fill: var(--teal-bright);
+}
+
+.opener-seal-arc {
+  fill: var(--teal-bright);
+  font-family: var(--font-ui);
+  text-transform: uppercase;
+}
+
+@media (max-width: 1320px) {
+  .opener-seal {
+    display: none;
+  }
+}
+
+/* Small ink diamond swapped in for the waypoint number on the closing
+   Contact/Epilogue chapter, so it reads as "the end" rather than a page count */
+.waypoint-diamond {
+  display: block;
+  width: 9px;
+  height: 9px;
+  background: var(--ink);
+  transform: rotate(45deg);
 }
 
 .chapter-label {
@@ -648,12 +1224,94 @@ a:hover {
   margin: 0 0 1rem;
 }
 
+.about-quote {
+  font-family: var(--font-cursive);
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--parchment-dim);
+  border-left: 2px solid var(--teal);
+  padding-left: 1.25rem;
+  margin: 0 0 1.75rem;
+  transition: opacity 0.3s ease;
+}
+
+.about-quote::before {
+  content: '\201C';
+}
+
+.about-quote::after {
+  content: '\201D';
+}
+
 .origin-motto {
   margin-top: 2.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-style: italic;
   color: var(--text-muted);
+}
+
+/* Quoting someone else (not Matthew's own words, unlike .about-quote) — brass
+   border instead of teal keeps the two visually distinct at a glance */
+.origin-quote {
+  margin: 0 0 1.5rem;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--brass);
+}
+
+.origin-quote p {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--parchment-dim);
+  margin: 0 0 0.4rem;
+}
+
+.origin-quote cite {
+  display: block;
+  font-family: var(--font-ui);
+  font-style: normal;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--teal-bright);
+}
+
+/* Numbered badges echo the .waypoint/.opener-seal circle language used
+   elsewhere on the site, rather than introducing a new list style */
+.habits-list {
+  list-style: none;
+  counter-reset: habit;
+  display: grid;
+  gap: 0.6rem;
+  margin: 0 0 1.25rem;
+  padding: 0;
+}
+
+.habits-list li {
+  counter-increment: habit;
+  display: flex;
+  align-items: baseline;
+  gap: 0.85rem;
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.habits-list li::before {
+  content: counter(habit);
+  flex-shrink: 0;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  border: 1px solid var(--brass);
+  color: var(--brass-bright);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-seal {
@@ -768,14 +1426,21 @@ a:hover {
   padding: 0.3rem 0.7rem;
 }
 
+.tags li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.tags li a:hover {
+  text-decoration: underline;
+}
+
 /* Badges */
 .badges {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-top: 1.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 1.5rem;
+  margin: 0.25rem 0 1.25rem;
 }
 
 .badge {
@@ -799,6 +1464,94 @@ a:hover {
   font-size: 0.8rem;
 }
 
+.badge-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  background: var(--parchment);
+  border-radius: 6px;
+  padding: 3px;
+  flex-shrink: 0;
+}
+
+/* Test Automation University course ledger */
+.tau-course-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tau-course {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tau-course:last-child {
+  border-bottom: none;
+}
+
+.tau-course-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tau-course-name {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  color: var(--parchment);
+  text-decoration: none;
+  flex: 1;
+}
+
+a.tau-course-name:hover {
+  color: var(--brass-bright);
+  text-decoration: underline;
+}
+
+.tau-course-date {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.tau-course-toggle {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--ink);
+  background: var(--brass);
+  border: none;
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.2s ease;
+}
+
+.tau-course-toggle:hover {
+  background: var(--brass-bright);
+}
+
+.tau-course-video {
+  position: relative;
+  height: 0;
+  padding-top: 56.25%;
+  margin-top: 0.85rem;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.tau-course-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /* Field notes cards */
 .card-grid {
   display: grid;
@@ -813,6 +1566,15 @@ a:hover {
   border-radius: 6px;
   padding: 1.5rem;
   overflow: hidden;
+  transition: transform 0.25s ease, border-color 0.25s ease, filter 0.25s ease;
+}
+
+/* filter: drop-shadow, not box-shadow — .card's own overflow: hidden (needed
+   for the .card-photo bleed above) would clip a box-shadow on this same box */
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(201, 161, 90, 0.5);
+  filter: drop-shadow(0 14px 26px rgba(0, 0, 0, 0.35));
 }
 
 .card-photo {
@@ -823,13 +1585,51 @@ a:hover {
   object-fit: cover;
 }
 
+/* biases the crop window toward the top of the frame for group photos where
+   faces sit higher up and the bottom is mostly empty ground/legs */
+.card-photo-top {
+  object-position: center 28%;
+}
+
 .card-gallery {
   margin-top: 1rem;
   max-width: 340px;
 }
 
+/* Same full-bleed footprint as .card-photo, so this card lines up with the
+   photo-header cards next to it even though it has no photo to use */
+.platform-header {
+  width: calc(100% + 3rem);
+  margin: -1.5rem -1.5rem 1rem;
+  height: 160px;
+  background: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.platform-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--parchment);
+  flex-shrink: 0;
+}
+
+.platform-badge img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
 .game-strip {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.6rem;
   margin: 1rem 0 0;
 }
@@ -843,13 +1643,14 @@ a:hover {
 }
 
 .product-strip {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 0.75rem;
   margin: 1rem 0 0;
 }
 
 .product-strip img {
-  width: 50%;
+  width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 4px;
@@ -880,6 +1681,9 @@ a:hover {
 }
 
 .card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-family: var(--font-ui);
   font-size: 0.72rem;
   letter-spacing: 0.06em;
@@ -1030,6 +1834,12 @@ a:hover {
   border: 2px solid var(--brass);
   display: block;
   margin: 0 auto 0.6rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.mentee:hover img {
+  transform: scale(1.08);
+  box-shadow: 0 0 0 4px rgba(201, 161, 90, 0.25);
 }
 
 .mentee figcaption {
@@ -1064,30 +1874,6 @@ a:hover {
   font-style: italic;
   color: var(--text-muted);
   margin-top: 0.75rem !important;
-}
-
-.speaking-note {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.speaking-note img {
-  width: 72px;
-  height: 72px;
-  border-radius: 6px;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
-.speaking-note p {
-  font-family: var(--font-ui);
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  margin: 0;
 }
 
 .journey-grid {
@@ -1130,6 +1916,13 @@ a:hover {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: 6px;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.rec-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(201, 161, 90, 0.5);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.35);
 }
 
 .rec-avatar {
@@ -1209,6 +2002,13 @@ a:hover {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: 6px;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.mentor-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(201, 161, 90, 0.5);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.35);
 }
 
 .mentor-avatar {
@@ -1285,7 +2085,7 @@ a:hover {
 
 @media (max-width: 480px) {
   .cover .tagline {
-    font-size: 0.92rem;
+    font-size: 1.4rem;
     min-height: 4.4rem;
   }
 
@@ -1295,7 +2095,77 @@ a:hover {
   }
 }
 
+/* Career Trail */
+.career-trail {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.career-trail-list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: fit-content;
+  margin: 0 auto;
+  gap: 0.55rem;
+  list-style: none;
+  padding: 0;
+  min-height: 1.5rem;
+}
+
+.career-trail-item {
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
+  align-items: center;
+  justify-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-cursive);
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.career-trail-item.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.career-trail-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  background: var(--parchment);
+  border-radius: 5px;
+  padding: 3px;
+  flex-shrink: 0;
+}
+
 /* Contact */
+.chapter-end-mark {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 0 1.25rem;
+}
+
+.chapter-end-mark span {
+  flex: 1;
+  height: 1px;
+  max-width: 5rem;
+  background: rgba(201, 161, 90, 0.35);
+}
+
+.chapter-end-mark i {
+  display: block;
+  width: 7px;
+  height: 7px;
+  background: var(--brass);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
 .contact-list {
   list-style: none;
   margin: 1.5rem 0 2rem;
@@ -1307,8 +2177,43 @@ a:hover {
   font-size: 1.05rem;
 }
 
-.contact-list a {
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 0.75rem;
+  margin: 0 -0.75rem;
+  border-radius: 6px;
+  color: var(--text-primary);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.contact-row:hover {
+  background: rgba(201, 161, 90, 0.08);
+  transform: translateX(4px);
   color: var(--teal-bright);
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--brass);
+  color: var(--ink);
+}
+
+.contact-icon svg {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.contact-row span:last-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .resume-btn {
@@ -1331,6 +2236,55 @@ a:hover {
   color: var(--ink);
 }
 
+.credential-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin: 0 0 1.75rem;
+}
+
+.credential-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--brass);
+  padding: 0.55rem 1.5rem 0.55rem 0.55rem;
+  border-radius: 4px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.credential-btn:hover {
+  background: var(--brass-bright);
+  transform: translateY(-1px);
+  color: var(--ink);
+}
+
+/* Same dark-circle-on-brass "seal" language as .opener-seal/.about-seal,
+   so the icon badge reads as part of the site's motif rather than a
+   generic button icon */
+.credential-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--brass-bright);
+}
+
+.credential-icon svg {
+  width: 1rem;
+  height: 1rem;
+}
+
 /* Footer */
 .site-footer {
   padding-block: 2rem;
@@ -1341,8 +2295,13 @@ a:hover {
   opacity: 0.7;
 }
 
-/* Mobile nav */
-@media (max-width: 1040px) {
+/* Nav collapse: at 9 nav items, the header genuinely runs out of room for
+   the brand + nav on one line below ~1310px (measured: nav ~1032px + brand
+   ~204px + gap > the ~1312px a 1360px container has to give past its own
+   padding) — wider than the 1040px content breakpoint below, so this gets
+   its own threshold rather than sharing one and squeezing the brand into an
+   ugly 3-line wrap in that 1041-1300px gap. */
+@media (max-width: 1320px) {
   .nav-toggle {
     display: flex;
   }
@@ -1363,7 +2322,10 @@ a:hover {
   .site-nav.open {
     display: flex;
   }
+}
 
+/* Mobile content layout */
+@media (max-width: 1040px) {
   .chapter-inner {
     grid-template-columns: 1fr;
   }
@@ -1379,6 +2341,10 @@ a:hover {
 
   .page,
   .page-wide {
+    padding: 1.75rem;
+  }
+
+  .standards-section {
     padding: 1.75rem;
   }
 }
@@ -1402,6 +2368,11 @@ a:hover {
   max-width: 640px;
   margin: 0 auto;
   font-size: 1rem;
+}
+
+.standards-repos .github-card {
+  max-width: 860px;
+  margin: 0 auto 2.5rem;
 }
 
 .standards-subnav {
@@ -1434,14 +2405,17 @@ a:hover {
 
 .standards-section {
   max-width: 860px;
-  margin: 0 auto;
-  padding: 3rem 1.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  margin: 0 auto 2.5rem;
+  padding: 2.75rem 3.25rem;
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  scroll-margin-top: 80px;
 }
 
-.standards-section:first-of-type {
-  border-top: none;
-  padding-top: 0;
+.standards-section:last-of-type {
+  margin-bottom: 0;
 }
 
 .standards-section h2 {
@@ -1477,6 +2451,76 @@ a:hover {
   font-size: 0.95rem;
   color: var(--text-muted);
   margin: 0 0 0.9rem;
+}
+
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.9rem;
+  margin: 0 0 1.5rem;
+}
+
+.stack-item {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+}
+
+.stack-item-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.35rem;
+}
+
+.stack-logo {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  background: var(--parchment);
+  border-radius: 5px;
+  padding: 3px;
+  flex-shrink: 0;
+}
+
+.stack-name {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--brass-bright);
+  text-decoration: none;
+}
+
+.stack-name:hover {
+  text-decoration: underline;
+}
+
+.tags-logo li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.tags-logo li a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.tags-logo img {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  background: var(--parchment);
+  border-radius: 3px;
+  padding: 2px;
+}
+
+.stack-item p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin: 0;
 }
 
 .code-block {
@@ -1552,7 +2596,10 @@ a:hover {
   .stars,
   .mist,
   .scroll-cue svg,
-  .typewriter::after {
+  .typewriter::after,
+  .typewriter .tw-quill,
+  .tw-char-landing,
+  .tw-spark {
     animation: none;
   }
 
@@ -1565,5 +2612,12 @@ a:hover {
   .page::before {
     transition: none;
     opacity: 0;
+  }
+
+  .card,
+  .rec-card,
+  .mentor-card,
+  .mentee img {
+    transition: none;
   }
 }
