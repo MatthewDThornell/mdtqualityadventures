@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Matthew D Thornell's Test Automation University coursework: courses completed through Applitools' free TAU platform." />
+    <meta name="theme-color" content="#0f1216" />
+    <link rel="canonical" href="https://mdtqualityadventures.com/test-automation-university.html" />
+    <title>Test Automation University — MDT Quality Adventures</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MDT Quality Adventures" />
+    <meta property="og:title" content="Test Automation University — Matthew D Thornell" />
+    <meta property="og:description" content="Courses completed through Applitools' free Test Automation University platform." />
+    <meta property="og:url" content="https://mdtqualityadventures.com/test-automation-university.html" />
+    <meta property="og:image" content="https://mdtqualityadventures.com/images/og-cover.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Matthew D Thornell — A career portfolio, written by. Software QA Engineer & Quality Advocate." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Test Automation University — Matthew D Thornell" />
+    <meta name="twitter:description" content="Courses completed through Applitools' free Test Automation University platform." />
+    <meta name="twitter:image" content="https://mdtqualityadventures.com/images/og-cover.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=Caveat:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="sky" aria-hidden="true">
+      <div class="stars"></div>
+      <div class="mist mist-a"></div>
+      <div class="mist mist-b"></div>
+    </div>
+    <canvas id="cover-canvas" aria-hidden="true"></canvas>
+
+    <!-- Shared page chrome (scroll ribbon + ink cursor + ink trail) — keep in
+         sync across index.html, qa-standards.html, and
+         test-automation-university.html, same as .site-nav. Driven by src/chrome.js. -->
+    <div class="scroll-ribbon" aria-hidden="true">
+      <div class="scroll-ribbon-fill" id="scrollRibbonFill"><span class="scroll-ribbon-tab"></span></div>
+    </div>
+    <canvas class="ink-trail-canvas" id="inkTrailCanvas" aria-hidden="true"></canvas>
+    <div class="ink-cursor" id="inkCursor" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container nav-row">
+        <a class="brand" href="/">MDT Quality Adventures</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <!-- Keep this list, its order, and its labels identical to the .site-nav in index.html and
+             qa-standards.html (just with /# prefixes where needed) other than which link carries
+             aria-current="page" — these three pages don't share markup, so nothing else enforces it -->
+        <nav class="site-nav" id="siteNav">
+          <a href="/#experience">Professional Experience</a>
+          <a href="/#fieldnotes">Accomplishments</a>
+          <a href="/qa-standards.html">QA Standards</a>
+          <a href="/test-automation-university.html" aria-current="page">TAU</a>
+          <a href="/#letters">Recommendations</a>
+          <a href="/#origins">About Me</a>
+          <a href="/#mentors">Mentors</a>
+          <a href="/#mentees">Mentees</a>
+          <a href="/#volunteer">Adventures</a>
+          <a href="/#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="standards-hero">
+        <div class="container">
+          <h1>Test Automation University</h1>
+          <p>
+            Eighteen courses and counting through
+            <a href="https://testautomationu.applitools.com/" target="_blank" rel="noopener">Applitools&rsquo; Test Automation University</a>,
+            a free platform I keep coming back to for staying sharp on new frameworks and tools as
+            the automation landscape moves.
+          </p>
+        </div>
+      </section>
+
+      <section id="courses" class="standards-section">
+        <div class="container">
+          <h2>Courses Completed</h2>
+          <p class="standards-intro">
+            A running ledger, newest first, of what I&rsquo;ve worked through on TAU. Most have the
+            course video attached &mdash; click Watch to play it right here.
+          </p>
+
+          <ul class="tau-course-list">
+            <li class="tau-course">
+              <div class="tau-course-row">
+                <span class="badge-mark" aria-hidden="true">&#10003;</span>
+                <a class="tau-course-name" href="https://testautomationu.applitools.com/salesforce-qa-intro/index.html" target="_blank" rel="noopener">Setting the Stage for Salesforce QA Excellence</a>
+                <span class="tau-course-date">Issued Aug 2026</span>
+                <button class="tau-course-toggle" type="button" data-video-id="3M5-KPY2ZkA" aria-expanded="false">Watch</button>
+              </div>
+              <div class="tau-course-video" hidden></div>
+            </li>
+            <li class="tau-course">
+              <div class="tau-course-row">
+                <span class="badge-mark" aria-hidden="true">&#10003;</span>
+                <a class="tau-course-name" href="https://testautomationu.applitools.com/building-custom-mcp-servers/index.html" target="_blank" rel="noopener">Building Custom MCP Servers for Quality Engineering</a>
+                <span class="tau-course-date">Issued Aug 2026</span>
+                <button class="tau-course-toggle" type="button" data-video-id="f8X01dW7NgM" aria-expanded="false">Watch</button>
+              </div>
+              <div class="tau-course-video" hidden></div>
+            </li>
+            <li class="tau-course">
+              <div class="tau-course-row">
+                <span class="badge-mark" aria-hidden="true">&#10003;</span>
+                <a class="tau-course-name" href="https://testautomationu.applitools.com/playwright-agentic-ai-test-frameworks/index.html" target="_blank" rel="noopener">Playwright &amp; Agentic AI: Building Autonomous Test Frameworks</a>
+                <span class="tau-course-date">Issued Aug 2026</span>
+                <button class="tau-course-toggle" type="button" data-video-id="6UbFNEH0NyA" aria-expanded="false">Watch</button>
+              </div>
+              <div class="tau-course-video" hidden></div>
+            </li>
+            <li class="tau-course">
+              <div class="tau-course-row">
+                <span class="badge-mark" aria-hidden="true">&#10003;</span>
+                <a class="tau-course-name" href="https://testautomationu.applitools.com/playwright-advanced/index.html" target="_blank" rel="noopener">Advanced Playwright</a>
+                <span class="tau-course-date">Issued Feb 2025</span>
+                <button class="tau-course-toggle" type="button" data-video-id="sl2lZhRofhQ" aria-expanded="false">Watch</button>
+              </div>
+              <div class="tau-course-video" hidden></div>
+            </li>
+            <li class="tau-course">
+              <div class="tau-course-row">
+                <span class="badge-mark" aria-hidden="true">&#10003;</span>
+                <a class="tau-course-name" href="https://testautomationu.applitools.com/playwright-intro/index.html" target="_blank" rel="noopener">Introduction to Playwright</a>
+                <span class="tau-course-date">Issued Feb 2025</span>
+                <button class="tau-course-toggle" type="button" data-video-id="sv0OEf0c4-I" aria-expanded="false">Watch</button>
+              </div>
+              <div class="tau-course-video" hidden></div>
+            </li>
+            <li class="tau-course">
+              <div class="tau-course-row">
+                <span class="badge-mark" aria-hidden="true">&#10003;</span>
+                <a class="tau-course-name" href="https://testautomationu.applitools.com/building-up-quality-leaders/index.html" target="_blank" rel="noopener">Build Up Quality Leaders</a>
+                <span class="tau-course-date">Issued Jul 2024</span>
+                <button class="tau-course-toggle" type="button" data-video-id="1W688FLDztY" aria-expanded="false">Watch</button>
+              </div>
+              <div class="tau-course-video" hidden></div>
+            </li>
+            <li class="tau-course">
+              <div class="tau-course-row">
+                <span class="badge-mark" aria-hidden="true">&#10003;</span>
+                <a class="tau-course-name" href="https://testautomationu.applitools.com/postman-tutorial/index.html" target="_blank" rel="noopener">API Test Automation with Postman</a>
+                <span class="tau-course-date">Issued Nov 2022</span>
+                <button class="tau-course-toggle" type="button" data-video-id="HjJh0dNfnlw" aria-expanded="false">Watch</button>
+              </div>
+              <div class="tau-course-video" hidden></div>
+            </li>
+            <li class="tau-course">
+              <div class="tau-course-row">
+                <span class="badge-mark" aria-hidden="true">&#10003;</span>
+                <a class="tau-course-name" href="https://testautomationu.applitools.com/scaling-tests-with-docker/index.html" target="_blank" rel="noopener">Scaling Tests with Docker</a>
+                <button class="tau-course-toggle" type="button" data-video-id="lhiMK2uHFm4" aria-expanded="false">Watch</button>
+              </div>
+              <div class="tau-course-video" hidden></div>
+            </li>
+            <li class="tau-course">
+              <div class="tau-course-row">
+                <span class="badge-mark" aria-hidden="true">&#10003;</span>
+                <span class="tau-course-name">From Scripting to Framework with Selenium and C#</span>
+              </div>
+            </li>
+            <li class="tau-course">
+              <div class="tau-course-row">
+                <span class="badge-mark" aria-hidden="true">&#10003;</span>
+                <a class="tau-course-name" href="https://testautomationu.applitools.com/nunit-tutorial/index.html" target="_blank" rel="noopener">Introduction to NUnit</a>
+                <button class="tau-course-toggle" type="button" data-video-id="0bRDBe4VAUM" aria-expanded="false">Watch</button>
+              </div>
+              <div class="tau-course-video" hidden></div>
+            </li>
+            <li class="tau-course">
+              <div class="tau-course-row">
+                <span class="badge-mark" aria-hidden="true">&#10003;</span>
+                <span class="tau-course-name">Setting a Foundation for Successful Test Automation</span>
+              </div>
+            </li>
+            <li class="tau-course">
+              <div class="tau-course-row">
+                <span class="badge-mark" aria-hidden="true">&#10003;</span>
+                <a class="tau-course-name" href="https://testautomationu.applitools.com/robot-framework-refresh/index.html" target="_blank" rel="noopener">Introduction to Robot Framework</a>
+                <button class="tau-course-toggle" type="button" data-video-id="Kve1luX1rOQ" aria-expanded="false">Watch</button>
+              </div>
+              <div class="tau-course-video" hidden></div>
+            </li>
+            <li class="tau-course">
+              <div class="tau-course-row">
+                <span class="badge-mark" aria-hidden="true">&#10003;</span>
+                <a class="tau-course-name" href="https://testautomationu.applitools.com/nightwatchjs-tutorial/index.html" target="_blank" rel="noopener">Introduction to NightwatchJS</a>
+                <button class="tau-course-toggle" type="button" data-video-id="LrI4HMXoZeM" aria-expanded="false">Watch</button>
+              </div>
+              <div class="tau-course-video" hidden></div>
+            </li>
+            <li class="tau-course">
+              <div class="tau-course-row">
+                <span class="badge-mark" aria-hidden="true">&#10003;</span>
+                <a class="tau-course-name" href="https://testautomationu.applitools.com/github-actions-for-testing/index.html" target="_blank" rel="noopener">GitHub Actions for Testing</a>
+                <button class="tau-course-toggle" type="button" data-video-id="-p0Mr78ZkSI" aria-expanded="false">Watch</button>
+              </div>
+              <div class="tau-course-video" hidden></div>
+            </li>
+            <li class="tau-course">
+              <div class="tau-course-row">
+                <span class="badge-mark" aria-hidden="true">&#10003;</span>
+                <a class="tau-course-name" href="https://testautomationu.applitools.com/accessibility-testing-tutorial/index.html" target="_blank" rel="noopener">Test Automation for Accessibility</a>
+                <button class="tau-course-toggle" type="button" data-video-id="q7uQ7DA5qz4" aria-expanded="false">Watch</button>
+              </div>
+              <div class="tau-course-video" hidden></div>
+            </li>
+            <li class="tau-course">
+              <div class="tau-course-row">
+                <span class="badge-mark" aria-hidden="true">&#10003;</span>
+                <a class="tau-course-name" href="https://testautomationu.applitools.com/pytest-tutorial/index.html" target="_blank" rel="noopener">Introduction to pytest</a>
+                <button class="tau-course-toggle" type="button" data-video-id="WvRbeWIikjE" aria-expanded="false">Watch</button>
+              </div>
+              <div class="tau-course-video" hidden></div>
+            </li>
+            <li class="tau-course">
+              <div class="tau-course-row">
+                <span class="badge-mark" aria-hidden="true">&#10003;</span>
+                <a class="tau-course-name" href="https://testautomationu.applitools.com/cypress-advanced/index.html" target="_blank" rel="noopener">Advanced Cypress</a>
+                <span class="tau-course-date">Issued Jul 2022</span>
+                <button class="tau-course-toggle" type="button" data-video-id="XlEpoH_9-K4" aria-expanded="false">Watch</button>
+              </div>
+              <div class="tau-course-video" hidden></div>
+            </li>
+            <li class="tau-course">
+              <div class="tau-course-row">
+                <span class="badge-mark" aria-hidden="true">&#10003;</span>
+                <a class="tau-course-name" href="https://testautomationu.applitools.com/cypress-getting-started/index.html" target="_blank" rel="noopener">Introduction to Cypress</a>
+                <span class="tau-course-date">Issued Jul 2019</span>
+                <button class="tau-course-toggle" type="button" data-video-id="8n9oKwZLnAE" aria-expanded="false">Watch</button>
+              </div>
+              <div class="tau-course-video" hidden></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Matthew D Thornell, MDT Quality Adventures</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/test-automation-university.js"></script>
+  </body>
+</html>

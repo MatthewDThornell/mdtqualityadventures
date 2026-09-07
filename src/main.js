@@ -2,14 +2,28 @@ import './style.css';
 import { initCoverScene } from './cover-scene.js';
 import { initTypewriter, brandSegment } from './typewriter.js';
 import { initQuoteRotator } from './quote-rotator.js';
+import {
+  initScrollRibbon,
+  initInkCursor,
+  initInkTrail,
+  initQuillCursor,
+  initMagicWords,
+  initIntroSignature,
+} from './chrome.js';
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
-const coverCanvas = document.getElementById('cover-canvas');
-const coverScene = initCoverScene(coverCanvas);
+initIntroSignature(document.getElementById('introOverlay'));
+initScrollRibbon(document.getElementById('scrollRibbonFill'));
+initInkCursor(document.getElementById('inkCursor'));
+initInkTrail(document.getElementById('inkTrailCanvas'));
+initMagicWords();
 
-const coverQuoteEl = document.getElementById('coverQuote');
-const quoteRotator = initQuoteRotator(coverQuoteEl, [
+const coverCanvas = document.getElementById('cover-canvas');
+const coverScene = initCoverScene(coverCanvas, { skylineHeroSelector: '#top' });
+
+const aboutQuoteEl = document.getElementById('aboutQuote');
+const quoteRotator = initQuoteRotator(aboutQuoteEl, [
   'Quality isn’t something we test in. It’s something we build in.',
   'Quality is a choice, not a checklist.',
   'The details aren’t the work. The details are what make the work.',
@@ -19,15 +33,16 @@ const quoteRotator = initQuoteRotator(coverQuoteEl, [
   'Do good work, treat people well, and leave things better than you found them.',
   'The quality of a life is shaped by the choices made every day.',
 ]);
-coverQuoteEl.addEventListener('mouseenter', () => quoteRotator.pause());
-coverQuoteEl.addEventListener('mouseleave', () => quoteRotator.resume());
+aboutQuoteEl.addEventListener('mouseenter', () => quoteRotator.pause());
+aboutQuoteEl.addEventListener('mouseleave', () => quoteRotator.resume());
 
-initTypewriter(
+const eyebrowTypewriter = initTypewriter(
   document.getElementById('eyebrowText'),
   ['A career portfolio, written by', 'A career built around quality'],
   { loop: false }
 );
-initTypewriter(document.getElementById('taglineText'), [
+
+const taglinePhrases = [
   'Software QA Engineer & Quality Advocate',
   {
     text: 'Former QA Coach and Architect at\nVeterans United',
@@ -46,7 +61,8 @@ initTypewriter(document.getElementById('taglineText'), [
     text: 'Former Software Quality Engineer at\nSeekwell/1-800-Contacts',
     segments: [
       brandSegment('Software Quality Engineer', 'brand-seekwell', null),
-      brandSegment('Seekwell/1-800-Contacts', 'brand-seekwell', null, '/images/logos/1800contacts.png', true),
+      brandSegment('Seekwell', 'brand-seekwell', 'https://www.seekwell.com/'),
+      brandSegment('1-800-Contacts', 'brand-seekwell', 'https://www.1800contacts.com/', '/images/logos/1800contacts.png', true),
     ],
   },
   {
@@ -79,7 +95,61 @@ initTypewriter(document.getElementById('taglineText'), [
   'I break code first, so our customers don’t.',
   'I don’t test to say no. I test to make yes possible.',
   'Break some code here, add tests there, build confidence everywhere.',
-]);
+];
+
+const careerTrailList = document.getElementById('careerTrailList');
+const seenCareerPhrases = new Set();
+
+// builds "(logo) Title (logo)" from a phrase's segments — just the role, bracketed
+// by the company logo, instead of spelling the company name out in text. The role
+// itself links out to the company site (the same URL already carried by the logo
+// segment for the "Former X at Y" typewriter phrase this trail item came from).
+function buildTrailLine(segments) {
+  const [titleSeg] = segments;
+  const logoSeg = segments.find((s) => s.logoSrc);
+  const logoImg = logoSeg ? `<img class="career-trail-logo" src="${logoSeg.logoSrc}" alt="" loading="lazy" />` : '';
+  const titleHtml = logoSeg?.href
+    ? `<a class="brand-link ${titleSeg.className}" href="${logoSeg.href}" target="_blank" rel="noopener">${titleSeg.term}</a>`
+    : `<span class="brand-link ${titleSeg.className}">${titleSeg.term}</span>`;
+  return `${logoImg}${titleHtml}${logoImg}`;
+}
+
+function addToCareerTrail(phrase) {
+  // only the "Former X at Y" phrases carry segments — the current role and the
+  // whimsical one-liners aren't career history, so they don't belong in the trail
+  if (!phrase.segments || seenCareerPhrases.has(phrase.text)) return;
+  seenCareerPhrases.add(phrase.text);
+
+  const li = document.createElement('li');
+  li.className = 'career-trail-item';
+  li.innerHTML = buildTrailLine(phrase.segments);
+  careerTrailList.appendChild(li);
+  // force a style flush so the transition below plays instead of the item just appearing
+  li.getBoundingClientRect();
+  li.classList.add('is-visible');
+}
+
+const taglineTypewriter = initTypewriter(document.getElementById('taglineText'), taglinePhrases, {
+  onPhraseTyped: addToCareerTrail,
+});
+
+// The quill can't be off inking the margins and writing the page's own text at
+// the same time — holding the pen down freezes the typewriter titles and the
+// about-quote rotation exactly where they stand (blinking cursor keeps
+// blinking, since that's a plain CSS animation independent of this), and
+// releasing it picks the writing back up right where it left off.
+initQuillCursor({
+  onActivate: () => {
+    eyebrowTypewriter.pause();
+    taglineTypewriter.pause();
+    quoteRotator.pause();
+  },
+  onDeactivate: () => {
+    eyebrowTypewriter.resume();
+    taglineTypewriter.resume();
+    quoteRotator.resume();
+  },
+});
 
 // the rain now runs as a fixed background across the whole site, so pause it
 // only when the tab itself isn't visible (saves battery/CPU in a background tab)
@@ -130,6 +200,31 @@ if (prefersReducedMotion) {
   );
 
   chapters.forEach((chapter) => observer.observe(chapter));
+
+  // jumping straight to a section (nav link, or a shared link with a #hash already in
+  // the URL) still smooth-scrolls past every chapter in between, so without this they'd
+  // all flip in rapid-fire as the scroll passes them — reveal everything up front instead,
+  // since a "jump to section" click means the visitor is skipping the scroll-reveal anyway
+  const chapterList = [...chapters];
+  function revealChaptersUpTo(id) {
+    const target = document.getElementById(id);
+    const targetIndex = chapterList.indexOf(target);
+    if (targetIndex === -1) return;
+    chapterList.slice(0, targetIndex).forEach((chapter) => {
+      if (!chapter.classList.contains('in-view')) {
+        chapter.classList.add('in-view');
+        observer.unobserve(chapter);
+      }
+    });
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener('click', () => revealChaptersUpTo(link.getAttribute('href').slice(1)));
+  });
+
+  if (location.hash) {
+    revealChaptersUpTo(location.hash.slice(1));
+  }
 }
 
 // floating up/down control so long chapters (Recommendations, Professional
