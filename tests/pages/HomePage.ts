@@ -65,6 +65,16 @@ export class HomePage extends BasePage {
     return this.page.getByTestId(`timeline-item-${companySlug}`);
   }
 
+  // --- About Me ---
+  /** Already has a stable id (`#aboutQuote`) predating the data-testid rollout — no testid needed. */
+  get aboutQuote(): Locator {
+    return this.page.locator('#aboutQuote');
+  }
+
+  get habitsList(): Locator {
+    return this.page.locator('.habits-list li');
+  }
+
   // --- Accomplishments ---
   accomplishmentCard(slug: string): Locator {
     return this.page.getByTestId(`accomplishment-card-${slug}`);

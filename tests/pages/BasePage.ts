@@ -23,6 +23,15 @@ export type NavSection =
 export class BasePage {
   constructor(protected readonly page: Page) {}
 
+  get skipLink(): Locator {
+    return this.page.getByTestId('skip-link');
+  }
+
+  /** Has its own stable id (`#main-content`) predating the data-testid rollout — no testid needed. */
+  get mainContent(): Locator {
+    return this.page.locator('#main-content');
+  }
+
   get navBrand(): Locator {
     return this.page.getByTestId('nav-brand');
   }

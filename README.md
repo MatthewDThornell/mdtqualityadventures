@@ -65,7 +65,8 @@ gets reordered or a new entry is inserted in the middle.
 
 **What gets one:**
 - Every nav link, toggle, and the brand link — identical `data-testid` values across all three
-  pages' nav copies, same as the nav's labels/order/hrefs.
+  pages' nav copies, same as the nav's labels/order/hrefs. The skip-link carries one too, for the
+  same reason.
 - Primary buttons/CTAs (resume/letter downloads, LinkedIn/GitHub links, contact links, code-copy
   buttons, TAU watch/hide toggles).
 - Every repeated card/row with no existing unique `id` and ambiguous or duplicate visible text

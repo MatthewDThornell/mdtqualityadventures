@@ -30,7 +30,7 @@
     />
   </head>
   <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <a class="skip-link" href="#main-content" data-testid="skip-link">Skip to main content</a>
     <div class="sky" aria-hidden="true">
       <div class="stars"></div>
       <div class="mist mist-a"></div>
@@ -72,7 +72,11 @@
       </div>
     </header>
 
-    <main id="main-content">
+    <!-- tabindex="-1": makes this the skip-link's actual focus target. Without
+         it, clicking "Skip to main content" scrolls here but leaves focus on
+         <body>, so keyboard/screen-reader users still tab through the whole
+         header first — exactly what the skip link exists to avoid. -->
+    <main id="main-content" tabindex="-1">
       <section class="standards-hero">
         <div class="container">
           <h1>QA Standards</h1>

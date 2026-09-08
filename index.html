@@ -30,7 +30,7 @@
     />
   </head>
   <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <a class="skip-link" href="#main-content" data-testid="skip-link">Skip to main content</a>
 
     <!-- One-time cover-page flourish, homepage only — see initIntroSignature
          in src/chrome.js (called from src/main.js) and .intro-overlay in
@@ -100,7 +100,11 @@
       </div>
     </header>
 
-    <main id="main-content">
+    <!-- tabindex="-1": makes this the skip-link's actual focus target. Without
+         it, clicking "Skip to main content" scrolls here but leaves focus on
+         <body>, so keyboard/screen-reader users still tab through the whole
+         header first — exactly what the skip link exists to avoid. -->
+    <main id="main-content" tabindex="-1">
       <section id="top" class="cover">
         <div class="container">
           <span class="sr-only" data-testid="hero-eyebrow-static">A career portfolio, written by</span>

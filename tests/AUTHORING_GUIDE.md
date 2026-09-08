@@ -62,17 +62,17 @@ Test_Case_{ID}_{Feature}_{Element}_{Behavior}
 |-------|--------|--------|
 | 1000–1999 | Home — Nav & Hero | covered |
 | 2000–2999 | Professional Experience | covered |
-| 3000–3999 | Accomplishments | reserved |
-| 4000–4999 | Recommendations | reserved |
-| 5000–5999 | About Me | reserved |
-| 6000–6999 | Mentors | reserved |
-| 7000–7999 | Mentees | reserved |
-| 8000–8999 | Adventures | reserved |
-| 9000–9999 | Contact | reserved |
+| 3000–3999 | Accomplishments | covered |
+| 4000–4999 | Recommendations | covered |
+| 5000–5999 | About Me | covered |
+| 6000–6999 | Mentors | covered |
+| 7000–7999 | Mentees | covered |
+| 8000–8999 | Adventures | covered |
+| 9000–9999 | Contact | covered |
 | 10000–10999 | QA Standards page | covered |
 | 11000–11999 | Test Automation University page | covered |
 | 12000–12999 | Integration (cross-page navigation) | covered |
-| 13000–13999 | Accessibility | reserved |
+| 13000–13999 | Accessibility | covered |
 
 "Reserved" ranges have page-object support already in place (`HomePage.ts` has
 `accomplishmentCard()`, `mentorCard()`, `menteeCard()`, `adventureCard()`, `contactLink()`, etc.) —
