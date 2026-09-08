@@ -28,10 +28,16 @@ strategy) before adding a new test.
 
 ## Deploy
 
-Netlify auto-builds `dist/` from `netlify.toml` on every push to `main`. `.github/workflows/ci.yml`
-also runs a full build plus the `@smoke` test suite on every push/PR to `main` — it doesn't gate
-the Netlify deploy itself (Netlify builds independently, and a red CI run on `main` doesn't stop
-it), but it does surface a broken build or a regressed smoke path as a GitHub check.
+This site is **not** git-linked on Netlify — pushing to `main` only runs `.github/workflows/ci.yml`
+(build + `@smoke` suite) as a GitHub check, it does not deploy anything. Ship a change with:
+
+```bash
+npm run build
+netlify deploy --prod --dir=dist
+```
+
+`netlify.toml` still supplies the build environment/headers for that deploy. Run `netlify status`
+first if unsure which site/account the CLI is currently linked to.
 
 ## Structure
 
