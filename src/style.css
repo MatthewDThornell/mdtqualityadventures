@@ -1,16 +1,21 @@
 :root {
   --ink: #0f1216;
+  --ink-rgb: 15, 18, 22;
   --ink-panel: #171b22;
   --parchment: #f3ead9;
+  --parchment-rgb: 243, 234, 217;
   --parchment-dim: #e7dcc4;
   --brass: #c9a15a;
+  --brass-rgb: 201, 161, 90;
   --brass-bright: #ddb975;
+  --brass-bright-rgb: 221, 185, 117;
   --teal: #4f7869;
+  --teal-rgb: 107, 156, 137;
   --teal-bright: #6b9c89;
   --panel: #1b212b;
-  --panel-border: rgba(201, 161, 90, 0.16);
+  --panel-border: rgba(var(--brass-rgb), 0.16);
   --text-primary: var(--parchment);
-  --text-muted: rgba(243, 234, 217, 0.62);
+  --text-muted: rgba(var(--parchment-rgb), 0.62);
   --max-width: 1100px;
   --font-display: "Cormorant Garamond", Georgia, serif;
   --font-body: "Spectral", Georgia, serif;
@@ -145,14 +150,14 @@ button:focus-visible,
 .mist-a {
   top: -10%;
   left: -10%;
-  background: radial-gradient(circle, var(--teal) 0%, rgba(107, 156, 137, 0.4) 35%, transparent 70%);
+  background: radial-gradient(circle, var(--teal) 0%, rgba(var(--teal-rgb), 0.4) 35%, transparent 70%);
   animation: drift-a 40s ease-in-out infinite alternate;
 }
 
 .mist-b {
   bottom: -15%;
   right: -10%;
-  background: radial-gradient(circle, var(--brass) 0%, rgba(201, 161, 90, 0.4) 35%, transparent 70%);
+  background: radial-gradient(circle, var(--brass) 0%, rgba(var(--brass-rgb), 0.4) 35%, transparent 70%);
   animation: drift-b 50s ease-in-out infinite alternate;
 }
 
@@ -175,7 +180,7 @@ button:focus-visible,
   right: 0;
   width: 4px;
   height: 100vh;
-  background: rgba(201, 161, 90, 0.12);
+  background: rgba(var(--brass-rgb), 0.12);
   z-index: 50;
   pointer-events: none;
 }
@@ -195,13 +200,7 @@ button:focus-visible,
   height: 9px;
   background: var(--brass-bright);
   transform: rotate(45deg);
-  box-shadow: 0 0 6px rgba(221, 185, 117, 0.6);
-}
-
-@media (max-width: 1040px) {
-  .scroll-ribbon {
-    display: none;
-  }
+  box-shadow: 0 0 6px rgba(var(--brass-bright-rgb), 0.6);
 }
 
 /* Magic words: hovering a word gives it a quick brass glow that then fades
@@ -231,7 +230,7 @@ html.pen-active .magic-word:hover {
   z-index: 5;
   transition: color 0.12s ease-out, text-shadow 0.12s ease-out;
   color: var(--brass-bright);
-  text-shadow: 0 0 6px rgba(221, 185, 117, 0.9), 0 0 14px rgba(201, 161, 90, 0.55);
+  text-shadow: 0 0 6px rgba(var(--brass-bright-rgb), 0.9), 0 0 14px rgba(var(--brass-rgb), 0.55);
   animation: magic-word-pop 2.2s ease-in forwards;
 }
 
@@ -286,7 +285,7 @@ html.pen-active * {
   height: 22px;
   margin: -11px 0 0 -11px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(107, 156, 137, 0.5) 0%, rgba(221, 185, 117, 0.25) 45%, transparent 72%);
+  background: radial-gradient(circle, rgba(var(--teal-rgb), 0.5) 0%, rgba(var(--brass-bright-rgb), 0.25) 45%, transparent 72%);
   pointer-events: none;
   z-index: 60;
   opacity: 0;
@@ -304,8 +303,8 @@ html.pen-active * {
   top: 0;
   z-index: 10;
   backdrop-filter: blur(8px);
-  background: rgba(15, 18, 22, 0.75);
-  border-bottom: 1px solid rgba(201, 161, 90, 0.2);
+  background: rgba(var(--ink-rgb), 0.75);
+  border-bottom: 1px solid rgba(var(--brass-rgb), 0.2);
 }
 
 .site-header .container {
@@ -536,12 +535,6 @@ html.pen-active * {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .intro-overlay {
-    display: none !important;
-  }
-}
-
 .cover h1 {
   font-family: var(--font-display);
   font-size: clamp(2.6rem, 7vw, 4.5rem);
@@ -630,7 +623,7 @@ html.pen-active .typewriter::after {
    permanent highlight the moment this phrase finishes typing. */
 .tw-role {
   text-decoration: underline;
-  text-decoration-color: rgba(221, 185, 117, 0.7);
+  text-decoration-color: rgba(var(--brass-bright-rgb), 0.7);
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
 }
@@ -653,8 +646,8 @@ html.pen-active .typewriter::after {
     color: #fdf3d9;
     text-shadow:
       0 0 6px rgba(253, 238, 192, 0.95),
-      0 0 16px rgba(221, 185, 117, 0.75),
-      0 0 28px rgba(201, 161, 90, 0.5);
+      0 0 16px rgba(var(--brass-bright-rgb), 0.75),
+      0 0 28px rgba(var(--brass-rgb), 0.5);
   }
   100% {
     color: var(--tw-rest-color);
@@ -690,7 +683,7 @@ html.pen-active .typewriter::after {
   background: url('/cursors/quill-cursor.svg') center / contain no-repeat;
   transform: rotate(22deg);
   transform-origin: 20% 80%;
-  filter: drop-shadow(0 0 3px rgba(221, 185, 117, 0.65)) drop-shadow(0 0 7px rgba(201, 161, 90, 0.4));
+  filter: drop-shadow(0 0 3px rgba(var(--brass-bright-rgb), 0.65)) drop-shadow(0 0 7px rgba(var(--brass-rgb), 0.4));
   transition: opacity 0.4s ease, filter 0.4s ease;
 }
 
@@ -801,10 +794,10 @@ html.pen-active .typewriter .tw-quill {
 
 @keyframes scroll-cue-glow {
   0%, 100% {
-    filter: drop-shadow(0 0 2px rgba(221, 185, 117, 0.5)) drop-shadow(0 0 5px rgba(201, 161, 90, 0.3));
+    filter: drop-shadow(0 0 2px rgba(var(--brass-bright-rgb), 0.5)) drop-shadow(0 0 5px rgba(var(--brass-rgb), 0.3));
   }
   50% {
-    filter: drop-shadow(0 0 5px rgba(221, 185, 117, 0.85)) drop-shadow(0 0 12px rgba(201, 161, 90, 0.55));
+    filter: drop-shadow(0 0 5px rgba(var(--brass-bright-rgb), 0.85)) drop-shadow(0 0 12px rgba(var(--brass-rgb), 0.55));
   }
 }
 
@@ -817,9 +810,9 @@ html.pen-active .typewriter .tw-quill {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(15, 18, 22, 0.75);
+  background: rgba(var(--ink-rgb), 0.75);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(201, 161, 90, 0.3);
+  border: 1px solid rgba(var(--brass-rgb), 0.3);
   border-radius: 999px;
   padding: 0.3rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
@@ -858,7 +851,7 @@ html.pen-active .typewriter .tw-quill {
    mobile leaves the highlight stuck on since there's no real pointer to "leave" */
 @media (hover: hover) {
   .chapter-nav-btn:hover:not(:disabled) {
-    background: rgba(201, 161, 90, 0.15);
+    background: rgba(var(--brass-rgb), 0.15);
     transform: scale(1.08);
   }
 }
@@ -880,7 +873,7 @@ html.pen-active .typewriter .tw-quill {
 .chapter-nav-divider {
   width: 20px;
   height: 1px;
-  background: rgba(201, 161, 90, 0.25);
+  background: rgba(var(--brass-rgb), 0.25);
   margin: 0.1rem 0;
 }
 
@@ -937,7 +930,7 @@ html.pen-active .typewriter .tw-quill {
   justify-content: center;
   position: sticky;
   top: 6rem;
-  box-shadow: 0 0 0 4px rgba(201, 161, 90, 0.15);
+  box-shadow: 0 0 0 4px rgba(var(--brass-rgb), 0.15);
 }
 
 .chapter:not(:last-of-type) .waypoint::after {
@@ -950,8 +943,8 @@ html.pen-active .typewriter .tw-quill {
   transform: translateX(-50%);
   background: repeating-linear-gradient(
     to bottom,
-    rgba(201, 161, 90, 0.35) 0,
-    rgba(201, 161, 90, 0.35) 4px,
+    rgba(var(--brass-rgb), 0.35) 0,
+    rgba(var(--brass-rgb), 0.35) 4px,
     transparent 4px,
     transparent 10px
   );
@@ -1077,12 +1070,6 @@ html.pen-active .typewriter .tw-quill {
   text-transform: uppercase;
 }
 
-@media (max-width: 1320px) {
-  .opener-seal {
-    display: none;
-  }
-}
-
 /* Small ink diamond swapped in for the waypoint number on the closing
    Contact/Epilogue chapter, so it reads as "the end" rather than a page count */
 .waypoint-diamond {
@@ -1175,13 +1162,34 @@ html.pen-active .typewriter .tw-quill {
   margin: 0 0 0.4rem;
 }
 
+/* Small "logo chip" pattern — a tiny brand/company logo on a parchment
+   backing so any transparent-background PNG logo reads consistently
+   against the dark theme. Repeated across the timeline, hero tagline,
+   career trail, tech stack, badges, and skill tags below (search
+   "logo chip" tier rules) — sizing scales per context, object-fit and
+   background stay constant everywhere it's used. */
+.timeline-logo,
+.tagline-logo,
+.career-trail-logo,
+.stack-logo,
+.badge-logo,
+.tags-logo img {
+  object-fit: contain;
+  background: var(--parchment);
+}
+
+/* logo chip tier: 22-24px icons */
+.timeline-logo,
+.tagline-logo,
+.career-trail-logo,
+.stack-logo {
+  border-radius: 5px;
+  padding: 3px;
+}
+
 .timeline-logo {
   width: 22px;
   height: 22px;
-  object-fit: contain;
-  background: var(--parchment);
-  border-radius: 5px;
-  padding: 3px;
   flex-shrink: 0;
 }
 
@@ -1199,10 +1207,6 @@ html.pen-active .typewriter .tw-quill {
 .tagline-logo {
   width: 24px;
   height: 24px;
-  object-fit: contain;
-  background: var(--parchment);
-  border-radius: 5px;
-  padding: 3px;
   vertical-align: -6px;
   margin: 0 0.35rem;
 }
@@ -1446,9 +1450,9 @@ html.pen-active .typewriter .tw-quill {
 .tags li {
   font-family: var(--font-ui);
   font-size: 0.78rem;
-  background: rgba(107, 156, 137, 0.14);
+  background: rgba(var(--teal-rgb), 0.14);
   color: var(--teal-bright);
-  border: 1px solid rgba(107, 156, 137, 0.35);
+  border: 1px solid rgba(var(--teal-rgb), 0.35);
   border-radius: 999px;
   padding: 0.3rem 0.7rem;
 }
@@ -1491,92 +1495,32 @@ html.pen-active .typewriter .tw-quill {
   font-size: 0.8rem;
 }
 
+/* logo chip tier: badge (largest) */
+.badge-logo {
+  border-radius: 6px;
+  padding: 3px;
+}
+
 .badge-logo {
   width: 28px;
   height: 28px;
-  object-fit: contain;
-  background: var(--parchment);
-  border-radius: 6px;
-  padding: 3px;
   flex-shrink: 0;
 }
 
-/* Test Automation University course ledger */
-.tau-course-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.tau-course {
-  padding: 0.85rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.tau-course:last-child {
-  border-bottom: none;
-}
-
-.tau-course-row {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.tau-course-name {
-  font-family: var(--font-ui);
-  font-weight: 600;
-  color: var(--parchment);
-  text-decoration: none;
-  flex: 1;
-}
-
-a.tau-course-name:hover {
-  color: var(--brass-bright);
-  text-decoration: underline;
-}
-
-.tau-course-date {
-  font-family: var(--font-ui);
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  white-space: nowrap;
-}
-
-.tau-course-toggle {
-  font-family: var(--font-ui);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  color: var(--ink);
-  background: var(--brass);
-  border: none;
-  border-radius: 999px;
-  padding: 0.35rem 0.9rem;
-  cursor: pointer;
-  flex-shrink: 0;
-  transition: background 0.2s ease;
-}
-
-.tau-course-toggle:hover {
-  background: var(--brass-bright);
-}
-
-.tau-course-video {
-  position: relative;
-  height: 0;
-  padding-top: 56.25%;
-  margin-top: 0.85rem;
+/* Faint outlined panel: a barely-visible white-on-dark card background used
+   for every "boxed" content block on the site — accomplishment/adventure
+   cards, the GitHub card and its repo rows, recommendation and mentor
+   cards. Just enough definition to read as a card without competing with
+   the parchment/brass palette reserved for actual emphasis. Each class
+   keeps its own padding/layout/transition below. */
+.card,
+.github-card,
+.github-repo,
+.rec-card,
+.mentor-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: 6px;
-  overflow: hidden;
-}
-
-.tau-course-video iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
 }
 
 /* Field notes cards */
@@ -1588,9 +1532,6 @@ a.tau-course-name:hover {
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 6px;
   padding: 1.5rem;
   overflow: hidden;
   transition: transform 0.25s ease, border-color 0.25s ease, filter 0.25s ease;
@@ -1600,7 +1541,7 @@ a.tau-course-name:hover {
    for the .card-photo bleed above) would clip a box-shadow on this same box */
 .card:hover {
   transform: translateY(-4px);
-  border-color: rgba(201, 161, 90, 0.5);
+  border-color: rgba(var(--brass-rgb), 0.5);
   filter: drop-shadow(0 14px 26px rgba(0, 0, 0, 0.35));
 }
 
@@ -1616,11 +1557,6 @@ a.tau-course-name:hover {
    faces sit higher up and the bottom is mostly empty ground/legs */
 .card-photo-top {
   object-position: center 28%;
-}
-
-.card-gallery {
-  margin-top: 1rem;
-  max-width: 340px;
 }
 
 /* Same full-bleed footprint as .card-photo, so this card lines up with the
@@ -1666,7 +1602,7 @@ a.tau-course-name:hover {
   height: 74px;
   object-fit: cover;
   border-radius: 4px;
-  border: 1px solid rgba(201, 161, 90, 0.3);
+  border: 1px solid rgba(var(--brass-rgb), 0.3);
 }
 
 .product-strip {
@@ -1681,7 +1617,7 @@ a.tau-course-name:hover {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 4px;
-  border: 1px solid rgba(201, 161, 90, 0.3);
+  border: 1px solid rgba(var(--brass-rgb), 0.3);
 }
 
 .gg-strip {
@@ -1697,7 +1633,7 @@ a.tau-course-name:hover {
   max-width: 100%;
   object-fit: cover;
   border-radius: 4px;
-  border: 1px solid rgba(201, 161, 90, 0.3);
+  border: 1px solid rgba(var(--brass-rgb), 0.3);
 }
 
 .card h3 {
@@ -1728,9 +1664,6 @@ a.tau-course-name:hover {
 .github-card {
   margin-top: 1.5rem;
   padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 6px;
 }
 
 .github-card-header {
@@ -1780,9 +1713,6 @@ a.tau-course-name:hover {
   justify-content: space-between;
   gap: 0.75rem;
   padding: 0.7rem 1rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 6px;
   font-family: var(--font-ui);
   font-size: 0.85rem;
   color: var(--parchment);
@@ -1820,7 +1750,7 @@ a.tau-course-name:hover {
   gap: 1rem;
   margin: 1.75rem 0;
   padding: 1.25rem 1.5rem;
-  background: rgba(201, 161, 90, 0.08);
+  background: rgba(var(--brass-rgb), 0.08);
   border: 1px solid var(--panel-border);
   border-radius: 6px;
 }
@@ -1866,7 +1796,7 @@ a.tau-course-name:hover {
 
 .mentee:hover img {
   transform: scale(1.08);
-  box-shadow: 0 0 0 4px rgba(201, 161, 90, 0.25);
+  box-shadow: 0 0 0 4px rgba(var(--brass-rgb), 0.25);
 }
 
 .mentee figcaption {
@@ -1932,84 +1862,108 @@ a.tau-course-name:hover {
   margin-top: 1.5rem;
 }
 
-.rec-card {
+/* .rec-card and .mentor-card share the exact same avatar+name+title+body
+   grid layout and hover treatment, differing only in size (mentor cards run
+   bigger — there are far fewer of them, more room to give each one) — the
+   shared properties below are declared once via combined selectors, with
+   each class's own sizing kept in its own rule right after. */
+.rec-card,
+.mentor-card {
   display: grid;
-  grid-template-columns: 56px 1fr;
-  column-gap: 0.85rem;
   row-gap: 0.15rem;
-  break-inside: avoid;
-  margin: 0 0 1.5rem;
-  padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 6px;
   transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
-.rec-card:hover {
+.rec-card:hover,
+.mentor-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(201, 161, 90, 0.5);
+  border-color: rgba(var(--brass-rgb), 0.5);
   box-shadow: 0 14px 32px rgba(0, 0, 0, 0.35);
 }
 
-.rec-avatar {
+.rec-card {
+  grid-template-columns: 56px 1fr;
+  column-gap: 0.85rem;
+  break-inside: avoid;
+  margin: 0 0 1.5rem;
+  padding: 1.5rem;
+}
+
+.mentor-card {
+  grid-template-columns: 72px 1fr;
+  column-gap: 1rem;
+  padding: 1.75rem;
+}
+
+.rec-avatar,
+.mentor-avatar {
   grid-row: 1 / 3;
   grid-column: 1;
-  width: 56px;
-  height: 56px;
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid var(--brass);
 }
 
-.rec-avatar img {
+.rec-avatar {
+  width: 56px;
+  height: 56px;
+}
+
+.mentor-avatar {
+  width: 72px;
+  height: 72px;
+}
+
+.rec-avatar img,
+.mentor-avatar img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.rec-avatar-initials {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--brass);
-  color: var(--ink);
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-
-.rec-card h3 {
+.rec-card h3,
+.mentor-card h3 {
   grid-column: 2;
   grid-row: 1;
   font-family: var(--font-display);
-  font-size: 1.15rem;
   margin: 0;
 }
 
-.rec-card h3 a {
+.rec-card h3 {
+  font-size: 1.15rem;
+}
+
+.mentor-card h3 {
+  font-size: 1.2rem;
+}
+
+.rec-card h3 a,
+.mentor-card h3 a {
   color: var(--parchment);
   text-decoration: none;
 }
 
-.rec-card h3 a:hover {
+.rec-card h3 a:hover,
+.mentor-card h3 a:hover {
   color: var(--brass-bright);
 }
 
-.rec-title {
+.rec-title,
+.mentor-title {
   grid-column: 2;
   grid-row: 2;
   font-family: var(--font-ui);
-  font-size: 0.75rem;
   color: var(--text-muted);
   margin: 0;
 }
 
-.rec-card blockquote {
-  grid-column: 1 / -1;
-  grid-row: 3;
-  margin: 1rem 0 0;
+.rec-title {
+  font-size: 0.75rem;
+}
+
+.mentor-title {
+  font-size: 0.78rem;
 }
 
 /* Mentors */
@@ -2020,81 +1974,14 @@ a.tau-course-name:hover {
   margin-top: 1.5rem;
 }
 
-.mentor-card {
-  display: grid;
-  grid-template-columns: 72px 1fr;
-  column-gap: 1rem;
-  row-gap: 0.15rem;
-  padding: 1.75rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 6px;
-  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-.mentor-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(201, 161, 90, 0.5);
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.35);
-}
-
-.mentor-avatar {
-  grid-row: 1 / 3;
-  grid-column: 1;
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 2px solid var(--brass);
-}
-
-.mentor-avatar img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.mentor-avatar-initials {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--brass);
-  color: var(--ink);
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.3rem;
-}
-
-.mentor-card h3 a {
-  color: var(--parchment);
-  text-decoration: none;
-}
-
-.mentor-card h3 a:hover {
-  color: var(--brass-bright);
-}
-
-.mentor-card h3 {
-  grid-column: 2;
-  grid-row: 1;
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-  margin: 0;
-}
-
-.mentor-title {
-  grid-column: 2;
-  grid-row: 2;
-  font-family: var(--font-ui);
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  margin: 0;
-}
-
+.rec-card blockquote,
 .mentor-story {
   grid-column: 1 / -1;
   margin: 1rem 0 0;
+}
+
+.rec-card blockquote {
+  grid-row: 3;
 }
 
 .rec-card blockquote p {
@@ -2162,10 +2049,6 @@ a.tau-course-name:hover {
 .career-trail-logo {
   width: 24px;
   height: 24px;
-  object-fit: contain;
-  background: var(--parchment);
-  border-radius: 5px;
-  padding: 3px;
   flex-shrink: 0;
 }
 
@@ -2181,7 +2064,7 @@ a.tau-course-name:hover {
   flex: 1;
   height: 1px;
   max-width: 5rem;
-  background: rgba(201, 161, 90, 0.35);
+  background: rgba(var(--brass-rgb), 0.35);
 }
 
 .chapter-end-mark i {
@@ -2216,7 +2099,7 @@ a.tau-course-name:hover {
 }
 
 .contact-row:hover {
-  background: rgba(201, 161, 90, 0.08);
+  background: rgba(var(--brass-rgb), 0.08);
   transform: translateX(4px);
   color: var(--teal-bright);
 }
@@ -2329,6 +2212,10 @@ a.tau-course-name:hover {
    its own threshold rather than sharing one and squeezing the brand into an
    ugly 3-line wrap in that 1041-1300px gap. */
 @media (max-width: 1320px) {
+  .opener-seal {
+    display: none;
+  }
+
   .nav-toggle {
     display: flex;
   }
@@ -2340,7 +2227,7 @@ a.tau-course-name:hover {
     right: 0;
     flex-direction: column;
     background: var(--ink-panel);
-    border-bottom: 1px solid rgba(201, 161, 90, 0.2);
+    border-bottom: 1px solid rgba(var(--brass-rgb), 0.2);
     padding: 1rem 1.5rem;
     display: none;
     gap: 1rem;
@@ -2353,6 +2240,10 @@ a.tau-course-name:hover {
 
 /* Mobile content layout */
 @media (max-width: 1040px) {
+  .scroll-ribbon {
+    display: none;
+  }
+
   .chapter-inner {
     grid-template-columns: 1fr;
   }
@@ -2418,8 +2309,8 @@ a.tau-course-name:hover {
   text-transform: uppercase;
   color: var(--parchment-dim);
   text-decoration: none;
-  background: rgba(107, 156, 137, 0.1);
-  border: 1px solid rgba(107, 156, 137, 0.3);
+  background: rgba(var(--teal-rgb), 0.1);
+  border: 1px solid rgba(var(--teal-rgb), 0.3);
   border-radius: 999px;
   padding: 0.4rem 0.9rem;
   transition: color 0.2s ease, border-color 0.2s ease;
@@ -2427,7 +2318,7 @@ a.tau-course-name:hover {
 
 .standards-subnav a:hover {
   color: var(--brass-bright);
-  border-color: rgba(201, 161, 90, 0.5);
+  border-color: rgba(var(--brass-rgb), 0.5);
 }
 
 .standards-section {
@@ -2504,10 +2395,6 @@ a.tau-course-name:hover {
 .stack-logo {
   width: 22px;
   height: 22px;
-  object-fit: contain;
-  background: var(--parchment);
-  border-radius: 5px;
-  padding: 3px;
   flex-shrink: 0;
 }
 
@@ -2538,8 +2425,6 @@ a.tau-course-name:hover {
 .tags-logo img {
   width: 14px;
   height: 14px;
-  object-fit: contain;
-  background: var(--parchment);
   border-radius: 3px;
   padding: 2px;
 }
@@ -2563,8 +2448,8 @@ a.tau-course-name:hover {
   align-items: center;
   justify-content: space-between;
   padding: 0.55rem 1rem;
-  border-bottom: 1px solid rgba(201, 161, 90, 0.14);
-  background: rgba(201, 161, 90, 0.05);
+  border-bottom: 1px solid rgba(var(--brass-rgb), 0.14);
+  background: rgba(var(--brass-rgb), 0.05);
 }
 
 .code-block-label {
@@ -2583,7 +2468,7 @@ a.tau-course-name:hover {
   letter-spacing: 0.03em;
   color: var(--parchment-dim);
   background: transparent;
-  border: 1px solid rgba(243, 234, 217, 0.2);
+  border: 1px solid rgba(var(--parchment-rgb), 0.2);
   border-radius: 4px;
   padding: 0.25rem 0.6rem;
   cursor: pointer;
@@ -2592,12 +2477,12 @@ a.tau-course-name:hover {
 
 .code-copy-btn:hover {
   color: var(--brass-bright);
-  border-color: rgba(201, 161, 90, 0.5);
+  border-color: rgba(var(--brass-rgb), 0.5);
 }
 
 .code-copy-btn.copied {
   color: var(--teal-bright);
-  border-color: rgba(107, 156, 137, 0.5);
+  border-color: rgba(var(--teal-rgb), 0.5);
 }
 
 .code-block pre {
@@ -2614,10 +2499,93 @@ a.tau-course-name:hover {
   white-space: pre;
 }
 
+/* Test Automation University page: shares .standards-hero/.standards-section
+   above with the QA Standards page, plus this page's own course ledger */
+.tau-course-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tau-course {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tau-course:last-child {
+  border-bottom: none;
+}
+
+.tau-course-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tau-course-name {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  color: var(--parchment);
+  text-decoration: none;
+  flex: 1;
+}
+
+a.tau-course-name:hover {
+  color: var(--brass-bright);
+  text-decoration: underline;
+}
+
+.tau-course-date {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.tau-course-toggle {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--ink);
+  background: var(--brass);
+  border: none;
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.2s ease;
+}
+
+.tau-course-toggle:hover {
+  background: var(--brass-bright);
+}
+
+.tau-course-video {
+  position: relative;
+  height: 0;
+  padding-top: 56.25%;
+  margin-top: 0.85rem;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.tau-course-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .intro-overlay {
+    display: none !important;
   }
 
   .stars,
