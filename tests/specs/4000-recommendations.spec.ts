@@ -20,29 +20,39 @@ test.describe('Recommendations', () => {
     'jeordin-callister',
   ];
 
-  test('Test_Case_4000_Recommendations_Cards_LinkNameToRealLinkedInProfile', { tag: '@smoke' }, async ({ page }) => {
-    const home = new HomePage(page);
-    await home.goto();
+  test(
+    'Test_Case_4000_Recommendations_Cards_LinkNameToRealLinkedInProfile',
+    { tag: '@smoke' },
+    async ({ page }) => {
+      const home = new HomePage(page);
+      await home.goto();
 
-    await test.step('Then every recommendation card is visible with a linked-in name', async () => {
-      for (const slug of SLUGS) {
-        const card = home.recCard(slug);
-        await expect.soft(card).toBeVisible();
-        await expect.soft(card.locator('h3 a')).toHaveAttribute('href', /^https:\/\/www\.linkedin\.com\/in\//);
-      }
-    });
-  });
+      await test.step('Then every recommendation card is visible with a linked-in name', async () => {
+        for (const slug of SLUGS) {
+          const card = home.recCard(slug);
+          await expect.soft(card).toBeVisible();
+          await expect
+            .soft(card.locator('h3 a'))
+            .toHaveAttribute('href', /^https:\/\/www\.linkedin\.com\/in\//);
+        }
+      });
+    },
+  );
 
-  test('Test_Case_4001_Recommendations_Cards_HaveRealQuoteAndTitle', { tag: '@regression' }, async ({ page }) => {
-    const home = new HomePage(page);
-    await home.goto();
+  test(
+    'Test_Case_4001_Recommendations_Cards_HaveRealQuoteAndTitle',
+    { tag: '@regression' },
+    async ({ page }) => {
+      const home = new HomePage(page);
+      await home.goto();
 
-    await test.step('Then every card has a non-empty title and quote', async () => {
-      for (const slug of SLUGS) {
-        const card = home.recCard(slug);
-        await expect.soft(card.locator('.rec-title')).not.toBeEmpty();
-        await expect.soft(card.locator('blockquote')).not.toBeEmpty();
-      }
-    });
-  });
+      await test.step('Then every card has a non-empty title and quote', async () => {
+        for (const slug of SLUGS) {
+          const card = home.recCard(slug);
+          await expect.soft(card.locator('.rec-title')).not.toBeEmpty();
+          await expect.soft(card.locator('blockquote')).not.toBeEmpty();
+        }
+      });
+    },
+  );
 });

@@ -39,11 +39,11 @@ tests/
 This site's own [QA Standards page](https://mdtqualityadventures.com/qa-standards.html#best-practices)
 documents the priority order for code we control:
 
-| Priority | Use When |
-|----------|----------|
-| `page.getByTestId(...)` | Default choice for anything interactive or repeated — see the site repo's `README.md#automation-ids` for the full `data-testid` convention and what does/doesn't get one. |
-| `page.getByRole(role, name)` | Fine where there's no test-id and the accessible name is already unique (e.g. page `<h1>`s). |
-| CSS selector scoped to a landmark | Last resort, and only with a `// TODO:` comment explaining why testid/role didn't work. |
+| Priority                          | Use When                                                                                                                                                                  |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `page.getByTestId(...)`           | Default choice for anything interactive or repeated — see the site repo's `README.md#automation-ids` for the full `data-testid` convention and what does/doesn't get one. |
+| `page.getByRole(role, name)`      | Fine where there's no test-id and the accessible name is already unique (e.g. page `<h1>`s).                                                                              |
+| CSS selector scoped to a landmark | Last resort, and only with a `// TODO:` comment explaining why testid/role didn't work.                                                                                   |
 
 Every page object method returns a `Locator`, never a raw string — same rule as OptumPlaywright.
 Selectors for repeated cards/rows take the item's own slug as a parameter (e.g.
@@ -58,21 +58,21 @@ Test_Case_{ID}_{Feature}_{Element}_{Behavior}
 
 ### ID Ranges
 
-| Range | Module | Status |
-|-------|--------|--------|
-| 1000–1999 | Home — Nav & Hero | covered |
-| 2000–2999 | Professional Experience | covered |
-| 3000–3999 | Accomplishments | covered |
-| 4000–4999 | Recommendations | covered |
-| 5000–5999 | About Me | covered |
-| 6000–6999 | Mentors | covered |
-| 7000–7999 | Mentees | covered |
-| 8000–8999 | Adventures | covered |
-| 9000–9999 | Contact | covered |
-| 10000–10999 | QA Standards page | covered |
-| 11000–11999 | Test Automation University page | covered |
+| Range       | Module                              | Status  |
+| ----------- | ----------------------------------- | ------- |
+| 1000–1999   | Home — Nav & Hero                   | covered |
+| 2000–2999   | Professional Experience             | covered |
+| 3000–3999   | Accomplishments                     | covered |
+| 4000–4999   | Recommendations                     | covered |
+| 5000–5999   | About Me                            | covered |
+| 6000–6999   | Mentors                             | covered |
+| 7000–7999   | Mentees                             | covered |
+| 8000–8999   | Adventures                          | covered |
+| 9000–9999   | Contact                             | covered |
+| 10000–10999 | QA Standards page                   | covered |
+| 11000–11999 | Test Automation University page     | covered |
 | 12000–12999 | Integration (cross-page navigation) | covered |
-| 13000–13999 | Accessibility | covered |
+| 13000–13999 | Accessibility                       | covered |
 
 "Reserved" ranges have page-object support already in place (`HomePage.ts` has
 `accomplishmentCard()`, `mentorCard()`, `menteeCard()`, `adventureCard()`, `contactLink()`, etc.) —
@@ -108,6 +108,7 @@ test('Test_Case_XXXX_Feature_Element_Behavior', { tag: '@smoke' }, async ({ page
 ```
 
 **Rules:**
+
 - Always use `expect.soft(...)` for assertions, not bare `expect(...)`, unless a failure means
   continuing the test is pointless (e.g. the page navigated to the wrong URL entirely — see the
   hard `expect(page).toHaveURL(...)` calls in `12000-integration-navigation.spec.ts`). Soft

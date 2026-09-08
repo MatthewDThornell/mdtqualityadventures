@@ -33,14 +33,18 @@ test.describe('Mentors', () => {
     });
   });
 
-  test('Test_Case_6001_Mentors_LinkedCards_PointToRealLinkedInProfiles', { tag: '@regression' }, async ({ page }) => {
-    const home = new HomePage(page);
-    await home.goto();
+  test(
+    'Test_Case_6001_Mentors_LinkedCards_PointToRealLinkedInProfiles',
+    { tag: '@regression' },
+    async ({ page }) => {
+      const home = new HomePage(page);
+      await home.goto();
 
-    await test.step('Then every other mentor card links its name to LinkedIn', async () => {
-      for (const [slug, href] of Object.entries(LINKED_MENTORS)) {
-        await expect.soft(home.mentorCard(slug).locator('h3 a')).toHaveAttribute('href', href);
-      }
-    });
-  });
+      await test.step('Then every other mentor card links its name to LinkedIn', async () => {
+        for (const [slug, href] of Object.entries(LINKED_MENTORS)) {
+          await expect.soft(home.mentorCard(slug).locator('h3 a')).toHaveAttribute('href', href);
+        }
+      });
+    },
+  );
 });

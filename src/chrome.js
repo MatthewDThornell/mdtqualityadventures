@@ -168,7 +168,11 @@ export function initInkCursor(el) {
     y += (targetY - y) * CURSOR_LAG;
     el.style.transform = `translate3d(${x}px, ${y}px, 0)`;
 
-    if (!active && Math.abs(targetX - x) < SETTLE_DISTANCE && Math.abs(targetY - y) < SETTLE_DISTANCE) {
+    if (
+      !active &&
+      Math.abs(targetX - x) < SETTLE_DISTANCE &&
+      Math.abs(targetY - y) < SETTLE_DISTANCE
+    ) {
       looping = false;
       return;
     }
@@ -408,7 +412,10 @@ export function initInkTrail(canvas) {
     // ever land, since those only used to come from the mousemove listener —
     // this keeps the tip "leaking" a glyph at the last known spot on an
     // interval, so the trail keeps growing even without moving the mouse
-    if (document.documentElement.classList.contains('pen-active') && now - lastDripTime > DRIP_INTERVAL_MS) {
+    if (
+      document.documentElement.classList.contains('pen-active') &&
+      now - lastDripTime > DRIP_INTERVAL_MS
+    ) {
       spawnGlyphPoint(lastX, lastY);
       spawnSparkles(lastX, lastY);
       lastDripTime = now;

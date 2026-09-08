@@ -28,23 +28,27 @@ test.describe('Adventures', () => {
     });
   });
 
-  test('Test_Case_8001_Adventures_Cards_OutboundLinksPointToRealDestinations', { tag: '@regression' }, async ({ page }) => {
-    const home = new HomePage(page);
-    await home.goto();
+  test(
+    'Test_Case_8001_Adventures_Cards_OutboundLinksPointToRealDestinations',
+    { tag: '@regression' },
+    async ({ page }) => {
+      const home = new HomePage(page);
+      await home.goto();
 
-    await test.step('Then each card\'s named link points at the real organization/site', async () => {
-      const linkChecks: Array<{ slug: string; name: RegExp | string; href: string }> = [
-        { slug: 'patricks-test-pilot', name: 'Patrick’s', href: 'https://patricks.co/' },
-        { slug: 'legrand-skydiving', name: 'Legrand', href: 'https://www.legrand.us/' },
-        { slug: 'conexed-summit', name: 'ConexED', href: 'https://www.conexed.com/' },
-        { slug: 'conexed-summit', name: 'Grand America', href: 'https://www.grandamerica.com/' },
-        { slug: 'seekwell-provo-river', name: 'Seekwell', href: 'https://www.seekwell.com/' },
-      ];
-      for (const { slug, name, href } of linkChecks) {
-        await expect
-          .soft(home.adventureCard(slug).getByRole('link', { name }))
-          .toHaveAttribute('href', href);
-      }
-    });
-  });
+      await test.step("Then each card's named link points at the real organization/site", async () => {
+        const linkChecks: Array<{ slug: string; name: RegExp | string; href: string }> = [
+          { slug: 'patricks-test-pilot', name: 'Patrick’s', href: 'https://patricks.co/' },
+          { slug: 'legrand-skydiving', name: 'Legrand', href: 'https://www.legrand.us/' },
+          { slug: 'conexed-summit', name: 'ConexED', href: 'https://www.conexed.com/' },
+          { slug: 'conexed-summit', name: 'Grand America', href: 'https://www.grandamerica.com/' },
+          { slug: 'seekwell-provo-river', name: 'Seekwell', href: 'https://www.seekwell.com/' },
+        ];
+        for (const { slug, name, href } of linkChecks) {
+          await expect
+            .soft(home.adventureCard(slug).getByRole('link', { name }))
+            .toHaveAttribute('href', href);
+        }
+      });
+    },
+  );
 });

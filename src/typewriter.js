@@ -17,7 +17,9 @@ export function brandSegment(term, className, href, logoSrc, logoBothSides = fal
       if (!href) {
         return `<span class="tw-role">${t}</span>`;
       }
-      const logo = logoSrc ? `<img class="tagline-logo" src="${logoSrc}" alt="" loading="lazy" />` : '';
+      const logo = logoSrc
+        ? `<img class="tagline-logo" src="${logoSrc}" alt="" loading="lazy" />`
+        : '';
       const inner = logoBothSides ? `${logo}${t}${logo}` : `${logo}${t}`;
       return `<a class="brand-link ${className}" href="${href}" target="_blank" rel="noopener">${inner}</a>`;
     },
@@ -175,7 +177,11 @@ export function initTypewriter(el, phrases, options = {}) {
       spark.style.setProperty('--tw-spark-delay', `${Math.random() * 90}ms`);
       spark.style.setProperty(
         '--tw-spark-color',
-        Math.random() < 0.4 ? 'var(--brass-bright)' : Math.random() < 0.7 ? 'var(--parchment)' : '#fff4d6'
+        Math.random() < 0.4
+          ? 'var(--brass-bright)'
+          : Math.random() < 0.7
+            ? 'var(--parchment)'
+            : '#fff4d6',
       );
       quillEl.appendChild(spark);
       spark.addEventListener('animationend', () => spark.remove());

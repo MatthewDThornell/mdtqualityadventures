@@ -1,0 +1,13 @@
+dist/
+playwright-report/
+test-results/
+blob-report/
+package-lock.json
+public/**/*.svg
+
+# Not HTML: Prettier's HTML formatter aggressively multi-lines attribute
+# lists and splits inline elements across lines (`<span\n  >text</span\n  >`)
+# even for short tags — the site's hand-authored HTML deliberately stays one
+# element per line for scanability, and that's worth more here than having
+# a formatter enforce HTML style too.
+*.html

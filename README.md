@@ -14,6 +14,22 @@ npm run preview   # serve the dist/ build locally
 
 No `.env`, no credentials, no backend — everything is static.
 
+## Code Style
+
+```bash
+npm run lint            # ESLint over src/**/*.js and scripts/**/*.mjs
+npm run format           # Prettier — writes
+npm run format:check     # Prettier — check only (what CI runs)
+```
+
+Both run in CI (`.github/workflows/ci.yml`) alongside the build. Prettier covers JS/TS/CSS/JSON/MD
+but deliberately **not** HTML (see `.prettierignore`) — its HTML formatter multi-lines attribute
+lists and splits inline elements across lines even for short tags, which fights the one-element-
+per-line style the three page files use throughout. ESLint doesn't cover `tests/**/*.ts` either:
+`typescript-eslint`'s latest stable release caps its peer range below the `typescript@7` this
+project runs, so that gap will close once `typescript-eslint` catches up. Prettier still formats
+those files fine in the meantime — it doesn't need type info, just the AST.
+
 ## Testing
 
 ```bash
@@ -45,7 +61,7 @@ Three pages (`index.html`, `qa-standards.html`, `test-automation-university.html
 header/nav, scroll ribbon, ink-trail cursor, and digital-rain hero background — but each page
 duplicates that markup in its own HTML file rather than sharing a template, since the project has
 no server-side templating. The three copies must be kept in sync by hand; each file has an inline
-comment at the top of its `<nav>` saying so. Shared *behavior* (not markup) lives in
+comment at the top of its `<nav>` saying so. Shared _behavior_ (not markup) lives in
 `src/chrome.js` and is imported by each page's own entry script (`src/main.js`,
 `src/qa-standards.js`, `src/test-automation-university.js`).
 
@@ -64,6 +80,7 @@ slug) rather than a numeric index, so an id doesn't silently point at the wrong 
 gets reordered or a new entry is inserted in the middle.
 
 **What gets one:**
+
 - Every nav link, toggle, and the brand link — identical `data-testid` values across all three
   pages' nav copies, same as the nav's labels/order/hrefs. The skip-link carries one too, for the
   same reason.
@@ -77,6 +94,7 @@ gets reordered or a new entry is inserted in the middle.
   `element.dataset.testid = '...'`.
 
 **What doesn't:**
+
 - Anything that already has a unique, meaningful `id` attribute (e.g. `#chapterUp`, `#aboutQuote`)
   — that id is already a stable locator; a redundant `data-testid` next to it is just noise.
   `page.locator('#chapterUp')` is fine.

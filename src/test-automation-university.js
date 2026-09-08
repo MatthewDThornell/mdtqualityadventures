@@ -1,6 +1,12 @@
 import './style.css';
 import { initCoverScene } from './cover-scene.js';
-import { initScrollRibbon, initInkCursor, initInkTrail, initQuillCursor, initMagicWords } from './chrome.js';
+import {
+  initScrollRibbon,
+  initInkCursor,
+  initInkTrail,
+  initQuillCursor,
+  initMagicWords,
+} from './chrome.js';
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -11,11 +17,20 @@ initQuillCursor();
 initMagicWords();
 
 const TAU_CODE_SNIPPETS = [
-  '[TESTAUTOMATIONU]', '[PLAYWRIGHT]', '[CYPRESS]', '[SELENIUM]', '[ROBOT FRAMEWORK]',
-  "AWAIT PAGE.GOTO('/LOGIN')", "AWAIT PAGE.GETBYROLE('BUTTON').CLICK()",
-  'AWAIT EXPECT(LOCATOR).TOBEVISIBLE()', "CY.GET('[DATA-CY=SUBMIT]').CLICK()",
-  "DRIVER.FINDELEMENT(BY.ID('SUBMIT'))", 'WAIT.UNTIL(ELEMENTTOBECLICKABLE(BTN))',
-  'KEYWORD TEST CASE', 'SUITE SETUP', "[NUNIT] [TEST]",
+  '[TESTAUTOMATIONU]',
+  '[PLAYWRIGHT]',
+  '[CYPRESS]',
+  '[SELENIUM]',
+  '[ROBOT FRAMEWORK]',
+  "AWAIT PAGE.GOTO('/LOGIN')",
+  "AWAIT PAGE.GETBYROLE('BUTTON').CLICK()",
+  'AWAIT EXPECT(LOCATOR).TOBEVISIBLE()',
+  "CY.GET('[DATA-CY=SUBMIT]').CLICK()",
+  "DRIVER.FINDELEMENT(BY.ID('SUBMIT'))",
+  'WAIT.UNTIL(ELEMENTTOBECLICKABLE(BTN))',
+  'KEYWORD TEST CASE',
+  'SUITE SETUP',
+  '[NUNIT] [TEST]',
 ];
 
 const coverCanvas = document.getElementById('cover-canvas');
@@ -72,7 +87,8 @@ document.querySelectorAll('.tau-course-toggle').forEach((button) => {
     // have more than one course's embed open at once
     iframe.dataset.testid = `tau-video-embed-${videoId}`;
     iframe.loading = 'lazy';
-    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allow =
+      'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
     iframe.allowFullscreen = true;
     videoContainer.replaceChildren(iframe);
     videoContainer.hidden = false;

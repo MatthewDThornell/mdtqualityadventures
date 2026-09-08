@@ -30,34 +30,44 @@ test.describe('Mentees', () => {
     'cj-johnson',
   ];
 
-  test('Test_Case_7000_Mentees_Grid_AreVisibleWithRealLinkedInProfiles', { tag: '@smoke' }, async ({ page }) => {
-    const home = new HomePage(page);
-    await home.goto();
+  test(
+    'Test_Case_7000_Mentees_Grid_AreVisibleWithRealLinkedInProfiles',
+    { tag: '@smoke' },
+    async ({ page }) => {
+      const home = new HomePage(page);
+      await home.goto();
 
-    await test.step('Then all 10 mentee cards are visible, including the unlinked one', async () => {
-      await expect.soft(home.menteeCard('quaid')).toBeVisible();
-      await expect.soft(home.menteeCard('quaid').getByRole('link')).toHaveCount(0);
-      for (const slug of Object.keys(LINKED_MENTEES)) {
-        await expect.soft(home.menteeCard(slug)).toBeVisible();
-      }
-    });
+      await test.step('Then all 10 mentee cards are visible, including the unlinked one', async () => {
+        await expect.soft(home.menteeCard('quaid')).toBeVisible();
+        await expect.soft(home.menteeCard('quaid').getByRole('link')).toHaveCount(0);
+        for (const slug of Object.keys(LINKED_MENTEES)) {
+          await expect.soft(home.menteeCard(slug)).toBeVisible();
+        }
+      });
 
-    await test.step('Then every linked mentee points to their real LinkedIn profile', async () => {
-      for (const [slug, href] of Object.entries(LINKED_MENTEES)) {
-        await expect.soft(home.menteeCard(slug).locator('.mentee-name a')).toHaveAttribute('href', href);
-      }
-    });
-  });
+      await test.step('Then every linked mentee points to their real LinkedIn profile', async () => {
+        for (const [slug, href] of Object.entries(LINKED_MENTEES)) {
+          await expect
+            .soft(home.menteeCard(slug).locator('.mentee-name a'))
+            .toHaveAttribute('href', href);
+        }
+      });
+    },
+  );
 
-  test('Test_Case_7001_Mentees_InTheirOwnWords_QuotesArePresent', { tag: '@regression' }, async ({ page }) => {
-    const home = new HomePage(page);
-    await home.goto();
+  test(
+    'Test_Case_7001_Mentees_InTheirOwnWords_QuotesArePresent',
+    { tag: '@regression' },
+    async ({ page }) => {
+      const home = new HomePage(page);
+      await home.goto();
 
-    await test.step('Then every "In Their Own Words" testimonial has a real quote', async () => {
-      for (const slug of IN_THEIR_OWN_WORDS_SLUGS) {
-        await expect.soft(home.recCard(slug)).toBeVisible();
-        await expect.soft(home.recCard(slug).locator('blockquote')).not.toBeEmpty();
-      }
-    });
-  });
+      await test.step('Then every "In Their Own Words" testimonial has a real quote', async () => {
+        for (const slug of IN_THEIR_OWN_WORDS_SLUGS) {
+          await expect.soft(home.recCard(slug)).toBeVisible();
+          await expect.soft(home.recCard(slug).locator('blockquote')).not.toBeEmpty();
+        }
+      });
+    },
+  );
 });

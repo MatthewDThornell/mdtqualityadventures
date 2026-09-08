@@ -17,11 +17,11 @@
   --text-primary: var(--parchment);
   --text-muted: rgba(var(--parchment-rgb), 0.62);
   --max-width: 1100px;
-  --font-display: "Cormorant Garamond", Georgia, serif;
-  --font-body: "Spectral", Georgia, serif;
-  --font-ui: "Inter", system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
-  --font-cursive: "Caveat", cursive;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Spectral', Georgia, serif;
+  --font-ui: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+  --font-cursive: 'Caveat', cursive;
   color-scheme: dark;
 }
 
@@ -131,8 +131,12 @@ button:focus-visible,
 }
 
 @keyframes twinkle {
-  from { opacity: 0.2; }
-  to { opacity: 0.45; }
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 0.45;
+  }
 }
 
 .mist {
@@ -150,25 +154,43 @@ button:focus-visible,
 .mist-a {
   top: -10%;
   left: -10%;
-  background: radial-gradient(circle, var(--teal) 0%, rgba(var(--teal-rgb), 0.4) 35%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    var(--teal) 0%,
+    rgba(var(--teal-rgb), 0.4) 35%,
+    transparent 70%
+  );
   animation: drift-a 40s ease-in-out infinite alternate;
 }
 
 .mist-b {
   bottom: -15%;
   right: -10%;
-  background: radial-gradient(circle, var(--brass) 0%, rgba(var(--brass-rgb), 0.4) 35%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    var(--brass) 0%,
+    rgba(var(--brass-rgb), 0.4) 35%,
+    transparent 70%
+  );
   animation: drift-b 50s ease-in-out infinite alternate;
 }
 
 @keyframes drift-a {
-  from { transform: translate(0, 0); }
-  to { transform: translate(6vw, 8vw); }
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(6vw, 8vw);
+  }
 }
 
 @keyframes drift-b {
-  from { transform: translate(0, 0); }
-  to { transform: translate(-8vw, -6vw); }
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-8vw, -6vw);
+  }
 }
 
 /* Scroll-progress ribbon: a bookmark-style brass fill tracking how far into
@@ -222,25 +244,46 @@ button:focus-visible,
 .magic-word {
   display: inline-block;
   transform: scale(1);
-  transition: color 1.8s ease-out, text-shadow 1.8s ease-out, transform 0.3s ease-out;
+  transition:
+    color 1.8s ease-out,
+    text-shadow 1.8s ease-out,
+    transform 0.3s ease-out;
 }
 
 html.pen-active .magic-word:hover {
   position: relative;
   z-index: 5;
-  transition: color 0.12s ease-out, text-shadow 0.12s ease-out;
+  transition:
+    color 0.12s ease-out,
+    text-shadow 0.12s ease-out;
   color: var(--brass-bright);
-  text-shadow: 0 0 6px rgba(var(--brass-bright-rgb), 0.9), 0 0 14px rgba(var(--brass-rgb), 0.55);
+  text-shadow:
+    0 0 6px rgba(var(--brass-bright-rgb), 0.9),
+    0 0 14px rgba(var(--brass-rgb), 0.55);
   animation: magic-word-pop 2.2s ease-in forwards;
 }
 
 @keyframes magic-word-pop {
-  0% { transform: scale(1); }
-  60% { transform: scale(1.7); }
-  82% { transform: scale(2.3); }
-  90% { transform: scale(2.6); }
-  94% { transform: scale(0.55); opacity: 0.3; }
-  100% { transform: scale(1); opacity: 1; }
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.7);
+  }
+  82% {
+    transform: scale(2.3);
+  }
+  90% {
+    transform: scale(2.6);
+  }
+  94% {
+    transform: scale(0.55);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* Ink-trail canvas: the falling brass/teal code glyphs drawn along the
@@ -270,7 +313,9 @@ html.pen-active .magic-word:hover {
    element that visually clashed with the site's code-rain motif. */
 html.pen-active,
 html.pen-active * {
-  cursor: url('/cursors/matrix-cursor.svg') 20 20, auto !important;
+  cursor:
+    url('/cursors/matrix-cursor.svg') 20 20,
+    auto !important;
 }
 
 /* Ink-cursor: a soft brass/teal glow that trails the mouse with a little
@@ -285,7 +330,12 @@ html.pen-active * {
   height: 22px;
   margin: -11px 0 0 -11px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(var(--teal-rgb), 0.5) 0%, rgba(var(--brass-bright-rgb), 0.25) 45%, transparent 72%);
+  background: radial-gradient(
+    circle,
+    rgba(var(--teal-rgb), 0.5) 0%,
+    rgba(var(--brass-bright-rgb), 0.25) 45%,
+    transparent 72%
+  );
   pointer-events: none;
   z-index: 60;
   opacity: 0;
@@ -367,18 +417,20 @@ html.pen-active * {
   width: 22px;
   height: 2px;
   background: var(--brass-bright);
-  transition: transform 0.25s ease, opacity 0.2s ease;
+  transition:
+    transform 0.25s ease,
+    opacity 0.2s ease;
 }
 
-.nav-toggle[aria-expanded="true"] span:nth-child(1) {
+.nav-toggle[aria-expanded='true'] span:nth-child(1) {
   transform: translateY(6px) rotate(45deg);
 }
 
-.nav-toggle[aria-expanded="true"] span:nth-child(2) {
+.nav-toggle[aria-expanded='true'] span:nth-child(2) {
   opacity: 0;
 }
 
-.nav-toggle[aria-expanded="true"] span:nth-child(3) {
+.nav-toggle[aria-expanded='true'] span:nth-child(3) {
   transform: translateY(-6px) rotate(-45deg);
 }
 
@@ -573,7 +625,8 @@ html.pen-active .typewriter::after {
 }
 
 @keyframes tw-cursor-squiggle {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(0);
   }
   50% {
@@ -683,8 +736,11 @@ html.pen-active .typewriter::after {
   background: url('/cursors/quill-cursor.svg') center / contain no-repeat;
   transform: rotate(22deg);
   transform-origin: 20% 80%;
-  filter: drop-shadow(0 0 3px rgba(var(--brass-bright-rgb), 0.65)) drop-shadow(0 0 7px rgba(var(--brass-rgb), 0.4));
-  transition: opacity 0.4s ease, filter 0.4s ease;
+  filter: drop-shadow(0 0 3px rgba(var(--brass-bright-rgb), 0.65))
+    drop-shadow(0 0 7px rgba(var(--brass-rgb), 0.4));
+  transition:
+    opacity 0.4s ease,
+    filter 0.4s ease;
 }
 
 /* A quick nib-down tap each time a letter lands (triggered from tapQuill()
@@ -749,23 +805,30 @@ html.pen-active .typewriter .tw-quill {
   }
   15% {
     opacity: 1;
-    transform: translate(calc(var(--tw-spark-x) * 0.15), calc(var(--tw-spark-y) * 0.15)) scale(1.3) rotate(var(--tw-spark-rotate));
+    transform: translate(calc(var(--tw-spark-x) * 0.15), calc(var(--tw-spark-y) * 0.15)) scale(1.3)
+      rotate(var(--tw-spark-rotate));
   }
   55% {
     opacity: 1;
-    transform: translate(calc(var(--tw-spark-x) * 0.6), calc(var(--tw-spark-y) * 0.55)) scale(0.7) rotate(var(--tw-spark-rotate));
+    transform: translate(calc(var(--tw-spark-x) * 0.6), calc(var(--tw-spark-y) * 0.55)) scale(0.7)
+      rotate(var(--tw-spark-rotate));
   }
   100% {
     opacity: 0;
-    transform: translate(var(--tw-spark-x), var(--tw-spark-y)) scale(1) rotate(var(--tw-spark-rotate));
+    transform: translate(var(--tw-spark-x), var(--tw-spark-y)) scale(1)
+      rotate(var(--tw-spark-rotate));
   }
 }
 
 @keyframes blink-cursor {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
-
 
 /* Just the arrow now (see index.html) — no "Who am I?" label, since it sits
    below the roles instead of above them and reads fine as a plain wayfinding
@@ -784,20 +847,30 @@ html.pen-active .typewriter .tw-quill {
 }
 
 .scroll-cue svg {
-  animation: bob 2s ease-in-out infinite, scroll-cue-glow 2s ease-in-out infinite;
+  animation:
+    bob 2s ease-in-out infinite,
+    scroll-cue-glow 2s ease-in-out infinite;
 }
 
 @keyframes bob {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(6px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
 }
 
 @keyframes scroll-cue-glow {
-  0%, 100% {
-    filter: drop-shadow(0 0 2px rgba(var(--brass-bright-rgb), 0.5)) drop-shadow(0 0 5px rgba(var(--brass-rgb), 0.3));
+  0%,
+  100% {
+    filter: drop-shadow(0 0 2px rgba(var(--brass-bright-rgb), 0.5))
+      drop-shadow(0 0 5px rgba(var(--brass-rgb), 0.3));
   }
   50% {
-    filter: drop-shadow(0 0 5px rgba(var(--brass-bright-rgb), 0.85)) drop-shadow(0 0 12px rgba(var(--brass-rgb), 0.55));
+    filter: drop-shadow(0 0 5px rgba(var(--brass-bright-rgb), 0.85))
+      drop-shadow(0 0 12px rgba(var(--brass-rgb), 0.55));
   }
 }
 
@@ -820,7 +893,10 @@ html.pen-active .typewriter .tw-quill {
   transform: translateY(8px);
   pointer-events: none;
   visibility: hidden;
-  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0s linear 0.3s;
 }
 
 /* visibility:hidden (not just opacity/pointer-events) so these buttons drop out of
@@ -830,7 +906,9 @@ html.pen-active .typewriter .tw-quill {
   transform: translateY(0);
   pointer-events: auto;
   visibility: visible;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 .chapter-nav-btn {
@@ -844,7 +922,10 @@ html.pen-active .typewriter .tw-quill {
   border: none;
   color: var(--brass-bright);
   cursor: pointer;
-  transition: background 0.2s ease, transform 0.15s ease, opacity 0.2s ease;
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease,
+    opacity 0.2s ease;
 }
 
 /* (hover: hover) keeps this off touchscreens — without it, tapping the button on
@@ -934,7 +1015,7 @@ html.pen-active .typewriter .tw-quill {
 }
 
 .chapter:not(:last-of-type) .waypoint::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 2.5rem;
   left: 50%;
@@ -963,11 +1044,13 @@ html.pen-active .typewriter .tw-quill {
   transform-origin: left center;
   transform: rotateY(-92deg);
   backface-visibility: hidden;
-  transition: opacity 0.15s ease, transform 1.15s cubic-bezier(0.2, 0.65, 0.2, 1);
+  transition:
+    opacity 0.15s ease,
+    transform 1.15s cubic-bezier(0.2, 0.65, 0.2, 1);
 }
 
 .page::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(
@@ -982,7 +1065,7 @@ html.pen-active .typewriter .tw-quill {
 }
 
 .page::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -1128,7 +1211,7 @@ html.pen-active .typewriter .tw-quill {
 }
 
 .timeline li::before {
-  content: "";
+  content: '';
   position: absolute;
   left: -6px;
   top: 0.4rem;
@@ -1393,7 +1476,9 @@ html.pen-active .typewriter .tw-quill {
   padding: 0.6rem 0.6rem 1.4rem;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
   transform: rotate(var(--rot, 0deg));
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .origin-photo:hover {
@@ -1401,11 +1486,21 @@ html.pen-active .typewriter .tw-quill {
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
 }
 
-.origin-photo:nth-child(5n+1) { --rot: -3deg; }
-.origin-photo:nth-child(5n+2) { --rot: 2deg; }
-.origin-photo:nth-child(5n+3) { --rot: -1.5deg; }
-.origin-photo:nth-child(5n+4) { --rot: 2.5deg; }
-.origin-photo:nth-child(5n+5) { --rot: -2.25deg; }
+.origin-photo:nth-child(5n + 1) {
+  --rot: -3deg;
+}
+.origin-photo:nth-child(5n + 2) {
+  --rot: 2deg;
+}
+.origin-photo:nth-child(5n + 3) {
+  --rot: -1.5deg;
+}
+.origin-photo:nth-child(5n + 4) {
+  --rot: 2.5deg;
+}
+.origin-photo:nth-child(5n + 5) {
+  --rot: -2.25deg;
+}
 
 .origin-photo img {
   display: block;
@@ -1534,7 +1629,10 @@ html.pen-active .typewriter .tw-quill {
 .card {
   padding: 1.5rem;
   overflow: hidden;
-  transition: transform 0.25s ease, border-color 0.25s ease, filter 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    filter 0.25s ease;
 }
 
 /* filter: drop-shadow, not box-shadow — .card's own overflow: hidden (needed
@@ -1740,8 +1838,12 @@ html.pen-active .typewriter .tw-quill {
   display: inline-block;
 }
 
-.lang-dot.lang-html { background: #e34c26; }
-.lang-dot.lang-csharp { background: #178600; }
+.lang-dot.lang-html {
+  background: #e34c26;
+}
+.lang-dot.lang-csharp {
+  background: #178600;
+}
 
 /* Mentees */
 .stat-callout {
@@ -1791,7 +1893,9 @@ html.pen-active .typewriter .tw-quill {
   border: 2px solid var(--brass);
   display: block;
   margin: 0 auto 0.6rem;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .mentee:hover img {
@@ -1871,7 +1975,10 @@ html.pen-active .typewriter .tw-quill {
 .mentor-card {
   display: grid;
   row-gap: 0.15rem;
-  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .rec-card:hover,
@@ -2038,7 +2145,9 @@ html.pen-active .typewriter .tw-quill {
   color: var(--text-primary);
   opacity: 0;
   transform: translateY(6px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
 }
 
 .career-trail-item.is-visible {
@@ -2095,7 +2204,9 @@ html.pen-active .typewriter .tw-quill {
   margin: 0 -0.75rem;
   border-radius: 6px;
   color: var(--text-primary);
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
 }
 
 .contact-row:hover {
@@ -2137,7 +2248,9 @@ html.pen-active .typewriter .tw-quill {
   background: var(--brass);
   padding: 0.85rem 1.75rem;
   border-radius: 4px;
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
 }
 
 .resume-btn:hover {
@@ -2166,7 +2279,9 @@ html.pen-active .typewriter .tw-quill {
   background: var(--brass);
   padding: 0.55rem 1.5rem 0.55rem 0.55rem;
   border-radius: 4px;
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
 }
 
 .credential-btn:hover {
@@ -2313,7 +2428,9 @@ html.pen-active .typewriter .tw-quill {
   border: 1px solid rgba(var(--teal-rgb), 0.3);
   border-radius: 999px;
   padding: 0.4rem 0.9rem;
-  transition: color 0.2s ease, border-color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .standards-subnav a:hover {
@@ -2472,7 +2589,9 @@ html.pen-active .typewriter .tw-quill {
   border-radius: 4px;
   padding: 0.25rem 0.6rem;
   cursor: pointer;
-  transition: color 0.2s ease, border-color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .code-copy-btn:hover {

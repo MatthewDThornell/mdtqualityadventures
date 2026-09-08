@@ -32,7 +32,10 @@ export default defineConfig({
     // would silently override the 1440x900 set in the top-level `use` block
     // above (project-level `use` wins on overlapping keys) — respread it
     // after the device preset so it actually takes effect.
-    { name: 'chromium', use: { ...devices['Desktop Chrome'], viewport: { width: 1440, height: 900 } } },
+    {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'], viewport: { width: 1440, height: 900 } },
+    },
   ],
 
   webServer: {

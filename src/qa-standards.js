@@ -1,6 +1,12 @@
 import './style.css';
 import { initCoverScene } from './cover-scene.js';
-import { initScrollRibbon, initInkCursor, initInkTrail, initQuillCursor, initMagicWords } from './chrome.js';
+import {
+  initScrollRibbon,
+  initInkCursor,
+  initInkTrail,
+  initQuillCursor,
+  initMagicWords,
+} from './chrome.js';
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -14,13 +20,22 @@ initMagicWords();
 // page is about, so the rain reads as "the code being written" rather than
 // the homepage's generic flavor text
 const QA_STANDARDS_CODE_SNIPPETS = [
-  '[PLAYWRIGHT]', '[CYPRESS]', '[SELENIUM]', '[TEST]',
-  "AWAIT PAGE.GOTO('/LOGIN')", "AWAIT PAGE.GETBYROLE('BUTTON').CLICK()",
-  'AWAIT EXPECT(LOCATOR).TOBEVISIBLE()', "AWAIT PAGE.FILL('#EMAIL', USER)",
-  "CY.GET('[DATA-CY=SUBMIT]').CLICK()", "CY.VISIT('/CART')",
-  "CY.SHOULD('BE.VISIBLE')", "CY.INTERCEPT('GET', '/API/USER')",
-  "DRIVER.FINDELEMENT(BY.ID('SUBMIT'))", 'WAIT.UNTIL(ELEMENTTOBECLICKABLE(BTN))',
-  "DRIVER.GET('HTTPS://APP.EXAMPLE.COM')", 'ACTIONS.MOVETOELEMENT(EL).PERFORM()',
+  '[PLAYWRIGHT]',
+  '[CYPRESS]',
+  '[SELENIUM]',
+  '[TEST]',
+  "AWAIT PAGE.GOTO('/LOGIN')",
+  "AWAIT PAGE.GETBYROLE('BUTTON').CLICK()",
+  'AWAIT EXPECT(LOCATOR).TOBEVISIBLE()',
+  "AWAIT PAGE.FILL('#EMAIL', USER)",
+  "CY.GET('[DATA-CY=SUBMIT]').CLICK()",
+  "CY.VISIT('/CART')",
+  "CY.SHOULD('BE.VISIBLE')",
+  "CY.INTERCEPT('GET', '/API/USER')",
+  "DRIVER.FINDELEMENT(BY.ID('SUBMIT'))",
+  'WAIT.UNTIL(ELEMENTTOBECLICKABLE(BTN))',
+  "DRIVER.GET('HTTPS://APP.EXAMPLE.COM')",
+  'ACTIONS.MOVETOELEMENT(EL).PERFORM()',
 ];
 
 const coverCanvas = document.getElementById('cover-canvas');

@@ -39,7 +39,7 @@ aboutQuoteEl.addEventListener('mouseleave', () => quoteRotator.resume());
 const eyebrowTypewriter = initTypewriter(
   document.getElementById('eyebrowText'),
   ['A career portfolio, written by', 'A career built around quality'],
-  { loop: false }
+  { loop: false },
 );
 
 const taglinePhrases = [
@@ -53,7 +53,7 @@ const taglinePhrases = [
         'brand-veterans-united',
         'https://www.veteransunited.com/',
         '/images/logos/veterans-united.png',
-        true
+        true,
       ),
     ],
   },
@@ -62,28 +62,52 @@ const taglinePhrases = [
     segments: [
       brandSegment('Software Quality Engineer', 'brand-seekwell', null),
       brandSegment('Seekwell', 'brand-seekwell', 'https://www.seekwell.com/'),
-      brandSegment('1-800-Contacts', 'brand-seekwell', 'https://www.1800contacts.com/', '/images/logos/1800contacts.png', true),
+      brandSegment(
+        '1-800-Contacts',
+        'brand-seekwell',
+        'https://www.1800contacts.com/',
+        '/images/logos/1800contacts.png',
+        true,
+      ),
     ],
   },
   {
     text: 'Former Sr. Software QA Engineer at\nWerner Enterprises',
     segments: [
       brandSegment('Sr. Software QA Engineer', 'brand-werner', null),
-      brandSegment('Werner Enterprises', 'brand-werner', 'https://www.werner.com/', '/images/logos/werner.png', true),
+      brandSegment(
+        'Werner Enterprises',
+        'brand-werner',
+        'https://www.werner.com/',
+        '/images/logos/werner.png',
+        true,
+      ),
     ],
   },
   {
     text: 'Former Lead QA Engineer at\nConexED',
     segments: [
       brandSegment('Lead QA Engineer', 'brand-conexed', null),
-      brandSegment('ConexED', 'brand-conexed', 'https://www.conexed.com/', '/images/logos/conexed.png', true),
+      brandSegment(
+        'ConexED',
+        'brand-conexed',
+        'https://www.conexed.com/',
+        '/images/logos/conexed.png',
+        true,
+      ),
     ],
   },
   {
     text: 'Former Test Automation Engineer at\nLegrand',
     segments: [
       brandSegment('Test Automation Engineer', 'brand-legrand', null),
-      brandSegment('Legrand', 'brand-legrand', 'https://www.legrand.us/', '/images/logos/legrand.png', true),
+      brandSegment(
+        'Legrand',
+        'brand-legrand',
+        'https://www.legrand.us/',
+        '/images/logos/legrand.png',
+        true,
+      ),
     ],
   },
   'AI Test Engineer',
@@ -107,7 +131,9 @@ const seenCareerPhrases = new Set();
 function buildTrailLine(segments) {
   const [titleSeg] = segments;
   const logoSeg = segments.find((s) => s.logoSrc);
-  const logoImg = logoSeg ? `<img class="career-trail-logo" src="${logoSeg.logoSrc}" alt="" loading="lazy" />` : '';
+  const logoImg = logoSeg
+    ? `<img class="career-trail-logo" src="${logoSeg.logoSrc}" alt="" loading="lazy" />`
+    : '';
   const titleHtml = logoSeg?.href
     ? `<a class="brand-link ${titleSeg.className}" href="${logoSeg.href}" target="_blank" rel="noopener">${titleSeg.term}</a>`
     : `<span class="brand-link ${titleSeg.className}">${titleSeg.term}</span>`;
@@ -206,7 +232,7 @@ if (prefersReducedMotion) {
     // threshold: 0 fires as soon as any part of a chapter enters the viewport, so this
     // works regardless of how tall a chapter's content is (a percentage-based threshold
     // like 0.15 can never be reached for chapters taller than ~7x the viewport height)
-    { threshold: 0, rootMargin: '0px 0px -10% 0px' }
+    { threshold: 0, rootMargin: '0px 0px -10% 0px' },
   );
 
   chapters.forEach((chapter) => observer.observe(chapter));
@@ -250,7 +276,8 @@ if (chapterNav && chapterUpBtn && chapterDownBtn) {
   const currentStopIndex = () => {
     // a short final section can never scroll its top past HEADER_OFFSET (there's
     // nothing left below it to scroll), so treat "maxed out scroll" as the last stop
-    const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+    const atBottom =
+      window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
     if (atBottom) return stops.length - 1;
 
     let idx = 0;

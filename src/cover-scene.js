@@ -1,20 +1,50 @@
 const CHARSET = '01{}<>/\\=+*✓✗ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 const WORDS = [
-  'JAVASCRIPT', 'TYPESCRIPT', 'PYTHON', 'PLAYWRIGHT', 'CYPRESS', 'SELENIUM',
-  'APPIUM', 'POSTMAN', 'JENKINS', 'DOCKER', 'GITHUB', 'AZURE', 'AUTOMATION',
-  'REGRESSION', 'COVERAGE', 'QUALITY', 'SCRUM', 'CI/CD', 'API', 'QA',
-  'QA MENTOR', 'FRIEND', 'CONTINUAL LEARNING', 'TROUBLE SHOOTER',
-  'SEEKS FIRST TO UNDERSTAND', 'BUG HUNTER',
-  'SOFTWARE DEVELOPMENT ENGINEER IN TEST', 'PROACTIVE HUMANIZATION',
-  'WEB AUTOMATION', 'IOS AUTOMATION',
+  'JAVASCRIPT',
+  'TYPESCRIPT',
+  'PYTHON',
+  'PLAYWRIGHT',
+  'CYPRESS',
+  'SELENIUM',
+  'APPIUM',
+  'POSTMAN',
+  'JENKINS',
+  'DOCKER',
+  'GITHUB',
+  'AZURE',
+  'AUTOMATION',
+  'REGRESSION',
+  'COVERAGE',
+  'QUALITY',
+  'SCRUM',
+  'CI/CD',
+  'API',
+  'QA',
+  'QA MENTOR',
+  'FRIEND',
+  'CONTINUAL LEARNING',
+  'TROUBLE SHOOTER',
+  'SEEKS FIRST TO UNDERSTAND',
+  'BUG HUNTER',
+  'SOFTWARE DEVELOPMENT ENGINEER IN TEST',
+  'PROACTIVE HUMANIZATION',
+  'WEB AUTOMATION',
+  'IOS AUTOMATION',
 ];
 // fresh, original test-code flavor text (not pulled from any real test suite)
 // so a couple of the columns read as "code being written" rather than words
 const CODE_SNIPPETS = [
-  '[TEST]', '[CATEGORY("QUALITY")]', '[CATEGORY("ASSURANCE")]',
-  'ASYNC TASK', 'AWAIT PAGE.GOTOASYNC()', 'SOFT.EXPECTVISIBLE()',
-  'SOFT.VERIFY()', 'HELLOANDWELCOME_ISVISIBLE()', 'FORUSERTOSEEPORTFOLIO',
-  'PERSONISGREETED()', 'HR REP OR HIRING MANAGER GREETED',
+  '[TEST]',
+  '[CATEGORY("QUALITY")]',
+  '[CATEGORY("ASSURANCE")]',
+  'ASYNC TASK',
+  'AWAIT PAGE.GOTOASYNC()',
+  'SOFT.EXPECTVISIBLE()',
+  'SOFT.VERIFY()',
+  'HELLOANDWELCOME_ISVISIBLE()',
+  'FORUSERTOSEEPORTFOLIO',
+  'PERSONISGREETED()',
+  'HR REP OR HIRING MANAGER GREETED',
   'THANKS FOR VISITING',
 ];
 const WORD_COLUMN_CHANCE = 0.15;
@@ -158,8 +188,14 @@ function generateSkylineBuildings(marginWidth, maxHeight) {
 
 function makeColumn(totalRows, words, codeSnippets) {
   const roll = Math.random();
-  const kind = roll < WORD_COLUMN_CHANCE ? 'word' : roll < WORD_COLUMN_CHANCE + CODE_COLUMN_CHANCE ? 'code' : 'noise';
-  const text = kind === 'word' ? randomWord(words) : kind === 'code' ? randomCodeSnippet(codeSnippets) : null;
+  const kind =
+    roll < WORD_COLUMN_CHANCE
+      ? 'word'
+      : roll < WORD_COLUMN_CHANCE + CODE_COLUMN_CHANCE
+        ? 'code'
+        : 'noise';
+  const text =
+    kind === 'word' ? randomWord(words) : kind === 'code' ? randomCodeSnippet(codeSnippets) : null;
   const font = kind === 'word' ? WORD_FONT : kind === 'code' ? CODE_FONT : randomNoiseFont();
   return {
     head: -((Math.random() * totalRows) | 0),
@@ -190,13 +226,16 @@ export function initCoverScene(canvas, options = {}) {
   // opt-in only — omitted entirely by qa-standards.js/test-automation-university.js,
   // so every skyline-related read/generate/draw below short-circuits to nothing
   // for those two pages, not just "disabled but still checked"
-  const heroEl = options.skylineHeroSelector ? document.querySelector(options.skylineHeroSelector) : null;
+  const heroEl = options.skylineHeroSelector
+    ? document.querySelector(options.skylineHeroSelector)
+    : null;
 
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   // read once rather than hardcoding 1100 a second time — stays in sync with
   // :root's --max-width (the same value driving the text column's own
   // centering) without this file needing to know that number independently
-  const maxTextWidth = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--max-width')) || 1100;
+  const maxTextWidth =
+    parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--max-width')) || 1100;
 
   let width = 0;
   let height = 0;
@@ -291,7 +330,9 @@ export function initCoverScene(canvas, options = {}) {
 
     heroGroundY = groundY;
     heroOpacity = opacity;
-    heroProgress = prefersReducedMotion ? 0 : Math.min(1, Math.max(0, -rect.top / (height * HERO_VIEWPORT_FRACTION)));
+    heroProgress = prefersReducedMotion
+      ? 0
+      : Math.min(1, Math.max(0, -rect.top / (height * HERO_VIEWPORT_FRACTION)));
   }
 
   function resize() {
@@ -320,10 +361,19 @@ export function initCoverScene(canvas, options = {}) {
     // column, minus a little breathing room, capped on ultra-wide monitors —
     // guarantees buildings can never overlap the text at any viewport width
     if (heroEl) {
-      marginWidth = Math.max(0, Math.min(BUILDING_MARGIN_MAX, (width - maxTextWidth) / 2 - BUILDING_MARGIN_PAD));
+      marginWidth = Math.max(
+        0,
+        Math.min(BUILDING_MARGIN_MAX, (width - maxTextWidth) / 2 - BUILDING_MARGIN_PAD),
+      );
       if (marginWidth > 0) {
-        ({ buildings: farBuildings, maxHeight: farMaxHeight } = generateSkylineBuildings(marginWidth, height * 0.46));
-        ({ buildings: nearBuildings, maxHeight: nearMaxHeight } = generateSkylineBuildings(marginWidth, height * 0.66));
+        ({ buildings: farBuildings, maxHeight: farMaxHeight } = generateSkylineBuildings(
+          marginWidth,
+          height * 0.46,
+        ));
+        ({ buildings: nearBuildings, maxHeight: nearMaxHeight } = generateSkylineBuildings(
+          marginWidth,
+          height * 0.66,
+        ));
       } else {
         farBuildings = [];
         nearBuildings = [];
@@ -371,7 +421,12 @@ export function initCoverScene(canvas, options = {}) {
       }
       if (b.spireHeight > 0) {
         const localSpireX = mirror ? marginWidth - b.spireX : b.spireX;
-        ctx.fillRect(baseX + localSpireX - 1, groundY + b.spireTop - b.spireHeight, 2, b.spireHeight);
+        ctx.fillRect(
+          baseX + localSpireX - 1,
+          groundY + b.spireTop - b.spireHeight,
+          2,
+          b.spireHeight,
+        );
       }
     }
     // separate pass so the fillStyle only needs setting per-window (which
@@ -419,7 +474,8 @@ export function initCoverScene(canvas, options = {}) {
       const x = i * FONT_SIZE;
       const zoneMult = textZoneMultiplier(x);
       ctx.font = col.font;
-      const highlight = col.kind === 'word' ? WORD_HIGHLIGHT : col.kind === 'code' ? CODE_HIGHLIGHT : null;
+      const highlight =
+        col.kind === 'word' ? WORD_HIGHLIGHT : col.kind === 'code' ? CODE_HIGHLIGHT : null;
       for (let t = 0; t < TRAIL_LENGTH; t++) {
         const row = Math.floor(col.head) - t;
         if (row < 0 || row * FONT_SIZE > height) continue;
