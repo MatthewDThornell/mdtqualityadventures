@@ -34,10 +34,13 @@
 
     <!-- One-time cover-page flourish, homepage only — see initIntroSignature
          in src/chrome.js (called from src/main.js) and .intro-overlay in
-         style.css. The inline script right after it runs synchronously
-         during HTML parsing (before the deferred module scripts), so a
-         repeat visit this session — or reduced-motion — hides it before it
-         ever paints, instead of flashing it for a frame. -->
+         style.css. public/intro-check.js (a plain, non-module, non-deferred
+         script — deliberately NOT bundled by Vite) runs synchronously right
+         here during HTML parsing, before the deferred module scripts below,
+         so a repeat visit this session — or reduced-motion — hides this
+         overlay before it ever paints, instead of flashing it for a frame.
+         Kept as an external file rather than inline so the CSP's script-src
+         can stay a plain 'self' with no inline-script hash to keep in sync. -->
     <div class="intro-overlay" id="introOverlay" aria-hidden="true">
       <div class="intro-signature">
         <p class="intro-eyebrow">MDT Quality Adventures</p>
@@ -48,16 +51,7 @@
         <span class="intro-rule"></span>
       </div>
     </div>
-    <script>
-      (function () {
-        var seen = sessionStorage.getItem('mdt-intro-seen') === '1';
-        var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        if (seen || reduced) {
-          document.getElementById('introOverlay').style.display = 'none';
-          sessionStorage.setItem('mdt-intro-seen', '1');
-        }
-      })();
-    </script>
+    <script src="/intro-check.js"></script>
 
     <div class="sky" aria-hidden="true">
       <div class="stars"></div>

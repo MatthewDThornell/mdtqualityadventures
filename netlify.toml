@@ -11,3 +11,11 @@
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    # No inline scripts (public/intro-check.js is a plain external file, see
+    # index.html) and no inline style="" attributes anywhere on the site —
+    # JS-driven styling all goes through element.style.<prop> setters, which
+    # CSP's style-src doesn't gate — so neither directive needs 'unsafe-inline'.
+    # frame-src: TAU page's YouTube course embeds. connect-src/img-src/font-src:
+    # everything the site actually loads is same-origin except Google Fonts.
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self'; connect-src 'self'; frame-src https://www.youtube.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
