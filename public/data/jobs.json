@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-09-13T07:03:45.476Z",
+  "fetchedAt": "2026-09-13T07:13:24.431Z",
   "jobs": [
+    {
+      "id": "arbeitnow-staff-qa-engineer-london-58226",
+      "title": "Staff QA Engineer",
+      "company": "84674Th44Metrea9999",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/84674th44metrea9999/staff-qa-engineer-london-58226",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-09-13T06:55:20.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-qa-engineer-london-105287",
+      "title": "Senior QA Engineer | London",
+      "company": "TransPerfect",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/transperfect/senior-qa-engineer-london-105287",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London, Greater London, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-09-13T06:30:41.000Z"
+    },
     {
       "id": "greenhouse-stripe-8153331",
       "title": "Software Quality Assurance Engineer",
