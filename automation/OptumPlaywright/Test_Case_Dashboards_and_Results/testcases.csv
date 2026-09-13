@@ -1,0 +1,13 @@
+ID,Title,Module,Tier,Given,When,Then,Expected Result
+1000,Hero heading is visible,Home,smoke,I am on the Optum homepage,the page finishes loading,I look for the hero heading,"""Health care you can count on"" is visible"
+1001,Header nav links are present and enabled,Home,smoke,I am on the Optum homepage,the header renders,I look for Customer service and Sign in,Both are visible and enabled
+1002,Hero CTAs are visible and enabled,Home,smoke,I am on the Optum homepage,the hero section renders,I look for the four hero CTAs,Find care / Pay a bill / Manage HSA-FSA / Fill a prescription are all visible and enabled
+1003,Footer legal links are present,Home,regression,I am on the Optum homepage,I scroll to the footer,I look for company and legal links,About us / Careers / Privacy policy / Terms of use are all visible
+1004,Page title matches expected,Home,smoke,I am on the Optum homepage,the page finishes loading,I check the browser tab title,Title contains ""Optum""
+2000,Customer Service page heading is visible,Customer Service,smoke,I navigate directly to the Customer Service page,the page finishes loading,I look for the page heading,"""Customer service"" heading is visible"
+2001,Common questions FAQ section is visible,Customer Service,regression,I am on the Customer Service page,the page finishes loading,I look for the FAQ section,"""Common service questions"" section is visible"
+2002,Contact us link is present and clickable,Customer Service,smoke,I am on the Customer Service page,the page finishes loading,I look for the Contact us link,Link is visible and enabled
+3000,About Us page heading is visible,About Us,smoke,I navigate directly to the About Us page,the page finishes loading,I look for the page heading,"""About Optum"" heading is visible"
+3001,Healthy Optumism section is visible,About Us,regression,I am on the About Us page,the page finishes loading,I look for the brand narrative section,"""Healthy Optumism"" section is visible"
+5000,Home to Customer Service nav link routes correctly,Integration,smoke,I am on the Optum homepage,I click the Customer service header nav link,I check the resulting page,URL contains customer-support and the Customer Service heading is visible
+5001,Home to About Us footer link routes correctly,Integration,regression,I am on the Optum homepage,I click the About us footer link,I check the resulting page,URL contains about-us and the About Optum heading is visible

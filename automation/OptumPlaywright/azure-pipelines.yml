@@ -1,0 +1,90 @@
+trigger:
+  branches:
+    include:
+    - main
+    - develop
+    - feat/*
+    - hotfix/*
+  paths:
+    include:
+    - OptumPlaywright/*
+
+pr:
+  branches:
+    include:
+    - main
+    - develop
+  paths:
+    include:
+    - OptumPlaywright/*
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  buildConfiguration: 'Release'
+  dotnetVersion: '9.0.x'
+
+steps:
+- checkout: self
+  clean: true
+
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: $(dotnetVersion)
+
+- script: |
+    echo "Restoring .NET dependencies..."
+    dotnet restore
+  workingDirectory: 'OptumPlaywright'
+  displayName: 'dotnet restore'
+
+- script: |
+    echo "Building solution..."
+    dotnet build --configuration $(buildConfiguration) --no-restore
+  workingDirectory: 'OptumPlaywright'
+  displayName: 'dotnet build'
+
+- script: |
+    echo "Installing Playwright browsers..."
+    pwsh bin/$(buildConfiguration)/net9.0/playwright.ps1 install --with-deps chromium
+  workingDirectory: 'OptumPlaywright'
+  displayName: 'Install Playwright browsers'
+
+- script: |
+    echo "Running smoke suite..."
+    dotnet test --configuration $(buildConfiguration) --no-build --filter "Category=smoke" --settings Settings/local.runsettings --logger "trx;LogFileName=smoke_test_results.trx" --logger "console;verbosity=normal"
+  workingDirectory: 'OptumPlaywright'
+  displayName: 'Run smoke suite'
+  condition: eq(variables['Build.Reason'], 'PullRequest')
+  continueOnError: false
+
+- script: |
+    echo "Running full suite..."
+    dotnet test --configuration $(buildConfiguration) --no-build --settings Settings/local.runsettings --logger "trx;LogFileName=test_results.trx" --logger "console;verbosity=normal"
+  workingDirectory: 'OptumPlaywright'
+  displayName: 'Run full suite'
+  continueOnError: true
+
+- task: PublishTestResults@2
+  condition: succeededOrFailed()
+  inputs:
+    testResultsFiles: '**/test_results.trx'
+    mergeTestResults: true
+    testRunTitle: 'Optum Playwright Tests - $(Build.BuildNumber)'
+    failTaskOnFailedTests: true
+
+- task: PublishBuildArtifacts@1
+  condition: succeededOrFailed()
+  inputs:
+    PathtoPublish: 'OptumPlaywright/Test_Case_Dashboards_and_Results/test-results-dashboard.md'
+    ArtifactName: 'playwright-results-dashboard'
+    publishLocation: 'Container'
+
+- task: PublishBuildArtifacts@1
+  condition: succeededOrFailed()
+  inputs:
+    PathtoPublish: 'OptumPlaywright/TestResults'
+    ArtifactName: 'playwright-failure-artifacts'
+    publishLocation: 'Container'

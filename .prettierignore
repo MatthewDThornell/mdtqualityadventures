@@ -5,6 +5,9 @@ blob-report/
 package-lock.json
 public/**/*.svg
 
+# Self-contained subproject with its own tooling/conventions — see automation/README.md
+automation/
+
 # Not HTML: Prettier's HTML formatter aggressively multi-lines attribute
 # lists and splits inline elements across lines (`<span\n  >text</span\n  >`)
 # even for short tags — the site's hand-authored HTML deliberately stays one

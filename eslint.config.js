@@ -7,7 +7,7 @@ import prettierConfig from 'eslint-config-prettier';
 // runs (see package.json) — Prettier still formats those files fine since
 // it doesn't need type info, just the AST.
 export default [
-  { ignores: ['dist/', 'playwright-report/', 'test-results/', 'blob-report/'] },
+  { ignores: ['dist/', 'playwright-report/', 'test-results/', 'blob-report/', 'automation/'] },
   js.configs.recommended,
   {
     files: ['src/**/*.js', 'public/**/*.js'],

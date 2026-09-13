@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <RunConfiguration>
+    <MaxCpuCount>1</MaxCpuCount>
+    <TestSessionTimeout>600000</TestSessionTimeout>
+  </RunConfiguration>
+
+  <TestRunParameters>
+    <Parameter name="BASE_URL" value="https://www.optum.com/en/" />
+    <Parameter name="HEADLESS" value="false" />
+  </TestRunParameters>
+
+  <NUnit>
+    <!-- Headed runs are for visual debugging — keep them serial so you can watch one browser at a time. -->
+    <NumberOfTestWorkers>1</NumberOfTestWorkers>
+  </NUnit>
+</RunSettings>

@@ -1,0 +1,65 @@
+{
+  "_comment": "Authoritative registry of every test in the suite. Every new test must be added here AND to testcases.csv — a test present in one but not the other is considered unregistered.",
+  "tests": [
+    {
+      "testKey": "Test_Case_1000_Home_HeroHeading_IsVisible",
+      "methodName": "Test_Case_1000_Home_HeroHeading_IsVisible",
+      "filePath": "Tests/HomeTests.cs"
+    },
+    {
+      "testKey": "Test_Case_1001_Home_HeaderNavLinks_ArePresentAndEnabled",
+      "methodName": "Test_Case_1001_Home_HeaderNavLinks_ArePresentAndEnabled",
+      "filePath": "Tests/HomeTests.cs"
+    },
+    {
+      "testKey": "Test_Case_1002_Home_HeroCtas_AreVisibleAndEnabled",
+      "methodName": "Test_Case_1002_Home_HeroCtas_AreVisibleAndEnabled",
+      "filePath": "Tests/HomeTests.cs"
+    },
+    {
+      "testKey": "Test_Case_1003_Home_FooterLinks_ArePresent",
+      "methodName": "Test_Case_1003_Home_FooterLinks_ArePresent",
+      "filePath": "Tests/HomeTests.cs"
+    },
+    {
+      "testKey": "Test_Case_1004_Home_PageTitle_MatchesExpected",
+      "methodName": "Test_Case_1004_Home_PageTitle_MatchesExpected",
+      "filePath": "Tests/HomeTests.cs"
+    },
+    {
+      "testKey": "Test_Case_2000_CustomerService_PageHeading_IsVisible",
+      "methodName": "Test_Case_2000_CustomerService_PageHeading_IsVisible",
+      "filePath": "Tests/CustomerServiceTests.cs"
+    },
+    {
+      "testKey": "Test_Case_2001_CustomerService_CommonQuestionsSection_IsVisible",
+      "methodName": "Test_Case_2001_CustomerService_CommonQuestionsSection_IsVisible",
+      "filePath": "Tests/CustomerServiceTests.cs"
+    },
+    {
+      "testKey": "Test_Case_2002_CustomerService_ContactUsLink_IsPresentAndClickable",
+      "methodName": "Test_Case_2002_CustomerService_ContactUsLink_IsPresentAndClickable",
+      "filePath": "Tests/CustomerServiceTests.cs"
+    },
+    {
+      "testKey": "Test_Case_3000_AboutUs_PageHeading_IsVisible",
+      "methodName": "Test_Case_3000_AboutUs_PageHeading_IsVisible",
+      "filePath": "Tests/AboutUsTests.cs"
+    },
+    {
+      "testKey": "Test_Case_3001_AboutUs_HealthyOptumismSection_IsVisible",
+      "methodName": "Test_Case_3001_AboutUs_HealthyOptumismSection_IsVisible",
+      "filePath": "Tests/AboutUsTests.cs"
+    },
+    {
+      "testKey": "Test_Case_5000_Navigation_HomeToCustomerService_HeaderNavLinkRoutesCorrectly",
+      "methodName": "Test_Case_5000_Navigation_HomeToCustomerService_HeaderNavLinkRoutesCorrectly",
+      "filePath": "Tests/NavigationTests.cs"
+    },
+    {
+      "testKey": "Test_Case_5001_Navigation_HomeToAboutUs_FooterLinkRoutesCorrectly",
+      "methodName": "Test_Case_5001_Navigation_HomeToAboutUs_FooterLinkRoutesCorrectly",
+      "filePath": "Tests/NavigationTests.cs"
+    }
+  ]
+}
