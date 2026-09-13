@@ -595,6 +595,40 @@ html.pen-active * {
   margin: 0 0 0.5rem;
 }
 
+/* Hero name decrypt overlay (src/hero-decrypt.js) — the wrapper it inserts
+   around the real <h1> at runtime. The heading itself is never rewritten,
+   just visually hidden (color: transparent, not display/visibility) while
+   this sibling overlay plays the scramble; a screen reader or a test
+   reading the h1's own text sees the real name the entire time. */
+.hero-name-wrap {
+  position: relative;
+}
+
+/* Specificity has to beat .cover h1's own color rule (class+type, 0-1-1),
+   not just match it — a bare .hero-name-hidden class (0-1-0) silently loses
+   that fight and the real heading stays visible underneath the overlay. */
+.cover h1.hero-name-hidden {
+  color: transparent;
+}
+
+.hero-name-decrypt {
+  position: absolute;
+  inset: 0;
+  /* must match .cover h1's own font-size so the reveal lands in the same
+     box it's covering */
+  font-family: var(--font-mono);
+  font-size: clamp(2.6rem, 7vw, 4.5rem);
+  font-weight: 700;
+  color: var(--teal-bright);
+  white-space: pre;
+  pointer-events: none;
+  --tw-rest-color: var(--parchment);
+}
+
+.hnd-char.is-locked {
+  font-family: var(--font-display);
+}
+
 .cover .tagline {
   font-family: var(--font-cursive);
   font-weight: 600;

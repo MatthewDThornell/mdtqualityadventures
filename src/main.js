@@ -1,6 +1,7 @@
 import './style.css';
 import { initCoverScene } from './cover-scene.js';
 import { initTypewriter, brandSegment } from './typewriter.js';
+import { initHeroDecrypt } from './hero-decrypt.js';
 import { initQuoteRotator } from './quote-rotator.js';
 import {
   initScrollRibbon,
@@ -18,6 +19,7 @@ initScrollRibbon(document.getElementById('scrollRibbonFill'));
 initInkCursor(document.getElementById('inkCursor'));
 initInkTrail(document.getElementById('inkTrailCanvas'));
 initMagicWords();
+initHeroDecrypt(document.querySelector('[data-testid="hero-heading"]'));
 
 const coverCanvas = document.getElementById('cover-canvas');
 const coverScene = initCoverScene(coverCanvas, { skylineHeroSelector: '#top' });
