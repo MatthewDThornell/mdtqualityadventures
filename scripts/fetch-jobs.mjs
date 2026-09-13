@@ -10,6 +10,12 @@ import path from 'node:path';
 const OUTPUT_PATH = path.resolve('public/data/jobs.json');
 const REQUEST_TIMEOUT_MS = 15000;
 const MAX_JOBS = 40;
+// A posting that's been up for months is likely already filled — nobody
+// mentoring off this list should waste an application on one. Every source
+// here does supply a posted/updated date (see each fetch*() below), so a
+// missing or unparseable one is treated as stale too rather than assumed
+// fresh.
+const MAX_JOB_AGE_DAYS = 14;
 
 // Greenhouse, Lever, and Ashby all run a free, no-key "job board" API per
 // company, meant for public embedding — unlike Remote OK/Arbeitnow, the
@@ -247,6 +253,14 @@ const HARDWARE_EXCLUSION_KEYWORDS = [
   'consumer devices',
 ];
 
+function isFreshEnough(postedAt) {
+  if (!postedAt) return false;
+  const posted = new Date(postedAt);
+  if (Number.isNaN(posted.getTime())) return false;
+  const ageMs = Date.now() - posted.getTime();
+  return ageMs <= MAX_JOB_AGE_DAYS * 24 * 60 * 60 * 1000;
+}
+
 function isQaRelevant(title, description = '') {
   const t = title.toLowerCase();
   if (HARDWARE_EXCLUSION_KEYWORDS.some((keyword) => t.includes(keyword))) return false;
@@ -302,10 +316,19 @@ async function fetchRemoteOk() {
     .filter((job) => isSafeHttpUrl(job.url));
 }
 
+// Arbeitnow's employer-name parsing occasionally fails for certain
+// externally-hosted boards, leaving company_name as "<something> - <ATS
+// platform>" instead of an actual company — confirmed by hand against a
+// live pull (one instance even carried a completely different job's title).
+// A "company" that's really just an ATS platform name isn't safe to show.
+const ARBEITNOW_BROKEN_COMPANY_SUFFIX =
+  / - (Greenhouse|Lever|Workday|iCIMS|SmartRecruiters|Taleo|BambooHR|JazzHR|Recruitee|Workable|Breezy|Personio|Ashby)$/i;
+
 async function fetchArbeitnow() {
   const data = await fetchJson('https://www.arbeitnow.com/api/job-board-api');
   return (data.data || [])
     .filter((job) => job.title && isQaRelevant(job.title, job.description))
+    .filter((job) => !ARBEITNOW_BROKEN_COMPANY_SUFFIX.test(job.company_name || ''))
     .map((job) => ({
       id: `arbeitnow-${job.slug}`,
       title: job.title,
@@ -498,8 +521,9 @@ async function main() {
     return;
   }
 
-  const jobs = succeeded
-    .flatMap((result) => result.value)
+  const combined = succeeded.flatMap((result) => result.value);
+  const fresh = combined.filter((job) => isFreshEnough(job.postedAt));
+  const jobs = fresh
     .sort((a, b) => new Date(b.postedAt || 0) - new Date(a.postedAt || 0))
     .slice(0, MAX_JOBS);
 
@@ -510,7 +534,8 @@ async function main() {
 
   writeFileSync(OUTPUT_PATH, JSON.stringify(payload, null, 2) + '\n');
   console.log(
-    `[fetch-jobs] Wrote ${jobs.length} QA-relevant job(s) to ${OUTPUT_PATH} (${succeeded.length}/${sources.length} sources succeeded)`,
+    `[fetch-jobs] Wrote ${jobs.length} QA-relevant job(s) to ${OUTPUT_PATH} (${succeeded.length}/${sources.length} sources succeeded, ` +
+      `${combined.length - fresh.length} filtered out for being older than ${MAX_JOB_AGE_DAYS} days)`,
   );
 }
 

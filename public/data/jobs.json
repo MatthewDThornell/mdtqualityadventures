@@ -1,31 +1,31 @@
 {
-  "fetchedAt": "2026-09-13T07:13:24.431Z",
+  "fetchedAt": "2026-09-13T20:45:49.934Z",
   "jobs": [
     {
-      "id": "arbeitnow-staff-qa-engineer-london-58226",
-      "title": "Staff QA Engineer",
-      "company": "84674Th44Metrea9999",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/84674th44metrea9999/staff-qa-engineer-london-58226",
+      "id": "arbeitnow-system-test-engineer-oxford-420358",
+      "title": "System Test Engineer",
+      "company": "Salience Labs",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/salience-labs/system-test-engineer-oxford-420358",
       "source": "Arbeitnow",
       "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
       "workType": "On-site",
-      "location": "London",
+      "location": "Oxford, United Kingdom",
       "country": "United Kingdom",
-      "postedAt": "2026-09-13T06:55:20.000Z"
+      "postedAt": "2026-09-13T15:40:02.000Z"
     },
     {
-      "id": "arbeitnow-senior-qa-engineer-london-105287",
-      "title": "Senior QA Engineer | London",
-      "company": "TransPerfect",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/transperfect/senior-qa-engineer-london-105287",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "id": "jobicy-153171",
+      "title": "QA Manual Test Engineer",
+      "company": "Enumerate",
+      "url": "https://jobicy.com/jobs/153171-qa-manual-test-engineer",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
       "direct": false,
-      "workType": "On-site",
-      "location": "London, Greater London, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-13T06:30:41.000Z"
+      "workType": "Remote",
+      "location": "LATAM",
+      "country": "Other",
+      "postedAt": "2026-09-13T11:54:41+00:00"
     },
     {
       "id": "greenhouse-stripe-8153331",
@@ -91,71 +91,6 @@
       "location": "Belgrade",
       "country": "Other",
       "postedAt": "2026-09-02T10:31:55.436+00:00"
-    },
-    {
-      "id": "remotive-2091100",
-      "title": "Senior QA Engineer",
-      "company": "Lemon.io",
-      "url": "https://remotive.com/remote-jobs/qa/senior-qa-engineer-2091100",
-      "source": "Remotive",
-      "sourceUrl": "https://remotive.com/remote-jobs/quality-assurance",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Europe",
-      "country": "Other",
-      "postedAt": "2026-08-26T13:10:58"
-    },
-    {
-      "id": "greenhouse-robinhood-7739588",
-      "title": "Quality Engineer, Mobile",
-      "company": "Robinhood",
-      "url": "https://boards.greenhouse.io/robinhood/jobs/7739588?t=gh_src=&gh_jid=7739588",
-      "source": "Robinhood",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Toronto, Canada",
-      "country": "Canada",
-      "postedAt": "2026-08-25T14:51:02-04:00"
-    },
-    {
-      "id": "lever-spotify-c3f6ea23-97d0-4a9a-a9ad-04f1e745d916",
-      "title": "Senior Product Quality Analyst - AI Voice",
-      "company": "Spotify",
-      "url": "https://jobs.lever.co/spotify/c3f6ea23-97d0-4a9a-a9ad-04f1e745d916",
-      "source": "Spotify",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-08-17T18:01:44.658Z"
-    },
-    {
-      "id": "lever-spotify-17a75d93-835d-40ce-b31e-0c381b49f40a",
-      "title": "Senior Product Quality Analyst - AI Voice",
-      "company": "Spotify",
-      "url": "https://jobs.lever.co/spotify/17a75d93-835d-40ce-b31e-0c381b49f40a",
-      "source": "Spotify",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "New York, NY",
-      "country": "United States",
-      "postedAt": "2026-08-17T17:23:54.944Z"
-    },
-    {
-      "id": "remoteok-1136701",
-      "title": "QA Tester Entry Level",
-      "company": "Ace IT Careers",
-      "url": "https://remoteOK.com/remote-jobs/remote-qa-tester-entry-level-ace-it-careers-1136701",
-      "source": "Remote OK",
-      "sourceUrl": "https://remoteok.com/remote-qa-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Remote",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-08-15T00:00:25+00:00"
     }
   ]
 }

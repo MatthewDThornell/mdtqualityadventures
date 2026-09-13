@@ -1,0 +1,57 @@
+name: Refresh job listings
+
+# Keeps public/data/jobs.json close to live without turning this into a
+# backend: still just scripts/fetch-jobs.mjs run at build time (see
+# README.md#job-listings), just run on a timer instead of only when a human
+# deploys. A failed fetch here is a no-op (fetch-jobs.mjs leaves the existing
+# file untouched and exits 0 — see its own safe-to-fail design), so this
+# workflow only ever commits/deploys when the refresh actually produced
+# different data.
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build (regenerates public/data/jobs.json, then vite build)
+        run: npm run build
+
+      - name: Commit refreshed jobs.json if it changed
+        id: commit
+        run: |
+          if git diff --quiet -- public/data/jobs.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add public/data/jobs.json
+            git commit -m "Refresh job listings [skip ci]"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Deploy to Netlify
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: npx netlify-cli deploy --prod --dir=dist

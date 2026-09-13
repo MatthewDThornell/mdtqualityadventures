@@ -55,6 +55,9 @@ netlify deploy --prod --dir=dist
 `netlify.toml` still supplies the build environment/headers for that deploy. Run `netlify status`
 first if unsure which site/account the CLI is currently linked to.
 
+Job listings also redeploy on their own on a schedule, independent of this — see
+[Job listings](#job-listings) below.
+
 ## Structure
 
 Four pages (`index.html`, `qa-standards.html`, `test-automation-university.html`, `jobs.html`)
@@ -96,6 +99,18 @@ fetches client-side (same origin — no CORS or API-key exposure). It runs autom
   of its 100k+ total, with no way to page or search into the rest for free. Not usable without a
   paid plan.
 
+- **Arbeitnow listings with a broken company field are dropped**: its employer-name parsing
+  occasionally fails for certain externally-hosted boards, leaving `company_name` as
+  `"<something> - Greenhouse"` (or another ATS platform's name) instead of an actual employer —
+  confirmed by hand, including one instance where that fallback text was a completely different
+  job's title. `ARBEITNOW_BROKEN_COMPANY_SUFFIX` in `fetch-jobs.mjs` filters those out rather than
+  show a mentee a garbled company name.
+- **Postings older than 14 days are dropped**, not just sorted last — `MAX_JOB_AGE_DAYS` in
+  `fetch-jobs.mjs`. A listing that's been up for months is likely already filled, so it's excluded
+  outright rather than shown with an old date attached. Every source here does supply a posted/
+  updated timestamp, so a listing with a missing or unparseable date is treated as stale too instead
+  of assumed fresh. Each card also shows its own posted date (`src/jobs.js`) so it's clear how
+  recent a listing actually is, not just that it passed the cutoff.
 - **Filtering is title-only**, not tags — a `quality assurance` _tag_ shows up on plenty of
   unrelated ops/dev roles on these boards, but nobody titles a listing "QA Engineer" unless it
   actually is one. "Automation Engineer"/"Automation Architect" are additionally ambiguous (as
@@ -106,9 +121,17 @@ fetches client-side (same origin — no CORS or API-key exposure). It runs autom
   match for the title keywords, but about physical hardware, not software. `HARDWARE_EXCLUSION_KEYWORDS`
   in `fetch-jobs.mjs` filters titles mentioning manufacturing/hardware/datacenter/firmware/etc.
   before the QA-title check runs.
-- **Freshness is tied to deploys, not live**: this site has no backend and no scheduled rebuild, so
-  listings are only ever as current as the last `npm run build` + `netlify deploy`. `jobs.html`
-  shows the `fetchedAt` timestamp for exactly this reason.
+- **Freshness**: `.github/workflows/refresh-jobs.yml` runs on a schedule (every 6 hours, plus
+  manually via `workflow_dispatch`) — it does the same `npm run build`, commits
+  `public/data/jobs.json` back to `main` only if the refresh actually changed it, then deploys
+  `dist/` to Netlify itself (`npx netlify-cli deploy --prod`). No new backend: it's the exact same
+  build-time fetch script, just run on a timer instead of only when a human deploys. A failed fetch
+  is a no-op there too (same safe-to-fail design as a manual build), so the workflow simply does
+  nothing on a bad run rather than deploying broken data. It needs two repository secrets set once
+  in GitHub (Settings → Secrets and variables → Actions): `NETLIFY_AUTH_TOKEN` (a personal access
+  token from Netlify's user settings → Applications) and `NETLIFY_SITE_ID` (this project's id, shown
+  by `netlify status`). `jobs.html` shows the `fetchedAt` timestamp so it's always clear how current
+  a given view actually is, whether that refresh came from the schedule or a manual deploy.
 - **`public/data/jobs.json` is committed**, not gitignored — a network hiccup during a build (or a
   board blocking a CI runner's IP) means the fetch script warns and leaves the file untouched
   rather than overwriting real listings with nothing.

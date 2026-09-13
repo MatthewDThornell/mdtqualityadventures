@@ -71,6 +71,14 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
   day: 'numeric',
 });
 
+// Shorter than dateFormatter above — that one's for the single page-level
+// "last refreshed" line, this repeats on every card so it stays compact.
+const jobDateFormatter = new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric',
+});
+
 function slugify(value) {
   return value
     .toLowerCase()
@@ -94,6 +102,16 @@ function renderEmptyState(message) {
   empty.dataset.testid = 'jobs-empty';
   empty.textContent = message;
   return empty;
+}
+
+// postedAt is a best-effort field: most sources supply it, but it's null
+// whenever a source's own API omits it (see fetch-jobs.mjs) — skip the
+// element entirely rather than render "Posted Invalid Date".
+function formatPostedDate(postedAt) {
+  if (!postedAt) return null;
+  const date = new Date(postedAt);
+  if (Number.isNaN(date.getTime())) return null;
+  return jobDateFormatter.format(date);
 }
 
 function workTypeBadgeClass(workType) {
@@ -143,6 +161,14 @@ function renderJobCard(job) {
     const location = document.createElement('span');
     location.textContent = job.location;
     meta.appendChild(location);
+  }
+
+  const postedLabel = formatPostedDate(job.postedAt);
+  if (postedLabel) {
+    const posted = document.createElement('span');
+    posted.className = 'job-posted';
+    posted.textContent = `Posted ${postedLabel}`;
+    meta.appendChild(posted);
   }
 
   footer.appendChild(meta);

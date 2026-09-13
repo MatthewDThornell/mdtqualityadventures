@@ -2327,6 +2327,10 @@ html.pen-active .typewriter .tw-quill {
   margin: 0;
 }
 
+.job-posted {
+  opacity: 0.75;
+}
+
 .job-apply-btn {
   flex-shrink: 0;
   font-family: var(--font-ui);

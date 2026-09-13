@@ -3,6 +3,11 @@ name: CI
 on:
   push:
     branches: [main]
+    # The scheduled refresh-jobs.yml workflow commits public/data/jobs.json
+    # on its own and already runs `npm run build` itself before deploying —
+    # a commit that only touches that file doesn't need this full pipeline
+    # (lint/format/build/Playwright) run again on top of it.
+    paths-ignore: [public/data/jobs.json]
   pull_request:
     branches: [main]
 
