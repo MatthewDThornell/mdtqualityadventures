@@ -2,10 +2,11 @@ import { test, expect } from '@playwright/test';
 import { HomePage } from '../pages/HomePage';
 import { QaStandardsPage } from '../pages/QaStandardsPage';
 import { TauPage } from '../pages/TauPage';
+import { JobsPage } from '../pages/JobsPage';
 
 // What It Tests: Clicking through the header nav actually lands on the right
 // page, not just that each page's own links look correct in isolation.
-// Why It Matters: The nav is hand-duplicated across three separate HTML files
+// Why It Matters: The nav is hand-duplicated across four separate HTML files
 // with no shared template (see README.md#automation-ids) — a copy/paste slip
 // in one file's href is exactly the kind of thing that only shows up when you
 // actually click the link, not when you read the markup.
@@ -44,6 +45,22 @@ test.describe('Integration — Cross-page navigation', () => {
         await expect(page).toHaveURL(/\/test-automation-university\.html$/);
         const tau = new TauPage(page);
         await expect.soft(tau.heading).toBeVisible();
+      });
+    },
+  );
+
+  test(
+    'Test_Case_12004_Navigation_HomeToJobs_RoutesCorrectly',
+    { tag: '@smoke' },
+    async ({ page }) => {
+      const home = new HomePage(page);
+      await home.goto();
+
+      await test.step('When the Jobs nav link is clicked from the homepage', async () => {
+        await home.navLink('jobs').click();
+        await expect(page).toHaveURL(/\/jobs\.html$/);
+        const jobs = new JobsPage(page);
+        await expect.soft(jobs.heading).toBeVisible();
       });
     },
   );

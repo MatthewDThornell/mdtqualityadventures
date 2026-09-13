@@ -3,7 +3,7 @@ import { HomePage } from '../pages/HomePage';
 
 // What It Tests: The homepage's shared header/nav renders correctly and every
 // link resolves to a real destination.
-// Why It Matters: The header is duplicated by hand across all three pages
+// Why It Matters: The header is duplicated by hand across all four pages
 // (see README.md#automation-ids) — a typo in one copy's href silently breaks
 // navigation without ever showing up as a build error.
 test.describe('Home — Nav', () => {
@@ -21,6 +21,7 @@ test.describe('Home — Nav', () => {
           'accomplishments',
           'qa-standards',
           'tau',
+          'jobs',
           'recommendations',
           'about-me',
           'mentors',
@@ -32,13 +33,14 @@ test.describe('Home — Nav', () => {
         }
       });
 
-      await test.step('Then the QA Standards and TAU links point at real pages', async () => {
+      await test.step('Then the QA Standards, TAU, and Jobs links point at real pages', async () => {
         await expect
           .soft(home.navLink('qa-standards'))
           .toHaveAttribute('href', '/qa-standards.html');
         await expect
           .soft(home.navLink('tau'))
           .toHaveAttribute('href', '/test-automation-university.html');
+        await expect.soft(home.navLink('jobs')).toHaveAttribute('href', '/jobs.html');
       });
 
       await test.step('Then every in-page nav link targets a hash that exists on this page', async () => {

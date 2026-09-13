@@ -12,7 +12,8 @@ dist
 dist-ssr
 *.local
 
-# Third-party reference screenshots (copyrighted, private reference only)
+# Reference screenshots: third-party design comps, and this project's own
+# dev/QA verification shots (dev-screenshots/) — local reference only
 design-reference/
 
 # Editor directories and files
@@ -29,8 +30,25 @@ design-reference/
 # Local Netlify folder
 .netlify
 
+# Personal Claude Code overrides (not shared/tracked, unlike .claude/settings.json)
+.claude/settings.local.json
+
+# Playwright MCP server's local browser profile/artifacts
+.playwright-mcp/
+
 # Playwright
 /test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# automation/ subproject build artifacts
+automation/OptumPlaywright/bin/
+automation/OptumPlaywright/obj/
+automation/OptumPlaywright/TestResults/
+automation/OptumPlaywright/allure-results/
+automation/OptumPlaywright/allure-report/
+automation/OptumPlaywright/Settings/appsettings.local.json
+automation/cypress/videos/
+automation/cypress/screenshots/
+automation/cypress/downloads/

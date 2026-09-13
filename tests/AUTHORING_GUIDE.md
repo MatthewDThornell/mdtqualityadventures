@@ -26,10 +26,11 @@ TypeScript + `@playwright/test`, testing a site we own — not a third-party pro
 ```
 tests/
 ├── pages/            # Page Object Model — one class per page/URL
-│   ├── BasePage.ts       # shared nav, common to all three page objects
+│   ├── BasePage.ts       # shared nav, common to all four page objects
 │   ├── HomePage.ts       # index.html
 │   ├── QaStandardsPage.ts
-│   └── TauPage.ts
+│   ├── TauPage.ts
+│   └── JobsPage.ts
 ├── specs/            # test files, one per module, named <id-range>-<module>.spec.ts
 └── AUTHORING_GUIDE.md
 ```
@@ -73,6 +74,7 @@ Test_Case_{ID}_{Feature}_{Element}_{Behavior}
 | 11000–11999 | Test Automation University page     | covered |
 | 12000–12999 | Integration (cross-page navigation) | covered |
 | 13000–13999 | Accessibility                       | covered |
+| 14000–14999 | Jobs page                           | covered |
 
 "Reserved" ranges have page-object support already in place (`HomePage.ts` has
 `accomplishmentCard()`, `mentorCard()`, `menteeCard()`, `adventureCard()`, `contactLink()`, etc.) —

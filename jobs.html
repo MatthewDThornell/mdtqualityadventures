@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Curated QA engineering, SDET, and test automation job listings, pulled from public job boards and refreshed with every site update." />
+    <meta name="theme-color" content="#0f1216" />
+    <link rel="canonical" href="https://mdtqualityadventures.com/jobs.html" />
+    <title>Jobs — MDT Quality Adventures</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MDT Quality Adventures" />
+    <meta property="og:title" content="QA Jobs — Matthew D Thornell" />
+    <meta property="og:description" content="Curated QA engineering, SDET, and test automation job listings, pulled from public job boards and refreshed with every site update." />
+    <meta property="og:url" content="https://mdtqualityadventures.com/jobs.html" />
+    <meta property="og:image" content="https://mdtqualityadventures.com/images/og-cover.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="A career portfolio, written by Matthew D Thornell — Software QA Engineer & Quality Advocate." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="QA Jobs — Matthew D Thornell" />
+    <meta name="twitter:description" content="Curated QA engineering, SDET, and test automation job listings, pulled from public job boards and refreshed with every site update." />
+    <meta name="twitter:image" content="https://mdtqualityadventures.com/images/og-cover.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=Caveat:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content" data-testid="skip-link">Skip to main content</a>
+    <div class="sky" aria-hidden="true">
+      <div class="stars"></div>
+      <div class="mist mist-a"></div>
+      <div class="mist mist-b"></div>
+    </div>
+    <canvas id="cover-canvas" aria-hidden="true"></canvas>
+
+    <!-- Shared page chrome (scroll ribbon + ink cursor + ink trail) — keep in
+         sync across index.html, qa-standards.html, test-automation-university.html,
+         and jobs.html, same as .site-nav. Driven by src/chrome.js. -->
+    <div class="scroll-ribbon" aria-hidden="true">
+      <div class="scroll-ribbon-fill" id="scrollRibbonFill"><span class="scroll-ribbon-tab"></span></div>
+    </div>
+    <canvas class="ink-trail-canvas" id="inkTrailCanvas" aria-hidden="true"></canvas>
+    <div class="ink-cursor" id="inkCursor" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container nav-row">
+        <a class="brand" href="/" data-testid="nav-brand">MDT Quality Adventures</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" data-testid="nav-toggle">
+          <span></span><span></span><span></span>
+        </button>
+        <!-- Keep this list, its order, its labels, and its data-testid values identical to the
+             .site-nav in index.html, qa-standards.html, and test-automation-university.html (just
+             with /# prefixes where needed) other than which link carries aria-current="page" —
+             these four pages don't share markup, so nothing else enforces it -->
+        <nav class="site-nav" id="siteNav">
+          <a href="/#experience" data-testid="nav-link-experience">Professional Experience</a>
+          <a href="/#fieldnotes" data-testid="nav-link-accomplishments">Accomplishments</a>
+          <a href="/qa-standards.html" data-testid="nav-link-qa-standards">QA Standards</a>
+          <a href="/test-automation-university.html" data-testid="nav-link-tau">Free Courses</a>
+          <a href="/jobs.html" aria-current="page" data-testid="nav-link-jobs">Jobs</a>
+          <a href="/#letters" data-testid="nav-link-recommendations">Recommendations</a>
+          <a href="/#origins" data-testid="nav-link-about-me">About Me</a>
+          <a href="/#mentors" data-testid="nav-link-mentors">Mentors</a>
+          <a href="/#mentees" data-testid="nav-link-mentees">Mentees</a>
+          <a href="/#volunteer" data-testid="nav-link-adventures">Adventures</a>
+          <a href="/#contact" data-testid="nav-link-contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- tabindex="-1": makes this the skip-link's actual focus target. Without
+         it, clicking "Skip to main content" scrolls here but leaves focus on
+         <body>, so keyboard/screen-reader users still tab through the whole
+         header first — exactly what the skip link exists to avoid. -->
+    <main id="main-content" tabindex="-1">
+      <section class="standards-hero">
+        <div class="container">
+          <h1>QA Jobs</h1>
+          <p>
+            A curated pull of QA engineering, SDET, and test automation openings from public job
+            boards, for mentees and anyone else job-hunting in this field. Refreshed every time
+            this site gets rebuilt, not live — so it&rsquo;s only ever as current as the last
+            update, shown below.
+          </p>
+        </div>
+      </section>
+
+      <section class="jobs-section">
+        <div class="container">
+          <p class="jobs-updated" data-testid="jobs-updated"></p>
+
+          <div class="jobs-controls">
+            <input
+              type="search"
+              class="jobs-search"
+              data-testid="jobs-search"
+              placeholder="Search by title or company&hellip;"
+              aria-label="Search jobs by title or company"
+            />
+            <select class="jobs-filter" data-testid="jobs-filter-worktype" aria-label="Filter by work type">
+              <option value="all">All work types</option>
+              <option value="Remote">Remote</option>
+              <option value="Hybrid">Hybrid</option>
+              <option value="On-site">On-site</option>
+            </select>
+            <!-- The "All Regions"/"United States" options are the only two guaranteed to exist
+                 (so this works before JS runs); src/jobs.js appends whichever other countries
+                 actually show up in this build's listings. Defaults to United States per the
+                 site owner's preference — see README.md#job-listings on why this is a
+                 best-effort classification, not sourced data. -->
+            <select class="jobs-filter" data-testid="jobs-filter-country" aria-label="Filter by region/country">
+              <option value="all">All Regions</option>
+              <option value="United States" selected>United States</option>
+            </select>
+          </div>
+
+          <div class="jobs-list" data-testid="jobs-list"></div>
+
+          <p class="jobs-sources">
+            General board listings sourced from
+            <a href="https://remoteok.com/remote-qa-jobs" target="_blank" rel="noopener">Remote OK</a>,
+            <a href="https://www.arbeitnow.com/?search=QA" target="_blank" rel="noopener">Arbeitnow</a>,
+            <a href="https://remotive.com/remote-jobs/quality-assurance" target="_blank" rel="noopener">Remotive</a>, and
+            <a href="https://jobicy.com/remote-quality-assurance-jobs" target="_blank" rel="noopener">Jobicy</a>
+            &mdash; browse any directly for more openings than the short list above. Other listings come straight
+            from individual companies&rsquo; own career pages (see each card&rsquo;s apply button).
+          </p>
+          <p class="jobs-sources">
+            Neither LinkedIn nor Indeed offers a free public jobs API, so listings from them
+            can&rsquo;t be pulled in here &mdash; search those directly instead:
+            <a href="https://www.linkedin.com/jobs/search/?keywords=QA%20Engineer" target="_blank" rel="noopener">LinkedIn</a>
+            &middot;
+            <a href="https://www.indeed.com/jobs?q=QA+Engineer" target="_blank" rel="noopener">Indeed</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Matthew D Thornell, MDT Quality Adventures</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/jobs.js"></script>
+  </body>
+</html>

@@ -5,6 +5,7 @@ export type NavSection =
   | 'accomplishments'
   | 'qa-standards'
   | 'tau'
+  | 'jobs'
   | 'recommendations'
   | 'about-me'
   | 'mentors'
@@ -14,10 +15,10 @@ export type NavSection =
 
 /**
  * Shared by every page object below. The header/nav markup is duplicated
- * byte-for-byte across index.html, qa-standards.html, and
- * test-automation-university.html (see the nav-sync comment at the top of
- * each file's <nav>) rather than shared via a template, so its
- * data-testid values are identical on all three pages too — see
+ * byte-for-byte across index.html, qa-standards.html,
+ * test-automation-university.html, and jobs.html (see the nav-sync comment
+ * at the top of each file's <nav>) rather than shared via a template, so
+ * its data-testid values are identical on all four pages too — see
  * README.md#automation-ids in the site repo for the convention.
  */
 export class BasePage {

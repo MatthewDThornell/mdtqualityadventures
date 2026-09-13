@@ -39,8 +39,8 @@
     <canvas id="cover-canvas" aria-hidden="true"></canvas>
 
     <!-- Shared page chrome (scroll ribbon + ink cursor + ink trail) — keep in
-         sync across index.html, qa-standards.html, and
-         test-automation-university.html, same as .site-nav. Driven by src/chrome.js. -->
+         sync across index.html, qa-standards.html, test-automation-university.html,
+         and jobs.html, same as .site-nav. Driven by src/chrome.js. -->
     <div class="scroll-ribbon" aria-hidden="true">
       <div class="scroll-ribbon-fill" id="scrollRibbonFill"><span class="scroll-ribbon-tab"></span></div>
     </div>
@@ -54,14 +54,15 @@
           <span></span><span></span><span></span>
         </button>
         <!-- Keep this list, its order, its labels, and its data-testid values identical to the
-             .site-nav in index.html and test-automation-university.html (just with /# prefixes
-             where needed) other than which link carries aria-current="page" — these three pages
-             don't share markup, so nothing else enforces it -->
+             .site-nav in index.html, test-automation-university.html, and jobs.html (just with /#
+             prefixes where needed) other than which link carries aria-current="page" — these four
+             pages don't share markup, so nothing else enforces it -->
         <nav class="site-nav" id="siteNav">
           <a href="/#experience" data-testid="nav-link-experience">Professional Experience</a>
           <a href="/#fieldnotes" data-testid="nav-link-accomplishments">Accomplishments</a>
           <a href="/qa-standards.html" aria-current="page" data-testid="nav-link-qa-standards">QA Standards</a>
-          <a href="/test-automation-university.html" data-testid="nav-link-tau">TAU</a>
+          <a href="/test-automation-university.html" data-testid="nav-link-tau">Free Courses</a>
+          <a href="/jobs.html" data-testid="nav-link-jobs">Jobs</a>
           <a href="/#letters" data-testid="nav-link-recommendations">Recommendations</a>
           <a href="/#origins" data-testid="nav-link-about-me">About Me</a>
           <a href="/#mentors" data-testid="nav-link-mentors">Mentors</a>

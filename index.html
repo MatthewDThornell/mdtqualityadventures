@@ -61,8 +61,8 @@
     <canvas id="cover-canvas" aria-hidden="true"></canvas>
 
     <!-- Shared page chrome (scroll ribbon + ink cursor + ink trail) — keep in
-         sync across index.html, qa-standards.html, and
-         test-automation-university.html, same as .site-nav. Driven by src/chrome.js. -->
+         sync across index.html, qa-standards.html, test-automation-university.html,
+         and jobs.html, same as .site-nav. Driven by src/chrome.js. -->
     <div class="scroll-ribbon" aria-hidden="true">
       <div class="scroll-ribbon-fill" id="scrollRibbonFill"><span class="scroll-ribbon-tab"></span></div>
     </div>
@@ -76,14 +76,15 @@
           <span></span><span></span><span></span>
         </button>
         <!-- Keep this list, its order, its labels, and its data-testid values identical to the
-             .site-nav in qa-standards.html and test-automation-university.html (those copies use
-             /# prefixes and carry aria-current="page" on their own link instead) — these three
-             pages don't share markup, so nothing else enforces it -->
+             .site-nav in qa-standards.html, test-automation-university.html, and jobs.html (those
+             copies use /# prefixes and carry aria-current="page" on their own link instead) —
+             these four pages don't share markup, so nothing else enforces it -->
         <nav class="site-nav" id="siteNav">
           <a href="#experience" data-testid="nav-link-experience">Professional Experience</a>
           <a href="#fieldnotes" data-testid="nav-link-accomplishments">Accomplishments</a>
           <a href="/qa-standards.html" data-testid="nav-link-qa-standards">QA Standards</a>
-          <a href="/test-automation-university.html" data-testid="nav-link-tau">TAU</a>
+          <a href="/test-automation-university.html" data-testid="nav-link-tau">Free Courses</a>
+          <a href="/jobs.html" data-testid="nav-link-jobs">Jobs</a>
           <a href="#letters" data-testid="nav-link-recommendations">Recommendations</a>
           <a href="#origins" data-testid="nav-link-about-me">About Me</a>
           <a href="#mentors" data-testid="nav-link-mentors">Mentors</a>
@@ -705,6 +706,13 @@
               framework I keep coming back to, not because I&rsquo;ve mastered it, but
               because it&rsquo;s a good measuring stick:
             </p>
+
+            <div class="origin-lead">
+              <figure class="origin-photo">
+                <img src="/images/seven-habits-book-cover.jpg" alt="The 7 Habits of Highly Effective People by Stephen R. Covey" loading="lazy" />
+              </figure>
+            </div>
+
             <ol class="habits-list">
               <li>Be Proactive</li>
               <li>Begin with the End in Mind</li>
@@ -722,10 +730,82 @@
               coasting on what I already know.
             </p>
 
+            <h3 class="origin-subhead">Other Great Reads</h3>
+            <p>A few more books that have shaped how I think, about myself and about people.</p>
+
+            <div class="reads-grid">
+              <article class="read-card" data-testid="read-card-no-bad-parts">
+                <img class="read-cover" src="/images/no-bad-parts-cover.jpg" alt="No Bad Parts by Richard C. Schwartz, PhD" loading="lazy" />
+                <h3>No Bad Parts</h3>
+                <p class="read-author">Richard C. Schwartz, PhD</p>
+                <p>
+                  An introduction to Internal Family Systems: the idea that the mind is made
+                  up of many &ldquo;parts,&rdquo; and that even the most disruptive ones are
+                  trying to protect you, not sabotage you.
+                </p>
+              </article>
+
+              <article class="read-card" data-testid="read-card-atomic-habits">
+                <img class="read-cover" src="/images/atomic-habits-cover.jpg" alt="Atomic Habits by James Clear" loading="lazy" />
+                <h3>Atomic Habits</h3>
+                <p class="read-author">James Clear</p>
+                <p>
+                  A practical framework for building better habits through small, compounding
+                  changes instead of sweeping overhauls.
+                </p>
+              </article>
+
+              <article class="read-card" data-testid="read-card-mountain-is-you">
+                <img class="read-cover" src="/images/mountain-is-you-cover.webp" alt="The Mountain Is You by Brianna Wiest" loading="lazy" />
+                <h3>The Mountain Is You</h3>
+                <p class="read-author">Brianna Wiest</p>
+                <p>
+                  A look at self-sabotage: why we get in our own way, and how to turn that
+                  resistance into self-mastery.
+                </p>
+              </article>
+
+              <article class="read-card" data-testid="read-card-dont-believe-everything-you-think">
+                <img class="read-cover" src="/images/dont-believe-everything-you-think-cover.jpg" alt="Don't Believe Everything You Think by Joseph Nguyen" loading="lazy" />
+                <h3>Don&rsquo;t Believe Everything You Think</h3>
+                <p class="read-author">Joseph Nguyen</p>
+                <p>
+                  A short, direct case that most of our suffering comes not from our
+                  circumstances, but from the constant narration of our own thoughts.
+                </p>
+              </article>
+            </div>
+
+            <h3 class="origin-subhead">Manners Maketh Man</h3>
+            <p>
+              <em>Kingsman: The Secret Service</em> is, hands down, my favorite movie. Not for
+              the gadgets or the tailoring, but for the story underneath it: a kid nobody
+              expected much from, given a real shot by someone who saw more in him than he saw
+              in himself, and held to a standard higher than the one he grew up with. That&rsquo;s
+              a story that has always felt close to home.
+            </p>
+            <p>
+              The line Harry Hart lives by, &ldquo;Manners maketh man,&rdquo; is the one
+              I&rsquo;ve carried the longest in my own fight for quality. It&rsquo;s not really
+              about etiquette. It&rsquo;s the reminder that every quality action is also a
+              choice: I can find the bug, ship the fix, raise the standard, and still choose to
+              be kind and mannerful to the people on the other side of that work. Quality
+              isn&rsquo;t only in what we build. It&rsquo;s in how we treat the people we build
+              it with.
+            </p>
+
+            <div class="origin-gallery">
+              <figure class="origin-photo">
+                <img src="/images/kingsman-poster.png" alt="Kingsman: The Secret Service movie poster" loading="lazy" />
+              </figure>
+              <figure class="origin-photo dark-mat">
+                <img class="contain" src="/images/manners-maketh-man-art.png" alt="&ldquo;Manners Maketh Man&rdquo; artwork inspired by Kingsman: The Secret Service" loading="lazy" />
+              </figure>
+            </div>
+
             <p class="origin-motto">
-              If I had to sum up how I try to live, it&rsquo;s a phrase I&rsquo;ve carried for
-              years: <em>&ldquo;Manners maketh man.&rdquo;</em> Quality isn&rsquo;t just about
-              the work. It&rsquo;s about how you treat people along the way.
+              That&rsquo;s the standard I hold myself to: not just capital-Q Quality in the
+              work, but manners maketh man in how I get there.
             </p>
           </div>
         </div>
