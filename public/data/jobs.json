@@ -1,18 +1,18 @@
 {
-  "fetchedAt": "2026-09-14T11:40:40.255Z",
+  "fetchedAt": "2026-09-14T17:35:10.718Z",
   "jobs": [
     {
-      "id": "arbeitnow-senior-staff-embedded-system-test-engineer-edinburgh-scotland-303325",
-      "title": "Senior Staff Embedded System Test Engineer",
-      "company": "Cirrus",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/cirrus/senior-staff-embedded-system-test-engineer-edinburgh-scotland-303325",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
+      "id": "greenhouse-samsara-8139255",
+      "title": "Senior Manager, Quality Engineering",
+      "company": "Samsara",
+      "url": "https://www.samsara.com/company/careers/roles/8139255?gh_jid=8139255",
+      "source": "Samsara",
+      "sourceUrl": null,
+      "direct": true,
       "workType": "Hybrid",
-      "location": "Edinburgh, Scotland",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-14T06:04:59.000Z"
+      "location": "Remote - CA",
+      "country": "United States",
+      "postedAt": "2026-09-14T11:35:44-04:00"
     },
     {
       "id": "jobicy-145995",
@@ -28,19 +28,6 @@
       "postedAt": "2026-09-14T05:12:44+00:00"
     },
     {
-      "id": "arbeitnow-system-test-engineer-oxford-420358",
-      "title": "System Test Engineer",
-      "company": "Salience Labs",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/salience-labs/system-test-engineer-oxford-420358",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Oxford, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-13T15:40:02.000Z"
-    },
-    {
       "id": "greenhouse-stripe-8153331",
       "title": "Software Quality Assurance Engineer",
       "company": "Stripe",
@@ -52,19 +39,6 @@
       "location": "Taipei,Taiwan",
       "country": "Taiwan",
       "postedAt": "2026-09-10T13:11:58-04:00"
-    },
-    {
-      "id": "greenhouse-samsara-8139255",
-      "title": "Senior Manager, Quality Engineering",
-      "company": "Samsara",
-      "url": "https://www.samsara.com/company/careers/roles/8139255?gh_jid=8139255",
-      "source": "Samsara",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Remote - CA",
-      "country": "United States",
-      "postedAt": "2026-09-09T12:14:46-04:00"
     },
     {
       "id": "greenhouse-robinhood-8142285",
