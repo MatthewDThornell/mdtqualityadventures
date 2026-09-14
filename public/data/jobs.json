@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-09-14T17:35:10.718Z",
+  "fetchedAt": "2026-09-14T21:24:00.414Z",
   "jobs": [
+    {
+      "id": "greenhouse-pinterest-8011568",
+      "title": "SDET II, tvScientific",
+      "company": "Pinterest",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8011568",
+      "source": "Pinterest",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "San Francisco, CA, US; Remote, US",
+      "country": "United States",
+      "postedAt": "2026-09-14T13:56:15-04:00"
+    },
     {
       "id": "greenhouse-samsara-8139255",
       "title": "Senior Manager, Quality Engineering",
@@ -13,19 +26,6 @@
       "location": "Remote - CA",
       "country": "United States",
       "postedAt": "2026-09-14T11:35:44-04:00"
-    },
-    {
-      "id": "jobicy-145995",
-      "title": "Ubuntu Linux Kernel Test Engineer",
-      "company": "Canonical",
-      "url": "https://jobicy.com/jobs/145995-ubuntu-linux-kernel-test-engineer",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "APAC,  China",
-      "country": "Other",
-      "postedAt": "2026-09-14T05:12:44+00:00"
     },
     {
       "id": "greenhouse-stripe-8153331",
@@ -52,19 +52,6 @@
       "location": "Toronto, Canada",
       "country": "Canada",
       "postedAt": "2026-09-09T01:05:40-04:00"
-    },
-    {
-      "id": "greenhouse-pinterest-8011568",
-      "title": "SDET II, tvScientific",
-      "company": "Pinterest",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8011568",
-      "source": "Pinterest",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "San Francisco, CA, US; Remote, US",
-      "country": "United States",
-      "postedAt": "2026-09-04T13:22:12-04:00"
     },
     {
       "id": "ashby-perplexity-3b349a2f-360e-44e6-a57d-6a87bc3016a7",
