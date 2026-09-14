@@ -2361,6 +2361,39 @@ html.pen-active .typewriter .tw-quill {
   border-radius: 6px;
 }
 
+.jobs-board-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  max-width: 640px;
+  margin: 1.5rem auto 0;
+}
+
+/* Pill shape (vs. .job-apply-btn's rounded rect inside each card) keeps
+   these visually distinct: "browse more boards" up top vs. "apply
+   directly" per listing below. */
+.board-link-btn {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.5rem 1.1rem;
+  border: 1px solid var(--teal-bright);
+  border-radius: 999px;
+  color: var(--teal-bright);
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.board-link-btn:hover,
+.board-link-btn:focus-visible {
+  background: var(--teal-bright);
+  color: var(--ink);
+}
+
 .jobs-sources {
   font-family: var(--font-ui);
   font-size: 0.85rem;

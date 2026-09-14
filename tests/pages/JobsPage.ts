@@ -51,11 +51,12 @@ export class JobsPage extends BasePage {
     return this.page.getByTestId('jobs-filter-country');
   }
 
-  /** Attribution links required by Remote OK's API terms and Arbeitnow's own
-   *  listing pages — actual imported-listing sources, as opposed to
-   *  searchEngineLink() below. */
+  /** The pill-button quick links under the hero intro — attribution links
+   *  required by Remote OK's API terms and Arbeitnow's own listing pages
+   *  (actual imported-listing sources), plus LinkedIn/Indeed (excluded here
+   *  via .board-link-search — see searchEngineLink() below). */
   get sourceLinks(): Locator {
-    return this.page.locator('.jobs-sources').first().locator('a');
+    return this.page.getByTestId('jobs-board-links').locator('a:not(.board-link-search)');
   }
 
   /** LinkedIn/Indeed have no free jobs API, so these are plain outbound
