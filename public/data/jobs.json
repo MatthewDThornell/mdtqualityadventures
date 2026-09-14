@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-13T20:48:27.835Z",
+  "fetchedAt": "2026-09-14T03:10:25.451Z",
   "jobs": [
     {
       "id": "arbeitnow-system-test-engineer-oxford-420358",
@@ -13,6 +13,32 @@
       "location": "Oxford, United Kingdom",
       "country": "United Kingdom",
       "postedAt": "2026-09-13T15:40:02.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-quality-engineer-chassis-and-powertrain-404858",
+      "title": "Senior Quality Engineer, Chassis and Powertrain",
+      "company": "Czinger",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/czinger/senior-quality-engineer-chassis-and-powertrain-404858",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-09-13T12:55:13.000Z"
+    },
+    {
+      "id": "arbeitnow-test-engineer-aachen-north-rhine-westphalia-173430",
+      "title": "Test Engineer",
+      "company": "Asteralabs",
+      "url": "https://www.arbeitnow.com/jobs/companies/asteralabs/test-engineer-aachen-north-rhine-westphalia-173430",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Aachen, North Rhine-Westphalia",
+      "country": "Other",
+      "postedAt": "2026-09-13T11:55:03.000Z"
     },
     {
       "id": "jobicy-153171",
