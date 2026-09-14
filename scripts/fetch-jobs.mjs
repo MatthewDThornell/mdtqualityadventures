@@ -9,7 +9,13 @@ import path from 'node:path';
 
 const OUTPUT_PATH = path.resolve('public/data/jobs.json');
 const REQUEST_TIMEOUT_MS = 15000;
-const MAX_JOBS = 40;
+const MAX_JOBS = 100;
+// Arbeitnow's API is paginated and returns 100-250 listings per page, with
+// real results well past page 50 — fetching only page 1 (which this script
+// did originally) scanned a rounding error's worth of its actual board.
+// Deep pages skew older, and the 14-day cutoff below discards those anyway,
+// so there's no point walking the whole thing.
+const ARBEITNOW_PAGES = 15;
 // A posting that's been up for months is likely already filled — nobody
 // mentoring off this list should waste an application on one. Every source
 // here does supply a posted/updated date (see each fetch*() below), so a
@@ -61,6 +67,42 @@ const GREENHOUSE_COMPANIES = [
   { name: 'Calendly', token: 'calendly' },
   { name: 'Mixpanel', token: 'mixpanel' },
   { name: 'Amplitude', token: 'amplitude' },
+  { name: 'Airbnb', token: 'airbnb' },
+  { name: 'Lyft', token: 'lyft' },
+  { name: 'Instacart', token: 'instacart' },
+  { name: 'Twilio', token: 'twilio' },
+  { name: 'Dropbox', token: 'dropbox' },
+  { name: 'Roblox', token: 'roblox' },
+  { name: 'Toast', token: 'toast' },
+  { name: 'Block', token: 'block' },
+  { name: 'Chime', token: 'chime' },
+  { name: 'SoFi', token: 'sofi' },
+  { name: 'Carta', token: 'carta' },
+  { name: 'Gusto', token: 'gusto' },
+  { name: 'Flexport', token: 'flexport' },
+  { name: 'Faire', token: 'faire' },
+  { name: 'Nextdoor', token: 'nextdoor' },
+  { name: 'Klaviyo', token: 'klaviyo' },
+  { name: 'Braze', token: 'braze' },
+  { name: 'Attentive', token: 'attentive' },
+  { name: 'Coursera', token: 'coursera' },
+  { name: 'Udemy', token: 'udemy' },
+  { name: 'Scale AI', token: 'scaleai' },
+  { name: 'Anthropic', token: 'anthropic' },
+  { name: 'Verkada', token: 'verkada' },
+  { name: 'Cockroach Labs', token: 'cockroachlabs' },
+  { name: 'PlanetScale', token: 'planetscale' },
+  { name: 'LaunchDarkly', token: 'launchdarkly' },
+  { name: 'Netlify', token: 'netlify' },
+  { name: 'CircleCI', token: 'circleci' },
+  { name: 'Postman', token: 'postman' },
+  // QA/testing-focused employers — the highest-yield corner of this list,
+  // since testing is the product rather than a supporting function.
+  { name: 'Thoughtworks', token: 'thoughtworks' },
+  { name: 'Testlio', token: 'testlio' },
+  { name: 'Sauce Labs', token: 'saucelabs' },
+  { name: 'SmartBear', token: 'smartbear' },
+  { name: 'mabl', token: 'mabl' },
 ];
 
 const LEVER_COMPANIES = [
@@ -70,6 +112,10 @@ const LEVER_COMPANIES = [
   { name: 'Toptal', token: 'toptal' },
   { name: 'Clari', token: 'clari' },
   { name: 'Wealthsimple', token: 'wealthsimple' },
+  { name: 'Shield AI', token: 'shieldai' },
+  { name: 'Gopuff', token: 'gopuff' },
+  { name: 'Wealthfront', token: 'wealthfront' },
+  { name: 'Houzz', token: 'houzz' },
 ];
 
 const ASHBY_COMPANIES = [
@@ -93,6 +139,43 @@ const ASHBY_COMPANIES = [
   { name: 'Modal', token: 'modal' },
   { name: 'Fireworks AI', token: 'fireworks' },
   { name: 'Attio', token: 'attio' },
+  { name: 'Cerebras', token: 'cerebras' },
+  { name: 'Cohere', token: 'cohere' },
+  { name: 'ElevenLabs', token: 'elevenlabs' },
+  { name: 'Synthesia', token: 'synthesia' },
+  { name: 'Character.AI', token: 'character' },
+  { name: 'LangChain', token: 'langchain' },
+  { name: 'Baseten', token: 'baseten' },
+  { name: 'Anyscale', token: 'anyscale' },
+  { name: 'Crusoe', token: 'crusoe' },
+  { name: 'Sierra', token: 'sierra' },
+  { name: 'Harvey', token: 'harvey' },
+  { name: 'Decagon', token: 'decagon' },
+  { name: 'Abridge', token: 'abridge' },
+  { name: 'Vanta', token: 'vanta' },
+  { name: 'Sardine', token: 'sardine' },
+  { name: 'Zip', token: 'zip' },
+  { name: 'Clerk', token: 'clerk' },
+  { name: 'Resend', token: 'resend' },
+  { name: 'Railway', token: 'railway' },
+  { name: 'Neon', token: 'neon' },
+  { name: 'Browserbase', token: 'browserbase' },
+  { name: 'Pylon', token: 'pylon' },
+  { name: 'Greptile', token: 'greptile' },
+  { name: 'Gamma', token: 'gamma' },
+  { name: 'Campus', token: 'campus' },
+];
+
+// Workable runs the same kind of free, no-key public widget API
+// (apply.workable.com/api/v1/widget/accounts/<token>). Its response carries
+// no job description, so AMBIGUOUS_TITLE_KEYWORDS can never qualify here —
+// only unambiguous QA titles will ever match from this source.
+const WORKABLE_COMPANIES = [
+  { name: 'Blueground', token: 'blueground' },
+  { name: 'Skroutz', token: 'skroutz' },
+  { name: 'Orfium', token: 'orfium' },
+  { name: 'Hellas Direct', token: 'hellasdirect' },
+  { name: 'Persado', token: 'persado' },
 ];
 
 // Matched against the job *title* only, not tags — a "quality assurance"
@@ -112,6 +195,23 @@ const TITLE_KEYWORDS = [
   'test automation',
   'software tester',
   'manual tester',
+  // Seniority/specialization variants that a strict "<discipline> engineer"
+  // list misses — all seen on real listings these sources actually returned
+  // (e.g. Thoughtworks posts "Lead Quality Analyst", Testlio "Software
+  // Tester", plenty of shops title the role "QA Lead" or "Test Analyst").
+  'qa lead',
+  'test lead',
+  'qa manager',
+  'test manager',
+  'qa specialist',
+  'test specialist',
+  'quality specialist',
+  'test analyst',
+  'qa automation',
+  'automation tester',
+  'test architect',
+  'quality architect',
+  'qa consultant',
 ];
 
 // "Automation Engineer"/"Automation Architect" alone are too ambiguous to
@@ -179,6 +279,13 @@ function classifyWorkType({ remote, explicitType, title = '', description = '', 
 const US_STATE_ABBREVIATIONS =
   /[,-]\s*(AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WA|WV|WI|WY)\b/;
 
+// Plenty of listings spell the state out instead ("Woodinville, Washington"),
+// which the abbreviation pattern above silently misses — and since the page's
+// region filter defaults to United States, a miss there hides a genuinely
+// US-based job from the default view entirely.
+const US_STATE_NAMES =
+  /\b(Alabama|Alaska|Arizona|Arkansas|California|Colorado|Connecticut|Delaware|Florida|Georgia|Hawaii|Idaho|Illinois|Indiana|Iowa|Kansas|Kentucky|Louisiana|Maine|Maryland|Massachusetts|Michigan|Minnesota|Mississippi|Missouri|Montana|Nebraska|Nevada|New Hampshire|New Jersey|New Mexico|New York|North Carolina|North Dakota|Ohio|Oklahoma|Oregon|Pennsylvania|Rhode Island|South Carolina|South Dakota|Tennessee|Texas|Utah|Vermont|Virginia|Washington|West Virginia|Wisconsin|Wyoming)\b/i;
+
 const COUNTRY_PATTERNS = [
   {
     country: 'United States',
@@ -188,6 +295,7 @@ const COUNTRY_PATTERNS = [
       /\bU\.S\.A?\.?\b/,
       /\bUS\b/,
       US_STATE_ABBREVIATIONS,
+      US_STATE_NAMES,
       /\b(San Francisco|New York|Seattle|Austin|Boston|Chicago|Denver|Atlanta|Los Angeles|Washington,? ?D\.?C\.?|Miami|Dallas|Houston|Philadelphia)\b/i,
     ],
   },
@@ -204,7 +312,14 @@ const COUNTRY_PATTERNS = [
   },
   {
     country: 'Germany',
-    patterns: [/Germany/i, /\(GER\)/, /\b(Berlin|Munich|Cologne|Hamburg|Frankfurt)\b/i],
+    patterns: [
+      /Germany/i,
+      /\(GER\)/,
+      /\bGmbH\b/,
+      // Arbeitnow is a German-first board, so deep pagination surfaces a lot
+      // of mid-size German cities that a "major cities only" list misses.
+      /\b(Berlin|Munich|M[üu]nchen|Cologne|K[öo]ln|Hamburg|Frankfurt|D[üu]sseldorf|Stuttgart|Leipzig|Dortmund|Essen|Bremen|Dresden|Hannover|N[üu]rnberg|Nuremberg|Bonn|M[üu]nster|Augsburg|Karlsruhe|Mannheim|Wiesbaden|Bielefeld|Aachen)\b/i,
+    ],
   },
   { country: 'Taiwan', patterns: [/Taiwan/i] },
   {
@@ -251,6 +366,13 @@ const HARDWARE_EXCLUSION_KEYWORDS = [
   'pcb',
   'supply chain',
   'consumer devices',
+  // Aerospace/defense boards title physical airframe testing the same way
+  // software QA titles read — "Senior Flight Test Engineer" is a pilot-
+  // adjacent role, not an SDET one.
+  'flight test',
+  'aerospace',
+  'avionics',
+  'supplier quality',
 ];
 
 function isFreshEnough(postedAt) {
@@ -324,11 +446,38 @@ async function fetchRemoteOk() {
 const ARBEITNOW_BROKEN_COMPANY_SUFFIX =
   / - (Greenhouse|Lever|Workday|iCIMS|SmartRecruiters|Taleo|BambooHR|JazzHR|Recruitee|Workable|Breezy|Personio|Ashby)$/i;
 
+// The same parsing failure also shows up as an un-deslugified company name
+// ("sonyinteractiveentertainmentglobal"). A real company name that long
+// always has a space in it, so this catches the slugs without touching
+// legitimate single-word names like "Spotify" or "Datadog".
+function isUnspacedSlugName(companyName = '') {
+  return companyName.length > 20 && !/\s/.test(companyName);
+}
+
 async function fetchArbeitnow() {
-  const data = await fetchJson('https://www.arbeitnow.com/api/job-board-api');
-  return (data.data || [])
+  const pages = await Promise.allSettled(
+    Array.from({ length: ARBEITNOW_PAGES }, (_, i) =>
+      fetchJson(`https://www.arbeitnow.com/api/job-board-api?page=${i + 1}`),
+    ),
+  );
+
+  const seen = new Set();
+  const data = pages
+    .filter((page) => page.status === 'fulfilled')
+    .flatMap((page) => page.value.data || [])
+    .filter((job) => {
+      if (!job.slug || seen.has(job.slug)) return false;
+      seen.add(job.slug);
+      return true;
+    });
+
+  return data
     .filter((job) => job.title && isQaRelevant(job.title, job.description))
-    .filter((job) => !ARBEITNOW_BROKEN_COMPANY_SUFFIX.test(job.company_name || ''))
+    .filter(
+      (job) =>
+        !ARBEITNOW_BROKEN_COMPANY_SUFFIX.test(job.company_name || '') &&
+        !isUnspacedSlugName(job.company_name || ''),
+    )
     .map((job) => ({
       id: `arbeitnow-${job.slug}`,
       title: job.title,
@@ -428,6 +577,33 @@ async function fetchAshbyBoard({ name, token }) {
     .filter((job) => isSafeHttpUrl(job.url));
 }
 
+async function fetchWorkableBoard({ name, token }) {
+  const data = await fetchJson(`https://apply.workable.com/api/v1/widget/accounts/${token}`);
+  return (data.jobs || [])
+    .filter((job) => job.title && isQaRelevant(job.title))
+    .map((job) => {
+      const location = [job.city, job.state, job.country].filter(Boolean).join(', ');
+      return {
+        id: `workable-${token}-${job.shortcode}`,
+        title: job.title,
+        company: name,
+        url: job.url,
+        source: name,
+        sourceUrl: null,
+        direct: true,
+        workType: classifyWorkType({
+          remote: Boolean(job.telecommuting),
+          title: job.title,
+          location,
+        }),
+        location,
+        country: classifyCountry(location),
+        postedAt: job.published_on ? new Date(job.published_on).toISOString() : null,
+      };
+    })
+    .filter((job) => isSafeHttpUrl(job.url));
+}
+
 // Remotive's and Jobicy's own search/tag/category query params turned out
 // not to actually filter server-side (tested by hand — the same generic
 // results come back regardless of the query) — so, like Remote OK, both are
@@ -460,7 +636,8 @@ async function fetchRemotive() {
 }
 
 async function fetchJobicy() {
-  const data = await fetchJson('https://jobicy.com/api/v2/remote-jobs?count=100');
+  // 200 is Jobicy's actual ceiling — count=500 still returns 200.
+  const data = await fetchJson('https://jobicy.com/api/v2/remote-jobs?count=200');
   return (data.jobs || [])
     .filter((job) => job.jobTitle && isQaRelevant(job.jobTitle, job.jobDescription))
     .map((job) => ({
@@ -501,6 +678,10 @@ async function main() {
     ...ASHBY_COMPANIES.map((company) => ({
       label: `Ashby:${company.name}`,
       fetcher: () => fetchAshbyBoard(company),
+    })),
+    ...WORKABLE_COMPANIES.map((company) => ({
+      label: `Workable:${company.name}`,
+      fetcher: () => fetchWorkableBoard(company),
     })),
   ];
 

@@ -81,19 +81,40 @@ fetches client-side (same origin — no CORS or API-key exposure). It runs autom
   narrow results server-side (Jobicy's `tag=quality-assurance` and Remotive's own "Quality
   Assurance" `category` both just return generic unrelated results). Remotive and Jobicy each
   require crediting them with a link back wherever listings are shown, same as Remote OK — see the
-  attribution links at the bottom of `jobs.html`.
-- **Greenhouse, Lever, and Ashby's public "job board" APIs**, queried per-company
+  `.board-link-btn` quick links under the hero intro in `jobs.html`.
+- **How much each general board will actually give you** (measured by hand, not assumed — this is
+  the ceiling on how many listings can ever show up here):
+  - **Arbeitnow is paginated** and this script originally fetched only page 1, scanning ~100 of
+    its thousands of listings. It now walks `ARBEITNOW_PAGES` (15) pages deep and dedupes by slug.
+    Deep pages skew old, and the freshness cutoff below discards those anyway, so walking the
+    entire board would add requests without adding listings. Note it's a German-first board, so
+    much of that extra volume is German-language (`m/w/d`) postings.
+  - **Jobicy caps at 200** per request — `count=500` still returns 200, so the script asks for 200.
+  - **Remotive now returns only 16 jobs total**, regardless of any `limit` value. Its free API is
+    far more limited than it once was; nothing to tune there.
+  - **Remote OK returns ~99** and has no pagination param. Also a hard ceiling.
+- **Greenhouse, Lever, Ashby, and Workable's public "job board" APIs**, queried per-company
   (`boards-api.greenhouse.io/v1/boards/<token>/jobs`, `api.lever.co/v0/postings/<token>`,
-  `api.ashbyhq.com/posting-api/job-board/<token>`) — all three are free, no-key, and explicitly
+  `api.ashbyhq.com/posting-api/job-board/<token>`,
+  `apply.workable.com/api/v1/widget/accounts/<token>`) — all four are free, no-key, and explicitly
   meant for public embedding. Unlike the general boards above, the listing URL they return is the
   company's own career page (verified by hand: Stripe's resolves to `stripe.com`, Pinterest's to
   `pinterestcareers.com`), so these are genuinely direct applications. There's no "search
-  everything" endpoint for any of the three, so `GREENHOUSE_COMPANIES`, `LEVER_COMPANIES`, and
-  `ASHBY_COMPANIES` in `fetch-jobs.mjs` are a curated seed of real companies with verified working
-  boards (~50 companies total) — add more by checking a candidate token against any of the three
-  URL patterns directly. SmartRecruiters, Recruitee, and Teamtailor run similar free per-company
-  APIs but had too low a hit rate guessing at tokens blindly to be worth seeding without already
-  knowing specific companies that use them.
+  everything" endpoint for any of them, so `GREENHOUSE_COMPANIES`, `LEVER_COMPANIES`,
+  `ASHBY_COMPANIES`, and `WORKABLE_COMPANIES` in `fetch-jobs.mjs` are a curated seed of real
+  companies with verified working boards (~120 companies total) — add more by checking a candidate
+  token against any of the four URL patterns directly. **Adding companies is the main lever for
+  more listings**, since the general boards above are all capped by their own providers.
+  Worth knowing when curating: most product companies have zero QA roles open at any given moment
+  (of ~180 candidate tokens probed, 89 had working boards but only 13 had a QA role open that day),
+  so the highest-yield additions are companies where testing _is_ the product or the core service —
+  Thoughtworks, Testlio, Sauce Labs, SmartBear, and mabl are in the list for exactly that reason.
+  Workable's widget response carries no job description, so `AMBIGUOUS_TITLE_KEYWORDS` can never
+  qualify a listing from that source — only unambiguous QA titles ever match there.
+  SmartRecruiters, Recruitee, and Teamtailor run similar free per-company APIs but aren't seeded:
+  SmartRecruiters' public endpoint returns `totalFound: 0` for every plain company name tried
+  (it keys off internal company IDs, not names), and the other two had too low a hit rate guessing
+  at tokens blindly to be worth seeding without already knowing specific companies that use them.
 - **Himalayas was tried and dropped**: its public API ignores every filter param (`category`,
   `search`, `limit` all no-op — confirmed by hand) and always returns the same 20 generic jobs out
   of its 100k+ total, with no way to page or search into the rest for free. Not usable without a
@@ -103,8 +124,10 @@ fetches client-side (same origin — no CORS or API-key exposure). It runs autom
   occasionally fails for certain externally-hosted boards, leaving `company_name` as
   `"<something> - Greenhouse"` (or another ATS platform's name) instead of an actual employer —
   confirmed by hand, including one instance where that fallback text was a completely different
-  job's title. `ARBEITNOW_BROKEN_COMPANY_SUFFIX` in `fetch-jobs.mjs` filters those out rather than
-  show a mentee a garbled company name.
+  job's title. The same failure also surfaces as an un-deslugified name
+  (`"sonyinteractiveentertainmentglobal"`). `ARBEITNOW_BROKEN_COMPANY_SUFFIX` and
+  `isUnspacedSlugName()` in `fetch-jobs.mjs` filter both out rather than show a mentee a garbled
+  company name.
 - **Postings older than 14 days are dropped**, not just sorted last — `MAX_JOB_AGE_DAYS` in
   `fetch-jobs.mjs`. A listing that's been up for months is likely already filled, so it's excluded
   outright rather than shown with an old date attached. Every source here does supply a posted/
@@ -120,7 +143,11 @@ fetches client-side (same origin — no CORS or API-key exposure). It runs autom
   postings like OpenAI's "Manufacturing Quality Engineer, Datacenter Infrastructure" — a real
   match for the title keywords, but about physical hardware, not software. `HARDWARE_EXCLUSION_KEYWORDS`
   in `fetch-jobs.mjs` filters titles mentioning manufacturing/hardware/datacenter/firmware/etc.
-  before the QA-title check runs.
+  before the QA-title check runs. Aerospace/defense boards produce the same problem in a different
+  vocabulary ("Senior Flight Test Engineer" is a pilot-adjacent role, not an SDET one), so
+  `flight test`/`aerospace`/`avionics`/`supplier quality` are excluded as well. Company curation
+  matters here too: Peloton was probed, added, and then removed once every QA role on its board
+  turned out to be physical-product manufacturing.
 - **Freshness**: `.github/workflows/refresh-jobs.yml` runs on a schedule (every 6 hours, plus
   manually via `workflow_dispatch`) — it does the same `npm run build`, commits
   `public/data/jobs.json` back to `main` only if the refresh actually changed it, then deploys
@@ -144,7 +171,9 @@ fetches client-side (same origin — no CORS or API-key exposure). It runs autom
   structured country field either — it's all free-text location strings ("Taipei,Taiwan",
   "Cologne (GER)", bare "Remote"), so `classifyCountry()` in `fetch-jobs.mjs` pattern-matches
   explicit country/US-state signals first, then a short list of major-city fallbacks for cities
-  that actually show up in this data. It's approximate, not authoritative — an ambiguous city name
+  that actually show up in this data. US states are matched both abbreviated and spelled out —
+  missing the spelled-out form hid genuinely US-based jobs ("Woodinville, Washington") from the
+  default view, since that filter defaults to United States. It's approximate, not authoritative — an ambiguous city name
   (e.g. "Birmingham" is UK or Alabama) resolves toward whichever reading is more common on these
   particular boards. Jobs with no usable location at all classify as "Remote / Unspecified" rather
   than being guessed into a country. The filter's option list is built dynamically in `src/jobs.js`
