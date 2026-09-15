@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-15T03:12:25.456Z",
+  "fetchedAt": "2026-09-15T10:58:32.416Z",
   "jobs": [
     {
       "id": "greenhouse-roblox-8069987",
@@ -12,7 +12,7 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-09-14T14:37:34-04:00"
+      "postedAt": "2026-09-15T02:37:31-04:00"
     },
     {
       "id": "greenhouse-roblox-8070025",
@@ -25,7 +25,33 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-09-14T14:37:32-04:00"
+      "postedAt": "2026-09-15T02:37:28-04:00"
+    },
+    {
+      "id": "arbeitnow-senior-software-development-engineer-in-test-sdet-429752",
+      "title": "Senior Software Development Engineer in Test (SDET)",
+      "company": "capco",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/capco/senior-software-development-engineer-in-test-sdet-429752",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-09-15T03:55:11.000Z"
+    },
+    {
+      "id": "arbeitnow-principal-software-development-engineer-in-test-sdet-122900",
+      "title": "Principal Software Development Engineer in Test (SDET)",
+      "company": "capco",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/capco/principal-software-development-engineer-in-test-sdet-122900",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-09-15T03:55:11.000Z"
     },
     {
       "id": "arbeitnow-senior-testautomation-engineer-robot-framework-munster-272699",
@@ -143,19 +169,6 @@
       "location": "APAC,  China",
       "country": "Other",
       "postedAt": "2026-09-14T05:12:44+00:00"
-    },
-    {
-      "id": "jobicy-153171",
-      "title": "QA Manual Test Engineer",
-      "company": "Enumerate",
-      "url": "https://jobicy.com/jobs/153171-qa-manual-test-engineer",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "LATAM",
-      "country": "Other",
-      "postedAt": "2026-09-13T11:54:41+00:00"
     },
     {
       "id": "greenhouse-lyft-8767534002",
