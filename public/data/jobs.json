@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-15T19:13:25.049Z",
+  "fetchedAt": "2026-09-15T20:49:37.814Z",
   "jobs": [
     {
       "id": "greenhouse-roblox-8069987",
@@ -117,19 +117,6 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-09-14T17:55:33.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-qa-software-testing-augsburg-121842",
-      "title": "Quality Assurance / QA Software Testing (m/w/d)",
-      "company": "bd operations GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/bd-operations-gmbh/quality-assurance-qa-software-testing-augsburg-121842",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Augsburg",
-      "country": "Germany",
-      "postedAt": "2026-09-14T17:50:32.000Z"
     },
     {
       "id": "greenhouse-samsara-8139255",
