@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-09-15T14:10:20.669Z",
+  "fetchedAt": "2026-09-15T16:09:48.653Z",
   "jobs": [
+    {
+      "id": "arbeitnow-senior-qa-manager-fully-remote-berlin-435767",
+      "title": "Senior QA Manager - Fully Remote",
+      "company": "SOFTGAMES",
+      "url": "https://www.arbeitnow.com/jobs/companies/softgames/senior-qa-manager-fully-remote-berlin-435767",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Remote job",
+      "country": "Other",
+      "postedAt": "2026-09-15T14:30:15.000Z"
+    },
     {
       "id": "greenhouse-roblox-8069987",
       "title": "Quality Analyst",
