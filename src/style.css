@@ -407,6 +407,80 @@ html.pen-active * {
   color: var(--brass-bright);
 }
 
+/* "Resources" nav dropdown — groups QA Standards/QA Courses/Jobs, the three
+   nav items that leave the page rather than scroll to an in-page section.
+   Click-toggled (not :hover-only) so it behaves the same on touch and desktop,
+   and so its open state can be driven/closed from JS (outside-click, Escape,
+   the hamburger collapsing). At the mobile breakpoint below, .nav-dropdown-menu
+   switches from a floating panel to an inline, indented sub-list. */
+.nav-dropdown {
+  position: relative;
+  /* A plain block here lets the lone <button> child sit on its own
+     baseline-centered "line" instead of flush at the top like the sibling
+     <a> tags — flex+column makes the alignment explicit and matches them */
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--parchment-dim);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.nav-dropdown-toggle:hover,
+.nav-dropdown.open .nav-dropdown-toggle {
+  color: var(--brass-bright);
+}
+
+.nav-dropdown-caret {
+  width: 8px;
+  height: 8px;
+  transition: transform 0.2s ease;
+}
+
+.nav-dropdown.open .nav-dropdown-caret {
+  transform: rotate(180deg);
+}
+
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.85rem);
+  left: 0;
+  flex-direction: column;
+  min-width: 168px;
+  background: var(--ink-panel);
+  border: 1px solid rgba(var(--brass-rgb), 0.2);
+  border-radius: 6px;
+  padding: 0.5rem 0;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.45);
+  z-index: 20;
+}
+
+.nav-dropdown.open .nav-dropdown-menu {
+  display: flex;
+}
+
+.nav-dropdown-menu a {
+  padding: 0.55rem 1.1rem;
+  white-space: nowrap;
+}
+
+.nav-dropdown-menu a:hover {
+  background: rgba(var(--brass-rgb), 0.1);
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -2642,6 +2716,23 @@ html.pen-active .typewriter .tw-quill {
 
   .site-nav.open {
     display: flex;
+  }
+
+  /* Inline accordion instead of a floating panel — a popover reads oddly
+     stacked inside the already-vertical mobile menu */
+  .nav-dropdown-toggle {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-dropdown-menu {
+    position: static;
+    flex-direction: column;
+    min-width: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0.35rem 0 0 1rem;
   }
 }
 

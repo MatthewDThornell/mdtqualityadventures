@@ -49,4 +49,18 @@ export class BasePage {
   async openMobileNav(): Promise<void> {
     await this.navToggle.click();
   }
+
+  get navResourcesToggle(): Locator {
+    return this.page.getByTestId('nav-resources-toggle');
+  }
+
+  get navResourcesMenu(): Locator {
+    return this.page.locator('.nav-dropdown-menu');
+  }
+
+  /** Opens the "Resources" dropdown (QA Standards / QA Courses / Jobs) — its
+   * links are hidden until this is clicked, at every viewport width. */
+  async openResourcesDropdown(): Promise<void> {
+    await this.navResourcesToggle.click();
+  }
 }

@@ -54,16 +54,45 @@ document.addEventListener('visibilitychange', () => {
 
 const navToggle = document.getElementById('navToggle');
 const siteNav = document.getElementById('siteNav');
+const navDropdown = siteNav.querySelector('.nav-dropdown');
+const navDropdownToggle = navDropdown.querySelector('.nav-dropdown-toggle');
+
+function closeNavDropdown() {
+  navDropdown.classList.remove('open');
+  navDropdownToggle.setAttribute('aria-expanded', 'false');
+}
 
 navToggle.addEventListener('click', () => {
   const isOpen = siteNav.classList.toggle('open');
   navToggle.setAttribute('aria-expanded', String(isOpen));
+  if (!isOpen) closeNavDropdown();
+});
+
+// Click-toggled (not :hover-only) so "Resources" behaves the same on touch
+// and desktop — stopPropagation keeps this same click from immediately
+// reaching the document listener below and closing it again.
+navDropdownToggle.addEventListener('click', (event) => {
+  event.stopPropagation();
+  const isOpen = navDropdown.classList.toggle('open');
+  navDropdownToggle.setAttribute('aria-expanded', String(isOpen));
+});
+
+document.addEventListener('click', (event) => {
+  if (!navDropdown.contains(event.target)) closeNavDropdown();
+});
+
+navDropdown.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    closeNavDropdown();
+    navDropdownToggle.focus();
+  }
 });
 
 siteNav.querySelectorAll('a').forEach((link) => {
   link.addEventListener('click', () => {
     siteNav.classList.remove('open');
     navToggle.setAttribute('aria-expanded', 'false');
+    closeNavDropdown();
   });
 });
 

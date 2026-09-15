@@ -19,6 +19,7 @@ test.describe('Integration — Cross-page navigation', () => {
       await home.goto();
 
       await test.step('When the QA Standards nav link is clicked from the homepage', async () => {
+        await home.openResourcesDropdown();
         await home.navLink('qa-standards').click();
         await expect(page).toHaveURL(/\/qa-standards\.html$/);
         const standards = new QaStandardsPage(page);
@@ -41,6 +42,7 @@ test.describe('Integration — Cross-page navigation', () => {
       await home.goto();
 
       await test.step('When the TAU nav link is clicked from the homepage', async () => {
+        await home.openResourcesDropdown();
         await home.navLink('tau').click();
         await expect(page).toHaveURL(/\/test-automation-university\.html$/);
         const tau = new TauPage(page);
@@ -57,6 +59,7 @@ test.describe('Integration — Cross-page navigation', () => {
       await home.goto();
 
       await test.step('When the Jobs nav link is clicked from the homepage', async () => {
+        await home.openResourcesDropdown();
         await home.navLink('jobs').click();
         await expect(page).toHaveURL(/\/jobs\.html$/);
         const jobs = new JobsPage(page);
@@ -73,6 +76,7 @@ test.describe('Integration — Cross-page navigation', () => {
       await standards.goto();
 
       await test.step('When the TAU nav link is clicked from QA Standards', async () => {
+        await standards.openResourcesDropdown();
         await standards.navLink('tau').click();
         await expect(page).toHaveURL(/\/test-automation-university\.html$/);
         const tau = new TauPage(page);

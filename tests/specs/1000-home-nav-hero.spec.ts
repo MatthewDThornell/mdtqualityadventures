@@ -16,6 +16,9 @@ test.describe('Home — Nav', () => {
 
       await test.step('Then the brand link and every nav link are visible', async () => {
         await expect.soft(home.navBrand).toBeVisible();
+        // qa-standards/tau/jobs live inside the "Resources" dropdown, hidden
+        // until opened — see Test_Case_1002 for its own open/close coverage
+        await home.openResourcesDropdown();
         for (const section of [
           'experience',
           'accomplishments',
@@ -83,6 +86,40 @@ test.describe('Home — Nav', () => {
       await test.step('When a nav link is clicked, the mobile nav closes again', async () => {
         await home.navLink('contact').click();
         await expect.soft(home.navToggle).toHaveAttribute('aria-expanded', 'false');
+      });
+    },
+  );
+
+  test(
+    'Test_Case_1002_Home_ResourcesDropdown_OpensAndCloses',
+    { tag: '@smoke' },
+    async ({ page }) => {
+      const home = new HomePage(page);
+      await home.goto();
+
+      await test.step('Given the Resources dropdown starts closed', async () => {
+        await expect.soft(home.navResourcesToggle).toHaveAttribute('aria-expanded', 'false');
+        await expect.soft(home.navLink('qa-standards')).not.toBeVisible();
+      });
+
+      await test.step('When the toggle is clicked, it opens and reveals QA Standards, QA Courses, and Jobs', async () => {
+        await home.openResourcesDropdown();
+        await expect.soft(home.navResourcesToggle).toHaveAttribute('aria-expanded', 'true');
+        await expect.soft(home.navLink('qa-standards')).toBeVisible();
+        await expect.soft(home.navLink('tau')).toBeVisible();
+        await expect.soft(home.navLink('jobs')).toBeVisible();
+      });
+
+      await test.step('When Escape is pressed, it closes and returns focus to the toggle', async () => {
+        await page.keyboard.press('Escape');
+        await expect.soft(home.navResourcesToggle).toHaveAttribute('aria-expanded', 'false');
+        await expect.soft(home.navResourcesToggle).toBeFocused();
+      });
+
+      await test.step('When open and a click lands outside it, it closes again', async () => {
+        await home.openResourcesDropdown();
+        await home.navBrand.click();
+        await expect.soft(home.navResourcesToggle).toHaveAttribute('aria-expanded', 'false');
       });
     },
   );

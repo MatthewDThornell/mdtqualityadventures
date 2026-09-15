@@ -62,9 +62,25 @@
         <nav class="site-nav" id="siteNav">
           <a href="/#experience" data-testid="nav-link-experience">Professional Experience</a>
           <a href="/#fieldnotes" data-testid="nav-link-accomplishments">Accomplishments</a>
-          <a href="/qa-standards.html" aria-current="page" data-testid="nav-link-qa-standards">QA Standards</a>
-          <a href="/test-automation-university.html" data-testid="nav-link-tau">QA Courses</a>
-          <a href="/jobs.html" data-testid="nav-link-jobs">Jobs</a>
+          <div class="nav-dropdown">
+            <button
+              type="button"
+              class="nav-dropdown-toggle"
+              aria-haspopup="true"
+              aria-expanded="false"
+              data-testid="nav-resources-toggle"
+            >
+              Resources
+              <svg class="nav-dropdown-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false">
+                <path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="/qa-standards.html" aria-current="page" data-testid="nav-link-qa-standards">QA Standards</a>
+              <a href="/test-automation-university.html" data-testid="nav-link-tau">QA Courses</a>
+              <a href="/jobs.html" data-testid="nav-link-jobs">Jobs</a>
+            </div>
+          </div>
           <a href="/#letters" data-testid="nav-link-recommendations">Recommendations</a>
           <a href="/#origins" data-testid="nav-link-about-me">About Me</a>
           <a href="/#mentors" data-testid="nav-link-mentors">Mentors</a>
