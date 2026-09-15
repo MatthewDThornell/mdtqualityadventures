@@ -370,16 +370,20 @@ html.pen-active * {
 }
 
 .brand {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.2rem;
-  color: var(--brass-bright);
-  letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
 }
 
-.brand:hover {
-  color: var(--parchment);
+.brand-logo {
+  display: block;
+  height: 2.6rem;
+  width: auto;
+  transition: opacity 0.2s ease;
+}
+
+.brand:hover .brand-logo {
+  opacity: 0.85;
 }
 
 .site-nav {
@@ -1462,7 +1466,7 @@ html.pen-active .typewriter .tw-quill {
   justify-content: center;
 }
 
-.about-seal {
+.about-brand-seal {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -1470,24 +1474,6 @@ html.pen-active .typewriter .tw-quill {
   height: 76px;
   z-index: 3;
   opacity: 0.88;
-}
-
-.about-seal circle {
-  fill: none;
-  stroke: var(--brass);
-  stroke-width: 1.2;
-}
-
-.about-seal text {
-  fill: var(--brass-bright);
-  font-family: var(--font-ui);
-  text-transform: uppercase;
-}
-
-.about-seal-monogram {
-  font-family: var(--font-display);
-  font-size: 26px;
-  fill: var(--parchment);
 }
 
 .origin-lead {
