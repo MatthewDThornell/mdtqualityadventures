@@ -1,19 +1,6 @@
 {
-  "fetchedAt": "2026-09-15T16:09:48.653Z",
+  "fetchedAt": "2026-09-15T19:13:25.049Z",
   "jobs": [
-    {
-      "id": "arbeitnow-senior-qa-manager-fully-remote-berlin-435767",
-      "title": "Senior QA Manager - Fully Remote",
-      "company": "SOFTGAMES",
-      "url": "https://www.arbeitnow.com/jobs/companies/softgames/senior-qa-manager-fully-remote-berlin-435767",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Remote job",
-      "country": "Other",
-      "postedAt": "2026-09-15T14:30:15.000Z"
-    },
     {
       "id": "greenhouse-roblox-8069987",
       "title": "Quality Analyst",
@@ -25,7 +12,7 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-09-15T02:37:31-04:00"
+      "postedAt": "2026-09-15T14:37:41-04:00"
     },
     {
       "id": "greenhouse-roblox-8070025",
@@ -38,7 +25,46 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-09-15T02:37:28-04:00"
+      "postedAt": "2026-09-15T14:37:39-04:00"
+    },
+    {
+      "id": "lever-shieldai-3824ce13-5af0-436c-91bb-835b2740bf95",
+      "title": "Software Integration & Test Manager",
+      "company": "Shield AI",
+      "url": "https://jobs.lever.co/shieldai/3824ce13-5af0-436c-91bb-835b2740bf95",
+      "source": "Shield AI",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Kyiv",
+      "country": "Other",
+      "postedAt": "2026-09-15T18:26:36.681Z"
+    },
+    {
+      "id": "greenhouse-cockroachlabs-7774966",
+      "title": "Member of Technical Staff (Test Engineering)",
+      "company": "Cockroach Labs",
+      "url": "https://www.cockroachlabs.com/careers/job/?gh_jid=7774966",
+      "source": "Cockroach Labs",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Bangalore, India",
+      "country": "India",
+      "postedAt": "2026-09-15T14:18:45-04:00"
+    },
+    {
+      "id": "arbeitnow-senior-qa-manager-fully-remote-berlin-435767",
+      "title": "Senior QA Manager - Fully Remote",
+      "company": "SOFTGAMES",
+      "url": "https://www.arbeitnow.com/jobs/companies/softgames/senior-qa-manager-fully-remote-berlin-435767",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Remote job",
+      "country": "Other",
+      "postedAt": "2026-09-15T14:30:15.000Z"
     },
     {
       "id": "arbeitnow-senior-testautomation-engineer-robot-framework-munster-272699",
@@ -130,19 +156,6 @@
       "location": "Singapore, Singapore",
       "country": "Singapore",
       "postedAt": "2026-09-14T04:52:08-04:00"
-    },
-    {
-      "id": "jobicy-145995",
-      "title": "Ubuntu Linux Kernel Test Engineer",
-      "company": "Canonical",
-      "url": "https://jobicy.com/jobs/145995-ubuntu-linux-kernel-test-engineer",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "APAC,  China",
-      "country": "Other",
-      "postedAt": "2026-09-14T05:12:44+00:00"
     },
     {
       "id": "greenhouse-lyft-8767534002",
