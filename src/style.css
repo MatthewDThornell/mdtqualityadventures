@@ -309,8 +309,8 @@ html.pen-active .magic-word:hover {
    initQuillCursor in chrome.js) rather than the page's normal cursor.
    Matches the brass/teal palette of the glyph trail it draws (see
    .ink-trail-canvas above) rather than the quill-pen icon used elsewhere on
-   the site (typewriter, intro flourish), since this is the one quill-themed
-   element that visually clashed with the site's code-rain motif. */
+   the site (the typewriter), since this is the one quill-themed element
+   that visually clashed with the site's code-rain motif. */
 html.pen-active,
 html.pen-active * {
   cursor:
@@ -544,125 +544,6 @@ html.pen-active * {
   text-transform: uppercase;
   color: var(--teal-bright);
   margin-bottom: 0.75rem;
-}
-
-/* One-time "cover page" flourish shown before the real hero on a visitor's
-   first load this session — the site's name writing itself in, like opening
-   a journal to its title page. Hidden instantly (before this CSS even
-   matters) by the inline script next to it in index.html if sessionStorage
-   already has the seen-flag, or if the visitor prefers reduced motion, so
-   repeat visits and motion-sensitive visitors never see it at all. See
-   initIntroSignature in chrome.js for the bookkeeping that removes it from
-   the DOM once the animation below finishes.
-   The `to` state below sets visibility: hidden (not just opacity: 0) so
-   that even if JS never runs at all, this overlay stops blocking clicks and
-   scroll on its own, purely from this animation finishing. */
-.intro-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 500;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--ink);
-  animation: intro-fade-out 0.6s ease-in 2.5s forwards;
-}
-
-.intro-signature {
-  position: relative;
-  width: min(90vw, 640px);
-  text-align: center;
-}
-
-.intro-eyebrow {
-  font-family: var(--font-ui);
-  font-size: 0.78rem;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: var(--teal-bright);
-  margin: 0;
-  opacity: 0;
-  animation: intro-fade-in 0.5s ease-out 0.1s forwards;
-}
-
-.intro-title {
-  display: inline-block;
-  position: relative;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: clamp(2rem, 6vw, 3.4rem);
-  color: var(--parchment);
-  margin: 0.4rem 0 0;
-  clip-path: inset(0 100% 0 0);
-  animation: intro-reveal 1.3s cubic-bezier(0.65, 0, 0.35, 1) 0.5s forwards;
-}
-
-.intro-quill {
-  position: absolute;
-  top: -0.7rem;
-  right: -1.7rem;
-  width: 34px;
-  height: 34px;
-  background: url('/cursors/quill-cursor.svg') center / contain no-repeat;
-  opacity: 0;
-  transform: rotate(38deg) scale(0.6) translateY(-6px);
-  animation: intro-quill-settle 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 1.75s forwards;
-}
-
-.intro-rule {
-  display: block;
-  width: 0;
-  height: 2px;
-  margin: 1.1rem auto 0;
-  background: linear-gradient(90deg, transparent, var(--brass-bright), transparent);
-  animation: intro-rule-draw 0.5s ease-out 2.1s forwards;
-}
-
-@keyframes intro-fade-in {
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes intro-reveal {
-  to {
-    clip-path: inset(0 0 0 0);
-  }
-}
-
-@keyframes intro-quill-settle {
-  0% {
-    opacity: 0;
-    transform: rotate(38deg) scale(0.6) translateY(-6px);
-  }
-  70% {
-    opacity: 1;
-    transform: rotate(8deg) scale(1.05) translateY(0);
-  }
-  100% {
-    opacity: 1;
-    transform: rotate(14deg) scale(1) translateY(0);
-  }
-}
-
-@keyframes intro-rule-draw {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: min(70%, 220px);
-  }
-}
-
-@keyframes intro-fade-out {
-  0% {
-    opacity: 1;
-    visibility: visible;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
 }
 
 .cover h1 {
@@ -3084,10 +2965,6 @@ a.tau-course-name:hover {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
-  }
-
-  .intro-overlay {
-    display: none !important;
   }
 
   .stars,

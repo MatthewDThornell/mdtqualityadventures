@@ -9,12 +9,10 @@ import {
   initInkTrail,
   initQuillCursor,
   initMagicWords,
-  initIntroSignature,
 } from './chrome.js';
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
-initIntroSignature(document.getElementById('introOverlay'));
 initScrollRibbon(document.getElementById('scrollRibbonFill'));
 initInkCursor(document.getElementById('inkCursor'));
 initInkTrail(document.getElementById('inkTrailCanvas'));

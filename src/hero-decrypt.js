@@ -52,7 +52,19 @@ export function initHeroDecrypt(headingEl, options = {}) {
   const spans = chars.map((ch) => {
     const span = document.createElement('span');
     span.className = 'hnd-char';
-    span.textContent = ch === ' ' ? ' ' : randomBinaryChar();
+    if (ch === ' ') {
+      // Spaces never scramble or go through the per-frame lock below, so
+      // without this they'd sit in the overlay's monospace font for the
+      // entire animation — and a monospace space is much wider than one in
+      // the display serif .is-locked switches to, so the "revealed" name
+      // renders visibly wider than the real heading and jumps left when the
+      // real (narrower, properly-spaced) heading swaps in. Locking immediately
+      // fixes both: font-family: var(--font-display) applies from frame one.
+      span.textContent = ' ';
+      span.classList.add('is-locked');
+    } else {
+      span.textContent = randomBinaryChar();
+    }
     overlay.appendChild(span);
     return span;
   });

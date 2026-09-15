@@ -1,10 +1,11 @@
 import { test, expect } from '@playwright/test';
 import { HomePage } from '../pages/HomePage';
 
-// What It Tests: All six adventure cards (volunteering, side projects, team
-// building) are visible, with each card's outbound link — where it has one
-// — pointing at a real destination.
-// Why It Matters: This is the "life outside work" chapter that makes the
+// What It Tests: All six adventure cards — volunteering and side projects in
+// the Adventures chapter, plus the three team-building cards that live in
+// the About Me chapter instead — are visible, with each card's outbound
+// link, where it has one, pointing at a real destination.
+// Why It Matters: This is the "life outside work" content that makes the
 // site read as a person rather than a resume; a broken outbound link here
 // is the kind of thing a visitor notices but rarely reports.
 test.describe('Adventures', () => {

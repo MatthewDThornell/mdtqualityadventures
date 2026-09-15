@@ -15,9 +15,9 @@ import { TauPage } from '../pages/TauPage';
 async function headingLevels(page: Page): Promise<number[]> {
   return page.evaluate(() =>
     Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6'))
-      // aria-hidden headings (e.g. the intro-splash overlay's own <h2>, a
-      // decorative echo of the real hero <h1>) are invisible to assistive
-      // tech, so they don't count toward the exposed heading hierarchy.
+      // aria-hidden headings (a decorative echo of visible text, say) are
+      // invisible to assistive tech, so they don't count toward the exposed
+      // heading hierarchy.
       .filter((el) => !el.closest('[aria-hidden="true"]'))
       .map((el) => Number(el.tagName[1])),
   );

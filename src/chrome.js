@@ -41,26 +41,6 @@ export function initQuillCursor({ onActivate, onDeactivate } = {}) {
   document.addEventListener('mouseleave', deactivate);
 }
 
-// Bookkeeping for the homepage's one-time cover-page flourish (see
-// .intro-overlay in style.css and the inline script beside #introOverlay in
-// index.html, which already handles hiding it instantly on repeat visits or
-// under reduced-motion — this only runs for a visitor actually watching the
-// animation play). The CSS's own intro-fade-out keyframe already ends in
-// visibility: hidden, so the overlay stops blocking clicks/scroll on its own
-// even if this never ran; this just tidies it out of the DOM afterward and
-// records that it's been seen, so it doesn't replay on the next page within
-// the same tab session. TOTAL_MS mirrors the overlay's fade-out delay (2.5s)
-// plus duration (0.6s) in style.css — keep the two in sync if either changes.
-export function initIntroSignature(overlay) {
-  if (!overlay || overlay.style.display === 'none') return;
-
-  const TOTAL_MS = 3200;
-  window.setTimeout(() => {
-    overlay.style.display = 'none';
-    sessionStorage.setItem('mdt-intro-seen', '1');
-  }, TOTAL_MS);
-}
-
 // Wraps every word of the page's prose in its own <span class="magic-word">
 // so CSS can glow a word on hover and fade it back out slowly (see .magic-word
 // in style.css) — words catching a little of the pen's magic as you read.

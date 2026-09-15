@@ -32,27 +32,6 @@
   <body>
     <a class="skip-link" href="#main-content" data-testid="skip-link">Skip to main content</a>
 
-    <!-- One-time cover-page flourish, homepage only — see initIntroSignature
-         in src/chrome.js (called from src/main.js) and .intro-overlay in
-         style.css. public/intro-check.js (a plain, non-module, non-deferred
-         script — deliberately NOT bundled by Vite) runs synchronously right
-         here during HTML parsing, before the deferred module scripts below,
-         so a repeat visit this session — or reduced-motion — hides this
-         overlay before it ever paints, instead of flashing it for a frame.
-         Kept as an external file rather than inline so the CSP's script-src
-         can stay a plain 'self' with no inline-script hash to keep in sync. -->
-    <div class="intro-overlay" id="introOverlay" aria-hidden="true">
-      <div class="intro-signature">
-        <p class="intro-eyebrow">MDT Quality Adventures</p>
-        <h2 class="intro-title">
-          Matthew D Thornell
-          <span class="intro-quill"></span>
-        </h2>
-        <span class="intro-rule"></span>
-      </div>
-    </div>
-    <script src="/intro-check.js"></script>
-
     <div class="sky" aria-hidden="true">
       <div class="stars"></div>
       <div class="mist mist-a"></div>
@@ -786,6 +765,46 @@
               </article>
             </div>
 
+            <h3 class="origin-subhead">Team Building</h3>
+            <p>
+              I love the teams I get to build with, and I try to prove it outside the standup
+              too: I&rsquo;m always looking for the next reason to get a team out of the office
+              and into something a little more adventurous together.
+            </p>
+            <div class="card-grid">
+              <article class="card" data-testid="adventure-card-legrand-skydiving">
+                <img class="card-photo card-photo-top" src="/images/skydive-legrand-qa.jpg" alt="Matthew and the local Legrand QA engineers suited up together before a skydive" loading="lazy" />
+                <h3>Skydiving with the QA Team</h3>
+                <p class="card-meta"><img class="timeline-logo" src="/images/logos/legrand.png" alt="" loading="lazy" /><a class="brand-link brand-legrand" href="https://www.legrand.us/" target="_blank" rel="noopener">Legrand</a></p>
+                <p>
+                  A Legrand photo of the local QA engineers who went skydiving together with me.
+                  Quality is built on trust, and there&rsquo;s no faster way to build it with a team
+                  than jumping out of a plane together.
+                </p>
+              </article>
+              <article class="card" data-testid="adventure-card-conexed-summit">
+                <img class="card-photo" src="/images/conexed-grand-america.jpg" alt="The ConexED team at a summit at the Grand America hotel" loading="lazy" />
+                <h3>ConexED Summit at Grand America</h3>
+                <p class="card-meta"><img class="timeline-logo" src="/images/logos/conexed.png" alt="" loading="lazy" /><a class="brand-link brand-conexed" href="https://www.conexed.com/" target="_blank" rel="noopener">ConexED</a> &middot; <a href="https://www.grandamerica.com/" target="_blank" rel="noopener">Grand America</a></p>
+                <p>
+                  A ConexED team summit at the Grand America hotel: we ate together, ran through
+                  team-building exercises, and networked with high-end educators from around Utah
+                  to explore new ways to improve education for students across the board.
+                </p>
+              </article>
+              <article class="card" data-testid="adventure-card-seekwell-provo-river">
+                <img class="card-photo" src="/images/seekwell-provo-river.jpg" alt="The Seekwell team floating down the Provo River" loading="lazy" />
+                <h3>Floating the Provo River with Seekwell</h3>
+                <p class="card-meta"><img class="timeline-logo" src="/images/logos/1800contacts.png" alt="" loading="lazy" /><a class="brand-link brand-seekwell" href="https://www.seekwell.com/" target="_blank" rel="noopener">Seekwell</a></p>
+                <p>
+                  A Seekwell team outing floating down the Provo River, taking in Utah&rsquo;s
+                  natural landscape while working to stay together as one unit the whole way down:
+                  a simple team-building exercise that says a lot about how well a team
+                  communicates.
+                </p>
+              </article>
+            </div>
+
             <h3 class="origin-subhead">Manners Maketh Man</h3>
             <p>
               <em>Kingsman: The Secret Service</em> is, hands down, my favorite movie. Not for
@@ -1204,6 +1223,7 @@
                 <div class="gg-strip">
                   <img src="/images/gg-sign.jpg" alt="The Gentleman's Game neon sign" loading="lazy" />
                   <img src="/images/gg-game-night.jpg" alt="A Gentleman's Game board game night" loading="lazy" />
+                  <img src="/images/gg-poker-trophies.jpg" alt="Poker chips, dealer button, and card guards won at a Gentleman's Game night" loading="lazy" />
                 </div>
               </article>
             </div>
@@ -1280,41 +1300,6 @@
                   <img src="/images/game-r6-siege.jpg" alt="" loading="lazy" />
                   <img src="/images/game-destiny.jpg" alt="" loading="lazy" />
                 </div>
-              </article>
-            </div>
-
-            <h3 class="origin-subhead">Team Building</h3>
-            <div class="card-grid">
-              <article class="card" data-testid="adventure-card-legrand-skydiving">
-                <img class="card-photo card-photo-top" src="/images/skydive-legrand-qa.jpg" alt="Matthew and the local Legrand QA engineers suited up together before a skydive" loading="lazy" />
-                <h3>Skydiving with the QA Team</h3>
-                <p class="card-meta"><img class="timeline-logo" src="/images/logos/legrand.png" alt="" loading="lazy" /><a class="brand-link brand-legrand" href="https://www.legrand.us/" target="_blank" rel="noopener">Legrand</a></p>
-                <p>
-                  A Legrand photo of the local QA engineers who went skydiving together with me.
-                  Quality is built on trust, and there&rsquo;s no faster way to build it with a team
-                  than jumping out of a plane together.
-                </p>
-              </article>
-              <article class="card" data-testid="adventure-card-conexed-summit">
-                <img class="card-photo" src="/images/conexed-grand-america.jpg" alt="The ConexED team at a summit at the Grand America hotel" loading="lazy" />
-                <h3>ConexED Summit at Grand America</h3>
-                <p class="card-meta"><img class="timeline-logo" src="/images/logos/conexed.png" alt="" loading="lazy" /><a class="brand-link brand-conexed" href="https://www.conexed.com/" target="_blank" rel="noopener">ConexED</a> &middot; <a href="https://www.grandamerica.com/" target="_blank" rel="noopener">Grand America</a></p>
-                <p>
-                  A ConexED team summit at the Grand America hotel: we ate together, ran through
-                  team-building exercises, and networked with high-end educators from around Utah
-                  to explore new ways to improve education for students across the board.
-                </p>
-              </article>
-              <article class="card" data-testid="adventure-card-seekwell-provo-river">
-                <img class="card-photo" src="/images/seekwell-provo-river.jpg" alt="The Seekwell team floating down the Provo River" loading="lazy" />
-                <h3>Floating the Provo River with Seekwell</h3>
-                <p class="card-meta"><img class="timeline-logo" src="/images/logos/1800contacts.png" alt="" loading="lazy" /><a class="brand-link brand-seekwell" href="https://www.seekwell.com/" target="_blank" rel="noopener">Seekwell</a></p>
-                <p>
-                  A Seekwell team outing floating down the Provo River, taking in Utah&rsquo;s
-                  natural landscape while working to stay together as one unit the whole way down:
-                  a simple team-building exercise that says a lot about how well a team
-                  communicates.
-                </p>
               </article>
             </div>
           </div>
