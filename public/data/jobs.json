@@ -1,6 +1,71 @@
 {
-  "fetchedAt": "2026-09-15T20:49:37.814Z",
+  "fetchedAt": "2026-09-16T03:08:46.198Z",
   "jobs": [
+    {
+      "id": "greenhouse-thoughtworks-8200468",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Singapore, Singapore",
+      "country": "Singapore",
+      "postedAt": "2026-09-15T23:08:16-04:00"
+    },
+    {
+      "id": "arbeitnow-werkstudent-quality-assurance-medizinalcannabis-koln-187120",
+      "title": "Werkstudent Quality Assurance (m/w/d) - Medizinalcannabis",
+      "company": "Semdor Pharma Group GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/werkstudent-quality-assurance-medizinalcannabis-koln-187120",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Köln",
+      "country": "Germany",
+      "postedAt": "2026-09-15T23:09:53.000Z"
+    },
+    {
+      "id": "arbeitnow-head-of-quality-assurance-koln-29370",
+      "title": "Head of Quality Assurance (m/w/d)",
+      "company": "Semdor Pharma Group GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/head-of-quality-assurance-koln-29370",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Köln",
+      "country": "Germany",
+      "postedAt": "2026-09-15T23:09:53.000Z"
+    },
+    {
+      "id": "arbeitnow-staff-product-test-engineer-edinburgh-scotland-60132",
+      "title": "Staff Product Test Engineer",
+      "company": "Cirrus",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/cirrus/staff-product-test-engineer-edinburgh-scotland-60132",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Edinburgh, Scotland",
+      "country": "United Kingdom",
+      "postedAt": "2026-09-15T21:24:56.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-engineer-berlin-383729",
+      "title": "Quality Assurance Engineer (Berlin)",
+      "company": "GeneralMind",
+      "url": "https://www.arbeitnow.com/jobs/companies/generalmind/quality-assurance-engineer-berlin-383729",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-09-15T20:30:22.000Z"
+    },
     {
       "id": "greenhouse-roblox-8069987",
       "title": "Quality Analyst",
@@ -130,19 +195,6 @@
       "location": "Remote - CA",
       "country": "United States",
       "postedAt": "2026-09-14T11:35:44-04:00"
-    },
-    {
-      "id": "greenhouse-thoughtworks-8200468",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
-      "postedAt": "2026-09-14T04:52:08-04:00"
     },
     {
       "id": "greenhouse-lyft-8767534002",
