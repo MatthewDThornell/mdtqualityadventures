@@ -1,6 +1,71 @@
 {
-  "fetchedAt": "2026-09-16T16:03:03.290Z",
+  "fetchedAt": "2026-09-16T20:49:38.740Z",
   "jobs": [
+    {
+      "id": "greenhouse-coursera-6141559004",
+      "title": "Senior Software Test Engineer",
+      "company": "Coursera",
+      "url": "https://job-boards.greenhouse.io/coursera/jobs/6141559004",
+      "source": "Coursera",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Toronto, Canada",
+      "country": "Canada",
+      "postedAt": "2026-09-16T16:40:10-04:00"
+    },
+    {
+      "id": "greenhouse-pinterest-8011568",
+      "title": "SDET II, tvScientific",
+      "company": "Pinterest",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8011568",
+      "source": "Pinterest",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "San Francisco, CA, US; Remote, US",
+      "country": "United States",
+      "postedAt": "2026-09-16T14:51:43-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-16T14:38:06-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8070025",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-16T14:38:04-04:00"
+    },
+    {
+      "id": "greenhouse-samsara-8139255",
+      "title": "Senior Manager, Quality Engineering",
+      "company": "Samsara",
+      "url": "https://www.samsara.com/company/careers/roles/8139255?gh_jid=8139255",
+      "source": "Samsara",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Remote - CA",
+      "country": "United States",
+      "postedAt": "2026-09-16T14:10:39-04:00"
+    },
     {
       "id": "arbeitnow-senior-qa-engineer-dundee-124529",
       "title": "Senior QA Engineer",
@@ -67,32 +132,6 @@
       "postedAt": "2026-09-16T03:49:03-04:00"
     },
     {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-16T02:37:17-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8070025",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-16T02:37:14-04:00"
-    },
-    {
       "id": "jobicy-146269",
       "title": "Senior SDET - GovTech Industry (Colombia)",
       "company": "Truelogic",
@@ -104,19 +143,6 @@
       "location": "LATAM",
       "country": "Other",
       "postedAt": "2026-09-16T04:35:17+00:00"
-    },
-    {
-      "id": "arbeitnow-communications-test-engineer-i-milton-keynes-united-kingdom-386426",
-      "title": "Communications Test Engineer I",
-      "company": "CesiumAstro",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/cesiumastro/communications-test-engineer-i-milton-keynes-united-kingdom-386426",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Milton Keynes, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-16T03:05:10.000Z"
     },
     {
       "id": "arbeitnow-werkstudent-quality-assurance-medizinalcannabis-koln-187120",
@@ -208,32 +234,6 @@
       "location": "Münster",
       "country": "Germany",
       "postedAt": "2026-09-14T18:09:12.000Z"
-    },
-    {
-      "id": "greenhouse-pinterest-8011568",
-      "title": "SDET II, tvScientific",
-      "company": "Pinterest",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8011568",
-      "source": "Pinterest",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "San Francisco, CA, US; Remote, US",
-      "country": "United States",
-      "postedAt": "2026-09-14T13:56:15-04:00"
-    },
-    {
-      "id": "greenhouse-samsara-8139255",
-      "title": "Senior Manager, Quality Engineering",
-      "company": "Samsara",
-      "url": "https://www.samsara.com/company/careers/roles/8139255?gh_jid=8139255",
-      "source": "Samsara",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Remote - CA",
-      "country": "United States",
-      "postedAt": "2026-09-14T11:35:44-04:00"
     },
     {
       "id": "greenhouse-lyft-8767534002",
@@ -338,19 +338,6 @@
       "location": "Toronto, Canada",
       "country": "Canada",
       "postedAt": "2026-09-09T01:05:40-04:00"
-    },
-    {
-      "id": "greenhouse-coursera-6141559004",
-      "title": "Senior Software Test Engineer",
-      "company": "Coursera",
-      "url": "https://app.careerpuck.com/job-board/udemy/job/6141559004?gh_jid=6141559004",
-      "source": "Coursera",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Toronto, Canada",
-      "country": "Canada",
-      "postedAt": "2026-09-08T18:23:31-04:00"
     },
     {
       "id": "lever-shieldai-5da0e986-a159-4be9-b58c-b12368c7825a",
