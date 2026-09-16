@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-09-16T10:47:07.833Z",
+  "fetchedAt": "2026-09-16T16:03:03.290Z",
   "jobs": [
+    {
+      "id": "arbeitnow-senior-qa-engineer-dundee-124529",
+      "title": "Senior QA Engineer",
+      "company": "Waracle",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/waracle/senior-qa-engineer-dundee-124529",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Dundee, Scotland, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-09-16T12:30:07.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-qa-engineer-mobile-london-241221",
+      "title": "Senior QA Engineer - Mobile",
+      "company": "Waracle",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/waracle/senior-qa-engineer-mobile-london-241221",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "London, England, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-09-16T12:30:07.000Z"
+    },
+    {
+      "id": "arbeitnow-qa-engineer-mid-level-dundee-399652",
+      "title": "QA Engineer - Mid Level",
+      "company": "Waracle",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/waracle/qa-engineer-mid-level-dundee-399652",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Dundee, Scotland, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-09-16T12:30:07.000Z"
+    },
     {
       "id": "arbeitnow-lead-test-manager-qa-evangelist-dusseldorf-366541",
       "title": "Lead Test Manager / QA Evangelist (m/w/d)",
@@ -106,19 +145,6 @@
       "postedAt": "2026-09-15T23:09:53.000Z"
     },
     {
-      "id": "arbeitnow-staff-product-test-engineer-edinburgh-scotland-60132",
-      "title": "Staff Product Test Engineer",
-      "company": "Cirrus",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/cirrus/staff-product-test-engineer-edinburgh-scotland-60132",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Edinburgh, Scotland",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-15T21:24:56.000Z"
-    },
-    {
       "id": "arbeitnow-quality-assurance-engineer-berlin-383729",
       "title": "Quality Assurance Engineer (Berlin)",
       "company": "GeneralMind",
@@ -184,19 +210,6 @@
       "postedAt": "2026-09-14T18:09:12.000Z"
     },
     {
-      "id": "arbeitnow-senior-test-automation-engineer-dortmund-243707",
-      "title": "(Senior) Test Automation Engineer (m/w/d)",
-      "company": "Loopario",
-      "url": "https://www.arbeitnow.com/jobs/companies/loopario/senior-test-automation-engineer-dortmund-243707",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Dortmund",
-      "country": "Germany",
-      "postedAt": "2026-09-14T17:56:36.000Z"
-    },
-    {
       "id": "greenhouse-pinterest-8011568",
       "title": "SDET II, tvScientific",
       "company": "Pinterest",
@@ -208,19 +221,6 @@
       "location": "San Francisco, CA, US; Remote, US",
       "country": "United States",
       "postedAt": "2026-09-14T13:56:15-04:00"
-    },
-    {
-      "id": "arbeitnow-ai-test-engineer-f-md-berlin-168576",
-      "title": "AI Test Engineer (f/md)",
-      "company": "Verwaltungssprung GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/verwaltungssprung-gmbh/ai-test-engineer-f-md-berlin-168576",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-09-14T17:55:33.000Z"
     },
     {
       "id": "greenhouse-samsara-8139255",
@@ -403,19 +403,6 @@
       "location": "Sunnyvale, CA",
       "country": "United States",
       "postedAt": "2026-09-03T19:22:52.625+00:00"
-    },
-    {
-      "id": "greenhouse-flexport-8015840",
-      "title": "Automation Engineer I",
-      "company": "Flexport",
-      "url": "https://job-boards.greenhouse.io/flexport/jobs/8015840",
-      "source": "Flexport",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Atlanta, Georgia, United States",
-      "country": "United States",
-      "postedAt": "2026-09-02T11:59:33-04:00"
     }
   ]
 }
