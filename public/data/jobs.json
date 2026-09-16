@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-09-16T03:08:46.198Z",
+  "fetchedAt": "2026-09-16T10:47:07.833Z",
   "jobs": [
+    {
+      "id": "arbeitnow-lead-test-manager-qa-evangelist-dusseldorf-366541",
+      "title": "Lead Test Manager / QA Evangelist (m/w/d)",
+      "company": "INDIE Solutions GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/indie-solutions-gmbh/lead-test-manager-qa-evangelist-dusseldorf-366541",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Düsseldorf",
+      "country": "Germany",
+      "postedAt": "2026-09-16T08:30:43.000Z"
+    },
     {
       "id": "greenhouse-thoughtworks-8200468",
       "title": "Lead Quality Analyst",
@@ -12,7 +25,59 @@
       "workType": "Hybrid",
       "location": "Singapore, Singapore",
       "country": "Singapore",
-      "postedAt": "2026-09-15T23:08:16-04:00"
+      "postedAt": "2026-09-16T03:49:03-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-16T02:37:17-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8070025",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-16T02:37:14-04:00"
+    },
+    {
+      "id": "jobicy-146269",
+      "title": "Senior SDET - GovTech Industry (Colombia)",
+      "company": "Truelogic",
+      "url": "https://jobicy.com/jobs/146269-senior-sdet-govtech-industry-colombia",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "LATAM",
+      "country": "Other",
+      "postedAt": "2026-09-16T04:35:17+00:00"
+    },
+    {
+      "id": "arbeitnow-communications-test-engineer-i-milton-keynes-united-kingdom-386426",
+      "title": "Communications Test Engineer I",
+      "company": "CesiumAstro",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/cesiumastro/communications-test-engineer-i-milton-keynes-united-kingdom-386426",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Milton Keynes, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-09-16T03:05:10.000Z"
     },
     {
       "id": "arbeitnow-werkstudent-quality-assurance-medizinalcannabis-koln-187120",
@@ -65,32 +130,6 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-09-15T20:30:22.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-15T14:37:41-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8070025",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-15T14:37:39-04:00"
     },
     {
       "id": "lever-shieldai-3824ce13-5af0-436c-91bb-835b2740bf95",
@@ -377,19 +416,6 @@
       "location": "Atlanta, Georgia, United States",
       "country": "United States",
       "postedAt": "2026-09-02T11:59:33-04:00"
-    },
-    {
-      "id": "ashby-perplexity-3b349a2f-360e-44e6-a57d-6a87bc3016a7",
-      "title": "Member of Technical Staff (Search Quality Analyst)",
-      "company": "Perplexity",
-      "url": "https://jobs.ashbyhq.com/perplexity/3b349a2f-360e-44e6-a57d-6a87bc3016a7",
-      "source": "Perplexity",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Belgrade",
-      "country": "Other",
-      "postedAt": "2026-09-02T10:31:55.436+00:00"
     }
   ]
 }
