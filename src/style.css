@@ -1834,9 +1834,14 @@ html.pen-active .typewriter .tw-quill {
   margin: 0 0 0.6rem;
 }
 
-/* .card-follow wins over .card p:last-child, which would otherwise mute this
-   line into looking like body copy */
-.card .card-follow {
+.card p:last-child {
+  margin-bottom: 0;
+  color: var(--text-muted);
+}
+
+/* declared after .card p:last-child, and matching its specificity, so this
+   line keeps its accent color when it happens to fall last in a card */
+.card p.card-follow {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1847,11 +1852,6 @@ html.pen-active .typewriter .tw-quill {
   text-transform: uppercase;
   color: var(--teal-bright);
   margin: 0.75rem 0 0;
-}
-
-.card p:last-child {
-  margin-bottom: 0;
-  color: var(--text-muted);
 }
 
 /* Brand mark stands in for the platform's name — the link's aria-label carries
@@ -1893,20 +1893,10 @@ html.pen-active .typewriter .tw-quill {
   pointer-events: none;
 }
 
-.card .card-cta {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.6rem;
-  font-family: var(--font-ui);
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--teal-bright);
-  margin: 0.75rem 0 0;
-}
-
 .book-btn {
+  /* sits on the same row as the social marks, with enough air to read as a
+     separate action rather than a third icon */
+  margin-left: 0.35rem;
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
