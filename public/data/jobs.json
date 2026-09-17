@@ -1,18 +1,44 @@
 {
-  "fetchedAt": "2026-09-16T20:49:38.740Z",
+  "fetchedAt": "2026-09-17T03:13:24.811Z",
   "jobs": [
     {
       "id": "greenhouse-coursera-6141559004",
       "title": "Senior Software Test Engineer",
       "company": "Coursera",
-      "url": "https://job-boards.greenhouse.io/coursera/jobs/6141559004",
+      "url": "https://job-boards.greenhouse.io/coursera/...?gh_jid=6141559004",
       "source": "Coursera",
       "sourceUrl": null,
       "direct": true,
       "workType": "On-site",
       "location": "Toronto, Canada",
       "country": "Canada",
-      "postedAt": "2026-09-16T16:40:10-04:00"
+      "postedAt": "2026-09-16T17:58:48-04:00"
+    },
+    {
+      "id": "arbeitnow-software-test-engineer-ground-systems-parsdorf-bavaria-373826",
+      "title": "Software Test Engineer, Ground Systems (m/f/d)",
+      "company": "isaraerospace",
+      "url": "https://www.arbeitnow.com/jobs/companies/isaraerospace/software-test-engineer-ground-systems-parsdorf-bavaria-373826",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Parsdorf, Bavaria",
+      "country": "Other",
+      "postedAt": "2026-09-16T20:55:33.000Z"
+    },
+    {
+      "id": "jobicy-153469",
+      "title": "Senior QA Automation Engineer - Product (LATAM)",
+      "company": "Upgrade",
+      "url": "https://jobicy.com/jobs/153469-senior-qa-automation-engineer-product-latam",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Argentina,  Brazil",
+      "country": "Brazil",
+      "postedAt": "2026-09-16T19:41:12+00:00"
     },
     {
       "id": "greenhouse-pinterest-8011568",
@@ -65,45 +91,6 @@
       "location": "Remote - CA",
       "country": "United States",
       "postedAt": "2026-09-16T14:10:39-04:00"
-    },
-    {
-      "id": "arbeitnow-senior-qa-engineer-dundee-124529",
-      "title": "Senior QA Engineer",
-      "company": "Waracle",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/waracle/senior-qa-engineer-dundee-124529",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Dundee, Scotland, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-16T12:30:07.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-qa-engineer-mobile-london-241221",
-      "title": "Senior QA Engineer - Mobile",
-      "company": "Waracle",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/waracle/senior-qa-engineer-mobile-london-241221",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "London, England, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-16T12:30:07.000Z"
-    },
-    {
-      "id": "arbeitnow-qa-engineer-mid-level-dundee-399652",
-      "title": "QA Engineer - Mid Level",
-      "company": "Waracle",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/waracle/qa-engineer-mid-level-dundee-399652",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Dundee, Scotland, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-16T12:30:07.000Z"
     },
     {
       "id": "arbeitnow-lead-test-manager-qa-evangelist-dusseldorf-366541",
