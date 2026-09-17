@@ -1,6 +1,58 @@
 {
-  "fetchedAt": "2026-09-17T16:09:06.866Z",
+  "fetchedAt": "2026-09-17T20:55:02.465Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-17T14:38:07-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8070025",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-17T14:38:05-04:00"
+    },
+    {
+      "id": "jobicy-153516",
+      "title": "QA Engineer - US Remote",
+      "company": "PerfectServe",
+      "url": "https://jobicy.com/jobs/153516-qa-engineer-us-remote",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "USA",
+      "country": "United States",
+      "postedAt": "2026-09-17T16:10:54+00:00"
+    },
+    {
+      "id": "arbeitnow-qa-tester-brookhaven-london-449280",
+      "title": "QA Tester - Brookhaven",
+      "company": "Voldex",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/voldex/qa-tester-brookhaven-london-449280",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Remote - UK",
+      "country": "United Kingdom",
+      "postedAt": "2026-09-17T15:40:10.000Z"
+    },
     {
       "id": "arbeitnow-freelance-qa-tester-software-tester-leipzig-218890",
       "title": "Freelance QA Tester / Software-Tester (m/w/d)",
@@ -65,32 +117,6 @@
       "location": "Siegen",
       "country": "Other",
       "postedAt": "2026-09-17T09:20:11.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-17T02:38:08-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8070025",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-17T02:38:05-04:00"
     },
     {
       "id": "arbeitnow-production-quality-engineer-intern-paris-477014",
@@ -208,19 +234,6 @@
       "location": "Singapore, Singapore",
       "country": "Singapore",
       "postedAt": "2026-09-16T03:49:03-04:00"
-    },
-    {
-      "id": "jobicy-146269",
-      "title": "Senior SDET - GovTech Industry (Colombia)",
-      "company": "Truelogic",
-      "url": "https://jobicy.com/jobs/146269-senior-sdet-govtech-industry-colombia",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "LATAM",
-      "country": "Other",
-      "postedAt": "2026-09-16T04:35:17+00:00"
     },
     {
       "id": "arbeitnow-werkstudent-quality-assurance-medizinalcannabis-koln-187120",
@@ -455,19 +468,6 @@
       "location": "Remote in EMEA",
       "country": "Other",
       "postedAt": "2026-09-08T14:31:19-04:00"
-    },
-    {
-      "id": "ashby-cerebras-af87f29d-7ae1-4306-b6b0-61b21971b456",
-      "title": "AI Inference Core - SDET Technical Lead, Release Integration Testing",
-      "company": "Cerebras",
-      "url": "https://jobs.ashbyhq.com/cerebras/af87f29d-7ae1-4306-b6b0-61b21971b456",
-      "source": "Cerebras",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Sunnyvale, CA",
-      "country": "United States",
-      "postedAt": "2026-09-03T19:22:52.625+00:00"
     }
   ]
 }
