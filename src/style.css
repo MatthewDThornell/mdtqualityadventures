@@ -1661,7 +1661,6 @@ html.pen-active .typewriter .tw-quill {
 }
 
 .adventure {
-  position: relative;
   display: grid;
   grid-template-columns: 280px minmax(0, 1fr);
   grid-template-areas:
@@ -1745,12 +1744,22 @@ html.pen-active .typewriter .tw-quill {
 }
 
 /* the person's name carries the card, so it steps out of the meta line's
-   uniform teal rather than reading as one more attribute */
+   uniform teal rather than reading as one more attribute — the suit mark
+   rides with it as part of the same unit */
 .meta-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
   font-size: 0.88rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   color: var(--brass-bright);
+}
+
+.meta-name svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  flex-shrink: 0;
 }
 
 .adventure-video {
@@ -1889,18 +1898,6 @@ html.pen-active .typewriter .tw-quill {
   color: #ff0000;
 }
 
-/* Suit mark for the card's corner — Ace's namesake, sitting quietly behind the
-   content rather than competing with it */
-.adventure-suit {
-  position: absolute;
-  top: 1.1rem;
-  right: 1.25rem;
-  width: 30px;
-  height: 30px;
-  color: var(--brass);
-  opacity: 0.5;
-  pointer-events: none;
-}
 
 .book-btn {
   /* sits on the same row as the social marks, with enough air to read as a
