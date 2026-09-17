@@ -1744,6 +1744,15 @@ html.pen-active .typewriter .tw-quill {
   color: var(--brass-bright);
 }
 
+/* the person's name carries the card, so it steps out of the meta line's
+   uniform teal rather than reading as one more attribute */
+.meta-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--brass-bright);
+}
+
 .adventure-video {
   margin-top: 0.85rem;
   aspect-ratio: 16 / 9;
