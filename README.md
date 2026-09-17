@@ -233,7 +233,7 @@ gets reordered or a new entry is inserted in the middle.
   — that id is already a stable locator; a redundant `data-testid` next to it is just noise.
   `page.locator('#chapterUp')` is fine.
 - Purely decorative content with no plausible test target: `aria-hidden` images (game-strip,
-  product-strip, platform badges), long flat lists whose items already have unique enough text to
+  photo-strip, platform badges), long flat lists whose items already have unique enough text to
   select by role/text (tech-stack tool links, skill tags, the habits list), and one-off body copy.
 
 When you add a new interactive element, card, or button to the site, give it a `data-testid`

@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { HomePage } from '../pages/HomePage';
 
-// What It Tests: All six adventure cards — volunteering and side projects in
+// What It Tests: All seven adventure cards — volunteering and side projects in
 // the Adventures chapter, plus the three team-building cards that live in
 // the About Me chapter instead — are visible, with each card's outbound
 // link, where it has one, pointing at a real destination.
@@ -12,6 +12,7 @@ test.describe('Adventures', () => {
   const SLUGS = [
     'gentlemans-game',
     'patricks-test-pilot',
+    'city-barbers-ace',
     'game-tester',
     'legrand-skydiving',
     'conexed-summit',
@@ -39,6 +40,22 @@ test.describe('Adventures', () => {
       await test.step("Then each card's named link points at the real organization/site", async () => {
         const linkChecks: Array<{ slug: string; name: RegExp | string; href: string }> = [
           { slug: 'patricks-test-pilot', name: 'Patrick’s', href: 'https://patricks.co/' },
+          { slug: 'city-barbers-ace', name: 'City Barbers', href: 'https://citybarbers.co/' },
+          {
+            slug: 'city-barbers-ace',
+            name: 'YouTube',
+            href: 'https://www.youtube.com/@Ace.CityBarbers',
+          },
+          {
+            slug: 'city-barbers-ace',
+            name: 'Instagram',
+            href: 'https://www.instagram.com/ace.citybarbers/',
+          },
+          {
+            slug: 'city-barbers-ace',
+            name: 'Book with Ace',
+            href: 'https://getsquire.com/booking/book/city-barbers-salt-lake-city-salt-lake-city/barber/ace-32/services',
+          },
           { slug: 'legrand-skydiving', name: 'Legrand', href: 'https://www.legrand.us/' },
           { slug: 'conexed-summit', name: 'ConexED', href: 'https://www.conexed.com/' },
           { slug: 'conexed-summit', name: 'Grand America', href: 'https://www.grandamerica.com/' },
