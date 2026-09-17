@@ -40,7 +40,7 @@ test.describe('Adventures', () => {
       await test.step("Then each card's named link points at the real organization/site", async () => {
         const linkChecks: Array<{ slug: string; name: RegExp | string; href: string }> = [
           { slug: 'patricks-test-pilot', name: 'Patrick’s', href: 'https://patricks.co/' },
-          { slug: 'city-barbers-ace', name: 'City Barbers', href: 'https://citybarbers.co/' },
+          { slug: 'city-barbers-ace', name: 'citybarbers.co', href: 'https://citybarbers.co/' },
           {
             slug: 'city-barbers-ace',
             name: 'YouTube',
