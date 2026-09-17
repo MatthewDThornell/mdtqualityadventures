@@ -1713,6 +1713,20 @@ html.pen-active .typewriter .tw-quill {
   grid-area: body;
 }
 
+.adventure-video {
+  margin-top: 0.85rem;
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.adventure-video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .platform-badge {
   display: flex;
   align-items: center;
@@ -1806,6 +1820,25 @@ html.pen-active .typewriter .tw-quill {
 .card p:last-child {
   margin-bottom: 0;
   color: var(--text-muted);
+}
+
+/* Brand mark stands in for the platform's name — the link's aria-label carries
+   the name for assistive tech and for locating it in tests */
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  color: var(--teal-bright);
+  transition: color 0.2s ease;
+}
+
+.social-icon svg {
+  display: block;
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.social-icon:hover {
+  color: var(--brass-bright);
 }
 
 /* GitHub card */

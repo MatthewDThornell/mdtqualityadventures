@@ -69,4 +69,21 @@ test.describe('Adventures', () => {
       });
     },
   );
+
+  test(
+    'Test_Case_8002_Adventures_CityBarbers_EmbedsTheHairCutHarryVideo',
+    { tag: '@regression' },
+    async ({ page }) => {
+      const home = new HomePage(page);
+      await home.goto();
+
+      await test.step('Then the card embeds the YouTube feature, with a title for assistive tech', async () => {
+        const embed = page.getByTestId('adventure-video-city-barbers');
+        await expect
+          .soft(embed)
+          .toHaveAttribute('src', 'https://www.youtube.com/embed/zXcw3Cyc2GM');
+        await expect.soft(embed).toHaveAttribute('title', /City Barbers/);
+      });
+    },
+  );
 });
