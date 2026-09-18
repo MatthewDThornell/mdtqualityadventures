@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-09-17T20:55:02.465Z",
+  "fetchedAt": "2026-09-18T03:00:06.750Z",
   "jobs": [
+    {
+      "id": "arbeitnow-qa-engineer-quantum-computing-siegen-152999",
+      "title": "QA Engineer - Quantum Computing (m/w/d)",
+      "company": "eleQtron GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/eleqtron-gmbh/qa-engineer-quantum-computing-siegen-152999",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Siegen, Nordrhein-Westfalen, Germany",
+      "country": "Germany",
+      "postedAt": "2026-09-17T23:30:27.000Z"
+    },
     {
       "id": "greenhouse-roblox-8069987",
       "title": "Quality Analyst",
@@ -26,19 +39,6 @@
       "location": "Gurugram, Haryana, India",
       "country": "India",
       "postedAt": "2026-09-17T14:38:05-04:00"
-    },
-    {
-      "id": "jobicy-153516",
-      "title": "QA Engineer - US Remote",
-      "company": "PerfectServe",
-      "url": "https://jobicy.com/jobs/153516-qa-engineer-us-remote",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "USA",
-      "country": "United States",
-      "postedAt": "2026-09-17T16:10:54+00:00"
     },
     {
       "id": "arbeitnow-qa-tester-brookhaven-london-449280",
@@ -130,19 +130,6 @@
       "location": "Paris",
       "country": "France",
       "postedAt": "2026-09-17T04:40:03.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-quality-engineer-london-483670",
-      "title": "Senior Quality Engineer",
-      "company": "Hypersonica",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/hypersonica/senior-quality-engineer-london-483670",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-17T03:24:09.000Z"
     },
     {
       "id": "greenhouse-coursera-6141559004",
@@ -312,19 +299,6 @@
       "location": "Remote job",
       "country": "Other",
       "postedAt": "2026-09-15T14:30:15.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-testautomation-engineer-robot-framework-munster-272699",
-      "title": "Senior Testautomation Engineer - Robot Framework",
-      "company": "Polarstern Experts",
-      "url": "https://www.arbeitnow.com/jobs/companies/polarstern-experts/senior-testautomation-engineer-robot-framework-munster-272699",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Münster",
-      "country": "Germany",
-      "postedAt": "2026-09-14T18:09:12.000Z"
     },
     {
       "id": "greenhouse-lyft-8767534002",
