@@ -1,18 +1,31 @@
 {
-  "fetchedAt": "2026-09-18T03:00:06.750Z",
+  "fetchedAt": "2026-09-18T10:29:27.379Z",
   "jobs": [
     {
-      "id": "arbeitnow-qa-engineer-quantum-computing-siegen-152999",
-      "title": "QA Engineer - Quantum Computing (m/w/d)",
-      "company": "eleQtron GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/eleqtron-gmbh/qa-engineer-quantum-computing-siegen-152999",
+      "id": "greenhouse-verkada-5237420007",
+      "title": "QA Automation Engineer",
+      "company": "Verkada",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5237420007",
+      "source": "Verkada",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Poland",
+      "country": "Other",
+      "postedAt": "2026-09-18T04:51:27-04:00"
+    },
+    {
+      "id": "arbeitnow-ausbildung-2027-technischer-systemplaner-fachrichtung-stahl-u-metallbautechnik-bei-fa-robering-lagersysteme-in-emsdetten-416848",
+      "title": "Ausbildung 2027 Technischer Systemplaner m/w/d Fachrichtung Stahl- u. Metallbautechnik bei Fa. Robering Lagersysteme in Emsdetten",
+      "company": "Robering Lagersysteme GmbH und Co. KG",
+      "url": "https://www.arbeitnow.com/jobs/companies/robering-lagersysteme-gmbh-und-co-kg/ausbildung-2027-technischer-systemplaner-fachrichtung-stahl-u-metallbautechnik-bei-fa-robering-lagersysteme-in-emsdetten-416848",
       "source": "Arbeitnow",
       "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
       "workType": "On-site",
-      "location": "Siegen, Nordrhein-Westfalen, Germany",
-      "country": "Germany",
-      "postedAt": "2026-09-17T23:30:27.000Z"
+      "location": "Emsdetten",
+      "country": "Other",
+      "postedAt": "2026-09-18T07:30:40.000Z"
     },
     {
       "id": "greenhouse-roblox-8069987",
@@ -25,7 +38,7 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-09-17T14:38:07-04:00"
+      "postedAt": "2026-09-18T02:37:36-04:00"
     },
     {
       "id": "greenhouse-roblox-8070025",
@@ -38,7 +51,33 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-09-17T14:38:05-04:00"
+      "postedAt": "2026-09-18T02:37:35-04:00"
+    },
+    {
+      "id": "arbeitnow-remote-qa-software-test-automation-engineers-java-241975",
+      "title": "QA Software Test Automation Engineers (Java)",
+      "company": "Xm",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/xm/remote-qa-software-test-automation-engineers-java-241975",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Remote",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-09-18T03:24:32.000Z"
+    },
+    {
+      "id": "arbeitnow-qa-engineer-quantum-computing-siegen-152999",
+      "title": "QA Engineer - Quantum Computing (m/w/d)",
+      "company": "eleQtron GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/eleqtron-gmbh/qa-engineer-quantum-computing-siegen-152999",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Siegen, Nordrhein-Westfalen, Germany",
+      "country": "Germany",
+      "postedAt": "2026-09-17T23:30:27.000Z"
     },
     {
       "id": "arbeitnow-qa-tester-brookhaven-london-449280",
@@ -65,32 +104,6 @@
       "location": "Leipzig",
       "country": "Germany",
       "postedAt": "2026-09-17T14:47:31.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-qa-engineer-london-22268",
-      "title": "Senior QA Engineer | London",
-      "company": "TransPerfect",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/transperfect/senior-qa-engineer-london-22268",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London, Greater London, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-17T12:30:34.000Z"
-    },
-    {
-      "id": "greenhouse-verkada-5237420007",
-      "title": "QA Automation Engineer",
-      "company": "Verkada",
-      "url": "https://job-boards.greenhouse.io/verkada/jobs/5237420007",
-      "source": "Verkada",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Poland",
-      "country": "Other",
-      "postedAt": "2026-09-17T06:02:12-04:00"
     },
     {
       "id": "arbeitnow-werkstudent-fur-ai-data-annotation-quality-assurance-heilbronn-27249",
