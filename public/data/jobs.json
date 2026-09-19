@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-19T02:57:25.872Z",
+  "fetchedAt": "2026-09-19T10:14:48.224Z",
   "jobs": [
     {
       "id": "greenhouse-roblox-8069987",
@@ -26,19 +26,6 @@
       "location": "Gurugram, Haryana, India",
       "country": "India",
       "postedAt": "2026-09-18T14:38:35-04:00"
-    },
-    {
-      "id": "arbeitnow-customer-claims-complaints-qa-specialist-manchester-154507",
-      "title": "Customer Claims Complaints & QA Specialist",
-      "company": "Prima",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/prima/customer-claims-complaints-qa-specialist-manchester-154507",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Manchester",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-18T18:05:04.000Z"
     },
     {
       "id": "greenhouse-robinhood-7739588",
@@ -130,6 +117,19 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-09-18T11:31:04.000Z"
+    },
+    {
+      "id": "arbeitnow-mandatory-internshipunpaid-software-testqa-automation-engineer-berlin-121906",
+      "title": "Mandatory Internship(Unpaid), Software Test(QA) Automation Engineer",
+      "company": "IndieKidz GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/indiekidz-gmbh/mandatory-internshipunpaid-software-testqa-automation-engineer-berlin-121906",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-09-18T09:30:53.000Z"
     },
     {
       "id": "greenhouse-verkada-5237420007",
