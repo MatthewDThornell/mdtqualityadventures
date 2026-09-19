@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-09-19T10:14:48.224Z",
+  "fetchedAt": "2026-09-19T15:16:44.940Z",
   "jobs": [
+    {
+      "id": "jobicy-146796",
+      "title": "Engineering Project and QA Manager",
+      "company": "CodePath",
+      "url": "https://jobicy.com/jobs/146796-engineering-project-and-qa-manager",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "LATAM,  Canada,  Europe,  USA",
+      "country": "United States",
+      "postedAt": "2026-09-19T08:50:14+00:00"
+    },
     {
       "id": "greenhouse-roblox-8069987",
       "title": "Quality Analyst",
@@ -236,19 +249,6 @@
       "postedAt": "2026-09-16T20:55:33.000Z"
     },
     {
-      "id": "jobicy-153469",
-      "title": "Senior QA Automation Engineer - Product (LATAM)",
-      "company": "Upgrade",
-      "url": "https://jobicy.com/jobs/153469-senior-qa-automation-engineer-product-latam",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Argentina,  Brazil",
-      "country": "Brazil",
-      "postedAt": "2026-09-16T19:41:12+00:00"
-    },
-    {
       "id": "greenhouse-pinterest-8011568",
       "title": "SDET II, tvScientific",
       "company": "Pinterest",
@@ -273,19 +273,6 @@
       "location": "Remote - CA",
       "country": "United States",
       "postedAt": "2026-09-16T14:10:39-04:00"
-    },
-    {
-      "id": "arbeitnow-lead-test-manager-qa-evangelist-dusseldorf-366541",
-      "title": "Lead Test Manager / QA Evangelist (m/w/d)",
-      "company": "INDIE Solutions GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/indie-solutions-gmbh/lead-test-manager-qa-evangelist-dusseldorf-366541",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Düsseldorf",
-      "country": "Germany",
-      "postedAt": "2026-09-16T08:30:43.000Z"
     },
     {
       "id": "greenhouse-thoughtworks-8200468",
