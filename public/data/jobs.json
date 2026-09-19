@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-18T20:20:24.900Z",
+  "fetchedAt": "2026-09-19T02:57:25.872Z",
   "jobs": [
     {
       "id": "greenhouse-roblox-8069987",
@@ -28,19 +28,6 @@
       "postedAt": "2026-09-18T14:38:35-04:00"
     },
     {
-      "id": "greenhouse-airbnb-8154749",
-      "title": "Early Career Software Engineer, Quality Engineering",
-      "company": "Airbnb",
-      "url": "https://careers.airbnb.com/positions/8154749?gh_jid=8154749",
-      "source": "Airbnb",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Brazil",
-      "country": "Brazil",
-      "postedAt": "2026-09-18T14:36:40-04:00"
-    },
-    {
       "id": "arbeitnow-customer-claims-complaints-qa-specialist-manchester-154507",
       "title": "Customer Claims Complaints & QA Specialist",
       "company": "Prima",
@@ -65,71 +52,6 @@
       "location": "Toronto, Canada",
       "country": "Canada",
       "postedAt": "2026-09-18T14:03:33-04:00"
-    },
-    {
-      "id": "arbeitnow-senior-qa-automation-engineer-ai-london-347155",
-      "title": "Senior QA Automation Engineer - AI",
-      "company": "Anaplan",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/anaplan/senior-qa-automation-engineer-ai-london-347155",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-18T15:55:06.000Z"
-    },
-    {
-      "id": "arbeitnow-sdet-ai-london-434301",
-      "title": "SDET - AI",
-      "company": "Anaplan",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/anaplan/sdet-ai-london-434301",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-18T15:55:06.000Z"
-    },
-    {
-      "id": "arbeitnow-sdet-ai-london-431181",
-      "title": "SDET - AI",
-      "company": "Anaplan",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/anaplan/sdet-ai-london-431181",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-18T15:55:06.000Z"
-    },
-    {
-      "id": "arbeitnow-qa-automation-engineer-ai-london-494529",
-      "title": "QA Automation Engineer - AI",
-      "company": "Anaplan",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/anaplan/qa-automation-engineer-ai-london-494529",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-18T15:55:06.000Z"
-    },
-    {
-      "id": "arbeitnow-head-of-quality-engineering-london-437895",
-      "title": "Head of Quality Engineering",
-      "company": "Lendable",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/lendable/head-of-quality-engineering-london-437895",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-18T15:40:12.000Z"
     },
     {
       "id": "greenhouse-testlio-8213583",
@@ -208,19 +130,6 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-09-18T11:31:04.000Z"
-    },
-    {
-      "id": "arbeitnow-mandatory-internshipunpaid-software-testqa-automation-engineer-berlin-121906",
-      "title": "Mandatory Internship(Unpaid), Software Test(QA) Automation Engineer",
-      "company": "IndieKidz GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/indiekidz-gmbh/mandatory-internshipunpaid-software-testqa-automation-engineer-berlin-121906",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-09-18T09:30:53.000Z"
     },
     {
       "id": "greenhouse-verkada-5237420007",
@@ -390,45 +299,6 @@
       "location": "Singapore, Singapore",
       "country": "Singapore",
       "postedAt": "2026-09-16T03:49:03-04:00"
-    },
-    {
-      "id": "arbeitnow-werkstudent-quality-assurance-medizinalcannabis-koln-187120",
-      "title": "Werkstudent Quality Assurance (m/w/d) - Medizinalcannabis",
-      "company": "Semdor Pharma Group GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/werkstudent-quality-assurance-medizinalcannabis-koln-187120",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Köln",
-      "country": "Germany",
-      "postedAt": "2026-09-15T23:09:53.000Z"
-    },
-    {
-      "id": "arbeitnow-head-of-quality-assurance-koln-29370",
-      "title": "Head of Quality Assurance (m/w/d)",
-      "company": "Semdor Pharma Group GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/head-of-quality-assurance-koln-29370",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Köln",
-      "country": "Germany",
-      "postedAt": "2026-09-15T23:09:53.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-engineer-berlin-383729",
-      "title": "Quality Assurance Engineer (Berlin)",
-      "company": "GeneralMind",
-      "url": "https://www.arbeitnow.com/jobs/companies/generalmind/quality-assurance-engineer-berlin-383729",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-09-15T20:30:22.000Z"
     },
     {
       "id": "lever-shieldai-3824ce13-5af0-436c-91bb-835b2740bf95",
