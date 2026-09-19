@@ -1,19 +1,6 @@
 {
-  "fetchedAt": "2026-09-19T15:16:44.940Z",
+  "fetchedAt": "2026-09-19T19:59:07.384Z",
   "jobs": [
-    {
-      "id": "jobicy-146796",
-      "title": "Engineering Project and QA Manager",
-      "company": "CodePath",
-      "url": "https://jobicy.com/jobs/146796-engineering-project-and-qa-manager",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "LATAM,  Canada,  Europe,  USA",
-      "country": "United States",
-      "postedAt": "2026-09-19T08:50:14+00:00"
-    },
     {
       "id": "greenhouse-roblox-8069987",
       "title": "Quality Analyst",
@@ -25,7 +12,7 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-09-18T14:38:37-04:00"
+      "postedAt": "2026-09-19T14:37:20-04:00"
     },
     {
       "id": "greenhouse-roblox-8070025",
@@ -38,7 +25,46 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-09-18T14:38:35-04:00"
+      "postedAt": "2026-09-19T14:37:18-04:00"
+    },
+    {
+      "id": "arbeitnow-remote-quality-engineering-lead-schoppingen-262215",
+      "title": "Quality Engineering Lead (m/w/d)",
+      "company": "shopware AG",
+      "url": "https://www.arbeitnow.com/jobs/companies/shopware-ag/remote-quality-engineering-lead-schoppingen-262215",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Homeoffice",
+      "country": "Other",
+      "postedAt": "2026-09-19T17:30:39.000Z"
+    },
+    {
+      "id": "jobicy-153663",
+      "title": "Freelance Software Tester With Apple Vision Pro (Remote Worldwide)",
+      "company": "Testlio",
+      "url": "https://jobicy.com/jobs/153663-freelance-software-tester-with-apple-vision-pro-remote-worldwide",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Anywhere",
+      "country": "Other",
+      "postedAt": "2026-09-19T12:47:08+00:00"
+    },
+    {
+      "id": "jobicy-146796",
+      "title": "Engineering Project and QA Manager",
+      "company": "CodePath",
+      "url": "https://jobicy.com/jobs/146796-engineering-project-and-qa-manager",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "LATAM,  Canada,  Europe,  USA",
+      "country": "United States",
+      "postedAt": "2026-09-19T08:50:14+00:00"
     },
     {
       "id": "greenhouse-robinhood-7739588",
@@ -156,19 +182,6 @@
       "location": "Poland",
       "country": "Other",
       "postedAt": "2026-09-18T04:51:27-04:00"
-    },
-    {
-      "id": "arbeitnow-ausbildung-2027-technischer-systemplaner-fachrichtung-stahl-u-metallbautechnik-bei-fa-robering-lagersysteme-in-emsdetten-416848",
-      "title": "Ausbildung 2027 Technischer Systemplaner m/w/d Fachrichtung Stahl- u. Metallbautechnik bei Fa. Robering Lagersysteme in Emsdetten",
-      "company": "Robering Lagersysteme GmbH und Co. KG",
-      "url": "https://www.arbeitnow.com/jobs/companies/robering-lagersysteme-gmbh-und-co-kg/ausbildung-2027-technischer-systemplaner-fachrichtung-stahl-u-metallbautechnik-bei-fa-robering-lagersysteme-in-emsdetten-416848",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Emsdetten",
-      "country": "Other",
-      "postedAt": "2026-09-18T07:30:40.000Z"
     },
     {
       "id": "arbeitnow-qa-engineer-quantum-computing-siegen-152999",
