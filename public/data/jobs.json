@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-20T03:11:07.744Z",
+  "fetchedAt": "2026-09-20T10:33:23.098Z",
   "jobs": [
     {
       "id": "greenhouse-roblox-8069987",
@@ -12,7 +12,7 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-09-19T14:37:20-04:00"
+      "postedAt": "2026-09-20T02:37:20-04:00"
     },
     {
       "id": "greenhouse-roblox-8070025",
@@ -25,7 +25,7 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-09-19T14:37:18-04:00"
+      "postedAt": "2026-09-20T02:37:18-04:00"
     },
     {
       "id": "arbeitnow-remote-quality-engineering-lead-schoppingen-262215",
@@ -247,19 +247,6 @@
       "location": "Toronto, Canada",
       "country": "Canada",
       "postedAt": "2026-09-16T17:58:48-04:00"
-    },
-    {
-      "id": "arbeitnow-software-test-engineer-ground-systems-parsdorf-bavaria-373826",
-      "title": "Software Test Engineer, Ground Systems (m/f/d)",
-      "company": "isaraerospace",
-      "url": "https://www.arbeitnow.com/jobs/companies/isaraerospace/software-test-engineer-ground-systems-parsdorf-bavaria-373826",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Parsdorf, Bavaria",
-      "country": "Other",
-      "postedAt": "2026-09-16T20:55:33.000Z"
     },
     {
       "id": "greenhouse-pinterest-8011568",
