@@ -1,6 +1,71 @@
 {
-  "fetchedAt": "2026-09-20T10:33:23.098Z",
+  "fetchedAt": "2026-09-20T15:21:34.502Z",
   "jobs": [
+    {
+      "id": "arbeitnow-werkstudent-quality-assurance-medizinalcannabis-koln-488687",
+      "title": "Werkstudent Quality Assurance (m/w/d) - Medizinalcannabis",
+      "company": "Semdor Pharma Group GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/werkstudent-quality-assurance-medizinalcannabis-koln-488687",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Köln",
+      "country": "Germany",
+      "postedAt": "2026-09-20T14:09:19.000Z"
+    },
+    {
+      "id": "arbeitnow-head-of-quality-assurance-koln-204677",
+      "title": "Head of Quality Assurance (m/w/d)",
+      "company": "Semdor Pharma Group GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/head-of-quality-assurance-koln-204677",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Köln",
+      "country": "Germany",
+      "postedAt": "2026-09-20T14:09:19.000Z"
+    },
+    {
+      "id": "arbeitnow-robotics-test-engineer-quality-safety-munich-bavaria-367537",
+      "title": "Robotics Test Engineer (m/f/d) - Quality & Safety",
+      "company": "Agilerobotsse",
+      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/robotics-test-engineer-quality-safety-munich-bavaria-367537",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich, Bavaria",
+      "country": "Germany",
+      "postedAt": "2026-09-20T11:55:02.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-spezialist-furstenfeldbruck-bavaria-431356",
+      "title": "Quality Assurance Spezialist (m/w/d)",
+      "company": "Agilerobotsse",
+      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/quality-assurance-spezialist-furstenfeldbruck-bavaria-431356",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Fürstenfeldbruck, Bavaria",
+      "country": "Other",
+      "postedAt": "2026-09-20T11:55:02.000Z"
+    },
+    {
+      "id": "arbeitnow-mechatronics-test-engineer-munich-bavaria-37664",
+      "title": "Mechatronics Test Engineer (m/f/d)",
+      "company": "Agilerobotsse",
+      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/mechatronics-test-engineer-munich-bavaria-37664",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich, Bavaria",
+      "country": "Germany",
+      "postedAt": "2026-09-20T11:55:02.000Z"
+    },
     {
       "id": "greenhouse-roblox-8069987",
       "title": "Quality Analyst",
@@ -52,19 +117,6 @@
       "location": "Anywhere",
       "country": "Other",
       "postedAt": "2026-09-19T12:47:08+00:00"
-    },
-    {
-      "id": "jobicy-146796",
-      "title": "Engineering Project and QA Manager",
-      "company": "CodePath",
-      "url": "https://jobicy.com/jobs/146796-engineering-project-and-qa-manager",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "LATAM,  Canada,  Europe,  USA",
-      "country": "United States",
-      "postedAt": "2026-09-19T08:50:14+00:00"
     },
     {
       "id": "greenhouse-robinhood-7739588",
@@ -132,19 +184,6 @@
       "postedAt": "2026-09-18T10:44:29-04:00"
     },
     {
-      "id": "jobicy-153610",
-      "title": "Manager, Clinical Review and Quality Assurance",
-      "company": "SmithRx",
-      "url": "https://jobicy.com/jobs/153610-manager-clinical-review-and-quality-assurance-2",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "USA",
-      "country": "United States",
-      "postedAt": "2026-09-18T14:43:04+00:00"
-    },
-    {
       "id": "arbeitnow-mandatory-internshipunpaid-software-testqa-automation-engineer-berlin-121906",
       "title": "Mandatory Internship(Unpaid), Software Test(QA) Automation Engineer",
       "company": "IndieKidz GmbH",
@@ -195,45 +234,6 @@
       "location": "Siegen, Nordrhein-Westfalen, Germany",
       "country": "Germany",
       "postedAt": "2026-09-17T23:30:27.000Z"
-    },
-    {
-      "id": "arbeitnow-freelance-qa-tester-software-tester-leipzig-218890",
-      "title": "Freelance QA Tester / Software-Tester (m/w/d)",
-      "company": "SEDIWORK",
-      "url": "https://www.arbeitnow.com/jobs/companies/sediwork/freelance-qa-tester-software-tester-leipzig-218890",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Leipzig",
-      "country": "Germany",
-      "postedAt": "2026-09-17T14:47:31.000Z"
-    },
-    {
-      "id": "arbeitnow-werkstudent-fur-ai-data-annotation-quality-assurance-heilbronn-27249",
-      "title": "Werkstudent (m/w/d) für AI Data Annotation & Quality Assurance",
-      "company": "IUNA AI Systems GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/iuna-ai-systems-gmbh/werkstudent-fur-ai-data-annotation-quality-assurance-heilbronn-27249",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Heilbronn",
-      "country": "Other",
-      "postedAt": "2026-09-17T10:00:48.000Z"
-    },
-    {
-      "id": "arbeitnow-qa-engineer-quantum-computing-siegen-333060",
-      "title": "QA Engineer - Quantum Computing (m/w/d)",
-      "company": "eleQtron GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/eleqtron-gmbh/qa-engineer-quantum-computing-siegen-333060",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Siegen",
-      "country": "Other",
-      "postedAt": "2026-09-17T09:20:11.000Z"
     },
     {
       "id": "greenhouse-coursera-6141559004",
