@@ -689,8 +689,86 @@ html.past-cover #cover-canvas {
 /* Specificity has to beat .cover h1's own color rule (class+type, 0-1-1),
    not just match it — a bare .hero-name-hidden class (0-1-0) silently loses
    that fight and the real heading stays visible underneath the overlay. */
+/* The D. carries the Will of D.: a straw hat perched on it, and Gear 5
+   under the hand — a white flash, a glow, and the drums. The hat hides with
+   the name while the decrypt plays, so it appears with the real letters. */
+.hero-d {
+  position: relative;
+  display: inline-block;
+  /* a tight box of its own, so the hat sits on the glyph rather than on the
+     line box the page's 1.65 line-height would give it */
+  line-height: 1;
+  cursor: help;
+}
+
+/* the hat is a pseudo-element, not markup: src/hero-decrypt.js scrambles the
+   heading's textContent, and an inline SVG would put its whitespace into the
+   scramble too */
+.hero-d::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -0.24em;
+  width: 0.62em;
+  height: 0.39em;
+  background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2040%22%3E%3Cellipse%20cx%3D%2232%22%20cy%3D%2231%22%20rx%3D%2230%22%20ry%3D%227.5%22%20fill%3D%22%23e6c25f%22%2F%3E%3Cpath%20d%3D%22M14%2031c0-14%208-24%2018-24s18%2010%2018%2024Z%22%20fill%3D%22%23f2d27b%22%2F%3E%3Cpath%20d%3D%22M14.5%2027.5c5-3%2030-3%2035%200v5.5c-5-3-30-3-35%200Z%22%20fill%3D%22%23c8372d%22%2F%3E%3C%2Fsvg%3E')
+    center / contain no-repeat;
+  transform: translateX(-56%) rotate(-14deg);
+  transform-origin: 50% 90%;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+  transition: opacity 0.3s ease;
+}
+
+.hero-d:hover,
+.hero-d:focus-visible {
+  animation: gear-five 0.9s ease-in-out infinite;
+}
+
+.hero-d:hover::before,
+.hero-d:focus-visible::before {
+  animation: hat-tip 0.9s ease-in-out infinite;
+}
+
+@keyframes gear-five {
+  0%,
+  100% {
+    color: var(--parchment);
+    text-shadow: none;
+    transform: scale(1);
+  }
+  45% {
+    color: #fff;
+    text-shadow:
+      0 0 18px rgba(255, 255, 255, 0.95),
+      0 0 48px rgba(255, 255, 255, 0.55);
+    transform: scale(1.12);
+  }
+  60% {
+    transform: scale(1.04);
+  }
+}
+
+@keyframes hat-tip {
+  0%,
+  100% {
+    transform: translateX(-56%) rotate(-14deg);
+  }
+  45% {
+    transform: translateX(-56%) rotate(-26deg) translateY(-0.08em);
+  }
+}
+
 .cover h1.hero-name-hidden {
   color: transparent;
+}
+
+/* while the decrypt plays, the D. neither wears its hat nor answers a hover */
+.cover h1.hero-name-hidden .hero-d::before {
+  opacity: 0;
+}
+
+.cover h1.hero-name-hidden .hero-d {
+  animation: none;
 }
 
 .hero-name-decrypt {
@@ -2902,8 +2980,103 @@ html.pen-active .typewriter .tw-quill {
 /* src/quaid-report.js reveals the lines in turn; until a line's turn it's out
    of the flow entirely, so the card grows as the log is written */
 .qa-report.is-typing .qa-line:not(.is-shown),
-.qa-report.is-typing .qa-code:not(.is-shown) {
+.qa-report.is-typing .qa-fold:not(.is-shown) {
   display: none;
+}
+
+/* A fold holds one of the report's answers — the bug it files, the test it
+   writes — behind an arrow: open while it's being written, closed once it's
+   done, readable again on a click. The same reading as .rec-test. */
+.qa-fold {
+  margin: 0.5rem 0 0.6rem;
+}
+
+.qa-fold summary {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  cursor: pointer;
+  list-style: none;
+  color: rgba(var(--code-rgb), 0.85);
+}
+
+.qa-fold summary::-webkit-details-marker {
+  display: none;
+}
+
+.qa-fold summary::before {
+  content: '\203A';
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.qa-fold[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.qa-fold-title {
+  overflow-wrap: anywhere;
+}
+
+.qa-fold-meta {
+  margin-left: auto;
+  flex-shrink: 0;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.qa-fold .qa-code {
+  margin: 0.55rem 0 0.2rem;
+}
+
+/* the bug report reads as a ticket: field, then value */
+.qa-bug {
+  margin: 0.55rem 0 0.2rem;
+  padding: 0.85rem 1rem;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 1.1rem;
+  row-gap: 0.35rem;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(var(--code-rgb), 0.18);
+  border-radius: 4px;
+  line-height: 1.55;
+}
+
+.qa-bug > div {
+  display: contents;
+}
+
+.qa-bug dt {
+  color: rgb(var(--code-rgb));
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-top: 0.15em;
+}
+
+.qa-bug dd {
+  margin: 0;
+  color: var(--parchment);
+}
+
+.qa-bug ol {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.rec-card-failed .qa-fold summary {
+  color: rgba(var(--fail-rgb), 0.9);
+}
+
+.rec-card-failed .qa-bug dt {
+  color: rgb(var(--fail-rgb));
+}
+
+.rec-card-blocked .qa-fold summary {
+  color: rgba(var(--blocked-rgb), 0.9);
 }
 
 .qa-fail {
@@ -3006,7 +3179,8 @@ html.pen-active .typewriter .tw-quill {
 }
 
 /* the caret rides the end of whatever is being typed */
-.qa-report.is-typing .is-shown:not(.is-done)::after {
+.qa-report.is-typing .qa-line.is-shown:not(.is-done)::after,
+.qa-report.is-typing .qa-fold.is-shown:not(.is-done) .qa-code code::after {
   content: '\258B';
   color: rgb(var(--code-rgb));
   animation: qa-caret 0.8s steps(2, end) infinite;
@@ -3327,7 +3501,7 @@ a.rec-link:hover {
 }
 
 .rec-test.is-passed .rec-test-status::before {
-  content: '\2713 ';
+  content: '\2713';
 }
 
 .rec-test .qa-code {
@@ -4366,7 +4540,9 @@ a.tau-course-name:hover {
   .rec-test.is-running .rec-test-status::before,
   .rec-test-run code::after,
   .qa-dots::after,
-  .qa-report.is-typing .is-shown:not(.is-done)::after {
+  .qa-report.is-typing .qa-line.is-shown:not(.is-done)::after,
+  .hero-d,
+  .hero-d::before {
     animation: none;
   }
 

@@ -22,19 +22,29 @@ export function initIncidentReport(card) {
   const report = card.querySelector('.qa-report');
   if (!report) return;
 
-  // every line and the code block wait their turn
-  const steps = Array.from(report.querySelectorAll('.qa-line, .qa-code'));
+  // every line, and every fold (a bug report, the generated test), waits its turn
+  const steps = Array.from(report.querySelectorAll('.qa-line, .qa-fold'));
   report.classList.add('is-typing');
 
   card.addEventListener(
     'quote-decrypted',
     async () => {
       for (const step of steps) {
-        const isCode = step.classList.contains('qa-code');
-        await typeInto(step, isCode ? MS_PER_CODE_CHAR : MS_PER_CHAR);
+        const fold = step.matches('.qa-fold');
+        if (fold) {
+          // a fold opens to be written into, then closes on its answer — the
+          // arrow is there for anyone who wants it back
+          step.open = true;
+          step.classList.add('is-shown');
+          const body = step.querySelector('.qa-code, .qa-bug');
+          await typeInto(body, body.matches('.qa-code') ? MS_PER_CODE_CHAR : MS_PER_CHAR);
+        } else {
+          await typeInto(step, MS_PER_CHAR);
+        }
         step.classList.add('is-done', 'is-waiting');
         await wait(Number(step.dataset.pause) || LINE_PAUSE);
         step.classList.remove('is-waiting');
+        if (fold) step.open = false;
       }
       report.classList.remove('is-typing');
       report.classList.add('is-complete');

@@ -4,22 +4,22 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/images/logos/mdt-logo-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Matthew D Thornell — Software QA Engineer. A journal of the quality choices, projects, and people along the way." />
+    <meta name="description" content="Matthew D. Thornell — Software QA Engineer. A journal of the quality choices, projects, and people along the way." />
     <meta name="theme-color" content="#0f1216" />
     <link rel="canonical" href="https://mdtqualityadventures.com/" />
     <title>MDT Quality Adventures</title>
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="MDT Quality Adventures" />
-    <meta property="og:title" content="Matthew D Thornell — MDT Quality Adventures" />
+    <meta property="og:title" content="Matthew D. Thornell — MDT Quality Adventures" />
     <meta property="og:description" content="A journal of the quality choices, projects, and people along the way." />
     <meta property="og:url" content="https://mdtqualityadventures.com/" />
     <meta property="og:image" content="https://mdtqualityadventures.com/images/og-cover.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="A career portfolio, written by Matthew D Thornell — Software QA Engineer & Quality Advocate." />
+    <meta property="og:image:alt" content="A career portfolio, written by Matthew D. Thornell — Software QA Engineer & Quality Advocate." />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Matthew D Thornell — MDT Quality Adventures" />
+    <meta name="twitter:title" content="Matthew D. Thornell — MDT Quality Adventures" />
     <meta name="twitter:description" content="A journal of the quality choices, projects, and people along the way." />
     <meta name="twitter:image" content="https://mdtqualityadventures.com/images/og-cover.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -135,7 +135,9 @@
         <div class="container">
           <span class="sr-only" data-testid="hero-eyebrow-static">A career portfolio, written by</span>
           <p class="eyebrow typewriter" id="eyebrowText" aria-hidden="true" data-testid="hero-eyebrow">A career portfolio, written by</p>
-          <h1 data-testid="hero-heading">Matthew D Thornell</h1>
+          <!-- prettier-ignore: the decrypt scrambles this heading's textContent, so it
+               must stay on one line — reflowed, it would scramble the whitespace too -->
+          <h1 data-testid="hero-heading">Matthew <span class="hero-d" title="The Will of D." data-testid="hero-d">D.</span> Thornell</h1>
           <span class="sr-only" data-testid="hero-tagline-static">Software QA Engineer &amp; Quality Advocate</span>
           <p class="tagline typewriter" id="taglineText" aria-hidden="true" data-testid="hero-tagline">Software QA Engineer &amp; Quality Advocate</p>
 
@@ -2628,10 +2630,35 @@
                     <li class="qa-line qa-wait" data-pause="1600">&rsaquo; Investigating root cause<span class="qa-dots" aria-hidden="true"></span></li>
                     <li class="qa-line qa-ok">&#10003; Root cause found</li>
                     <li class="qa-line qa-note">Quaid is not a real human. Mannequin. 99+ years of experience, zero pulse.</li>
+                    <li class="qa-line">&rsaquo; Filing bug report&hellip;</li>
+                  </ol>
+                  <details class="qa-fold" data-testid="quaid-bug-report" data-pause="1200">
+                    <summary>
+                      <span class="qa-fold-title">BUG-4004 &middot; A mannequin holds a recommendation card</span>
+                      <span class="qa-fold-meta">P1 &middot; High</span>
+                    </summary>
+                    <dl class="qa-bug">
+                      <div><dt>Summary</dt><dd>A recommendation card in Chapter 3 is attributed to Quaid. Quaid is a mannequin.</dd></div>
+                      <div><dt>Environment</dt><dd>mdtqualityadventures.com &middot; Recommendations, Chapter 3 &middot; Page 3 &middot; Chromium</dd></div>
+                      <div><dt>Steps to reproduce</dt><dd><ol><li>Open the Recommendations chapter.</li><li>Scroll to the last card in the grid.</li><li>Read the name on it.</li></ol></dd></div>
+                      <div><dt>Expected</dt><dd>Only a real person holds a recommendation card.</dd></div>
+                      <div><dt>Actual</dt><dd>A QA intern with 99+ years of experience and no pulse holds one.</dd></div>
+                      <div><dt>Root cause</dt><dd>Quaid is not a real human.</dd></div>
+                      <div><dt>Severity</dt><dd>High &middot; data integrity &middot; every letter on the page is worth less while he has one</dd></div>
+                      <div><dt>Attachment</dt><dd>mentee-quaid.jpg &middot; Chapter 3, Page 2, mentee roster</dd></div>
+                      <div><dt>Status</dt><dd>Open &rarr; Test case requested</dd></div>
+                    </dl>
+                  </details>
+                  <ol class="qa-log">
                     <li class="qa-line" data-pause="700">&rsaquo; Does this scenario have a test case?</li>
                     <li class="qa-line qa-note" data-pause="500">No.</li>
                     <li class="qa-line">&rsaquo; Generating test case&hellip;</li>
                   </ol>
+                  <details class="qa-fold" data-testid="quaid-test-fold" data-pause="900">
+                    <summary>
+                      <span class="qa-fold-title">Test_Case_4004_Recommendations_Quaid_IsNotAHuman</span>
+                      <span class="qa-fold-meta">3 steps</span>
+                    </summary>
                   <pre class="qa-code" data-testid="quaid-generated-test"><code><span class="tok-comment">// What It Tests: A recommendation card only ever belongs to a real person.</span>
 <span class="tok-comment">// Why It Matters: Quaid is a mannequin with 99+ years of experience — if he</span>
 <span class="tok-comment">// can get a card, so can any bug that dresses the part.</span>
@@ -2659,6 +2686,7 @@
     });
   },
 );</code></pre>
+                  </details>
                   <ol class="qa-log">
                     <li class="qa-line qa-ok" data-testid="quaid-log-done">&#10003; 1 test written &middot; <a href="https://github.com/MatthewDThornell/mdtqualityadventures/blob/main/tests/specs/4000-recommendations.spec.ts" target="_blank" rel="noopener">tests/specs/4000-recommendations.spec.ts</a></li>
                   </ol>
@@ -2707,6 +2735,11 @@
                     <li class="qa-line qa-note" data-pause="500">No.</li>
                     <li class="qa-line">&rsaquo; Creating cyber security test case&hellip;</li>
                   </ol>
+                  <details class="qa-fold" data-testid="anonymous-test-fold" data-pause="900">
+                    <summary>
+                      <span class="qa-fold-title">Test_Case_4006_Recommendations_AnonymousUser_IsBlocked</span>
+                      <span class="qa-fold-meta">3 steps</span>
+                    </summary>
                   <pre class="qa-code" data-testid="anonymous-generated-test"><code><span class="tok-comment">// What It Tests: An unidentified author can never hold a recommendation, and</span>
 <span class="tok-comment">// the site takes no recommendation from one.</span>
 <span class="tok-comment">// Why It Matters: A recommendation is worth exactly what its author's name is</span>
@@ -2737,6 +2770,7 @@
     });
   },
 );</code></pre>
+                  </details>
                   <ol class="qa-log">
                     <li class="qa-line qa-ok" data-testid="anonymous-log-done">&#10003; 1 test written &middot; <a href="https://github.com/MatthewDThornell/mdtqualityadventures/blob/main/tests/specs/4000-recommendations.spec.ts" target="_blank" rel="noopener">tests/specs/4000-recommendations.spec.ts</a></li>
                   </ol>
@@ -2830,7 +2864,7 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p>&copy; <span id="year"></span> Matthew D Thornell, MDT Quality Adventures</p>
+        <p>&copy; <span id="year"></span> Matthew D. Thornell, MDT Quality Adventures</p>
       </div>
     </footer>
 

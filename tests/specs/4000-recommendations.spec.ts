@@ -258,6 +258,14 @@ test.describe('Recommendations', () => {
         });
       });
 
+      await test.step('Then it files a bug report — a ticket with steps, expected, actual and root cause', async () => {
+        const bug = page.getByTestId('quaid-bug-report');
+        await expect(bug).toBeVisible({ timeout: 15_000 });
+        await expect.soft(bug.locator('summary')).toContainText('BUG-4004');
+        await expect.soft(bug.locator('.qa-bug')).toContainText('Steps to reproduce');
+        await expect.soft(bug.locator('.qa-bug')).toContainText('Quaid is not a real human.');
+      });
+
       await test.step('Then it writes the test case above, and links the spec it lives in', async () => {
         await expect(home.quaidReport).toHaveClass(/is-complete/, { timeout: 30_000 });
         await expect
@@ -269,6 +277,16 @@ test.describe('Recommendations', () => {
         await expect
           .soft(page.getByTestId('quaid-log-done').getByRole('link'))
           .toHaveAttribute('href', /tests\/specs\/4000-recommendations\.spec\.ts$/);
+      });
+
+      await test.step('Then the answers fold away behind their arrows, and open again on a click', async () => {
+        const bug = page.getByTestId('quaid-bug-report');
+        const fold = page.getByTestId('quaid-test-fold');
+        await expect.soft(bug).not.toHaveAttribute('open', /./);
+        await expect.soft(fold).not.toHaveAttribute('open', /./);
+        await bug.locator('summary').click();
+        await expect.soft(bug).toHaveAttribute('open', '');
+        await expect.soft(bug.locator('.qa-bug')).toBeVisible();
       });
     },
   );
@@ -380,12 +398,12 @@ test.describe('Recommendations', () => {
         // "running" lasts about two seconds; on a loaded runner the check can land
         // after the flip, so the run is asserted by its classes rather than its label
         await expect(ownTest).toHaveClass(/is-running|is-passed/, { timeout: 10_000 });
-        await expect.soft(ownTest.locator('.rec-test-status')).toHaveText(/running|passed/);
       });
 
       await test.step('Then it passes and folds away — and only then does the quote decrypt', async () => {
         await expect(ownTest).toHaveClass(/is-passed/, { timeout: 10_000 });
-        await expect.soft(ownTest.locator('.rec-test-status')).toHaveText('passed');
+        // the badge above says PASS; the summary keeps only the check
+        await expect.soft(ownTest.locator('.rec-test-status')).toHaveText('');
         await expect(ownTest).not.toHaveAttribute('open', /./, { timeout: 5_000 });
         await expect(card).toHaveAttribute('data-status', 'pass', { timeout: 10_000 });
       });

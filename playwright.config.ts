@@ -17,12 +17,18 @@ export default defineConfig({
     baseURL: BASE_URL,
     // matches OptumPlaywright's TestBase viewport — also functionally required
     // here: the site's nav collapses into the mobile hamburger menu below
-    // 1320px (src/style.css), so anything narrower needs openMobileNav() first.
+    // 760px (src/style.css), so anything narrower needs openMobileNav() first.
     // Actual effective viewport comes from the chromium project below, which
     // has to respread this after devices['Desktop Chrome'] — kept here too
     // as the default for any future project that doesn't spread a device.
     viewport: { width: 1440, height: 900 },
-    trace: 'retain-on-failure',
+    // Not retain-on-failure: that records a DOM snapshot on every action and
+    // only discards them on success, which on this page (~6,700 nodes, the
+    // rain animating behind it) measured ~700ms per assertion — a 30s nav
+    // test that takes 3s without it. A failure still gets its screenshot and
+    // video; the full trace comes on the retry, which CI is configured for.
+    // Locally: npx playwright test --trace on.
+    trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
   },

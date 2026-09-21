@@ -193,7 +193,18 @@ test.describe('Home — Hero', () => {
       await home.goto();
 
       await test.step('Then the h1 shows the name, and the static a11y text backs the eyebrow/tagline', async () => {
-        await expect.soft(home.heroHeading).toHaveText('Matthew D Thornell');
+        await expect.soft(home.heroHeading).toHaveText('Matthew D. Thornell');
+        // the D. carries the Will of D. — a straw hat, and a title for the curious
+        await expect.soft(home.heroHeading.getByTestId('hero-d')).toHaveText('D.');
+        await expect
+          .soft(home.heroHeading.getByTestId('hero-d'))
+          .toHaveAttribute('title', 'The Will of D.');
+        // the straw hat is a ::before with an SVG data URI, so the decrypt never
+        // sees it in the heading's text
+        const hat = await home.heroHeading
+          .getByTestId('hero-d')
+          .evaluate((el) => getComputedStyle(el, '::before').backgroundImage);
+        expect.soft(hat).toContain('data:image/svg+xml');
         await expect.soft(home.heroEyebrowStatic).toHaveText('A career portfolio, written by');
         await expect
           .soft(home.heroTaglineStatic)

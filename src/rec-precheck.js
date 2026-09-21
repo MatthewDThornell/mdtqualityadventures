@@ -37,7 +37,8 @@ export function runPrecheck(card) {
     .then(() => {
       test.classList.remove('is-running');
       test.classList.add('is-passed');
-      if (status) status.textContent = 'passed';
+      // the badge above already says PASS — the summary keeps only the check
+      if (status) status.textContent = '';
       return wait(PASSED_PAUSE);
     })
     .then(() => {
