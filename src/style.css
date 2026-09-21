@@ -15,6 +15,8 @@
      (CODE_HIGHLIGHT in src/cover-scene.js) — the glow colour of anything
      that borrows the rain's look, like the recommendation cards */
   --code-rgb: 150, 210, 185;
+  /* the one verdict that isn't a pass — Quaid's card, and nothing else */
+  --fail-rgb: 226, 96, 96;
   --teal-bright: #6b9c89;
   --panel: #1b212b;
   --panel-border: rgba(var(--brass-rgb), 0.16);
@@ -2641,12 +2643,285 @@ html.pen-active .typewriter .tw-quill {
   box-shadow: 0 0 12px rgba(var(--code-rgb), 0.45);
 }
 
-/* signed at the foot as a commit trailer, in the author's name */
+/* While a quote is still binary its verdict is pending: the badge waits in
+   yellow, breathing, then flips to the outcome the moment the decrypt lands
+   (src/quote-decrypt.js sets data-status; cards without one — no JS, reduced
+   motion — read as PASS from the start). */
+.rec-card[data-status='pending']::before {
+  content: 'PENDING \2713';
+  color: var(--brass-bright);
+  border-color: rgba(var(--brass-bright-rgb), 0.5);
+  background: rgba(var(--brass-bright-rgb), 0.08);
+  animation: badge-pending 1.6s ease-in-out infinite;
+}
+
+.rec-card[data-status='pass']::before {
+  animation: badge-pass 0.9s ease-out;
+}
+
+@keyframes badge-pending {
+  50% {
+    opacity: 0.55;
+  }
+}
+
+@keyframes badge-pass {
+  0% {
+    box-shadow: 0 0 0 rgba(var(--code-rgb), 0);
+    background: rgba(var(--code-rgb), 0.35);
+  }
+  40% {
+    box-shadow: 0 0 18px rgba(var(--code-rgb), 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(var(--code-rgb), 0);
+  }
+}
+
+/* The card that fails on purpose (Quaid, the mannequin). It closes the grid,
+   spanning both columns, so the investigation and the test it writes have a
+   terminal's width. Red only once its verdict is in — while pending it waits
+   in yellow like every other card. */
+.rec-card-failed {
+  column-span: all;
+}
+
+.rec-card-failed:not([data-status='pending']) {
+  border-color: rgba(var(--fail-rgb), 0.45);
+  background:
+    radial-gradient(circle at 0% 0%, rgba(var(--fail-rgb), 0.12), transparent 55%),
+    repeating-linear-gradient(0deg, transparent 0 3px, rgba(var(--fail-rgb), 0.035) 3px 4px),
+    var(--ink);
+}
+
+.rec-card-failed:not([data-status='pending']):hover {
+  border-color: rgba(var(--fail-rgb), 0.75);
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.4),
+    0 0 28px rgba(var(--fail-rgb), 0.2),
+    0 18px 36px rgba(0, 0, 0, 0.45);
+}
+
+.rec-card-failed:not([data-status='pending'])::before,
+.rec-card-failed:not([data-status='pending']):hover::before {
+  content: 'FAIL \2717';
+  color: rgb(var(--fail-rgb));
+  border-color: rgba(var(--fail-rgb), 0.55);
+  background: rgba(var(--fail-rgb), 0.1);
+  box-shadow: 0 0 12px rgba(var(--fail-rgb), 0.35);
+  animation: none;
+}
+
+.rec-card-failed:not([data-status='pending']) .rec-avatar {
+  border-color: rgba(var(--fail-rgb), 0.75);
+  box-shadow: 0 0 10px rgba(var(--fail-rgb), 0.25);
+}
+
+.rec-card-failed:not([data-status='pending']) .rec-title {
+  color: rgba(var(--fail-rgb), 0.85);
+}
+
+/* the "quote" is the error itself */
+.rec-card-failed blockquote p,
+.rec-card-failed .qd-char.is-locked {
+  color: rgb(var(--fail-rgb));
+}
+
+.rec-card-failed::after {
+  color: rgba(var(--fail-rgb), 0.7);
+}
+
+/* --- the investigation: a terminal log, then the test it generates --- */
+.qa-report {
+  grid-column: 1 / -1;
+  grid-row: 4;
+  margin-top: 1rem;
+  padding-top: 0.9rem;
+  border-top: 1px dashed rgba(var(--code-rgb), 0.25);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.7;
+  color: var(--parchment-dim);
+}
+
+/* while pending there is nothing to report yet */
+.rec-card[data-status='pending'] .qa-report {
+  display: none;
+}
+
+.qa-log {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.qa-line {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+/* src/quaid-report.js reveals the lines in turn; until a line's turn it's out
+   of the flow entirely, so the card grows as the log is written */
+.qa-report.is-typing .qa-line:not(.is-shown),
+.qa-report.is-typing .qa-code:not(.is-shown) {
+  display: none;
+}
+
+.qa-fail {
+  color: rgb(var(--fail-rgb));
+  font-weight: 600;
+}
+
+.qa-ok {
+  color: rgb(var(--code-rgb));
+}
+
+.qa-note {
+  color: var(--text-muted);
+  padding-left: 1.1em;
+}
+
+.qa-line a {
+  color: rgb(var(--code-rgb));
+  text-decoration: underline;
+  text-decoration-color: rgba(var(--code-rgb), 0.4);
+  text-underline-offset: 0.2em;
+}
+
+/* the loader on "Investigating root cause" — three dots that walk while
+   the line is the latest one written (src/quaid-report.js marks it
+   is-waiting for the pause after it), then rest once the next line arrives */
+.qa-dots::after {
+  content: '...';
+  display: inline-block;
+  width: 1.6em;
+  text-align: left;
+}
+
+.qa-line.is-waiting .qa-dots::after {
+  animation: qa-dots 1.2s steps(1, end) infinite;
+}
+
+@keyframes qa-dots {
+  0% {
+    content: '';
+  }
+  25% {
+    content: '.';
+  }
+  50% {
+    content: '..';
+  }
+  75%,
+  100% {
+    content: '...';
+  }
+}
+
+.qa-code {
+  margin: 0.6rem 0 0.7rem;
+  padding: 0.85rem 1rem;
+  overflow-x: auto;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(var(--code-rgb), 0.18);
+  border-radius: 4px;
+  font-size: 0.68rem;
+  line-height: 1.6;
+  color: var(--parchment);
+  tab-size: 2;
+  /* wrap rather than scroll where the column is narrow — a reader should
+     never have to scroll sideways to see what the test asserts */
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.qa-code code {
+  font-family: inherit;
+}
+
+.tok-comment {
+  color: rgba(var(--code-rgb), 0.7);
+  font-style: italic;
+}
+
+.tok-kw {
+  color: var(--brass-bright);
+}
+
+.tok-str {
+  color: rgb(var(--code-rgb));
+}
+
+.tok-fn {
+  color: var(--parchment);
+  font-weight: 600;
+}
+
+.tok-num {
+  color: var(--brass-bright);
+}
+
+/* the caret rides the end of whatever is being typed */
+.qa-report.is-typing .is-shown:not(.is-done)::after {
+  content: '\258B';
+  color: rgb(var(--code-rgb));
+  animation: qa-caret 0.8s steps(2, end) infinite;
+}
+
+@keyframes qa-caret {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* --- links at the foot of every card: LinkedIn now; a website or résumé
+   link takes the same .rec-link class when there's one to point at --- */
+.rec-links {
+  grid-column: 1 / -1;
+  grid-row: 5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  margin: 0.85rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.02em;
+}
+
+.rec-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  color: var(--teal-bright);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.rec-link svg {
+  width: 0.95em;
+  height: 0.95em;
+}
+
+.rec-link:hover {
+  color: rgb(var(--code-rgb));
+}
+
+.rec-link.is-missing {
+  color: rgba(var(--fail-rgb), 0.7);
+}
+
+.rec-link.is-missing::before {
+  content: '\2717 ';
+}
+
+/* signed at the foot as a commit trailer, in the author's name — on the
+   same row as the links, at the opposite end */
 .rec-card::after {
   content: 'Signed-off-by: ' attr(data-signer);
   grid-column: 1 / -1;
-  grid-row: 4;
+  grid-row: 5;
   justify-self: end;
+  align-self: end;
   margin-top: 0.9rem;
   font-family: var(--font-mono);
   font-size: 0.68rem;
@@ -3096,6 +3371,11 @@ html.pen-active .typewriter .tw-quill {
 
   .rec-card h3 {
     padding-right: 0;
+  }
+
+  .rec-card::after {
+    grid-row: 6;
+    margin-top: 0.5rem;
   }
 
   .adventure {
@@ -3773,6 +4053,13 @@ a.tau-course-name:hover {
   .nav-dropdown-menu,
   #cover-canvas {
     transition: none;
+  }
+
+  .rec-card[data-status='pending']::before,
+  .rec-card[data-status='pass']::before,
+  .qa-dots::after,
+  .qa-report.is-typing .is-shown:not(.is-done)::after {
+    animation: none;
   }
 
   .page::before {

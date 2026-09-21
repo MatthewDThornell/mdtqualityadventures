@@ -79,6 +79,14 @@ function decrypt(paragraph, overlay, charSpans) {
     setTimeout(() => {
       paragraph.classList.remove('quote-decrypt-hidden');
       overlay.remove();
+      // the card's badge has read PENDING since init; it now reads the
+      // outcome — PASS, or FAIL for the one card that carries that verdict —
+      // and anything waiting on the result (src/quaid-report.js) hears about it
+      const card = paragraph.closest('.rec-card');
+      if (card) {
+        card.dataset.status = card.dataset.outcome || 'pass';
+        card.dispatchEvent(new CustomEvent('quote-decrypted', { bubbles: true }));
+      }
     }, SETTLE_MS);
   };
   requestAnimationFrame(tick);
@@ -89,27 +97,51 @@ export function initQuoteDecrypt(paragraphs) {
   const targets = Array.from(paragraphs).filter((p) => p.textContent.trim());
   if (targets.length === 0) return;
 
-  const pending = new Map();
+  // every verdict is pending from the start; the badge is the only visible
+  // sign of that until a card gets close enough to be given its overlay
   targets.forEach((p) => {
-    const { overlay, charSpans } = buildOverlay(p.textContent);
-    p.classList.add('quote-decrypt-hidden');
-    p.parentNode.insertBefore(overlay, p.nextSibling);
-    pending.set(p, { overlay, charSpans });
+    const card = p.closest('.rec-card');
+    if (card) card.dataset.status = 'pending';
   });
 
-  const observer = new IntersectionObserver(
+  const pending = new Map();
+
+  const decryptObserver = new IntersectionObserver(
     (entries) => {
       entries
         .filter((entry) => entry.isIntersecting)
         .forEach((entry, i) => {
           const { overlay, charSpans } = pending.get(entry.target);
           pending.delete(entry.target);
-          observer.unobserve(entry.target);
+          decryptObserver.unobserve(entry.target);
           // cards that arrive in the same batch decode one after another
           setTimeout(() => decrypt(entry.target, overlay, charSpans), i * STAGGER_MS);
         });
     },
     { threshold: 0.25 },
   );
-  targets.forEach((p) => observer.observe(p));
+
+  // An overlay is a span per character — thousands across the page — so each
+  // is built only once its card comes within a screen or so of the viewport,
+  // still out of sight, rather than all of them at startup. The card is hidden
+  // and covered in the same step, and only then handed to the decrypt observer,
+  // so a card that's already in view (a deep link) can never decrypt before it
+  // has anything to decrypt.
+  const buildObserver = new IntersectionObserver(
+    (entries) => {
+      entries
+        .filter((entry) => entry.isIntersecting)
+        .forEach((entry) => {
+          const p = entry.target;
+          buildObserver.unobserve(p);
+          const { overlay, charSpans } = buildOverlay(p.textContent);
+          p.classList.add('quote-decrypt-hidden');
+          p.parentNode.insertBefore(overlay, p.nextSibling);
+          pending.set(p, { overlay, charSpans });
+          decryptObserver.observe(p);
+        });
+    },
+    { rootMargin: '800px 0px' },
+  );
+  targets.forEach((p) => buildObserver.observe(p));
 }

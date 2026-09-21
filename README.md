@@ -242,6 +242,10 @@ gets reordered or a new entry is inserted in the middle.
   buttons, TAU watch/hide toggles, the mentee spotlight's prev/next arrows).
 - The "by the numbers" strip and each of its figures (`figures`, `figure-years` …), since a test
   checks the counted-up values against the prose they summarise.
+- Quaid's failing recommendation card and its report (`rec-card-quaid`, `quaid-report`,
+  `quaid-generated-test`, `quaid-log-fail`, `quaid-log-done`) — the test the card types out on the
+  page is `Test_Case_4004` in `tests/specs/4000-recommendations.spec.ts`, for real; keep the two in
+  step if either changes.
 - Every repeated card/row with no existing unique `id` and ambiguous or duplicate visible text
   (timeline entries, accomplishment cards, recommendation cards, mentor/mentee cards, mentee
   spotlight slides, adventure cards, TAU course rows, job cards).

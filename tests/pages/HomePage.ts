@@ -80,9 +80,19 @@ export class HomePage extends BasePage {
   }
 
   /** The recommendation letters in the Recommendations chapter page only
-   * (the mentees' "In Their Own Words" grid reuses the same card). */
+   * (the mentees' "In Their Own Words" grid reuses the same card), not
+   * counting the one card that fails on purpose — Quaid never wrote one. */
   get recommendationLetters(): Locator {
-    return this.page.locator('#letters').getByTestId(/^rec-card-/);
+    return this.page.locator('#letters .rec-card:not(.rec-card-failed)');
+  }
+
+  /** Quaid's investigation — the log and the generated test under his card. */
+  get quaidReport(): Locator {
+    return this.page.getByTestId('quaid-report');
+  }
+
+  get quaidGeneratedTest(): Locator {
+    return this.page.getByTestId('quaid-generated-test');
   }
 
   // --- About Me ---

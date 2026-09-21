@@ -71,9 +71,23 @@ test.describe('Recommendations', () => {
       // overlay actually goes away and the quote comes back readable — a
       // stuck overlay would leave every recommendation as a block of noise
       // while every text assertion still passed.
-      await test.step('Given the quote starts hidden behind its binary overlay', async () => {
-        await expect.soft(card.locator('.quote-decrypt')).toHaveCount(1);
+      await test.step('Given a card far below the fold: verdict pending, nothing built yet', async () => {
+        await expect.soft(card).toHaveAttribute('data-status', 'pending');
+        await expect.soft(card.locator('.quote-decrypt')).toHaveCount(0);
+      });
+
+      await test.step('When the card comes within a screen of the viewport, its binary overlay is built', async () => {
+        // parked just below the viewport: inside the build margin, short of the
+        // 25%-visible threshold that starts the decrypt
+        await card.evaluate((el) => {
+          window.scrollTo(
+            0,
+            el.getBoundingClientRect().top + window.scrollY - window.innerHeight - 300,
+          );
+        });
+        await expect(card.locator('.quote-decrypt')).toHaveCount(1);
         await expect.soft(quote).toHaveCSS('color', 'rgba(0, 0, 0, 0)');
+        await expect.soft(card).toHaveAttribute('data-status', 'pending');
       });
 
       await test.step('When the card scrolls into view, the overlay resolves and is removed', async () => {
@@ -81,9 +95,10 @@ test.describe('Recommendations', () => {
         await expect(card.locator('.quote-decrypt')).toHaveCount(0, { timeout: 8_000 });
       });
 
-      await test.step('Then the real quote is readable in the page colour', async () => {
+      await test.step('Then the real quote is readable in the page colour, and the verdict is PASS', async () => {
         await expect.soft(quote).toHaveCSS('color', 'rgb(243, 234, 217)');
         await expect.soft(quote).toContainText('greatest strength');
+        await expect.soft(card).toHaveAttribute('data-status', 'pass');
       });
     },
   );
@@ -101,6 +116,81 @@ test.describe('Recommendations', () => {
         await expect
           .soft(home.recCard('nathan-gearke').locator('blockquote p'))
           .toHaveCSS('color', 'rgb(243, 234, 217)');
+      });
+
+      await test.step("Then Quaid's card reads as failed from the start, its report already written", async () => {
+        await expect.soft(home.recCard('quaid')).not.toHaveAttribute('data-status', /./);
+        await expect.soft(home.quaidReport).not.toHaveClass(/is-typing/);
+        await expect.soft(home.quaidGeneratedTest).toContainText('Test_Case_4004');
+      });
+    },
+  );
+
+  // What It Tests: A recommendation card only ever belongs to a real person.
+  // Why It Matters: Quaid is a mannequin with 99+ years of experience — if he
+  // can get a card, so can any bug that dresses the part. This is the test his
+  // card types out on the page, word for word; it has to exist for that to be
+  // honest.
+  test(
+    'Test_Case_4004_Recommendations_Quaid_IsNotAHuman',
+    { tag: '@smoke' },
+    async ({ page, request }) => {
+      const home = new HomePage(page);
+      await home.goto();
+
+      await test.step('Ensure that Quaid, who is not a human, does not show up in recommendations', async () => {
+        await expect(home.recCard('quaid')).toHaveClass(/rec-card-failed/);
+        await expect(home.recommendationLetters).toHaveCount(10);
+      });
+
+      await test.step('And the API has no record of him', async () => {
+        const res = await request.get('/api/humans/quaid');
+        expect(res.status()).toBe(404);
+      });
+    },
+  );
+
+  test(
+    'Test_Case_4005_Recommendations_Quaid_FailsAndWritesItsOwnTestCase',
+    { tag: '@regression' },
+    async ({ page }) => {
+      const home = new HomePage(page);
+      await home.goto();
+      const card = home.recCard('quaid');
+
+      await test.step("Given his verdict is pending like everyone else's", async () => {
+        await expect.soft(card).toHaveAttribute('data-status', 'pending');
+        await expect.soft(home.quaidReport).toBeHidden();
+      });
+
+      await test.step('When the card scrolls into view, the decrypt fails him', async () => {
+        await card.scrollIntoViewIfNeeded();
+        await expect(card).toHaveAttribute('data-status', 'fail', { timeout: 10_000 });
+        await expect.soft(card.locator('blockquote p')).toContainText('Received: undefined');
+      });
+
+      await test.step('Then the investigation types out, root cause first', async () => {
+        await expect(page.getByTestId('quaid-log-fail')).toBeVisible();
+        await expect(
+          home.quaidReport.locator('.qa-line', { hasText: 'Root cause found' }),
+        ).toBeVisible({
+          timeout: 10_000,
+        });
+      });
+
+      await test.step('Then it writes the test case above, and links the spec it lives in', async () => {
+        await expect(home.quaidReport).toHaveClass(/is-complete/, { timeout: 30_000 });
+        await expect
+          .soft(home.quaidGeneratedTest)
+          .toContainText(
+            'Ensure that Quaid, who is not a human, does not show up in recommendations',
+          );
+        await expect
+          .soft(home.quaidGeneratedTest)
+          .toContainText("request.get('/api/humans/quaid')");
+        await expect
+          .soft(page.getByTestId('quaid-log-done').getByRole('link'))
+          .toHaveAttribute('href', /tests\/specs\/4000-recommendations\.spec\.ts$/);
       });
     },
   );
