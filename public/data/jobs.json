@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-09-20T20:15:38.694Z",
+  "fetchedAt": "2026-09-21T03:07:34.971Z",
   "jobs": [
+    {
+      "id": "arbeitnow-senior-quality-engineer-parsdorf-bavaria-64458",
+      "title": "Senior Quality Engineer (m/f/d)",
+      "company": "isaraerospace",
+      "url": "https://www.arbeitnow.com/jobs/companies/isaraerospace/senior-quality-engineer-parsdorf-bavaria-64458",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Parsdorf, Bavaria",
+      "country": "Other",
+      "postedAt": "2026-09-20T20:55:17.000Z"
+    },
     {
       "id": "greenhouse-roblox-8069987",
       "title": "Quality Analyst",
@@ -208,19 +221,6 @@
       "location": "Poland",
       "country": "Other",
       "postedAt": "2026-09-18T04:51:27-04:00"
-    },
-    {
-      "id": "arbeitnow-ausbildung-2027-technischer-systemplaner-fachrichtung-stahl-u-metallbautechnik-bei-fa-robering-lagersysteme-in-emsdetten-416848",
-      "title": "Ausbildung 2027 Technischer Systemplaner m/w/d Fachrichtung Stahl- u. Metallbautechnik bei Fa. Robering Lagersysteme in Emsdetten",
-      "company": "Robering Lagersysteme GmbH und Co. KG",
-      "url": "https://www.arbeitnow.com/jobs/companies/robering-lagersysteme-gmbh-und-co-kg/ausbildung-2027-technischer-systemplaner-fachrichtung-stahl-u-metallbautechnik-bei-fa-robering-lagersysteme-in-emsdetten-416848",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Emsdetten",
-      "country": "Other",
-      "postedAt": "2026-09-18T07:30:40.000Z"
     },
     {
       "id": "arbeitnow-qa-engineer-quantum-computing-siegen-152999",
