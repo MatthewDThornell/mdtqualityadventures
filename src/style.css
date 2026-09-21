@@ -11,6 +11,10 @@
   --brass-bright-rgb: 221, 185, 117;
   --teal: #4f7869;
   --teal-rgb: 107, 156, 137;
+  /* the cooler, brighter teal the cover's code columns fall in
+     (CODE_HIGHLIGHT in src/cover-scene.js) — the glow colour of anything
+     that borrows the rain's look, like the recommendation cards */
+  --code-rgb: 150, 210, 185;
   --teal-bright: #6b9c89;
   --panel: #1b212b;
   --panel-border: rgba(var(--brass-rgb), 0.16);
@@ -2587,74 +2591,68 @@ html.pen-active .typewriter .tw-quill {
   margin: 0 0 1.5rem;
   padding: 1.5rem 1.5rem 1.35rem;
   position: relative;
-  /* paper: cream stock with a faint grain and a soft shadow, laid down at a
-     slight angle that straightens when the reader picks it up */
-  color: var(--ink);
+  /* the same ink as the cover's rain falls through: a darker panel than
+     the page, faint CRT scanlines, a cool glow gathering in one corner,
+     and a hairline in the code teal that brightens under the hand */
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.35), transparent 35%),
-    repeating-linear-gradient(0deg, transparent 0 3px, rgba(var(--brass-rgb), 0.045) 3px 4px),
-    var(--parchment);
-  border-color: rgba(var(--brass-rgb), 0.3);
-  border-radius: 3px;
+    radial-gradient(circle at 0% 0%, rgba(var(--code-rgb), 0.1), transparent 55%),
+    repeating-linear-gradient(0deg, transparent 0 3px, rgba(var(--code-rgb), 0.035) 3px 4px),
+    var(--ink);
+  border: 1px solid rgba(var(--code-rgb), 0.22);
+  border-radius: 4px;
   box-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.5) inset,
-    0 10px 24px rgba(0, 0, 0, 0.35);
-  transform: rotate(-0.6deg);
-}
-
-.rec-card:nth-child(even) {
-  transform: rotate(0.5deg);
+    0 0 0 1px rgba(0, 0, 0, 0.4),
+    0 12px 28px rgba(0, 0, 0, 0.4);
 }
 
 .rec-card:hover {
-  transform: translateY(-4px) rotate(0deg);
-  border-color: rgba(var(--brass-rgb), 0.55);
+  transform: translateY(-4px);
+  border-color: rgba(var(--code-rgb), 0.6);
   box-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.5) inset,
-    0 18px 36px rgba(0, 0, 0, 0.4);
+    0 0 0 1px rgba(0, 0, 0, 0.4),
+    0 0 28px rgba(var(--code-rgb), 0.18),
+    0 18px 36px rgba(0, 0, 0, 0.45);
 }
 
-.rec-card ::selection {
-  background: rgba(var(--teal-rgb), 0.35);
-  color: var(--ink);
-}
-
-/* the brass seal pressed into the corner */
+/* every recommendation is a passing check — the badge in the corner says
+   so in the rain's own mono, and lights up with the card */
 .rec-card::before {
-  content: '\2713';
+  content: 'PASS \2713';
   position: absolute;
   top: 0.9rem;
   right: 0.9rem;
-  width: 1.75rem;
-  height: 1.75rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-size: 0.9rem;
-  color: var(--ink);
-  background: var(--brass);
-  box-shadow:
-    0 0 0 2px var(--parchment),
-    0 0 0 3px rgba(var(--brass-rgb), 0.5),
-    0 2px 4px rgba(0, 0, 0, 0.25);
-  opacity: 0.9;
+  padding: 0.22rem 0.5rem;
+  border: 1px solid rgba(var(--code-rgb), 0.45);
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  color: rgb(var(--code-rgb));
+  background: rgba(var(--code-rgb), 0.08);
+  transition:
+    box-shadow 0.25s ease,
+    background 0.25s ease;
 }
 
-/* signed at the foot, in the author's hand */
+.rec-card:hover::before {
+  background: rgba(var(--code-rgb), 0.16);
+  box-shadow: 0 0 12px rgba(var(--code-rgb), 0.45);
+}
+
+/* signed at the foot as a commit trailer, in the author's name */
 .rec-card::after {
-  content: '\2014\00a0' attr(data-signer);
+  content: 'Signed-off-by: ' attr(data-signer);
   grid-column: 1 / -1;
   grid-row: 4;
   justify-self: end;
-  margin-top: 0.85rem;
-  font-family: var(--font-cursive);
-  font-size: 1.25rem;
+  margin-top: 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.02em;
   line-height: 1;
-  color: var(--ink);
-  opacity: 0.85;
-  transform: rotate(-2deg);
+  color: rgba(var(--code-rgb), 0.8);
 }
 
 .mentor-card {
@@ -2700,6 +2698,8 @@ html.pen-active .typewriter .tw-quill {
 
 .rec-card h3 {
   font-size: 1.15rem;
+  /* keep clear of the PASS badge in the corner, whatever the name's length */
+  padding-right: 4.75rem;
 }
 
 .mentor-card h3 {
@@ -2713,7 +2713,7 @@ html.pen-active .typewriter .tw-quill {
 }
 
 .rec-card h3 a {
-  color: var(--ink);
+  color: var(--parchment);
 }
 
 .rec-card h3 a:hover,
@@ -2721,13 +2721,8 @@ html.pen-active .typewriter .tw-quill {
   color: var(--brass-bright);
 }
 
-/* brass on cream doesn't clear contrast for text — the paper's links
-   answer a hover with an underline instead of a colour */
 .rec-card h3 a:hover {
-  color: var(--ink);
-  text-decoration: underline;
-  text-decoration-color: var(--brass);
-  text-underline-offset: 0.15em;
+  color: rgb(var(--code-rgb));
 }
 
 .rec-title,
@@ -2740,8 +2735,19 @@ html.pen-active .typewriter .tw-quill {
 }
 
 .rec-title {
-  font-size: 0.75rem;
-  color: rgba(var(--ink-rgb), 0.68);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--teal-bright);
+}
+
+.rec-title::before {
+  content: '// ';
+  opacity: 0.6;
+}
+
+.rec-avatar {
+  border-color: rgba(var(--code-rgb), 0.7);
+  box-shadow: 0 0 10px rgba(var(--code-rgb), 0.2);
 }
 
 .mentor-title {
@@ -2770,7 +2776,7 @@ html.pen-active .typewriter .tw-quill {
   font-style: italic;
   font-size: 0.92rem;
   margin: 0;
-  color: rgba(var(--ink-rgb), 0.88);
+  color: var(--text-primary);
 }
 
 /* Other Great Reads */
@@ -3033,6 +3039,16 @@ html.pen-active .typewriter .tw-quill {
 @media (max-width: 720px) {
   .rec-grid {
     columns: 1;
+  }
+
+  /* on a phone the PASS badge takes a strip of its own above the name
+     instead of the width beside it, so a two-word name stays on one line */
+  .rec-card {
+    padding-top: 2.75rem;
+  }
+
+  .rec-card h3 {
+    padding-right: 0;
   }
 
   .adventure {
@@ -3705,12 +3721,6 @@ a.tau-course-name:hover {
   html.js img[loading='lazy'] {
     transition: none;
     opacity: 1;
-  }
-
-  .rec-card,
-  .rec-card:nth-child(even),
-  .rec-card::after {
-    transform: none;
   }
 
   .nav-dropdown-menu,
