@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-09-21T17:48:05.036Z",
+  "fetchedAt": "2026-09-21T20:02:48.665Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-21T14:38:06-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8070025",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-21T14:38:04-04:00"
+    },
     {
       "id": "greenhouse-coursera-6141559004",
       "title": "Senior Software Test Engineer",
@@ -12,18 +38,18 @@
       "workType": "On-site",
       "location": "Toronto, Canada",
       "country": "Canada",
-      "postedAt": "2026-09-21T12:56:06-04:00"
+      "postedAt": "2026-09-21T14:07:37-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-7964148",
+      "id": "greenhouse-thoughtworks-8191523",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
       "source": "Thoughtworks",
       "sourceUrl": null,
       "direct": true,
       "workType": "On-site",
-      "location": "Lima, Peru",
+      "location": "Quito, Ecuador",
       "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
@@ -41,43 +67,17 @@
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-8191523",
+      "id": "greenhouse-thoughtworks-7964148",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
       "source": "Thoughtworks",
       "sourceUrl": null,
       "direct": true,
       "workType": "On-site",
-      "location": "Quito, Ecuador",
+      "location": "Lima, Peru",
       "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-21T02:37:19-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8070025",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-21T02:37:17-04:00"
     },
     {
       "id": "arbeitnow-senior-quality-engineer-parsdorf-bavaria-64458",
@@ -364,19 +364,6 @@
       "location": "Sunnyvale, CA",
       "country": "United States",
       "postedAt": "2026-09-09T22:33:33.947+00:00"
-    },
-    {
-      "id": "greenhouse-robinhood-8142285",
-      "title": "Senior Quality Engineer",
-      "company": "Robinhood",
-      "url": "https://boards.greenhouse.io/robinhood/jobs/8142285?t=gh_src=&gh_jid=8142285",
-      "source": "Robinhood",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Toronto, Canada",
-      "country": "Canada",
-      "postedAt": "2026-09-09T01:05:40-04:00"
     },
     {
       "id": "lever-shieldai-5da0e986-a159-4be9-b58c-b12368c7825a",
