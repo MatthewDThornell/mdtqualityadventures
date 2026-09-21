@@ -105,6 +105,11 @@ export class HomePage extends BasePage {
     return this.page.locator('.habits-list li');
   }
 
+  /** The kit's tool marks — one image per tool, named by its alt. */
+  get kitLogos(): Locator {
+    return this.page.locator('.kit .kit-logo');
+  }
+
   // --- Accomplishments ---
   accomplishmentCard(slug: string): Locator {
     return this.page.getByTestId(`accomplishment-card-${slug}`);
@@ -114,6 +119,16 @@ export class HomePage extends BasePage {
   // which reuses the same rec-card-<person-slug> pattern) ---
   recCard(personSlug: string): Locator {
     return this.page.getByTestId(`rec-card-${personSlug}`);
+  }
+
+  /** The company chip at the foot of a card: where we worked together (a
+   * letter) or where they are now (a mentee). */
+  recCompany(personSlug: string): Locator {
+    return this.recCard(personSlug).locator('.rec-link-company');
+  }
+
+  recLinkedIn(personSlug: string): Locator {
+    return this.recCard(personSlug).locator('.rec-link-linkedin');
   }
 
   // --- Mentors ---

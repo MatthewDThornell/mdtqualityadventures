@@ -45,4 +45,65 @@ test.describe('About Me', () => {
       });
     },
   );
+
+  // What It Tests: The kit shows every tool as its logo, with the tool's name
+  // kept as the image's alt text, and every logo file actually decodes.
+  // Why It Matters: A logo grid with no names fails silently in two ways — a
+  // missing or mis-cased SVG renders as an empty tile, and a screen reader
+  // hears nothing at all. Both looked fine in a text list.
+  test(
+    'Test_Case_5002_AboutMe_Kit_ShowsEveryToolAsALogoThatDecodes',
+    { tag: '@smoke' },
+    async ({ page }) => {
+      const home = new HomePage(page);
+      await home.goto();
+      await home.kitLogos.first().scrollIntoViewIfNeeded();
+
+      await test.step('Then the four groups hold their twenty tools, each named by its alt', async () => {
+        await expect.soft(home.kitLogos).toHaveCount(20);
+        const names = await home.kitLogos.evaluateAll((imgs) =>
+          imgs.map((i) => (i as HTMLImageElement).alt),
+        );
+        expect
+          .soft(names)
+          .toEqual([
+            'Playwright',
+            'Cypress',
+            'Selenium',
+            'Appium',
+            'Robot Framework',
+            'TypeScript',
+            'JavaScript',
+            'Python',
+            'C#',
+            'SQL',
+            'GitHub Actions',
+            'Azure Pipelines',
+            'Jenkins',
+            'Postman',
+            'K6',
+            'Jira',
+            'Azure DevOps',
+            'Power BI',
+            'Slack',
+            'Figma',
+          ]);
+      });
+
+      await test.step('Then every logo decoded — no empty tiles', async () => {
+        await expect
+          .poll(async () =>
+            home.kitLogos.evaluateAll((imgs) =>
+              imgs
+                .filter(
+                  (i) =>
+                    !(i as HTMLImageElement).complete || (i as HTMLImageElement).naturalWidth === 0,
+                )
+                .map((i) => (i as HTMLImageElement).alt),
+            ),
+          )
+          .toEqual([]);
+      });
+    },
+  );
 });

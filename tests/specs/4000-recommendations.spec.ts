@@ -43,6 +43,8 @@ test.describe('Recommendations', () => {
     'Test_Case_4001_Recommendations_Cards_HaveRealQuoteAndTitle',
     { tag: '@regression' },
     async ({ page }) => {
+      // walks all ten cards through the viewport, each decrypting as it arrives
+      test.slow();
       const home = new HomePage(page);
       await home.goto();
 
@@ -52,6 +54,45 @@ test.describe('Recommendations', () => {
           await expect.soft(card.locator('.rec-title')).not.toBeEmpty();
           await expect.soft(card.locator('blockquote')).not.toBeEmpty();
         }
+      });
+
+      await test.step('Then every card names the company we worked at together, as a chip that decoded', async () => {
+        const together: Record<string, string> = {
+          'nathan-gearke': 'Veterans United Home Loans',
+          'samantha-reynolds': 'Werner Enterprises',
+          'ronald-white': 'Werner Enterprises',
+          'tod-mcconahay': 'Werner Enterprises',
+          'andrew-sylvester': 'ConexED',
+          'stephanie-brunsvik': 'ConexED',
+          'blake-johnson': 'ConexED',
+          'rafael-juarez': 'ConexED',
+          'michael-gorham': 'ConexED',
+          'jeordin-callister': 'ConexED',
+        };
+        for (const [slug, company] of Object.entries(together)) {
+          const chip = home.recCompany(slug);
+          await expect.soft(chip).toHaveAttribute('title', `Worked together at ${company}`);
+          // the chips lazy-load, so bring each into view before asking whether it decoded
+          await chip.scrollIntoViewIfNeeded();
+          await expect
+            .poll(() => chip.locator('img').evaluate((img: HTMLImageElement) => img.naturalWidth))
+            .toBeGreaterThan(0);
+        }
+      });
+
+      await test.step("Then the LinkedIn marks carry the person's name for assistive tech, not a label", async () => {
+        await expect
+          .soft(home.recLinkedIn('nathan-gearke'))
+          .toHaveAttribute('aria-label', 'Nathan Gearke on LinkedIn');
+        await expect.soft(home.recLinkedIn('nathan-gearke')).toHaveText('');
+      });
+
+      await test.step("Then Nathan's card offers his letter of recommendation as a download", async () => {
+        const letter = page.getByTestId('rec-letter-nathan-gearke');
+        await expect.soft(letter).toHaveAttribute('href', '/letter-of-recommendation.pdf');
+        await expect.soft(letter).toHaveAttribute('download', '');
+        const res = await page.request.get('/letter-of-recommendation.pdf');
+        expect.soft(res.ok()).toBeTruthy();
       });
     },
   );
