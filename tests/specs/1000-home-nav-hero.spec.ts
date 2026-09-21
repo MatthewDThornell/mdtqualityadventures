@@ -45,6 +45,14 @@ test.describe('Home — Nav', () => {
         }
       });
 
+      await test.step("Then the page's three chapter openers carry the same names, in the same order", async () => {
+        // the nav is the journal's table of contents — the groups and the chapters
+        // must keep naming the same three things (see README.md#structure)
+        await expect
+          .soft(page.locator('.chapter-opener h2'))
+          .toHaveText(['The Professional', 'The Person', 'The People']);
+      });
+
       await test.step('Then the QA Standards, TAU, and Jobs links point at real pages', async () => {
         await home.openNavGroup('professional');
         await expect

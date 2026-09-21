@@ -361,12 +361,20 @@ html.pen-active * {
   max-width: 1360px;
 }
 
+/* brand | nav | (empty) — the matching side columns put the nav on the page's
+   midline, directly above the centered hero, instead of pinning a short nav
+   to the far right with the brand marooned at the far left. The hamburger
+   breakpoint below drops back to a plain two-ended row. */
 .nav-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
   gap: 1.5rem;
   padding-block: 1rem;
+}
+
+.nav-row .brand {
+  justify-self: start;
 }
 
 .brand {
@@ -389,6 +397,7 @@ html.pen-active * {
 
 .site-nav {
   display: flex;
+  align-items: center;
   gap: 1.35rem;
   flex-wrap: nowrap;
   white-space: nowrap;
@@ -435,6 +444,9 @@ html.pen-active * {
   /* a notch heavier than the page links, so the group names read as the
      journal's section headings and the links beneath them as its pages */
   font-weight: 600;
+  /* buttons reset line-height to "normal"; matching the links' keeps the
+     headings and Contact on one baseline instead of a couple of pixels apart */
+  line-height: inherit;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--parchment-dim);
@@ -2952,6 +2964,11 @@ html.pen-active .typewriter .tw-quill {
    The hamburger therefore waits until just under tablet-portrait width, so
    an iPad still gets the real nav — the old 9-link nav needed 1320px. */
 @media (max-width: 760px) {
+  .nav-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .nav-toggle {
     display: flex;
   }

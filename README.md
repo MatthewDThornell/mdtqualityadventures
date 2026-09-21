@@ -68,7 +68,10 @@ an inline comment at the top of its `<nav>` saying so. Shared _behavior_ (not ma
 `src/chrome.js` and is imported by each page's own entry script (`src/main.js`,
 `src/qa-standards.js`, `src/test-automation-university.js`, `src/jobs.js`).
 
-The nav is arranged like a journal's contents: three group dropdowns — **The Professional**
+The homepage is written as a journal in three chapters plus an epilogue — **The Professional**
+(Professional Experience, Accomplishments), **The Person** (About Me, Quality Adventures),
+**The People** (Mentors, The Quality Ripple, Recommendations), then Contact — and the nav is its
+table of contents: three group dropdowns — **The Professional**
 (Professional Experience, Accomplishments, then the QA Standards / QA Courses / Jobs pages below a
 rule), **The Person** (About Me, Quality Adventures, Test Pilot) and **The People** (Mentors, The
 Quality Ripple, Recommendations) — with Contact standing alone. `initSiteNav` in `src/chrome.js`
