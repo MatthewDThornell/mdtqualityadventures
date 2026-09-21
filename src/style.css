@@ -1898,6 +1898,13 @@ html.pen-active .typewriter .tw-quill {
   color: #ff0000;
 }
 
+.social-icon-facebook {
+  color: #1877f2;
+}
+
+.social-icon-linkedin {
+  color: #0a66c2;
+}
 
 .book-btn {
   /* sits on the same row as the social marks, with enough air to read as a
@@ -2109,6 +2116,144 @@ html.pen-active .typewriter .tw-quill {
   font-style: italic;
   color: var(--text-muted);
   margin-top: 0.75rem !important;
+}
+
+/* Mentee spotlight — the same card layout the Adventures chapter uses, but one
+   story at a time on a horizontal rail. Scroll snapping does the real work, so
+   swipe, trackpad and keyboard all page through it with no JS; src/spotlight.js
+   only adds the arrows and keeps the counter honest. */
+.spotlight {
+  margin-top: 2rem;
+}
+
+.spotlight-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.spotlight-label {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--teal-bright);
+  margin: 0;
+}
+
+.spotlight-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.spotlight-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--brass-bright);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(var(--brass-rgb), 0.35);
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.spotlight-arrow svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.spotlight-arrow:hover:not(:disabled) {
+  background: rgba(var(--brass-rgb), 0.18);
+  border-color: var(--brass);
+}
+
+.spotlight-arrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.spotlight-pager {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  min-width: 3ch;
+  text-align: center;
+}
+
+.spotlight-track {
+  display: flex;
+  /* each card keeps its own height — a short story stretched to match the
+     tallest one reads as a broken empty box rather than a short story */
+  align-items: flex-start;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  /* room for the cards' focus ring and hover lift, which a clipped
+     overflow container would otherwise shave off */
+  padding: 0.25rem;
+  margin: -0.25rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(var(--brass-rgb), 0.4) transparent;
+}
+
+.spotlight-track::-webkit-scrollbar {
+  height: 6px;
+}
+
+.spotlight-track::-webkit-scrollbar-thumb {
+  background: rgba(var(--brass-rgb), 0.4);
+  border-radius: 999px;
+}
+
+.spotlight-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+
+/* Where all we have of someone is the same thumbnail the roster uses, show it
+   at its native size rather than stretching 100px across a 280px tile */
+.spotlight-avatar {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(var(--brass-rgb), 0.3);
+}
+
+.spotlight-avatar img {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--brass);
+}
+
+.spotlight-quote {
+  margin: 0.85rem 0;
+  padding-left: 0.9rem;
+  border-left: 2px solid rgba(var(--brass-rgb), 0.5);
+}
+
+.spotlight-quote p {
+  font-style: italic;
+  color: var(--parchment);
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spotlight-track {
+    scroll-behavior: auto;
+  }
 }
 
 .journey-grid {

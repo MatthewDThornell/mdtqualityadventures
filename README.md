@@ -219,10 +219,10 @@ gets reordered or a new entry is inserted in the middle.
   pages' nav copies, same as the nav's labels/order/hrefs. The skip-link carries one too, for the
   same reason.
 - Primary buttons/CTAs (resume/letter downloads, LinkedIn/GitHub links, contact links, code-copy
-  buttons, TAU watch/hide toggles).
+  buttons, TAU watch/hide toggles, the mentee spotlight's prev/next arrows).
 - Every repeated card/row with no existing unique `id` and ambiguous or duplicate visible text
-  (timeline entries, accomplishment cards, recommendation cards, mentor/mentee cards, adventure
-  cards, TAU course rows, job cards).
+  (timeline entries, accomplishment cards, recommendation cards, mentor/mentee cards, mentee
+  spotlight slides, adventure cards, TAU course rows, job cards).
 - Dynamically-created elements (the career-trail list items built in `src/main.js`, the YouTube
   embed built in `src/test-automation-university.js`, the job cards and empty-state message built
   in `src/jobs.js`) — added at creation time via `element.dataset.testid = '...'`.

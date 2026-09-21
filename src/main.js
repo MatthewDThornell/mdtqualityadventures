@@ -3,6 +3,7 @@ import { initCoverScene } from './cover-scene.js';
 import { initTypewriter, brandSegment } from './typewriter.js';
 import { initHeroDecrypt } from './hero-decrypt.js';
 import { initQuoteRotator } from './quote-rotator.js';
+import { initSpotlight } from './spotlight.js';
 import {
   initScrollRibbon,
   initInkCursor,
@@ -18,6 +19,7 @@ initInkCursor(document.getElementById('inkCursor'));
 initInkTrail(document.getElementById('inkTrailCanvas'));
 initMagicWords();
 initHeroDecrypt(document.querySelector('[data-testid="hero-heading"]'));
+initSpotlight(document.querySelector('[data-testid="mentee-spotlight"]'));
 
 const coverCanvas = document.getElementById('cover-canvas');
 const coverScene = initCoverScene(coverCanvas, { skylineHeroSelector: '#top' });

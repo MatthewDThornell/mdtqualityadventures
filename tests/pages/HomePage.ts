@@ -96,6 +96,44 @@ export class HomePage extends BasePage {
     return this.page.getByTestId(`mentee-card-${personSlug}`);
   }
 
+  /** The horizontal "Where Are They Now?" story rail below the mentee grid. */
+  get menteeSpotlight(): Locator {
+    return this.page.getByTestId('mentee-spotlight');
+  }
+
+  spotlightCard(personSlug: string): Locator {
+    return this.page.getByTestId(`spotlight-card-${personSlug}`);
+  }
+
+  get spotlightTrack(): Locator {
+    return this.menteeSpotlight.locator('[data-spotlight-track]');
+  }
+
+  /**
+   * How far a slide's left edge sits from the rail's — 0 when that slide is the
+   * one snapped into place. Asserting this rather than toBeInViewport(), since
+   * these cards are tall enough to fall below the fold while still being the
+   * slide the rail is showing.
+   */
+  async spotlightSlideOffset(personSlug: string): Promise<number> {
+    const slide = await this.spotlightCard(personSlug).boundingBox();
+    const track = await this.spotlightTrack.boundingBox();
+    if (!slide || !track) return Number.NaN;
+    return Math.abs(slide.x - track.x);
+  }
+
+  get spotlightPrevBtn(): Locator {
+    return this.page.getByTestId('spotlight-prev');
+  }
+
+  get spotlightNextBtn(): Locator {
+    return this.page.getByTestId('spotlight-next');
+  }
+
+  get spotlightPager(): Locator {
+    return this.page.getByTestId('spotlight-pager');
+  }
+
   // --- Adventures ---
   adventureCard(slug: string): Locator {
     return this.page.getByTestId(`adventure-card-${slug}`);
