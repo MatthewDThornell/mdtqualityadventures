@@ -10,6 +10,7 @@ import {
   initInkTrail,
   initQuillCursor,
   initMagicWords,
+  initSiteNav,
 } from './chrome.js';
 
 document.getElementById('year').textContent = new Date().getFullYear();
@@ -201,48 +202,9 @@ document.addEventListener('visibilitychange', () => {
   }
 });
 
-const navToggle = document.getElementById('navToggle');
-const siteNav = document.getElementById('siteNav');
-const navDropdown = siteNav.querySelector('.nav-dropdown');
-const navDropdownToggle = navDropdown.querySelector('.nav-dropdown-toggle');
-
-function closeNavDropdown() {
-  navDropdown.classList.remove('open');
-  navDropdownToggle.setAttribute('aria-expanded', 'false');
-}
-
-navToggle.addEventListener('click', () => {
-  const isOpen = siteNav.classList.toggle('open');
-  navToggle.setAttribute('aria-expanded', String(isOpen));
-  if (!isOpen) closeNavDropdown();
-});
-
-// Click-toggled (not :hover-only) so "Resources" behaves the same on touch
-// and desktop — stopPropagation keeps this same click from immediately
-// reaching the document listener below and closing it again.
-navDropdownToggle.addEventListener('click', (event) => {
-  event.stopPropagation();
-  const isOpen = navDropdown.classList.toggle('open');
-  navDropdownToggle.setAttribute('aria-expanded', String(isOpen));
-});
-
-document.addEventListener('click', (event) => {
-  if (!navDropdown.contains(event.target)) closeNavDropdown();
-});
-
-navDropdown.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') {
-    closeNavDropdown();
-    navDropdownToggle.focus();
-  }
-});
-
-siteNav.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', () => {
-    siteNav.classList.remove('open');
-    navToggle.setAttribute('aria-expanded', 'false');
-    closeNavDropdown();
-  });
+initSiteNav({
+  nav: document.getElementById('siteNav'),
+  toggle: document.getElementById('navToggle'),
 });
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -274,8 +236,10 @@ if (prefersReducedMotion) {
   // since a "jump to section" click means the visitor is skipping the scroll-reveal anyway
   const chapterList = [...chapters];
   function revealChaptersUpTo(id) {
-    const target = document.getElementById(id);
-    const targetIndex = chapterList.indexOf(target);
+    // the target may sit inside a chapter rather than be one (#test-pilot is a
+    // card in Adventures) — the chapters to reveal are the ones before its own
+    const chapter = document.getElementById(id)?.closest('.chapter');
+    const targetIndex = chapterList.indexOf(chapter);
     if (targetIndex === -1) return;
     chapterList.slice(0, targetIndex).forEach((chapter) => {
       if (!chapter.classList.contains('in-view')) {

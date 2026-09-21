@@ -408,12 +408,15 @@ html.pen-active * {
   color: var(--brass-bright);
 }
 
-/* "Resources" nav dropdown — groups QA Standards/QA Courses/Jobs, the three
-   nav items that leave the page rather than scroll to an in-page section.
-   Click-toggled (not :hover-only) so it behaves the same on touch and desktop,
-   and so its open state can be driven/closed from JS (outside-click, Escape,
-   the hamburger collapsing). At the mobile breakpoint below, .nav-dropdown-menu
-   switches from a floating panel to an inline, indented sub-list. */
+/* Nav group dropdowns — the journal's three sections (The Professional / The
+   Person / The People), each folding its pages away behind a heading, with
+   Contact left standing on its own. Click-toggled (not :hover-only) so they
+   behave the same on touch and desktop, and so their open state can be driven
+   from JS (one open at a time, outside-click, Escape, the hamburger
+   collapsing) — see initSiteNav in src/chrome.js. At the mobile breakpoint
+   below, .nav-dropdown-menu switches from a floating panel to an inline,
+   indented sub-list, and the groups open expanded so the menu reads as a
+   contents page. */
 .nav-dropdown {
   position: relative;
   /* A plain block here lets the lone <button> child sit on its own
@@ -429,7 +432,9 @@ html.pen-active * {
   gap: 0.35em;
   font-family: var(--font-ui);
   font-size: 0.72rem;
-  font-weight: 500;
+  /* a notch heavier than the page links, so the group names read as the
+     journal's section headings and the links beneath them as its pages */
+  font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--parchment-dim);
@@ -440,7 +445,10 @@ html.pen-active * {
 }
 
 .nav-dropdown-toggle:hover,
-.nav-dropdown.open .nav-dropdown-toggle {
+.nav-dropdown.open .nav-dropdown-toggle,
+/* on QA Standards / QA Courses / Jobs, the group holding the current page
+   stays lit with the menu closed, so the header still says where you are */
+.nav-dropdown:has([aria-current='page']) .nav-dropdown-toggle {
   color: var(--brass-bright);
 }
 
@@ -480,6 +488,18 @@ html.pen-active * {
 
 .nav-dropdown-menu a:hover {
   background: rgba(var(--brass-rgb), 0.1);
+}
+
+.nav-dropdown-menu a[aria-current='page'] {
+  color: var(--brass-bright);
+}
+
+/* Separates a group's in-page sections from the entries that open their own
+   page (QA Standards, QA Courses, Jobs) */
+.nav-dropdown-rule {
+  border: 0;
+  border-top: 1px solid rgba(var(--brass-rgb), 0.2);
+  margin: 0.4rem 1.1rem;
 }
 
 .nav-toggle {
@@ -983,6 +1003,11 @@ html.pen-active .typewriter .tw-quill {
   scroll-margin-top: 80px;
 }
 
+/* The one card with its own nav link (The Person → Test Pilot) */
+#test-pilot {
+  scroll-margin-top: 96px;
+}
+
 .chapter-inner {
   display: grid;
   grid-template-columns: 3rem 1fr;
@@ -1036,11 +1061,22 @@ html.pen-active .typewriter .tw-quill {
   overflow: hidden;
   opacity: 0;
   transform-origin: left center;
-  transform: rotateY(-92deg);
   backface-visibility: hidden;
-  transition:
-    opacity 0.15s ease,
-    transform 1.15s cubic-bezier(0.2, 0.65, 0.2, 1);
+  transition: opacity 0.15s ease;
+}
+
+/* The page-turn runs as a keyframe animation rather than a transition from a
+   resting rotateY(-92deg), so an unrevealed page keeps honest, flat geometry:
+   a nav link or shared URL pointing at something *inside* a page (#test-pilot)
+   needs the browser to measure that target before the chapter has flipped
+   open, and measured through an edge-on 3D rotation it lands ~1400px off. */
+@keyframes page-turn {
+  from {
+    transform: rotateY(-92deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
 }
 
 .page::before {
@@ -1071,7 +1107,7 @@ html.pen-active .typewriter .tw-quill {
 
 .chapter.in-view .page {
   opacity: 1;
-  transform: rotateY(0deg);
+  animation: page-turn 1.15s cubic-bezier(0.2, 0.65, 0.2, 1) both;
 }
 
 .chapter.in-view .page::before {
@@ -2904,17 +2940,18 @@ html.pen-active .typewriter .tw-quill {
   opacity: 0.7;
 }
 
-/* Nav collapse: at 9 nav items, the header genuinely runs out of room for
-   the brand + nav on one line below ~1310px (measured: nav ~1032px + brand
-   ~204px + gap > the ~1312px a 1360px container has to give past its own
-   padding) — wider than the 1040px content breakpoint below, so this gets
-   its own threshold rather than sharing one and squeezing the brand into an
-   ugly 3-line wrap in that 1041-1300px gap. */
 @media (max-width: 1320px) {
   .opener-seal {
     display: none;
   }
+}
 
+/* Nav collapse: three group headings + Contact are ~444px wide, so the header
+   fits on one line well below the 1040px content breakpoint (measured at
+   760px: nav 444 + brand 113 + gap 24 leaves ~130px of the row to spare).
+   The hamburger therefore waits until just under tablet-portrait width, so
+   an iPad still gets the real nav — the old 9-link nav needed 1320px. */
+@media (max-width: 760px) {
   .nav-toggle {
     display: flex;
   }
@@ -2951,6 +2988,10 @@ html.pen-active .typewriter .tw-quill {
     border: none;
     box-shadow: none;
     padding: 0.35rem 0 0 1rem;
+  }
+
+  .nav-dropdown-rule {
+    margin: 0.3rem 1.1rem 0.3rem 0;
   }
 }
 
@@ -3316,6 +3357,7 @@ a.tau-course-name:hover {
 
   .page {
     transition: none;
+    animation: none;
     opacity: 1;
     transform: none !important;
   }

@@ -68,6 +68,14 @@ an inline comment at the top of its `<nav>` saying so. Shared _behavior_ (not ma
 `src/chrome.js` and is imported by each page's own entry script (`src/main.js`,
 `src/qa-standards.js`, `src/test-automation-university.js`, `src/jobs.js`).
 
+The nav is arranged like a journal's contents: three group dropdowns — **The Professional**
+(Professional Experience, Accomplishments, then the QA Standards / QA Courses / Jobs pages below a
+rule), **The Person** (About Me, Quality Adventures, Test Pilot) and **The People** (Mentors, The
+Quality Ripple, Recommendations) — with Contact standing alone. `initSiteNav` in `src/chrome.js`
+drives them: one group open at a time on desktop, all of them unfolded inside the hamburger menu
+so it reads as an outline, and outside-click/Escape to close. The sub-pages mark their own link
+`aria-current="page"`, which also lights the group heading holding it.
+
 ### Job listings
 
 `scripts/fetch-jobs.mjs` pulls QA/SDET/test-automation-relevant listings from four kinds of free,
@@ -215,8 +223,9 @@ gets reordered or a new entry is inserted in the middle.
 
 **What gets one:**
 
-- Every nav link, toggle, and the brand link — identical `data-testid` values across all four
-  pages' nav copies, same as the nav's labels/order/hrefs. The skip-link carries one too, for the
+- Every nav link, group toggle (`nav-professional-toggle`, `nav-person-toggle`,
+  `nav-people-toggle`), the hamburger, and the brand link — identical `data-testid` values across
+  all four pages' nav copies, same as the nav's groups/labels/order/hrefs. The skip-link carries one too, for the
   same reason.
 - Primary buttons/CTAs (resume/letter downloads, LinkedIn/GitHub links, contact links, code-copy
   buttons, TAU watch/hide toggles, the mentee spotlight's prev/next arrows).

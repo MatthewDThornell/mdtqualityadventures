@@ -19,8 +19,7 @@ test.describe('Integration — Cross-page navigation', () => {
       await home.goto();
 
       await test.step('When the QA Standards nav link is clicked from the homepage', async () => {
-        await home.openResourcesDropdown();
-        await home.navLink('qa-standards').click();
+        await (await home.revealNavLink('qa-standards')).click();
         await expect(page).toHaveURL(/\/qa-standards\.html$/);
         const standards = new QaStandardsPage(page);
         await expect.soft(standards.heading).toBeVisible();
@@ -42,8 +41,7 @@ test.describe('Integration — Cross-page navigation', () => {
       await home.goto();
 
       await test.step('When the TAU nav link is clicked from the homepage', async () => {
-        await home.openResourcesDropdown();
-        await home.navLink('tau').click();
+        await (await home.revealNavLink('tau')).click();
         await expect(page).toHaveURL(/\/test-automation-university\.html$/);
         const tau = new TauPage(page);
         await expect.soft(tau.heading).toBeVisible();
@@ -59,8 +57,7 @@ test.describe('Integration — Cross-page navigation', () => {
       await home.goto();
 
       await test.step('When the Jobs nav link is clicked from the homepage', async () => {
-        await home.openResourcesDropdown();
-        await home.navLink('jobs').click();
+        await (await home.revealNavLink('jobs')).click();
         await expect(page).toHaveURL(/\/jobs\.html$/);
         const jobs = new JobsPage(page);
         await expect.soft(jobs.heading).toBeVisible();
@@ -76,8 +73,7 @@ test.describe('Integration — Cross-page navigation', () => {
       await standards.goto();
 
       await test.step('When the TAU nav link is clicked from QA Standards', async () => {
-        await standards.openResourcesDropdown();
-        await standards.navLink('tau').click();
+        await (await standards.revealNavLink('tau')).click();
         await expect(page).toHaveURL(/\/test-automation-university\.html$/);
         const tau = new TauPage(page);
         await expect.soft(tau.heading).toBeVisible();
@@ -94,9 +90,33 @@ test.describe('Integration — Cross-page navigation', () => {
       await home.goto();
 
       await test.step('When the Professional Experience nav link is clicked', async () => {
-        await home.navLink('experience').click();
+        await (await home.revealNavLink('experience')).click();
         await expect(page).toHaveURL(/#experience$/);
         await expect.soft(page.locator('#experience')).toBeInViewport();
+      });
+    },
+  );
+
+  test(
+    'Test_Case_12005_Navigation_InPageAnchor_LandsOnTheTestPilotCard',
+    { tag: '@regression' },
+    async ({ page }) => {
+      const home = new HomePage(page);
+      await home.goto();
+
+      // The Test Pilot card is the one nav target that lives *inside* a chapter's
+      // page rather than being a chapter itself. Before the chapter reveals, the
+      // page used to rest at rotateY(-92deg), so the browser measured the card
+      // through an edge-on rotation and scrolled ~1400px past it — this pins the
+      // fix (the page-turn now runs as an animation from flat geometry).
+      await test.step('When the Test Pilot nav link is clicked, the card sits just below the header', async () => {
+        await (await home.revealNavLink('test-pilot')).click();
+        await expect(page).toHaveURL(/#test-pilot$/);
+        const card = page.locator('#test-pilot');
+        await expect(card).toBeInViewport();
+        await expect
+          .poll(async () => Math.round((await card.boundingBox())!.y), { timeout: 5_000 })
+          .toBeLessThan(140);
       });
     },
   );

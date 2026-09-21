@@ -1,6 +1,7 @@
-// Shared page chrome used identically across index.html, qa-standards.html, and
-// test-automation-university.html (see the nav-sync comment in each file's header
-// for why these three pages duplicate markup instead of sharing a template).
+// Shared page chrome used identically across index.html, qa-standards.html,
+// test-automation-university.html, and jobs.html (see the nav-sync comment in
+// each file's header for why these pages duplicate markup instead of sharing
+// a template).
 
 // Holding right-click swaps the system arrow for a quill-pen cursor (see the
 // html.pen-active rule in style.css), like dipping the pen to write. Requires
@@ -116,6 +117,76 @@ export function initScrollRibbon(fillEl) {
   });
   window.addEventListener('resize', update);
   update();
+}
+
+// The header nav: a hamburger that reveals the whole list at narrow widths,
+// and the journal-style group dropdowns (The Professional / The Person / The
+// People) inside it. Click-toggled rather than :hover-only so touch and desktop
+// behave the same, and so the open state can be driven from here — opening one
+// group closes the others, an outside click or Escape closes them, and any
+// link click collapses everything.
+//
+// At the hamburger width the groups open expanded, so the menu reads as a
+// contents page rather than three closed doors that each need a second tap;
+// the toggles still work there for anyone who wants to fold a group away.
+export function initSiteNav({ nav, toggle }) {
+  if (!nav || !toggle) return;
+
+  const groups = Array.from(nav.querySelectorAll('.nav-dropdown'));
+  const groupToggle = (group) => group.querySelector('.nav-dropdown-toggle');
+  const isMobileNav = () => getComputedStyle(toggle).display !== 'none';
+
+  const setGroup = (group, open) => {
+    group.classList.toggle('open', open);
+    groupToggle(group).setAttribute('aria-expanded', String(open));
+  };
+  const closeGroups = (except) => {
+    groups.forEach((group) => {
+      if (group !== except) setGroup(group, false);
+    });
+  };
+
+  const setMobileNav = (open) => {
+    nav.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    groups.forEach((group) => setGroup(group, open));
+  };
+
+  toggle.addEventListener('click', (event) => {
+    // keep this click from reaching the outside-click handler below, which
+    // would read the hamburger as "outside" and close what we just opened
+    event.stopPropagation();
+    setMobileNav(!nav.classList.contains('open'));
+  });
+
+  groups.forEach((group) => {
+    groupToggle(group).addEventListener('click', (event) => {
+      event.stopPropagation();
+      const open = !group.classList.contains('open');
+      // on desktop the groups are floating panels and only one belongs open
+      // at a time; in the mobile outline they're independent folds
+      if (open && !isMobileNav()) closeGroups(group);
+      setGroup(group, open);
+    });
+
+    group.addEventListener('keydown', (event) => {
+      if (event.key !== 'Escape' || !group.classList.contains('open')) return;
+      setGroup(group, false);
+      groupToggle(group).focus();
+    });
+  });
+
+  document.addEventListener('click', (event) => {
+    if (nav.contains(event.target)) return;
+    if (isMobileNav()) setMobileNav(false);
+    else closeGroups();
+  });
+
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      setMobileNav(false);
+    });
+  });
 }
 
 // A soft brass/teal glow that trails the mouse with a bit of lag — only while

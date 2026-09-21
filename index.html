@@ -56,37 +56,71 @@
         <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" data-testid="nav-toggle">
           <span></span><span></span><span></span>
         </button>
-        <!-- Keep this list, its order, its labels, and its data-testid values identical to the
-             .site-nav in qa-standards.html, test-automation-university.html, and jobs.html (those
-             copies use /# prefixes and carry aria-current="page" on their own link instead) —
-             these four pages don't share markup, so nothing else enforces it -->
+        <!-- Keep these groups, their order, their labels, and their data-testid values identical
+             to the .site-nav in qa-standards.html, test-automation-university.html, and jobs.html
+             (those copies use /# prefixes and carry aria-current="page" on their own link
+             instead) — these four pages don't share markup, so nothing else enforces it -->
         <nav class="site-nav" id="siteNav">
-          <a href="#experience" data-testid="nav-link-experience">Professional Experience</a>
-          <a href="#fieldnotes" data-testid="nav-link-accomplishments">Accomplishments</a>
           <div class="nav-dropdown">
             <button
               type="button"
               class="nav-dropdown-toggle"
               aria-haspopup="true"
               aria-expanded="false"
-              data-testid="nav-resources-toggle"
+              data-testid="nav-professional-toggle"
             >
-              Resources
+              The Professional
               <svg class="nav-dropdown-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false">
                 <path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </button>
             <div class="nav-dropdown-menu">
+              <a href="#experience" data-testid="nav-link-experience">Professional Experience</a>
+              <a href="#fieldnotes" data-testid="nav-link-accomplishments">Accomplishments</a>
+              <hr class="nav-dropdown-rule" />
               <a href="/qa-standards.html" data-testid="nav-link-qa-standards">QA Standards</a>
               <a href="/test-automation-university.html" data-testid="nav-link-tau">QA Courses</a>
               <a href="/jobs.html" data-testid="nav-link-jobs">Jobs</a>
             </div>
           </div>
-          <a href="#letters" data-testid="nav-link-recommendations">Recommendations</a>
-          <a href="#origins" data-testid="nav-link-about-me">About Me</a>
-          <a href="#mentors" data-testid="nav-link-mentors">Mentors</a>
-          <a href="#mentees" data-testid="nav-link-mentees">Mentees</a>
-          <a href="#volunteer" data-testid="nav-link-adventures">Adventures</a>
+          <div class="nav-dropdown">
+            <button
+              type="button"
+              class="nav-dropdown-toggle"
+              aria-haspopup="true"
+              aria-expanded="false"
+              data-testid="nav-person-toggle"
+            >
+              The Person
+              <svg class="nav-dropdown-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false">
+                <path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="#origins" data-testid="nav-link-about-me">About Me</a>
+              <a href="#volunteer" data-testid="nav-link-adventures">Quality Adventures</a>
+              <a href="#test-pilot" data-testid="nav-link-test-pilot">Test Pilot</a>
+            </div>
+          </div>
+          <div class="nav-dropdown">
+            <button
+              type="button"
+              class="nav-dropdown-toggle"
+              aria-haspopup="true"
+              aria-expanded="false"
+              data-testid="nav-people-toggle"
+            >
+              The People
+              <svg class="nav-dropdown-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false">
+                <path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="#mentors" data-testid="nav-link-mentors">Mentors</a>
+              <a href="#mentees" data-testid="nav-link-mentees">The Quality Ripple</a>
+              <a href="#letters" data-testid="nav-link-recommendations">Recommendations</a>
+            </div>
+          </div>
           <a href="#contact" data-testid="nav-link-contact">Contact</a>
         </nav>
       </div>
@@ -1350,7 +1384,7 @@
           <div class="waypoint">2.4</div>
           <div class="page page-wide">
             <p class="chapter-label">Chapter 2 &middot; Page 4</p>
-            <h2>Adventures</h2>
+            <h2>Quality Adventures</h2>
             <p class="chapter-intro">Quality doesn&rsquo;t clock out. Here&rsquo;s where I chase it outside of work.</p>
 
             <h3 class="origin-subhead">Volunteering</h3>
@@ -1377,7 +1411,7 @@
 
             <h3 class="origin-subhead">Other Quality Adventures</h3>
             <div class="adventure-stack">
-              <article class="card adventure" data-testid="adventure-card-patricks-test-pilot">
+              <article class="card adventure" id="test-pilot" data-testid="adventure-card-patricks-test-pilot">
                 <div class="adventure-media">
                   <img src="/images/patricks-logo.jpg" alt="Patrick's" loading="lazy" />
                 </div>

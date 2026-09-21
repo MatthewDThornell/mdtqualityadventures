@@ -14,29 +14,39 @@ test.describe('Home — Nav', () => {
       const home = new HomePage(page);
       await home.goto();
 
-      await test.step('Then the brand link and every nav link are visible', async () => {
+      await test.step('Then the brand link, the three group headings, and Contact are visible', async () => {
         await expect.soft(home.navBrand).toBeVisible();
-        // qa-standards/tau/jobs live inside the "Resources" dropdown, hidden
-        // until opened — see Test_Case_1002 for its own open/close coverage
-        await home.openResourcesDropdown();
-        for (const section of [
-          'experience',
-          'accomplishments',
-          'qa-standards',
-          'tau',
-          'jobs',
-          'recommendations',
-          'about-me',
-          'mentors',
-          'mentees',
-          'adventures',
-          'contact',
-        ] as const) {
-          await expect.soft(home.navLink(section)).toBeVisible();
+        await expect.soft(home.navGroupToggle('professional')).toHaveText('The Professional');
+        await expect.soft(home.navGroupToggle('person')).toHaveText('The Person');
+        await expect.soft(home.navGroupToggle('people')).toHaveText('The People');
+        await expect.soft(home.navLink('contact')).toBeVisible();
+      });
+
+      await test.step('Then each group folds out its own pages, in order', async () => {
+        // the nav is hand-duplicated across four pages (README.md#automation-ids),
+        // so the grouping and labels are asserted here, not just the hrefs
+        const groups = [
+          {
+            group: 'professional',
+            labels: [
+              'Professional Experience',
+              'Accomplishments',
+              'QA Standards',
+              'QA Courses',
+              'Jobs',
+            ],
+          },
+          { group: 'person', labels: ['About Me', 'Quality Adventures', 'Test Pilot'] },
+          { group: 'people', labels: ['Mentors', 'The Quality Ripple', 'Recommendations'] },
+        ] as const;
+        for (const { group, labels } of groups) {
+          await home.openNavGroup(group);
+          await expect.soft(home.navGroupMenu(group).getByRole('link')).toHaveText([...labels]);
         }
       });
 
       await test.step('Then the QA Standards, TAU, and Jobs links point at real pages', async () => {
+        await home.openNavGroup('professional');
         await expect
           .soft(home.navLink('qa-standards'))
           .toHaveAttribute('href', '/qa-standards.html');
@@ -50,11 +60,12 @@ test.describe('Home — Nav', () => {
         const inPageLinks: Array<[Parameters<typeof home.navLink>[0], string]> = [
           ['experience', '#experience'],
           ['accomplishments', '#fieldnotes'],
-          ['recommendations', '#letters'],
           ['about-me', '#origins'],
+          ['adventures', '#volunteer'],
+          ['test-pilot', '#test-pilot'],
           ['mentors', '#mentors'],
           ['mentees', '#mentees'],
-          ['adventures', '#volunteer'],
+          ['recommendations', '#letters'],
           ['contact', '#contact'],
         ];
         for (const [section, hash] of inPageLinks) {
@@ -77,49 +88,83 @@ test.describe('Home — Nav', () => {
         await expect.soft(home.navToggle).toHaveAttribute('aria-expanded', 'false');
       });
 
-      await test.step('When the toggle is clicked, the nav opens', async () => {
+      await test.step('When the toggle is clicked, the nav opens as a full outline with every group unfolded', async () => {
         await home.openMobileNav();
         await expect.soft(home.navToggle).toHaveAttribute('aria-expanded', 'true');
+        for (const group of ['professional', 'person', 'people'] as const) {
+          await expect.soft(home.navGroupToggle(group)).toHaveAttribute('aria-expanded', 'true');
+        }
+        await expect.soft(home.navLink('experience')).toBeVisible();
+        await expect.soft(home.navLink('test-pilot')).toBeVisible();
+        await expect.soft(home.navLink('recommendations')).toBeVisible();
         await expect.soft(home.navLink('contact')).toBeVisible();
+      });
+
+      await test.step('When a group heading is tapped, only that group folds away', async () => {
+        await home.openNavGroup('person');
+        await expect.soft(home.navGroupToggle('person')).toHaveAttribute('aria-expanded', 'false');
+        await expect.soft(home.navLink('about-me')).not.toBeVisible();
+        await expect.soft(home.navGroupToggle('people')).toHaveAttribute('aria-expanded', 'true');
+        await expect.soft(home.navLink('mentors')).toBeVisible();
       });
 
       await test.step('When a nav link is clicked, the mobile nav closes again', async () => {
         await home.navLink('contact').click();
         await expect.soft(home.navToggle).toHaveAttribute('aria-expanded', 'false');
       });
+
+      await test.step('When the nav is open and a tap lands outside it, it closes', async () => {
+        await home.openMobileNav();
+        await expect.soft(home.navToggle).toHaveAttribute('aria-expanded', 'true');
+        await page.mouse.click(240, 850);
+        await expect.soft(home.navToggle).toHaveAttribute('aria-expanded', 'false');
+      });
     },
   );
 
   test(
-    'Test_Case_1002_Home_ResourcesDropdown_OpensAndCloses',
+    'Test_Case_1002_Home_NavGroups_OpenOneAtATimeAndClose',
     { tag: '@smoke' },
     async ({ page }) => {
       const home = new HomePage(page);
       await home.goto();
 
-      await test.step('Given the Resources dropdown starts closed', async () => {
-        await expect.soft(home.navResourcesToggle).toHaveAttribute('aria-expanded', 'false');
+      await test.step('Given every group starts closed', async () => {
+        for (const group of ['professional', 'person', 'people'] as const) {
+          await expect.soft(home.navGroupToggle(group)).toHaveAttribute('aria-expanded', 'false');
+        }
         await expect.soft(home.navLink('qa-standards')).not.toBeVisible();
       });
 
-      await test.step('When the toggle is clicked, it opens and reveals QA Standards, QA Courses, and Jobs', async () => {
-        await home.openResourcesDropdown();
-        await expect.soft(home.navResourcesToggle).toHaveAttribute('aria-expanded', 'true');
-        await expect.soft(home.navLink('qa-standards')).toBeVisible();
-        await expect.soft(home.navLink('tau')).toBeVisible();
+      await test.step('When The Professional is opened, it reveals its pages', async () => {
+        await home.openNavGroup('professional');
+        await expect
+          .soft(home.navGroupToggle('professional'))
+          .toHaveAttribute('aria-expanded', 'true');
+        await expect.soft(home.navLink('experience')).toBeVisible();
         await expect.soft(home.navLink('jobs')).toBeVisible();
       });
 
-      await test.step('When Escape is pressed, it closes and returns focus to the toggle', async () => {
+      await test.step('When The People is opened, The Professional closes — one group at a time', async () => {
+        await home.openNavGroup('people');
+        await expect.soft(home.navGroupToggle('people')).toHaveAttribute('aria-expanded', 'true');
+        await expect.soft(home.navLink('mentors')).toBeVisible();
+        await expect
+          .soft(home.navGroupToggle('professional'))
+          .toHaveAttribute('aria-expanded', 'false');
+        await expect.soft(home.navLink('jobs')).not.toBeVisible();
+      });
+
+      await test.step('When Escape is pressed, it closes and returns focus to its heading', async () => {
         await page.keyboard.press('Escape');
-        await expect.soft(home.navResourcesToggle).toHaveAttribute('aria-expanded', 'false');
-        await expect.soft(home.navResourcesToggle).toBeFocused();
+        await expect.soft(home.navGroupToggle('people')).toHaveAttribute('aria-expanded', 'false');
+        await expect.soft(home.navGroupToggle('people')).toBeFocused();
       });
 
       await test.step('When open and a click lands outside it, it closes again', async () => {
-        await home.openResourcesDropdown();
+        await home.openNavGroup('person');
         await home.navBrand.click();
-        await expect.soft(home.navResourcesToggle).toHaveAttribute('aria-expanded', 'false');
+        await expect.soft(home.navGroupToggle('person')).toHaveAttribute('aria-expanded', 'false');
       });
     },
   );

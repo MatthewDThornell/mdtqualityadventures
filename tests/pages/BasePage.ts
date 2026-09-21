@@ -11,7 +11,25 @@ export type NavSection =
   | 'mentors'
   | 'mentees'
   | 'adventures'
+  | 'test-pilot'
   | 'contact';
+
+/** The nav's three journal-style groups; every NavSection except 'contact' lives inside one. */
+export type NavGroup = 'professional' | 'person' | 'people';
+
+export const NAV_GROUP_OF: Record<Exclude<NavSection, 'contact'>, NavGroup> = {
+  experience: 'professional',
+  accomplishments: 'professional',
+  'qa-standards': 'professional',
+  tau: 'professional',
+  jobs: 'professional',
+  'about-me': 'person',
+  adventures: 'person',
+  'test-pilot': 'person',
+  mentors: 'people',
+  mentees: 'people',
+  recommendations: 'people',
+};
 
 /**
  * Shared by every page object below. The header/nav markup is duplicated
@@ -50,17 +68,25 @@ export class BasePage {
     await this.navToggle.click();
   }
 
-  get navResourcesToggle(): Locator {
-    return this.page.getByTestId('nav-resources-toggle');
+  navGroupToggle(group: NavGroup): Locator {
+    return this.page.getByTestId(`nav-${group}-toggle`);
   }
 
-  get navResourcesMenu(): Locator {
-    return this.page.locator('.nav-dropdown-menu');
+  navGroupMenu(group: NavGroup): Locator {
+    return this.navGroupToggle(group).locator('xpath=..').locator('.nav-dropdown-menu');
   }
 
-  /** Opens the "Resources" dropdown (QA Standards / QA Courses / Jobs) — its
-   * links are hidden until this is clicked, at every viewport width. */
-  async openResourcesDropdown(): Promise<void> {
-    await this.navResourcesToggle.click();
+  /** Opens one of the nav's group dropdowns — every link but Contact is hidden
+   * inside one until its group is opened. At desktop widths opening a group
+   * closes whichever other group was open. */
+  async openNavGroup(group: NavGroup): Promise<void> {
+    await this.navGroupToggle(group).click();
+  }
+
+  /** Opens the group a section lives in, then returns that section's link,
+   * ready to click — the common "navigate via the header" step. */
+  async revealNavLink(section: Exclude<NavSection, 'contact'>): Promise<Locator> {
+    await this.openNavGroup(NAV_GROUP_OF[section]);
+    return this.navLink(section);
   }
 }
