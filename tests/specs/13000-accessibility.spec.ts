@@ -106,23 +106,36 @@ test.describe('Accessibility', () => {
     async ({ page }) => {
       // No page.waitForTimeout: rather than sleeping and diffing two canvas
       // snapshots, hook requestAnimationFrame before cover-scene.js's module
-      // script runs and assert it's never called. cover-scene.js draws one
-      // static frame directly (not via rAF) when prefers-reduced-motion is
-      // set, and only its own start() would ever schedule a frame — so a
-      // zero count here is a direct, race-free proof the loop never started.
+      // script runs and count frames scheduled from *inside* another frame's
+      // callback — the signature of an animation loop (draw → rAF(draw) →
+      // …) and of nothing else. cover-scene.js draws one static frame
+      // directly when prefers-reduced-motion is set, so a zero count is a
+      // direct, race-free proof its loop never started. Plain one-off frames
+      // are ignored: scroll handlers (the scroll ribbon, the chapter nav, the
+      // mentee spotlight's snap rail, which fires a scroll event on load)
+      // throttle through a single rAF that never re-schedules itself.
       await page.emulateMedia({ reducedMotion: 'reduce' });
       await page.addInitScript(() => {
-        (window as unknown as { __rafCalls: number }).__rafCalls = 0;
+        const w = window as unknown as { __rafCalls: number };
+        w.__rafCalls = 0;
+        let insideFrame = false;
         const raf = window.requestAnimationFrame.bind(window);
         window.requestAnimationFrame = (cb) => {
-          (window as unknown as { __rafCalls: number }).__rafCalls++;
-          return raf(cb);
+          if (insideFrame) w.__rafCalls++;
+          return raf((time) => {
+            insideFrame = true;
+            try {
+              cb(time);
+            } finally {
+              insideFrame = false;
+            }
+          });
         };
       });
       const home = new HomePage(page);
       await home.goto();
 
-      await test.step('Then the hero canvas renders once directly, with no animation frame ever scheduled', async () => {
+      await test.step('Then the hero canvas renders once directly, with no animation loop ever scheduled', async () => {
         const canvas = page.locator('canvas').first();
         await expect.soft(canvas).toBeVisible();
         const rafCalls = await page.evaluate(
