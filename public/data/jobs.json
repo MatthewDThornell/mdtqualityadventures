@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-21T20:49:18.938Z",
+  "fetchedAt": "2026-09-21T21:10:26.972Z",
   "jobs": [
     {
       "id": "greenhouse-roblox-8069987",
@@ -91,32 +91,6 @@
       "location": "Parsdorf, Bavaria",
       "country": "Other",
       "postedAt": "2026-09-20T20:55:17.000Z"
-    },
-    {
-      "id": "arbeitnow-werkstudent-quality-assurance-medizinalcannabis-koln-488687",
-      "title": "Werkstudent Quality Assurance (m/w/d) - Medizinalcannabis",
-      "company": "Semdor Pharma Group GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/werkstudent-quality-assurance-medizinalcannabis-koln-488687",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Köln",
-      "country": "Germany",
-      "postedAt": "2026-09-20T14:09:19.000Z"
-    },
-    {
-      "id": "arbeitnow-head-of-quality-assurance-koln-204677",
-      "title": "Head of Quality Assurance (m/w/d)",
-      "company": "Semdor Pharma Group GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/head-of-quality-assurance-koln-204677",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Köln",
-      "country": "Germany",
-      "postedAt": "2026-09-20T14:09:19.000Z"
     },
     {
       "id": "arbeitnow-robotics-test-engineer-quality-safety-munich-bavaria-367537",
