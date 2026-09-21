@@ -7,7 +7,7 @@ import { HomePage } from '../pages/HomePage';
 // manager can click through and verify the person is real — a dead or
 // missing LinkedIn link quietly kills that trust.
 test.describe('Recommendations', () => {
-  const SLUGS = [
+  const LETTER_AUTHORS = [
     'nathan-gearke',
     'samantha-reynolds',
     'ronald-white',
@@ -28,7 +28,7 @@ test.describe('Recommendations', () => {
       await home.goto();
 
       await test.step('Then every recommendation card is visible with a linked-in name', async () => {
-        for (const slug of SLUGS) {
+        for (const slug of LETTER_AUTHORS) {
           const card = home.recCard(slug);
           await expect.soft(card).toBeVisible();
           await expect
@@ -49,7 +49,7 @@ test.describe('Recommendations', () => {
       await home.goto();
 
       await test.step('Then every card has a non-empty title and quote', async () => {
-        for (const slug of SLUGS) {
+        for (const slug of LETTER_AUTHORS) {
           const card = home.recCard(slug);
           await expect.soft(card.locator('.rec-title')).not.toBeEmpty();
           await expect.soft(card.locator('blockquote')).not.toBeEmpty();
@@ -159,34 +159,51 @@ test.describe('Recommendations', () => {
           .toHaveCSS('color', 'rgb(243, 234, 217)');
       });
 
-      await test.step("Then Quaid's card reads as failed from the start, its report already written", async () => {
+      await test.step('Then both incident cards read as their outcome from the start, reports already written', async () => {
         await expect.soft(home.recCard('quaid')).not.toHaveAttribute('data-status', /./);
         await expect.soft(home.quaidReport).not.toHaveClass(/is-typing/);
         await expect.soft(home.quaidGeneratedTest).toContainText('Test_Case_4004');
+        await expect.soft(home.recCard('anonymous-user')).not.toHaveAttribute('data-status', /./);
+        await expect.soft(home.incidentReport('anonymous')).not.toHaveClass(/is-typing/);
+        await expect.soft(home.incidentGeneratedTest('anonymous')).toContainText('Test_Case_4006');
       });
     },
   );
 
   // What It Tests: A recommendation card only ever belongs to a real person.
   // Why It Matters: Quaid is a mannequin with 99+ years of experience — if he
-  // can get a card, so can any bug that dresses the part. This is the test his
-  // card types out on the page, word for word; it has to exist for that to be
-  // honest.
+  // can get a card, so can any bug that dresses the part.
   test(
     'Test_Case_4004_Recommendations_Quaid_IsNotAHuman',
-    { tag: '@smoke' },
+    { tag: ['@smoke', '@data-integrity'] },
     async ({ page, request }) => {
       const home = new HomePage(page);
-      await home.goto();
+      const quaid = home.recCard('quaid');
 
-      await test.step('Ensure that Quaid, who is not a human, does not show up in recommendations', async () => {
-        await expect(home.recCard('quaid')).toHaveClass(/rec-card-failed/);
-        await expect(home.recommendationLetters).toHaveCount(10);
+      await test.step('Given the Recommendations chapter has loaded', async () => {
+        await home.goto();
+        await expect(home.recommendationLetters.first()).toBeVisible();
+      });
+
+      await test.step('Then Quaid carries the failed verdict, and is not counted as a letter', async () => {
+        await expect(quaid, 'a card with no human behind it must fail').toHaveClass(
+          /rec-card-failed/,
+        );
+        await expect(quaid, 'his outcome is declared in the markup, not inferred').toHaveAttribute(
+          'data-outcome',
+          'fail',
+        );
+        await expect(
+          home.recommendationLetters,
+          'only the people who wrote one are letters',
+        ).toHaveCount(LETTER_AUTHORS.length);
       });
 
       await test.step('And the API has no record of him', async () => {
-        const res = await request.get('/api/humans/quaid');
-        expect(res.status()).toBe(404);
+        const response = await request.get('/api/humans/quaid');
+        expect(response.status(), 'a human record for a mannequin is a data-integrity bug').toBe(
+          404,
+        );
       });
     },
   );
@@ -223,14 +240,98 @@ test.describe('Recommendations', () => {
         await expect(home.quaidReport).toHaveClass(/is-complete/, { timeout: 30_000 });
         await expect
           .soft(home.quaidGeneratedTest)
-          .toContainText(
-            'Ensure that Quaid, who is not a human, does not show up in recommendations',
-          );
+          .toContainText('Then Quaid carries the failed verdict, and is not counted as a letter');
         await expect
           .soft(home.quaidGeneratedTest)
           .toContainText("request.get('/api/humans/quaid')");
         await expect
           .soft(page.getByTestId('quaid-log-done').getByRole('link'))
+          .toHaveAttribute('href', /tests\/specs\/4000-recommendations\.spec\.ts$/);
+      });
+    },
+  );
+
+  // What It Tests: An unidentified author can never hold a recommendation, and
+  // the site takes no recommendation from one.
+  // Why It Matters: A recommendation is worth exactly what its author's name is
+  // worth. An anonymous one is an open door for anyone to write their own.
+  test(
+    'Test_Case_4006_Recommendations_AnonymousUser_IsBlocked',
+    { tag: ['@smoke', '@security'] },
+    async ({ page, request }) => {
+      const home = new HomePage(page);
+      const anonymous = home.recCard('anonymous-user');
+
+      await test.step('Given the Recommendations chapter has loaded', async () => {
+        await home.goto();
+        await expect(home.recommendationLetters.first()).toBeVisible();
+      });
+
+      await test.step('Then the unidentified author is blocked, with no identity to link', async () => {
+        await expect(
+          anonymous,
+          'an author with no identity is blocked, not merely failed',
+        ).toHaveClass(/rec-card-blocked/);
+        await expect(
+          anonymous.locator('.rec-link-linkedin'),
+          'no identity, no profile to link',
+        ).toHaveCount(0);
+        await expect(
+          home.recommendationLetters,
+          'only named authors are counted as letters',
+        ).toHaveCount(LETTER_AUTHORS.length);
+      });
+
+      await test.step('And an anonymous submission is refused at the door', async () => {
+        const response = await request.post('/api/recommendations', {
+          data: { author: 'Anonymous User', text: 'Trust me.' },
+        });
+        expect(
+          response.status(),
+          'nothing on this site accepts an unauthorized author',
+        ).toBeGreaterThanOrEqual(400);
+      });
+    },
+  );
+
+  test(
+    'Test_Case_4007_Recommendations_AnonymousUser_IsBlockedAndWritesItsOwnTestCase',
+    { tag: '@regression' },
+    async ({ page }) => {
+      const home = new HomePage(page);
+      await home.goto();
+      const card = home.recCard('anonymous-user');
+
+      await test.step("Given their verdict is pending like everyone else's", async () => {
+        await expect.soft(card).toHaveAttribute('data-status', 'pending');
+        await expect.soft(home.incidentReport('anonymous')).toBeHidden();
+      });
+
+      await test.step('When the card scrolls into view, the decrypt blocks them', async () => {
+        await card.scrollIntoViewIfNeeded();
+        await expect(card).toHaveAttribute('data-status', 'blocked', { timeout: 10_000 });
+        await expect.soft(card.locator('blockquote p')).toContainText('Unauthorized');
+      });
+
+      await test.step('Then the security protocol runs, recording and blocking the IP', async () => {
+        await expect(page.getByTestId('anonymous-log-blocked')).toBeVisible();
+        await expect(
+          home.incidentReport('anonymous').locator('.qa-line', { hasText: 'User IP blocked' }),
+        ).toBeVisible({
+          timeout: 10_000,
+        });
+      });
+
+      await test.step('Then it writes the security test case above, and links the spec it lives in', async () => {
+        await expect(home.incidentReport('anonymous')).toHaveClass(/is-complete/, {
+          timeout: 30_000,
+        });
+        await expect.soft(home.incidentGeneratedTest('anonymous')).toContainText('Test_Case_4006');
+        await expect
+          .soft(home.incidentGeneratedTest('anonymous'))
+          .toContainText("request.post('/api/recommendations'");
+        await expect
+          .soft(page.getByTestId('anonymous-log-done').getByRole('link'))
           .toHaveAttribute('href', /tests\/specs\/4000-recommendations\.spec\.ts$/);
       });
     },

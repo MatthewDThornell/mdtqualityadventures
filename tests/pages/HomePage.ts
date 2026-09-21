@@ -83,16 +83,25 @@ export class HomePage extends BasePage {
    * (the mentees' "In Their Own Words" grid reuses the same card), not
    * counting the one card that fails on purpose — Quaid never wrote one. */
   get recommendationLetters(): Locator {
-    return this.page.locator('#letters .rec-card:not(.rec-card-failed)');
+    return this.page.locator('#letters .rec-card:not([data-outcome])');
   }
 
-  /** Quaid's investigation — the log and the generated test under his card. */
+  /** An incident card's investigation — the log and the generated test
+   * under it. Quaid (fails) and the Anonymous User (blocked) each have one. */
+  incidentReport(slug: 'quaid' | 'anonymous'): Locator {
+    return this.page.getByTestId(`${slug}-report`);
+  }
+
+  incidentGeneratedTest(slug: 'quaid' | 'anonymous'): Locator {
+    return this.page.getByTestId(`${slug}-generated-test`);
+  }
+
   get quaidReport(): Locator {
-    return this.page.getByTestId('quaid-report');
+    return this.incidentReport('quaid');
   }
 
   get quaidGeneratedTest(): Locator {
-    return this.page.getByTestId('quaid-generated-test');
+    return this.incidentGeneratedTest('quaid');
   }
 
   // --- About Me ---

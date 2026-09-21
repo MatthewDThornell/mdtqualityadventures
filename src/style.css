@@ -15,8 +15,9 @@
      (CODE_HIGHLIGHT in src/cover-scene.js) — the glow colour of anything
      that borrows the rain's look, like the recommendation cards */
   --code-rgb: 150, 210, 185;
-  /* the one verdict that isn't a pass — Quaid's card, and nothing else */
+  /* the verdicts that aren't a pass: Quaid fails, the Anonymous User is blocked */
   --fail-rgb: 226, 96, 96;
+  --blocked-rgb: 242, 150, 60;
   --teal-bright: #6b9c89;
   --panel: #1b212b;
   --panel-border: rgba(var(--brass-rgb), 0.16);
@@ -1719,9 +1720,9 @@ html.pen-active .typewriter .tw-quill {
   padding: 0.3rem 0.7rem;
 }
 
-/* The kit as logos: each tool is its mark on a parchment tile, a size up
-   from the 22px chips elsewhere so the marks read at a glance; the name
-   lives on as the image's alt and tooltip. Brand-colored SVGs from
+/* The kit as logos: each tool is its mark on an ink tile, a size up from
+   the 22px chips elsewhere so the marks read at a glance; the name lives
+   on as the image's alt and tooltip. Brand-colored SVGs from
    public/images/logos/tech. */
 .tags-kit {
   gap: 0.55rem;
@@ -1740,7 +1741,11 @@ html.pen-active .typewriter .tw-quill {
   height: 42px;
   padding: 7px;
   border-radius: 9px;
-  background: var(--parchment);
+  /* ink tiles with a hairline, like the rest of the dark chrome — the
+     brand colours carry on ink; Robot Framework's black mark uses its
+     parchment variant here */
+  background: var(--ink);
+  border: 1px solid rgba(var(--code-rgb), 0.22);
   object-fit: contain;
   transition:
     transform 0.2s ease,
@@ -2781,6 +2786,81 @@ html.pen-active .typewriter .tw-quill {
   color: rgb(var(--fail-rgb));
 }
 
+/* The blocked card (the Anonymous User): the failed card's treatment in a
+   security orange, with a lock-out glyph and no identity behind the avatar */
+.rec-card-blocked {
+  column-span: all;
+}
+
+.rec-card-blocked:not([data-status='pending']) {
+  border-color: rgba(var(--blocked-rgb), 0.45);
+  background:
+    radial-gradient(circle at 0% 0%, rgba(var(--blocked-rgb), 0.12), transparent 55%),
+    repeating-linear-gradient(0deg, transparent 0 3px, rgba(var(--blocked-rgb), 0.035) 3px 4px),
+    var(--ink);
+}
+
+.rec-card-blocked:not([data-status='pending']):hover {
+  border-color: rgba(var(--blocked-rgb), 0.75);
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.4),
+    0 0 28px rgba(var(--blocked-rgb), 0.2),
+    0 18px 36px rgba(0, 0, 0, 0.45);
+}
+
+.rec-card-blocked:not([data-status='pending'])::before,
+.rec-card-blocked:not([data-status='pending']):hover::before {
+  content: 'BLOCKED \2298';
+  color: rgb(var(--blocked-rgb));
+  border-color: rgba(var(--blocked-rgb), 0.55);
+  background: rgba(var(--blocked-rgb), 0.1);
+  box-shadow: 0 0 12px rgba(var(--blocked-rgb), 0.35);
+  animation: none;
+}
+
+.rec-card-blocked:not([data-status='pending']) .rec-title {
+  color: rgba(var(--blocked-rgb), 0.85);
+}
+
+.rec-card-blocked blockquote p,
+.rec-card-blocked .qd-char.is-locked {
+  color: rgb(var(--blocked-rgb));
+}
+
+.rec-card-blocked .rec-signature-label {
+  color: rgba(var(--blocked-rgb), 0.6);
+}
+
+.rec-card-blocked .rec-signature-name {
+  color: rgb(var(--blocked-rgb));
+  text-shadow: 0 0 10px rgba(var(--blocked-rgb), 0.5);
+}
+
+.rec-card-blocked .rec-link.is-missing {
+  color: rgba(var(--blocked-rgb), 0.8);
+}
+
+/* no photo, because no one: a silhouette in the card's own colour */
+.rec-avatar-anonymous {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(var(--blocked-rgb), 0.1);
+  border-color: rgba(var(--blocked-rgb), 0.6);
+  color: rgba(var(--blocked-rgb), 0.85);
+}
+
+.rec-avatar-anonymous svg {
+  width: 62%;
+  height: 62%;
+}
+
+.rec-card-blocked[data-status='pending'] .rec-avatar-anonymous {
+  border-color: rgba(var(--brass-bright-rgb), 0.6);
+  color: rgba(var(--brass-bright-rgb), 0.7);
+  background: rgba(var(--brass-bright-rgb), 0.08);
+}
+
 .rec-card-failed .rec-signature-label {
   color: rgba(var(--fail-rgb), 0.6);
 }
@@ -2828,6 +2908,11 @@ html.pen-active .typewriter .tw-quill {
 
 .qa-fail {
   color: rgb(var(--fail-rgb));
+  font-weight: 600;
+}
+
+.qa-blocked {
+  color: rgb(var(--blocked-rgb));
   font-weight: 600;
 }
 
@@ -2939,12 +3024,14 @@ html.pen-active .typewriter .tw-quill {
    Each carries its name as a tooltip and an aria-label. --- */
 .rec-links {
   grid-column: 1 / -1;
-  grid-row: 5;
+  grid-row: 6;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.6rem;
-  margin: 0.9rem 0 0;
+  gap: 0.7rem;
+  margin: 0.75rem 0 0;
+  padding-top: 0.7rem;
+  border-top: 1px dashed rgba(var(--code-rgb), 0.18);
 }
 
 .rec-link {
@@ -2995,6 +3082,14 @@ a.rec-link:hover {
   color: rgba(var(--fail-rgb), 0.75);
 }
 
+/* a mark with nothing to point at yet: there, but dimmed, so the row reads
+   the same on every card and lights up as links are added */
+.rec-link.is-placeholder {
+  color: var(--parchment-dim);
+  opacity: 0.28;
+  cursor: default;
+}
+
 /* Signed at the foot: the trailer's label in the rain's mono, the name in
    the site's handwriting, teal and glowing. While the verdict is pending
    the name is unwritten; when the decrypt lands it writes itself in, left
@@ -3005,7 +3100,6 @@ a.rec-link:hover {
   grid-column: 1 / -1;
   grid-row: 5;
   justify-self: end;
-  align-self: end;
   display: flex;
   align-items: baseline;
   gap: 0.45rem;
@@ -3490,11 +3584,6 @@ a.rec-link:hover {
 
   .rec-card h3 {
     padding-right: 0;
-  }
-
-  .rec-signature {
-    grid-row: 6;
-    margin-top: 0.5rem;
   }
 
   .adventure {

@@ -6,7 +6,7 @@ import { initQuoteRotator } from './quote-rotator.js';
 import { initSpotlight } from './spotlight.js';
 import { initFigures } from './figures.js';
 import { initQuoteDecrypt } from './quote-decrypt.js';
-import { initQuaidReport } from './quaid-report.js';
+import { initIncidentReport } from './incident-report.js';
 import {
   initScrollRibbon,
   initInkCursor,
@@ -26,8 +26,8 @@ initMagicWords();
 initHeroDecrypt(document.querySelector('[data-testid="hero-heading"]'));
 initSpotlight(document.querySelector('[data-testid="mentee-spotlight"]'));
 initFigures(document.querySelector('[data-testid="figures"]'));
-// the report listens for the decrypt's verdict, so it must be wired before the decrypt starts
-initQuaidReport(document.querySelector('[data-testid="rec-card-quaid"]'));
+// the reports listen for the decrypt's verdict, so they must be wired before the decrypt starts
+document.querySelectorAll('.rec-card[data-outcome]').forEach(initIncidentReport);
 initQuoteDecrypt(document.querySelectorAll('.rec-card blockquote p'));
 
 const coverCanvas = document.getElementById('cover-canvas');

@@ -1,8 +1,10 @@
-// Quaid's card is the one recommendation that fails on purpose. Once its
-// quote has "decrypted" into an error (src/quote-decrypt.js flips the card's
-// data-status to fail and fires quote-decrypted), this types out the
-// investigation line by line — root cause, the missing test case, and the
-// Playwright test it generates — like a terminal thinking out loud.
+// The incident cards — Quaid, who fails, and the Anonymous User, who is
+// blocked — are the recommendations that never pass on purpose. Once a card's
+// quote has "decrypted" into its error (src/quote-decrypt.js flips the card's
+// data-status to its outcome and fires quote-decrypted), this types out the
+// investigation line by line — root cause or security protocol, the missing
+// test case, and the Playwright test it generates — like a terminal thinking
+// out loud.
 //
 // The report's full text is in the markup; this only hides it and reveals it
 // again progressively, so without JS, or under reduced motion, the card reads
@@ -44,7 +46,7 @@ function typeInto(el, msPerChar) {
 
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-export function initQuaidReport(card) {
+export function initIncidentReport(card) {
   if (!card) return;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   const report = card.querySelector('.qa-report');
