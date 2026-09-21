@@ -1,45 +1,6 @@
 {
-  "fetchedAt": "2026-09-21T21:10:26.972Z",
+  "fetchedAt": "2026-09-21T21:32:22.167Z",
   "jobs": [
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-21T14:38:06-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8070025",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-21T14:38:04-04:00"
-    },
-    {
-      "id": "greenhouse-coursera-6141559004",
-      "title": "Senior Software Test Engineer",
-      "company": "Coursera",
-      "url": "https://job-boards.greenhouse.io/coursera/jobs/6141559004",
-      "source": "Coursera",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Toronto, Canada",
-      "country": "Canada",
-      "postedAt": "2026-09-21T14:07:37-04:00"
-    },
     {
       "id": "greenhouse-thoughtworks-8191523",
       "title": "Lead Quality Analyst",
@@ -91,45 +52,6 @@
       "location": "Parsdorf, Bavaria",
       "country": "Other",
       "postedAt": "2026-09-20T20:55:17.000Z"
-    },
-    {
-      "id": "arbeitnow-robotics-test-engineer-quality-safety-munich-bavaria-367537",
-      "title": "Robotics Test Engineer (m/f/d) - Quality & Safety",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/robotics-test-engineer-quality-safety-munich-bavaria-367537",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich, Bavaria",
-      "country": "Germany",
-      "postedAt": "2026-09-20T11:55:02.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-spezialist-furstenfeldbruck-bavaria-431356",
-      "title": "Quality Assurance Spezialist (m/w/d)",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/quality-assurance-spezialist-furstenfeldbruck-bavaria-431356",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Fürstenfeldbruck, Bavaria",
-      "country": "Other",
-      "postedAt": "2026-09-20T11:55:02.000Z"
-    },
-    {
-      "id": "arbeitnow-mechatronics-test-engineer-munich-bavaria-37664",
-      "title": "Mechatronics Test Engineer (m/f/d)",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/mechatronics-test-engineer-munich-bavaria-37664",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich, Bavaria",
-      "country": "Germany",
-      "postedAt": "2026-09-20T11:55:02.000Z"
     },
     {
       "id": "arbeitnow-remote-quality-engineering-lead-schoppingen-262215",
