@@ -189,6 +189,20 @@ export function initSiteNav({ nav, toggle }) {
   });
 }
 
+// Lazy images fade in as they arrive instead of popping into place. The
+// hiding rule in style.css is scoped to html.js, so if this never runs the
+// images simply show — and a failed load is treated as "arrived" so a broken
+// image can't leave an invisible hole.
+export function initImageFadeIn() {
+  document.documentElement.classList.add('js');
+  document.querySelectorAll('img[loading="lazy"]').forEach((img) => {
+    const arrived = () => img.classList.add('is-loaded');
+    if (img.complete) arrived();
+    else img.addEventListener('load', arrived, { once: true });
+    img.addEventListener('error', arrived, { once: true });
+  });
+}
+
 // A soft brass/teal glow that trails the mouse with a bit of lag — only while
 // the quill is active (right-click held, see initQuillCursor), so the default
 // cursor stays plain and this reads as something the pen does, not ambient

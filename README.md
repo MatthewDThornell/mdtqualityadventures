@@ -79,6 +79,14 @@ drives them: one group open at a time on desktop, all of them unfolded inside th
 so it reads as an outline, and outside-click/Escape to close. The sub-pages mark their own link
 `aria-current="page"`, which also lights the group heading holding it.
 
+### Image sizes
+
+Every `<img>` carries its intrinsic `width`/`height` so the browser reserves the right box before
+a lazy image arrives and nothing shifts as the page loads. They're stamped, not hand-typed — after
+adding or replacing an image, run `npm run stamp:images` (idempotent; it re-reads every image's
+dimensions with sharp and rewrites the attributes in all four pages). `style.css` keeps
+`img { height: auto }` so the pair reads as an aspect ratio wherever a rule sets only the width.
+
 ### Job listings
 
 `scripts/fetch-jobs.mjs` pulls QA/SDET/test-automation-relevant listings from four kinds of free,
@@ -232,6 +240,8 @@ gets reordered or a new entry is inserted in the middle.
   same reason.
 - Primary buttons/CTAs (resume/letter downloads, LinkedIn/GitHub links, contact links, code-copy
   buttons, TAU watch/hide toggles, the mentee spotlight's prev/next arrows).
+- The "by the numbers" strip and each of its figures (`figures`, `figure-years` …), since a test
+  checks the counted-up values against the prose they summarise.
 - Every repeated card/row with no existing unique `id` and ambiguous or duplicate visible text
   (timeline entries, accomplishment cards, recommendation cards, mentor/mentee cards, mentee
   spotlight slides, adventure cards, TAU course rows, job cards).

@@ -7,6 +7,7 @@ import {
   initQuillCursor,
   initMagicWords,
   initSiteNav,
+  initImageFadeIn,
 } from './chrome.js';
 
 document.getElementById('year').textContent = new Date().getFullYear();
@@ -57,6 +58,7 @@ initSiteNav({
   nav: document.getElementById('siteNav'),
   toggle: document.getElementById('navToggle'),
 });
+initImageFadeIn();
 
 document.querySelectorAll('.code-copy-btn').forEach((button) => {
   const code = button.closest('.code-block').querySelector('code');

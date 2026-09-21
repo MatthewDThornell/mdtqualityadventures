@@ -7,6 +7,7 @@ import {
   initQuillCursor,
   initMagicWords,
   initSiteNav,
+  initImageFadeIn,
 } from './chrome.js';
 
 document.getElementById('year').textContent = new Date().getFullYear();
@@ -48,6 +49,7 @@ initSiteNav({
   nav: document.getElementById('siteNav'),
   toggle: document.getElementById('navToggle'),
 });
+initImageFadeIn();
 
 // --- Job listings ---
 // Rendered from public/data/jobs.json (written at build time by

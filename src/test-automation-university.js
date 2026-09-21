@@ -7,6 +7,7 @@ import {
   initQuillCursor,
   initMagicWords,
   initSiteNav,
+  initImageFadeIn,
 } from './chrome.js';
 
 document.getElementById('year').textContent = new Date().getFullYear();
@@ -52,6 +53,7 @@ initSiteNav({
   nav: document.getElementById('siteNav'),
   toggle: document.getElementById('navToggle'),
 });
+initImageFadeIn();
 
 // videos load only on click (not up front) so 18 embeds don't all fetch at once,
 // and unmounting the iframe on "Hide" actually stops playback instead of just hiding it

@@ -4,6 +4,7 @@ import { initTypewriter, brandSegment } from './typewriter.js';
 import { initHeroDecrypt } from './hero-decrypt.js';
 import { initQuoteRotator } from './quote-rotator.js';
 import { initSpotlight } from './spotlight.js';
+import { initFigures } from './figures.js';
 import {
   initScrollRibbon,
   initInkCursor,
@@ -11,6 +12,7 @@ import {
   initQuillCursor,
   initMagicWords,
   initSiteNav,
+  initImageFadeIn,
 } from './chrome.js';
 
 document.getElementById('year').textContent = new Date().getFullYear();
@@ -21,6 +23,7 @@ initInkTrail(document.getElementById('inkTrailCanvas'));
 initMagicWords();
 initHeroDecrypt(document.querySelector('[data-testid="hero-heading"]'));
 initSpotlight(document.querySelector('[data-testid="mentee-spotlight"]'));
+initFigures(document.querySelector('[data-testid="figures"]'));
 
 const coverCanvas = document.getElementById('cover-canvas');
 const coverScene = initCoverScene(coverCanvas, { skylineHeroSelector: '#top' });
@@ -206,6 +209,7 @@ initSiteNav({
   nav: document.getElementById('siteNav'),
   toggle: document.getElementById('navToggle'),
 });
+initImageFadeIn();
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const chapters = document.querySelectorAll('.chapter');
@@ -266,6 +270,7 @@ const chapterDownBtn = document.getElementById('chapterDown');
 
 if (chapterNav && chapterUpBtn && chapterDownBtn) {
   const stops = [document.getElementById('top'), ...chapters];
+  const coverBottom = document.getElementById('top').offsetHeight;
   const HEADER_OFFSET = 88;
 
   const currentStopIndex = () => {
@@ -293,6 +298,9 @@ if (chapterNav && chapterUpBtn && chapterDownBtn) {
     chapterUpBtn.disabled = idx <= 0;
     chapterDownBtn.disabled = idx >= stops.length - 1;
     chapterNav.classList.toggle('is-visible', window.scrollY > 80);
+    // once the cover is behind the reader the rain drops to a whisper (see
+    // html.past-cover in style.css) so the chapters read as paper, not weather
+    document.documentElement.classList.toggle('past-cover', window.scrollY > coverBottom * 0.6);
   };
 
   chapterUpBtn.addEventListener('click', () => goToStop(currentStopIndex() - 1));

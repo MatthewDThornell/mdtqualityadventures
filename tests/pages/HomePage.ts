@@ -65,6 +65,21 @@ export class HomePage extends BasePage {
     return this.page.getByTestId(`timeline-item-${companySlug}`);
   }
 
+  /** The "by the numbers" strip under the chapter intro. */
+  get figures(): Locator {
+    return this.page.getByTestId('figures');
+  }
+
+  figureNumber(slug: 'years' | 'coverage' | 'mentored' | 'letters'): Locator {
+    return this.page.getByTestId(`figure-${slug}`).locator('.figure-number');
+  }
+
+  /** The recommendation letters in the Recommendations chapter page only
+   * (the mentees' "In Their Own Words" grid reuses the same card). */
+  get recommendationLetters(): Locator {
+    return this.page.locator('#letters').getByTestId(/^rec-card-/);
+  }
+
   // --- About Me ---
   /** Already has a stable id (`#aboutQuote`) predating the data-testid rollout — no testid needed. */
   get aboutQuote(): Locator {

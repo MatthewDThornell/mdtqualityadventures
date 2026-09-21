@@ -60,6 +60,66 @@ button:focus-visible,
   border-radius: 2px;
 }
 
+::selection {
+  background: rgba(var(--brass-rgb), 0.35);
+  color: var(--parchment);
+}
+
+/* Every <img> carries its intrinsic width/height (stamped by
+   scripts/stamp-image-sizes.mjs) so the browser reserves the right box
+   before the file arrives and nothing shifts as lazy images land. height:
+   auto keeps the attribute pair as an aspect ratio rather than a fixed
+   height wherever a stylesheet rule sets only the width. */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Lazy images fade in as they arrive (initImageFadeIn in src/chrome.js).
+   Scoped to html.js so without the script they simply show. */
+html.js img[loading='lazy'] {
+  opacity: 0;
+  transition: opacity 0.45s ease;
+}
+
+html.js img[loading='lazy'].is-loaded {
+  opacity: 1;
+}
+
+/* Moving between the four pages turns to a new tab of the journal rather
+   than flashing a blank document: the header holds still while the old page
+   fades and the new one settles up into place. Same-origin, opt-in on both
+   sides (this sheet is shared), ignored by browsers without cross-document
+   view transitions. */
+@view-transition {
+  navigation: auto;
+}
+
+.site-header {
+  view-transition-name: site-header;
+}
+
+::view-transition-old(root) {
+  animation: 160ms ease-out both vt-fade-out;
+}
+
+::view-transition-new(root) {
+  animation: 280ms cubic-bezier(0.2, 0.65, 0.2, 1) both vt-settle-in;
+}
+
+@keyframes vt-fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes vt-settle-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+
 /* Standard visually-hidden pattern: present for assistive tech, invisible and
    out of layout for sighted users. Used to give the typewriter-animated
    eyebrow/tagline (see .typewriter below and src/typewriter.js) one stable,
@@ -475,7 +535,18 @@ html.pen-active * {
 }
 
 .nav-dropdown-menu {
-  display: none;
+  /* kept in the layout but hidden, so opening can fade and settle in
+     rather than snap; the mobile rule below swaps this for display:none
+     since the inline accordion has real height to give back */
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+  transition:
+    opacity 0.16s ease,
+    transform 0.2s cubic-bezier(0.2, 0.65, 0.2, 1),
+    visibility 0s linear 0.2s;
   position: absolute;
   top: calc(100% + 0.85rem);
   left: 0;
@@ -490,7 +561,11 @@ html.pen-active * {
 }
 
 .nav-dropdown.open .nav-dropdown-menu {
-  display: flex;
+  visibility: visible;
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+  transition-delay: 0s;
 }
 
 .nav-dropdown-menu a {
@@ -563,6 +638,14 @@ html.pen-active * {
   height: 100vh;
   z-index: -1;
   pointer-events: none;
+  transition: opacity 0.9s ease;
+}
+
+/* The hero's rain is the event; once it's scrolled away (html.past-cover,
+   toggled in src/main.js) the same rain keeps falling at a whisper behind
+   the chapters, so the pages read as paper rather than weather. */
+html.past-cover #cover-canvas {
+  opacity: 0.32;
 }
 
 .cover .container {
@@ -1009,6 +1092,24 @@ html.pen-active .typewriter .tw-quill {
   padding-block: 3.5rem;
   position: relative;
   scroll-margin-top: 80px;
+  /* each chapter's accent, picked up by the waypoint coin and rail, the
+     chapter label, the opener seals and the hairline on its pages — so
+     scrolling has a sense of place without reading the label */
+  --chapter-accent: var(--brass);
+  --chapter-accent-rgb: var(--brass-rgb);
+  --chapter-label: var(--brass-bright);
+}
+
+.chapter[data-waypoint^='2'] {
+  --chapter-accent: var(--teal-bright);
+  --chapter-accent-rgb: var(--teal-rgb);
+  --chapter-label: var(--teal-bright);
+}
+
+.chapter[data-waypoint^='3'] {
+  --chapter-accent: var(--parchment-dim);
+  --chapter-accent-rgb: var(--parchment-rgb);
+  --chapter-label: var(--parchment-dim);
 }
 
 .cover {
@@ -1033,7 +1134,7 @@ html.pen-active .typewriter .tw-quill {
   font-weight: 700;
   font-size: 1.1rem;
   color: var(--ink);
-  background: var(--brass);
+  background: var(--chapter-accent, var(--brass));
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
@@ -1042,7 +1143,7 @@ html.pen-active .typewriter .tw-quill {
   justify-content: center;
   position: sticky;
   top: 6rem;
-  box-shadow: 0 0 0 4px rgba(var(--brass-rgb), 0.15);
+  box-shadow: 0 0 0 4px rgba(var(--chapter-accent-rgb, var(--brass-rgb)), 0.15);
 }
 
 .chapter:not(:last-of-type) .waypoint::after {
@@ -1055,8 +1156,8 @@ html.pen-active .typewriter .tw-quill {
   transform: translateX(-50%);
   background: repeating-linear-gradient(
     to bottom,
-    rgba(var(--brass-rgb), 0.35) 0,
-    rgba(var(--brass-rgb), 0.35) 4px,
+    rgba(var(--chapter-accent-rgb, var(--brass-rgb)), 0.35) 0,
+    rgba(var(--chapter-accent-rgb, var(--brass-rgb)), 0.35) 4px,
     transparent 4px,
     transparent 10px
   );
@@ -1067,6 +1168,7 @@ html.pen-active .typewriter .tw-quill {
   background: var(--panel);
   color: var(--text-primary);
   border: 1px solid var(--panel-border);
+  border-top: 2px solid rgba(var(--chapter-accent-rgb, var(--brass-rgb)), 0.55);
   border-radius: 6px;
   padding: 2.75rem 3.25rem;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
@@ -1179,7 +1281,7 @@ html.pen-active .typewriter .tw-quill {
 
 .opener-seal circle {
   fill: none;
-  stroke: var(--brass);
+  stroke: var(--chapter-accent, var(--brass));
   stroke-width: 1.2;
 }
 
@@ -1214,9 +1316,29 @@ html.pen-active .typewriter .tw-quill {
   /* var(--teal) measures under the 4.5:1 WCAG AA threshold at this size
      against the page/panel backgrounds; --teal-bright clears it (~5.2-6:1)
      and is already used for small uppercase labels elsewhere (.eyebrow,
-     .card-meta) */
-  color: var(--teal-bright);
+     .card-meta); every chapter accent used here clears it too */
+  color: var(--chapter-label, var(--teal-bright));
   margin: 0 0 0.25rem;
+}
+
+/* Drop caps: a chapter's first paragraph opens like a printed page. The
+   letter takes three lines in the display face, in the chapter's accent. */
+.drop-cap::first-letter {
+  float: left;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 3.6em;
+  line-height: 0.78;
+  padding: 0.08em 0.12em 0 0;
+  color: var(--chapter-accent, var(--brass));
+}
+
+/* ::first-letter can't reach into an inline-block, and initMagicWords wraps
+   every word in one (src/chrome.js) — the opening word of a drop-cap
+   paragraph stays inline, keeping its glow on hover and only forgoing the
+   scale, which a drop cap shouldn't do anyway */
+.drop-cap > .magic-word:first-child {
+  display: inline;
 }
 
 .page h2 {
@@ -1599,6 +1721,51 @@ html.pen-active .typewriter .tw-quill {
 }
 
 /* Badges */
+/* "By the numbers": four figures the page already states in prose, lifted
+   out where a reader with eight seconds will see them. src/figures.js counts
+   them up once on reveal; the markup carries the final values regardless. */
+.figures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1px;
+  margin: 1.5rem 0 1.75rem;
+  background: rgba(var(--brass-rgb), 0.18);
+  border: 1px solid rgba(var(--brass-rgb), 0.18);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.figure {
+  display: flex;
+  flex-direction: column-reverse;
+  /* pack from the top so every number shares a line even where a label wraps */
+  justify-content: flex-end;
+  gap: 0.2rem;
+  padding: 1.1rem 1.25rem;
+  background: var(--panel);
+}
+
+.figure dt {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.figure dd {
+  margin: 0;
+}
+
+.figure-number {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 1;
+  color: var(--brass-bright);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
 .badges {
   display: flex;
   flex-wrap: wrap;
@@ -1655,6 +1822,25 @@ html.pen-active .typewriter .tw-quill {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: 6px;
+}
+
+/* Body-copy links keep a faint underline for affordance and draw a full
+   brass one in from the left under the hand, like a pen underlining */
+.page p > a:not([class]) {
+  color: var(--brass-bright);
+  text-decoration: underline;
+  text-decoration-color: rgba(var(--brass-rgb), 0.35);
+  text-underline-offset: 0.18em;
+  background-image: linear-gradient(var(--brass-bright), var(--brass-bright));
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  background-position: 0 calc(100% - 0.05em);
+  transition: background-size 0.3s cubic-bezier(0.2, 0.65, 0.2, 1);
+}
+
+.page p > a:not([class]):hover,
+.page p > a:not([class]):focus-visible {
+  background-size: 100% 1px;
 }
 
 /* Field notes cards */
@@ -2360,7 +2546,76 @@ html.pen-active .typewriter .tw-quill {
   column-gap: 0.85rem;
   break-inside: avoid;
   margin: 0 0 1.5rem;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 1.35rem;
+  position: relative;
+  /* paper: cream stock with a faint grain and a soft shadow, laid down at a
+     slight angle that straightens when the reader picks it up */
+  color: var(--ink);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.35), transparent 35%),
+    repeating-linear-gradient(0deg, transparent 0 3px, rgba(var(--brass-rgb), 0.045) 3px 4px),
+    var(--parchment);
+  border-color: rgba(var(--brass-rgb), 0.3);
+  border-radius: 3px;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.5) inset,
+    0 10px 24px rgba(0, 0, 0, 0.35);
+  transform: rotate(-0.6deg);
+}
+
+.rec-card:nth-child(even) {
+  transform: rotate(0.5deg);
+}
+
+.rec-card:hover {
+  transform: translateY(-4px) rotate(0deg);
+  border-color: rgba(var(--brass-rgb), 0.55);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.5) inset,
+    0 18px 36px rgba(0, 0, 0, 0.4);
+}
+
+.rec-card ::selection {
+  background: rgba(var(--teal-rgb), 0.35);
+  color: var(--ink);
+}
+
+/* the brass seal pressed into the corner */
+.rec-card::before {
+  content: '\2713';
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--ink);
+  background: var(--brass);
+  box-shadow:
+    0 0 0 2px var(--parchment),
+    0 0 0 3px rgba(var(--brass-rgb), 0.5),
+    0 2px 4px rgba(0, 0, 0, 0.25);
+  opacity: 0.9;
+}
+
+/* signed at the foot, in the author's hand */
+.rec-card::after {
+  content: '\2014\00a0' attr(data-signer);
+  grid-column: 1 / -1;
+  grid-row: 4;
+  justify-self: end;
+  margin-top: 0.85rem;
+  font-family: var(--font-cursive);
+  font-size: 1.25rem;
+  line-height: 1;
+  color: var(--ink);
+  opacity: 0.85;
+  transform: rotate(-2deg);
 }
 
 .mentor-card {
@@ -2418,9 +2673,22 @@ html.pen-active .typewriter .tw-quill {
   text-decoration: none;
 }
 
+.rec-card h3 a {
+  color: var(--ink);
+}
+
 .rec-card h3 a:hover,
 .mentor-card h3 a:hover {
   color: var(--brass-bright);
+}
+
+/* brass on cream doesn't clear contrast for text — the paper's links
+   answer a hover with an underline instead of a colour */
+.rec-card h3 a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--brass);
+  text-underline-offset: 0.15em;
 }
 
 .rec-title,
@@ -2434,6 +2702,7 @@ html.pen-active .typewriter .tw-quill {
 
 .rec-title {
   font-size: 0.75rem;
+  color: rgba(var(--ink-rgb), 0.68);
 }
 
 .mentor-title {
@@ -2462,7 +2731,7 @@ html.pen-active .typewriter .tw-quill {
   font-style: italic;
   font-size: 0.92rem;
   margin: 0;
-  color: var(--text-primary);
+  color: rgba(var(--ink-rgb), 0.88);
 }
 
 /* Other Great Reads */
@@ -2998,6 +3267,12 @@ html.pen-active .typewriter .tw-quill {
   }
 
   .nav-dropdown-menu {
+    display: none;
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    transition: none;
     position: static;
     flex-direction: column;
     min-width: 0;
@@ -3005,6 +3280,10 @@ html.pen-active .typewriter .tw-quill {
     border: none;
     box-shadow: none;
     padding: 0.35rem 0 0 1rem;
+  }
+
+  .nav-dropdown.open .nav-dropdown-menu {
+    display: flex;
   }
 
   .nav-dropdown-rule {
@@ -3377,6 +3656,27 @@ a.tau-course-name:hover {
     animation: none;
     opacity: 1;
     transform: none !important;
+  }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+
+  html.js img[loading='lazy'] {
+    transition: none;
+    opacity: 1;
+  }
+
+  .rec-card,
+  .rec-card:nth-child(even),
+  .rec-card::after {
+    transform: none;
+  }
+
+  .nav-dropdown-menu,
+  #cover-canvas {
+    transition: none;
   }
 
   .page::before {
