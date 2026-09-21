@@ -5,6 +5,7 @@ import { initHeroDecrypt } from './hero-decrypt.js';
 import { initQuoteRotator } from './quote-rotator.js';
 import { initSpotlight } from './spotlight.js';
 import { initFigures } from './figures.js';
+import { initQuoteDecrypt } from './quote-decrypt.js';
 import {
   initScrollRibbon,
   initInkCursor,
@@ -24,6 +25,7 @@ initMagicWords();
 initHeroDecrypt(document.querySelector('[data-testid="hero-heading"]'));
 initSpotlight(document.querySelector('[data-testid="mentee-spotlight"]'));
 initFigures(document.querySelector('[data-testid="figures"]'));
+initQuoteDecrypt(document.querySelectorAll('.rec-card blockquote p'));
 
 const coverCanvas = document.getElementById('cover-canvas');
 const coverScene = initCoverScene(coverCanvas, { skylineHeroSelector: '#top' });

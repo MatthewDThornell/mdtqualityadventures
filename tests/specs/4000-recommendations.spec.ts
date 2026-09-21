@@ -55,4 +55,53 @@ test.describe('Recommendations', () => {
       });
     },
   );
+
+  test(
+    'Test_Case_4002_Recommendations_Quote_DecryptsIntoReadableText',
+    { tag: '@smoke' },
+    async ({ page }) => {
+      const home = new HomePage(page);
+      await home.goto();
+      const card = home.recCard('nathan-gearke');
+      const quote = card.locator('blockquote p');
+
+      // src/quote-decrypt.js hides the real paragraph behind a binary overlay
+      // until the card scrolls into view, then resolves it. The real text is
+      // untouched throughout (4001 covers that); what this pins is that the
+      // overlay actually goes away and the quote comes back readable — a
+      // stuck overlay would leave every recommendation as a block of noise
+      // while every text assertion still passed.
+      await test.step('Given the quote starts hidden behind its binary overlay', async () => {
+        await expect.soft(card.locator('.quote-decrypt')).toHaveCount(1);
+        await expect.soft(quote).toHaveCSS('color', 'rgba(0, 0, 0, 0)');
+      });
+
+      await test.step('When the card scrolls into view, the overlay resolves and is removed', async () => {
+        await card.scrollIntoViewIfNeeded();
+        await expect(card.locator('.quote-decrypt')).toHaveCount(0, { timeout: 8_000 });
+      });
+
+      await test.step('Then the real quote is readable in the page colour', async () => {
+        await expect.soft(quote).toHaveCSS('color', 'rgb(243, 234, 217)');
+        await expect.soft(quote).toContainText('greatest strength');
+      });
+    },
+  );
+
+  test(
+    'Test_Case_4003_Recommendations_Quote_ReducedMotion_SkipsTheDecrypt',
+    { tag: '@regression' },
+    async ({ page }) => {
+      await page.emulateMedia({ reducedMotion: 'reduce' });
+      const home = new HomePage(page);
+      await home.goto();
+
+      await test.step('Then no overlay is built and every quote is readable from the start', async () => {
+        await expect.soft(page.locator('.quote-decrypt')).toHaveCount(0);
+        await expect
+          .soft(home.recCard('nathan-gearke').locator('blockquote p'))
+          .toHaveCSS('color', 'rgb(243, 234, 217)');
+      });
+    },
+  );
 });

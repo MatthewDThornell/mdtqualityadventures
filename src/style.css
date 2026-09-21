@@ -2779,6 +2779,53 @@ html.pen-active .typewriter .tw-quill {
   color: var(--text-primary);
 }
 
+/* Quote decrypt overlay (src/quote-decrypt.js) — the same trick as the hero
+   name: the real paragraph goes transparent (never display/visibility, so
+   it keeps its box and its text for assistive tech) while a sibling overlay
+   fills the same box with binary that resolves, word by word, into the
+   quote. Unlocked characters sit in the rain's mono; a locked one takes the
+   paragraph's own italic serif, so the overlay wraps exactly where the real
+   text will once everything has settled and the swap is invisible. */
+.rec-card blockquote {
+  position: relative;
+}
+
+.rec-card blockquote p.quote-decrypt-hidden {
+  color: transparent;
+}
+
+.quote-decrypt {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  /* the paragraph's own face, so the spaces between words — which never
+     scramble — are always the width the real text's are; a mono space is
+     far wider and would spread every line until the last lock */
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 0.92rem;
+  line-height: inherit;
+  color: var(--text-primary);
+  pointer-events: none;
+}
+
+/* words are inline-block, as initMagicWords makes the real paragraph's */
+.qd-word {
+  display: inline-block;
+}
+
+.qd-char {
+  transition: color 0.8s ease;
+}
+
+/* only a character still scrambling wears the rain's mono */
+.qd-char:not(.is-locked) {
+  font-family: var(--font-mono);
+  font-style: normal;
+  color: rgb(var(--code-rgb));
+  transition: none;
+}
+
 /* Other Great Reads */
 .reads-grid {
   display: grid;
