@@ -1764,6 +1764,45 @@ html.pen-active .typewriter .tw-quill {
   line-height: 1;
   color: var(--brass-bright);
   font-variant-numeric: lining-nums tabular-nums;
+  transition: text-shadow 0.25s ease;
+}
+
+/* a small stroke icon in each block's corner, drawn in the same line
+   language as .credential-icon; it sits muted until the block is hovered,
+   then the icon and the figure take on a brass glow together */
+.figure {
+  position: relative;
+  transition: background 0.25s ease;
+}
+
+.figure-icon {
+  position: absolute;
+  top: 0.95rem;
+  right: 1.1rem;
+  width: 1.35rem;
+  height: 1.35rem;
+  color: var(--brass);
+  opacity: 0.55;
+  transition:
+    opacity 0.25s ease,
+    color 0.25s ease,
+    filter 0.25s ease,
+    transform 0.25s ease;
+}
+
+.figure:hover {
+  background: rgba(var(--brass-rgb), 0.07);
+}
+
+.figure:hover .figure-icon {
+  opacity: 1;
+  color: var(--brass-bright);
+  filter: drop-shadow(0 0 6px rgba(var(--brass-bright-rgb), 0.75));
+  transform: translateY(-1px);
+}
+
+.figure:hover .figure-number {
+  text-shadow: 0 0 16px rgba(var(--brass-bright-rgb), 0.5);
 }
 
 .badges {
@@ -3690,4 +3729,23 @@ a.tau-course-name:hover {
   .mentee img {
     transition: none;
   }
+}
+
+/* Button legibility: ink set on brass at 600 loses its stroke against the
+   warm fill — the letters read as blending into the gold — so every text
+   button sets in Inter 700 (loaded on each page's font link); the smallest
+   one is nudged up a hair. Later in the sheet than each
+   button's own rule on purpose, so it wins at equal specificity. */
+.credential-btn,
+.resume-btn,
+.book-btn,
+.tau-course-toggle,
+.code-copy-btn,
+.board-link-btn,
+.job-apply-btn {
+  font-weight: 700;
+}
+
+.book-btn {
+  font-size: 0.68rem;
 }
