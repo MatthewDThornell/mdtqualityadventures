@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-21T21:39:21.708Z",
+  "fetchedAt": "2026-09-21T21:50:29.045Z",
   "jobs": [
     {
       "id": "greenhouse-roblox-8069987",
@@ -41,15 +41,15 @@
       "postedAt": "2026-09-21T14:07:37-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-7964148",
+      "id": "greenhouse-thoughtworks-8191523",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
       "source": "Thoughtworks",
       "sourceUrl": null,
       "direct": true,
       "workType": "On-site",
-      "location": "Lima, Peru",
+      "location": "Quito, Ecuador",
       "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
@@ -67,30 +67,17 @@
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-8191523",
+      "id": "greenhouse-thoughtworks-7964148",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
       "source": "Thoughtworks",
       "sourceUrl": null,
       "direct": true,
       "workType": "On-site",
-      "location": "Quito, Ecuador",
+      "location": "Lima, Peru",
       "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
-      "id": "arbeitnow-senior-quality-engineer-parsdorf-bavaria-64458",
-      "title": "Senior Quality Engineer (m/f/d)",
-      "company": "isaraerospace",
-      "url": "https://www.arbeitnow.com/jobs/companies/isaraerospace/senior-quality-engineer-parsdorf-bavaria-64458",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Parsdorf, Bavaria",
-      "country": "Other",
-      "postedAt": "2026-09-20T20:55:17.000Z"
     },
     {
       "id": "arbeitnow-werkstudent-quality-assurance-medizinalcannabis-koln-488687",
