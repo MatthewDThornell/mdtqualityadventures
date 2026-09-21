@@ -15,6 +15,11 @@ export class HomePage extends BasePage {
   }
 
   // --- Hero ---
+  // the brand mark centered over the name (decorative; the header names the brand)
+  get heroBrand(): Locator {
+    return this.page.getByTestId('hero-brand');
+  }
+
   get heroHeading(): Locator {
     return this.page.getByTestId('hero-heading');
   }

@@ -660,6 +660,17 @@ html.past-cover #cover-canvas {
   z-index: 1;
 }
 
+/* The masthead: the brand mark centered over the name, lit the same way
+   the header's copy is. Sized to the eyebrow's width rather than the
+   name's, so it reads as the seal on the cover, not a second title. */
+.hero-brand {
+  display: block;
+  width: min(15rem, 62vw);
+  height: auto;
+  margin: 0 auto 1.4rem;
+  filter: brightness(1.3) saturate(1.15) drop-shadow(0 0 22px rgba(201, 162, 39, 0.16));
+}
+
 .eyebrow {
   font-family: var(--font-ui);
   font-size: 0.78rem;
@@ -689,44 +700,17 @@ html.past-cover #cover-canvas {
 /* Specificity has to beat .cover h1's own color rule (class+type, 0-1-1),
    not just match it — a bare .hero-name-hidden class (0-1-0) silently loses
    that fight and the real heading stays visible underneath the overlay. */
-/* The D. carries the Will of D.: a straw hat perched on it, and Gear 5
-   under the hand — a white flash, a glow, and the drums. The hat hides with
-   the name while the decrypt plays, so it appears with the real letters. */
+/* The D. carries the Will of D.: Gear 5 under the hand — a white flash, a
+   glow, and the drums. It answers no hover while the decrypt plays, so the
+   effect belongs to the real letters. */
 .hero-d {
-  position: relative;
   display: inline-block;
-  /* a tight box of its own, so the hat sits on the glyph rather than on the
-     line box the page's 1.65 line-height would give it */
-  line-height: 1;
   cursor: help;
-}
-
-/* the hat is a pseudo-element, not markup: src/hero-decrypt.js scrambles the
-   heading's textContent, and an inline SVG would put its whitespace into the
-   scramble too */
-.hero-d::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: -0.24em;
-  width: 0.62em;
-  height: 0.39em;
-  background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2040%22%3E%3Cellipse%20cx%3D%2232%22%20cy%3D%2231%22%20rx%3D%2230%22%20ry%3D%227.5%22%20fill%3D%22%23e6c25f%22%2F%3E%3Cpath%20d%3D%22M14%2031c0-14%208-24%2018-24s18%2010%2018%2024Z%22%20fill%3D%22%23f2d27b%22%2F%3E%3Cpath%20d%3D%22M14.5%2027.5c5-3%2030-3%2035%200v5.5c-5-3-30-3-35%200Z%22%20fill%3D%22%23c8372d%22%2F%3E%3C%2Fsvg%3E')
-    center / contain no-repeat;
-  transform: translateX(-56%) rotate(-14deg);
-  transform-origin: 50% 90%;
-  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
-  transition: opacity 0.3s ease;
 }
 
 .hero-d:hover,
 .hero-d:focus-visible {
   animation: gear-five 0.9s ease-in-out infinite;
-}
-
-.hero-d:hover::before,
-.hero-d:focus-visible::before {
-  animation: hat-tip 0.9s ease-in-out infinite;
 }
 
 @keyframes gear-five {
@@ -748,23 +732,8 @@ html.past-cover #cover-canvas {
   }
 }
 
-@keyframes hat-tip {
-  0%,
-  100% {
-    transform: translateX(-56%) rotate(-14deg);
-  }
-  45% {
-    transform: translateX(-56%) rotate(-26deg) translateY(-0.08em);
-  }
-}
-
 .cover h1.hero-name-hidden {
   color: transparent;
-}
-
-/* while the decrypt plays, the D. neither wears its hat nor answers a hover */
-.cover h1.hero-name-hidden .hero-d::before {
-  opacity: 0;
 }
 
 .cover h1.hero-name-hidden .hero-d {
@@ -4541,8 +4510,7 @@ a.tau-course-name:hover {
   .rec-test-run code::after,
   .qa-dots::after,
   .qa-report.is-typing .qa-line.is-shown:not(.is-done)::after,
-  .hero-d,
-  .hero-d::before {
+  .hero-d {
     animation: none;
   }
 
