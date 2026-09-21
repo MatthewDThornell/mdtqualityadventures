@@ -1,19 +1,6 @@
 {
-  "fetchedAt": "2026-09-21T03:07:34.971Z",
+  "fetchedAt": "2026-09-21T11:53:09.958Z",
   "jobs": [
-    {
-      "id": "arbeitnow-senior-quality-engineer-parsdorf-bavaria-64458",
-      "title": "Senior Quality Engineer (m/f/d)",
-      "company": "isaraerospace",
-      "url": "https://www.arbeitnow.com/jobs/companies/isaraerospace/senior-quality-engineer-parsdorf-bavaria-64458",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Parsdorf, Bavaria",
-      "country": "Other",
-      "postedAt": "2026-09-20T20:55:17.000Z"
-    },
     {
       "id": "greenhouse-roblox-8069987",
       "title": "Quality Analyst",
@@ -25,7 +12,7 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-09-20T14:37:14-04:00"
+      "postedAt": "2026-09-21T02:37:19-04:00"
     },
     {
       "id": "greenhouse-roblox-8070025",
@@ -38,7 +25,20 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-09-20T14:37:12-04:00"
+      "postedAt": "2026-09-21T02:37:17-04:00"
+    },
+    {
+      "id": "arbeitnow-senior-quality-engineer-parsdorf-bavaria-64458",
+      "title": "Senior Quality Engineer (m/f/d)",
+      "company": "isaraerospace",
+      "url": "https://www.arbeitnow.com/jobs/companies/isaraerospace/senior-quality-engineer-parsdorf-bavaria-64458",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Parsdorf, Bavaria",
+      "country": "Other",
+      "postedAt": "2026-09-20T20:55:17.000Z"
     },
     {
       "id": "arbeitnow-werkstudent-quality-assurance-medizinalcannabis-koln-488687",
@@ -65,45 +65,6 @@
       "location": "Köln",
       "country": "Germany",
       "postedAt": "2026-09-20T14:09:19.000Z"
-    },
-    {
-      "id": "arbeitnow-robotics-test-engineer-quality-safety-munich-bavaria-367537",
-      "title": "Robotics Test Engineer (m/f/d) - Quality & Safety",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/robotics-test-engineer-quality-safety-munich-bavaria-367537",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich, Bavaria",
-      "country": "Germany",
-      "postedAt": "2026-09-20T11:55:02.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-spezialist-furstenfeldbruck-bavaria-431356",
-      "title": "Quality Assurance Spezialist (m/w/d)",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/quality-assurance-spezialist-furstenfeldbruck-bavaria-431356",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Fürstenfeldbruck, Bavaria",
-      "country": "Other",
-      "postedAt": "2026-09-20T11:55:02.000Z"
-    },
-    {
-      "id": "arbeitnow-mechatronics-test-engineer-munich-bavaria-37664",
-      "title": "Mechatronics Test Engineer (m/f/d)",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/mechatronics-test-engineer-munich-bavaria-37664",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich, Bavaria",
-      "country": "Germany",
-      "postedAt": "2026-09-20T11:55:02.000Z"
     },
     {
       "id": "arbeitnow-remote-quality-engineering-lead-schoppingen-262215",
@@ -221,19 +182,6 @@
       "location": "Poland",
       "country": "Other",
       "postedAt": "2026-09-18T04:51:27-04:00"
-    },
-    {
-      "id": "arbeitnow-qa-engineer-quantum-computing-siegen-152999",
-      "title": "QA Engineer - Quantum Computing (m/w/d)",
-      "company": "eleQtron GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/eleqtron-gmbh/qa-engineer-quantum-computing-siegen-152999",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Siegen, Nordrhein-Westfalen, Germany",
-      "country": "Germany",
-      "postedAt": "2026-09-17T23:30:27.000Z"
     },
     {
       "id": "greenhouse-coursera-6141559004",
