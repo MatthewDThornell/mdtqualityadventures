@@ -253,8 +253,11 @@ test.describe('Home — Hero', () => {
         // logo parked at opacity 0 while every visibility check still passed
         const logos = home.careerTrailLogos('veterans-united');
         await expect.soft(logos).toHaveCount(2);
-        await expect(logos.first()).toHaveCSS('opacity', '1');
-        await expect.soft(logos.last()).toHaveCSS('opacity', '1');
+        // the fade is 0.7s, but the image behind it is lazy and, with four
+        // workers sharing one dev server, can take most of the default 5s to
+        // arrive — give the paint the room a loaded machine needs
+        await expect(logos.first()).toHaveCSS('opacity', '1', { timeout: 12_000 });
+        await expect.soft(logos.last()).toHaveCSS('opacity', '1', { timeout: 12_000 });
         expect
           .soft(await logos.first().evaluate((img: HTMLImageElement) => img.naturalWidth))
           .toBeGreaterThan(0);

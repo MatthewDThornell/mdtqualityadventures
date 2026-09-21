@@ -758,16 +758,25 @@ html.past-cover #cover-canvas {
   font-family: var(--font-display);
 }
 
+/* The tagline speaks code: a comment line in the site's mono, the phrase
+   typed after a dimmed "//" the way the qa-code blocks open their
+   "What It Tests" lines. Held to the same two-line reservation the old
+   handwriting used, so the name above never shifts as phrases cycle. */
 .cover .tagline {
-  font-family: var(--font-cursive);
-  font-weight: 600;
-  font-size: 1.7rem;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 1.15rem;
   color: var(--brass-bright);
-  letter-spacing: 0.01em;
+  letter-spacing: 0;
   margin-bottom: 2rem;
   min-height: 4.75rem;
   white-space: pre-line;
-  line-height: 1.6;
+  line-height: 1.75;
+}
+
+.cover .tagline::before {
+  content: '// ';
+  color: rgba(var(--code-rgb), 0.65);
 }
 
 .typewriter::after {
@@ -775,6 +784,12 @@ html.past-cover #cover-canvas {
   margin-left: 0.1em;
   color: currentColor;
   animation: blink-cursor 1s step-end infinite;
+}
+
+/* a block caret on the code line, like the ones in the qa-code terminals */
+.cover .tagline.typewriter::after {
+  content: '\258B';
+  margin-left: 0.05em;
 }
 
 /* The pen (see .tw-quill above) is gone entirely while pen-active — this
@@ -884,7 +899,7 @@ html.pen-active .typewriter::after {
    can't distort centering at all — the parent .typewriter below is what
    gives it something to measure top/left against. Sized in em so it scales
    with whichever element's font-size it's sitting in (the small-caps
-   eyebrow vs. the much larger cursive tagline). Glows with the same brass
+   eyebrow vs. the larger mono tagline). Glows with the same brass
    drop-shadow as the ink trail/real cursor, so it reads as the same pen
    rather than a decoration bolted on separately. */
 .typewriter {
@@ -3837,8 +3852,8 @@ a.rec-link:hover {
 
 @media (max-width: 480px) {
   .cover .tagline {
-    font-size: 1.4rem;
-    min-height: 4.4rem;
+    font-size: 0.98rem;
+    min-height: 5.2rem;
   }
 
   .tagline-logo {
@@ -3870,9 +3885,9 @@ a.rec-link:hover {
   align-items: center;
   justify-items: center;
   gap: 0.6rem;
-  font-family: var(--font-cursive);
-  font-weight: 600;
-  font-size: 1.2rem;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.92rem;
   color: var(--text-primary);
   opacity: 0;
   transform: translateY(6px);
