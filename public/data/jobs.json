@@ -1,16 +1,29 @@
 {
-  "fetchedAt": "2026-09-21T16:38:17.696Z",
+  "fetchedAt": "2026-09-21T17:48:05.036Z",
   "jobs": [
     {
-      "id": "greenhouse-thoughtworks-8191523",
+      "id": "greenhouse-coursera-6141559004",
+      "title": "Senior Software Test Engineer",
+      "company": "Coursera",
+      "url": "https://job-boards.greenhouse.io/coursera/jobs/6141559004",
+      "source": "Coursera",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Toronto, Canada",
+      "country": "Canada",
+      "postedAt": "2026-09-21T12:56:06-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-7964148",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
       "source": "Thoughtworks",
       "sourceUrl": null,
       "direct": true,
       "workType": "On-site",
-      "location": "Quito, Ecuador",
+      "location": "Lima, Peru",
       "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
@@ -28,15 +41,15 @@
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-7964148",
+      "id": "greenhouse-thoughtworks-8191523",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
       "source": "Thoughtworks",
       "sourceUrl": null,
       "direct": true,
       "workType": "On-site",
-      "location": "Lima, Peru",
+      "location": "Quito, Ecuador",
       "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
@@ -234,19 +247,6 @@
       "location": "Poland",
       "country": "Other",
       "postedAt": "2026-09-18T04:51:27-04:00"
-    },
-    {
-      "id": "greenhouse-coursera-6141559004",
-      "title": "Senior Software Test Engineer",
-      "company": "Coursera",
-      "url": "https://job-boards.greenhouse.io/coursera/...?gh_jid=6141559004",
-      "source": "Coursera",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Toronto, Canada",
-      "country": "Canada",
-      "postedAt": "2026-09-16T17:58:48-04:00"
     },
     {
       "id": "greenhouse-pinterest-8011568",
