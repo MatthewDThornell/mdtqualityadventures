@@ -12,6 +12,8 @@
 // minute), and the overlay mirrors the paragraph's word structure so that as
 // words lock into the serif they wrap exactly where the real text does, and
 // the final swap doesn't shift a line.
+import { runPrecheck } from './rec-precheck.js';
+
 const BINARY_CHARS = '01';
 const LETTER_CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 const BINARY_MS = 320; // pure binary before letters start showing
@@ -114,8 +116,13 @@ export function initQuoteDecrypt(paragraphs) {
           const { overlay, charSpans } = pending.get(entry.target);
           pending.delete(entry.target);
           decryptObserver.unobserve(entry.target);
-          // cards that arrive in the same batch decode one after another
-          setTimeout(() => decrypt(entry.target, overlay, charSpans), i * STAGGER_MS);
+          // cards that arrive in the same batch decode one after another — and
+          // each runs its own test case first (src/rec-precheck.js)
+          setTimeout(() => {
+            runPrecheck(entry.target.closest('.rec-card')).then(() =>
+              decrypt(entry.target, overlay, charSpans),
+            );
+          }, i * STAGGER_MS);
         });
     },
     { threshold: 0.25 },

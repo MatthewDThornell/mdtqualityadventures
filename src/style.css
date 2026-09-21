@@ -2873,7 +2873,7 @@ html.pen-active .typewriter .tw-quill {
 /* --- the investigation: a terminal log, then the test it generates --- */
 .qa-report {
   grid-column: 1 / -1;
-  grid-row: 4;
+  grid-row: 5;
   margin-top: 1rem;
   padding-top: 0.9rem;
   border-top: 1px dashed rgba(var(--code-rgb), 0.25);
@@ -3024,7 +3024,7 @@ html.pen-active .typewriter .tw-quill {
    Each carries its name as a tooltip and an aria-label. --- */
 .rec-links {
   grid-column: 1 / -1;
-  grid-row: 6;
+  grid-row: 7;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -3098,7 +3098,7 @@ a.rec-link:hover {
    the card's heading. */
 .rec-signature {
   grid-column: 1 / -1;
-  grid-row: 5;
+  grid-row: 6;
   justify-self: end;
   display: flex;
   align-items: baseline;
@@ -3257,7 +3257,104 @@ a.rec-link:hover {
 }
 
 .rec-card blockquote {
+  grid-row: 4;
+}
+
+/* Each recommendation's own test case, above its quote. Closed by default
+   and readable on demand; while a card decodes, src/rec-precheck.js opens
+   it, types the test out, marks it passed and folds it again before the
+   quote's binary starts. */
+.rec-test {
+  grid-column: 1 / -1;
   grid-row: 3;
+  margin-top: 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+}
+
+.rec-test summary {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  cursor: pointer;
+  list-style: none;
+  color: rgba(var(--code-rgb), 0.75);
+}
+
+.rec-test summary::-webkit-details-marker {
+  display: none;
+}
+
+.rec-test summary::before {
+  content: '\203A';
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.rec-test[open] summary::before {
+  transform: rotate(90deg);
+}
+
+/* the name breaks only at its underscores (a <wbr> follows each) */
+.rec-test-name {
+  overflow-wrap: normal;
+}
+
+.rec-test-status {
+  margin-left: auto;
+  flex-shrink: 0;
+  /* wide enough for its longest reading, so running → passed never
+     reflows the line and the card never changes height */
+  min-width: 7em;
+  text-align: right;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.rec-test.is-running .rec-test-status {
+  color: var(--brass-bright);
+}
+
+.rec-test.is-running .rec-test-status::before {
+  content: '\25CF ';
+  animation: badge-pending 1s ease-in-out infinite;
+}
+
+.rec-test.is-passed .rec-test-status {
+  color: rgb(var(--code-rgb));
+}
+
+.rec-test.is-passed .rec-test-status::before {
+  content: '\2713 ';
+}
+
+.rec-test .qa-code {
+  margin: 0.55rem 0 0.2rem;
+}
+
+/* The run itself: a copy of the test filling the quote's box while it
+   types (src/rec-precheck.js drops it into the blockquote), bottom-anchored like a
+   console so the newest lines are the ones in view, above the quote's
+   binary overlay. It lifts when the test passes. */
+.rec-test-run {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  background: var(--ink);
+  box-shadow: 0 0 0 1px rgba(var(--code-rgb), 0.3);
+}
+
+.rec-test-run code::after {
+  content: '\258B';
+  color: rgb(var(--code-rgb));
+  animation: qa-caret 0.8s steps(2, end) infinite;
 }
 
 .rec-card blockquote p {
@@ -4266,6 +4363,8 @@ a.tau-course-name:hover {
   .rec-card[data-status='pending']::before,
   .rec-card[data-status='pass']::before,
   .rec-signature-name,
+  .rec-test.is-running .rec-test-status::before,
+  .rec-test-run code::after,
   .qa-dots::after,
   .qa-report.is-typing .is-shown:not(.is-done)::after {
     animation: none;

@@ -10,41 +10,11 @@
 // again progressively, so without JS, or under reduced motion, the card reads
 // exactly as written. Typing is paced by the clock rather than per frame,
 // the same as the decrypt, so a slow frame just reveals more at once.
+import { typeInto, wait } from './type-into.js';
+
 const MS_PER_CHAR = 11; // log lines
 const MS_PER_CODE_CHAR = 4; // the generated test — long, and a reader skims code
 const LINE_PAUSE = 220;
-
-const textNodesIn = (root) => {
-  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
-  const nodes = [];
-  while (walker.nextNode()) nodes.push(walker.currentNode);
-  return nodes;
-};
-
-// blanks an element's text and refills it left to right over time
-function typeInto(el, msPerChar) {
-  const nodes = textNodesIn(el).map((node) => ({ node, text: node.nodeValue }));
-  const total = nodes.reduce((sum, n) => sum + n.text.length, 0);
-  nodes.forEach(({ node }) => (node.nodeValue = ''));
-  el.classList.add('is-shown');
-
-  return new Promise((resolve) => {
-    const start = performance.now();
-    const tick = (now) => {
-      let budget = Math.min(total, Math.floor((now - start) / msPerChar));
-      nodes.forEach(({ node, text }) => {
-        const take = Math.min(text.length, budget);
-        node.nodeValue = text.slice(0, take);
-        budget -= take;
-      });
-      if (budget > 0 || nodes.every(({ node, text }) => node.nodeValue === text)) resolve();
-      else requestAnimationFrame(tick);
-    };
-    requestAnimationFrame(tick);
-  });
-}
-
-const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export function initIncidentReport(card) {
   if (!card) return;

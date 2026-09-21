@@ -242,6 +242,10 @@ gets reordered or a new entry is inserted in the middle.
   buttons, TAU watch/hide toggles, the mentee spotlight's prev/next arrows).
 - The "by the numbers" strip and each of its figures (`figures`, `figure-years` …), since a test
   checks the counted-up values against the prose they summarise.
+- Each recommendation's own test case (`rec-test-<person-slug>`) — the `<details>` above the quote
+  that runs, passes and folds before the quote decrypts. Its code is generated from the card's
+  own name, title, company and links (see the `Test_Case_41xx` blocks in `index.html`), and is
+  illustrative: the suite's 4000/4001 make those same checks across every card.
 - The two incident cards in Recommendations and their reports — Quaid, who fails
   (`rec-card-quaid`, `quaid-report`, `quaid-generated-test`, `quaid-log-fail`, `quaid-log-done`)
   and the Anonymous User, who is blocked (`rec-card-anonymous-user`, `anonymous-report`,

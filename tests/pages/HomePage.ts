@@ -140,6 +140,12 @@ export class HomePage extends BasePage {
     return this.recCard(personSlug).locator('.rec-link-linkedin');
   }
 
+  /** The card's own test case — the <details> above its quote that runs
+   * (types out, passes, folds) before the quote is allowed to decrypt. */
+  recTest(personSlug: string): Locator {
+    return this.page.getByTestId(`rec-test-${personSlug}`);
+  }
+
   // --- Mentors ---
   mentorCard(personSlug: string): Locator {
     return this.page.getByTestId(`mentor-card-${personSlug}`);
