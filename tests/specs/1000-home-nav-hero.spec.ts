@@ -218,6 +218,19 @@ test.describe('Home — Hero', () => {
         // no hard sleep, just a generous auto-retrying wait on the real DOM change
         await expect(home.careerTrailItem('veterans-united')).toBeVisible({ timeout: 20_000 });
       });
+
+      await test.step('Then the entry is bracketed by the company logo, actually drawn on screen', async () => {
+        // toBeVisible() ignores opacity, and the trail's logos are built after the
+        // page's lazy-image fade-in has done its first pass — this once left every
+        // logo parked at opacity 0 while every visibility check still passed
+        const logos = home.careerTrailLogos('veterans-united');
+        await expect.soft(logos).toHaveCount(2);
+        await expect(logos.first()).toHaveCSS('opacity', '1');
+        await expect.soft(logos.last()).toHaveCSS('opacity', '1');
+        expect
+          .soft(await logos.first().evaluate((img: HTMLImageElement) => img.naturalWidth))
+          .toBeGreaterThan(0);
+      });
     },
   );
 });

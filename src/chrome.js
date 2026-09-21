@@ -193,14 +193,32 @@ export function initSiteNav({ nav, toggle }) {
 // hiding rule in style.css is scoped to html.js, so if this never runs the
 // images simply show — and a failed load is treated as "arrived" so a broken
 // image can't leave an invisible hole.
+//
+// Images built after this first pass get the same treatment through a
+// MutationObserver — the homepage's career trail adds its company logos one
+// at a time as the typewriter runs, and without this they'd stay hidden.
 export function initImageFadeIn() {
   document.documentElement.classList.add('js');
-  document.querySelectorAll('img[loading="lazy"]').forEach((img) => {
+
+  const watch = (img) => {
     const arrived = () => img.classList.add('is-loaded');
     if (img.complete) arrived();
     else img.addEventListener('load', arrived, { once: true });
     img.addEventListener('error', arrived, { once: true });
-  });
+  };
+  const watchWithin = (root) => root.querySelectorAll('img[loading="lazy"]').forEach(watch);
+
+  watchWithin(document);
+
+  new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      mutation.addedNodes.forEach((node) => {
+        if (node.nodeType !== Node.ELEMENT_NODE) return;
+        if (node.matches('img[loading="lazy"]')) watch(node);
+        else watchWithin(node);
+      });
+    });
+  }).observe(document.body, { childList: true, subtree: true });
 }
 
 // A soft brass/teal glow that trails the mouse with a bit of lag — only while

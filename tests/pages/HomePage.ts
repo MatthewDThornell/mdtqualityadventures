@@ -44,6 +44,11 @@ export class HomePage extends BasePage {
     return this.page.getByTestId(`career-trail-item-${companySlug}`);
   }
 
+  /** The company logos bracketing a trail entry's role (two per entry). */
+  careerTrailLogos(companySlug: string): Locator {
+    return this.careerTrailItem(companySlug).locator('img.career-trail-logo');
+  }
+
   // --- Professional Experience ---
   get credentialResumeBtn(): Locator {
     return this.page.getByTestId('credential-btn-resume');
