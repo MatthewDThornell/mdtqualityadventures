@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-21T21:50:29.045Z",
+  "fetchedAt": "2026-09-21T21:52:03.103Z",
   "jobs": [
     {
       "id": "greenhouse-roblox-8069987",
@@ -78,6 +78,19 @@
       "location": "Lima, Peru",
       "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
+    },
+    {
+      "id": "arbeitnow-senior-quality-engineer-parsdorf-bavaria-64458",
+      "title": "Senior Quality Engineer (m/f/d)",
+      "company": "isaraerospace",
+      "url": "https://www.arbeitnow.com/jobs/companies/isaraerospace/senior-quality-engineer-parsdorf-bavaria-64458",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Parsdorf, Bavaria",
+      "country": "Other",
+      "postedAt": "2026-09-20T20:55:17.000Z"
     },
     {
       "id": "arbeitnow-werkstudent-quality-assurance-medizinalcannabis-koln-488687",
