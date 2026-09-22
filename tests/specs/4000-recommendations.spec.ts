@@ -425,4 +425,43 @@ test.describe('Recommendations', () => {
       });
     },
   );
+
+  test(
+    'Test_Case_4009_Recommendations_Signatures_CycleThroughHandsAndInks',
+    { tag: '@regression' },
+    async ({ page }) => {
+      await page.emulateMedia({ reducedMotion: 'reduce' });
+      const home = new HomePage(page);
+      await home.goto();
+
+      await test.step('Then the letters are signed in five different hands and five different inks, cycling by card', async () => {
+        const signatures = await page
+          .locator('.rec-card:not([data-outcome]) .rec-signature-name')
+          .evaluateAll((els) =>
+            els.map((el) => {
+              const cs = getComputedStyle(el);
+              return { font: cs.fontFamily.split(',')[0].replace(/"/g, ''), color: cs.color };
+            }),
+          );
+        expect.soft(signatures.length).toBeGreaterThanOrEqual(10);
+        expect.soft(new Set(signatures.map((s) => s.font)).size).toBe(5);
+        expect.soft(new Set(signatures.map((s) => s.color)).size).toBe(5);
+        // no two neighbours sign alike
+        for (let i = 1; i < signatures.length; i++) {
+          expect
+            .soft(signatures[i].font, `signature ${i} repeats the hand before it`)
+            .not.toBe(signatures[i - 1].font);
+        }
+      });
+
+      await test.step('Then the two incident cards still sign in their own verdict colours', async () => {
+        await expect
+          .soft(home.recCard('quaid').locator('.rec-signature-name'))
+          .toHaveCSS('color', 'rgb(226, 96, 96)');
+        await expect
+          .soft(home.recCard('anonymous-user').locator('.rec-signature-name'))
+          .toHaveCSS('color', 'rgb(242, 150, 60)');
+      });
+    },
+  );
 });

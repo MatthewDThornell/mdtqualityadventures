@@ -101,6 +101,14 @@ it from the card's own name, title, company, letter, photo and first words, so a
 always the test for what the card actually says). Each block's summary names the framework with
 its kit logo, the canonical `Test_Case_NNNN_…` id and the step count.
 
+### Signatures
+
+Every recommendation is signed, and no two neighbours sign alike: five hands (Caveat, Dancing
+Script, Homemade Apple, Kalam, Great Vibes — the extra four are loaded only by ) and
+five inks cycle down each group of cards by in , each hand
+with its own size and tilt. The two incident cards keep their verdict's colour through the same
+variable.
+
 ### Image sizes
 
 Every `<img>` carries its intrinsic `width`/`height` so the browser reserves the right box before

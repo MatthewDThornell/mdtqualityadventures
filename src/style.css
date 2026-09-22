@@ -2995,8 +2995,7 @@ html.pen-active .typewriter .tw-quill {
 }
 
 .rec-card-blocked .rec-signature-name {
-  color: rgb(var(--blocked-rgb));
-  text-shadow: 0 0 10px rgba(var(--blocked-rgb), 0.5);
+  --sig-rgb: var(--blocked-rgb);
 }
 
 .rec-card-blocked .rec-link.is-missing {
@@ -3029,8 +3028,7 @@ html.pen-active .typewriter .tw-quill {
 }
 
 .rec-card-failed .rec-signature-name {
-  color: rgb(var(--fail-rgb));
-  text-shadow: 0 0 10px rgba(var(--fail-rgb), 0.5);
+  --sig-rgb: var(--fail-rgb);
 }
 
 /* --- the investigation: a terminal log, then the test it generates --- */
@@ -3373,15 +3371,53 @@ a.rec-link:hover {
   color: rgba(var(--code-rgb), 0.6);
 }
 
+/* Every signature is in a different hand and ink. Five hands — a marker,
+   a flowing script, a scratchy pen, a brush, a calligrapher's nib — and
+   five inks cycle down the section by card, so no two neighbours sign
+   alike; the two incident cards keep their own verdict's colour. Each
+   hand sets its own size and tilt, since the faces differ in x-height. */
 .rec-signature-name {
+  --sig-rgb: var(--code-rgb);
+  --sig-tilt: -3deg;
   font-family: var(--font-cursive);
   font-size: 1.45rem;
   font-weight: 600;
-  color: rgb(var(--code-rgb));
-  text-shadow: 0 0 10px rgba(var(--code-rgb), 0.55);
-  transform: rotate(-3deg);
+  color: rgb(var(--sig-rgb));
+  text-shadow: 0 0 10px rgba(var(--sig-rgb), 0.55);
+  transform: rotate(var(--sig-tilt));
   transform-origin: left bottom;
   padding-right: 0.15em;
+}
+
+.rec-card:not([data-outcome]):nth-of-type(5n + 2) .rec-signature-name {
+  --sig-rgb: var(--brass-bright-rgb);
+  --sig-tilt: -1.5deg;
+  font-family: 'Dancing Script', var(--font-cursive);
+  font-size: 1.5rem;
+}
+
+.rec-card:not([data-outcome]):nth-of-type(5n + 3) .rec-signature-name {
+  --sig-rgb: 201, 160, 255;
+  --sig-tilt: -4deg;
+  font-family: 'Homemade Apple', var(--font-cursive);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.rec-card:not([data-outcome]):nth-of-type(5n + 4) .rec-signature-name {
+  --sig-rgb: 143, 211, 255;
+  --sig-tilt: 1.5deg;
+  font-family: 'Kalam', var(--font-cursive);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.rec-card:not([data-outcome]):nth-of-type(5n + 5) .rec-signature-name {
+  --sig-rgb: 255, 159, 138;
+  --sig-tilt: -2deg;
+  font-family: 'Great Vibes', var(--font-cursive);
+  font-size: 1.7rem;
+  font-weight: 400;
 }
 
 .rec-card[data-status='pending'] .rec-signature-name {
