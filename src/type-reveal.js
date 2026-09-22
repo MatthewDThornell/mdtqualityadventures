@@ -85,7 +85,7 @@ export function typeReveal(el, msPerChar) {
 // punchline, where the second arriving early gives the first away.
 export function initTypeOnView(
   elements,
-  { msPerChar = 30, staggerMs = 320, sequential = false } = {},
+  { msPerChar = 30, staggerMs = 320, sequential = false, threshold = 0.6 } = {},
 ) {
   const targets = Array.from(elements).filter((el) => el.textContent.trim());
   if (targets.length === 0) return;
@@ -117,7 +117,7 @@ export function initTypeOnView(
           setTimeout(() => write(entry.target), i * staggerMs);
         });
     },
-    { threshold: 0.6 },
+    { threshold },
   );
   targets.forEach((el) => observer.observe(el));
 }

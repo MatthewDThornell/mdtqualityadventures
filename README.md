@@ -115,6 +115,13 @@ The City Barbers shout-out in Quality Adventures uses the same reveal with two c
 lines are `sequential`, so the hand-off cannot name the Ace while the setup is still typing, and
 the caret is a pair of barber shears that snip as the line comes out (`.tw-cursor-shears`).
 
+Two cards give the cursor a costume. The City Barbers shout-out types with a pair of barber
+shears (`.tw-cursor-shears`); Tyler High’s card — he details cars — types its testimony with his
+Subaru Sambar, roof box and all (`.tw-cursor-van`), and when the last line lands a microfibre rag
+crosses the card and leaves the shine behind it (`src/polish-pass.js`, `.detail-polish`). Both the
+van and the rag are inline SVG in the stylesheet rather than photographs, so they take the page’s
+colours and cost no request; the rag is aria-hidden and changes no word of the card.
+
 Under reduced motion none of the three run, and every line simply reads.
 
 ### Card tests

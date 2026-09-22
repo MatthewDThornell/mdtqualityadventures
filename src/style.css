@@ -1583,6 +1583,128 @@ html.pen-active .typewriter .tw-quill {
   }
 }
 
+/* On the detailer's card, the cursor is his van: it drives the line out,
+   bobbing on its suspension, with the roof box he actually runs. */
+.tw-cursor-van .tw-typed.is-writing::after {
+  content: '';
+  width: 1.75em;
+  height: 1.24em;
+  top: -0.22em;
+  margin-left: 0.22em;
+  background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2034%2024%22%3E%3Crect%20x%3D%227%22%20y%3D%221%22%20width%3D%2216%22%20height%3D%224.8%22%20rx%3D%221.3%22%20fill%3D%22%2315171a%22%2F%3E%3Crect%20x%3D%226.6%22%20y%3D%225.3%22%20width%3D%2216.8%22%20height%3D%220.9%22%20rx%3D%220.4%22%20fill%3D%22%232a2c2e%22%2F%3E%3Cpath%20d%3D%22M4%206.1h25.2c1.2%200%202.2%201%202.2%202.2v7.1c0%201-.8%201.8-1.8%201.8H3.6c-1%200-1.8-.8-1.8-1.8V8.3c0-1.2%201-2.2%202.2-2.2z%22%20fill%3D%22%236f6d4a%22%2F%3E%3Cpath%20d%3D%22M5.6%208h7.2v4.5H5.6zM14.4%208h6.1v4.5h-6.1zM22.1%208h6.3v4.5h-6.3z%22%20fill%3D%22%233a434b%22%2F%3E%3Crect%20x%3D%221.8%22%20y%3D%2213.9%22%20width%3D%2229.6%22%20height%3D%221.1%22%20fill%3D%22%2356553a%22%2F%3E%3Crect%20x%3D%2229.6%22%20y%3D%2212.7%22%20width%3D%221.8%22%20height%3D%221.4%22%20rx%3D%220.5%22%20fill%3D%22%23e6dcae%22%2F%3E%3Ccircle%20cx%3D%229.4%22%20cy%3D%2217.4%22%20r%3D%223.3%22%20fill%3D%22%23121214%22%2F%3E%3Ccircle%20cx%3D%229.4%22%20cy%3D%2217.4%22%20r%3D%221.25%22%20fill%3D%22%234d4d4d%22%2F%3E%3Ccircle%20cx%3D%2224.2%22%20cy%3D%2217.4%22%20r%3D%223.3%22%20fill%3D%22%23121214%22%2F%3E%3Ccircle%20cx%3D%2224.2%22%20cy%3D%2217.4%22%20r%3D%221.25%22%20fill%3D%22%234d4d4d%22%2F%3E%3C%2Fsvg%3E')
+    center / contain no-repeat;
+  animation: van-drive 0.75s ease-in-out infinite;
+}
+
+@keyframes van-drive {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  35% {
+    transform: translateY(-0.055em) rotate(-0.6deg);
+  }
+  70% {
+    transform: translateY(0.02em) rotate(0.4deg);
+  }
+}
+
+/* The polish pass (src/polish-pass.js): once the testimony has typed itself
+   out, a microfibre rag crosses the card and the shine follows it. The band
+   is the shine; the rag rides at its leading edge. Both are decorative and
+   change no word of the card. */
+.detail-polish {
+  position: relative;
+}
+
+.polish-pass {
+  position: absolute;
+  inset: -0.5rem -0.75rem;
+  overflow: hidden;
+  border-radius: 8px;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.detail-polish.is-polishing .polish-pass {
+  opacity: 1;
+}
+
+.detail-polish.is-polishing .polish-pass::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  bottom: -10%;
+  width: 38%;
+  background: linear-gradient(
+    100deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.05) 30%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.05) 70%,
+    transparent 100%
+  );
+  mix-blend-mode: screen;
+  animation: polish-sweep 3.6s cubic-bezier(0.45, 0.05, 0.35, 1) both;
+}
+
+.polish-rag {
+  position: absolute;
+  top: 50%;
+  width: 2.9rem;
+  height: 2.9rem;
+  margin-top: -1.45rem;
+  background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20d%3D%22M4.5%209.2c3.8-2.4%207.7-3.5%2011.7-3.5s7.7%201.1%2011.3%203.2v13.3c-3.4%202.3-7.3%203.4-11.6%203.4s-7.9-1.1-11.4-3.3z%22%20fill%3D%22%23bfe6ff%22%20opacity%3D%220.9%22%2F%3E%3Cpath%20d%3D%22M4.5%209.2c3.8-2.4%207.7-3.5%2011.7-3.5s7.7%201.1%2011.3%203.2%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221.3%22%20opacity%3D%220.75%22%2F%3E%3Cpath%20d%3D%22M9.4%2010.6v12.4M14.3%209.4v13.9M19.2%209.5v13.8M24%2010.4v12.2%22%20stroke%3D%22%237fc0e8%22%20stroke-width%3D%220.9%22%20opacity%3D%220.65%22%2F%3E%3C%2Fsvg%3E')
+    center / contain no-repeat;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.45));
+  opacity: 0;
+}
+
+.detail-polish.is-polishing .polish-rag {
+  animation:
+    polish-sweep 3.6s cubic-bezier(0.45, 0.05, 0.35, 1) both,
+    rag-wipe 0.6s ease-in-out infinite;
+}
+
+@keyframes polish-sweep {
+  from {
+    left: -40%;
+    opacity: 1;
+  }
+  to {
+    left: 102%;
+    opacity: 1;
+  }
+}
+
+/* the cloth works in small circles as it crosses */
+@keyframes rag-wipe {
+  0%,
+  100% {
+    transform: translateY(-0.35rem) rotate(-7deg);
+  }
+  50% {
+    transform: translateY(0.35rem) rotate(6deg);
+  }
+}
+
+/* and the finish it leaves behind */
+.detail-polish.is-polished > p {
+  animation: polish-bloom 1.6s ease-out both;
+}
+
+@keyframes polish-bloom {
+  0%,
+  100% {
+    text-shadow: none;
+  }
+  40% {
+    text-shadow:
+      0 0 12px rgba(255, 255, 255, 0.55),
+      0 0 30px rgba(var(--code-rgb), 0.35);
+  }
+}
+
 /* nothing types under reduced motion, so nothing may be left waiting */
 @media (prefers-reduced-motion: reduce) {
   .tw-waiting {

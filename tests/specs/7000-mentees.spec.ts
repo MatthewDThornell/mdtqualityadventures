@@ -139,4 +139,79 @@ test.describe('Mentees', () => {
       });
     },
   );
+
+  test(
+    'Test_Case_7004_Mentees_DetailGuy_TestimonyTypesItselfThenGetsPolished',
+    { tag: '@regression' },
+    async ({ page }) => {
+      // the whole testimony types out, line after line, and is then buffed:
+      // seconds of animation by design
+      test.slow();
+      const home = new HomePage(page);
+      await home.goto();
+      const body = home.spotlightCard('tyler-high').locator('.adventure-body');
+      const lines = body.locator('> p:not(.card-meta):not(.card-follow)');
+      const opening = 'Tyler and I have known each other since we were kids';
+
+      await test.step('Given the testimony waits unwritten, with every word already in the page', async () => {
+        await expect.soft(lines.first()).toHaveClass(/tw-waiting/);
+        await expect.soft(lines.first()).toContainText(opening);
+        await expect.soft(body).not.toHaveClass(/is-polish/);
+      });
+
+      await test.step('When the card scrolls into view, his van drives the first line out', async () => {
+        await body.evaluate((el) => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
+        await expect(lines.first()).toHaveClass(/is-typing|tw-written/, { timeout: 20_000 });
+        // the cursor is his Subaru, not the block the rest of the site types with
+        await expect
+          .poll(
+            () =>
+              body.evaluate((el) => {
+                const writing = el.querySelector('.tw-typed.is-writing');
+                return writing ? getComputedStyle(writing, '::after').backgroundImage : '';
+              }),
+            { timeout: 20_000 },
+          )
+          .toContain('data:image/svg+xml');
+      });
+
+      await test.step('Then every line lands, in order, with its text intact', async () => {
+        const count = await lines.count();
+        await expect(lines.nth(count - 1)).toHaveClass(/tw-written/, { timeout: 90_000 });
+        for (let i = 0; i < count; i++) {
+          await expect.soft(lines.nth(i)).toHaveClass(/tw-written/);
+        }
+        await expect.soft(lines.first()).toContainText(opening);
+        await expect.soft(body.locator('.tw-typed, .tw-pending')).toHaveCount(0);
+      });
+
+      await test.step('Then the rag passes over it and leaves the card polished', async () => {
+        await expect(body).toHaveClass(/is-polished/, { timeout: 30_000 });
+        // the pass is decoration: aria-hidden, and it took nothing out of the card
+        await expect.soft(body.locator('.polish-pass')).toHaveAttribute('aria-hidden', 'true');
+        await expect.soft(lines.first()).toContainText(opening);
+        await expect.soft(lines.last()).toBeVisible();
+      });
+    },
+  );
+
+  test(
+    'Test_Case_7005_Mentees_DetailGuy_ReducedMotion_ReadsWithoutTheShow',
+    { tag: '@regression' },
+    async ({ page }) => {
+      await page.emulateMedia({ reducedMotion: 'reduce' });
+      const home = new HomePage(page);
+      await home.goto();
+      const body = home.spotlightCard('tyler-high').locator('.adventure-body');
+
+      await test.step('Then nothing waits, nothing types, and no rag is built', async () => {
+        await expect.soft(body.locator('.tw-waiting')).toHaveCount(0);
+        await expect.soft(body.locator('.polish-pass')).toHaveCount(0);
+        await expect.soft(body).not.toHaveClass(/is-polish/);
+        await expect
+          .soft(body.locator('> p:not(.card-meta):not(.card-follow)').first())
+          .toContainText('Tyler and I have known each other since we were kids');
+      });
+    },
+  );
 });

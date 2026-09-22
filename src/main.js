@@ -8,6 +8,7 @@ import { initFigures } from './figures.js';
 import { initQuoteDecrypt } from './quote-decrypt.js';
 import { initTitleDecrypt } from './title-decrypt.js';
 import { initTypeOnView } from './type-reveal.js';
+import { initPolishPass } from './polish-pass.js';
 import { initIncidentReport } from './incident-report.js';
 import {
   initScrollRibbon,
@@ -339,3 +340,14 @@ if (chapterNav && chapterUpBtn && chapterDownBtn) {
 
   updateChapterNav();
 }
+
+// Tyler details cars for a living, so his card writes its own testimony with
+// his van for a cursor and then buffs the finished text with a microfibre rag
+const detailBody = document.querySelector(
+  '[data-testid="spotlight-card-tyler-high"] .adventure-body',
+);
+const detailLines = detailBody
+  ? detailBody.querySelectorAll(':scope > p:not(.card-meta):not(.card-follow)')
+  : [];
+initTypeOnView(detailLines, { msPerChar: 11, sequential: true, threshold: 0.3 });
+initPolishPass(detailBody, detailLines);
