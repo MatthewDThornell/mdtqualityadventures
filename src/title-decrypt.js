@@ -9,7 +9,7 @@
 // A heading is sixteen characters, not eight hundred, so the sweep is
 // shorter than a quote's; and every overlay is built up front, since three
 // titles' worth of spans is nothing.
-import { buildOverlay, decrypt } from './quote-decrypt.js';
+import { buildOverlay, decrypt, dressOverlay } from './quote-decrypt.js';
 
 const WAVE_MS = 900;
 const SETTLE_MS = 700;
@@ -25,20 +25,8 @@ export function initTitleDecrypt(headings) {
   targets.forEach((heading) => {
     const { overlay, charSpans } = buildOverlay(heading.textContent, 'title-decrypt');
     // the overlay is a sibling inside a positioned wrapper, not a child of the
-    // heading, so the heading's own textContent stays exactly its title — which
-    // also means it inherits nothing from the heading: its face, size and
-    // leading are copied over so the reveal lands in the box it covers
-    const face = getComputedStyle(heading);
-    for (const prop of [
-      'fontFamily',
-      'fontSize',
-      'fontWeight',
-      'fontStyle',
-      'lineHeight',
-      'letterSpacing',
-    ]) {
-      overlay.style[prop] = face[prop];
-    }
+    // heading, so the heading's own textContent stays exactly its title
+    dressOverlay(overlay, heading);
     const wrap = document.createElement('span');
     wrap.className = 'title-decrypt-wrap';
     heading.parentNode.insertBefore(wrap, heading);

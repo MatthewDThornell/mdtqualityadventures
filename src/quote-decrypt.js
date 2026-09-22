@@ -1,7 +1,7 @@
-// The hero's decrypt, scaled to paragraphs: every recommendation starts as a
-// block of binary and resolves into the real words when its card scrolls into
-// view, so reading down the section feels like the story decoding card by
-// card. Same technique as src/hero-decrypt.js — the real paragraph is never
+// The hero's decrypt, scaled to paragraphs: every recommendation — and every
+// accomplishment — starts as a block of binary and resolves into the real
+// words when its card scrolls into view, so reading down a section feels like
+// the story decoding card by card. Same technique as src/hero-decrypt.js — the real paragraph is never
 // rewritten, only made transparent behind an aria-hidden overlay that plays
 // the scramble and is removed once every character has locked — so a screen
 // reader or a test reading the paragraph sees the real quote the whole time.
@@ -23,6 +23,31 @@ const STAGGER_MS = 180; // between cards that scroll into view together, so they
 const CHURN = 0.5; // share of still-scrambling characters rewritten each frame — reads as full noise at half the cost
 
 const randomFrom = (pool) => pool[Math.floor(Math.random() * pool.length)];
+
+// A card that carries a verdict badge and runs its own test before its text
+// decrypts: the recommendation cards, and the accomplishment cards that
+// borrow their machinery (see .card-tested in style.css).
+export const TESTED_CARD = '.rec-card, .card-tested';
+
+// An overlay is a sibling of the text it covers, not a child, so it inherits
+// nothing from it: face, size, leading and colour are copied over so the
+// reveal lands in the same box, in the same ink, whatever the element is —
+// an italic quote, a muted paragraph, a display-serif title. Read before the
+// element is made transparent, or the colour copied would be none.
+export function dressOverlay(overlay, source) {
+  const face = getComputedStyle(source);
+  for (const prop of [
+    'fontFamily',
+    'fontSize',
+    'fontWeight',
+    'fontStyle',
+    'lineHeight',
+    'letterSpacing',
+    'color',
+  ]) {
+    overlay.style[prop] = face[prop];
+  }
+}
 
 export function buildOverlay(text, className = 'quote-decrypt') {
   const overlay = document.createElement('span');
@@ -102,7 +127,7 @@ export function decrypt(paragraph, overlay, charSpans, options = {}) {
 // PASS, or FAIL for the one card that carries that verdict — and anything
 // waiting on the result (src/incident-report.js) hears about it
 function settleVerdict(paragraph) {
-  const card = paragraph.closest('.rec-card');
+  const card = paragraph.closest(TESTED_CARD);
   if (!card) return;
   card.dataset.status = card.dataset.outcome || 'pass';
   card.dispatchEvent(new CustomEvent('quote-decrypted', { bubbles: true }));
@@ -116,7 +141,7 @@ export function initQuoteDecrypt(paragraphs) {
   // every verdict is pending from the start; the badge is the only visible
   // sign of that until a card gets close enough to be given its overlay
   targets.forEach((p) => {
-    const card = p.closest('.rec-card');
+    const card = p.closest(TESTED_CARD);
     if (card) card.dataset.status = 'pending';
   });
 
@@ -133,7 +158,10 @@ export function initQuoteDecrypt(paragraphs) {
           // cards that arrive in the same batch decode one after another — and
           // each runs its own test case first (src/rec-precheck.js)
           setTimeout(() => {
-            runPrecheck(entry.target.closest('.rec-card')).then(() =>
+            // the test's terminal fills the text's own box — the blockquote,
+            // or the card-body wrapping an accomplishment's paragraph
+            const card = entry.target.closest(TESTED_CARD);
+            runPrecheck(card, entry.target.parentElement).then(() =>
               decrypt(entry.target, overlay, charSpans, {
                 onDone: () => settleVerdict(entry.target),
               }),
@@ -158,6 +186,7 @@ export function initQuoteDecrypt(paragraphs) {
           const p = entry.target;
           buildObserver.unobserve(p);
           const { overlay, charSpans } = buildOverlay(p.textContent);
+          dressOverlay(overlay, p);
           p.classList.add('quote-decrypt-hidden');
           p.parentNode.insertBefore(overlay, p.nextSibling);
           pending.set(p, { overlay, charSpans });

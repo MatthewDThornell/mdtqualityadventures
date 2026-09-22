@@ -17,6 +17,7 @@
     "test:report": "playwright show-report",
     "optimize:images": "node scripts/optimize-images.mjs",
     "fetch:jobs": "node scripts/fetch-jobs.mjs",
+    "gen:tests": "node scripts/generate-card-tests.mjs",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",

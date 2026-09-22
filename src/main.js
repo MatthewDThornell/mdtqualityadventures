@@ -29,7 +29,7 @@ initSpotlight(document.querySelector('[data-testid="mentee-spotlight"]'));
 initFigures(document.querySelector('[data-testid="figures"]'));
 // the reports listen for the decrypt's verdict, so they must be wired before the decrypt starts
 document.querySelectorAll('.rec-card[data-outcome]').forEach(initIncidentReport);
-initQuoteDecrypt(document.querySelectorAll('.rec-card blockquote p'));
+initQuoteDecrypt(document.querySelectorAll('.rec-card blockquote p, .card-tested .card-body p'));
 initTitleDecrypt(document.querySelectorAll('.page-opener h2'));
 
 const coverCanvas = document.getElementById('cover-canvas');

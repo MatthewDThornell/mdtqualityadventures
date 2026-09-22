@@ -129,6 +129,11 @@ export class HomePage extends BasePage {
     return this.page.getByTestId(`accomplishment-card-${slug}`);
   }
 
+  // the card's own test case (see scripts/generate-card-tests.mjs)
+  accomplishmentTest(slug: string): Locator {
+    return this.page.getByTestId(`accomplishment-test-${slug}`);
+  }
+
   // --- Recommendations (also covers the mentees "In Their Own Words" grid,
   // which reuses the same rec-card-<person-slug> pattern) ---
   recCard(personSlug: string): Locator {

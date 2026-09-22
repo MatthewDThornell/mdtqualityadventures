@@ -87,6 +87,20 @@ sharing the overlay and sweep of `src/quote-decrypt.js`). Like every decrypt on 
 aria-hidden overlay beside the real heading, never a rewrite of it; under reduced motion the titles
 simply read.
 
+### Card tests
+
+Every recommendation and accomplishment card carries its own test case, which types out and
+passes on the card before its text decrypts (`src/rec-precheck.js`, `src/quote-decrypt.js`; a
+card opts in with the `card-tested` class and a `.card-body` around its text). The tests are
+illustrative — they never run — but they are real code, and the suite speaks five frameworks:
+recommendation cards take turns in Playwright TypeScript, Playwright Python, Cypress, Playwright
+.NET (C#) and Robot Framework, and each accomplishment is written in the tool the work itself was
+done in. They are generated, not hand-typed — after adding, removing or editing a card, run
+`npm run gen:tests` (idempotent; `scripts/generate-card-tests.mjs` strips every block and rewrites
+it from the card's own name, title, company, letter, photo and first words, so a card's test is
+always the test for what the card actually says). Each block's summary names the framework with
+its kit logo, the canonical `Test_Case_NNNN_…` id and the step count.
+
 ### Image sizes
 
 Every `<img>` carries its intrinsic `width`/`height` so the browser reserves the right box before
@@ -250,10 +264,11 @@ gets reordered or a new entry is inserted in the middle.
   buttons, TAU watch/hide toggles, the mentee spotlight's prev/next arrows).
 - The "by the numbers" strip and each of its figures (`figures`, `figure-years` …), since a test
   checks the counted-up values against the prose they summarise.
-- Each recommendation's own test case (`rec-test-<person-slug>`) — the `<details>` above the quote
-  that runs, passes and folds before the quote decrypts. Its code is generated from the card's
-  own name, title, company and links (see the `Test_Case_41xx` blocks in `index.html`), and is
-  illustrative: the suite's 4000/4001 make those same checks across every card.
+- Each recommendation's and accomplishment's own test case (`rec-test-<person-slug>`,
+  `accomplishment-test-<slug>`) — the `<details>` above the text that runs, passes and folds
+  before the text decrypts, carrying `data-lang` for the framework it is written in. See
+  [Card tests](#card-tests); the suite's 3000-series and 4000/4001 make those same checks for
+  real.
 - The two incident cards in Recommendations and their reports — Quaid, who fails
   (`rec-card-quaid`, `quaid-report`, `quaid-generated-test`, `quaid-log-fail`, `quaid-log-done`)
   and the Anonymous User, who is blocked (`rec-card-anonymous-user`, `anonymous-report`,

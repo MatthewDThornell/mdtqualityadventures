@@ -382,54 +382,220 @@
             <p class="chapter-intro">A few entries from the work itself.</p>
 
             <div class="card-grid">
-              <article class="card" data-testid="accomplishment-card-veterans-united-coverage">
+              <article class="card card-tested" data-testid="accomplishment-card-veterans-united-coverage">
                 <h3>Zero to 80% coverage</h3>
                 <p class="card-meta"><img class="timeline-logo" src="/images/logos/veterans-united.png" width="180" height="180" alt="" loading="lazy" /><a class="brand-link brand-veterans-united" href="https://www.veteransunited.com/" target="_blank" rel="noopener">Veterans United Home Loans</a></p>
-                <p>
-                  Built a Playwright automation framework from scratch, taking quality code
-                  coverage from 0% to 80% while standing up in-house dashboards, alerts, and
-                  guards that kept the whole team honest.
-                </p>
+                <details class="rec-test" data-testid="accomplishment-test-veterans-united-coverage" data-lang="ts">
+                  <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/playwright.svg" width="14" height="14" alt="" />Playwright · TypeScript</span>
+                    <span class="rec-test-name">Test_<wbr />Case_<wbr />3101_<wbr />Accomplishments_<wbr />ZeroTo80Coverage_<wbr />EntryRenders</span>
+                    <span class="rec-test-status">3 steps</span>
+                  </summary>
+                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_3101_Accomplishments_ZeroTo80Coverage_EntryRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
+  <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
+  <span class="tok-kw">const</span> card = home.accomplishmentCard(<span class="tok-str">'veterans-united-coverage'</span>);
+
+  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the entry is headed "Zero to 80% coverage"'</span>, <span class="tok-kw">async</span> () =&gt; {
+    <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'h3'</span>)).toHaveText(<span class="tok-str">'Zero to 80% coverage'</span>);
+  });
+
+  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then it names Veterans United Home Loans, linking out to their site in a new tab'</span>, <span class="tok-kw">async</span> () =&gt; {
+    <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'.card-meta a'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">'https://www.veteransunited.com/'</span>);
+    <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'.card-meta a'</span>)).toHaveAttribute(<span class="tok-str">'target'</span>, <span class="tok-str">'_blank'</span>);
+    <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'.card-meta a'</span>)).toHaveAttribute(<span class="tok-str">'rel'</span>, <span class="tok-str">/noopener/</span>);
+  });
+
+  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the entry decrypts and reads in full'</span>, <span class="tok-kw">async</span> () =&gt; {
+    <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'.card-body p'</span>)).toContainText(<span class="tok-str">'Built a Playwright automation framework from scratch'</span>);
+    <span class="tok-kw">await</span> expect(card, <span class="tok-str">'an entry that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
+  });
+});</code></pre>
+                </details>
+                <div class="card-body">
+                  <p>
+                    Built a Playwright automation framework from scratch, taking quality code
+                    coverage from 0% to 80% while standing up in-house dashboards, alerts, and
+                    guards that kept the whole team honest.
+                  </p>
+                </div>
               </article>
-              <article class="card" data-testid="accomplishment-card-werner-reporting">
+              <article class="card card-tested" data-testid="accomplishment-card-werner-reporting">
                 <img class="card-photo" src="/images/werner-truck.jpg" width="206" height="206" alt="Matthew at the Werner Enterprises visitor center" loading="lazy" />
                 <h3>Quality by the numbers</h3>
                 <p class="card-meta"><img class="timeline-logo" src="/images/logos/werner.png" width="192" height="192" alt="" loading="lazy" /><a class="brand-link brand-werner" href="https://www.werner.com/" target="_blank" rel="noopener">Werner Enterprises</a></p>
-                <p>
-                  Designed enterprise-level QA reporting in Power BI, including visual test
-                  breakdowns, pass/fail trends, and risk assessments, alongside
-                  compliance checklists covering PII, SOX, ADA, and HIPAA/FERPA.
-                </p>
+                <details class="rec-test" data-testid="accomplishment-test-werner-reporting" data-lang="cs">
+                  <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/csharp.svg" width="14" height="14" alt="" />Playwright · C#</span>
+                    <span class="rec-test-name">Test_<wbr />Case_<wbr />3102_<wbr />Accomplishments_<wbr />QualityByTheNumbers_<wbr />EntryRenders</span>
+                    <span class="rec-test-status">4 steps</span>
+                  </summary>
+                  <pre class="qa-code"><code><span class="tok-kw">[TestFixture]</span>
+<span class="tok-kw">public</span> <span class="tok-kw">class</span> HomeTests : PageTest
+{
+    <span class="tok-kw">[Test, Category("smoke")]</span>
+    <span class="tok-kw">public</span> <span class="tok-kw">async</span> <span class="tok-kw">Task</span> <span class="tok-fn">Test_Case_3102_Accomplishments_QualityByTheNumbers_EntryRenders</span>()
+    {
+        <span class="tok-kw">var</span> home = <span class="tok-kw">new</span> HomePage(Page);
+        <span class="tok-kw">var</span> card = home.AccomplishmentCard(<span class="tok-str">"werner-reporting"</span>);
+
+        <span class="tok-comment">// Then the entry is headed "Quality by the numbers"</span>
+        <span class="tok-kw">await</span> Expect(card.Locator(<span class="tok-str">"h3"</span>)).ToHaveTextAsync(<span class="tok-str">"Quality by the numbers"</span>);
+
+        <span class="tok-comment">// Then it names Werner Enterprises, linking out to their site in a new tab</span>
+        <span class="tok-kw">await</span> Expect(card.Locator(<span class="tok-str">".card-meta a"</span>)).ToHaveAttributeAsync(<span class="tok-str">"href"</span>, <span class="tok-str">"https://www.werner.com/"</span>);
+        <span class="tok-kw">await</span> Expect(card.Locator(<span class="tok-str">".card-meta a"</span>)).ToHaveAttributeAsync(<span class="tok-str">"target"</span>, <span class="tok-str">"_blank"</span>);
+        <span class="tok-kw">await</span> Expect(card.Locator(<span class="tok-str">".card-meta a"</span>)).ToHaveAttributeAsync(<span class="tok-str">"rel"</span>, <span class="tok-kw">new</span> Regex(<span class="tok-str">@"noopener"</span>));
+
+        <span class="tok-comment">// Then the photograph has loaded and is described for a screen reader</span>
+        Assert.That(<span class="tok-kw">await</span> card.Locator(<span class="tok-str">".card-photo"</span>).EvaluateAsync&lt;int&gt;(<span class="tok-str">"img =&gt; img.naturalWidth"</span>), Is.GreaterThan(<span class="tok-num">0</span>));
+        <span class="tok-kw">await</span> Expect(card.Locator(<span class="tok-str">".card-photo"</span>)).ToHaveAttributeAsync(<span class="tok-str">"alt"</span>, <span class="tok-str">"Matthew at the Werner Enterprises visitor center"</span>);
+
+        <span class="tok-comment">// Then the entry decrypts and reads in full</span>
+        <span class="tok-kw">await</span> Expect(card.Locator(<span class="tok-str">".card-body p"</span>)).ToContainTextAsync(<span class="tok-str">"Designed enterprise-level QA reporting in Power BI"</span>);
+        <span class="tok-kw">await</span> Expect(card).ToHaveAttributeAsync(<span class="tok-str">"data-status"</span>, <span class="tok-str">"pass"</span>); <span class="tok-comment">// an entry that read in full is a pass</span>
+    }
+}</code></pre>
+                </details>
+                <div class="card-body">
+                  <p>
+                    Designed enterprise-level QA reporting in Power BI, including visual test
+                    breakdowns, pass/fail trends, and risk assessments, alongside
+                    compliance checklists covering PII, SOX, ADA, and HIPAA/FERPA.
+                  </p>
+                </div>
               </article>
-              <article class="card" data-testid="accomplishment-card-conexed-migration">
+              <article class="card card-tested" data-testid="accomplishment-card-conexed-migration">
                 <img class="card-photo" src="/images/conexed-team.jpg" width="1440" height="1080" alt="The ConexED QA and engineering team" loading="lazy" />
                 <h3>400+ tests, 60% faster</h3>
                 <p class="card-meta"><img class="timeline-logo" src="/images/logos/conexed.png" width="256" height="256" alt="" loading="lazy" /><a class="brand-link brand-conexed" href="https://www.conexed.com/" target="_blank" rel="noopener">ConexED</a></p>
-                <p>
-                  Migrated 400+ manual test cases into Cypress automation from the ground up,
-                  cutting regression testing time by 60% and building the QA process the team
-                  still runs on.
-                </p>
+                <details class="rec-test" data-testid="accomplishment-test-conexed-migration" data-lang="cy">
+                  <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/cypress.svg" width="14" height="14" alt="" />Cypress · JavaScript</span>
+                    <span class="rec-test-name">Test_<wbr />Case_<wbr />3103_<wbr />Accomplishments_<wbr />400Tests60Faster_<wbr />EntryRenders</span>
+                    <span class="rec-test-status">4 steps</span>
+                  </summary>
+                  <pre class="qa-code"><code><span class="tok-fn">describe</span>(<span class="tok-str">'Home'</span>, { tags: [<span class="tok-str">'@smoke'</span>] }, () =&gt; {
+  <span class="tok-fn">it</span>(<span class="tok-str">'Test_Case_3103_Accomplishments_400Tests60Faster_EntryRenders'</span>, () =&gt; {
+    cy.visit(<span class="tok-str">'/'</span>);
+    cy.get(<span class="tok-str">'[data-testid="accomplishment-card-conexed-migration"]'</span>).as(<span class="tok-str">'card'</span>);
+
+    cy.log(<span class="tok-str">'Then the entry is headed "400+ tests, 60% faster"'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).find(<span class="tok-str">'h3'</span>).should(<span class="tok-str">'have.text'</span>, <span class="tok-str">'400+ tests, 60% faster'</span>);
+
+    cy.log(<span class="tok-str">'Then it names ConexED, linking out to their site in a new tab'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).find(<span class="tok-str">'.card-meta a'</span>).should(<span class="tok-str">'have.attr'</span>, <span class="tok-str">'href'</span>, <span class="tok-str">'https://www.conexed.com/'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).find(<span class="tok-str">'.card-meta a'</span>).should(<span class="tok-str">'have.attr'</span>, <span class="tok-str">'target'</span>, <span class="tok-str">'_blank'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).find(<span class="tok-str">'.card-meta a'</span>).should(<span class="tok-str">'have.attr'</span>, <span class="tok-str">'rel'</span>).and(<span class="tok-str">'match'</span>, <span class="tok-str">/noopener/</span>);
+
+    cy.log(<span class="tok-str">'Then the photograph has loaded and is described for a screen reader'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).find(<span class="tok-str">'.card-photo'</span>).should(($img) =&gt; expect($img[<span class="tok-num">0</span>].naturalWidth).to.be.greaterThan(<span class="tok-num">0</span>));
+    cy.get(<span class="tok-str">'@card'</span>).find(<span class="tok-str">'.card-photo'</span>).should(<span class="tok-str">'have.attr'</span>, <span class="tok-str">'alt'</span>, <span class="tok-str">'The ConexED QA and engineering team'</span>);
+
+    cy.log(<span class="tok-str">'Then the entry decrypts and reads in full'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).find(<span class="tok-str">'.card-body p'</span>).should(<span class="tok-str">'contain.text'</span>, <span class="tok-str">'Migrated 400+ manual test cases into Cypress'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).should(<span class="tok-str">'have.attr'</span>, <span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>); <span class="tok-comment">// an entry that read in full is a pass</span>
+  });
+});</code></pre>
+                </details>
+                <div class="card-body">
+                  <p>
+                    Migrated 400+ manual test cases into Cypress automation from the ground up,
+                    cutting regression testing time by 60% and building the QA process the team
+                    still runs on.
+                  </p>
+                </div>
               </article>
-              <article class="card" data-testid="accomplishment-card-seekwell-stabilizing">
+              <article class="card card-tested" data-testid="accomplishment-card-seekwell-stabilizing">
                 <img class="card-photo" src="/images/1800contacts-team.jpg" width="206" height="206" alt="The Seekwell / 1-800-Contacts team on a river tubing outing" loading="lazy" />
                 <h3>Stabilizing under pressure</h3>
                 <p class="card-meta"><img class="timeline-logo" src="/images/logos/1800contacts.png" width="180" height="180" alt="" loading="lazy" /><a class="brand-link brand-seekwell" href="https://www.seekwell.com/" target="_blank" rel="noopener">Seekwell</a> / <a class="brand-link brand-seekwell" href="https://www.1800contacts.com/" target="_blank" rel="noopener">1-800-Contacts</a></p>
-                <p>
-                  Stabilized flaky automation inside live pipelines, automated complex A/B
-                  experiment releases, and built observability metrics that surfaced real
-                  customer behavior.
-                </p>
+                <details class="rec-test" data-testid="accomplishment-test-seekwell-stabilizing" data-lang="py">
+                  <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/python.svg" width="14" height="14" alt="" />Playwright · Python</span>
+                    <span class="rec-test-name">Test_<wbr />Case_<wbr />3104_<wbr />Accomplishments_<wbr />StabilizingUnderPressure_<wbr />EntryRenders</span>
+                    <span class="rec-test-status">4 steps</span>
+                  </summary>
+                  <pre class="qa-code"><code><span class="tok-kw">import</span> re
+<span class="tok-kw">import</span> pytest
+<span class="tok-kw">from</span> playwright.sync_api <span class="tok-kw">import</span> Page, expect
+
+<span class="tok-kw">from</span> pages.home_page <span class="tok-kw">import</span> HomePage
+
+
+<span class="tok-kw">@pytest.mark.smoke</span>
+<span class="tok-kw">def</span> <span class="tok-fn">test_case_3104_accomplishments_stabilizing_under_pressure_entry_renders</span>(page: Page):
+    home = HomePage(page)
+    card = home.accomplishment_card(<span class="tok-str">"seekwell-stabilizing"</span>)
+
+    <span class="tok-comment"># Then the entry is headed "Stabilizing under pressure"</span>
+    expect(card.locator(<span class="tok-str">"h3"</span>)).to_have_text(<span class="tok-str">"Stabilizing under pressure"</span>)
+
+    <span class="tok-comment"># Then it names Seekwell, linking out to their site in a new tab</span>
+    expect(card.locator(<span class="tok-str">".card-meta a"</span>)).to_have_attribute(<span class="tok-str">"href"</span>, <span class="tok-str">"https://www.seekwell.com/"</span>)
+    expect(card.locator(<span class="tok-str">".card-meta a"</span>)).to_have_attribute(<span class="tok-str">"target"</span>, <span class="tok-str">"_blank"</span>)
+    expect(card.locator(<span class="tok-str">".card-meta a"</span>)).to_have_attribute(<span class="tok-str">"rel"</span>, re.compile(<span class="tok-str">r"noopener"</span>))
+
+    <span class="tok-comment"># Then the photograph has loaded and is described for a screen reader</span>
+    <span class="tok-kw">assert</span> card.locator(<span class="tok-str">".card-photo"</span>).evaluate(<span class="tok-str">"img =&gt; img.naturalWidth"</span>) &gt; <span class="tok-num">0</span>
+    expect(card.locator(<span class="tok-str">".card-photo"</span>)).to_have_attribute(<span class="tok-str">"alt"</span>, <span class="tok-str">"The Seekwell / 1-800-Contacts team on a river tubing outing"</span>)
+
+    <span class="tok-comment"># Then the entry decrypts and reads in full</span>
+    expect(card.locator(<span class="tok-str">".card-body p"</span>)).to_contain_text(<span class="tok-str">"Stabilized flaky automation inside live pipelines, automated"</span>)
+    expect(card).to_have_attribute(<span class="tok-str">"data-status"</span>, <span class="tok-str">"pass"</span>)  <span class="tok-comment"># an entry that read in full is a pass</span></code></pre>
+                </details>
+                <div class="card-body">
+                  <p>
+                    Stabilized flaky automation inside live pipelines, automated complex A/B
+                    experiment releases, and built observability metrics that surfaced real
+                    customer behavior.
+                  </p>
+                </div>
               </article>
-              <article class="card" data-testid="accomplishment-card-cast-speaking">
+              <article class="card card-tested" data-testid="accomplishment-card-cast-speaking">
                 <img class="card-photo" src="/images/speaking.jpg" width="206" height="206" alt="Matthew speaking at a CAST conference session" loading="lazy" />
                 <h3>Asking the Right Questions</h3>
                 <p class="card-meta">CAST 2025 &middot; <a href="https://www.associationforsoftwaretesting.org/" target="_blank" rel="noopener">Association for Software Testing</a></p>
-                <p>
-                  Spoke at CAST 2025 on asking the right questions to your team during story
-                  planning: the moment where the highest-leverage quality questions can still
-                  shape a feature before a line of code gets written.
-                </p>
+                <details class="rec-test" data-testid="accomplishment-test-cast-speaking" data-lang="rf">
+                  <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/robotframework-dark.svg" width="14" height="14" alt="" />Robot Framework</span>
+                    <span class="rec-test-name">Test_<wbr />Case_<wbr />3105_<wbr />Accomplishments_<wbr />AskingTheRightQuestions_<wbr />EntryRenders</span>
+                    <span class="rec-test-status">4 steps</span>
+                  </summary>
+                  <pre class="qa-code"><code><span class="tok-kw">*** Settings ***</span>
+<span class="tok-kw">Library</span>         Browser
+<span class="tok-kw">Resource</span>        ../resources/home_page.resource
+<span class="tok-kw">Test Tags</span>       smoke
+
+<span class="tok-kw">*** Test Cases ***</span>
+<span class="tok-fn">Test_Case_3105_Accomplishments_AskingTheRightQuestions_EntryRenders</span>
+    <span class="tok-kw">[Documentation]</span>    The "Asking the Right Questions" entry renders with its company link and reads in full.
+<span class="tok-kw">    Given</span> The Home Page Is Open
+    <span class="tok-num">${card}</span>=    Set Variable    [data-testid="accomplishment-card-cast-speaking"]
+
+    <span class="tok-comment"># Then the entry is headed "Asking the Right Questions"</span>
+    Get Text    <span class="tok-num">${card}</span> h3    ==    Asking the Right Questions
+
+    <span class="tok-comment"># Then it names Association for Software Testing, linking out to their site in a new tab</span>
+    Get Attribute    <span class="tok-num">${card}</span> .card-meta a    href    ==    https://www.associationforsoftwaretesting.org/
+    Get Attribute    <span class="tok-num">${card}</span> .card-meta a    target    ==    _blank
+    Get Attribute    <span class="tok-num">${card}</span> .card-meta a    rel    matches    noopener
+
+    <span class="tok-comment"># Then the photograph has loaded and is described for a screen reader</span>
+    <span class="tok-num">${width}</span>=    Evaluate JavaScript    <span class="tok-num">${card}</span> .card-photo    (img) =&gt; img.naturalWidth
+    Should Be True    <span class="tok-num">${width}</span> &gt; <span class="tok-num">0</span>
+    Get Attribute    <span class="tok-num">${card}</span> .card-photo    alt    ==    Matthew speaking at a CAST conference session
+
+    <span class="tok-comment"># Then the entry decrypts and reads in full</span>
+    Get Text    <span class="tok-num">${card}</span> .card-body p    contains    Spoke at CAST <span class="tok-num">2025</span> on asking
+    Get Attribute    <span class="tok-num">${card}</span>    data-status    ==    pass    <span class="tok-comment"># an entry that read in full is a pass</span></code></pre>
+                </details>
+                <div class="card-body">
+                  <p>
+                    Spoke at CAST 2025 on asking the right questions to your team during story
+                    planning: the moment where the highest-leverage quality questions can still
+                    shape a feature before a line of code gets written.
+                  </p>
+                </div>
               </article>
             </div>
           </div>
@@ -1275,28 +1441,29 @@
                 </a>
                 <h3><a href="https://www.linkedin.com/in/vivian-nguyen-bb2694244/" target="_blank" rel="noopener">Vivian Nguyen</a></h3>
                 <p class="rec-title">Software QA Engineer at Werner Enterprises</p>
-                <details class="rec-test" data-testid="rec-test-vivian-nguyen">
+                <details class="rec-test" data-testid="rec-test-vivian-nguyen" data-lang="ts">
                   <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/playwright.svg" width="14" height="14" alt="" />Playwright · TypeScript</span>
                     <span class="rec-test-name">Test_<wbr />Case_<wbr />4101_<wbr />Recommendations_<wbr />VivianNguyen_<wbr />LetterRenders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_4101_Recommendations_VivianNguyen_LetterRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
   <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
-  <span class="tok-kw">const</span> letter = home.recCard(<span class="tok-str">'vivian-nguyen'</span>);
+  <span class="tok-kw">const</span> card = home.recCard(<span class="tok-str">'vivian-nguyen'</span>);
 
   <span class="tok-kw">await</span> test.step(<span class="tok-str">"Then Vivian Nguyen's name loads and displays, linked to their LinkedIn profile"</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.getByRole(<span class="tok-str">'heading'</span>, { name: <span class="tok-str">'Vivian Nguyen'</span> })).toBeVisible();
-    <span class="tok-kw">await</span> expect(home.recLinkedIn(<span class="tok-str">'vivian-nguyen'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">/linkedin\.com\/</span>in\//);
+    <span class="tok-kw">await</span> expect(card.getByRole(<span class="tok-str">'heading'</span>, { name: <span class="tok-str">'Vivian Nguyen'</span> })).toBeVisible();
+    <span class="tok-kw">await</span> expect(home.recLinkedIn(<span class="tok-str">'vivian-nguyen'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">/linkedin\.com\/in\//</span>);
   });
 
   <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then their title and where they are now are shown'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'.rec-title'</span>)).toHaveText(<span class="tok-str">'Software QA Engineer at Werner Enterprises'</span>);
+    <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'.rec-title'</span>)).toHaveText(<span class="tok-str">'Software QA Engineer at Werner Enterprises'</span>);
     <span class="tok-kw">await</span> expect(home.recCompany(<span class="tok-str">'vivian-nguyen'</span>)).toHaveAttribute(<span class="tok-str">'title'</span>, <span class="tok-str">'Now at Werner Enterprises'</span>);
   });
 
   <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the recommendation decrypts and reads in full'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'blockquote p'</span>)).toContainText(<span class="tok-str">'Starting my internship at Werner Enterprises,'</span>);
-    <span class="tok-kw">await</span> expect(letter, <span class="tok-str">'a letter that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
+    <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'blockquote p'</span>)).toContainText(<span class="tok-str">'Starting my internship at Werner Enterprises, Matthew'</span>);
+    <span class="tok-kw">await</span> expect(card, <span class="tok-str">'an entry that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
   });
 });</code></pre>
                 </details>
@@ -1356,30 +1523,35 @@
                 </a>
                 <h3><a href="https://www.linkedin.com/in/alex-fergestad/" target="_blank" rel="noopener">Alex Fergestad</a></h3>
                 <p class="rec-title">QA Analyst @ Old Republic Professional</p>
-                <details class="rec-test" data-testid="rec-test-alex-fergestad">
+                <details class="rec-test" data-testid="rec-test-alex-fergestad" data-lang="py">
                   <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/python.svg" width="14" height="14" alt="" />Playwright · Python</span>
                     <span class="rec-test-name">Test_<wbr />Case_<wbr />4102_<wbr />Recommendations_<wbr />AlexFergestad_<wbr />LetterRenders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
-                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_4102_Recommendations_AlexFergestad_LetterRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
-  <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
-  <span class="tok-kw">const</span> letter = home.recCard(<span class="tok-str">'alex-fergestad'</span>);
+                  <pre class="qa-code"><code><span class="tok-kw">import</span> re
+<span class="tok-kw">import</span> pytest
+<span class="tok-kw">from</span> playwright.sync_api <span class="tok-kw">import</span> Page, expect
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">"Then Alex Fergestad's name loads and displays, linked to their LinkedIn profile"</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.getByRole(<span class="tok-str">'heading'</span>, { name: <span class="tok-str">'Alex Fergestad'</span> })).toBeVisible();
-    <span class="tok-kw">await</span> expect(home.recLinkedIn(<span class="tok-str">'alex-fergestad'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">/linkedin\.com\/</span>in\//);
-  });
+<span class="tok-kw">from</span> pages.home_page <span class="tok-kw">import</span> HomePage
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then their title and where they are now are shown'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'.rec-title'</span>)).toHaveText(<span class="tok-str">'QA Analyst @ Old Republic Professional'</span>);
-    <span class="tok-kw">await</span> expect(home.recCompany(<span class="tok-str">'alex-fergestad'</span>)).toHaveAttribute(<span class="tok-str">'title'</span>, <span class="tok-str">'Now at Old Republic Professional'</span>);
-  });
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the recommendation decrypts and reads in full'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'blockquote p'</span>)).toContainText(<span class="tok-str">'While interning at Werner Enterprises, I’m'</span>);
-    <span class="tok-kw">await</span> expect(letter, <span class="tok-str">'a letter that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
-  });
-});</code></pre>
+<span class="tok-kw">@pytest.mark.smoke</span>
+<span class="tok-kw">def</span> <span class="tok-fn">test_case_4102_recommendations_alex_fergestad_letter_renders</span>(page: Page):
+    home = HomePage(page)
+    card = home.rec_card(<span class="tok-str">"alex-fergestad"</span>)
+
+    <span class="tok-comment"># Then Alex Fergestad's name loads and displays, linked to their LinkedIn profile</span>
+    expect(card.get_by_role(<span class="tok-str">"heading"</span>, name=<span class="tok-str">"Alex Fergestad"</span>)).to_be_visible()
+    expect(home.rec_linkedin(<span class="tok-str">"alex-fergestad"</span>)).to_have_attribute(<span class="tok-str">"href"</span>, re.compile(<span class="tok-str">r"linkedin\.com\/in\/"</span>))
+
+    <span class="tok-comment"># Then their title and where they are now are shown</span>
+    expect(card.locator(<span class="tok-str">".rec-title"</span>)).to_have_text(<span class="tok-str">"QA Analyst @ Old Republic Professional"</span>)
+    expect(home.rec_company(<span class="tok-str">"alex-fergestad"</span>)).to_have_attribute(<span class="tok-str">"title"</span>, <span class="tok-str">"Now at Old Republic Professional"</span>)
+
+    <span class="tok-comment"># Then the recommendation decrypts and reads in full</span>
+    expect(card.locator(<span class="tok-str">"blockquote p"</span>)).to_contain_text(<span class="tok-str">"While interning at Werner Enterprises, I’m excited"</span>)
+    expect(card).to_have_attribute(<span class="tok-str">"data-status"</span>, <span class="tok-str">"pass"</span>)  <span class="tok-comment"># an entry that read in full is a pass</span></code></pre>
                 </details>
                 <blockquote>
                   <p>
@@ -1438,28 +1610,28 @@
                 </a>
                 <h3><a href="https://www.linkedin.com/in/aaron-forkel/" target="_blank" rel="noopener">Aaron Forkel</a></h3>
                 <p class="rec-title">Software Support Engineer</p>
-                <details class="rec-test" data-testid="rec-test-aaron-forkel">
+                <details class="rec-test" data-testid="rec-test-aaron-forkel" data-lang="cy">
                   <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/cypress.svg" width="14" height="14" alt="" />Cypress · JavaScript</span>
                     <span class="rec-test-name">Test_<wbr />Case_<wbr />4103_<wbr />Recommendations_<wbr />AaronForkel_<wbr />LetterRenders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
-                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_4103_Recommendations_AaronForkel_LetterRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
-  <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
-  <span class="tok-kw">const</span> letter = home.recCard(<span class="tok-str">'aaron-forkel'</span>);
+                  <pre class="qa-code"><code><span class="tok-fn">describe</span>(<span class="tok-str">'Home'</span>, { tags: [<span class="tok-str">'@smoke'</span>] }, () =&gt; {
+  <span class="tok-fn">it</span>(<span class="tok-str">'Test_Case_4103_Recommendations_AaronForkel_LetterRenders'</span>, () =&gt; {
+    cy.visit(<span class="tok-str">'/'</span>);
+    cy.get(<span class="tok-str">'[data-testid="rec-card-aaron-forkel"]'</span>).as(<span class="tok-str">'card'</span>);
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">"Then Aaron Forkel's name loads and displays, linked to their LinkedIn profile"</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.getByRole(<span class="tok-str">'heading'</span>, { name: <span class="tok-str">'Aaron Forkel'</span> })).toBeVisible();
-    <span class="tok-kw">await</span> expect(home.recLinkedIn(<span class="tok-str">'aaron-forkel'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">/linkedin\.com\/</span>in\//);
-  });
+    cy.log(<span class="tok-str">"Then Aaron Forkel's name loads and displays, linked to their LinkedIn profile"</span>);
+    cy.get(<span class="tok-str">'@card'</span>).contains(<span class="tok-str">'h3'</span>, <span class="tok-str">'Aaron Forkel'</span>).should(<span class="tok-str">'be.visible'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).find(<span class="tok-str">'.rec-link-linkedin'</span>).should(<span class="tok-str">'have.attr'</span>, <span class="tok-str">'href'</span>).and(<span class="tok-str">'match'</span>, <span class="tok-str">/linkedin\.com\/in\//</span>);
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then their title and where they are now are shown'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'.rec-title'</span>)).toHaveText(<span class="tok-str">'Software Support Engineer'</span>);
-    <span class="tok-kw">await</span> expect(home.recCompany(<span class="tok-str">'aaron-forkel'</span>)).toHaveAttribute(<span class="tok-str">'title'</span>, <span class="tok-str">'Now at MasterControl'</span>);
-  });
+    cy.log(<span class="tok-str">'Then their title and where they are now are shown'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).find(<span class="tok-str">'.rec-title'</span>).should(<span class="tok-str">'have.text'</span>, <span class="tok-str">'Software Support Engineer'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).find(<span class="tok-str">'.rec-link-company'</span>).should(<span class="tok-str">'have.attr'</span>, <span class="tok-str">'title'</span>, <span class="tok-str">'Now at MasterControl'</span>);
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the recommendation decrypts and reads in full'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'blockquote p'</span>)).toContainText(<span class="tok-str">'Matthew has been a close friend'</span>);
-    <span class="tok-kw">await</span> expect(letter, <span class="tok-str">'a letter that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
+    cy.log(<span class="tok-str">'Then the recommendation decrypts and reads in full'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).find(<span class="tok-str">'blockquote p'</span>).should(<span class="tok-str">'contain.text'</span>, <span class="tok-str">'Matthew has been a close friend'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).should(<span class="tok-str">'have.attr'</span>, <span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>); <span class="tok-comment">// an entry that read in full is a pass</span>
   });
 });</code></pre>
                 </details>
@@ -1520,30 +1692,34 @@
                 </a>
                 <h3><a href="https://www.linkedin.com/in/tristan-lundgreen/" target="_blank" rel="noopener">Tristan Lundgreen</a></h3>
                 <p class="rec-title">QA Engineer, Artist, Cyberpunk</p>
-                <details class="rec-test" data-testid="rec-test-tristan-lundgreen">
+                <details class="rec-test" data-testid="rec-test-tristan-lundgreen" data-lang="cs">
                   <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/csharp.svg" width="14" height="14" alt="" />Playwright · C#</span>
                     <span class="rec-test-name">Test_<wbr />Case_<wbr />4104_<wbr />Recommendations_<wbr />TristanLundgreen_<wbr />LetterRenders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
-                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_4104_Recommendations_TristanLundgreen_LetterRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
-  <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
-  <span class="tok-kw">const</span> letter = home.recCard(<span class="tok-str">'tristan-lundgreen'</span>);
+                  <pre class="qa-code"><code><span class="tok-kw">[TestFixture]</span>
+<span class="tok-kw">public</span> <span class="tok-kw">class</span> HomeTests : PageTest
+{
+    <span class="tok-kw">[Test, Category("smoke")]</span>
+    <span class="tok-kw">public</span> <span class="tok-kw">async</span> <span class="tok-kw">Task</span> <span class="tok-fn">Test_Case_4104_Recommendations_TristanLundgreen_LetterRenders</span>()
+    {
+        <span class="tok-kw">var</span> home = <span class="tok-kw">new</span> HomePage(Page);
+        <span class="tok-kw">var</span> card = home.RecCard(<span class="tok-str">"tristan-lundgreen"</span>);
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">"Then Tristan Lundgreen's name loads and displays, linked to their LinkedIn profile"</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.getByRole(<span class="tok-str">'heading'</span>, { name: <span class="tok-str">'Tristan Lundgreen'</span> })).toBeVisible();
-    <span class="tok-kw">await</span> expect(home.recLinkedIn(<span class="tok-str">'tristan-lundgreen'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">/linkedin\.com\/</span>in\//);
-  });
+        <span class="tok-comment">// Then Tristan Lundgreen's name loads and displays, linked to their LinkedIn profile</span>
+        <span class="tok-kw">await</span> Expect(card.GetByRole(AriaRole.Heading, <span class="tok-kw">new</span>() { Name = <span class="tok-str">"Tristan Lundgreen"</span> })).ToBeVisibleAsync();
+        <span class="tok-kw">await</span> Expect(home.RecLinkedIn(<span class="tok-str">"tristan-lundgreen"</span>)).ToHaveAttributeAsync(<span class="tok-str">"href"</span>, <span class="tok-kw">new</span> Regex(<span class="tok-str">@"linkedin\.com/in/"</span>));
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then their title and where they are now are shown'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'.rec-title'</span>)).toHaveText(<span class="tok-str">'QA Engineer, Artist, Cyberpunk'</span>);
-    <span class="tok-kw">await</span> expect(home.recCompany(<span class="tok-str">'tristan-lundgreen'</span>)).toHaveAttribute(<span class="tok-str">'title'</span>, <span class="tok-str">'Now at Sunwest Bank'</span>);
-  });
+        <span class="tok-comment">// Then their title and where they are now are shown</span>
+        <span class="tok-kw">await</span> Expect(card.Locator(<span class="tok-str">".rec-title"</span>)).ToHaveTextAsync(<span class="tok-str">"QA Engineer, Artist, Cyberpunk"</span>);
+        <span class="tok-kw">await</span> Expect(home.RecCompany(<span class="tok-str">"tristan-lundgreen"</span>)).ToHaveAttributeAsync(<span class="tok-str">"title"</span>, <span class="tok-str">"Now at Sunwest Bank"</span>);
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the recommendation decrypts and reads in full'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'blockquote p'</span>)).toContainText(<span class="tok-str">'Of all the people I’ve worked'</span>);
-    <span class="tok-kw">await</span> expect(letter, <span class="tok-str">'a letter that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
-  });
-});</code></pre>
+        <span class="tok-comment">// Then the recommendation decrypts and reads in full</span>
+        <span class="tok-kw">await</span> Expect(card.Locator(<span class="tok-str">"blockquote p"</span>)).ToContainTextAsync(<span class="tok-str">"Of all the people I’ve worked"</span>);
+        <span class="tok-kw">await</span> Expect(card).ToHaveAttributeAsync(<span class="tok-str">"data-status"</span>, <span class="tok-str">"pass"</span>); <span class="tok-comment">// an entry that read in full is a pass</span>
+    }
+}</code></pre>
                 </details>
                 <blockquote>
                   <p>
@@ -1599,30 +1775,35 @@
                 </a>
                 <h3><a href="https://www.linkedin.com/in/callumpayne-sw/" target="_blank" rel="noopener">Callum Payne</a></h3>
                 <p class="rec-title">QA Engineer</p>
-                <details class="rec-test" data-testid="rec-test-callum-payne">
+                <details class="rec-test" data-testid="rec-test-callum-payne" data-lang="rf">
                   <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/robotframework-dark.svg" width="14" height="14" alt="" />Robot Framework</span>
                     <span class="rec-test-name">Test_<wbr />Case_<wbr />4105_<wbr />Recommendations_<wbr />CallumPayne_<wbr />LetterRenders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
-                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_4105_Recommendations_CallumPayne_LetterRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
-  <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
-  <span class="tok-kw">const</span> letter = home.recCard(<span class="tok-str">'callum-payne'</span>);
+                  <pre class="qa-code"><code><span class="tok-kw">*** Settings ***</span>
+<span class="tok-kw">Library</span>         Browser
+<span class="tok-kw">Resource</span>        ../resources/home_page.resource
+<span class="tok-kw">Test Tags</span>       smoke
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">"Then Callum Payne's name loads and displays, linked to their LinkedIn profile"</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.getByRole(<span class="tok-str">'heading'</span>, { name: <span class="tok-str">'Callum Payne'</span> })).toBeVisible();
-    <span class="tok-kw">await</span> expect(home.recLinkedIn(<span class="tok-str">'callum-payne'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">/linkedin\.com\/</span>in\//);
-  });
+<span class="tok-kw">*** Test Cases ***</span>
+<span class="tok-fn">Test_Case_4105_Recommendations_CallumPayne_LetterRenders</span>
+    <span class="tok-kw">[Documentation]</span>    Callum Payne's letter renders, linked to a real profile, and reads in full.
+<span class="tok-kw">    Given</span> The Home Page Is Open
+    <span class="tok-num">${card}</span>=    Set Variable    [data-testid="rec-card-callum-payne"]
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then their title and where they are now are shown'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'.rec-title'</span>)).toHaveText(<span class="tok-str">'QA Engineer'</span>);
-    <span class="tok-kw">await</span> expect(home.recCompany(<span class="tok-str">'callum-payne'</span>)).toHaveAttribute(<span class="tok-str">'title'</span>, <span class="tok-str">'Now at Glass Atlas'</span>);
-  });
+    <span class="tok-comment"># Then Callum Payne's name loads and displays, linked to their LinkedIn profile</span>
+    Get Element States    <span class="tok-num">${card}</span> h3    contains    visible
+    Get Text    <span class="tok-num">${card}</span> h3    ==    Callum Payne
+    Get Attribute    <span class="tok-num">${card}</span> .rec-link-linkedin    href    matches    linkedin\.com\/in\/
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the recommendation decrypts and reads in full'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'blockquote p'</span>)).toContainText(<span class="tok-str">'It was an mind-opening experience being'</span>);
-    <span class="tok-kw">await</span> expect(letter, <span class="tok-str">'a letter that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
-  });
-});</code></pre>
+    <span class="tok-comment"># Then their title and where they are now are shown</span>
+    Get Text    <span class="tok-num">${card}</span> .rec-title    ==    QA Engineer
+    Get Attribute    <span class="tok-num">${card}</span> .rec-link-company    title    ==    Now at Glass Atlas
+
+    <span class="tok-comment"># Then the recommendation decrypts and reads in full</span>
+    Get Text    <span class="tok-num">${card}</span> blockquote p    contains    It was an mind-opening experience being mentored
+    Get Attribute    <span class="tok-num">${card}</span>    data-status    ==    pass    <span class="tok-comment"># an entry that read in full is a pass</span></code></pre>
                 </details>
                 <blockquote>
                   <p>
@@ -1678,28 +1859,29 @@
                 </a>
                 <h3><a href="https://www.linkedin.com/in/stockton-nielson/" target="_blank" rel="noopener">Stockton Nielson</a></h3>
                 <p class="rec-title">Sr. SDET</p>
-                <details class="rec-test" data-testid="rec-test-stockton-nielson">
+                <details class="rec-test" data-testid="rec-test-stockton-nielson" data-lang="ts">
                   <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/playwright.svg" width="14" height="14" alt="" />Playwright · TypeScript</span>
                     <span class="rec-test-name">Test_<wbr />Case_<wbr />4106_<wbr />Recommendations_<wbr />StocktonNielson_<wbr />LetterRenders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_4106_Recommendations_StocktonNielson_LetterRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
   <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
-  <span class="tok-kw">const</span> letter = home.recCard(<span class="tok-str">'stockton-nielson'</span>);
+  <span class="tok-kw">const</span> card = home.recCard(<span class="tok-str">'stockton-nielson'</span>);
 
   <span class="tok-kw">await</span> test.step(<span class="tok-str">"Then Stockton Nielson's name loads and displays, linked to their LinkedIn profile"</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.getByRole(<span class="tok-str">'heading'</span>, { name: <span class="tok-str">'Stockton Nielson'</span> })).toBeVisible();
-    <span class="tok-kw">await</span> expect(home.recLinkedIn(<span class="tok-str">'stockton-nielson'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">/linkedin\.com\/</span>in\//);
+    <span class="tok-kw">await</span> expect(card.getByRole(<span class="tok-str">'heading'</span>, { name: <span class="tok-str">'Stockton Nielson'</span> })).toBeVisible();
+    <span class="tok-kw">await</span> expect(home.recLinkedIn(<span class="tok-str">'stockton-nielson'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">/linkedin\.com\/in\//</span>);
   });
 
   <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then their title and where they are now are shown'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'.rec-title'</span>)).toHaveText(<span class="tok-str">'Sr. SDET'</span>);
+    <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'.rec-title'</span>)).toHaveText(<span class="tok-str">'Sr. SDET'</span>);
     <span class="tok-kw">await</span> expect(home.recCompany(<span class="tok-str">'stockton-nielson'</span>)).toHaveAttribute(<span class="tok-str">'title'</span>, <span class="tok-str">'Now at Verisk'</span>);
   });
 
   <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the recommendation decrypts and reads in full'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'blockquote p'</span>)).toContainText(<span class="tok-str">'Matthew Thornell is one of the'</span>);
-    <span class="tok-kw">await</span> expect(letter, <span class="tok-str">'a letter that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
+    <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'blockquote p'</span>)).toContainText(<span class="tok-str">'Matthew Thornell is one of the rare'</span>);
+    <span class="tok-kw">await</span> expect(card, <span class="tok-str">'an entry that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
   });
 });</code></pre>
                 </details>
@@ -1758,30 +1940,35 @@
                 </a>
                 <h3><a href="https://www.linkedin.com/in/cj-j-825266103" target="_blank" rel="noopener">CJ Johnson</a></h3>
                 <p class="rec-title">Associate Software Engineer, OEC</p>
-                <details class="rec-test" data-testid="rec-test-cj-johnson">
+                <details class="rec-test" data-testid="rec-test-cj-johnson" data-lang="py">
                   <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/python.svg" width="14" height="14" alt="" />Playwright · Python</span>
                     <span class="rec-test-name">Test_<wbr />Case_<wbr />4107_<wbr />Recommendations_<wbr />CJJohnson_<wbr />LetterRenders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
-                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_4107_Recommendations_CJJohnson_LetterRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
-  <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
-  <span class="tok-kw">const</span> letter = home.recCard(<span class="tok-str">'cj-johnson'</span>);
+                  <pre class="qa-code"><code><span class="tok-kw">import</span> re
+<span class="tok-kw">import</span> pytest
+<span class="tok-kw">from</span> playwright.sync_api <span class="tok-kw">import</span> Page, expect
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">"Then CJ Johnson's name loads and displays, linked to their LinkedIn profile"</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.getByRole(<span class="tok-str">'heading'</span>, { name: <span class="tok-str">'CJ Johnson'</span> })).toBeVisible();
-    <span class="tok-kw">await</span> expect(home.recLinkedIn(<span class="tok-str">'cj-johnson'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">/linkedin\.com\/</span>in\//);
-  });
+<span class="tok-kw">from</span> pages.home_page <span class="tok-kw">import</span> HomePage
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then their title and where they are now are shown'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'.rec-title'</span>)).toHaveText(<span class="tok-str">'Associate Software Engineer, OEC'</span>);
-    <span class="tok-kw">await</span> expect(home.recCompany(<span class="tok-str">'cj-johnson'</span>)).toHaveAttribute(<span class="tok-str">'title'</span>, <span class="tok-str">'Now at OEC'</span>);
-  });
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the recommendation decrypts and reads in full'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'blockquote p'</span>)).toContainText(<span class="tok-str">'Matthew is an invaluable resource in'</span>);
-    <span class="tok-kw">await</span> expect(letter, <span class="tok-str">'a letter that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
-  });
-});</code></pre>
+<span class="tok-kw">@pytest.mark.smoke</span>
+<span class="tok-kw">def</span> <span class="tok-fn">test_case_4107_recommendations_cjjohnson_letter_renders</span>(page: Page):
+    home = HomePage(page)
+    card = home.rec_card(<span class="tok-str">"cj-johnson"</span>)
+
+    <span class="tok-comment"># Then CJ Johnson's name loads and displays, linked to their LinkedIn profile</span>
+    expect(card.get_by_role(<span class="tok-str">"heading"</span>, name=<span class="tok-str">"CJ Johnson"</span>)).to_be_visible()
+    expect(home.rec_linkedin(<span class="tok-str">"cj-johnson"</span>)).to_have_attribute(<span class="tok-str">"href"</span>, re.compile(<span class="tok-str">r"linkedin\.com\/in\/"</span>))
+
+    <span class="tok-comment"># Then their title and where they are now are shown</span>
+    expect(card.locator(<span class="tok-str">".rec-title"</span>)).to_have_text(<span class="tok-str">"Associate Software Engineer, OEC"</span>)
+    expect(home.rec_company(<span class="tok-str">"cj-johnson"</span>)).to_have_attribute(<span class="tok-str">"title"</span>, <span class="tok-str">"Now at OEC"</span>)
+
+    <span class="tok-comment"># Then the recommendation decrypts and reads in full</span>
+    expect(card.locator(<span class="tok-str">"blockquote p"</span>)).to_contain_text(<span class="tok-str">"Matthew is an invaluable resource"</span>)
+    expect(card).to_have_attribute(<span class="tok-str">"data-status"</span>, <span class="tok-str">"pass"</span>)  <span class="tok-comment"># an entry that read in full is a pass</span></code></pre>
                 </details>
                 <blockquote>
                   <p>
@@ -1852,32 +2039,31 @@
                 </a>
                 <h3><a href="https://www.linkedin.com/in/nathan-gearke/" target="_blank" rel="noopener">Nathan Gearke</a></h3>
                 <p class="rec-title">Group Engineering Manager, Veterans United Home Loans</p>
-                <details class="rec-test" data-testid="rec-test-nathan-gearke">
+                <details class="rec-test" data-testid="rec-test-nathan-gearke" data-lang="cy">
                   <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/cypress.svg" width="14" height="14" alt="" />Cypress · JavaScript</span>
                     <span class="rec-test-name">Test_<wbr />Case_<wbr />4108_<wbr />Recommendations_<wbr />NathanGearke_<wbr />LetterRenders</span>
                     <span class="rec-test-status">4 steps</span>
                   </summary>
-                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_4108_Recommendations_NathanGearke_LetterRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
-  <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
-  <span class="tok-kw">const</span> letter = home.recCard(<span class="tok-str">'nathan-gearke'</span>);
+                  <pre class="qa-code"><code><span class="tok-fn">describe</span>(<span class="tok-str">'Home'</span>, { tags: [<span class="tok-str">'@smoke'</span>] }, () =&gt; {
+  <span class="tok-fn">it</span>(<span class="tok-str">'Test_Case_4108_Recommendations_NathanGearke_LetterRenders'</span>, () =&gt; {
+    cy.visit(<span class="tok-str">'/'</span>);
+    cy.get(<span class="tok-str">'[data-testid="rec-card-nathan-gearke"]'</span>).as(<span class="tok-str">'card'</span>);
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">"Then Nathan Gearke's name loads and displays, linked to their LinkedIn profile"</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.getByRole(<span class="tok-str">'heading'</span>, { name: <span class="tok-str">'Nathan Gearke'</span> })).toBeVisible();
-    <span class="tok-kw">await</span> expect(home.recLinkedIn(<span class="tok-str">'nathan-gearke'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">/linkedin\.com\/</span>in\//);
-  });
+    cy.log(<span class="tok-str">"Then Nathan Gearke's name loads and displays, linked to their LinkedIn profile"</span>);
+    cy.get(<span class="tok-str">'@card'</span>).contains(<span class="tok-str">'h3'</span>, <span class="tok-str">'Nathan Gearke'</span>).should(<span class="tok-str">'be.visible'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).find(<span class="tok-str">'.rec-link-linkedin'</span>).should(<span class="tok-str">'have.attr'</span>, <span class="tok-str">'href'</span>).and(<span class="tok-str">'match'</span>, <span class="tok-str">/linkedin\.com\/in\//</span>);
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then their title and the company we worked at together are shown'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'.rec-title'</span>)).toHaveText(<span class="tok-str">'Group Engineering Manager, Veterans United Home Loans'</span>);
-    <span class="tok-kw">await</span> expect(home.recCompany(<span class="tok-str">'nathan-gearke'</span>)).toHaveAttribute(<span class="tok-str">'title'</span>, <span class="tok-str">'Worked together at Veterans United Home Loans'</span>);
-  });
+    cy.log(<span class="tok-str">'Then their title and the company we worked at together are shown'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).find(<span class="tok-str">'.rec-title'</span>).should(<span class="tok-str">'have.text'</span>, <span class="tok-str">'Group Engineering Manager, Veterans United Home Loans'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).find(<span class="tok-str">'.rec-link-company'</span>).should(<span class="tok-str">'have.attr'</span>, <span class="tok-str">'title'</span>, <span class="tok-str">'Worked together at Veterans United Home Loans'</span>);
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">"Then Nathan's letter of recommendation icon populates and is downloadable"</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(page.getByTestId(<span class="tok-str">'rec-letter-nathan-gearke'</span>)).toHaveAttribute(<span class="tok-str">'download'</span>, <span class="tok-str">''</span>);
-  });
+    cy.log(<span class="tok-str">"Then Nathan's letter of recommendation icon populates and is downloadable"</span>);
+    cy.get(<span class="tok-str">'[data-testid="rec-letter-nathan-gearke"]'</span>).should(<span class="tok-str">'have.attr'</span>, <span class="tok-str">'download'</span>, <span class="tok-str">''</span>);
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the recommendation decrypts and reads in full'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'blockquote p'</span>)).toContainText(<span class="tok-str">'Matthew’s greatest strength is his holistic'</span>);
-    <span class="tok-kw">await</span> expect(letter, <span class="tok-str">'a letter that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
+    cy.log(<span class="tok-str">'Then the recommendation decrypts and reads in full'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).find(<span class="tok-str">'blockquote p'</span>).should(<span class="tok-str">'contain.text'</span>, <span class="tok-str">'Matthew’s greatest strength is his holistic vision'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).should(<span class="tok-str">'have.attr'</span>, <span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>); <span class="tok-comment">// an entry that read in full is a pass</span>
   });
 });</code></pre>
                 </details>
@@ -1937,30 +2123,34 @@
                 </a>
                 <h3><a href="https://www.linkedin.com/in/samantha-reynoldssm/" target="_blank" rel="noopener">Samantha Reynolds</a></h3>
                 <p class="rec-title">Teammate</p>
-                <details class="rec-test" data-testid="rec-test-samantha-reynolds">
+                <details class="rec-test" data-testid="rec-test-samantha-reynolds" data-lang="cs">
                   <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/csharp.svg" width="14" height="14" alt="" />Playwright · C#</span>
                     <span class="rec-test-name">Test_<wbr />Case_<wbr />4109_<wbr />Recommendations_<wbr />SamanthaReynolds_<wbr />LetterRenders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
-                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_4109_Recommendations_SamanthaReynolds_LetterRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
-  <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
-  <span class="tok-kw">const</span> letter = home.recCard(<span class="tok-str">'samantha-reynolds'</span>);
+                  <pre class="qa-code"><code><span class="tok-kw">[TestFixture]</span>
+<span class="tok-kw">public</span> <span class="tok-kw">class</span> HomeTests : PageTest
+{
+    <span class="tok-kw">[Test, Category("smoke")]</span>
+    <span class="tok-kw">public</span> <span class="tok-kw">async</span> <span class="tok-kw">Task</span> <span class="tok-fn">Test_Case_4109_Recommendations_SamanthaReynolds_LetterRenders</span>()
+    {
+        <span class="tok-kw">var</span> home = <span class="tok-kw">new</span> HomePage(Page);
+        <span class="tok-kw">var</span> card = home.RecCard(<span class="tok-str">"samantha-reynolds"</span>);
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">"Then Samantha Reynolds's name loads and displays, linked to their LinkedIn profile"</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.getByRole(<span class="tok-str">'heading'</span>, { name: <span class="tok-str">'Samantha Reynolds'</span> })).toBeVisible();
-    <span class="tok-kw">await</span> expect(home.recLinkedIn(<span class="tok-str">'samantha-reynolds'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">/linkedin\.com\/</span>in\//);
-  });
+        <span class="tok-comment">// Then Samantha Reynolds's name loads and displays, linked to their LinkedIn profile</span>
+        <span class="tok-kw">await</span> Expect(card.GetByRole(AriaRole.Heading, <span class="tok-kw">new</span>() { Name = <span class="tok-str">"Samantha Reynolds"</span> })).ToBeVisibleAsync();
+        <span class="tok-kw">await</span> Expect(home.RecLinkedIn(<span class="tok-str">"samantha-reynolds"</span>)).ToHaveAttributeAsync(<span class="tok-str">"href"</span>, <span class="tok-kw">new</span> Regex(<span class="tok-str">@"linkedin\.com/in/"</span>));
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then their title and the company we worked at together are shown'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'.rec-title'</span>)).toHaveText(<span class="tok-str">'Teammate'</span>);
-    <span class="tok-kw">await</span> expect(home.recCompany(<span class="tok-str">'samantha-reynolds'</span>)).toHaveAttribute(<span class="tok-str">'title'</span>, <span class="tok-str">'Worked together at Werner Enterprises'</span>);
-  });
+        <span class="tok-comment">// Then their title and the company we worked at together are shown</span>
+        <span class="tok-kw">await</span> Expect(card.Locator(<span class="tok-str">".rec-title"</span>)).ToHaveTextAsync(<span class="tok-str">"Teammate"</span>);
+        <span class="tok-kw">await</span> Expect(home.RecCompany(<span class="tok-str">"samantha-reynolds"</span>)).ToHaveAttributeAsync(<span class="tok-str">"title"</span>, <span class="tok-str">"Worked together at Werner Enterprises"</span>);
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the recommendation decrypts and reads in full'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'blockquote p'</span>)).toContainText(<span class="tok-str">'Matthew is an amazing and valuable'</span>);
-    <span class="tok-kw">await</span> expect(letter, <span class="tok-str">'a letter that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
-  });
-});</code></pre>
+        <span class="tok-comment">// Then the recommendation decrypts and reads in full</span>
+        <span class="tok-kw">await</span> Expect(card.Locator(<span class="tok-str">"blockquote p"</span>)).ToContainTextAsync(<span class="tok-str">"Matthew is an amazing and valuable component"</span>);
+        <span class="tok-kw">await</span> Expect(card).ToHaveAttributeAsync(<span class="tok-str">"data-status"</span>, <span class="tok-str">"pass"</span>); <span class="tok-comment">// an entry that read in full is a pass</span>
+    }
+}</code></pre>
                 </details>
                 <blockquote>
                   <p>
@@ -2011,30 +2201,35 @@
                 </a>
                 <h3><a href="https://www.linkedin.com/in/whiterjr/" target="_blank" rel="noopener">Ronald White</a></h3>
                 <p class="rec-title">Principal Product Owner</p>
-                <details class="rec-test" data-testid="rec-test-ronald-white">
+                <details class="rec-test" data-testid="rec-test-ronald-white" data-lang="rf">
                   <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/robotframework-dark.svg" width="14" height="14" alt="" />Robot Framework</span>
                     <span class="rec-test-name">Test_<wbr />Case_<wbr />4110_<wbr />Recommendations_<wbr />RonaldWhite_<wbr />LetterRenders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
-                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_4110_Recommendations_RonaldWhite_LetterRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
-  <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
-  <span class="tok-kw">const</span> letter = home.recCard(<span class="tok-str">'ronald-white'</span>);
+                  <pre class="qa-code"><code><span class="tok-kw">*** Settings ***</span>
+<span class="tok-kw">Library</span>         Browser
+<span class="tok-kw">Resource</span>        ../resources/home_page.resource
+<span class="tok-kw">Test Tags</span>       smoke
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">"Then Ronald White's name loads and displays, linked to their LinkedIn profile"</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.getByRole(<span class="tok-str">'heading'</span>, { name: <span class="tok-str">'Ronald White'</span> })).toBeVisible();
-    <span class="tok-kw">await</span> expect(home.recLinkedIn(<span class="tok-str">'ronald-white'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">/linkedin\.com\/</span>in\//);
-  });
+<span class="tok-kw">*** Test Cases ***</span>
+<span class="tok-fn">Test_Case_4110_Recommendations_RonaldWhite_LetterRenders</span>
+    <span class="tok-kw">[Documentation]</span>    Ronald White's letter renders, linked to a real profile, and reads in full.
+<span class="tok-kw">    Given</span> The Home Page Is Open
+    <span class="tok-num">${card}</span>=    Set Variable    [data-testid="rec-card-ronald-white"]
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then their title and the company we worked at together are shown'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'.rec-title'</span>)).toHaveText(<span class="tok-str">'Principal Product Owner'</span>);
-    <span class="tok-kw">await</span> expect(home.recCompany(<span class="tok-str">'ronald-white'</span>)).toHaveAttribute(<span class="tok-str">'title'</span>, <span class="tok-str">'Worked together at Werner Enterprises'</span>);
-  });
+    <span class="tok-comment"># Then Ronald White's name loads and displays, linked to their LinkedIn profile</span>
+    Get Element States    <span class="tok-num">${card}</span> h3    contains    visible
+    Get Text    <span class="tok-num">${card}</span> h3    ==    Ronald White
+    Get Attribute    <span class="tok-num">${card}</span> .rec-link-linkedin    href    matches    linkedin\.com\/in\/
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the recommendation decrypts and reads in full'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'blockquote p'</span>)).toContainText(<span class="tok-str">'Matthew is a very knowledgeable and'</span>);
-    <span class="tok-kw">await</span> expect(letter, <span class="tok-str">'a letter that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
-  });
-});</code></pre>
+    <span class="tok-comment"># Then their title and the company we worked at together are shown</span>
+    Get Text    <span class="tok-num">${card}</span> .rec-title    ==    Principal Product Owner
+    Get Attribute    <span class="tok-num">${card}</span> .rec-link-company    title    ==    Worked together at Werner Enterprises
+
+    <span class="tok-comment"># Then the recommendation decrypts and reads in full</span>
+    Get Text    <span class="tok-num">${card}</span> blockquote p    contains    Matthew is a very knowledgeable and skilled
+    Get Attribute    <span class="tok-num">${card}</span>    data-status    ==    pass    <span class="tok-comment"># an entry that read in full is a pass</span></code></pre>
                 </details>
                 <blockquote>
                   <p>
@@ -2087,28 +2282,29 @@
                 </a>
                 <h3><a href="https://www.linkedin.com/in/tod-mcconahay-spc-rte-582a0222/" target="_blank" rel="noopener">Tod McConahay</a></h3>
                 <p class="rec-title">Scrum Master, Werner Enterprises</p>
-                <details class="rec-test" data-testid="rec-test-tod-mcconahay">
+                <details class="rec-test" data-testid="rec-test-tod-mcconahay" data-lang="ts">
                   <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/playwright.svg" width="14" height="14" alt="" />Playwright · TypeScript</span>
                     <span class="rec-test-name">Test_<wbr />Case_<wbr />4111_<wbr />Recommendations_<wbr />TodMcConahay_<wbr />LetterRenders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_4111_Recommendations_TodMcConahay_LetterRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
   <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
-  <span class="tok-kw">const</span> letter = home.recCard(<span class="tok-str">'tod-mcconahay'</span>);
+  <span class="tok-kw">const</span> card = home.recCard(<span class="tok-str">'tod-mcconahay'</span>);
 
   <span class="tok-kw">await</span> test.step(<span class="tok-str">"Then Tod McConahay's name loads and displays, linked to their LinkedIn profile"</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.getByRole(<span class="tok-str">'heading'</span>, { name: <span class="tok-str">'Tod McConahay'</span> })).toBeVisible();
-    <span class="tok-kw">await</span> expect(home.recLinkedIn(<span class="tok-str">'tod-mcconahay'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">/linkedin\.com\/</span>in\//);
+    <span class="tok-kw">await</span> expect(card.getByRole(<span class="tok-str">'heading'</span>, { name: <span class="tok-str">'Tod McConahay'</span> })).toBeVisible();
+    <span class="tok-kw">await</span> expect(home.recLinkedIn(<span class="tok-str">'tod-mcconahay'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">/linkedin\.com\/in\//</span>);
   });
 
   <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then their title and the company we worked at together are shown'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'.rec-title'</span>)).toHaveText(<span class="tok-str">'Scrum Master, Werner Enterprises'</span>);
+    <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'.rec-title'</span>)).toHaveText(<span class="tok-str">'Scrum Master, Werner Enterprises'</span>);
     <span class="tok-kw">await</span> expect(home.recCompany(<span class="tok-str">'tod-mcconahay'</span>)).toHaveAttribute(<span class="tok-str">'title'</span>, <span class="tok-str">'Worked together at Werner Enterprises'</span>);
   });
 
   <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the recommendation decrypts and reads in full'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'blockquote p'</span>)).toContainText(<span class="tok-str">'It is easy for me to'</span>);
-    <span class="tok-kw">await</span> expect(letter, <span class="tok-str">'a letter that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
+    <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'blockquote p'</span>)).toContainText(<span class="tok-str">'It is easy for me to write'</span>);
+    <span class="tok-kw">await</span> expect(card, <span class="tok-str">'an entry that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
   });
 });</code></pre>
                 </details>
@@ -2162,30 +2358,35 @@
                 </a>
                 <h3><a href="https://www.linkedin.com/in/andrew-sylvester36/" target="_blank" rel="noopener">Andrew Sylvester</a></h3>
                 <p class="rec-title">Software Engineer, ConexED</p>
-                <details class="rec-test" data-testid="rec-test-andrew-sylvester">
+                <details class="rec-test" data-testid="rec-test-andrew-sylvester" data-lang="py">
                   <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/python.svg" width="14" height="14" alt="" />Playwright · Python</span>
                     <span class="rec-test-name">Test_<wbr />Case_<wbr />4112_<wbr />Recommendations_<wbr />AndrewSylvester_<wbr />LetterRenders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
-                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_4112_Recommendations_AndrewSylvester_LetterRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
-  <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
-  <span class="tok-kw">const</span> letter = home.recCard(<span class="tok-str">'andrew-sylvester'</span>);
+                  <pre class="qa-code"><code><span class="tok-kw">import</span> re
+<span class="tok-kw">import</span> pytest
+<span class="tok-kw">from</span> playwright.sync_api <span class="tok-kw">import</span> Page, expect
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">"Then Andrew Sylvester's name loads and displays, linked to their LinkedIn profile"</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.getByRole(<span class="tok-str">'heading'</span>, { name: <span class="tok-str">'Andrew Sylvester'</span> })).toBeVisible();
-    <span class="tok-kw">await</span> expect(home.recLinkedIn(<span class="tok-str">'andrew-sylvester'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">/linkedin\.com\/</span>in\//);
-  });
+<span class="tok-kw">from</span> pages.home_page <span class="tok-kw">import</span> HomePage
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then their title and the company we worked at together are shown'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'.rec-title'</span>)).toHaveText(<span class="tok-str">'Software Engineer, ConexED'</span>);
-    <span class="tok-kw">await</span> expect(home.recCompany(<span class="tok-str">'andrew-sylvester'</span>)).toHaveAttribute(<span class="tok-str">'title'</span>, <span class="tok-str">'Worked together at ConexED'</span>);
-  });
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the recommendation decrypts and reads in full'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'blockquote p'</span>)).toContainText(<span class="tok-str">'It was an absolute pleasure working'</span>);
-    <span class="tok-kw">await</span> expect(letter, <span class="tok-str">'a letter that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
-  });
-});</code></pre>
+<span class="tok-kw">@pytest.mark.smoke</span>
+<span class="tok-kw">def</span> <span class="tok-fn">test_case_4112_recommendations_andrew_sylvester_letter_renders</span>(page: Page):
+    home = HomePage(page)
+    card = home.rec_card(<span class="tok-str">"andrew-sylvester"</span>)
+
+    <span class="tok-comment"># Then Andrew Sylvester's name loads and displays, linked to their LinkedIn profile</span>
+    expect(card.get_by_role(<span class="tok-str">"heading"</span>, name=<span class="tok-str">"Andrew Sylvester"</span>)).to_be_visible()
+    expect(home.rec_linkedin(<span class="tok-str">"andrew-sylvester"</span>)).to_have_attribute(<span class="tok-str">"href"</span>, re.compile(<span class="tok-str">r"linkedin\.com\/in\/"</span>))
+
+    <span class="tok-comment"># Then their title and the company we worked at together are shown</span>
+    expect(card.locator(<span class="tok-str">".rec-title"</span>)).to_have_text(<span class="tok-str">"Software Engineer, ConexED"</span>)
+    expect(home.rec_company(<span class="tok-str">"andrew-sylvester"</span>)).to_have_attribute(<span class="tok-str">"title"</span>, <span class="tok-str">"Worked together at ConexED"</span>)
+
+    <span class="tok-comment"># Then the recommendation decrypts and reads in full</span>
+    expect(card.locator(<span class="tok-str">"blockquote p"</span>)).to_contain_text(<span class="tok-str">"It was an absolute pleasure working"</span>)
+    expect(card).to_have_attribute(<span class="tok-str">"data-status"</span>, <span class="tok-str">"pass"</span>)  <span class="tok-comment"># an entry that read in full is a pass</span></code></pre>
                 </details>
                 <blockquote>
                   <p>
@@ -2240,28 +2441,28 @@
                 </a>
                 <h3><a href="https://www.linkedin.com/in/stephanie-brunsvik-32172911b/" target="_blank" rel="noopener">Stephanie Brunsvik</a></h3>
                 <p class="rec-title">Full Stack Web Developer, Problem Solver</p>
-                <details class="rec-test" data-testid="rec-test-stephanie-brunsvik">
+                <details class="rec-test" data-testid="rec-test-stephanie-brunsvik" data-lang="cy">
                   <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/cypress.svg" width="14" height="14" alt="" />Cypress · JavaScript</span>
                     <span class="rec-test-name">Test_<wbr />Case_<wbr />4113_<wbr />Recommendations_<wbr />StephanieBrunsvik_<wbr />LetterRenders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
-                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_4113_Recommendations_StephanieBrunsvik_LetterRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
-  <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
-  <span class="tok-kw">const</span> letter = home.recCard(<span class="tok-str">'stephanie-brunsvik'</span>);
+                  <pre class="qa-code"><code><span class="tok-fn">describe</span>(<span class="tok-str">'Home'</span>, { tags: [<span class="tok-str">'@smoke'</span>] }, () =&gt; {
+  <span class="tok-fn">it</span>(<span class="tok-str">'Test_Case_4113_Recommendations_StephanieBrunsvik_LetterRenders'</span>, () =&gt; {
+    cy.visit(<span class="tok-str">'/'</span>);
+    cy.get(<span class="tok-str">'[data-testid="rec-card-stephanie-brunsvik"]'</span>).as(<span class="tok-str">'card'</span>);
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">"Then Stephanie Brunsvik's name loads and displays, linked to their LinkedIn profile"</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.getByRole(<span class="tok-str">'heading'</span>, { name: <span class="tok-str">'Stephanie Brunsvik'</span> })).toBeVisible();
-    <span class="tok-kw">await</span> expect(home.recLinkedIn(<span class="tok-str">'stephanie-brunsvik'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">/linkedin\.com\/</span>in\//);
-  });
+    cy.log(<span class="tok-str">"Then Stephanie Brunsvik's name loads and displays, linked to their LinkedIn profile"</span>);
+    cy.get(<span class="tok-str">'@card'</span>).contains(<span class="tok-str">'h3'</span>, <span class="tok-str">'Stephanie Brunsvik'</span>).should(<span class="tok-str">'be.visible'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).find(<span class="tok-str">'.rec-link-linkedin'</span>).should(<span class="tok-str">'have.attr'</span>, <span class="tok-str">'href'</span>).and(<span class="tok-str">'match'</span>, <span class="tok-str">/linkedin\.com\/in\//</span>);
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then their title and the company we worked at together are shown'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'.rec-title'</span>)).toHaveText(<span class="tok-str">'Full Stack Web Developer, Problem Solver'</span>);
-    <span class="tok-kw">await</span> expect(home.recCompany(<span class="tok-str">'stephanie-brunsvik'</span>)).toHaveAttribute(<span class="tok-str">'title'</span>, <span class="tok-str">'Worked together at ConexED'</span>);
-  });
+    cy.log(<span class="tok-str">'Then their title and the company we worked at together are shown'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).find(<span class="tok-str">'.rec-title'</span>).should(<span class="tok-str">'have.text'</span>, <span class="tok-str">'Full Stack Web Developer, Problem Solver'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).find(<span class="tok-str">'.rec-link-company'</span>).should(<span class="tok-str">'have.attr'</span>, <span class="tok-str">'title'</span>, <span class="tok-str">'Worked together at ConexED'</span>);
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the recommendation decrypts and reads in full'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'blockquote p'</span>)).toContainText(<span class="tok-str">'Im always impressed by Matthew’s tenacity'</span>);
-    <span class="tok-kw">await</span> expect(letter, <span class="tok-str">'a letter that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
+    cy.log(<span class="tok-str">'Then the recommendation decrypts and reads in full'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).find(<span class="tok-str">'blockquote p'</span>).should(<span class="tok-str">'contain.text'</span>, <span class="tok-str">'Im always impressed by Matthew’s tenacity'</span>);
+    cy.get(<span class="tok-str">'@card'</span>).should(<span class="tok-str">'have.attr'</span>, <span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>); <span class="tok-comment">// an entry that read in full is a pass</span>
   });
 });</code></pre>
                 </details>
@@ -2315,30 +2516,34 @@
                 </a>
                 <h3><a href="https://www.linkedin.com/in/webguyblake/" target="_blank" rel="noopener">Blake Johnson, CSPO</a></h3>
                 <p class="rec-title">AI First Leader | Team Builder | Product Owner</p>
-                <details class="rec-test" data-testid="rec-test-blake-johnson">
+                <details class="rec-test" data-testid="rec-test-blake-johnson" data-lang="cs">
                   <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/csharp.svg" width="14" height="14" alt="" />Playwright · C#</span>
                     <span class="rec-test-name">Test_<wbr />Case_<wbr />4114_<wbr />Recommendations_<wbr />BlakeJohnsonCSPO_<wbr />LetterRenders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
-                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_4114_Recommendations_BlakeJohnsonCSPO_LetterRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
-  <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
-  <span class="tok-kw">const</span> letter = home.recCard(<span class="tok-str">'blake-johnson'</span>);
+                  <pre class="qa-code"><code><span class="tok-kw">[TestFixture]</span>
+<span class="tok-kw">public</span> <span class="tok-kw">class</span> HomeTests : PageTest
+{
+    <span class="tok-kw">[Test, Category("smoke")]</span>
+    <span class="tok-kw">public</span> <span class="tok-kw">async</span> <span class="tok-kw">Task</span> <span class="tok-fn">Test_Case_4114_Recommendations_BlakeJohnsonCSPO_LetterRenders</span>()
+    {
+        <span class="tok-kw">var</span> home = <span class="tok-kw">new</span> HomePage(Page);
+        <span class="tok-kw">var</span> card = home.RecCard(<span class="tok-str">"blake-johnson"</span>);
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">"Then Blake Johnson, CSPO's name loads and displays, linked to their LinkedIn profile"</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.getByRole(<span class="tok-str">'heading'</span>, { name: <span class="tok-str">'Blake Johnson, CSPO'</span> })).toBeVisible();
-    <span class="tok-kw">await</span> expect(home.recLinkedIn(<span class="tok-str">'blake-johnson'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">/linkedin\.com\/</span>in\//);
-  });
+        <span class="tok-comment">// Then Blake Johnson, CSPO's name loads and displays, linked to their LinkedIn profile</span>
+        <span class="tok-kw">await</span> Expect(card.GetByRole(AriaRole.Heading, <span class="tok-kw">new</span>() { Name = <span class="tok-str">"Blake Johnson, CSPO"</span> })).ToBeVisibleAsync();
+        <span class="tok-kw">await</span> Expect(home.RecLinkedIn(<span class="tok-str">"blake-johnson"</span>)).ToHaveAttributeAsync(<span class="tok-str">"href"</span>, <span class="tok-kw">new</span> Regex(<span class="tok-str">@"linkedin\.com/in/"</span>));
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then their title and the company we worked at together are shown'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'.rec-title'</span>)).toHaveText(<span class="tok-str">'AI First Leader | Team Builder | Product Owner'</span>);
-    <span class="tok-kw">await</span> expect(home.recCompany(<span class="tok-str">'blake-johnson'</span>)).toHaveAttribute(<span class="tok-str">'title'</span>, <span class="tok-str">'Worked together at ConexED'</span>);
-  });
+        <span class="tok-comment">// Then their title and the company we worked at together are shown</span>
+        <span class="tok-kw">await</span> Expect(card.Locator(<span class="tok-str">".rec-title"</span>)).ToHaveTextAsync(<span class="tok-str">"AI First Leader | Team Builder | Product Owner"</span>);
+        <span class="tok-kw">await</span> Expect(home.RecCompany(<span class="tok-str">"blake-johnson"</span>)).ToHaveAttributeAsync(<span class="tok-str">"title"</span>, <span class="tok-str">"Worked together at ConexED"</span>);
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the recommendation decrypts and reads in full'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'blockquote p'</span>)).toContainText(<span class="tok-str">'I have had the pleasure to'</span>);
-    <span class="tok-kw">await</span> expect(letter, <span class="tok-str">'a letter that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
-  });
-});</code></pre>
+        <span class="tok-comment">// Then the recommendation decrypts and reads in full</span>
+        <span class="tok-kw">await</span> Expect(card.Locator(<span class="tok-str">"blockquote p"</span>)).ToContainTextAsync(<span class="tok-str">"I have had the pleasure to be"</span>);
+        <span class="tok-kw">await</span> Expect(card).ToHaveAttributeAsync(<span class="tok-str">"data-status"</span>, <span class="tok-str">"pass"</span>); <span class="tok-comment">// an entry that read in full is a pass</span>
+    }
+}</code></pre>
                 </details>
                 <blockquote>
                   <p>
@@ -2390,30 +2595,35 @@
                 </a>
                 <h3><a href="https://www.linkedin.com/in/rafael-j-3a2668140/" target="_blank" rel="noopener">Rafael Juarez</a></h3>
                 <p class="rec-title">Tech-minded | Blue Ribbon Winner | Build and Fixing</p>
-                <details class="rec-test" data-testid="rec-test-rafael-juarez">
+                <details class="rec-test" data-testid="rec-test-rafael-juarez" data-lang="rf">
                   <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/robotframework-dark.svg" width="14" height="14" alt="" />Robot Framework</span>
                     <span class="rec-test-name">Test_<wbr />Case_<wbr />4115_<wbr />Recommendations_<wbr />RafaelJuarez_<wbr />LetterRenders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
-                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_4115_Recommendations_RafaelJuarez_LetterRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
-  <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
-  <span class="tok-kw">const</span> letter = home.recCard(<span class="tok-str">'rafael-juarez'</span>);
+                  <pre class="qa-code"><code><span class="tok-kw">*** Settings ***</span>
+<span class="tok-kw">Library</span>         Browser
+<span class="tok-kw">Resource</span>        ../resources/home_page.resource
+<span class="tok-kw">Test Tags</span>       smoke
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">"Then Rafael Juarez's name loads and displays, linked to their LinkedIn profile"</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.getByRole(<span class="tok-str">'heading'</span>, { name: <span class="tok-str">'Rafael Juarez'</span> })).toBeVisible();
-    <span class="tok-kw">await</span> expect(home.recLinkedIn(<span class="tok-str">'rafael-juarez'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">/linkedin\.com\/</span>in\//);
-  });
+<span class="tok-kw">*** Test Cases ***</span>
+<span class="tok-fn">Test_Case_4115_Recommendations_RafaelJuarez_LetterRenders</span>
+    <span class="tok-kw">[Documentation]</span>    Rafael Juarez's letter renders, linked to a real profile, and reads in full.
+<span class="tok-kw">    Given</span> The Home Page Is Open
+    <span class="tok-num">${card}</span>=    Set Variable    [data-testid="rec-card-rafael-juarez"]
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then their title and the company we worked at together are shown'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'.rec-title'</span>)).toHaveText(<span class="tok-str">'Tech-minded | Blue Ribbon Winner | Build and Fixing'</span>);
-    <span class="tok-kw">await</span> expect(home.recCompany(<span class="tok-str">'rafael-juarez'</span>)).toHaveAttribute(<span class="tok-str">'title'</span>, <span class="tok-str">'Worked together at ConexED'</span>);
-  });
+    <span class="tok-comment"># Then Rafael Juarez's name loads and displays, linked to their LinkedIn profile</span>
+    Get Element States    <span class="tok-num">${card}</span> h3    contains    visible
+    Get Text    <span class="tok-num">${card}</span> h3    ==    Rafael Juarez
+    Get Attribute    <span class="tok-num">${card}</span> .rec-link-linkedin    href    matches    linkedin\.com\/in\/
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the recommendation decrypts and reads in full'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'blockquote p'</span>)).toContainText(<span class="tok-str">'Many of the people that you'</span>);
-    <span class="tok-kw">await</span> expect(letter, <span class="tok-str">'a letter that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
-  });
-});</code></pre>
+    <span class="tok-comment"># Then their title and the company we worked at together are shown</span>
+    Get Text    <span class="tok-num">${card}</span> .rec-title    ==    Tech-minded | Blue Ribbon Winner | Build and Fixing
+    Get Attribute    <span class="tok-num">${card}</span> .rec-link-company    title    ==    Worked together at ConexED
+
+    <span class="tok-comment"># Then the recommendation decrypts and reads in full</span>
+    Get Text    <span class="tok-num">${card}</span> blockquote p    contains    Many of the people that you work
+    Get Attribute    <span class="tok-num">${card}</span>    data-status    ==    pass    <span class="tok-comment"># an entry that read in full is a pass</span></code></pre>
                 </details>
                 <blockquote>
                   <p>
@@ -2466,28 +2676,29 @@
                 </a>
                 <h3><a href="https://www.linkedin.com/in/mtbikemike/" target="_blank" rel="noopener">Michael Gorham</a></h3>
                 <p class="rec-title">CTO at ConexED</p>
-                <details class="rec-test" data-testid="rec-test-michael-gorham">
+                <details class="rec-test" data-testid="rec-test-michael-gorham" data-lang="ts">
                   <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/playwright.svg" width="14" height="14" alt="" />Playwright · TypeScript</span>
                     <span class="rec-test-name">Test_<wbr />Case_<wbr />4116_<wbr />Recommendations_<wbr />MichaelGorham_<wbr />LetterRenders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_4116_Recommendations_MichaelGorham_LetterRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
   <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
-  <span class="tok-kw">const</span> letter = home.recCard(<span class="tok-str">'michael-gorham'</span>);
+  <span class="tok-kw">const</span> card = home.recCard(<span class="tok-str">'michael-gorham'</span>);
 
   <span class="tok-kw">await</span> test.step(<span class="tok-str">"Then Michael Gorham's name loads and displays, linked to their LinkedIn profile"</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.getByRole(<span class="tok-str">'heading'</span>, { name: <span class="tok-str">'Michael Gorham'</span> })).toBeVisible();
-    <span class="tok-kw">await</span> expect(home.recLinkedIn(<span class="tok-str">'michael-gorham'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">/linkedin\.com\/</span>in\//);
+    <span class="tok-kw">await</span> expect(card.getByRole(<span class="tok-str">'heading'</span>, { name: <span class="tok-str">'Michael Gorham'</span> })).toBeVisible();
+    <span class="tok-kw">await</span> expect(home.recLinkedIn(<span class="tok-str">'michael-gorham'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">/linkedin\.com\/in\//</span>);
   });
 
   <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then their title and the company we worked at together are shown'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'.rec-title'</span>)).toHaveText(<span class="tok-str">'CTO at ConexED'</span>);
+    <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'.rec-title'</span>)).toHaveText(<span class="tok-str">'CTO at ConexED'</span>);
     <span class="tok-kw">await</span> expect(home.recCompany(<span class="tok-str">'michael-gorham'</span>)).toHaveAttribute(<span class="tok-str">'title'</span>, <span class="tok-str">'Worked together at ConexED'</span>);
   });
 
   <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the recommendation decrypts and reads in full'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'blockquote p'</span>)).toContainText(<span class="tok-str">'Matt is hands down the most'</span>);
-    <span class="tok-kw">await</span> expect(letter, <span class="tok-str">'a letter that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
+    <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'blockquote p'</span>)).toContainText(<span class="tok-str">'Matt is hands down the most positive'</span>);
+    <span class="tok-kw">await</span> expect(card, <span class="tok-str">'an entry that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
   });
 });</code></pre>
                 </details>
@@ -2545,30 +2756,35 @@
                 </a>
                 <h3><a href="https://www.linkedin.com/in/jeordincallister/" target="_blank" rel="noopener">Jeordin Callister</a></h3>
                 <p class="rec-title">Software Engineer</p>
-                <details class="rec-test" data-testid="rec-test-jeordin-callister">
+                <details class="rec-test" data-testid="rec-test-jeordin-callister" data-lang="py">
                   <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/python.svg" width="14" height="14" alt="" />Playwright · Python</span>
                     <span class="rec-test-name">Test_<wbr />Case_<wbr />4117_<wbr />Recommendations_<wbr />JeordinCallister_<wbr />LetterRenders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
-                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_4117_Recommendations_JeordinCallister_LetterRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
-  <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
-  <span class="tok-kw">const</span> letter = home.recCard(<span class="tok-str">'jeordin-callister'</span>);
+                  <pre class="qa-code"><code><span class="tok-kw">import</span> re
+<span class="tok-kw">import</span> pytest
+<span class="tok-kw">from</span> playwright.sync_api <span class="tok-kw">import</span> Page, expect
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">"Then Jeordin Callister's name loads and displays, linked to their LinkedIn profile"</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.getByRole(<span class="tok-str">'heading'</span>, { name: <span class="tok-str">'Jeordin Callister'</span> })).toBeVisible();
-    <span class="tok-kw">await</span> expect(home.recLinkedIn(<span class="tok-str">'jeordin-callister'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">/linkedin\.com\/</span>in\//);
-  });
+<span class="tok-kw">from</span> pages.home_page <span class="tok-kw">import</span> HomePage
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then their title and the company we worked at together are shown'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'.rec-title'</span>)).toHaveText(<span class="tok-str">'Software Engineer'</span>);
-    <span class="tok-kw">await</span> expect(home.recCompany(<span class="tok-str">'jeordin-callister'</span>)).toHaveAttribute(<span class="tok-str">'title'</span>, <span class="tok-str">'Worked together at ConexED'</span>);
-  });
 
-  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the recommendation decrypts and reads in full'</span>, <span class="tok-kw">async</span> () =&gt; {
-    <span class="tok-kw">await</span> expect(letter.locator(<span class="tok-str">'blockquote p'</span>)).toContainText(<span class="tok-str">'Matthew is a dedicated and efficient'</span>);
-    <span class="tok-kw">await</span> expect(letter, <span class="tok-str">'a letter that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
-  });
-});</code></pre>
+<span class="tok-kw">@pytest.mark.smoke</span>
+<span class="tok-kw">def</span> <span class="tok-fn">test_case_4117_recommendations_jeordin_callister_letter_renders</span>(page: Page):
+    home = HomePage(page)
+    card = home.rec_card(<span class="tok-str">"jeordin-callister"</span>)
+
+    <span class="tok-comment"># Then Jeordin Callister's name loads and displays, linked to their LinkedIn profile</span>
+    expect(card.get_by_role(<span class="tok-str">"heading"</span>, name=<span class="tok-str">"Jeordin Callister"</span>)).to_be_visible()
+    expect(home.rec_linkedin(<span class="tok-str">"jeordin-callister"</span>)).to_have_attribute(<span class="tok-str">"href"</span>, re.compile(<span class="tok-str">r"linkedin\.com\/in\/"</span>))
+
+    <span class="tok-comment"># Then their title and the company we worked at together are shown</span>
+    expect(card.locator(<span class="tok-str">".rec-title"</span>)).to_have_text(<span class="tok-str">"Software Engineer"</span>)
+    expect(home.rec_company(<span class="tok-str">"jeordin-callister"</span>)).to_have_attribute(<span class="tok-str">"title"</span>, <span class="tok-str">"Worked together at ConexED"</span>)
+
+    <span class="tok-comment"># Then the recommendation decrypts and reads in full</span>
+    expect(card.locator(<span class="tok-str">"blockquote p"</span>)).to_contain_text(<span class="tok-str">"Matthew is a dedicated and efficient QA"</span>)
+    expect(card).to_have_attribute(<span class="tok-str">"data-status"</span>, <span class="tok-str">"pass"</span>)  <span class="tok-comment"># an entry that read in full is a pass</span></code></pre>
                 </details>
                 <blockquote>
                   <p>

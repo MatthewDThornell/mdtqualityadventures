@@ -2807,9 +2807,11 @@ html.pen-active .typewriter .tw-quill {
     0 18px 36px rgba(0, 0, 0, 0.45);
 }
 
-/* every recommendation is a passing check — the badge in the corner says
-   so in the rain's own mono, and lights up with the card */
-.rec-card::before {
+/* every recommendation — and every accomplishment card that borrows this
+   machinery (.card-tested) — is a passing check: the badge in the corner
+   says so in the rain's own mono, and lights up with the card */
+.rec-card::before,
+.card-tested::before {
   content: 'PASS \2713';
   position: absolute;
   top: 0.9rem;
@@ -2829,7 +2831,8 @@ html.pen-active .typewriter .tw-quill {
     background 0.25s ease;
 }
 
-.rec-card:hover::before {
+.rec-card:hover::before,
+.card-tested:hover::before {
   background: rgba(var(--code-rgb), 0.16);
   box-shadow: 0 0 12px rgba(var(--code-rgb), 0.45);
 }
@@ -2838,7 +2841,8 @@ html.pen-active .typewriter .tw-quill {
    yellow, breathing, then flips to the outcome the moment the decrypt lands
    (src/quote-decrypt.js sets data-status; cards without one — no JS, reduced
    motion — read as PASS from the start). */
-.rec-card[data-status='pending']::before {
+.rec-card[data-status='pending']::before,
+.card-tested[data-status='pending']::before {
   content: 'PENDING \2713';
   color: var(--brass-bright);
   border-color: rgba(var(--brass-bright-rgb), 0.5);
@@ -2846,8 +2850,35 @@ html.pen-active .typewriter .tw-quill {
   animation: badge-pending 1.6s ease-in-out infinite;
 }
 
-.rec-card[data-status='pass']::before {
+.rec-card[data-status='pass']::before,
+.card-tested[data-status='pass']::before {
   animation: badge-pass 0.9s ease-out;
+}
+
+/* An accomplishment card with the recommendations' machinery: a verdict
+   badge in the corner, its own test case above the entry, and the entry
+   itself decrypting once that test has passed (src/quote-decrypt.js and
+   src/rec-precheck.js find the card by this class). The badge needs the
+   card positioned, and the first headline leaves it room. */
+.card-tested {
+  position: relative;
+}
+
+.card-tested > h3:first-child {
+  padding-right: 6.5rem;
+}
+
+/* the entry's box: the test's terminal and the binary overlay fill it */
+.card-body {
+  position: relative;
+}
+
+.card-body p.quote-decrypt-hidden {
+  color: transparent;
+}
+
+.card-tested .rec-test {
+  margin: 0.4rem 0 0.9rem;
 }
 
 @keyframes badge-pending {
@@ -3500,10 +3531,15 @@ a.rec-link:hover {
   font-size: 0.68rem;
 }
 
+/* Two lines: the arrow, the language and the step count across the top;
+   the test's name — long, breaking only at its underscores — underneath,
+   so it fits a narrow accomplishment card as well as a wide letter. */
 .rec-test summary {
-  display: flex;
-  align-items: baseline;
-  gap: 0.6rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 0.6rem;
+  row-gap: 0.25rem;
+  align-items: center;
   cursor: pointer;
   list-style: none;
   color: rgba(var(--code-rgb), 0.75);
@@ -3515,7 +3551,8 @@ a.rec-link:hover {
 
 .rec-test summary::before {
   content: '\203A';
-  flex-shrink: 0;
+  grid-column: 1;
+  grid-row: 1;
   transition: transform 0.2s ease;
 }
 
@@ -3525,12 +3562,36 @@ a.rec-link:hover {
 
 /* the name breaks only at its underscores (a <wbr> follows each) */
 .rec-test-name {
+  grid-column: 2 / -1;
+  grid-row: 2;
   overflow-wrap: normal;
 }
 
+/* Which language and framework the test is written in — the suite speaks
+   several (see scripts/generate-card-tests.mjs), and each card says which
+   with the kit's own logo. */
+.rec-test-lang {
+  grid-column: 2;
+  grid-row: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.rec-test-lang img {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+
 .rec-test-status {
-  margin-left: auto;
-  flex-shrink: 0;
+  grid-column: 3;
+  grid-row: 1;
   /* wide enough for its longest reading, so running → passed never
      reflows the line and the card never changes height */
   min-width: 7em;
@@ -3611,14 +3672,11 @@ a.rec-link:hover {
   position: absolute;
   inset: 0;
   overflow: hidden;
-  /* the paragraph's own face, so the spaces between words — which never
-     scramble — are always the width the real text's are; a mono space is
-     far wider and would spread every line until the last lock */
-  font-family: var(--font-body);
-  font-style: italic;
-  font-size: 0.92rem;
-  line-height: inherit;
-  color: var(--text-primary);
+  /* face, size, leading and colour are copied inline from the paragraph it
+     covers (dressOverlay in src/quote-decrypt.js), so the spaces between
+     words — which never scramble — are always the width the real text's
+     are; a mono space is far wider and would spread every line until the
+     last lock */
   pointer-events: none;
 }
 

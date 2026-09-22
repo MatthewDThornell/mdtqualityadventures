@@ -1,10 +1,11 @@
-// Every recommendation runs its own test case before its quote is allowed to
-// decrypt. The test lives in a closed <details> above the quote, readable any
-// time; while the card decodes, a copy of its code types out in a terminal
-// laid exactly over the quote's box — which is only binary at that point —
-// the summary flips from running to passed, the terminal lifts, and only then
-// does the binary start to resolve. src/quote-decrypt.js calls runPrecheck and
-// waits on it.
+// Every recommendation — and every accomplishment — runs its own test case
+// before its text is allowed to decrypt. The test lives in a closed <details>
+// above the text, readable any time; while the card decodes, a copy of its
+// code types out in a terminal laid exactly over the text's box — which is
+// only binary at that point — the summary flips from running to passed, the
+// terminal lifts, and only then does the binary start to resolve.
+// src/quote-decrypt.js calls runPrecheck with the card and the box (a
+// blockquote, or an accomplishment's .card-body) and waits on it.
 //
 // The terminal is an overlay rather than the <details> opening because an
 // opening block would grow the card and shove every card below it down the
@@ -16,9 +17,9 @@ import { typeInto, wait } from './type-into.js';
 const MS_PER_CHAR = 2;
 const PASSED_PAUSE = 350; // long enough to read "passed" before the terminal lifts
 
-export function runPrecheck(card) {
+export function runPrecheck(card, host) {
   const test = card?.querySelector('.rec-test');
-  const quote = card?.querySelector('blockquote');
+  const quote = host ?? card?.querySelector('blockquote');
   if (!test || !quote) return Promise.resolve();
   const status = test.querySelector('.rec-test-status');
 
