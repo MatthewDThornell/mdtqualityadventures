@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-22T15:34:03.720Z",
+  "fetchedAt": "2026-09-22T16:11:54.601Z",
   "jobs": [
     {
       "id": "greenhouse-testlio-8185386",
@@ -221,6 +221,19 @@
       "location": "Munich, Bavaria",
       "country": "Germany",
       "postedAt": "2026-09-20T11:55:02.000Z"
+    },
+    {
+      "id": "arbeitnow-remote-quality-engineering-lead-schoppingen-262215",
+      "title": "Quality Engineering Lead (m/w/d)",
+      "company": "shopware AG",
+      "url": "https://www.arbeitnow.com/jobs/companies/shopware-ag/remote-quality-engineering-lead-schoppingen-262215",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Homeoffice",
+      "country": "Other",
+      "postedAt": "2026-09-19T17:30:39.000Z"
     },
     {
       "id": "greenhouse-robinhood-7739588",
