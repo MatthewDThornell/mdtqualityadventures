@@ -1199,9 +1199,9 @@ html.pen-active .typewriter .tw-quill {
 }
 
 .waypoint {
-  font-family: var(--font-display);
+  font-family: var(--font-mono);
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   color: var(--ink);
   background: var(--chapter-accent, var(--brass));
   width: 2.5rem;
@@ -1310,22 +1310,83 @@ html.pen-active .typewriter .tw-quill {
   align-items: center;
   text-align: center;
   padding: 4.5rem 3rem;
+  /* the paper is printed faintly with binary — the matrix under the journal */
+  background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22420%22%20height%3D%22132%22%20font-family%3D%22JetBrains%20Mono%2CMenlo%2Cmonospace%22%20font-size%3D%2211%22%20fill%3D%22%23ece3cf%22%20fill-opacity%3D%220.028%22%3E%3Ctext%20x%3D%224%22%20y%3D%2218%22%20textLength%3D%22412%22%20lengthAdjust%3D%22spacing%22%3E0110%201001%200010%201101%200111%200100%201010%200011%201101%200010%200100%201011%3C%2Ftext%3E%3Ctext%20x%3D%224%22%20y%3D%2238%22%20textLength%3D%22412%22%20lengthAdjust%3D%22spacing%22%3E1001%200110%201101%200011%200100%201011%200101%201100%200010%201111%201001%200100%3C%2Ftext%3E%3Ctext%20x%3D%224%22%20y%3D%2258%22%20textLength%3D%22412%22%20lengthAdjust%3D%22spacing%22%3E0011%201100%200110%201010%201101%200001%200111%201001%200100%201010%200011%201100%3C%2Ftext%3E%3Ctext%20x%3D%224%22%20y%3D%2278%22%20textLength%3D%22412%22%20lengthAdjust%3D%22spacing%22%3E1101%200010%201011%200100%200110%201110%201000%200101%201011%200100%201101%200010%3C%2Ftext%3E%3Ctext%20x%3D%224%22%20y%3D%2298%22%20textLength%3D%22412%22%20lengthAdjust%3D%22spacing%22%3E0100%201011%200001%201110%201001%200111%200011%201010%200100%201101%200110%201011%3C%2Ftext%3E%3Ctext%20x%3D%224%22%20y%3D%22118%22%20textLength%3D%22412%22%20lengthAdjust%3D%22spacing%22%3E1010%200101%201100%200011%200010%201001%201101%200110%201110%200011%201010%200101%3C%2Ftext%3E%3C%2Fsvg%3E');
+  background-size: 420px 132px;
 }
 
 .page-opener .chapter-label {
   font-size: 0.85rem;
 }
 
-.page-opener h2 {
+/* .page.page-opener, not .page-opener alone: .page h2 below has the same
+   specificity and later source order, and used to win — the part title
+   never actually got its larger size */
+.page.page-opener h2 {
   font-size: clamp(2.4rem, 5vw, 3.25rem);
 }
 
+/* The opener's line is a doc comment: the opening fence above, the closing
+   fence below, the sentence between them in the mono. Left-aligned inside a centered block,
+   as a comment would be, with the fences as pseudo-elements so the text
+   itself is still the one sentence. */
 .opener-intro {
-  font-family: var(--font-ui);
+  display: inline-block;
+  text-align: left;
+  font-family: var(--font-mono);
   color: var(--text-muted);
-  max-width: 32rem;
-  font-size: 1.05rem;
+  max-width: 34rem;
+  font-size: 0.92rem;
+  line-height: 1.7;
   text-wrap: balance;
+}
+
+.opener-intro::before,
+.opener-intro::after {
+  display: block;
+  color: rgba(var(--code-rgb), 0.55);
+}
+
+.opener-intro::before {
+  content: '/**';
+}
+
+.opener-intro::after {
+  content: ' */';
+}
+
+/* The title's decrypt (src/title-decrypt.js): the heading goes transparent
+   behind an overlay in its own face and size, so the reveal lands in the
+   box it covers — the same arrangement as the hero's name. Specificity
+   beats .page h2's own color rule. */
+.title-decrypt-wrap {
+  position: relative;
+  display: block;
+}
+
+.page h2.title-decrypt-hidden {
+  color: transparent;
+}
+
+.title-decrypt {
+  position: absolute;
+  inset: 0;
+  /* face, size and leading are set inline from the heading's computed style */
+  color: var(--parchment);
+  pointer-events: none;
+  /* a part title is a few words and never wraps at any width the site
+     serves; saying so keeps a momentarily-wider scramble on the one line */
+  white-space: nowrap;
+}
+
+/* A character still scrambling is boxed a little under the width of a
+   serif letter (~0.41em in the display face), so the scrambled title is
+   never wider than the real one and nothing is clipped mid-decode. */
+.title-decrypt .qd-char:not(.is-locked) {
+  display: inline-block;
+  width: 0.48em;
+  font-size: 0.75em;
+  text-align: center;
 }
 
 /* Small wax-seal-style medallions flanking a chapter-opener's centered text,
@@ -1376,18 +1437,27 @@ html.pen-active .typewriter .tw-quill {
   transform: rotate(45deg);
 }
 
+/* The journal's running heads speak code: "Chapter 1 · Page 1" is a
+   comment line in the mono, the "//" in the rain's green and the words in
+   the chapter's accent — the same voice as the hero's tagline. The prefix
+   is a pseudo-element, so the label's text is still just the label. */
 .chapter-label {
-  font-family: var(--font-ui);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: lowercase;
   /* var(--teal) measures under the 4.5:1 WCAG AA threshold at this size
      against the page/panel backgrounds; --teal-bright clears it (~5.2-6:1)
      and is already used for small uppercase labels elsewhere (.eyebrow,
      .card-meta); every chapter accent used here clears it too */
   color: var(--chapter-label, var(--teal-bright));
   margin: 0 0 0.25rem;
+}
+
+.chapter-label::before {
+  content: '// ';
+  color: rgba(var(--code-rgb), 0.65);
 }
 
 /* Drop caps: a chapter's first paragraph opens like a printed page. The

@@ -265,3 +265,78 @@ test.describe('Home — Hero', () => {
     },
   );
 });
+
+// What It Tests: The journal's running heads speak code — chapter labels are
+// mono comment lines, an opener's intro is fenced like a doc comment — and
+// each chapter-opener's title decrypts from binary into the real words as it
+// scrolls into view, without the real heading ever changing.
+// Why It Matters: The decrypt is an overlay over a heading that search
+// engines, screen readers and these tests all read directly; if the overlay
+// ever became the heading, or never lifted, the site's own chapter titles
+// would be noise. And under reduced motion none of it may run at all.
+test.describe('Home — Chapters', () => {
+  test(
+    'Test_Case_1020_Home_ChapterOpeners_SpeakCodeAndDecryptIntoView',
+    { tag: '@regression' },
+    async ({ page }) => {
+      const home = new HomePage(page);
+      await home.goto();
+      const opener = page.locator('#chapter-one');
+      const title = opener.locator('h2');
+
+      await test.step('Then the chapter label and intro read as code, with the words themselves untouched', async () => {
+        const label = opener.locator('.chapter-label');
+        await expect.soft(label).toHaveText('Chapter One');
+        expect
+          .soft(await label.evaluate((el) => getComputedStyle(el).fontFamily))
+          .toContain('JetBrains Mono');
+        expect
+          .soft(await label.evaluate((el) => getComputedStyle(el, '::before').content))
+          .toBe('"// "');
+        const intro = opener.locator('.opener-intro');
+        expect
+          .soft(await intro.evaluate((el) => getComputedStyle(el, '::before').content))
+          .toBe('"/**"');
+        expect
+          .soft(await intro.evaluate((el) => getComputedStyle(el, '::after').content))
+          .toBe('" */"');
+      });
+
+      await test.step('Then, before it is reached, the title waits as binary behind the real heading', async () => {
+        await expect.soft(title).toHaveText('The Professional');
+        await expect.soft(title).toHaveClass(/title-decrypt-hidden/);
+        const overlay = opener.locator('.title-decrypt');
+        await expect.soft(overlay).toHaveCount(1);
+        // one scrambling character per letter of the title (spaces are not scrambled)
+        await expect.soft(overlay.locator('.qd-char')).toHaveCount('TheProfessional'.length);
+        await expect.soft(overlay.locator('.qd-char').first()).toHaveText(/^[01]$/);
+      });
+
+      await test.step('When the opener scrolls into view, the title resolves and the overlay lifts', async () => {
+        await title.evaluate((el) => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
+        await expect(title).toHaveClass(/title-decrypted/, { timeout: 15_000 });
+        await expect.soft(opener.locator('.title-decrypt')).toHaveCount(0);
+        await expect.soft(title).toHaveText('The Professional');
+        await expect.soft(title).not.toHaveCSS('color', 'rgba(0, 0, 0, 0)');
+      });
+    },
+  );
+
+  test(
+    'Test_Case_1021_Home_ChapterOpeners_ReducedMotion_ShowsTitlesPlainly',
+    { tag: '@regression' },
+    async ({ page }) => {
+      await page.emulateMedia({ reducedMotion: 'reduce' });
+      const home = new HomePage(page);
+      await home.goto();
+
+      await test.step('Then no title is hidden or overlaid — every opener reads plainly', async () => {
+        await expect.soft(page.locator('.title-decrypt')).toHaveCount(0);
+        await expect.soft(page.locator('.title-decrypt-hidden')).toHaveCount(0);
+        await expect
+          .soft(page.locator('.chapter-opener h2'))
+          .toHaveText(['The Professional', 'The Person', 'The People']);
+      });
+    },
+  );
+});

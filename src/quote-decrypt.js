@@ -24,9 +24,9 @@ const CHURN = 0.5; // share of still-scrambling characters rewritten each frame 
 
 const randomFrom = (pool) => pool[Math.floor(Math.random() * pool.length)];
 
-function buildOverlay(text) {
+export function buildOverlay(text, className = 'quote-decrypt') {
   const overlay = document.createElement('span');
-  overlay.className = 'quote-decrypt';
+  overlay.className = className;
   overlay.setAttribute('aria-hidden', 'true');
 
   const charSpans = [];
@@ -53,15 +53,26 @@ function buildOverlay(text) {
 // a slow machine — or four cards decoding at once — frames run long. Tying
 // the sweep to elapsed time means it always finishes in ~1.6s; a slow frame
 // just locks more characters in one go.
-function decrypt(paragraph, overlay, charSpans) {
+//
+// Shared with the chapter titles (src/title-decrypt.js), which pass their
+// own timings: the same sweep, over sixteen characters instead of eight
+// hundred.
+export function decrypt(paragraph, overlay, charSpans, options = {}) {
+  const {
+    hiddenClass = 'quote-decrypt-hidden',
+    binaryMs = BINARY_MS,
+    waveMs = WAVE_MS,
+    settleMs = SETTLE_MS,
+    onDone,
+  } = options;
   const start = performance.now();
   let remaining = charSpans.length;
 
   const tick = (now) => {
     const elapsed = now - start;
-    const pool = elapsed < BINARY_MS ? BINARY_CHARS : LETTER_CHARS;
+    const pool = elapsed < binaryMs ? BINARY_CHARS : LETTER_CHARS;
     // how far along the text the lock has swept, in characters
-    const lockedThrough = Math.floor(((elapsed - BINARY_MS) / WAVE_MS) * charSpans.length);
+    const lockedThrough = Math.floor(((elapsed - binaryMs) / waveMs) * charSpans.length);
 
     charSpans.forEach((span, i) => {
       if (span.classList.contains('is-locked')) return;
@@ -79,19 +90,22 @@ function decrypt(paragraph, overlay, charSpans) {
       return;
     }
     setTimeout(() => {
-      paragraph.classList.remove('quote-decrypt-hidden');
+      paragraph.classList.remove(hiddenClass);
       overlay.remove();
-      // the card's badge has read PENDING since init; it now reads the
-      // outcome — PASS, or FAIL for the one card that carries that verdict —
-      // and anything waiting on the result (src/quaid-report.js) hears about it
-      const card = paragraph.closest('.rec-card');
-      if (card) {
-        card.dataset.status = card.dataset.outcome || 'pass';
-        card.dispatchEvent(new CustomEvent('quote-decrypted', { bubbles: true }));
-      }
-    }, SETTLE_MS);
+      onDone?.();
+    }, settleMs);
   };
   requestAnimationFrame(tick);
+}
+
+// the card's badge has read PENDING since init; it now reads the outcome —
+// PASS, or FAIL for the one card that carries that verdict — and anything
+// waiting on the result (src/incident-report.js) hears about it
+function settleVerdict(paragraph) {
+  const card = paragraph.closest('.rec-card');
+  if (!card) return;
+  card.dataset.status = card.dataset.outcome || 'pass';
+  card.dispatchEvent(new CustomEvent('quote-decrypted', { bubbles: true }));
 }
 
 export function initQuoteDecrypt(paragraphs) {
@@ -120,7 +134,9 @@ export function initQuoteDecrypt(paragraphs) {
           // each runs its own test case first (src/rec-precheck.js)
           setTimeout(() => {
             runPrecheck(entry.target.closest('.rec-card')).then(() =>
-              decrypt(entry.target, overlay, charSpans),
+              decrypt(entry.target, overlay, charSpans, {
+                onDone: () => settleVerdict(entry.target),
+              }),
             );
           }, i * STAGGER_MS);
         });

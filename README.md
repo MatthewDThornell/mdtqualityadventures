@@ -79,6 +79,14 @@ drives them: one group open at a time on desktop, all of them unfolded inside th
 so it reads as an outline, and outside-click/Escape to close. The sub-pages mark their own link
 `aria-current="page"`, which also lights the group heading holding it.
 
+The journal speaks code. Its running heads (`.chapter-label`, "Chapter 1 · Page 1") are mono
+comment lines — the `//` is a pseudo-element, so the label's text is still just the label — the
+waypoint coins count in mono, a chapter-opener's intro is fenced like a doc comment, and its title
+decrypts from binary into the display serif as the page turns into view (`src/title-decrypt.js`,
+sharing the overlay and sweep of `src/quote-decrypt.js`). Like every decrypt on the site, it is an
+aria-hidden overlay beside the real heading, never a rewrite of it; under reduced motion the titles
+simply read.
+
 ### Image sizes
 
 Every `<img>` carries its intrinsic `width`/`height` so the browser reserves the right box before
