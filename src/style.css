@@ -1514,8 +1514,15 @@ html.pen-active .typewriter .tw-quill {
 #volunteer .adventure-body > p:not(.card-meta):not(.card-kicker):not(.card-follow),
 #mentors .mentor-story {
   font-family: var(--font-mono);
-  font-size: 0.84rem;
+  /* 500 is the lightest weight index.html loads for this face, and a mono at
+     body size needs the extra stroke anyway; the ink is brighter than the
+     muted grey these paragraphs inherited (about 11:1 on the panel, against
+     6:1) because a mono's thin, widely-spaced glyphs read dimmer than a serif
+     at the same colour. */
+  font-size: 0.86rem;
+  font-weight: 500;
   line-height: 1.95;
+  color: rgba(var(--parchment-rgb), 0.88);
 }
 
 .page p:last-child {
@@ -1525,6 +1532,38 @@ html.pen-active .typewriter .tw-quill {
 .chapter-intro {
   font-style: italic;
   color: var(--text-muted);
+}
+
+/* The typewriter that keeps its words (src/type-reveal.js). A line waiting
+   its turn, and the part of a line not yet written, are hidden with
+   visibility rather than removed: the text stays in the DOM for a screen
+   reader, a crawler or a test, and holds its own space so nothing below it
+   moves while it writes. */
+.tw-waiting,
+.tw-pending {
+  visibility: hidden;
+}
+
+/* the caret rides the end of whatever is being written, out of flow so the
+   untyped tail behind it never shifts by a character */
+.tw-typed.is-writing {
+  position: relative;
+}
+
+.tw-typed.is-writing::after {
+  content: '\258B';
+  position: absolute;
+  left: 100%;
+  top: 0;
+  color: rgb(var(--code-rgb));
+  animation: qa-caret 0.8s steps(2, end) infinite;
+}
+
+/* nothing types under reduced motion, so nothing may be left waiting */
+@media (prefers-reduced-motion: reduce) {
+  .tw-waiting {
+    visibility: visible;
+  }
 }
 
 /* Timeline */

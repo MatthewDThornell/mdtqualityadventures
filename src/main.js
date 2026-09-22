@@ -7,6 +7,7 @@ import { initSpotlight } from './spotlight.js';
 import { initFigures } from './figures.js';
 import { initQuoteDecrypt } from './quote-decrypt.js';
 import { initTitleDecrypt } from './title-decrypt.js';
+import { initTypeOnView } from './type-reveal.js';
 import { initIncidentReport } from './incident-report.js';
 import {
   initScrollRibbon,
@@ -31,6 +32,11 @@ initFigures(document.querySelector('[data-testid="figures"]'));
 document.querySelectorAll('.rec-card[data-outcome]').forEach(initIncidentReport);
 initQuoteDecrypt(document.querySelectorAll('.rec-card blockquote p, .card-tested .card-body p'));
 initTitleDecrypt(document.querySelectorAll('.page-opener h2'));
+// each role on the résumé writes itself out as you reach it — slower than the
+// reports type, because this is copy to read rather than a terminal thinking
+initTypeOnView(document.querySelectorAll('#experience .timeline li > p:not(.timeline-org)'), {
+  msPerChar: 30,
+});
 
 const coverCanvas = document.getElementById('cover-canvas');
 const coverScene = initCoverScene(coverCanvas, { skylineHeroSelector: '#top' });

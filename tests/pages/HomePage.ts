@@ -75,6 +75,11 @@ export class HomePage extends BasePage {
     return this.page.getByTestId(`timeline-item-${companySlug}`);
   }
 
+  /** The role's description — the paragraph that types itself out (src/type-reveal.js). */
+  timelineEntry(companySlug: string): Locator {
+    return this.timelineItem(companySlug).locator('p:not(.timeline-org)');
+  }
+
   /** The "by the numbers" strip under the chapter intro. */
   get figures(): Locator {
     return this.page.getByTestId('figures');

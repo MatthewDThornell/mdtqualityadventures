@@ -383,13 +383,14 @@
 
             <div class="card-grid">
               <article class="card card-tested" data-testid="accomplishment-card-veterans-united-coverage">
+                <img class="card-photo card-photo-top" src="/images/veterans-united-sign.webp" width="900" height="900" alt="The Veterans United Home Loans sign outside the Columbia, Missouri office" loading="lazy" />
                 <h3>Zero to 80% coverage</h3>
                 <p class="card-meta"><img class="timeline-logo" src="/images/logos/veterans-united.png" width="180" height="180" alt="" loading="lazy" /><a class="brand-link brand-veterans-united" href="https://www.veteransunited.com/" target="_blank" rel="noopener">Veterans United Home Loans</a></p>
                 <details class="rec-test" data-testid="accomplishment-test-veterans-united-coverage" data-lang="ts">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/playwright.svg" width="14" height="14" alt="" />Playwright · TypeScript</span>
                     <span class="rec-test-name">Test Case 3101 - VU - Accomplishment Entry Renders</span>
-                    <span class="rec-test-status">3 steps</span>
+                    <span class="rec-test-status">4 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test Case 3101 - VU - Accomplishment Entry Renders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
   <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
@@ -403,6 +404,11 @@
     <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'.card-meta a'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">'https://www.veteransunited.com/'</span>);
     <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'.card-meta a'</span>)).toHaveAttribute(<span class="tok-str">'target'</span>, <span class="tok-str">'_blank'</span>);
     <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'.card-meta a'</span>)).toHaveAttribute(<span class="tok-str">'rel'</span>, <span class="tok-str">/noopener/</span>);
+  });
+
+  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the photograph has loaded and is described for a screen reader'</span>, <span class="tok-kw">async</span> () =&gt; {
+    expect(<span class="tok-kw">await</span> card.locator(<span class="tok-str">'.card-photo'</span>).evaluate((img: HTMLImageElement) =&gt; img.naturalWidth)).toBeGreaterThan(<span class="tok-num">0</span>);
+    <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'.card-photo'</span>)).toHaveAttribute(<span class="tok-str">'alt'</span>, <span class="tok-str">'The Veterans United Home Loans sign outside the Columbia, Missouri office'</span>);
   });
 
   <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the entry decrypts and reads in full'</span>, <span class="tok-kw">async</span> () =&gt; {

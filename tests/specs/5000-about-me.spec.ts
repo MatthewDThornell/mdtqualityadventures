@@ -110,4 +110,36 @@ test.describe('About Me', () => {
       });
     },
   );
+
+  test(
+    'Test_Case_5003_AboutMe_Quote_WritesItselfOutThenRotates',
+    { tag: '@regression' },
+    async ({ page }) => {
+      const home = new HomePage(page);
+      await home.goto();
+      const FIRST = 'Quality isn’t something we test in. It’s something we build in.';
+
+      await test.step('Given the quote waits to be written, holding its words', async () => {
+        await expect.soft(home.aboutQuote).toHaveClass(/tw-waiting/);
+        await expect.soft(home.aboutQuote).toHaveText(FIRST);
+      });
+
+      await test.step('When About Me scrolls into view, the quote types itself out', async () => {
+        await home.aboutQuote.evaluate((el) =>
+          el.scrollIntoView({ block: 'center', behavior: 'instant' }),
+        );
+        await expect(home.aboutQuote).not.toHaveClass(/tw-waiting/, { timeout: 15_000 });
+        await expect.soft(home.aboutQuote).toHaveText(FIRST);
+      });
+
+      await test.step('Then it settles, unmarked, and the rotation carries on to the next one', async () => {
+        await expect(home.aboutQuote).not.toHaveClass(/is-typing/, { timeout: 30_000 });
+        await expect.soft(home.aboutQuote.locator('.tw-typed, .tw-pending')).toHaveCount(0);
+        await expect.soft(home.aboutQuote).toBeVisible();
+        // the rotator holds each quote ~7s, then fades and writes the next
+        await expect(home.aboutQuote).not.toHaveText(FIRST, { timeout: 30_000 });
+        await expect.soft(home.aboutQuote).not.toBeEmpty();
+      });
+    },
+  );
 });

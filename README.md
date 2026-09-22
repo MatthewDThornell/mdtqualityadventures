@@ -87,6 +87,32 @@ sharing the overlay and sweep of `src/quote-decrypt.js`). Like every decrypt on 
 aria-hidden overlay beside the real heading, never a rewrite of it; under reduced motion the titles
 simply read.
 
+The entries speak it too: body copy in Professional Experience, Accomplishments, About Me, Quality
+Adventures and Mentors is set in the same mono as the card tests, a size down and brighter than the
+muted grey prose inherits, because a mono's thin, widely-spaced glyphs read dimmer than a serif at
+the same colour. The rule names its containers one by one (see "the entries speak code" in
+`style.css`) so that every piece of furniture — chapter intros, card metas, timeline orgs, mentor
+titles, the pull quotes — keeps the voice it already had.
+
+### Typewriters
+
+Three different things type on this site, and they are not the same effect:
+
+- `src/typewriter.js` — the hero's eyebrow and tagline. Types character by character, erases, and
+  cycles; the real text lives in `.sr-only` twins (`hero-eyebrow-static`, `hero-tagline-static`)
+  that tests and screen readers read instead.
+- `src/type-into.js` — the incident reports and each card's own test run. Blanks an element's text
+  nodes and refills them, which suits a terminal writing something that did not exist a moment ago.
+- `src/type-reveal.js` — the résumé's roles (`initTypeOnView`, one per timeline entry as it scrolls
+  into view) and the rotating About Me quote (`src/quote-rotator.js`, which now writes each quote
+  out rather than fading it in, and waits to start until the quote is actually on screen). This one
+  never takes the words off the page: each text node is split into what has been typed and what is
+  still to come behind `visibility: hidden`, so the full text is in the DOM from the first frame to
+  the last and the untyped tail holds its own space — nothing below it moves while a line writes
+  itself. Both spans are removed when it finishes, leaving the markup as it was found.
+
+Under reduced motion none of the three run, and every line simply reads.
+
 ### Card tests
 
 Every recommendation and accomplishment card carries its own test case, which types out and

@@ -117,3 +117,67 @@ test.describe('Professional Experience — Credentials', () => {
     },
   );
 });
+
+// What It Tests: Each role on the timeline writes itself out when it scrolls
+// into view, and its words are in the page the whole time it does.
+// Why It Matters: This is the résumé. The effect may never cost a reader, a
+// screen reader or a crawler the text itself — src/type-reveal.js hides what
+// it has not typed yet instead of removing it, and this is what holds that
+// promise in place.
+test.describe('Experience — Roles type themselves out', () => {
+  const ROLE_TEXT = 'Built Playwright automation from scratch';
+
+  test(
+    'Test_Case_2020_Experience_Roles_TypeOutWithoutEverLosingTheirText',
+    { tag: '@regression' },
+    async ({ page }) => {
+      const home = new HomePage(page);
+      await home.goto();
+      const entry = home.timelineEntry('veterans-united');
+
+      await test.step('Given the role waits unwritten — its ink hidden, its words already there', async () => {
+        await expect.soft(entry).toHaveClass(/tw-waiting/);
+        await expect.soft(entry).not.toBeVisible();
+        // the assertion a crawler or a screen reader would make
+        await expect.soft(entry).toContainText(ROLE_TEXT);
+      });
+
+      await test.step('When it scrolls into view, it types — and still reads in full while it does', async () => {
+        await entry.evaluate((el) => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
+        await expect(entry).toHaveClass(/is-typing|tw-written/, { timeout: 15_000 });
+        await expect.soft(entry).toContainText(ROLE_TEXT);
+        // whatever is still to come is hidden, never deleted
+        const pending = await entry.locator('.tw-pending').count();
+        const written = await entry.evaluate((el) => el.classList.contains('tw-written'));
+        expect
+          .soft(pending > 0 || written, 'mid-type, the untyped tail is a hidden span')
+          .toBe(true);
+      });
+
+      await test.step('Then it finishes, and leaves the markup exactly as it found it', async () => {
+        await expect(entry).toHaveClass(/tw-written/, { timeout: 30_000 });
+        await expect.soft(entry).toBeVisible();
+        await expect.soft(entry).toContainText(ROLE_TEXT);
+        await expect.soft(entry.locator('.tw-typed, .tw-pending')).toHaveCount(0);
+      });
+    },
+  );
+
+  test(
+    'Test_Case_2021_Experience_Roles_ReducedMotion_AreSimplyWritten',
+    { tag: '@regression' },
+    async ({ page }) => {
+      await page.emulateMedia({ reducedMotion: 'reduce' });
+      const home = new HomePage(page);
+      await home.goto();
+
+      await test.step('Then nothing waits to be typed, and every role reads plainly', async () => {
+        await expect.soft(page.locator('#experience .tw-waiting')).toHaveCount(0);
+        await expect.soft(page.locator('#experience .tw-pending')).toHaveCount(0);
+        const entry = home.timelineEntry('veterans-united');
+        await expect.soft(entry).toBeVisible();
+        await expect.soft(entry).toContainText(ROLE_TEXT);
+      });
+    },
+  );
+});

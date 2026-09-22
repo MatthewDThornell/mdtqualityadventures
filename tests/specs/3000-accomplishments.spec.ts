@@ -80,7 +80,7 @@ test.describe('Accomplishments', () => {
       lang: 'ts',
       label: 'Playwright · TypeScript',
       name: 'Test Case 3101 - VU - Accomplishment Entry Renders',
-      steps: 3,
+      steps: 4,
     },
     'werner-reporting': {
       lang: 'cs',
