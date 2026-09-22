@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-09-22T10:53:55.103Z",
+  "fetchedAt": "2026-09-22T15:34:03.720Z",
   "jobs": [
+    {
+      "id": "greenhouse-testlio-8185386",
+      "title": "Freelance Software Tester With Smart TVs (Remote in Austria)",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8185386",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Remote in EMEA",
+      "country": "Other",
+      "postedAt": "2026-09-22T08:10:53-04:00"
+    },
+    {
+      "id": "greenhouse-testlio-8213583",
+      "title": "Freelance Software Tester With Smart TVs (Remote in Ireland)",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8213583",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Remote in EMEA",
+      "country": "Other",
+      "postedAt": "2026-09-22T08:10:09-04:00"
+    },
+    {
+      "id": "greenhouse-testlio-8213556",
+      "title": "Freelance Software Tester With Smart TVs (Remote in Italy)",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8213556",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Remote in EMEA",
+      "country": "Other",
+      "postedAt": "2026-09-22T08:09:18-04:00"
+    },
     {
       "id": "arbeitnow-software-test-qa-automation-engineer-mandatory-internship-unpaid-berlin-403562",
       "title": "Software Test (QA) Automation Engineer - Mandatory Internship (Unpaid)",
@@ -184,19 +223,6 @@
       "postedAt": "2026-09-20T11:55:02.000Z"
     },
     {
-      "id": "arbeitnow-remote-quality-engineering-lead-schoppingen-262215",
-      "title": "Quality Engineering Lead (m/w/d)",
-      "company": "shopware AG",
-      "url": "https://www.arbeitnow.com/jobs/companies/shopware-ag/remote-quality-engineering-lead-schoppingen-262215",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Homeoffice",
-      "country": "Other",
-      "postedAt": "2026-09-19T17:30:39.000Z"
-    },
-    {
       "id": "greenhouse-robinhood-7739588",
       "title": "Quality Engineer, Mobile",
       "company": "Robinhood",
@@ -208,32 +234,6 @@
       "location": "Toronto, Canada",
       "country": "Canada",
       "postedAt": "2026-09-18T14:03:33-04:00"
-    },
-    {
-      "id": "greenhouse-testlio-8213583",
-      "title": "Freelance Software Tester With Smart TVs (Remote in Ireland)",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8213583",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Remote in EMEA",
-      "country": "Other",
-      "postedAt": "2026-09-18T11:06:51-04:00"
-    },
-    {
-      "id": "greenhouse-testlio-8213556",
-      "title": "Freelance Software Tester With Smart TVs (Remote in Italy)",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8213556",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Remote in EMEA",
-      "country": "Other",
-      "postedAt": "2026-09-18T10:44:29-04:00"
     },
     {
       "id": "greenhouse-verkada-5237420007",
@@ -364,19 +364,6 @@
       "location": "Melbourne",
       "country": "Australia",
       "postedAt": "2026-09-08T20:40:26.374Z"
-    },
-    {
-      "id": "greenhouse-testlio-8185386",
-      "title": "Freelance Software Tester With Smart TVs (Remote in Austria)",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8185386",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Remote in EMEA",
-      "country": "Other",
-      "postedAt": "2026-09-08T14:31:51-04:00"
     },
     {
       "id": "greenhouse-testlio-8184710",
