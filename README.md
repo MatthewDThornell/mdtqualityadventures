@@ -149,12 +149,14 @@ convention in its file names and `test(...)` titles; these are the cards' displa
 
 ### Headers
 
-serves the CSP, and it has to know what the site loads: allows as well as because several marks are inline SVG in the stylesheet rather than files — the
-binary printed on a chapter opener, the barber shears, the Detail Guy's van and rag. Neither the
-dev server nor sends a CSP, so a directive that blocks a real asset fails in
-production only, silently, and only for the thing it blocked;
-checks the policy against what the source actually
-asks for, so the pair cannot drift apart again.
+`netlify.toml` serves the CSP, and it has to know what the site loads: `img-src` allows `data:` as
+well as `'self'`, because several marks are inline SVG in the stylesheet rather than files — the
+binary printed on a chapter opener, the barber shears, the Detail Guy's van and his rag. Neither
+the dev server nor `vite preview` sends a CSP, so a directive that blocks a real asset fails in
+production only, silently, and only for the thing it blocked — and a computed style still reads
+`url("data:image/svg+xml,…")` whether or not the browser will fetch it, so local checks pass while
+the live site draws nothing. `tests/specs/15000-security-headers.spec.ts` checks the policy against
+what the source actually asks for, so the two cannot drift apart again.
 
 ### Signatures
 
