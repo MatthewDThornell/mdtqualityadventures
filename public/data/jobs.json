@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-22T19:36:19.897Z",
+  "fetchedAt": "2026-09-22T20:49:59.928Z",
   "jobs": [
     {
       "id": "greenhouse-testlio-8224143",
@@ -364,19 +364,6 @@
       "location": "Sunnyvale, CA",
       "country": "United States",
       "postedAt": "2026-09-09T22:33:33.947+00:00"
-    },
-    {
-      "id": "lever-shieldai-5da0e986-a159-4be9-b58c-b12368c7825a",
-      "title": "Staff Engineer, Quality Assurance (R5799)",
-      "company": "Shield AI",
-      "url": "https://jobs.lever.co/shieldai/5da0e986-a159-4be9-b58c-b12368c7825a",
-      "source": "Shield AI",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Melbourne",
-      "country": "Australia",
-      "postedAt": "2026-09-08T20:40:26.374Z"
     }
   ]
 }
