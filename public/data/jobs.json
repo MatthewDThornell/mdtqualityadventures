@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-09-21T22:58:49.549Z",
+  "fetchedAt": "2026-09-22T03:07:10.769Z",
   "jobs": [
+    {
+      "id": "arbeitnow-senior-qa-engineer-london-413964",
+      "title": "Senior QA Engineer | London",
+      "company": "TransPerfect",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/transperfect/senior-qa-engineer-london-413964",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London, Greater London, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-09-22T00:30:06.000Z"
+    },
     {
       "id": "greenhouse-roblox-8069987",
       "title": "Quality Analyst",
@@ -41,15 +54,15 @@
       "postedAt": "2026-09-21T14:07:37-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-8191523",
+      "id": "greenhouse-thoughtworks-7964148",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
       "source": "Thoughtworks",
       "sourceUrl": null,
       "direct": true,
       "workType": "On-site",
-      "location": "Quito, Ecuador",
+      "location": "Lima, Peru",
       "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
@@ -67,15 +80,15 @@
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-7964148",
+      "id": "greenhouse-thoughtworks-8191523",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
       "source": "Thoughtworks",
       "sourceUrl": null,
       "direct": true,
       "workType": "On-site",
-      "location": "Lima, Peru",
+      "location": "Quito, Ecuador",
       "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
@@ -195,32 +208,6 @@
       "location": "Remote in EMEA",
       "country": "Other",
       "postedAt": "2026-09-18T11:06:51-04:00"
-    },
-    {
-      "id": "arbeitnow-senior-automation-engineer-uipath-122023",
-      "title": "Senior Automation Engineer  - UiPath",
-      "company": "roboyo",
-      "url": "https://www.arbeitnow.com/jobs/companies/roboyo/senior-automation-engineer-uipath-122023",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-09-18T14:55:15.000Z"
-    },
-    {
-      "id": "arbeitnow-growth-marketer-ai-powered-qa-automation-berlin-munich-21483",
-      "title": "Growth Marketer (AI-Powered QA Automation)",
-      "company": "jetbrains",
-      "url": "https://www.arbeitnow.com/jobs/companies/jetbrains/growth-marketer-ai-powered-qa-automation-berlin-munich-21483",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin; Munich",
-      "country": "Germany",
-      "postedAt": "2026-09-18T14:55:13.000Z"
     },
     {
       "id": "greenhouse-testlio-8213556",
