@@ -11,6 +11,10 @@ test.describe('About Me', () => {
     'Test_Case_5000_AboutMe_Section_LoadsWithHeadingAndQuote',
     { tag: '@smoke' },
     async ({ page }) => {
+      // content, not motion: the quote rotates every 7s (src/quote-rotator.js),
+      // and on a loaded runner the page can take longer than that to be asserted
+      // against — under reduced motion it holds the first quote
+      await page.emulateMedia({ reducedMotion: 'reduce' });
       const home = new HomePage(page);
       await home.goto();
 
