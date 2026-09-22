@@ -104,10 +104,10 @@ its kit logo, the canonical `Test_Case_NNNN_…` id and the step count.
 ### Signatures
 
 Every recommendation is signed, and no two neighbours sign alike: five hands (Caveat, Dancing
-Script, Homemade Apple, Kalam, Great Vibes — the extra four are loaded only by ) and
-five inks cycle down each group of cards by in , each hand
-with its own size and tilt. The two incident cards keep their verdict's colour through the same
-variable.
+Script, Homemade Apple, Kalam, Great Vibes — the extra four are loaded only by `index.html`) and
+five inks cycle down each group of cards by `nth-of-type` in `.rec-signature-name`, each hand with
+its own size and tilt. The two incident cards keep their verdict's colour through the same
+`--sig-rgb` variable.
 
 ### Image sizes
 
