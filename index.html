@@ -388,10 +388,10 @@
                 <details class="rec-test" data-testid="accomplishment-test-veterans-united-coverage" data-lang="ts">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/playwright.svg" width="14" height="14" alt="" />Playwright · TypeScript</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />3101_<wbr />Accomplishments_<wbr />ZeroTo80Coverage_<wbr />EntryRenders</span>
+                    <span class="rec-test-name">Test Case 3101 - VU - Accomplishment Entry Renders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
-                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_3101_Accomplishments_ZeroTo80Coverage_EntryRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
+                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test Case 3101 - VU - Accomplishment Entry Renders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
   <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
   <span class="tok-kw">const</span> card = home.accomplishmentCard(<span class="tok-str">'veterans-united-coverage'</span>);
 
@@ -426,14 +426,14 @@
                 <details class="rec-test" data-testid="accomplishment-test-werner-reporting" data-lang="cs">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/csharp.svg" width="14" height="14" alt="" />Playwright · C#</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />3102_<wbr />Accomplishments_<wbr />QualityByTheNumbers_<wbr />EntryRenders</span>
+                    <span class="rec-test-name">Test Case 3102 - WE - Accomplishment Entry Renders</span>
                     <span class="rec-test-status">4 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-kw">[TestFixture]</span>
 <span class="tok-kw">public</span> <span class="tok-kw">class</span> HomeTests : PageTest
 {
-    <span class="tok-kw">[Test, Category("smoke")]</span>
-    <span class="tok-kw">public</span> <span class="tok-kw">async</span> <span class="tok-kw">Task</span> <span class="tok-fn">Test_Case_3102_Accomplishments_QualityByTheNumbers_EntryRenders</span>()
+    <span class="tok-kw">[Test, Category("smoke"), Description("Test Case 3102 - WE - Accomplishment Entry Renders")]</span>
+    <span class="tok-kw">public</span> <span class="tok-kw">async</span> <span class="tok-kw">Task</span> <span class="tok-fn">TestCase3102_WE_AccomplishmentEntryRenders</span>()
     {
         <span class="tok-kw">var</span> home = <span class="tok-kw">new</span> HomePage(Page);
         <span class="tok-kw">var</span> card = home.AccomplishmentCard(<span class="tok-str">"werner-reporting"</span>);
@@ -471,11 +471,11 @@
                 <details class="rec-test" data-testid="accomplishment-test-conexed-migration" data-lang="cy">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/cypress.svg" width="14" height="14" alt="" />Cypress · JavaScript</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />3103_<wbr />Accomplishments_<wbr />400Tests60Faster_<wbr />EntryRenders</span>
+                    <span class="rec-test-name">Test Case 3103 - CX - Accomplishment Entry Renders</span>
                     <span class="rec-test-status">4 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-fn">describe</span>(<span class="tok-str">'Home'</span>, { tags: [<span class="tok-str">'@smoke'</span>] }, () =&gt; {
-  <span class="tok-fn">it</span>(<span class="tok-str">'Test_Case_3103_Accomplishments_400Tests60Faster_EntryRenders'</span>, () =&gt; {
+  <span class="tok-fn">it</span>(<span class="tok-str">'Test Case 3103 - CX - Accomplishment Entry Renders'</span>, () =&gt; {
     cy.visit(<span class="tok-str">'/'</span>);
     cy.get(<span class="tok-str">'[data-testid="accomplishment-card-conexed-migration"]'</span>).as(<span class="tok-str">'card'</span>);
 
@@ -512,7 +512,7 @@
                 <details class="rec-test" data-testid="accomplishment-test-seekwell-stabilizing" data-lang="py">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/python.svg" width="14" height="14" alt="" />Playwright · Python</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />3104_<wbr />Accomplishments_<wbr />StabilizingUnderPressure_<wbr />EntryRenders</span>
+                    <span class="rec-test-name">Test Case 3104 - SW - Accomplishment Entry Renders</span>
                     <span class="rec-test-status">4 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-kw">import</span> re
@@ -523,7 +523,8 @@
 
 
 <span class="tok-kw">@pytest.mark.smoke</span>
-<span class="tok-kw">def</span> <span class="tok-fn">test_case_3104_accomplishments_stabilizing_under_pressure_entry_renders</span>(page: Page):
+<span class="tok-kw">def</span> <span class="tok-fn">test_case_3104_sw_accomplishment_entry_renders</span>(page: Page):
+    <span class="tok-str">""</span><span class="tok-str">"Test Case 3104 - SW - Accomplishment Entry Renders"</span><span class="tok-str">""</span>
     home = HomePage(page)
     card = home.accomplishment_card(<span class="tok-str">"seekwell-stabilizing"</span>)
 
@@ -558,7 +559,7 @@
                 <details class="rec-test" data-testid="accomplishment-test-cast-speaking" data-lang="rf">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/robotframework-dark.svg" width="14" height="14" alt="" />Robot Framework</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />3105_<wbr />Accomplishments_<wbr />AskingTheRightQuestions_<wbr />EntryRenders</span>
+                    <span class="rec-test-name">Test Case 3105 - AST - Accomplishment Entry Renders</span>
                     <span class="rec-test-status">4 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-kw">*** Settings ***</span>
@@ -567,7 +568,7 @@
 <span class="tok-kw">Test Tags</span>       smoke
 
 <span class="tok-kw">*** Test Cases ***</span>
-<span class="tok-fn">Test_Case_3105_Accomplishments_AskingTheRightQuestions_EntryRenders</span>
+<span class="tok-fn">Test Case 3105 - AST - Accomplishment Entry Renders</span>
     <span class="tok-kw">[Documentation]</span>    The "Asking the Right Questions" entry renders with its company link and reads in full.
 <span class="tok-kw">    Given</span> The Home Page Is Open
     <span class="tok-num">${card}</span>=    Set Variable    [data-testid="accomplishment-card-cast-speaking"]
@@ -1444,10 +1445,10 @@
                 <details class="rec-test" data-testid="rec-test-vivian-nguyen" data-lang="ts">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/playwright.svg" width="14" height="14" alt="" />Playwright · TypeScript</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />4101_<wbr />Recommendations_<wbr />VivianNguyen_<wbr />LetterRenders</span>
+                    <span class="rec-test-name">Test Case 4101 - VN - Letter of Recommendation Renders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
-                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_4101_Recommendations_VivianNguyen_LetterRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
+                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test Case 4101 - VN - Letter of Recommendation Renders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
   <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
   <span class="tok-kw">const</span> card = home.recCard(<span class="tok-str">'vivian-nguyen'</span>);
 
@@ -1526,7 +1527,7 @@
                 <details class="rec-test" data-testid="rec-test-alex-fergestad" data-lang="py">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/python.svg" width="14" height="14" alt="" />Playwright · Python</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />4102_<wbr />Recommendations_<wbr />AlexFergestad_<wbr />LetterRenders</span>
+                    <span class="rec-test-name">Test Case 4102 - AF - Letter of Recommendation Renders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-kw">import</span> re
@@ -1537,7 +1538,8 @@
 
 
 <span class="tok-kw">@pytest.mark.smoke</span>
-<span class="tok-kw">def</span> <span class="tok-fn">test_case_4102_recommendations_alex_fergestad_letter_renders</span>(page: Page):
+<span class="tok-kw">def</span> <span class="tok-fn">test_case_4102_af_letter_of_recommendation_renders</span>(page: Page):
+    <span class="tok-str">""</span><span class="tok-str">"Test Case 4102 - AF - Letter of Recommendation Renders"</span><span class="tok-str">""</span>
     home = HomePage(page)
     card = home.rec_card(<span class="tok-str">"alex-fergestad"</span>)
 
@@ -1613,11 +1615,11 @@
                 <details class="rec-test" data-testid="rec-test-aaron-forkel" data-lang="cy">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/cypress.svg" width="14" height="14" alt="" />Cypress · JavaScript</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />4103_<wbr />Recommendations_<wbr />AaronForkel_<wbr />LetterRenders</span>
+                    <span class="rec-test-name">Test Case 4103 - AF - Letter of Recommendation Renders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-fn">describe</span>(<span class="tok-str">'Home'</span>, { tags: [<span class="tok-str">'@smoke'</span>] }, () =&gt; {
-  <span class="tok-fn">it</span>(<span class="tok-str">'Test_Case_4103_Recommendations_AaronForkel_LetterRenders'</span>, () =&gt; {
+  <span class="tok-fn">it</span>(<span class="tok-str">'Test Case 4103 - AF - Letter of Recommendation Renders'</span>, () =&gt; {
     cy.visit(<span class="tok-str">'/'</span>);
     cy.get(<span class="tok-str">'[data-testid="rec-card-aaron-forkel"]'</span>).as(<span class="tok-str">'card'</span>);
 
@@ -1695,14 +1697,14 @@
                 <details class="rec-test" data-testid="rec-test-tristan-lundgreen" data-lang="cs">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/csharp.svg" width="14" height="14" alt="" />Playwright · C#</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />4104_<wbr />Recommendations_<wbr />TristanLundgreen_<wbr />LetterRenders</span>
+                    <span class="rec-test-name">Test Case 4104 - TL - Letter of Recommendation Renders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-kw">[TestFixture]</span>
 <span class="tok-kw">public</span> <span class="tok-kw">class</span> HomeTests : PageTest
 {
-    <span class="tok-kw">[Test, Category("smoke")]</span>
-    <span class="tok-kw">public</span> <span class="tok-kw">async</span> <span class="tok-kw">Task</span> <span class="tok-fn">Test_Case_4104_Recommendations_TristanLundgreen_LetterRenders</span>()
+    <span class="tok-kw">[Test, Category("smoke"), Description("Test Case 4104 - TL - Letter of Recommendation Renders")]</span>
+    <span class="tok-kw">public</span> <span class="tok-kw">async</span> <span class="tok-kw">Task</span> <span class="tok-fn">TestCase4104_TL_LetterOfRecommendationRenders</span>()
     {
         <span class="tok-kw">var</span> home = <span class="tok-kw">new</span> HomePage(Page);
         <span class="tok-kw">var</span> card = home.RecCard(<span class="tok-str">"tristan-lundgreen"</span>);
@@ -1778,7 +1780,7 @@
                 <details class="rec-test" data-testid="rec-test-callum-payne" data-lang="rf">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/robotframework-dark.svg" width="14" height="14" alt="" />Robot Framework</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />4105_<wbr />Recommendations_<wbr />CallumPayne_<wbr />LetterRenders</span>
+                    <span class="rec-test-name">Test Case 4105 - CP - Letter of Recommendation Renders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-kw">*** Settings ***</span>
@@ -1787,7 +1789,7 @@
 <span class="tok-kw">Test Tags</span>       smoke
 
 <span class="tok-kw">*** Test Cases ***</span>
-<span class="tok-fn">Test_Case_4105_Recommendations_CallumPayne_LetterRenders</span>
+<span class="tok-fn">Test Case 4105 - CP - Letter of Recommendation Renders</span>
     <span class="tok-kw">[Documentation]</span>    Callum Payne's letter renders, linked to a real profile, and reads in full.
 <span class="tok-kw">    Given</span> The Home Page Is Open
     <span class="tok-num">${card}</span>=    Set Variable    [data-testid="rec-card-callum-payne"]
@@ -1862,10 +1864,10 @@
                 <details class="rec-test" data-testid="rec-test-stockton-nielson" data-lang="ts">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/playwright.svg" width="14" height="14" alt="" />Playwright · TypeScript</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />4106_<wbr />Recommendations_<wbr />StocktonNielson_<wbr />LetterRenders</span>
+                    <span class="rec-test-name">Test Case 4106 - SN - Letter of Recommendation Renders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
-                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_4106_Recommendations_StocktonNielson_LetterRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
+                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test Case 4106 - SN - Letter of Recommendation Renders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
   <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
   <span class="tok-kw">const</span> card = home.recCard(<span class="tok-str">'stockton-nielson'</span>);
 
@@ -1943,7 +1945,7 @@
                 <details class="rec-test" data-testid="rec-test-cj-johnson" data-lang="py">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/python.svg" width="14" height="14" alt="" />Playwright · Python</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />4107_<wbr />Recommendations_<wbr />CJJohnson_<wbr />LetterRenders</span>
+                    <span class="rec-test-name">Test Case 4107 - CJ - Letter of Recommendation Renders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-kw">import</span> re
@@ -1954,7 +1956,8 @@
 
 
 <span class="tok-kw">@pytest.mark.smoke</span>
-<span class="tok-kw">def</span> <span class="tok-fn">test_case_4107_recommendations_cjjohnson_letter_renders</span>(page: Page):
+<span class="tok-kw">def</span> <span class="tok-fn">test_case_4107_cj_letter_of_recommendation_renders</span>(page: Page):
+    <span class="tok-str">""</span><span class="tok-str">"Test Case 4107 - CJ - Letter of Recommendation Renders"</span><span class="tok-str">""</span>
     home = HomePage(page)
     card = home.rec_card(<span class="tok-str">"cj-johnson"</span>)
 
@@ -2042,11 +2045,11 @@
                 <details class="rec-test" data-testid="rec-test-nathan-gearke" data-lang="cy">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/cypress.svg" width="14" height="14" alt="" />Cypress · JavaScript</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />4108_<wbr />Recommendations_<wbr />NathanGearke_<wbr />LetterRenders</span>
+                    <span class="rec-test-name">Test Case 4108 - NG - Letter of Recommendation Renders</span>
                     <span class="rec-test-status">4 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-fn">describe</span>(<span class="tok-str">'Home'</span>, { tags: [<span class="tok-str">'@smoke'</span>] }, () =&gt; {
-  <span class="tok-fn">it</span>(<span class="tok-str">'Test_Case_4108_Recommendations_NathanGearke_LetterRenders'</span>, () =&gt; {
+  <span class="tok-fn">it</span>(<span class="tok-str">'Test Case 4108 - NG - Letter of Recommendation Renders'</span>, () =&gt; {
     cy.visit(<span class="tok-str">'/'</span>);
     cy.get(<span class="tok-str">'[data-testid="rec-card-nathan-gearke"]'</span>).as(<span class="tok-str">'card'</span>);
 
@@ -2126,14 +2129,14 @@
                 <details class="rec-test" data-testid="rec-test-samantha-reynolds" data-lang="cs">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/csharp.svg" width="14" height="14" alt="" />Playwright · C#</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />4109_<wbr />Recommendations_<wbr />SamanthaReynolds_<wbr />LetterRenders</span>
+                    <span class="rec-test-name">Test Case 4109 - SR - Letter of Recommendation Renders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-kw">[TestFixture]</span>
 <span class="tok-kw">public</span> <span class="tok-kw">class</span> HomeTests : PageTest
 {
-    <span class="tok-kw">[Test, Category("smoke")]</span>
-    <span class="tok-kw">public</span> <span class="tok-kw">async</span> <span class="tok-kw">Task</span> <span class="tok-fn">Test_Case_4109_Recommendations_SamanthaReynolds_LetterRenders</span>()
+    <span class="tok-kw">[Test, Category("smoke"), Description("Test Case 4109 - SR - Letter of Recommendation Renders")]</span>
+    <span class="tok-kw">public</span> <span class="tok-kw">async</span> <span class="tok-kw">Task</span> <span class="tok-fn">TestCase4109_SR_LetterOfRecommendationRenders</span>()
     {
         <span class="tok-kw">var</span> home = <span class="tok-kw">new</span> HomePage(Page);
         <span class="tok-kw">var</span> card = home.RecCard(<span class="tok-str">"samantha-reynolds"</span>);
@@ -2204,7 +2207,7 @@
                 <details class="rec-test" data-testid="rec-test-ronald-white" data-lang="rf">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/robotframework-dark.svg" width="14" height="14" alt="" />Robot Framework</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />4110_<wbr />Recommendations_<wbr />RonaldWhite_<wbr />LetterRenders</span>
+                    <span class="rec-test-name">Test Case 4110 - RW - Letter of Recommendation Renders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-kw">*** Settings ***</span>
@@ -2213,7 +2216,7 @@
 <span class="tok-kw">Test Tags</span>       smoke
 
 <span class="tok-kw">*** Test Cases ***</span>
-<span class="tok-fn">Test_Case_4110_Recommendations_RonaldWhite_LetterRenders</span>
+<span class="tok-fn">Test Case 4110 - RW - Letter of Recommendation Renders</span>
     <span class="tok-kw">[Documentation]</span>    Ronald White's letter renders, linked to a real profile, and reads in full.
 <span class="tok-kw">    Given</span> The Home Page Is Open
     <span class="tok-num">${card}</span>=    Set Variable    [data-testid="rec-card-ronald-white"]
@@ -2285,10 +2288,10 @@
                 <details class="rec-test" data-testid="rec-test-tod-mcconahay" data-lang="ts">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/playwright.svg" width="14" height="14" alt="" />Playwright · TypeScript</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />4111_<wbr />Recommendations_<wbr />TodMcConahay_<wbr />LetterRenders</span>
+                    <span class="rec-test-name">Test Case 4111 - TM - Letter of Recommendation Renders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
-                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_4111_Recommendations_TodMcConahay_LetterRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
+                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test Case 4111 - TM - Letter of Recommendation Renders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
   <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
   <span class="tok-kw">const</span> card = home.recCard(<span class="tok-str">'tod-mcconahay'</span>);
 
@@ -2361,7 +2364,7 @@
                 <details class="rec-test" data-testid="rec-test-andrew-sylvester" data-lang="py">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/python.svg" width="14" height="14" alt="" />Playwright · Python</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />4112_<wbr />Recommendations_<wbr />AndrewSylvester_<wbr />LetterRenders</span>
+                    <span class="rec-test-name">Test Case 4112 - AS - Letter of Recommendation Renders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-kw">import</span> re
@@ -2372,7 +2375,8 @@
 
 
 <span class="tok-kw">@pytest.mark.smoke</span>
-<span class="tok-kw">def</span> <span class="tok-fn">test_case_4112_recommendations_andrew_sylvester_letter_renders</span>(page: Page):
+<span class="tok-kw">def</span> <span class="tok-fn">test_case_4112_as_letter_of_recommendation_renders</span>(page: Page):
+    <span class="tok-str">""</span><span class="tok-str">"Test Case 4112 - AS - Letter of Recommendation Renders"</span><span class="tok-str">""</span>
     home = HomePage(page)
     card = home.rec_card(<span class="tok-str">"andrew-sylvester"</span>)
 
@@ -2444,11 +2448,11 @@
                 <details class="rec-test" data-testid="rec-test-stephanie-brunsvik" data-lang="cy">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/cypress.svg" width="14" height="14" alt="" />Cypress · JavaScript</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />4113_<wbr />Recommendations_<wbr />StephanieBrunsvik_<wbr />LetterRenders</span>
+                    <span class="rec-test-name">Test Case 4113 - SB - Letter of Recommendation Renders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-fn">describe</span>(<span class="tok-str">'Home'</span>, { tags: [<span class="tok-str">'@smoke'</span>] }, () =&gt; {
-  <span class="tok-fn">it</span>(<span class="tok-str">'Test_Case_4113_Recommendations_StephanieBrunsvik_LetterRenders'</span>, () =&gt; {
+  <span class="tok-fn">it</span>(<span class="tok-str">'Test Case 4113 - SB - Letter of Recommendation Renders'</span>, () =&gt; {
     cy.visit(<span class="tok-str">'/'</span>);
     cy.get(<span class="tok-str">'[data-testid="rec-card-stephanie-brunsvik"]'</span>).as(<span class="tok-str">'card'</span>);
 
@@ -2519,14 +2523,14 @@
                 <details class="rec-test" data-testid="rec-test-blake-johnson" data-lang="cs">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/csharp.svg" width="14" height="14" alt="" />Playwright · C#</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />4114_<wbr />Recommendations_<wbr />BlakeJohnsonCSPO_<wbr />LetterRenders</span>
+                    <span class="rec-test-name">Test Case 4114 - BJ - Letter of Recommendation Renders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-kw">[TestFixture]</span>
 <span class="tok-kw">public</span> <span class="tok-kw">class</span> HomeTests : PageTest
 {
-    <span class="tok-kw">[Test, Category("smoke")]</span>
-    <span class="tok-kw">public</span> <span class="tok-kw">async</span> <span class="tok-kw">Task</span> <span class="tok-fn">Test_Case_4114_Recommendations_BlakeJohnsonCSPO_LetterRenders</span>()
+    <span class="tok-kw">[Test, Category("smoke"), Description("Test Case 4114 - BJ - Letter of Recommendation Renders")]</span>
+    <span class="tok-kw">public</span> <span class="tok-kw">async</span> <span class="tok-kw">Task</span> <span class="tok-fn">TestCase4114_BJ_LetterOfRecommendationRenders</span>()
     {
         <span class="tok-kw">var</span> home = <span class="tok-kw">new</span> HomePage(Page);
         <span class="tok-kw">var</span> card = home.RecCard(<span class="tok-str">"blake-johnson"</span>);
@@ -2598,7 +2602,7 @@
                 <details class="rec-test" data-testid="rec-test-rafael-juarez" data-lang="rf">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/robotframework-dark.svg" width="14" height="14" alt="" />Robot Framework</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />4115_<wbr />Recommendations_<wbr />RafaelJuarez_<wbr />LetterRenders</span>
+                    <span class="rec-test-name">Test Case 4115 - RJ - Letter of Recommendation Renders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-kw">*** Settings ***</span>
@@ -2607,7 +2611,7 @@
 <span class="tok-kw">Test Tags</span>       smoke
 
 <span class="tok-kw">*** Test Cases ***</span>
-<span class="tok-fn">Test_Case_4115_Recommendations_RafaelJuarez_LetterRenders</span>
+<span class="tok-fn">Test Case 4115 - RJ - Letter of Recommendation Renders</span>
     <span class="tok-kw">[Documentation]</span>    Rafael Juarez's letter renders, linked to a real profile, and reads in full.
 <span class="tok-kw">    Given</span> The Home Page Is Open
     <span class="tok-num">${card}</span>=    Set Variable    [data-testid="rec-card-rafael-juarez"]
@@ -2679,10 +2683,10 @@
                 <details class="rec-test" data-testid="rec-test-michael-gorham" data-lang="ts">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/playwright.svg" width="14" height="14" alt="" />Playwright · TypeScript</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />4116_<wbr />Recommendations_<wbr />MichaelGorham_<wbr />LetterRenders</span>
+                    <span class="rec-test-name">Test Case 4116 - MG - Letter of Recommendation Renders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
-                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test_Case_4116_Recommendations_MichaelGorham_LetterRenders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
+                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test Case 4116 - MG - Letter of Recommendation Renders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
   <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
   <span class="tok-kw">const</span> card = home.recCard(<span class="tok-str">'michael-gorham'</span>);
 
@@ -2759,7 +2763,7 @@
                 <details class="rec-test" data-testid="rec-test-jeordin-callister" data-lang="py">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/python.svg" width="14" height="14" alt="" />Playwright · Python</span>
-                    <span class="rec-test-name">Test_<wbr />Case_<wbr />4117_<wbr />Recommendations_<wbr />JeordinCallister_<wbr />LetterRenders</span>
+                    <span class="rec-test-name">Test Case 4117 - JC - Letter of Recommendation Renders</span>
                     <span class="rec-test-status">3 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-kw">import</span> re
@@ -2770,7 +2774,8 @@
 
 
 <span class="tok-kw">@pytest.mark.smoke</span>
-<span class="tok-kw">def</span> <span class="tok-fn">test_case_4117_recommendations_jeordin_callister_letter_renders</span>(page: Page):
+<span class="tok-kw">def</span> <span class="tok-fn">test_case_4117_jc_letter_of_recommendation_renders</span>(page: Page):
+    <span class="tok-str">""</span><span class="tok-str">"Test Case 4117 - JC - Letter of Recommendation Renders"</span><span class="tok-str">""</span>
     home = HomePage(page)
     card = home.rec_card(<span class="tok-str">"jeordin-callister"</span>)
 
@@ -2875,14 +2880,14 @@
                   </ol>
                   <details class="qa-fold" data-testid="quaid-test-fold" data-pause="900">
                     <summary>
-                      <span class="qa-fold-title">Test_Case_4004_Recommendations_Quaid_IsNotAHuman</span>
+                      <span class="qa-fold-title">Test Case 4004 - QD - Mannequin Does Not Hold a Recommendation</span>
                       <span class="qa-fold-meta">3 steps</span>
                     </summary>
                   <pre class="qa-code" data-testid="quaid-generated-test"><code><span class="tok-comment">// What It Tests: A recommendation card only ever belongs to a real person.</span>
 <span class="tok-comment">// Why It Matters: Quaid is a mannequin with 99+ years of experience — if he</span>
 <span class="tok-comment">// can get a card, so can any bug that dresses the part.</span>
 <span class="tok-fn">test</span>(
-  <span class="tok-str">'Test_Case_4004_Recommendations_Quaid_IsNotAHuman'</span>,
+  <span class="tok-str">'Test Case 4004 - QD - Mannequin Does Not Hold a Recommendation'</span>,
   { tag: [<span class="tok-str">'@smoke'</span>, <span class="tok-str">'@data-integrity'</span>] },
   <span class="tok-kw">async</span> ({ page, request }) =&gt; {
     <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
@@ -2928,7 +2933,7 @@
               <!-- The second card that never passes. No name, no profile, no verdict but
                    BLOCKED: its binary resolves into an authorization error and the report
                    runs a security protocol before writing its own test case — which, like
-                   Quaid's, is a real test in this repo (Test_Case_4006). The IP shown is
+                   Quaid's, is a real test in this repo (Test Case 4006). The IP shown is
                    from the RFC 5737 documentation range and belongs to no one. -->
               <article class="rec-card rec-card-blocked" data-testid="rec-card-anonymous-user" data-outcome="blocked">
                 <span class="rec-avatar rec-avatar-anonymous" aria-hidden="true">
@@ -2956,7 +2961,7 @@
                   </ol>
                   <details class="qa-fold" data-testid="anonymous-test-fold" data-pause="900">
                     <summary>
-                      <span class="qa-fold-title">Test_Case_4006_Recommendations_AnonymousUser_IsBlocked</span>
+                      <span class="qa-fold-title">Test Case 4006 - AU - Unauthorized Author Is Blocked</span>
                       <span class="qa-fold-meta">3 steps</span>
                     </summary>
                   <pre class="qa-code" data-testid="anonymous-generated-test"><code><span class="tok-comment">// What It Tests: An unidentified author can never hold a recommendation, and</span>
@@ -2964,7 +2969,7 @@
 <span class="tok-comment">// Why It Matters: A recommendation is worth exactly what its author's name is</span>
 <span class="tok-comment">// worth. An anonymous one is an open door for anyone to write their own.</span>
 <span class="tok-fn">test</span>(
-  <span class="tok-str">'Test_Case_4006_Recommendations_AnonymousUser_IsBlocked'</span>,
+  <span class="tok-str">'Test Case 4006 - AU - Unauthorized Author Is Blocked'</span>,
   { tag: [<span class="tok-str">'@smoke'</span>, <span class="tok-str">'@security'</span>] },
   <span class="tok-kw">async</span> ({ page, request }) =&gt; {
     <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);

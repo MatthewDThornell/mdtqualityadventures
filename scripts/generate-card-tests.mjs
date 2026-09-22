@@ -26,13 +26,15 @@ const LANGUAGES = {
 };
 const CYCLE = Object.keys(LANGUAGES);
 
-// Accomplishments are written in the tool the work itself was done in.
-const ACCOMPLISHMENT_LANGUAGE = {
-  'veterans-united-coverage': 'ts', // the Playwright framework built from scratch
-  'werner-reporting': 'cs', // Werner's .NET shop
-  'conexed-migration': 'cy', // the 400 tests migrated into Cypress
-  'seekwell-stabilizing': 'py',
-  'cast-speaking': 'rf', // a talk about asking questions, in the framework that reads like them
+// Accomplishments are written in the tool the work itself was done in, and
+// titled by where the work happened — the initials a recommendation's title
+// takes from the person, an accomplishment's takes from the company.
+const ACCOMPLISHMENTS = {
+  'veterans-united-coverage': { lang: 'ts', code: 'VU' }, // the Playwright framework built from scratch
+  'werner-reporting': { lang: 'cs', code: 'WE' }, // Werner's .NET shop
+  'conexed-migration': { lang: 'cy', code: 'CX' }, // the 400 tests migrated into Cypress
+  'seekwell-stabilizing': { lang: 'py', code: 'SW' },
+  'cast-speaking': { lang: 'rf', code: 'AST' }, // a talk about asking questions, in the framework that reads like them
 };
 
 // ---------- text helpers ----------
@@ -50,14 +52,6 @@ const decodeEntities = (s) =>
     .replace(/<[^>]+>/g, '')
     .replace(/\s+/g, ' ')
     .trim();
-const pascal = (s) =>
-  s
-    .replace(/[^A-Za-z0-9]+/g, ' ')
-    .trim()
-    .split(' ')
-    .map((w) => w[0].toUpperCase() + w.slice(1))
-    .join('');
-// Test_Case_4102_Recommendations_AlexFergestad_LetterRenders → test_case_4102_recommendations_alex_fergestad_letter_renders
 const snake = (s) =>
   s
     .replace(/([a-z])([A-Z])/g, '$1_$2')
@@ -65,7 +59,39 @@ const snake = (s) =>
     .replace(/(\d)([A-Za-z])/g, '$1_$2')
     .replace(/__+/g, '_')
     .toLowerCase();
-const wbr = (name) => name.replace(/_/g, '_<wbr />');
+
+// ---------- titles ----------
+// A test is titled the way a test case is written up, not the way a function
+// is named: "Test Case 4111 - TM - Letter of Recommendation Renders" — the
+// case number, who or what it covers, and what it proves. Languages that need
+// an identifier derive one from the title (Python's snake_case function,
+// C#'s method, which also carries the title in a [Description]); TypeScript,
+// Cypress and Robot Framework take the title as written.
+const testTitle = (number, code, what) => `Test Case ${number} - ${code} - ${what}`;
+// a person's initials, ignoring any credential after a comma: "Blake Johnson, CSPO" → BJ
+const initialsOf = (name) =>
+  name
+    .split(',')[0]
+    .trim()
+    .split(/\s+/)
+    .map((w) => w[0].toUpperCase())
+    .join('')
+    .slice(0, 3);
+const pyName = (t) =>
+  t
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '_')
+    .replace(/_+$/, '');
+const csName = (t) =>
+  t
+    .split(' - ')
+    .map((part) =>
+      part
+        .split(/\s+/)
+        .map((w) => w[0].toUpperCase() + w.slice(1))
+        .join(''),
+    )
+    .join('_');
 // the first words of a text, for a contains-text check — up to seven, never
 // ending on a word that leaves the phrase hanging ("…reporting in Power")
 const STOP = new Set([
@@ -139,7 +165,7 @@ function highlight(code, lang) {
     .map((line) => {
       if (lang === 'rf' && /^\*\*\* /.test(line)) return `<span class="tok-kw">${esc(line)}</span>`;
       // a Robot test case's name is the unindented line under *** Test Cases ***
-      if (lang === 'rf' && /^Test_Case_/.test(line))
+      if (lang === 'rf' && /^Test Case /.test(line))
         return `<span class="tok-fn">${esc(line)}</span>`;
       const fnMatch = g.fn && line.match(g.fn);
       const parts = line.split(g.cut);
@@ -188,7 +214,8 @@ const checks = {
 };
 
 // ---------- renderers ----------
-// Each takes { testName, slug, cardAccessor, steps } and returns code.
+// Each takes { testName, slug, cardAccessor, steps } — testName being the
+// display title above — and returns code.
 // cardAccessor is the page-object method that returns the card (recCard /
 // accomplishmentCard); languages without a page object use the test id.
 
@@ -278,7 +305,8 @@ from pages.home_page import HomePage
 
 
 @pytest.mark.smoke
-def ${snake(testName)}(page: Page):
+def ${pyName(testName)}(page: Page):
+    """${testName}"""
     home = HomePage(page)
     card = home.${PY_PO[cardAccessor] ?? snake(cardAccessor)}(${s(slug)})
 
@@ -360,8 +388,8 @@ function renderCs({ testName, slug, cardAccessor, steps }) {
   return `[TestFixture]
 public class HomeTests : PageTest
 {
-    [Test, Category("smoke")]
-    public async Task ${testName}()
+    [Test, Category("smoke"), Description("${testName}")]
+    public async Task ${csName(testName)}()
     {
         var home = new HomePage(Page);
         var card = home.${Pascal(cardAccessor)}(${s(slug)});
@@ -436,7 +464,7 @@ function detailsBlock({ lang, testid, testName, steps, code }) {
   return `<details class="rec-test" data-testid="${testid}" data-lang="${lang}">
 ${INDENT}  <summary>
 ${INDENT}    <span class="rec-test-lang"><img src="/images/logos/tech/${logo}" width="14" height="14" alt="" />${label}</span>
-${INDENT}    <span class="rec-test-name">${wbr(testName)}</span>
+${INDENT}    <span class="rec-test-name">${esc(testName)}</span>
 ${INDENT}    <span class="rec-test-status">${steps.length} steps</span>
 ${INDENT}  </summary>
 ${INDENT}  <pre class="qa-code"><code>${highlight(code, lang)}</code></pre>
@@ -516,7 +544,7 @@ html = html.replace(
       ],
     });
 
-    const testName = `Test_Case_${4100 + recs}_Recommendations_${pascal(name)}_LetterRenders`;
+    const testName = testTitle(4100 + recs, initialsOf(name), 'Letter of Recommendation Renders');
     const code = RENDER[lang]({
       testName,
       slug,
@@ -545,7 +573,8 @@ html = html.replace(
     const entryText = decodeEntities(rest.match(/<p>([\s\S]*?)<\/p>/)[1]);
     const excerpt = excerptOf(entryText);
     entries++;
-    const lang = ACCOMPLISHMENT_LANGUAGE[slug] ?? CYCLE[(entries - 1) % CYCLE.length];
+    const { lang = CYCLE[(entries - 1) % CYCLE.length], code: subject = initialsOf(company) } =
+      ACCOMPLISHMENTS[slug] ?? {};
 
     const steps = [
       {
@@ -578,7 +607,7 @@ html = html.replace(
       ],
     });
 
-    const testName = `Test_Case_${3100 + entries}_Accomplishments_${pascal(heading)}_EntryRenders`;
+    const testName = testTitle(3100 + entries, subject, 'Accomplishment Entry Renders');
     const code = RENDER[lang]({
       testName,
       slug,

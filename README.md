@@ -99,7 +99,15 @@ done in. They are generated, not hand-typed — after adding, removing or editin
 `npm run gen:tests` (idempotent; `scripts/generate-card-tests.mjs` strips every block and rewrites
 it from the card's own name, title, company, letter, photo and first words, so a card's test is
 always the test for what the card actually says). Each block's summary names the framework with
-its kit logo, the canonical `Test_Case_NNNN_…` id and the step count.
+its kit logo, the test's title and the step count.
+
+A card test is titled the way a test case is written up rather than the way a function is named —
+`Test Case 4111 - TM - Letter of Recommendation Renders`: the case number, the initials of who or
+what it covers (a person for a letter, the company for an accomplishment), and what it proves.
+The two languages that need an identifier derive one from that title and still carry the title
+itself — Python in the function's docstring, C# in a `[Description]` — so every framework's copy
+can be searched for the same string. The repo's own suite keeps the `Test_Case_NNNN_Area_Thing`
+convention in its file names and `test(...)` titles; these are the cards' display copies.
 
 ### Signatures
 
@@ -281,8 +289,9 @@ gets reordered or a new entry is inserted in the middle.
   (`rec-card-quaid`, `quaid-report`, `quaid-generated-test`, `quaid-log-fail`, `quaid-log-done`)
   and the Anonymous User, who is blocked (`rec-card-anonymous-user`, `anonymous-report`,
   `anonymous-generated-test`, `anonymous-log-blocked`, `anonymous-log-done`). The tests each card
-  types out on the page are `Test_Case_4004` and `Test_Case_4006` in
-  `tests/specs/4000-recommendations.spec.ts`, for real; keep each pair in step if either changes.
+  types out on the page — "Test Case 4004 - QD" and "Test Case 4006 - AU" — are
+  `Test_Case_4004_…` and `Test_Case_4006_…` in `tests/specs/4000-recommendations.spec.ts`, for
+  real; keep each pair in step if either changes.
 - Every repeated card/row with no existing unique `id` and ambiguous or duplicate visible text
   (timeline entries, accomplishment cards, recommendation cards, mentor/mentee cards, mentee
   spotlight slides, adventure cards, TAU course rows, job cards).

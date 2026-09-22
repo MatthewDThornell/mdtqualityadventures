@@ -7,6 +7,12 @@ import { HomePage } from '../pages/HomePage';
 // manager can click through and verify the person is real — a dead or
 // missing LinkedIn link quietly kills that trust.
 test.describe('Recommendations', () => {
+  // Every wait here is on a chain of animations — a card's own test typing out,
+  // then its text decrypting — that takes seconds by design, and stretches
+  // further when the whole page is decoding at once and four workers share one
+  // machine. The timeouts are ceilings, not expectations: what each assertion
+  // pins is the state the page must reach, never how long it took.
+  //
   // Every card grows and folds as its own test runs, moving every card below
   // it; Playwright's scrollIntoViewIfNeeded() waits for an element to hold
   // still, which here means waiting out the whole chain. This scrolls and
@@ -135,15 +141,19 @@ test.describe('Recommendations', () => {
             behavior: 'instant',
           });
         });
-        await expect(card.locator('.quote-decrypt')).toHaveCount(1, { timeout: 10_000 });
+        await expect(card.locator('.quote-decrypt')).toHaveCount(1, { timeout: 30_000 });
         await expect.soft(quote).toHaveCSS('color', 'rgba(0, 0, 0, 0)');
         await expect.soft(card).toHaveAttribute('data-status', 'pending');
       });
 
       await test.step('When the card scrolls into view, the overlay resolves and is removed', async () => {
         await bringIntoView(card);
-        // its own test runs first (~2.5s), then the decrypt (~2.5s)
-        await expect(card.locator('.quote-decrypt')).toHaveCount(0, { timeout: 15_000 });
+        // Its own test runs first, then the decrypt — several seconds of
+        // animation, and longer when the whole page is decoding at once. The
+        // wait is on the verdict, which src/quote-decrypt.js sets in the same
+        // breath as it removes the overlay, rather than on a guessed duration.
+        await expect(card).toHaveAttribute('data-status', 'pass', { timeout: 30_000 });
+        await expect(card.locator('.quote-decrypt')).toHaveCount(0);
       });
 
       await test.step('Then the real quote is readable in the page colour, and the verdict is PASS', async () => {
@@ -176,16 +186,18 @@ test.describe('Recommendations', () => {
         await expect.soft(test.locator('.rec-test-status')).toHaveText('4 steps');
         await expect
           .soft(test.locator('.qa-code'))
-          .toContainText('Test_Case_4108_Recommendations_NathanGearke_LetterRenders');
+          .toContainText('Test Case 4108 - NG - Letter of Recommendation Renders');
       });
 
       await test.step('Then both incident cards read as their outcome from the start, reports already written', async () => {
         await expect.soft(home.recCard('quaid')).not.toHaveAttribute('data-status', /./);
         await expect.soft(home.quaidReport).not.toHaveClass(/is-typing/);
-        await expect.soft(home.quaidGeneratedTest).toContainText('Test_Case_4004');
+        await expect.soft(home.quaidGeneratedTest).toContainText('Test Case 4004 - QD');
         await expect.soft(home.recCard('anonymous-user')).not.toHaveAttribute('data-status', /./);
         await expect.soft(home.incidentReport('anonymous')).not.toHaveClass(/is-typing/);
-        await expect.soft(home.incidentGeneratedTest('anonymous')).toContainText('Test_Case_4006');
+        await expect
+          .soft(home.incidentGeneratedTest('anonymous'))
+          .toContainText('Test Case 4006 - AU');
       });
     },
   );
@@ -245,7 +257,7 @@ test.describe('Recommendations', () => {
 
       await test.step('When the card scrolls into view, the decrypt fails him', async () => {
         await bringIntoView(card);
-        await expect(card).toHaveAttribute('data-status', 'fail', { timeout: 10_000 });
+        await expect(card).toHaveAttribute('data-status', 'fail', { timeout: 30_000 });
         await expect.soft(card.locator('blockquote p')).toContainText('Received: undefined');
       });
 
@@ -254,13 +266,16 @@ test.describe('Recommendations', () => {
         await expect(
           home.quaidReport.locator('.qa-line', { hasText: 'Root cause found' }),
         ).toBeVisible({
-          timeout: 10_000,
+          timeout: 30_000,
         });
       });
 
       await test.step('Then it files a bug report — a ticket with steps, expected, actual and root cause', async () => {
         const bug = page.getByTestId('quaid-bug-report');
         await expect(bug).toBeVisible({ timeout: 15_000 });
+        // the ticket is typed field by field; is-done is the line the report
+        // draws under it (src/incident-report.js), so read it once it is filed
+        await expect(bug).toHaveClass(/is-done/, { timeout: 30_000 });
         await expect.soft(bug.locator('summary')).toContainText('BUG-4004');
         await expect.soft(bug.locator('.qa-bug')).toContainText('Steps to reproduce');
         await expect.soft(bug.locator('.qa-bug')).toContainText('Quaid is not a real human.');
@@ -351,7 +366,7 @@ test.describe('Recommendations', () => {
 
       await test.step('When the card scrolls into view, the decrypt blocks them', async () => {
         await bringIntoView(card);
-        await expect(card).toHaveAttribute('data-status', 'blocked', { timeout: 10_000 });
+        await expect(card).toHaveAttribute('data-status', 'blocked', { timeout: 30_000 });
         await expect.soft(card.locator('blockquote p')).toContainText('Unauthorized');
       });
 
@@ -360,7 +375,7 @@ test.describe('Recommendations', () => {
         await expect(
           home.incidentReport('anonymous').locator('.qa-line', { hasText: 'User IP blocked' }),
         ).toBeVisible({
-          timeout: 10_000,
+          timeout: 30_000,
         });
       });
 
@@ -368,7 +383,9 @@ test.describe('Recommendations', () => {
         await expect(home.incidentReport('anonymous')).toHaveClass(/is-complete/, {
           timeout: 30_000,
         });
-        await expect.soft(home.incidentGeneratedTest('anonymous')).toContainText('Test_Case_4006');
+        await expect
+          .soft(home.incidentGeneratedTest('anonymous'))
+          .toContainText('Test Case 4006 - AU');
         await expect
           .soft(home.incidentGeneratedTest('anonymous'))
           .toContainText("request.post('/api/recommendations'");
@@ -397,15 +414,15 @@ test.describe('Recommendations', () => {
         await bringIntoView(card);
         // "running" lasts about two seconds; on a loaded runner the check can land
         // after the flip, so the run is asserted by its classes rather than its label
-        await expect(ownTest).toHaveClass(/is-running|is-passed/, { timeout: 10_000 });
+        await expect(ownTest).toHaveClass(/is-running|is-passed/, { timeout: 30_000 });
       });
 
       await test.step('Then it passes and folds away — and only then does the quote decrypt', async () => {
-        await expect(ownTest).toHaveClass(/is-passed/, { timeout: 10_000 });
+        await expect(ownTest).toHaveClass(/is-passed/, { timeout: 30_000 });
         // the badge above says PASS; the summary keeps only the check
         await expect.soft(ownTest.locator('.rec-test-status')).toHaveText('');
-        await expect(ownTest).not.toHaveAttribute('open', /./, { timeout: 5_000 });
-        await expect(card).toHaveAttribute('data-status', 'pass', { timeout: 10_000 });
+        await expect(ownTest).not.toHaveAttribute('open', /./, { timeout: 15_000 });
+        await expect(card).toHaveAttribute('data-status', 'pass', { timeout: 30_000 });
       });
 
       await test.step('Then the test it ran is the one written for him — name, company, his letter, and the quote', async () => {

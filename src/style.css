@@ -1491,6 +1491,33 @@ html.pen-active .typewriter .tw-quill {
   margin: 0 0 1rem;
 }
 
+/* The entries themselves speak code: a chapter's body copy is set in the same
+   mono as the recommendation cards' test code — one size down, since a mono
+   glyph is wider than the serif's, and with more leading so a paragraph still
+   reads as prose rather than a listing.
+
+   Scoped to the five sections that carry entries, and named container by
+   container rather than by "paragraphs without a class": every piece of
+   furniture (.chapter-intro, .card-meta, .timeline-org, .mentor-title, the
+   pull quotes) keeps the voice it has. The cover, the chapter openers and
+   the epilogue stay in the serif, so the change reads as "the entries", not
+   "the site".
+
+   Not :not([class]) — removing a class from an element that never had one
+   leaves it with class="", which that selector then refuses to match: the
+   decrypt does exactly that to every entry it finishes. */
+#experience .timeline li > p:not(.timeline-org),
+#fieldnotes .card-body > p,
+#origins .page > p:not(.chapter-label):not(.origin-lede):not(.about-quote):not(.origin-motto),
+#origins .read-card > p:not(.read-author),
+#origins .card > p:not(.card-meta),
+#volunteer .adventure-body > p:not(.card-meta):not(.card-kicker):not(.card-follow),
+#mentors .mentor-story {
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  line-height: 1.95;
+}
+
 .page p:last-child {
   margin-bottom: 0;
 }
@@ -2807,11 +2834,11 @@ html.pen-active .typewriter .tw-quill {
     0 18px 36px rgba(0, 0, 0, 0.45);
 }
 
-/* every recommendation — and every accomplishment card that borrows this
-   machinery (.card-tested) — is a passing check: the badge in the corner
-   says so in the rain's own mono, and lights up with the card */
-.rec-card::before,
-.card-tested::before {
+/* every recommendation is a passing check — the badge in the corner says
+   so in the rain's own mono, and lights up with the card. The accomplishment
+   cards run the same test, but wear no badge: theirs would sit over the
+   photograph the card leads with. */
+.rec-card::before {
   content: 'PASS \2713';
   position: absolute;
   top: 0.9rem;
@@ -2831,8 +2858,7 @@ html.pen-active .typewriter .tw-quill {
     background 0.25s ease;
 }
 
-.rec-card:hover::before,
-.card-tested:hover::before {
+.rec-card:hover::before {
   background: rgba(var(--code-rgb), 0.16);
   box-shadow: 0 0 12px rgba(var(--code-rgb), 0.45);
 }
@@ -2841,8 +2867,7 @@ html.pen-active .typewriter .tw-quill {
    yellow, breathing, then flips to the outcome the moment the decrypt lands
    (src/quote-decrypt.js sets data-status; cards without one — no JS, reduced
    motion — read as PASS from the start). */
-.rec-card[data-status='pending']::before,
-.card-tested[data-status='pending']::before {
+.rec-card[data-status='pending']::before {
   content: 'PENDING \2713';
   color: var(--brass-bright);
   border-color: rgba(var(--brass-bright-rgb), 0.5);
@@ -2850,23 +2875,14 @@ html.pen-active .typewriter .tw-quill {
   animation: badge-pending 1.6s ease-in-out infinite;
 }
 
-.rec-card[data-status='pass']::before,
-.card-tested[data-status='pass']::before {
+.rec-card[data-status='pass']::before {
   animation: badge-pass 0.9s ease-out;
 }
 
-/* An accomplishment card with the recommendations' machinery: a verdict
-   badge in the corner, its own test case above the entry, and the entry
-   itself decrypting once that test has passed (src/quote-decrypt.js and
-   src/rec-precheck.js find the card by this class). The badge needs the
-   card positioned, and the first headline leaves it room. */
-.card-tested {
-  position: relative;
-}
-
-.card-tested > h3:first-child {
-  padding-right: 6.5rem;
-}
+/* An accomplishment card with the recommendations' machinery: its own test
+   case above the entry, and the entry decrypting once that test has passed
+   (src/quote-decrypt.js and src/rec-precheck.js find the card by this
+   class). No verdict badge here — see .rec-card::before above. */
 
 /* the entry's box: the test's terminal and the binary overlay fill it */
 .card-body {

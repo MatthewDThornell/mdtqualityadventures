@@ -79,31 +79,31 @@ test.describe('Accomplishments', () => {
     'veterans-united-coverage': {
       lang: 'ts',
       label: 'Playwright · TypeScript',
-      name: 'Test_Case_3101_Accomplishments_ZeroTo80Coverage_EntryRenders',
+      name: 'Test Case 3101 - VU - Accomplishment Entry Renders',
       steps: 3,
     },
     'werner-reporting': {
       lang: 'cs',
       label: 'Playwright · C#',
-      name: 'Test_Case_3102_Accomplishments_QualityByTheNumbers_EntryRenders',
+      name: 'Test Case 3102 - WE - Accomplishment Entry Renders',
       steps: 4,
     },
     'conexed-migration': {
       lang: 'cy',
       label: 'Cypress · JavaScript',
-      name: 'Test_Case_3103_Accomplishments_400Tests60Faster_EntryRenders',
+      name: 'Test Case 3103 - CX - Accomplishment Entry Renders',
       steps: 4,
     },
     'seekwell-stabilizing': {
       lang: 'py',
       label: 'Playwright · Python',
-      name: 'Test_Case_3104_Accomplishments_StabilizingUnderPressure_EntryRenders',
+      name: 'Test Case 3104 - SW - Accomplishment Entry Renders',
       steps: 4,
     },
     'cast-speaking': {
       lang: 'rf',
       label: 'Robot Framework',
-      name: 'Test_Case_3105_Accomplishments_AskingTheRightQuestions_EntryRenders',
+      name: 'Test Case 3105 - AST - Accomplishment Entry Renders',
       steps: 4,
     },
   };
@@ -128,14 +128,11 @@ test.describe('Accomplishments', () => {
             .toHaveJSProperty('complete', true);
           await expect.soft(ownTest.locator('.rec-test-name')).toHaveText(name);
           await expect.soft(ownTest.locator('.rec-test-status')).toHaveText(`${steps} steps`);
-          // the code names its own test (Python's is snake_case, so its case id
-          // is what carries over), checks the headline, and ends on the verdict
+          // every framework carries the title verbatim — Python in its docstring,
+          // C# in its [Description], Robot as the case name — then the code
+          // checks the headline and ends on the verdict
           const code = ownTest.locator('.qa-code');
-          await expect
-            .soft(code)
-            .toContainText(
-              lang === 'py' ? name.slice(0, 'Test_Case_3104'.length).toLowerCase() : name,
-            );
+          await expect.soft(code).toContainText(name);
           await expect.soft(code).toContainText('Then the entry is headed');
           await expect.soft(code).toContainText('data-status');
         });
