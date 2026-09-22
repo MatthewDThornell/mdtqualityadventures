@@ -147,6 +147,15 @@ itself — Python in the function's docstring, C# in a `[Description]` — so ev
 can be searched for the same string. The repo's own suite keeps the `Test_Case_NNNN_Area_Thing`
 convention in its file names and `test(...)` titles; these are the cards' display copies.
 
+### Headers
+
+serves the CSP, and it has to know what the site loads: allows as well as because several marks are inline SVG in the stylesheet rather than files — the
+binary printed on a chapter opener, the barber shears, the Detail Guy's van and rag. Neither the
+dev server nor sends a CSP, so a directive that blocks a real asset fails in
+production only, silently, and only for the thing it blocked;
+checks the policy against what the source actually
+asks for, so the pair cannot drift apart again.
+
 ### Signatures
 
 Every recommendation is signed, and no two neighbours sign alike: five hands (Caveat, Dancing

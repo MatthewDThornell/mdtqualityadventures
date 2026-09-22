@@ -15,7 +15,13 @@
     # site — JS-driven styling all goes through element.style.<prop> setters,
     # which CSP's style-src doesn't gate — so neither directive needs
     # 'unsafe-inline'.
-    # frame-src: TAU page's YouTube course embeds. connect-src/img-src/font-src:
+    # frame-src: TAU page's YouTube course embeds. connect-src/font-src:
     # everything the site actually loads is same-origin except Google Fonts.
-    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self'; connect-src 'self'; frame-src https://www.youtube.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'"
+    # img-src needs data: as well as 'self': several marks are inline SVG in
+    # the stylesheet rather than files — the binary printed on a chapter
+    # opener, the shears that type the City Barbers shout-out, the van and the
+    # rag on the Detail Guy's card. Without it they are blocked in production
+    # and nowhere else, since the dev server sends no CSP at all
+    # (tests/specs/15000-security-headers.spec.ts guards the pair).
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-src https://www.youtube.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'"
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
