@@ -88,7 +88,7 @@ aria-hidden overlay beside the real heading, never a rewrite of it; under reduce
 simply read.
 
 The entries speak it too: body copy in Professional Experience, Accomplishments, About Me, Quality
-Adventures and Mentors is set in the same mono as the card tests, a size down and brighter than the
+Adventures, the mentee spotlight cards and Mentors is set in the same mono as the card tests, a size down and brighter than the
 muted grey prose inherits, because a mono's thin, widely-spaced glyphs read dimmer than a serif at
 the same colour. The rule names its containers one by one (see "the entries speak code" in
 `style.css`) so that every piece of furniture — chapter intros, card metas, timeline orgs, mentor
@@ -117,10 +117,11 @@ the caret is a pair of barber shears that snip as the line comes out (`.tw-curso
 
 Two cards give the cursor a costume. The City Barbers shout-out types with a pair of barber
 shears (`.tw-cursor-shears`); Tyler High’s card — he details cars — types its testimony with his
-Subaru Sambar, roof box and all (`.tw-cursor-van`), and when the last line lands a microfibre rag
-crosses the card and leaves the shine behind it (`src/polish-pass.js`, `.detail-polish`). Both the
-van and the rag are inline SVG in the stylesheet rather than photographs, so they take the page’s
-colours and cost no request; the rag is aria-hidden and changes no word of the card.
+Subaru Sambar, roof box and all (`.tw-cursor-van`), slowly enough to watch — about 30 seconds for
+the whole testimony — and when the last line lands a microfibre rag carrying High Björn’s bear paw
+crosses the card and leaves the shine behind it (`src/polish-pass.js`, `.detail-polish`). The van,
+the rag and the shears are inline SVG in the stylesheet rather than photographs, so they take the
+page’s colours and cost no request; the rag is aria-hidden and changes no word of the card.
 
 Under reduced motion none of the three run, and every line simply reads.
 

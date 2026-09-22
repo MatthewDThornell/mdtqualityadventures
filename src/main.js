@@ -349,5 +349,8 @@ const detailBody = document.querySelector(
 const detailLines = detailBody
   ? detailBody.querySelectorAll(':scope > p:not(.card-meta):not(.card-follow)')
   : [];
-initTypeOnView(detailLines, { msPerChar: 11, sequential: true, threshold: 0.3 });
+// 30ms a character, not the 11 the résumé types at: the van is the point of
+// this one, and at speed it crossed a line before anyone could look at it.
+// About 36 seconds for the whole testimony, which is the trade.
+initTypeOnView(detailLines, { msPerChar: 30, sequential: true, threshold: 0.3 });
 initPolishPass(detailBody, detailLines);

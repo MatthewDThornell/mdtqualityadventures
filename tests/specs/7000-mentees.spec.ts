@@ -144,9 +144,9 @@ test.describe('Mentees', () => {
     'Test_Case_7004_Mentees_DetailGuy_TestimonyTypesItselfThenGetsPolished',
     { tag: '@regression' },
     async ({ page }) => {
-      // the whole testimony types out, line after line, and is then buffed:
-      // seconds of animation by design
-      test.slow();
+      // the whole testimony types out, line after line, at a pace meant to be
+      // watched (about 36s), and is then buffed: minutes of animation by design
+      test.setTimeout(180_000);
       const home = new HomePage(page);
       await home.goto();
       const body = home.spotlightCard('tyler-high').locator('.adventure-body');
@@ -177,7 +177,7 @@ test.describe('Mentees', () => {
 
       await test.step('Then every line lands, in order, with its text intact', async () => {
         const count = await lines.count();
-        await expect(lines.nth(count - 1)).toHaveClass(/tw-written/, { timeout: 90_000 });
+        await expect(lines.nth(count - 1)).toHaveClass(/tw-written/, { timeout: 120_000 });
         for (let i = 0; i < count; i++) {
           await expect.soft(lines.nth(i)).toHaveClass(/tw-written/);
         }

@@ -1512,6 +1512,7 @@ html.pen-active .typewriter .tw-quill {
 #origins .read-card > p:not(.read-author),
 #origins .card > p:not(.card-meta),
 #volunteer .adventure-body > p:not(.card-meta):not(.card-kicker):not(.card-follow),
+.spotlight-slide .adventure-body > p:not(.card-meta):not(.card-kicker):not(.card-follow),
 #mentors .mentor-story {
   font-family: var(--font-mono);
   /* 500 is the lightest weight index.html loads for this face, and a mono at
@@ -1587,9 +1588,9 @@ html.pen-active .typewriter .tw-quill {
    bobbing on its suspension, with the roof box he actually runs. */
 .tw-cursor-van .tw-typed.is-writing::after {
   content: '';
-  width: 1.75em;
-  height: 1.24em;
-  top: -0.22em;
+  width: 2em;
+  height: 1.42em;
+  top: -0.32em;
   margin-left: 0.22em;
   background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2034%2024%22%3E%3Crect%20x%3D%227%22%20y%3D%221%22%20width%3D%2216%22%20height%3D%224.8%22%20rx%3D%221.3%22%20fill%3D%22%2315171a%22%2F%3E%3Crect%20x%3D%226.6%22%20y%3D%225.3%22%20width%3D%2216.8%22%20height%3D%220.9%22%20rx%3D%220.4%22%20fill%3D%22%232a2c2e%22%2F%3E%3Cpath%20d%3D%22M4%206.1h25.2c1.2%200%202.2%201%202.2%202.2v7.1c0%201-.8%201.8-1.8%201.8H3.6c-1%200-1.8-.8-1.8-1.8V8.3c0-1.2%201-2.2%202.2-2.2z%22%20fill%3D%22%236f6d4a%22%2F%3E%3Cpath%20d%3D%22M5.6%208h7.2v4.5H5.6zM14.4%208h6.1v4.5h-6.1zM22.1%208h6.3v4.5h-6.3z%22%20fill%3D%22%233a434b%22%2F%3E%3Crect%20x%3D%221.8%22%20y%3D%2213.9%22%20width%3D%2229.6%22%20height%3D%221.1%22%20fill%3D%22%2356553a%22%2F%3E%3Crect%20x%3D%2229.6%22%20y%3D%2212.7%22%20width%3D%221.8%22%20height%3D%221.4%22%20rx%3D%220.5%22%20fill%3D%22%23e6dcae%22%2F%3E%3Ccircle%20cx%3D%229.4%22%20cy%3D%2217.4%22%20r%3D%223.3%22%20fill%3D%22%23121214%22%2F%3E%3Ccircle%20cx%3D%229.4%22%20cy%3D%2217.4%22%20r%3D%221.25%22%20fill%3D%22%234d4d4d%22%2F%3E%3Ccircle%20cx%3D%2224.2%22%20cy%3D%2217.4%22%20r%3D%223.3%22%20fill%3D%22%23121214%22%2F%3E%3Ccircle%20cx%3D%2224.2%22%20cy%3D%2217.4%22%20r%3D%221.25%22%20fill%3D%22%234d4d4d%22%2F%3E%3C%2Fsvg%3E')
     center / contain no-repeat;
@@ -1654,7 +1655,7 @@ html.pen-active .typewriter .tw-quill {
   width: 2.9rem;
   height: 2.9rem;
   margin-top: -1.45rem;
-  background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20d%3D%22M4.5%209.2c3.8-2.4%207.7-3.5%2011.7-3.5s7.7%201.1%2011.3%203.2v13.3c-3.4%202.3-7.3%203.4-11.6%203.4s-7.9-1.1-11.4-3.3z%22%20fill%3D%22%23bfe6ff%22%20opacity%3D%220.9%22%2F%3E%3Cpath%20d%3D%22M4.5%209.2c3.8-2.4%207.7-3.5%2011.7-3.5s7.7%201.1%2011.3%203.2%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221.3%22%20opacity%3D%220.75%22%2F%3E%3Cpath%20d%3D%22M9.4%2010.6v12.4M14.3%209.4v13.9M19.2%209.5v13.8M24%2010.4v12.2%22%20stroke%3D%22%237fc0e8%22%20stroke-width%3D%220.9%22%20opacity%3D%220.65%22%2F%3E%3C%2Fsvg%3E')
+  background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20d%3D%22M4.5%209.2c3.8-2.4%207.7-3.5%2011.7-3.5s7.7%201.1%2011.3%203.2v13.3c-3.4%202.3-7.3%203.4-11.6%203.4s-7.9-1.1-11.4-3.3z%22%20fill%3D%22%23dcefff%22%2F%3E%3Cpath%20d%3D%22M4.5%209.2c3.8-2.4%207.7-3.5%2011.7-3.5s7.7%201.1%2011.3%203.2%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221.3%22%20opacity%3D%220.85%22%2F%3E%3Cpath%20d%3D%22M9.4%2010.6v12.4M14.3%209.4v13.9M19.2%209.5v13.8M24%2010.4v12.2%22%20stroke%3D%22%238fc4e8%22%20stroke-width%3D%220.8%22%20opacity%3D%220.35%22%2F%3E%3Cg%20fill%3D%22%234b2a7a%22%3E%3Cellipse%20cx%3D%2216%22%20cy%3D%2219.6%22%20rx%3D%225.9%22%20ry%3D%224.9%22%2F%3E%3Cellipse%20cx%3D%229.8%22%20cy%3D%2213.6%22%20rx%3D%222.1%22%20ry%3D%222.8%22%20transform%3D%22rotate%28-20%209.8%2013.6%29%22%2F%3E%3Cellipse%20cx%3D%2213.8%22%20cy%3D%2211.5%22%20rx%3D%222.1%22%20ry%3D%222.9%22%20transform%3D%22rotate%28-7%2013.8%2011.5%29%22%2F%3E%3Cellipse%20cx%3D%2218.2%22%20cy%3D%2211.5%22%20rx%3D%222.1%22%20ry%3D%222.9%22%20transform%3D%22rotate%287%2018.2%2011.5%29%22%2F%3E%3Cellipse%20cx%3D%2222.2%22%20cy%3D%2213.6%22%20rx%3D%222.1%22%20ry%3D%222.8%22%20transform%3D%22rotate%2820%2022.2%2013.6%29%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E')
     center / contain no-repeat;
   filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.45));
   opacity: 0;
