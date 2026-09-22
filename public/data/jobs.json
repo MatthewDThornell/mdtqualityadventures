@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-22T03:07:10.769Z",
+  "fetchedAt": "2026-09-22T03:34:05.030Z",
   "jobs": [
     {
       "id": "arbeitnow-senior-qa-engineer-london-413964",
@@ -54,15 +54,15 @@
       "postedAt": "2026-09-21T14:07:37-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-7964148",
+      "id": "greenhouse-thoughtworks-8191523",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
       "source": "Thoughtworks",
       "sourceUrl": null,
       "direct": true,
       "workType": "On-site",
-      "location": "Lima, Peru",
+      "location": "Quito, Ecuador",
       "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
@@ -80,15 +80,15 @@
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-8191523",
+      "id": "greenhouse-thoughtworks-7964148",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
       "source": "Thoughtworks",
       "sourceUrl": null,
       "direct": true,
       "workType": "On-site",
-      "location": "Quito, Ecuador",
+      "location": "Lima, Peru",
       "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
@@ -130,45 +130,6 @@
       "location": "Köln",
       "country": "Germany",
       "postedAt": "2026-09-20T14:09:19.000Z"
-    },
-    {
-      "id": "arbeitnow-robotics-test-engineer-quality-safety-munich-bavaria-367537",
-      "title": "Robotics Test Engineer (m/f/d) - Quality & Safety",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/robotics-test-engineer-quality-safety-munich-bavaria-367537",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich, Bavaria",
-      "country": "Germany",
-      "postedAt": "2026-09-20T11:55:02.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-spezialist-furstenfeldbruck-bavaria-431356",
-      "title": "Quality Assurance Spezialist (m/w/d)",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/quality-assurance-spezialist-furstenfeldbruck-bavaria-431356",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Fürstenfeldbruck, Bavaria",
-      "country": "Other",
-      "postedAt": "2026-09-20T11:55:02.000Z"
-    },
-    {
-      "id": "arbeitnow-mechatronics-test-engineer-munich-bavaria-37664",
-      "title": "Mechatronics Test Engineer (m/f/d)",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/mechatronics-test-engineer-munich-bavaria-37664",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich, Bavaria",
-      "country": "Germany",
-      "postedAt": "2026-09-20T11:55:02.000Z"
     },
     {
       "id": "arbeitnow-remote-quality-engineering-lead-schoppingen-262215",
