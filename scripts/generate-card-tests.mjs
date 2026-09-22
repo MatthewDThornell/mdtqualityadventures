@@ -6,7 +6,11 @@
 // Playwright Python, Cypress, Playwright .NET and Robot Framework, each
 // written the way that framework's own suites are written. Idempotent —
 // re-run after adding, removing or editing a card:
-//   node scripts/generate-card-tests.mjs
+//   node scripts/generate-card-tests.mjs && npm run stamp:images
+// The framework logo on each summary goes in without width/height, because
+// stamping an <img> with its intrinsic size is stamp-image-sizes.mjs's job and
+// hard-coding the displayed 14px here only gave the two scripts something to
+// argue about.
 // Every existing block is stripped and regenerated from the card's markup
 // (name, title, company, letter, photo, first words of the text), so a
 // card's test is always the test for what the card actually says.
@@ -463,7 +467,7 @@ function detailsBlock({ lang, testid, testName, steps, code }) {
   const { label, logo } = LANGUAGES[lang];
   return `<details class="rec-test" data-testid="${testid}" data-lang="${lang}">
 ${INDENT}  <summary>
-${INDENT}    <span class="rec-test-lang"><img src="/images/logos/tech/${logo}" width="14" height="14" alt="" />${label}</span>
+${INDENT}    <span class="rec-test-lang"><img src="/images/logos/tech/${logo}" alt="" />${label}</span>
 ${INDENT}    <span class="rec-test-name">${esc(testName)}</span>
 ${INDENT}    <span class="rec-test-status">${steps.length} steps</span>
 ${INDENT}  </summary>
@@ -568,7 +572,9 @@ html = html.replace(
     );
     const href = link[1];
     const company = decodeEntities(link[2]);
-    const photo = body.match(/<img class="card-photo"[^>]*alt="([^"]*)"/);
+    // card-photo may carry a crop modifier beside it (card-photo-top), so the
+    // class is matched as a list rather than as the whole attribute
+    const photo = body.match(/<img class="card-photo[^"]*"[^>]*alt="([^"]*)"/);
     const rest = html.slice(offset + m.length, html.indexOf('</article>', offset));
     const entryText = decodeEntities(rest.match(/<p>([\s\S]*?)<\/p>/)[1]);
     const excerpt = excerptOf(entryText);

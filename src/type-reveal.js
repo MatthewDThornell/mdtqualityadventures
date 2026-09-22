@@ -22,7 +22,10 @@ const textNodesIn = (root) => {
 
 export function typeReveal(el, msPerChar) {
   const parts = textNodesIn(el)
-    .filter((node) => node.nodeValue.length)
+    // whitespace-only nodes are the markup's own indentation between words:
+    // hiding them reveals nothing and typing them spends half a second on a
+    // line that looks like it has not started yet
+    .filter((node) => node.nodeValue.trim().length)
     .map((node) => {
       const text = node.nodeValue;
       const typed = document.createElement('span');
@@ -73,15 +76,33 @@ export function typeReveal(el, msPerChar) {
   });
 }
 
-// Types each element out once, when it first scrolls into view. Elements that
-// arrive together are offset so a screenful reads as several lines being
-// written rather than one shout.
-export function initTypeOnView(elements, { msPerChar = 30, staggerMs = 320 } = {}) {
+// Types each element out once, when it first scrolls into view.
+//
+// By default the ones that arrive together are offset by `staggerMs`, so a
+// screenful of résumé entries reads as several lines being written at once
+// rather than one shout. `sequential` instead makes each wait for the line
+// before it to finish — for a card whose lines are a sentence and then its
+// punchline, where the second arriving early gives the first away.
+export function initTypeOnView(
+  elements,
+  { msPerChar = 30, staggerMs = 320, sequential = false } = {},
+) {
   const targets = Array.from(elements).filter((el) => el.textContent.trim());
   if (targets.length === 0) return;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   targets.forEach((el) => el.classList.add('tw-waiting'));
+
+  const write = (el) => {
+    el.classList.remove('tw-waiting');
+    return typeReveal(el, msPerChar).then(() => {
+      el.classList.add('tw-written');
+      el.dispatchEvent(new CustomEvent('type-revealed', { bubbles: true }));
+    });
+  };
+
+  // everything queued in document order, however the observer batches it
+  let queue = Promise.resolve();
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -89,13 +110,11 @@ export function initTypeOnView(elements, { msPerChar = 30, staggerMs = 320 } = {
         .filter((entry) => entry.isIntersecting)
         .forEach((entry, i) => {
           observer.unobserve(entry.target);
-          setTimeout(() => {
-            entry.target.classList.remove('tw-waiting');
-            typeReveal(entry.target, msPerChar).then(() => {
-              entry.target.classList.add('tw-written');
-              entry.target.dispatchEvent(new CustomEvent('type-revealed', { bubbles: true }));
-            });
-          }, i * staggerMs);
+          if (sequential) {
+            queue = queue.then(() => write(entry.target));
+            return;
+          }
+          setTimeout(() => write(entry.target), i * staggerMs);
         });
     },
     { threshold: 0.6 },

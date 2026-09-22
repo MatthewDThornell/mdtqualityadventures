@@ -37,6 +37,14 @@ initTitleDecrypt(document.querySelectorAll('.page-opener h2'));
 initTypeOnView(document.querySelectorAll('#experience .timeline li > p:not(.timeline-org)'), {
   msPerChar: 30,
 });
+// the City Barbers shout-out writes itself out with the trade's own cursor,
+// then hands the reader to Ace's card below it
+initTypeOnView(
+  document.querySelectorAll(
+    '[data-testid="adventure-card-city-barbers"] .adventure-body > p:not(.card-meta)',
+  ),
+  { msPerChar: 24, sequential: true },
+);
 
 const coverCanvas = document.getElementById('cover-canvas');
 const coverScene = initCoverScene(coverCanvas, { skylineHeroSelector: '#top' });

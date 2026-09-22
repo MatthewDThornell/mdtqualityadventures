@@ -111,6 +111,10 @@ Three different things type on this site, and they are not the same effect:
   the last and the untyped tail holds its own space — nothing below it moves while a line writes
   itself. Both spans are removed when it finishes, leaving the markup as it was found.
 
+The City Barbers shout-out in Quality Adventures uses the same reveal with two changes: its two
+lines are `sequential`, so the hand-off cannot name the Ace while the setup is still typing, and
+the caret is a pair of barber shears that snip as the line comes out (`.tw-cursor-shears`).
+
 Under reduced motion none of the three run, and every line simply reads.
 
 ### Card tests

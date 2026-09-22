@@ -1559,6 +1559,30 @@ html.pen-active .typewriter .tw-quill {
   animation: qa-caret 0.8s steps(2, end) infinite;
 }
 
+/* In Quality Adventures, the shop's own tool does the writing: the block
+   caret is a pair of barber shears that snip as the line comes out. */
+.tw-cursor-shears .tw-typed.is-writing::after {
+  content: '';
+  width: 1.05em;
+  height: 1.05em;
+  top: -0.1em;
+  margin-left: 0.18em;
+  background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2396d2b9%22%20stroke-width%3D%221.9%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%226%22%20cy%3D%2219.2%22%20r%3D%222.4%22%2F%3E%3Ccircle%20cx%3D%2218%22%20cy%3D%2219.2%22%20r%3D%222.4%22%2F%3E%3Cpath%20d%3D%22M7.7%2017.5%2018.6%202.8%22%2F%3E%3Cpath%20d%3D%22M16.3%2017.5%205.4%202.8%22%2F%3E%3Cpath%20d%3D%22m10.6%2011.3%202.8%203.8%22%2F%3E%3C%2Fsvg%3E')
+    center / contain no-repeat;
+  animation: shear-snip 1s ease-in-out infinite;
+}
+
+@keyframes shear-snip {
+  0%,
+  55%,
+  100% {
+    transform: rotate(-5deg);
+  }
+  72% {
+    transform: rotate(7deg) scaleY(0.94);
+  }
+}
+
 /* nothing types under reduced motion, so nothing may be left waiting */
 @media (prefers-reduced-motion: reduce) {
   .tw-waiting {
@@ -2254,6 +2278,64 @@ html.pen-active .typewriter .tw-quill {
 
 .adventure-body {
   grid-area: body;
+}
+
+/* A shout-out card: no rail of photographs, just the business's own mark on
+   the light tile every logo on this site sits on, and a few lines that type
+   themselves out. */
+.adventure-media-mark {
+  aspect-ratio: 16 / 7;
+  background: var(--parchment);
+  padding: 1.1rem 1.35rem;
+}
+
+.adventure-media-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* the line that hands the reader to the next card */
+.adventure-handoff {
+  color: var(--text-muted);
+}
+
+.handoff-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  font-weight: 600;
+  color: var(--brass-bright);
+}
+
+.handoff-name svg {
+  width: 0.85em;
+  height: 0.85em;
+}
+
+/* the suit mark is an element, not text, so the reveal never hides it — it
+   waits with its own rule and lands with the name */
+.adventure-handoff:not(.tw-written) .handoff-name svg {
+  visibility: hidden;
+}
+
+/* it lands the way a card is turned over */
+.adventure-handoff.tw-written .handoff-name {
+  animation: ace-land 1.1s ease-out;
+}
+
+@keyframes ace-land {
+  0% {
+    text-shadow: none;
+  }
+  35% {
+    text-shadow:
+      0 0 14px rgba(var(--brass-bright-rgb), 0.9),
+      0 0 34px rgba(var(--brass-bright-rgb), 0.45);
+  }
+  100% {
+    text-shadow: none;
+  }
 }
 
 /* closing sign-off line — reads as a deliberate kicker rather than an orphaned
