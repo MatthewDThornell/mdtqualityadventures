@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-09-22T18:20:15.229Z",
+  "fetchedAt": "2026-09-22T18:46:55.529Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-22T14:39:09-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8070025",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-22T14:39:07-04:00"
+    },
     {
       "id": "greenhouse-testlio-8185386",
       "title": "Freelance Software Tester With Smart TVs (Remote in Austria)",
@@ -41,30 +67,30 @@
       "postedAt": "2026-09-22T08:09:18-04:00"
     },
     {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-22T02:37:57-04:00"
+      "id": "arbeitnow-software-test-qa-automation-engineer-mandatory-internship-unpaid-berlin-403562",
+      "title": "Software Test (QA) Automation Engineer - Mandatory Internship (Unpaid)",
+      "company": "IndieKidz GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/indiekidz-gmbh/software-test-qa-automation-engineer-mandatory-internship-unpaid-berlin-403562",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-09-22T08:00:32.000Z"
     },
     {
-      "id": "greenhouse-roblox-8070025",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-22T02:37:55-04:00"
+      "id": "arbeitnow-senior-test-engineer-hil-power-hil-all-genders-gauting-154414",
+      "title": "(Senior) Test Engineer - HiL / Power HiL (all genders)",
+      "company": "væridion",
+      "url": "https://www.arbeitnow.com/jobs/companies/vaeridion/senior-test-engineer-hil-power-hil-all-genders-gauting-154414",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Manufacturing & Testing Facility",
+      "country": "Other",
+      "postedAt": "2026-09-22T05:40:08.000Z"
     },
     {
       "id": "greenhouse-coursera-6141559004",
@@ -117,6 +143,84 @@
       "location": "Quito, Ecuador",
       "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
+    },
+    {
+      "id": "arbeitnow-senior-quality-engineer-parsdorf-bavaria-64458",
+      "title": "Senior Quality Engineer (m/f/d)",
+      "company": "isaraerospace",
+      "url": "https://www.arbeitnow.com/jobs/companies/isaraerospace/senior-quality-engineer-parsdorf-bavaria-64458",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Parsdorf, Bavaria",
+      "country": "Other",
+      "postedAt": "2026-09-20T20:55:17.000Z"
+    },
+    {
+      "id": "arbeitnow-werkstudent-quality-assurance-medizinalcannabis-koln-488687",
+      "title": "Werkstudent Quality Assurance (m/w/d) - Medizinalcannabis",
+      "company": "Semdor Pharma Group GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/werkstudent-quality-assurance-medizinalcannabis-koln-488687",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Köln",
+      "country": "Germany",
+      "postedAt": "2026-09-20T14:09:19.000Z"
+    },
+    {
+      "id": "arbeitnow-head-of-quality-assurance-koln-204677",
+      "title": "Head of Quality Assurance (m/w/d)",
+      "company": "Semdor Pharma Group GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/head-of-quality-assurance-koln-204677",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Köln",
+      "country": "Germany",
+      "postedAt": "2026-09-20T14:09:19.000Z"
+    },
+    {
+      "id": "arbeitnow-robotics-test-engineer-quality-safety-munich-bavaria-367537",
+      "title": "Robotics Test Engineer (m/f/d) - Quality & Safety",
+      "company": "Agilerobotsse",
+      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/robotics-test-engineer-quality-safety-munich-bavaria-367537",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich, Bavaria",
+      "country": "Germany",
+      "postedAt": "2026-09-20T11:55:02.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-spezialist-furstenfeldbruck-bavaria-431356",
+      "title": "Quality Assurance Spezialist (m/w/d)",
+      "company": "Agilerobotsse",
+      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/quality-assurance-spezialist-furstenfeldbruck-bavaria-431356",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Fürstenfeldbruck, Bavaria",
+      "country": "Other",
+      "postedAt": "2026-09-20T11:55:02.000Z"
+    },
+    {
+      "id": "arbeitnow-mechatronics-test-engineer-munich-bavaria-37664",
+      "title": "Mechatronics Test Engineer (m/f/d)",
+      "company": "Agilerobotsse",
+      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/mechatronics-test-engineer-munich-bavaria-37664",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich, Bavaria",
+      "country": "Germany",
+      "postedAt": "2026-09-20T11:55:02.000Z"
     },
     {
       "id": "greenhouse-robinhood-7739588",
@@ -260,19 +364,6 @@
       "location": "Melbourne",
       "country": "Australia",
       "postedAt": "2026-09-08T20:40:26.374Z"
-    },
-    {
-      "id": "greenhouse-testlio-8184710",
-      "title": "Freelance Software Tester for German Voice Commands (On-Site in Vienna)",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8184710",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Remote in EMEA",
-      "country": "Other",
-      "postedAt": "2026-09-08T14:31:19-04:00"
     }
   ]
 }
