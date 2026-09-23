@@ -1,6 +1,110 @@
 {
-  "fetchedAt": "2026-09-23T16:01:08.737Z",
+  "fetchedAt": "2026-09-23T21:01:38.370Z",
   "jobs": [
+    {
+      "id": "greenhouse-samsara-8139255",
+      "title": "Senior Manager, Quality Engineering",
+      "company": "Samsara",
+      "url": "https://www.samsara.com/company/careers/roles/8139255?gh_jid=8139255",
+      "source": "Samsara",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Remote - CA",
+      "country": "United States",
+      "postedAt": "2026-09-23T16:50:46-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-23T14:38:54-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8070025",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-23T14:38:52-04:00"
+    },
+    {
+      "id": "greenhouse-testlio-8226930",
+      "title": "Freelance Software Tester With Smart TVs (Remote in the United Kingdom)",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8226930",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Remote in EMEA",
+      "country": "Other",
+      "postedAt": "2026-09-23T13:44:15-04:00"
+    },
+    {
+      "id": "greenhouse-testlio-8226948",
+      "title": "Freelance Software Tester With Smart TVs (Remote in Germany)",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8226948",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Remote in EMEA",
+      "country": "Other",
+      "postedAt": "2026-09-23T13:43:24-04:00"
+    },
+    {
+      "id": "arbeitnow-software-test-qa-automation-engineer-mandatory-internship-unpaid-berlin-403562",
+      "title": "(Unpaid) Mandatory Internship : Software Test (QA) Automation Engineer",
+      "company": "IndieKidz GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/indiekidz-gmbh/software-test-qa-automation-engineer-mandatory-internship-unpaid-berlin-403562",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-09-23T17:37:25.000Z"
+    },
+    {
+      "id": "greenhouse-testlio-8213583",
+      "title": "Freelance Software Tester With Smart TVs (Remote in Ireland)",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8213583",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Remote in EMEA",
+      "country": "Other",
+      "postedAt": "2026-09-23T13:16:11-04:00"
+    },
+    {
+      "id": "greenhouse-testlio-8222868",
+      "title": "Freelance Software Tester With Smart TVs (Remote in Austria)",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8222868",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Remote in EMEA",
+      "country": "Other",
+      "postedAt": "2026-09-23T12:51:19-04:00"
+    },
     {
       "id": "arbeitnow-qa-engineer-paris-163163",
       "title": "QA Engineer",
@@ -41,32 +145,6 @@
       "postedAt": "2026-09-23T09:40:10.000Z"
     },
     {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-23T02:38:08-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8070025",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-23T02:38:06-04:00"
-    },
-    {
       "id": "arbeitnow-senior-qa-engineer-ai-driven-testing-berlin-43054",
       "title": "(Senior) QA Engineer - AI-Driven Testing (m/f/d)",
       "company": "1KOMMA5˚",
@@ -78,19 +156,6 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-09-23T06:30:43.000Z"
-    },
-    {
-      "id": "arbeitnow-lead-quality-assurance-engineer-machine-learning-london-298430",
-      "title": "Lead Quality Assurance Engineer - Machine Learning",
-      "company": "Hudl",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/hudl/lead-quality-assurance-engineer-machine-learning-london-298430",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-23T03:55:20.000Z"
     },
     {
       "id": "arbeitnow-qa-engineer-hamburg-357535",
@@ -119,19 +184,6 @@
       "postedAt": "2026-09-22T15:29:06-04:00"
     },
     {
-      "id": "greenhouse-testlio-8213583",
-      "title": "Freelance Software Tester With Smart TVs (Remote in Ireland)",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8213583",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Remote in EMEA",
-      "country": "Other",
-      "postedAt": "2026-09-22T08:10:09-04:00"
-    },
-    {
       "id": "greenhouse-testlio-8213556",
       "title": "Freelance Software Tester With Smart TVs (Remote in Italy)",
       "company": "Testlio",
@@ -143,19 +195,6 @@
       "location": "Remote in EMEA",
       "country": "Other",
       "postedAt": "2026-09-22T08:09:18-04:00"
-    },
-    {
-      "id": "arbeitnow-software-test-qa-automation-engineer-mandatory-internship-unpaid-berlin-403562",
-      "title": "Software Test (QA) Automation Engineer - Mandatory Internship (Unpaid)",
-      "company": "IndieKidz GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/indiekidz-gmbh/software-test-qa-automation-engineer-mandatory-internship-unpaid-berlin-403562",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-09-22T08:00:32.000Z"
     },
     {
       "id": "arbeitnow-senior-test-engineer-hil-power-hil-all-genders-gauting-154414",
@@ -184,19 +223,6 @@
       "postedAt": "2026-09-21T14:07:37-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-8191523",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Quito, Ecuador",
-      "country": "Other",
-      "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-7964148",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -220,6 +246,19 @@
       "workType": "Hybrid",
       "location": "Singapore, Singapore",
       "country": "Singapore",
+      "postedAt": "2026-09-21T10:52:24-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8191523",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Quito, Ecuador",
+      "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
@@ -260,19 +299,6 @@
       "location": "San Francisco, CA, US; Remote, US",
       "country": "United States",
       "postedAt": "2026-09-16T14:51:43-04:00"
-    },
-    {
-      "id": "greenhouse-samsara-8139255",
-      "title": "Senior Manager, Quality Engineering",
-      "company": "Samsara",
-      "url": "https://www.samsara.com/company/careers/roles/8139255?gh_jid=8139255",
-      "source": "Samsara",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Remote - CA",
-      "country": "United States",
-      "postedAt": "2026-09-16T14:10:39-04:00"
     },
     {
       "id": "lever-shieldai-3824ce13-5af0-436c-91bb-835b2740bf95",
