@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-09-22T20:49:59.928Z",
+  "fetchedAt": "2026-09-23T03:07:02.146Z",
   "jobs": [
+    {
+      "id": "arbeitnow-qa-engineer-hamburg-357535",
+      "title": "QA Engineer (f/m/d)",
+      "company": "adjoe",
+      "url": "https://www.arbeitnow.com/jobs/companies/adjoe/qa-engineer-hamburg-357535",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Hamburg",
+      "country": "Germany",
+      "postedAt": "2026-09-22T20:40:06.000Z"
+    },
     {
       "id": "greenhouse-testlio-8224143",
       "title": "Freelance Software Tester (Wave FM and/or Mixx by Yas)",
@@ -195,45 +208,6 @@
       "location": "Köln",
       "country": "Germany",
       "postedAt": "2026-09-20T14:09:19.000Z"
-    },
-    {
-      "id": "arbeitnow-robotics-test-engineer-quality-safety-munich-bavaria-367537",
-      "title": "Robotics Test Engineer (m/f/d) - Quality & Safety",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/robotics-test-engineer-quality-safety-munich-bavaria-367537",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich, Bavaria",
-      "country": "Germany",
-      "postedAt": "2026-09-20T11:55:02.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-spezialist-furstenfeldbruck-bavaria-431356",
-      "title": "Quality Assurance Spezialist (m/w/d)",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/quality-assurance-spezialist-furstenfeldbruck-bavaria-431356",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Fürstenfeldbruck, Bavaria",
-      "country": "Other",
-      "postedAt": "2026-09-20T11:55:02.000Z"
-    },
-    {
-      "id": "arbeitnow-mechatronics-test-engineer-munich-bavaria-37664",
-      "title": "Mechatronics Test Engineer (m/f/d)",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/mechatronics-test-engineer-munich-bavaria-37664",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich, Bavaria",
-      "country": "Germany",
-      "postedAt": "2026-09-20T11:55:02.000Z"
     },
     {
       "id": "greenhouse-robinhood-7739588",
