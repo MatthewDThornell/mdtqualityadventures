@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-23T21:01:38.370Z",
+  "fetchedAt": "2026-09-24T02:58:00.221Z",
   "jobs": [
     {
       "id": "greenhouse-samsara-8139255",
@@ -67,19 +67,6 @@
       "postedAt": "2026-09-23T13:43:24-04:00"
     },
     {
-      "id": "arbeitnow-software-test-qa-automation-engineer-mandatory-internship-unpaid-berlin-403562",
-      "title": "(Unpaid) Mandatory Internship : Software Test (QA) Automation Engineer",
-      "company": "IndieKidz GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/indiekidz-gmbh/software-test-qa-automation-engineer-mandatory-internship-unpaid-berlin-403562",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-09-23T17:37:25.000Z"
-    },
-    {
       "id": "greenhouse-testlio-8213583",
       "title": "Freelance Software Tester With Smart TVs (Remote in Ireland)",
       "company": "Testlio",
@@ -130,19 +117,6 @@
       "location": "Remote in EMEA",
       "country": "Other",
       "postedAt": "2026-09-23T06:55:38-04:00"
-    },
-    {
-      "id": "arbeitnow-senior-lead-quality-engineer-chatbot-london-465767",
-      "title": "Senior/Lead Quality Engineer - Chatbot",
-      "company": "Mimica",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/mimica/senior-lead-quality-engineer-chatbot-london-465767",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "UK",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-23T09:40:10.000Z"
     },
     {
       "id": "arbeitnow-senior-qa-engineer-ai-driven-testing-berlin-43054",
@@ -223,6 +197,19 @@
       "postedAt": "2026-09-21T14:07:37-04:00"
     },
     {
+      "id": "greenhouse-thoughtworks-8191523",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Quito, Ecuador",
+      "country": "Other",
+      "postedAt": "2026-09-21T10:52:24-04:00"
+    },
+    {
       "id": "greenhouse-thoughtworks-7964148",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -246,19 +233,6 @@
       "workType": "Hybrid",
       "location": "Singapore, Singapore",
       "country": "Singapore",
-      "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
-      "id": "greenhouse-thoughtworks-8191523",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Quito, Ecuador",
-      "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
@@ -364,19 +338,6 @@
       "location": "Taipei,Taiwan",
       "country": "Taiwan",
       "postedAt": "2026-09-10T13:11:58-04:00"
-    },
-    {
-      "id": "ashby-cerebras-74abc38e-f2c8-4c9b-bda2-945dea2c365d",
-      "title": "Staff GPU Inference SDET",
-      "company": "Cerebras",
-      "url": "https://jobs.ashbyhq.com/cerebras/74abc38e-f2c8-4c9b-bda2-945dea2c365d",
-      "source": "Cerebras",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Sunnyvale, CA",
-      "country": "United States",
-      "postedAt": "2026-09-09T22:33:33.947+00:00"
     }
   ]
 }
