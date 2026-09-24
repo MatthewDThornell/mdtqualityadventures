@@ -1,6 +1,97 @@
 {
-  "fetchedAt": "2026-09-24T11:02:53.318Z",
+  "fetchedAt": "2026-09-24T16:26:00.560Z",
   "jobs": [
+    {
+      "id": "arbeitnow-vo2-force-qa-automation-senior-paris-france-110974",
+      "title": "[ VO2 FORCE ] -  QA Automation - Senior",
+      "company": "VO2 Group",
+      "url": "https://www.arbeitnow.fr/jobs/companies/vo2-group/vo2-force-qa-automation-senior-paris-france-110974",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Paris, France",
+      "country": "France",
+      "postedAt": "2026-09-24T13:24:05.000Z"
+    },
+    {
+      "id": "greenhouse-samsara-8139255",
+      "title": "Senior Manager, Quality Engineering",
+      "company": "Samsara",
+      "url": "https://www.samsara.com/company/careers/roles/8139255?gh_jid=8139255",
+      "source": "Samsara",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Remote - CA",
+      "country": "United States",
+      "postedAt": "2026-09-24T08:55:55-04:00"
+    },
+    {
+      "id": "arbeitnow-remote-senior-quality-engineer-mobile-426219",
+      "title": "Senior Quality Engineer (mobile)",
+      "company": "Lendable",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/lendable/remote-senior-quality-engineer-mobile-426219",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Remote",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-09-24T12:40:14.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-senior-consultant-contract-hybrid-newcastle-edinburgh-glasgow-leeds-manchester-birmingham-bristol-london-157131",
+      "title": "Quality Assurance - Senior Consultant (Contract)",
+      "company": "Opencast",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/opencast/quality-assurance-senior-consultant-contract-hybrid-newcastle-edinburgh-glasgow-leeds-manchester-birmingham-bristol-london-157131",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Hybrid - Newcastle, Edinburgh, Glasgow, Leeds, Manchester, Birmingham, Bristol, London",
+      "country": "United Kingdom",
+      "postedAt": "2026-09-24T12:24:07.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-senior-consultant-hybrid-newcastle-edinburgh-glasgow-leeds-manchester-birmingham-bristol-london-495889",
+      "title": "Quality Assurance - Senior Consultant",
+      "company": "Opencast",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/opencast/quality-assurance-senior-consultant-hybrid-newcastle-edinburgh-glasgow-leeds-manchester-birmingham-bristol-london-495889",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Hybrid - Newcastle, Edinburgh, Glasgow, Leeds, Manchester, Birmingham, Bristol, London",
+      "country": "United Kingdom",
+      "postedAt": "2026-09-24T12:24:07.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-consultant-hybrid-newcastle-edinburgh-glasgow-leeds-manchester-birmingham-bristol-london-378362",
+      "title": "Quality Assurance - Consultant",
+      "company": "Opencast",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/opencast/quality-assurance-consultant-hybrid-newcastle-edinburgh-glasgow-leeds-manchester-birmingham-bristol-london-378362",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Hybrid - Newcastle, Edinburgh, Glasgow, Leeds, Manchester, Birmingham, Bristol, London",
+      "country": "United Kingdom",
+      "postedAt": "2026-09-24T12:24:07.000Z"
+    },
+    {
+      "id": "jobicy-153999",
+      "title": "Sr. Quality Engineer",
+      "company": "CentralReach",
+      "url": "https://jobicy.com/jobs/153999-sr-quality-engineer",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "USA",
+      "country": "United States",
+      "postedAt": "2026-09-24T11:38:32+00:00"
+    },
     {
       "id": "greenhouse-roblox-8069987",
       "title": "Quality Analyst",
@@ -52,19 +143,6 @@
       "location": "Argentina,  Brazil,  Mexico",
       "country": "Brazil",
       "postedAt": "2026-09-24T04:40:23+00:00"
-    },
-    {
-      "id": "greenhouse-samsara-8139255",
-      "title": "Senior Manager, Quality Engineering",
-      "company": "Samsara",
-      "url": "https://www.samsara.com/company/careers/roles/8139255?gh_jid=8139255",
-      "source": "Samsara",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Remote - CA",
-      "country": "United States",
-      "postedAt": "2026-09-23T16:50:46-04:00"
     },
     {
       "id": "greenhouse-testlio-8226930",
@@ -236,16 +314,16 @@
       "postedAt": "2026-09-21T14:07:37-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-8191523",
+      "id": "greenhouse-thoughtworks-8200468",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
       "source": "Thoughtworks",
       "sourceUrl": null,
       "direct": true,
-      "workType": "On-site",
-      "location": "Quito, Ecuador",
-      "country": "Other",
+      "workType": "Hybrid",
+      "location": "Singapore, Singapore",
+      "country": "Singapore",
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
@@ -262,16 +340,16 @@
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-8200468",
+      "id": "greenhouse-thoughtworks-8191523",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
       "source": "Thoughtworks",
       "sourceUrl": null,
       "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
+      "workType": "On-site",
+      "location": "Quito, Ecuador",
+      "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
