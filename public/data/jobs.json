@@ -1,19 +1,6 @@
 {
-  "fetchedAt": "2026-09-24T02:58:00.221Z",
+  "fetchedAt": "2026-09-24T11:02:53.318Z",
   "jobs": [
-    {
-      "id": "greenhouse-samsara-8139255",
-      "title": "Senior Manager, Quality Engineering",
-      "company": "Samsara",
-      "url": "https://www.samsara.com/company/careers/roles/8139255?gh_jid=8139255",
-      "source": "Samsara",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Remote - CA",
-      "country": "United States",
-      "postedAt": "2026-09-23T16:50:46-04:00"
-    },
     {
       "id": "greenhouse-roblox-8069987",
       "title": "Quality Analyst",
@@ -25,7 +12,7 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-09-23T14:38:54-04:00"
+      "postedAt": "2026-09-24T02:39:03-04:00"
     },
     {
       "id": "greenhouse-roblox-8070025",
@@ -38,7 +25,46 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-09-23T14:38:52-04:00"
+      "postedAt": "2026-09-24T02:39:01-04:00"
+    },
+    {
+      "id": "arbeitnow-senior-test-manager-teststrategie-qa-it-consulting-hamburg-293862",
+      "title": "Senior Test Manager (m/w/d) Teststrategie, QA & IT Consulting",
+      "company": "Nelta GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/nelta-gmbh/senior-test-manager-teststrategie-qa-it-consulting-hamburg-293862",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Hamburg",
+      "country": "Germany",
+      "postedAt": "2026-09-24T06:30:49.000Z"
+    },
+    {
+      "id": "jobicy-151503",
+      "title": "SDET – Regression Automation Engineer",
+      "company": "Oowlish Technology",
+      "url": "https://jobicy.com/jobs/151503-sdet-regression-automation-engineer",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Argentina,  Brazil,  Mexico",
+      "country": "Brazil",
+      "postedAt": "2026-09-24T04:40:23+00:00"
+    },
+    {
+      "id": "greenhouse-samsara-8139255",
+      "title": "Senior Manager, Quality Engineering",
+      "company": "Samsara",
+      "url": "https://www.samsara.com/company/careers/roles/8139255?gh_jid=8139255",
+      "source": "Samsara",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Remote - CA",
+      "country": "United States",
+      "postedAt": "2026-09-23T16:50:46-04:00"
     },
     {
       "id": "greenhouse-testlio-8226930",
@@ -65,6 +91,19 @@
       "location": "Remote in EMEA",
       "country": "Other",
       "postedAt": "2026-09-23T13:43:24-04:00"
+    },
+    {
+      "id": "arbeitnow-software-test-qa-automation-engineer-mandatory-internship-unpaid-berlin-403562",
+      "title": "(Unpaid) Mandatory Internship : Software Test (QA) Automation Engineer",
+      "company": "IndieKidz GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/indiekidz-gmbh/software-test-qa-automation-engineer-mandatory-internship-unpaid-berlin-403562",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-09-23T17:37:25.000Z"
     },
     {
       "id": "greenhouse-testlio-8213583",
