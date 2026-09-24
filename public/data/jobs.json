@@ -1,6 +1,84 @@
 {
-  "fetchedAt": "2026-09-24T16:26:00.560Z",
+  "fetchedAt": "2026-09-24T21:05:53.830Z",
   "jobs": [
+    {
+      "id": "lever-shieldai-01a2d105-fe26-495e-bd62-c0aeb11cdbdd",
+      "title": "Engineering Technician 4, Quality Assurance (R5977)",
+      "company": "Shield AI",
+      "url": "https://jobs.lever.co/shieldai/01a2d105-fe26-495e-bd62-c0aeb11cdbdd",
+      "source": "Shield AI",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Remote",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-09-24T21:00:22.513Z"
+    },
+    {
+      "id": "arbeitnow-remote-qa-lead-309026",
+      "title": "QA Lead",
+      "company": "Foundation Health",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/foundation-health/remote-qa-lead-309026",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "United Kingdom - Remote",
+      "country": "United Kingdom",
+      "postedAt": "2026-09-24T18:40:11.000Z"
+    },
+    {
+      "id": "arbeitnow-software-quality-engineer-uk-london-406084",
+      "title": "Software quality engineer (UK)",
+      "company": "Writer",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/writer/software-quality-engineer-uk-london-406084",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "London, UK",
+      "country": "United Kingdom",
+      "postedAt": "2026-09-24T18:40:06.000Z"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-24T14:38:43-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8070025",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-24T14:38:41-04:00"
+    },
+    {
+      "id": "jobicy-154027",
+      "title": "Lead Automation Engineer",
+      "company": "Capital on Tap",
+      "url": "https://jobicy.com/jobs/154027-lead-automation-engineer",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Portugal",
+      "country": "Other",
+      "postedAt": "2026-09-24T15:33:09+00:00"
+    },
     {
       "id": "arbeitnow-vo2-force-qa-automation-senior-paris-france-110974",
       "title": "[ VO2 FORCE ] -  QA Automation - Senior",
@@ -28,58 +106,6 @@
       "postedAt": "2026-09-24T08:55:55-04:00"
     },
     {
-      "id": "arbeitnow-remote-senior-quality-engineer-mobile-426219",
-      "title": "Senior Quality Engineer (mobile)",
-      "company": "Lendable",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/lendable/remote-senior-quality-engineer-mobile-426219",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Remote",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-09-24T12:40:14.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-senior-consultant-contract-hybrid-newcastle-edinburgh-glasgow-leeds-manchester-birmingham-bristol-london-157131",
-      "title": "Quality Assurance - Senior Consultant (Contract)",
-      "company": "Opencast",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/opencast/quality-assurance-senior-consultant-contract-hybrid-newcastle-edinburgh-glasgow-leeds-manchester-birmingham-bristol-london-157131",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Hybrid - Newcastle, Edinburgh, Glasgow, Leeds, Manchester, Birmingham, Bristol, London",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-24T12:24:07.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-senior-consultant-hybrid-newcastle-edinburgh-glasgow-leeds-manchester-birmingham-bristol-london-495889",
-      "title": "Quality Assurance - Senior Consultant",
-      "company": "Opencast",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/opencast/quality-assurance-senior-consultant-hybrid-newcastle-edinburgh-glasgow-leeds-manchester-birmingham-bristol-london-495889",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Hybrid - Newcastle, Edinburgh, Glasgow, Leeds, Manchester, Birmingham, Bristol, London",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-24T12:24:07.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-consultant-hybrid-newcastle-edinburgh-glasgow-leeds-manchester-birmingham-bristol-london-378362",
-      "title": "Quality Assurance - Consultant",
-      "company": "Opencast",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/opencast/quality-assurance-consultant-hybrid-newcastle-edinburgh-glasgow-leeds-manchester-birmingham-bristol-london-378362",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Hybrid - Newcastle, Edinburgh, Glasgow, Leeds, Manchester, Birmingham, Bristol, London",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-24T12:24:07.000Z"
-    },
-    {
       "id": "jobicy-153999",
       "title": "Sr. Quality Engineer",
       "company": "CentralReach",
@@ -91,32 +117,6 @@
       "location": "USA",
       "country": "United States",
       "postedAt": "2026-09-24T11:38:32+00:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-24T02:39:03-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8070025",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-24T02:39:01-04:00"
     },
     {
       "id": "arbeitnow-senior-test-manager-teststrategie-qa-it-consulting-hamburg-293862",
@@ -262,19 +262,6 @@
       "postedAt": "2026-09-22T20:40:06.000Z"
     },
     {
-      "id": "greenhouse-testlio-8224143",
-      "title": "Freelance Software Tester (Wave FM and/or Mixx by Yas)",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8224143",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Senegal",
-      "country": "Other",
-      "postedAt": "2026-09-22T15:29:06-04:00"
-    },
-    {
       "id": "greenhouse-testlio-8213556",
       "title": "Freelance Software Tester With Smart TVs (Remote in Italy)",
       "company": "Testlio",
@@ -286,19 +273,6 @@
       "location": "Remote in EMEA",
       "country": "Other",
       "postedAt": "2026-09-22T08:09:18-04:00"
-    },
-    {
-      "id": "arbeitnow-senior-test-engineer-hil-power-hil-all-genders-gauting-154414",
-      "title": "(Senior) Test Engineer - HiL / Power HiL (all genders)",
-      "company": "væridion",
-      "url": "https://www.arbeitnow.com/jobs/companies/vaeridion/senior-test-engineer-hil-power-hil-all-genders-gauting-154414",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Manufacturing & Testing Facility",
-      "country": "Other",
-      "postedAt": "2026-09-22T05:40:08.000Z"
     },
     {
       "id": "greenhouse-coursera-6141559004",
@@ -442,19 +416,6 @@
       "location": "San Mateo, CA United States",
       "country": "United States",
       "postedAt": "2026-09-10T17:49:30-04:00"
-    },
-    {
-      "id": "greenhouse-stripe-8153331",
-      "title": "Software Quality Assurance Engineer",
-      "company": "Stripe",
-      "url": "https://stripe.com/jobs/search?gh_jid=8153331",
-      "source": "Stripe",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Taipei,Taiwan",
-      "country": "Taiwan",
-      "postedAt": "2026-09-10T13:11:58-04:00"
     }
   ]
 }
