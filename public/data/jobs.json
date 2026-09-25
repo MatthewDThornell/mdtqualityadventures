@@ -1,6 +1,123 @@
 {
-  "fetchedAt": "2026-09-25T03:15:03.611Z",
+  "fetchedAt": "2026-09-25T11:02:52.820Z",
   "jobs": [
+    {
+      "id": "arbeitnow-quality-assurance-specialist-e-commerce-image-production-berlin-42362",
+      "title": "Quality Assurance Specialist (m/w/d) E-Commerce Image Production",
+      "company": "Doopic GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/doopic-gmbh/quality-assurance-specialist-e-commerce-image-production-berlin-42362",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-09-25T08:01:11.000Z"
+    },
+    {
+      "id": "arbeitnow-director-of-quality-assurance-london-126503",
+      "title": "Director of Quality Assurance",
+      "company": "Comind",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/comind/director-of-quality-assurance-london-126503",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "London, UK",
+      "country": "United Kingdom",
+      "postedAt": "2026-09-25T06:40:09.000Z"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-25T02:37:51-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8070025",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-25T02:37:49-04:00"
+    },
+    {
+      "id": "arbeitnow-production-test-engineer-de-berlin-496653",
+      "title": "Production Test Engineer (m/f/d)",
+      "company": "Swissbit",
+      "url": "https://www.arbeitnow.com/jobs/companies/swissbit/production-test-engineer-de-berlin-496653",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "DE-Berlin",
+      "country": "Germany",
+      "postedAt": "2026-09-25T05:09:03.000Z"
+    },
+    {
+      "id": "greenhouse-verkada-5237420007",
+      "title": "QA Automation Engineer",
+      "company": "Verkada",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5237420007",
+      "source": "Verkada",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Poland",
+      "country": "Other",
+      "postedAt": "2026-09-24T23:30:31-04:00"
+    },
+    {
+      "id": "greenhouse-verkada-5082745007",
+      "title": "Senior Test Engineer – Alarms",
+      "company": "Verkada",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5082745007",
+      "source": "Verkada",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA United States",
+      "country": "United States",
+      "postedAt": "2026-09-24T23:30:31-04:00"
+    },
+    {
+      "id": "arbeitnow-werkstudent-quality-assurance-medizinalcannabis-koln-263952",
+      "title": "Werkstudent Quality Assurance (m/w/d) - Medizinalcannabis",
+      "company": "Semdor Pharma Group GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/werkstudent-quality-assurance-medizinalcannabis-koln-263952",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Köln",
+      "country": "Germany",
+      "postedAt": "2026-09-25T02:09:22.000Z"
+    },
+    {
+      "id": "arbeitnow-head-of-quality-assurance-koln-139486",
+      "title": "Head of Quality Assurance (m/w/d)",
+      "company": "Semdor Pharma Group GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/head-of-quality-assurance-koln-139486",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Köln",
+      "country": "Germany",
+      "postedAt": "2026-09-25T02:09:22.000Z"
+    },
     {
       "id": "arbeitnow-senior-automation-qa-engineer-london-222985",
       "title": "Senior Automation QA Engineer",
@@ -65,32 +182,6 @@
       "location": "London, UK",
       "country": "United Kingdom",
       "postedAt": "2026-09-24T18:40:06.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-24T14:38:43-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8070025",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-24T14:38:41-04:00"
     },
     {
       "id": "jobicy-154027",
@@ -301,19 +392,6 @@
       "postedAt": "2026-09-21T14:07:37-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-8200468",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
-      "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-7964148",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -324,6 +402,19 @@
       "workType": "On-site",
       "location": "Lima, Peru",
       "country": "Other",
+      "postedAt": "2026-09-21T10:52:24-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8200468",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Singapore, Singapore",
+      "country": "Singapore",
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
