@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-09-24T21:05:53.830Z",
+  "fetchedAt": "2026-09-25T03:15:03.611Z",
   "jobs": [
+    {
+      "id": "arbeitnow-senior-automation-qa-engineer-london-222985",
+      "title": "Senior Automation QA Engineer",
+      "company": "Skin Analytics",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/skin-analytics/senior-automation-qa-engineer-london-222985",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London hybrid (3 days in office)",
+      "country": "United Kingdom",
+      "postedAt": "2026-09-24T21:40:05.000Z"
+    },
     {
       "id": "lever-shieldai-01a2d105-fe26-495e-bd62-c0aeb11cdbdd",
       "title": "Engineering Technician 4, Quality Assurance (R5977)",
@@ -13,6 +26,19 @@
       "location": "Remote",
       "country": "Remote / Unspecified",
       "postedAt": "2026-09-24T21:00:22.513Z"
+    },
+    {
+      "id": "arbeitnow-senior-quality-assurance-engineer-hamburg-205565",
+      "title": "(Senior) Quality Assurance Engineer (f/m/d)",
+      "company": "Zeal Network",
+      "url": "https://www.arbeitnow.com/jobs/companies/zeal-network/senior-quality-assurance-engineer-hamburg-205565",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Hamburg",
+      "country": "Germany",
+      "postedAt": "2026-09-24T20:40:05.000Z"
     },
     {
       "id": "arbeitnow-remote-qa-lead-309026",
@@ -171,19 +197,6 @@
       "postedAt": "2026-09-23T13:43:24-04:00"
     },
     {
-      "id": "arbeitnow-software-test-qa-automation-engineer-mandatory-internship-unpaid-berlin-403562",
-      "title": "(Unpaid) Mandatory Internship : Software Test (QA) Automation Engineer",
-      "company": "IndieKidz GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/indiekidz-gmbh/software-test-qa-automation-engineer-mandatory-internship-unpaid-berlin-403562",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-09-23T17:37:25.000Z"
-    },
-    {
       "id": "greenhouse-testlio-8213583",
       "title": "Freelance Software Tester With Smart TVs (Remote in Ireland)",
       "company": "Testlio",
@@ -340,19 +353,6 @@
       "postedAt": "2026-09-18T14:03:33-04:00"
     },
     {
-      "id": "greenhouse-verkada-5237420007",
-      "title": "QA Automation Engineer",
-      "company": "Verkada",
-      "url": "https://job-boards.greenhouse.io/verkada/jobs/5237420007",
-      "source": "Verkada",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Poland",
-      "country": "Other",
-      "postedAt": "2026-09-18T04:51:27-04:00"
-    },
-    {
       "id": "greenhouse-pinterest-8011568",
       "title": "SDET II, tvScientific",
       "company": "Pinterest",
@@ -403,19 +403,6 @@
       "location": "Global",
       "country": "Other",
       "postedAt": "2026-09-11T09:55:19-04:00"
-    },
-    {
-      "id": "greenhouse-verkada-5082745007",
-      "title": "Senior Test Engineer – Alarms",
-      "company": "Verkada",
-      "url": "https://job-boards.greenhouse.io/verkada/jobs/5082745007",
-      "source": "Verkada",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA United States",
-      "country": "United States",
-      "postedAt": "2026-09-10T17:49:30-04:00"
     }
   ]
 }
