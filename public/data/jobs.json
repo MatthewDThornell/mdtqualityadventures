@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-09-25T11:02:52.820Z",
+  "fetchedAt": "2026-09-25T16:25:36.733Z",
   "jobs": [
+    {
+      "id": "greenhouse-robinhood-8187448",
+      "title": "Quality Engineer",
+      "company": "Robinhood",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/8187448?t=gh_src=&gh_jid=8187448",
+      "source": "Robinhood",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Toronto, Canada",
+      "country": "Canada",
+      "postedAt": "2026-09-25T12:02:14-04:00"
+    },
+    {
+      "id": "greenhouse-okta-8212003",
+      "title": "Senior Engineering Manager, SDET  - Okta Identity Governance (OIG)",
+      "company": "Okta",
+      "url": "https://www.okta.com/company/careers/opportunity/8212003?gh_jid=8212003",
+      "source": "Okta",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Toronto, Ontario, Canada",
+      "country": "Canada",
+      "postedAt": "2026-09-25T08:28:18-04:00"
+    },
     {
       "id": "arbeitnow-quality-assurance-specialist-e-commerce-image-production-berlin-42362",
       "title": "Quality Assurance Specialist (m/w/d) E-Commerce Image Production",
@@ -13,19 +39,6 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-09-25T08:01:11.000Z"
-    },
-    {
-      "id": "arbeitnow-director-of-quality-assurance-london-126503",
-      "title": "Director of Quality Assurance",
-      "company": "Comind",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/comind/director-of-quality-assurance-london-126503",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "London, UK",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-25T06:40:09.000Z"
     },
     {
       "id": "greenhouse-roblox-8069987",
@@ -156,32 +169,6 @@
       "location": "Hamburg",
       "country": "Germany",
       "postedAt": "2026-09-24T20:40:05.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-qa-lead-309026",
-      "title": "QA Lead",
-      "company": "Foundation Health",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/foundation-health/remote-qa-lead-309026",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "United Kingdom - Remote",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-24T18:40:11.000Z"
-    },
-    {
-      "id": "arbeitnow-software-quality-engineer-uk-london-406084",
-      "title": "Software quality engineer (UK)",
-      "company": "Writer",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/writer/software-quality-engineer-uk-london-406084",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "London, UK",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-24T18:40:06.000Z"
     },
     {
       "id": "jobicy-154027",
@@ -353,19 +340,6 @@
       "postedAt": "2026-09-23T06:30:43.000Z"
     },
     {
-      "id": "arbeitnow-qa-engineer-hamburg-357535",
-      "title": "QA Engineer (f/m/d)",
-      "company": "adjoe",
-      "url": "https://www.arbeitnow.com/jobs/companies/adjoe/qa-engineer-hamburg-357535",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Hamburg",
-      "country": "Germany",
-      "postedAt": "2026-09-22T20:40:06.000Z"
-    },
-    {
       "id": "greenhouse-testlio-8213556",
       "title": "Freelance Software Tester With Smart TVs (Remote in Italy)",
       "company": "Testlio",
@@ -392,19 +366,6 @@
       "postedAt": "2026-09-21T14:07:37-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-7964148",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Lima, Peru",
-      "country": "Other",
-      "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-8200468",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -415,6 +376,19 @@
       "workType": "Hybrid",
       "location": "Singapore, Singapore",
       "country": "Singapore",
+      "postedAt": "2026-09-21T10:52:24-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-7964148",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Lima, Peru",
+      "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
@@ -429,19 +403,6 @@
       "location": "Quito, Ecuador",
       "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
-      "id": "greenhouse-robinhood-7739588",
-      "title": "Quality Engineer, Mobile",
-      "company": "Robinhood",
-      "url": "https://boards.greenhouse.io/robinhood/jobs/7739588?t=gh_src=&gh_jid=7739588",
-      "source": "Robinhood",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Toronto, Canada",
-      "country": "Canada",
-      "postedAt": "2026-09-18T14:03:33-04:00"
     },
     {
       "id": "greenhouse-pinterest-8011568",
@@ -481,19 +442,6 @@
       "location": "Montreal, Canada",
       "country": "Canada",
       "postedAt": "2026-09-11T12:49:13-04:00"
-    },
-    {
-      "id": "greenhouse-testlio-8195507",
-      "title": "Freelance Software Tester With Apple Vision Pro (Remote Worldwide)",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8195507",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Global",
-      "country": "Other",
-      "postedAt": "2026-09-11T09:55:19-04:00"
     }
   ]
 }
