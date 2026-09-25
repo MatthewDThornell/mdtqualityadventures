@@ -1,6 +1,58 @@
 {
-  "fetchedAt": "2026-09-25T16:25:36.733Z",
+  "fetchedAt": "2026-09-25T21:02:57.009Z",
   "jobs": [
+    {
+      "id": "greenhouse-stripe-8153331",
+      "title": "Software Quality Assurance Engineer",
+      "company": "Stripe",
+      "url": "https://stripe.com/jobs/search?gh_jid=8153331",
+      "source": "Stripe",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Taipei,Taiwan",
+      "country": "Taiwan",
+      "postedAt": "2026-09-25T16:44:57-04:00"
+    },
+    {
+      "id": "greenhouse-samsara-8139255",
+      "title": "Senior Manager, Quality Engineering",
+      "company": "Samsara",
+      "url": "https://www.samsara.com/company/careers/roles/8139255?gh_jid=8139255",
+      "source": "Samsara",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Remote - CA",
+      "country": "United States",
+      "postedAt": "2026-09-25T16:07:56-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-25T14:38:47-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8070025",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-25T14:38:45-04:00"
+    },
     {
       "id": "greenhouse-robinhood-8187448",
       "title": "Quality Engineer",
@@ -12,7 +64,7 @@
       "workType": "On-site",
       "location": "Toronto, Canada",
       "country": "Canada",
-      "postedAt": "2026-09-25T12:02:14-04:00"
+      "postedAt": "2026-09-25T13:03:21-04:00"
     },
     {
       "id": "greenhouse-okta-8212003",
@@ -41,30 +93,17 @@
       "postedAt": "2026-09-25T08:01:11.000Z"
     },
     {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-25T02:37:51-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8070025",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-25T02:37:49-04:00"
+      "id": "arbeitnow-director-of-quality-assurance-london-126503",
+      "title": "Director of Quality Assurance",
+      "company": "Comind",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/comind/director-of-quality-assurance-london-126503",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "London, UK",
+      "country": "United Kingdom",
+      "postedAt": "2026-09-25T06:40:09.000Z"
     },
     {
       "id": "arbeitnow-production-test-engineer-de-berlin-496653",
@@ -132,19 +171,6 @@
       "postedAt": "2026-09-25T02:09:22.000Z"
     },
     {
-      "id": "arbeitnow-senior-automation-qa-engineer-london-222985",
-      "title": "Senior Automation QA Engineer",
-      "company": "Skin Analytics",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/skin-analytics/senior-automation-qa-engineer-london-222985",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London hybrid (3 days in office)",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-24T21:40:05.000Z"
-    },
-    {
       "id": "lever-shieldai-01a2d105-fe26-495e-bd62-c0aeb11cdbdd",
       "title": "Engineering Technician 4, Quality Assurance (R5977)",
       "company": "Shield AI",
@@ -195,19 +221,6 @@
       "location": "Paris, France",
       "country": "France",
       "postedAt": "2026-09-24T13:24:05.000Z"
-    },
-    {
-      "id": "greenhouse-samsara-8139255",
-      "title": "Senior Manager, Quality Engineering",
-      "company": "Samsara",
-      "url": "https://www.samsara.com/company/careers/roles/8139255?gh_jid=8139255",
-      "source": "Samsara",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Remote - CA",
-      "country": "United States",
-      "postedAt": "2026-09-24T08:55:55-04:00"
     },
     {
       "id": "jobicy-153999",
@@ -299,19 +312,6 @@
       "location": "Remote in EMEA",
       "country": "Other",
       "postedAt": "2026-09-23T12:51:19-04:00"
-    },
-    {
-      "id": "arbeitnow-qa-engineer-paris-163163",
-      "title": "QA Engineer",
-      "company": "Npv",
-      "url": "https://www.arbeitnow.fr/jobs/companies/npv/qa-engineer-paris-163163",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Paris",
-      "country": "France",
-      "postedAt": "2026-09-23T13:40:09.000Z"
     },
     {
       "id": "greenhouse-testlio-8185386",
@@ -429,19 +429,6 @@
       "location": "Kyiv",
       "country": "Other",
       "postedAt": "2026-09-15T18:26:36.681Z"
-    },
-    {
-      "id": "greenhouse-lyft-8767534002",
-      "title": "Software Engineer Intern, Test Automation (Summer 2027)",
-      "company": "Lyft",
-      "url": "https://app.careerpuck.com/job-board/lyft/job/8767534002?gh_jid=8767534002",
-      "source": "Lyft",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Montreal, Canada",
-      "country": "Canada",
-      "postedAt": "2026-09-11T12:49:13-04:00"
     }
   ]
 }
