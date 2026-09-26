@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-09-26T03:19:03.471Z",
+  "fetchedAt": "2026-09-26T10:45:13.942Z",
   "jobs": [
+    {
+      "id": "arbeitnow-senior-qa-engineer-london-275128",
+      "title": "Senior QA Engineer | London",
+      "company": "TransPerfect",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/transperfect/senior-qa-engineer-london-275128",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London, Greater London, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-09-26T09:30:43.000Z"
+    },
+    {
+      "id": "arbeitnow-test-engineer-206435",
+      "title": "Test Engineer (f/m/d)",
+      "company": "Think Cell",
+      "url": "https://www.arbeitnow.com/jobs/companies/think-cell/test-engineer-206435",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-09-26T08:55:03.000Z"
+    },
     {
       "id": "arbeitnow-student-qa-engineer-working-student-aachen-367694",
       "title": "Student QA Engineer (Working Student)",
@@ -327,19 +353,6 @@
       "postedAt": "2026-09-23T06:55:38-04:00"
     },
     {
-      "id": "arbeitnow-senior-qa-engineer-ai-driven-testing-berlin-43054",
-      "title": "(Senior) QA Engineer - AI-Driven Testing (m/f/d)",
-      "company": "1KOMMA5˚",
-      "url": "https://www.arbeitnow.com/jobs/companies/1komma50/senior-qa-engineer-ai-driven-testing-berlin-43054",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-09-23T06:30:43.000Z"
-    },
-    {
       "id": "greenhouse-testlio-8213556",
       "title": "Freelance Software Tester With Smart TVs (Remote in Italy)",
       "company": "Testlio",
@@ -366,19 +379,6 @@
       "postedAt": "2026-09-21T14:07:37-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-8200468",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
-      "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-7964148",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -389,6 +389,19 @@
       "workType": "On-site",
       "location": "Lima, Peru",
       "country": "Other",
+      "postedAt": "2026-09-21T10:52:24-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8200468",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Singapore, Singapore",
+      "country": "Singapore",
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
