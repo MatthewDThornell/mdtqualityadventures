@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-09-26T15:41:04.360Z",
+  "fetchedAt": "2026-09-26T20:36:24.162Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-26T14:38:13-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8070025",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-26T14:38:12-04:00"
+    },
+    {
+      "id": "arbeitnow-remote-qa-software-test-automation-engineers-java-466766",
+      "title": "QA Software Test Automation Engineers (Java)",
+      "company": "Xm",
+      "url": "https://www.arbeitnow.ch/jobs/companies/xm/remote-qa-software-test-automation-engineers-java-466766",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Remote",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-09-26T17:28:02.000Z"
+    },
     {
       "id": "arbeitnow-quality-assurance-specialist-brighton-339707",
       "title": "Quality Assurance Specialist",
@@ -39,19 +78,6 @@
       "location": "Munich, Germany",
       "country": "Germany",
       "postedAt": "2026-09-26T11:40:04.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-qa-engineer-london-275128",
-      "title": "Senior QA Engineer | London",
-      "company": "TransPerfect",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/transperfect/senior-qa-engineer-london-275128",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London, Greater London, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-26T09:30:43.000Z"
     },
     {
       "id": "arbeitnow-test-engineer-206435",
@@ -104,32 +130,6 @@
       "location": "Remote - CA",
       "country": "United States",
       "postedAt": "2026-09-25T16:07:56-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-25T14:38:47-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8070025",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-25T14:38:45-04:00"
     },
     {
       "id": "greenhouse-robinhood-8187448",
@@ -392,19 +392,6 @@
       "postedAt": "2026-09-21T14:07:37-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-8200468",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
-      "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-7964148",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -415,6 +402,19 @@
       "workType": "On-site",
       "location": "Lima, Peru",
       "country": "Other",
+      "postedAt": "2026-09-21T10:52:24-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8200468",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Singapore, Singapore",
+      "country": "Singapore",
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
