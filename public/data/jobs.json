@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-09-25T21:02:57.009Z",
+  "fetchedAt": "2026-09-26T03:19:03.471Z",
   "jobs": [
+    {
+      "id": "arbeitnow-student-qa-engineer-working-student-aachen-367694",
+      "title": "Student QA Engineer (Working Student)",
+      "company": "Keyfactorinc",
+      "url": "https://www.arbeitnow.com/jobs/companies/keyfactorinc/student-qa-engineer-working-student-aachen-367694",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Aachen",
+      "country": "Germany",
+      "postedAt": "2026-09-26T02:55:17.000Z"
+    },
     {
       "id": "greenhouse-stripe-8153331",
       "title": "Software Quality Assurance Engineer",
@@ -91,19 +104,6 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-09-25T08:01:11.000Z"
-    },
-    {
-      "id": "arbeitnow-director-of-quality-assurance-london-126503",
-      "title": "Director of Quality Assurance",
-      "company": "Comind",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/comind/director-of-quality-assurance-london-126503",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "London, UK",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-25T06:40:09.000Z"
     },
     {
       "id": "arbeitnow-production-test-engineer-de-berlin-496653",
