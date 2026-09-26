@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-09-26T10:45:13.942Z",
+  "fetchedAt": "2026-09-26T15:41:04.360Z",
   "jobs": [
+    {
+      "id": "arbeitnow-quality-assurance-specialist-brighton-339707",
+      "title": "Quality Assurance Specialist",
+      "company": "Motorway",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/motorway/quality-assurance-specialist-brighton-339707",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Brighton",
+      "country": "Other",
+      "postedAt": "2026-09-26T12:40:13.000Z"
+    },
+    {
+      "id": "arbeitnow-qa-lead-berlin-433385",
+      "title": "QA Lead",
+      "company": "Almedia",
+      "url": "https://www.arbeitnow.com/jobs/companies/almedia/qa-lead-berlin-433385",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-09-26T11:40:12.000Z"
+    },
+    {
+      "id": "arbeitnow-ait-test-engineer-munich-436275",
+      "title": "AIT Test Engineer",
+      "company": "The Exploration Company",
+      "url": "https://www.arbeitnow.com/jobs/companies/the-exploration-company/ait-test-engineer-munich-436275",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich, Germany",
+      "country": "Germany",
+      "postedAt": "2026-09-26T11:40:04.000Z"
+    },
     {
       "id": "arbeitnow-senior-qa-engineer-london-275128",
       "title": "Senior QA Engineer | London",
@@ -249,19 +288,6 @@
       "postedAt": "2026-09-24T13:24:05.000Z"
     },
     {
-      "id": "jobicy-153999",
-      "title": "Sr. Quality Engineer",
-      "company": "CentralReach",
-      "url": "https://jobicy.com/jobs/153999-sr-quality-engineer",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "USA",
-      "country": "United States",
-      "postedAt": "2026-09-24T11:38:32+00:00"
-    },
-    {
       "id": "arbeitnow-senior-test-manager-teststrategie-qa-it-consulting-hamburg-293862",
       "title": "Senior Test Manager (m/w/d) Teststrategie, QA & IT Consulting",
       "company": "Nelta GmbH",
@@ -273,19 +299,6 @@
       "location": "Hamburg",
       "country": "Germany",
       "postedAt": "2026-09-24T06:30:49.000Z"
-    },
-    {
-      "id": "jobicy-151503",
-      "title": "SDET – Regression Automation Engineer",
-      "company": "Oowlish Technology",
-      "url": "https://jobicy.com/jobs/151503-sdet-regression-automation-engineer",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Argentina,  Brazil,  Mexico",
-      "country": "Brazil",
-      "postedAt": "2026-09-24T04:40:23+00:00"
     },
     {
       "id": "greenhouse-testlio-8226930",
@@ -379,19 +392,6 @@
       "postedAt": "2026-09-21T14:07:37-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-7964148",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Lima, Peru",
-      "country": "Other",
-      "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-8200468",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -402,6 +402,19 @@
       "workType": "Hybrid",
       "location": "Singapore, Singapore",
       "country": "Singapore",
+      "postedAt": "2026-09-21T10:52:24-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-7964148",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Lima, Peru",
+      "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
