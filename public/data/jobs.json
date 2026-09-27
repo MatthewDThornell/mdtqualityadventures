@@ -1,18 +1,31 @@
 {
-  "fetchedAt": "2026-09-27T11:19:06.833Z",
+  "fetchedAt": "2026-09-27T16:19:37.486Z",
   "jobs": [
     {
-      "id": "arbeitnow-senior-test-manager-zurich-94917",
-      "title": "Senior Test Manager",
-      "company": "Callista Group AG",
-      "url": "https://www.arbeitnow.ch/jobs/companies/callista-group-ag/senior-test-manager-zurich-94917",
+      "id": "arbeitnow-working-student-quality-assurance-legal-40-60-zurich-348669",
+      "title": "Working Student Quality Assurance - Legal (40-60%)",
+      "company": "DeepJudge",
+      "url": "https://www.arbeitnow.ch/jobs/companies/deepjudge/working-student-quality-assurance-legal-40-60-zurich-348669",
       "source": "Arbeitnow",
       "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
       "workType": "On-site",
-      "location": "Zürich, Zürich, Switzerland",
+      "location": "Zurich HQ",
       "country": "Other",
-      "postedAt": "2026-09-27T08:30:27.000Z"
+      "postedAt": "2026-09-27T11:40:14.000Z"
+    },
+    {
+      "id": "arbeitnow-systems-integration-qa-engineer-all-genders-munich-317938",
+      "title": "Systems Integration & QA Engineer (All genders)",
+      "company": "Stark",
+      "url": "https://www.arbeitnow.com/jobs/companies/stark/systems-integration-qa-engineer-all-genders-munich-317938",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich",
+      "country": "Germany",
+      "postedAt": "2026-09-27T11:09:58.000Z"
     },
     {
       "id": "greenhouse-roblox-8069987",
@@ -262,19 +275,6 @@
       "postedAt": "2026-09-24T20:40:05.000Z"
     },
     {
-      "id": "arbeitnow-senior-test-manager-teststrategie-qa-it-consulting-hamburg-293862",
-      "title": "Senior Test Manager (m/w/d) Teststrategie, QA & IT Consulting",
-      "company": "Nelta GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/nelta-gmbh/senior-test-manager-teststrategie-qa-it-consulting-hamburg-293862",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Hamburg",
-      "country": "Germany",
-      "postedAt": "2026-09-24T06:30:49.000Z"
-    },
-    {
       "id": "greenhouse-testlio-8226930",
       "title": "Freelance Software Tester With Smart TVs (Remote in the United Kingdom)",
       "company": "Testlio",
@@ -366,19 +366,6 @@
       "postedAt": "2026-09-21T14:07:37-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-8200468",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
-      "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-7964148",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -389,6 +376,19 @@
       "workType": "On-site",
       "location": "Lima, Peru",
       "country": "Other",
+      "postedAt": "2026-09-21T10:52:24-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8200468",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Singapore, Singapore",
+      "country": "Singapore",
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
