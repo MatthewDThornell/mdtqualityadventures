@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-09-26T20:36:24.162Z",
+  "fetchedAt": "2026-09-27T03:26:57.193Z",
   "jobs": [
+    {
+      "id": "arbeitnow-remote-senior-gtm-systems-ai-and-automation-engineer-98803",
+      "title": "Senior GTM Systems AI and Automation Engineer",
+      "company": "Camunda",
+      "url": "https://www.arbeitnow.ch/jobs/companies/camunda/remote-senior-gtm-systems-ai-and-automation-engineer-98803",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Remote",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-09-27T02:40:11.000Z"
+    },
+    {
+      "id": "arbeitnow-remote-senior-manager-qa-engineering-334552",
+      "title": "Senior Manager, QA Engineering",
+      "company": "Camunda",
+      "url": "https://www.arbeitnow.ch/jobs/companies/camunda/remote-senior-manager-qa-engineering-334552",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Remote",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-09-27T02:40:11.000Z"
+    },
+    {
+      "id": "lever-shieldai-cc36d8ce-4afc-4d86-a4ad-8d5612b184d4",
+      "title": "Staff Engineer, Test Automation (R5792)",
+      "company": "Shield AI",
+      "url": "https://jobs.lever.co/shieldai/cc36d8ce-4afc-4d86-a4ad-8d5612b184d4",
+      "source": "Shield AI",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Diego, California",
+      "country": "United States",
+      "postedAt": "2026-09-26T20:48:27.803Z"
+    },
     {
       "id": "greenhouse-roblox-8069987",
       "title": "Quality Analyst",
@@ -39,19 +78,6 @@
       "location": "Remote",
       "country": "Remote / Unspecified",
       "postedAt": "2026-09-26T17:28:02.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-specialist-brighton-339707",
-      "title": "Quality Assurance Specialist",
-      "company": "Motorway",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/motorway/quality-assurance-specialist-brighton-339707",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Brighton",
-      "country": "Other",
-      "postedAt": "2026-09-26T12:40:13.000Z"
     },
     {
       "id": "arbeitnow-qa-lead-berlin-433385",
