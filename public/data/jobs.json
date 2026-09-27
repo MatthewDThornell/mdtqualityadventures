@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-09-27T16:19:37.486Z",
+  "fetchedAt": "2026-09-27T20:48:15.109Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-27T14:37:51-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8070025",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-27T14:37:50-04:00"
+    },
     {
       "id": "arbeitnow-working-student-quality-assurance-legal-40-60-zurich-348669",
       "title": "Working Student Quality Assurance - Legal (40-60%)",
@@ -26,32 +52,6 @@
       "location": "Munich",
       "country": "Germany",
       "postedAt": "2026-09-27T11:09:58.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-27T02:37:40-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8070025",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-27T02:37:38-04:00"
     },
     {
       "id": "lever-shieldai-cc36d8ce-4afc-4d86-a4ad-8d5612b184d4",
