@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-09-27T20:48:15.109Z",
+  "fetchedAt": "2026-09-28T03:24:36.490Z",
   "jobs": [
+    {
+      "id": "arbeitnow-sr-manager-quality-assurance-zug-142731",
+      "title": "Sr. Manager, Quality Assurance",
+      "company": "Acadia Job Listings",
+      "url": "https://www.arbeitnow.ch/jobs/companies/acadia-job-listings/sr-manager-quality-assurance-zug-142731",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Zug",
+      "country": "Other",
+      "postedAt": "2026-09-28T02:55:18.000Z"
+    },
+    {
+      "id": "arbeitnow-key-account-manager-quality-assurance-312366",
+      "title": "Key Account Manager- Quality Assurance",
+      "company": "Xebiadach",
+      "url": "https://www.arbeitnow.ch/jobs/companies/xebiadach/key-account-manager-quality-assurance-312366",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-09-28T02:55:13.000Z"
+    },
     {
       "id": "greenhouse-roblox-8069987",
       "title": "Quality Analyst",
