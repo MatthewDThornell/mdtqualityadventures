@@ -1,6 +1,84 @@
 {
-  "fetchedAt": "2026-09-28T12:48:13.015Z",
+  "fetchedAt": "2026-09-28T22:54:30.029Z",
   "jobs": [
+    {
+      "id": "greenhouse-verkada-5237420007",
+      "title": "QA Automation Engineer",
+      "company": "Verkada",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5237420007",
+      "source": "Verkada",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Poland",
+      "country": "Other",
+      "postedAt": "2026-09-28T18:36:46-04:00"
+    },
+    {
+      "id": "greenhouse-verkada-5082745007",
+      "title": "Senior Test Engineer – Alarms",
+      "company": "Verkada",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5082745007",
+      "source": "Verkada",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA United States",
+      "country": "United States",
+      "postedAt": "2026-09-28T18:36:46-04:00"
+    },
+    {
+      "id": "greenhouse-airbnb-8154749",
+      "title": "Early Career Software Engineer, Quality Engineering",
+      "company": "Airbnb",
+      "url": "https://careers.airbnb.com/positions/8154749?gh_jid=8154749",
+      "source": "Airbnb",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Sao Paulo - Brazil",
+      "country": "Brazil",
+      "postedAt": "2026-09-28T16:37:42-04:00"
+    },
+    {
+      "id": "greenhouse-airbnb-7453190",
+      "title": "Senior Mobile Software Engineer, Quality Engineering",
+      "company": "Airbnb",
+      "url": "https://careers.airbnb.com/positions/7453190?gh_jid=7453190",
+      "source": "Airbnb",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Brazil - Remote",
+      "country": "Brazil",
+      "postedAt": "2026-09-28T16:32:41-04:00"
+    },
+    {
+      "id": "greenhouse-airbnb-7380185",
+      "title": "Senior Fullstack Engineer, Quality Engineering",
+      "company": "Airbnb",
+      "url": "https://careers.airbnb.com/positions/7380185?gh_jid=7380185",
+      "source": "Airbnb",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Brazil - Remote",
+      "country": "Brazil",
+      "postedAt": "2026-09-28T16:31:42-04:00"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-engineer-software-all-genders-munich-office-156717",
+      "title": "Quality Assurance Engineer (Software) (all genders)",
+      "company": "Proglove",
+      "url": "https://www.arbeitnow.com/jobs/companies/proglove/quality-assurance-engineer-software-all-genders-munich-office-156717",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich Office",
+      "country": "Germany",
+      "postedAt": "2026-09-28T20:09:53.000Z"
+    },
     {
       "id": "greenhouse-roblox-8069987",
       "title": "Quality Analyst",
@@ -12,7 +90,7 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-09-28T02:38:29-04:00"
+      "postedAt": "2026-09-28T14:38:33-04:00"
     },
     {
       "id": "greenhouse-roblox-8070025",
@@ -25,7 +103,59 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-09-28T02:38:27-04:00"
+      "postedAt": "2026-09-28T14:38:31-04:00"
+    },
+    {
+      "id": "greenhouse-robinhood-8187448",
+      "title": "Quality Engineer",
+      "company": "Robinhood",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/8187448?t=gh_src=&gh_jid=8187448",
+      "source": "Robinhood",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Toronto, Canada",
+      "country": "Canada",
+      "postedAt": "2026-09-28T12:40:12-04:00"
+    },
+    {
+      "id": "greenhouse-pinterest-8011568",
+      "title": "SDET II, tvScientific",
+      "company": "Pinterest",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8011568",
+      "source": "Pinterest",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "San Francisco, CA, US; Remote, US",
+      "country": "United States",
+      "postedAt": "2026-09-28T11:38:53-04:00"
+    },
+    {
+      "id": "arbeitnow-remote-staff-quality-engineer-mobile-139212",
+      "title": "Staff Quality Engineer - Mobile",
+      "company": "Lendable",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/lendable/remote-staff-quality-engineer-mobile-139212",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Remote",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-09-28T12:40:13.000Z"
+    },
+    {
+      "id": "arbeitnow-remote-senior-mobile-quality-engineer-194996",
+      "title": "Senior Mobile Quality Engineer",
+      "company": "Lendable",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/lendable/remote-senior-mobile-quality-engineer-194996",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Remote",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-09-28T12:40:13.000Z"
     },
     {
       "id": "jobicy-151950",
@@ -171,19 +301,6 @@
       "postedAt": "2026-09-25T16:07:56-04:00"
     },
     {
-      "id": "greenhouse-robinhood-8187448",
-      "title": "Quality Engineer",
-      "company": "Robinhood",
-      "url": "https://boards.greenhouse.io/robinhood/jobs/8187448?t=gh_src=&gh_jid=8187448",
-      "source": "Robinhood",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Toronto, Canada",
-      "country": "Canada",
-      "postedAt": "2026-09-25T13:03:21-04:00"
-    },
-    {
       "id": "greenhouse-okta-8212003",
       "title": "Senior Engineering Manager, SDET  - Okta Identity Governance (OIG)",
       "company": "Okta",
@@ -223,32 +340,6 @@
       "postedAt": "2026-09-25T05:09:03.000Z"
     },
     {
-      "id": "greenhouse-verkada-5237420007",
-      "title": "QA Automation Engineer",
-      "company": "Verkada",
-      "url": "https://job-boards.greenhouse.io/verkada/jobs/5237420007",
-      "source": "Verkada",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Poland",
-      "country": "Other",
-      "postedAt": "2026-09-24T23:30:31-04:00"
-    },
-    {
-      "id": "greenhouse-verkada-5082745007",
-      "title": "Senior Test Engineer – Alarms",
-      "company": "Verkada",
-      "url": "https://job-boards.greenhouse.io/verkada/jobs/5082745007",
-      "source": "Verkada",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA United States",
-      "country": "United States",
-      "postedAt": "2026-09-24T23:30:31-04:00"
-    },
-    {
       "id": "arbeitnow-werkstudent-quality-assurance-medizinalcannabis-koln-263952",
       "title": "Werkstudent Quality Assurance (m/w/d) - Medizinalcannabis",
       "company": "Semdor Pharma Group GmbH",
@@ -286,19 +377,6 @@
       "location": "Remote",
       "country": "Remote / Unspecified",
       "postedAt": "2026-09-24T21:00:22.513Z"
-    },
-    {
-      "id": "arbeitnow-senior-quality-assurance-engineer-hamburg-205565",
-      "title": "(Senior) Quality Assurance Engineer (f/m/d)",
-      "company": "Zeal Network",
-      "url": "https://www.arbeitnow.com/jobs/companies/zeal-network/senior-quality-assurance-engineer-hamburg-205565",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Hamburg",
-      "country": "Germany",
-      "postedAt": "2026-09-24T20:40:05.000Z"
     },
     {
       "id": "greenhouse-testlio-8226930",
@@ -392,19 +470,6 @@
       "postedAt": "2026-09-21T14:07:37-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-7964148",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Lima, Peru",
-      "country": "Other",
-      "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-8200468",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -431,17 +496,17 @@
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
-      "id": "greenhouse-pinterest-8011568",
-      "title": "SDET II, tvScientific",
-      "company": "Pinterest",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8011568",
-      "source": "Pinterest",
+      "id": "greenhouse-thoughtworks-7964148",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
+      "source": "Thoughtworks",
       "sourceUrl": null,
       "direct": true,
-      "workType": "Remote",
-      "location": "San Francisco, CA, US; Remote, US",
-      "country": "United States",
-      "postedAt": "2026-09-16T14:51:43-04:00"
+      "workType": "On-site",
+      "location": "Lima, Peru",
+      "country": "Other",
+      "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
       "id": "lever-shieldai-3824ce13-5af0-436c-91bb-835b2740bf95",
