@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-09-28T03:24:36.490Z",
+  "fetchedAt": "2026-09-28T12:48:13.015Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-28T02:38:29-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8070025",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-28T02:38:27-04:00"
+    },
+    {
+      "id": "jobicy-151950",
+      "title": "QA Engineer",
+      "company": "Workwize",
+      "url": "https://jobicy.com/jobs/151950-qa-engineer-4",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Europe",
+      "country": "Other",
+      "postedAt": "2026-09-28T05:20:27+00:00"
+    },
     {
       "id": "arbeitnow-sr-manager-quality-assurance-zug-142731",
       "title": "Sr. Manager, Quality Assurance",
@@ -26,45 +65,6 @@
       "location": "",
       "country": "Remote / Unspecified",
       "postedAt": "2026-09-28T02:55:13.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-27T14:37:51-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8070025",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-27T14:37:50-04:00"
-    },
-    {
-      "id": "arbeitnow-working-student-quality-assurance-legal-40-60-zurich-348669",
-      "title": "Working Student Quality Assurance - Legal (40-60%)",
-      "company": "DeepJudge",
-      "url": "https://www.arbeitnow.ch/jobs/companies/deepjudge/working-student-quality-assurance-legal-40-60-zurich-348669",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Zurich HQ",
-      "country": "Other",
-      "postedAt": "2026-09-27T11:40:14.000Z"
     },
     {
       "id": "arbeitnow-systems-integration-qa-engineer-all-genders-munich-317938",
