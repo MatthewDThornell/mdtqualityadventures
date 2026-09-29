@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-09-29T12:03:30.418Z",
+  "fetchedAt": "2026-09-29T21:49:41.235Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-29T16:09:38-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8070025",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-29T16:09:38-04:00"
+    },
+    {
+      "id": "arbeitnow-production-test-engineer-de-berlin-275770",
+      "title": "Production Test Engineer (m/f/d)",
+      "company": "Swissbit",
+      "url": "https://www.arbeitnow.com/jobs/companies/swissbit/production-test-engineer-de-berlin-275770",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "DE-Berlin",
+      "country": "Germany",
+      "postedAt": "2026-09-29T14:09:37.000Z"
+    },
     {
       "id": "arbeitnow-propulsion-test-engineer-germany-114592",
       "title": "Propulsion Test Engineer",
@@ -41,30 +80,17 @@
       "postedAt": "2026-09-29T11:09:48.000Z"
     },
     {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
+      "id": "arbeitnow-qa-engineer-map-fixture-berlin-476390",
+      "title": "QA Engineer (map fixture)",
+      "company": "Dataset Labs Recruiting",
+      "url": "https://www.arbeitnow.com/jobs/companies/dataset-labs-recruiting/qa-engineer-map-fixture-berlin-476390",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
       "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-29T02:38:36-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8070025",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-29T02:38:34-04:00"
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-09-29T06:00:33.000Z"
     },
     {
       "id": "greenhouse-verkada-5237420007",
@@ -169,32 +195,6 @@
       "location": "San Francisco, CA, US; Remote, US",
       "country": "United States",
       "postedAt": "2026-09-28T11:38:53-04:00"
-    },
-    {
-      "id": "arbeitnow-remote-staff-quality-engineer-mobile-139212",
-      "title": "Staff Quality Engineer - Mobile",
-      "company": "Lendable",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/lendable/remote-staff-quality-engineer-mobile-139212",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Remote",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-09-28T12:40:13.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-senior-mobile-quality-engineer-194996",
-      "title": "Senior Mobile Quality Engineer",
-      "company": "Lendable",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/lendable/remote-senior-mobile-quality-engineer-194996",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Remote",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-09-28T12:40:13.000Z"
     },
     {
       "id": "jobicy-151950",
@@ -353,19 +353,6 @@
       "postedAt": "2026-09-25T08:28:18-04:00"
     },
     {
-      "id": "arbeitnow-quality-assurance-specialist-e-commerce-image-production-berlin-42362",
-      "title": "Quality Assurance Specialist (m/w/d) E-Commerce Image Production",
-      "company": "Doopic GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/doopic-gmbh/quality-assurance-specialist-e-commerce-image-production-berlin-42362",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-09-25T08:01:11.000Z"
-    },
-    {
       "id": "lever-shieldai-01a2d105-fe26-495e-bd62-c0aeb11cdbdd",
       "title": "Engineering Technician 4, Quality Assurance (R5977)",
       "company": "Shield AI",
@@ -470,19 +457,6 @@
       "postedAt": "2026-09-21T14:07:37-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-8200468",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
-      "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-7964148",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -509,17 +483,17 @@
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
-      "id": "lever-shieldai-3824ce13-5af0-436c-91bb-835b2740bf95",
-      "title": "Software Integration & Test Manager",
-      "company": "Shield AI",
-      "url": "https://jobs.lever.co/shieldai/3824ce13-5af0-436c-91bb-835b2740bf95",
-      "source": "Shield AI",
+      "id": "greenhouse-thoughtworks-8200468",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
+      "source": "Thoughtworks",
       "sourceUrl": null,
       "direct": true,
-      "workType": "On-site",
-      "location": "Kyiv",
-      "country": "Other",
-      "postedAt": "2026-09-15T18:26:36.681Z"
+      "workType": "Hybrid",
+      "location": "Singapore, Singapore",
+      "country": "Singapore",
+      "postedAt": "2026-09-21T10:52:24-04:00"
     }
   ]
 }
