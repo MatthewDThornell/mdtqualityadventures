@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-28T22:54:30.029Z",
+  "fetchedAt": "2026-09-29T04:00:58.823Z",
   "jobs": [
     {
       "id": "greenhouse-verkada-5237420007",
@@ -340,32 +340,6 @@
       "postedAt": "2026-09-25T05:09:03.000Z"
     },
     {
-      "id": "arbeitnow-werkstudent-quality-assurance-medizinalcannabis-koln-263952",
-      "title": "Werkstudent Quality Assurance (m/w/d) - Medizinalcannabis",
-      "company": "Semdor Pharma Group GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/werkstudent-quality-assurance-medizinalcannabis-koln-263952",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Köln",
-      "country": "Germany",
-      "postedAt": "2026-09-25T02:09:22.000Z"
-    },
-    {
-      "id": "arbeitnow-head-of-quality-assurance-koln-139486",
-      "title": "Head of Quality Assurance (m/w/d)",
-      "company": "Semdor Pharma Group GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/head-of-quality-assurance-koln-139486",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Köln",
-      "country": "Germany",
-      "postedAt": "2026-09-25T02:09:22.000Z"
-    },
-    {
       "id": "lever-shieldai-01a2d105-fe26-495e-bd62-c0aeb11cdbdd",
       "title": "Engineering Technician 4, Quality Assurance (R5977)",
       "company": "Shield AI",
@@ -483,19 +457,6 @@
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-8191523",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Quito, Ecuador",
-      "country": "Other",
-      "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-7964148",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -505,6 +466,19 @@
       "direct": true,
       "workType": "On-site",
       "location": "Lima, Peru",
+      "country": "Other",
+      "postedAt": "2026-09-21T10:52:24-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8191523",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Quito, Ecuador",
       "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
