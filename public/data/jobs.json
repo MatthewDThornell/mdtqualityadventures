@@ -1,6 +1,71 @@
 {
-  "fetchedAt": "2026-09-29T04:00:58.823Z",
+  "fetchedAt": "2026-09-29T12:03:30.418Z",
   "jobs": [
+    {
+      "id": "arbeitnow-propulsion-test-engineer-germany-114592",
+      "title": "Propulsion Test Engineer",
+      "company": "Momentumaerospace",
+      "url": "https://www.arbeitnow.com/jobs/companies/momentumaerospace/propulsion-test-engineer-germany-114592",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Germany",
+      "country": "Germany",
+      "postedAt": "2026-09-29T11:40:02.000Z"
+    },
+    {
+      "id": "arbeitnow-werkstudent-quality-assurance-medizinalcannabis-koln-69832",
+      "title": "Werkstudent Quality Assurance (m/w/d) - Medizinalcannabis",
+      "company": "Semdor Pharma Group GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/werkstudent-quality-assurance-medizinalcannabis-koln-69832",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Köln",
+      "country": "Germany",
+      "postedAt": "2026-09-29T11:09:48.000Z"
+    },
+    {
+      "id": "arbeitnow-head-of-quality-assurance-koln-393437",
+      "title": "Head of Quality Assurance (m/w/d)",
+      "company": "Semdor Pharma Group GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/head-of-quality-assurance-koln-393437",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Köln",
+      "country": "Germany",
+      "postedAt": "2026-09-29T11:09:48.000Z"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-29T02:38:36-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8070025",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-29T02:38:34-04:00"
+    },
     {
       "id": "greenhouse-verkada-5237420007",
       "title": "QA Automation Engineer",
@@ -78,32 +143,6 @@
       "location": "Munich Office",
       "country": "Germany",
       "postedAt": "2026-09-28T20:09:53.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-28T14:38:33-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8070025",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-28T14:38:31-04:00"
     },
     {
       "id": "greenhouse-robinhood-8187448",
@@ -325,19 +364,6 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-09-25T08:01:11.000Z"
-    },
-    {
-      "id": "arbeitnow-production-test-engineer-de-berlin-496653",
-      "title": "Production Test Engineer (m/f/d)",
-      "company": "Swissbit",
-      "url": "https://www.arbeitnow.com/jobs/companies/swissbit/production-test-engineer-de-berlin-496653",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "DE-Berlin",
-      "country": "Germany",
-      "postedAt": "2026-09-25T05:09:03.000Z"
     },
     {
       "id": "lever-shieldai-01a2d105-fe26-495e-bd62-c0aeb11cdbdd",
