@@ -1,11 +1,50 @@
 {
-  "fetchedAt": "2026-09-29T21:49:41.235Z",
+  "fetchedAt": "2026-09-30T03:48:14.559Z",
   "jobs": [
     {
-      "id": "greenhouse-roblox-8069987",
+      "id": "greenhouse-airbnb-8154749",
+      "title": "Early Career Software Engineer, Quality Engineering",
+      "company": "Airbnb",
+      "url": "https://careers.airbnb.com/positions/8154749?gh_jid=8154749",
+      "source": "Airbnb",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Sao Paulo - Brazil",
+      "country": "Brazil",
+      "postedAt": "2026-09-29T20:00:54-04:00"
+    },
+    {
+      "id": "greenhouse-airbnb-7380185",
+      "title": "Senior Fullstack Engineer, Quality Engineering",
+      "company": "Airbnb",
+      "url": "https://careers.airbnb.com/positions/7380185?gh_jid=7380185",
+      "source": "Airbnb",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Brazil - Remote",
+      "country": "Brazil",
+      "postedAt": "2026-09-29T20:00:54-04:00"
+    },
+    {
+      "id": "greenhouse-airbnb-7453190",
+      "title": "Senior Mobile Software Engineer, Quality Engineering",
+      "company": "Airbnb",
+      "url": "https://careers.airbnb.com/positions/7453190?gh_jid=7453190",
+      "source": "Airbnb",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Brazil - Remote",
+      "country": "Brazil",
+      "postedAt": "2026-09-29T20:00:54-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8070025",
       "title": "Quality Analyst",
       "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
       "source": "Roblox",
       "sourceUrl": null,
       "direct": true,
@@ -15,10 +54,10 @@
       "postedAt": "2026-09-29T16:09:38-04:00"
     },
     {
-      "id": "greenhouse-roblox-8070025",
+      "id": "greenhouse-roblox-8069987",
       "title": "Quality Analyst",
       "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
       "source": "Roblox",
       "sourceUrl": null,
       "direct": true,
@@ -117,45 +156,6 @@
       "location": "San Mateo, CA United States",
       "country": "United States",
       "postedAt": "2026-09-28T18:36:46-04:00"
-    },
-    {
-      "id": "greenhouse-airbnb-8154749",
-      "title": "Early Career Software Engineer, Quality Engineering",
-      "company": "Airbnb",
-      "url": "https://careers.airbnb.com/positions/8154749?gh_jid=8154749",
-      "source": "Airbnb",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Sao Paulo - Brazil",
-      "country": "Brazil",
-      "postedAt": "2026-09-28T16:37:42-04:00"
-    },
-    {
-      "id": "greenhouse-airbnb-7453190",
-      "title": "Senior Mobile Software Engineer, Quality Engineering",
-      "company": "Airbnb",
-      "url": "https://careers.airbnb.com/positions/7453190?gh_jid=7453190",
-      "source": "Airbnb",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Brazil - Remote",
-      "country": "Brazil",
-      "postedAt": "2026-09-28T16:32:41-04:00"
-    },
-    {
-      "id": "greenhouse-airbnb-7380185",
-      "title": "Senior Fullstack Engineer, Quality Engineering",
-      "company": "Airbnb",
-      "url": "https://careers.airbnb.com/positions/7380185?gh_jid=7380185",
-      "source": "Airbnb",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Brazil - Remote",
-      "country": "Brazil",
-      "postedAt": "2026-09-28T16:31:42-04:00"
     },
     {
       "id": "arbeitnow-quality-assurance-engineer-software-all-genders-munich-office-156717",
@@ -457,19 +457,6 @@
       "postedAt": "2026-09-21T14:07:37-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-7964148",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Lima, Peru",
-      "country": "Other",
-      "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-8191523",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -479,6 +466,19 @@
       "direct": true,
       "workType": "On-site",
       "location": "Quito, Ecuador",
+      "country": "Other",
+      "postedAt": "2026-09-21T10:52:24-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-7964148",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Lima, Peru",
       "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
