@@ -1,6 +1,58 @@
 {
-  "fetchedAt": "2026-09-30T11:51:41.890Z",
+  "fetchedAt": "2026-09-30T17:32:25.350Z",
   "jobs": [
+    {
+      "id": "arbeitnow-unpaid-mandatory-internship-software-test-qa-automation-engineer-berlin-320686",
+      "title": "(Unpaid) Mandatory Internship : Software Test (QA) Automation Engineer",
+      "company": "IndieKidz GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/indiekidz-gmbh/unpaid-mandatory-internship-software-test-qa-automation-engineer-berlin-320686",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-09-30T15:31:10.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-ai-quality-engineer-london-472258",
+      "title": "Senior AI Quality Engineer",
+      "company": "Lendable",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/lendable/senior-ai-quality-engineer-london-472258",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-09-30T12:40:14.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-quality-engineer-ai-london-278450",
+      "title": "Senior Quality Engineer - AI",
+      "company": "Lendable",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/lendable/senior-quality-engineer-ai-london-278450",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-09-30T12:40:14.000Z"
+    },
+    {
+      "id": "arbeitnow-remote-technical-quality-assurance-manager-bromley-324925",
+      "title": "Technical Quality Assurance Manager",
+      "company": "Bromcom Computers Plc",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/bromcom-computers-plc/remote-technical-quality-assurance-manager-bromley-324925",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Remote job",
+      "country": "Other",
+      "postedAt": "2026-09-30T12:30:03.000Z"
+    },
     {
       "id": "arbeitnow-security-qa-engineer-garching-322167",
       "title": "Security & QA Engineer (m/w/d)",
@@ -54,45 +106,6 @@
       "postedAt": "2026-09-30T00:07:53-04:00"
     },
     {
-      "id": "greenhouse-airbnb-8154749",
-      "title": "Early Career Software Engineer, Quality Engineering",
-      "company": "Airbnb",
-      "url": "https://careers.airbnb.com/positions/8154749?gh_jid=8154749",
-      "source": "Airbnb",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Sao Paulo - Brazil",
-      "country": "Brazil",
-      "postedAt": "2026-09-29T20:00:54-04:00"
-    },
-    {
-      "id": "greenhouse-airbnb-7380185",
-      "title": "Senior Fullstack Engineer, Quality Engineering",
-      "company": "Airbnb",
-      "url": "https://careers.airbnb.com/positions/7380185?gh_jid=7380185",
-      "source": "Airbnb",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Brazil - Remote",
-      "country": "Brazil",
-      "postedAt": "2026-09-29T20:00:54-04:00"
-    },
-    {
-      "id": "greenhouse-airbnb-7453190",
-      "title": "Senior Mobile Software Engineer, Quality Engineering",
-      "company": "Airbnb",
-      "url": "https://careers.airbnb.com/positions/7453190?gh_jid=7453190",
-      "source": "Airbnb",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Brazil - Remote",
-      "country": "Brazil",
-      "postedAt": "2026-09-29T20:00:54-04:00"
-    },
-    {
       "id": "arbeitnow-production-test-engineer-de-berlin-275770",
       "title": "Production Test Engineer (m/f/d)",
       "company": "Swissbit",
@@ -143,6 +156,19 @@
       "location": "Köln",
       "country": "Germany",
       "postedAt": "2026-09-29T11:09:48.000Z"
+    },
+    {
+      "id": "arbeitnow-qa-engineer-map-fixture-berlin-476390",
+      "title": "QA Engineer (map fixture)",
+      "company": "Dataset Labs Recruiting",
+      "url": "https://www.arbeitnow.com/jobs/companies/dataset-labs-recruiting/qa-engineer-map-fixture-berlin-476390",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-09-29T06:00:33.000Z"
     },
     {
       "id": "greenhouse-verkada-5237420007",
@@ -275,30 +301,17 @@
       "postedAt": "2026-09-26T11:40:12.000Z"
     },
     {
-      "id": "arbeitnow-test-engineer-206435",
-      "title": "Test Engineer (f/m/d)",
-      "company": "Think Cell",
-      "url": "https://www.arbeitnow.com/jobs/companies/think-cell/test-engineer-206435",
+      "id": "arbeitnow-ait-test-engineer-munich-436275",
+      "title": "AIT Test Engineer",
+      "company": "The Exploration Company",
+      "url": "https://www.arbeitnow.com/jobs/companies/the-exploration-company/ait-test-engineer-munich-436275",
       "source": "Arbeitnow",
       "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
       "workType": "On-site",
-      "location": "",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-09-26T08:55:03.000Z"
-    },
-    {
-      "id": "arbeitnow-student-qa-engineer-working-student-aachen-367694",
-      "title": "Student QA Engineer (Working Student)",
-      "company": "Keyfactorinc",
-      "url": "https://www.arbeitnow.com/jobs/companies/keyfactorinc/student-qa-engineer-working-student-aachen-367694",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Aachen",
+      "location": "Munich, Germany",
       "country": "Germany",
-      "postedAt": "2026-09-26T02:55:17.000Z"
+      "postedAt": "2026-09-26T11:40:04.000Z"
     },
     {
       "id": "greenhouse-stripe-8153331",
@@ -444,19 +457,6 @@
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-8191523",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Quito, Ecuador",
-      "country": "Other",
-      "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-8200468",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -467,6 +467,19 @@
       "workType": "Hybrid",
       "location": "Singapore, Singapore",
       "country": "Singapore",
+      "postedAt": "2026-09-21T10:52:24-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8191523",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Quito, Ecuador",
+      "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
     }
   ]
