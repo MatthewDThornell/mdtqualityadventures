@@ -1,6 +1,58 @@
 {
-  "fetchedAt": "2026-09-30T03:48:14.559Z",
+  "fetchedAt": "2026-09-30T11:51:41.890Z",
   "jobs": [
+    {
+      "id": "arbeitnow-security-qa-engineer-garching-322167",
+      "title": "Security & QA Engineer (m/w/d)",
+      "company": "ATIX AG",
+      "url": "https://www.arbeitnow.com/jobs/companies/atix-ag/security-qa-engineer-garching-322167",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Garching",
+      "country": "Other",
+      "postedAt": "2026-09-30T09:31:29.000Z"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-09-30T02:38:25-04:00"
+    },
+    {
+      "id": "jobicy-152081",
+      "title": "QA Engineer 区块链测试工程师",
+      "company": "Windranger Labs",
+      "url": "https://jobicy.com/jobs/152081-qa-engineer-%e5%8c%ba%e5%9d%97%e9%93%be%e6%b5%8b%e8%af%95%e5%b7%a5%e7%a8%8b%e5%b8%88",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "APAC",
+      "country": "Other",
+      "postedAt": "2026-09-30T04:10:08+00:00"
+    },
+    {
+      "id": "greenhouse-samsara-8139255",
+      "title": "Senior Manager, Quality Engineering",
+      "company": "Samsara",
+      "url": "https://www.samsara.com/company/careers/roles/8139255?gh_jid=8139255",
+      "source": "Samsara",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Remote - US",
+      "country": "United States",
+      "postedAt": "2026-09-30T00:07:53-04:00"
+    },
     {
       "id": "greenhouse-airbnb-8154749",
       "title": "Early Career Software Engineer, Quality Engineering",
@@ -39,32 +91,6 @@
       "location": "Brazil - Remote",
       "country": "Brazil",
       "postedAt": "2026-09-29T20:00:54-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8070025",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8070025?gh_jid=8070025",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-29T16:09:38-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-29T16:09:38-04:00"
     },
     {
       "id": "arbeitnow-production-test-engineer-de-berlin-275770",
@@ -117,19 +143,6 @@
       "location": "Köln",
       "country": "Germany",
       "postedAt": "2026-09-29T11:09:48.000Z"
-    },
-    {
-      "id": "arbeitnow-qa-engineer-map-fixture-berlin-476390",
-      "title": "QA Engineer (map fixture)",
-      "company": "Dataset Labs Recruiting",
-      "url": "https://www.arbeitnow.com/jobs/companies/dataset-labs-recruiting/qa-engineer-map-fixture-berlin-476390",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-09-29T06:00:33.000Z"
     },
     {
       "id": "greenhouse-verkada-5237420007",
@@ -197,19 +210,6 @@
       "postedAt": "2026-09-28T11:38:53-04:00"
     },
     {
-      "id": "jobicy-151950",
-      "title": "QA Engineer",
-      "company": "Workwize",
-      "url": "https://jobicy.com/jobs/151950-qa-engineer-4",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Europe",
-      "country": "Other",
-      "postedAt": "2026-09-28T05:20:27+00:00"
-    },
-    {
       "id": "arbeitnow-sr-manager-quality-assurance-zug-142731",
       "title": "Sr. Manager, Quality Assurance",
       "company": "Acadia Job Listings",
@@ -275,19 +275,6 @@
       "postedAt": "2026-09-26T11:40:12.000Z"
     },
     {
-      "id": "arbeitnow-ait-test-engineer-munich-436275",
-      "title": "AIT Test Engineer",
-      "company": "The Exploration Company",
-      "url": "https://www.arbeitnow.com/jobs/companies/the-exploration-company/ait-test-engineer-munich-436275",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich, Germany",
-      "country": "Germany",
-      "postedAt": "2026-09-26T11:40:04.000Z"
-    },
-    {
       "id": "arbeitnow-test-engineer-206435",
       "title": "Test Engineer (f/m/d)",
       "company": "Think Cell",
@@ -325,19 +312,6 @@
       "location": "Taipei,Taiwan",
       "country": "Taiwan",
       "postedAt": "2026-09-25T16:44:57-04:00"
-    },
-    {
-      "id": "greenhouse-samsara-8139255",
-      "title": "Senior Manager, Quality Engineering",
-      "company": "Samsara",
-      "url": "https://www.samsara.com/company/careers/roles/8139255?gh_jid=8139255",
-      "source": "Samsara",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Remote - CA",
-      "country": "United States",
-      "postedAt": "2026-09-25T16:07:56-04:00"
     },
     {
       "id": "greenhouse-okta-8212003",
@@ -457,19 +431,6 @@
       "postedAt": "2026-09-21T14:07:37-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-8191523",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Quito, Ecuador",
-      "country": "Other",
-      "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-7964148",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -479,6 +440,19 @@
       "direct": true,
       "workType": "On-site",
       "location": "Lima, Peru",
+      "country": "Other",
+      "postedAt": "2026-09-21T10:52:24-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8191523",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Quito, Ecuador",
       "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
