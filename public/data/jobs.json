@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-01T12:21:31.279Z",
+  "fetchedAt": "2026-10-01T22:17:39.582Z",
   "jobs": [
     {
       "id": "greenhouse-roblox-8069987",
@@ -12,7 +12,20 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-10-01T02:38:35-04:00"
+      "postedAt": "2026-10-01T14:38:50-04:00"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-manager-manchester-264893",
+      "title": "Quality Assurance Manager",
+      "company": "PHMG Careers",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/phmg-careers/quality-assurance-manager-manchester-264893",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Manchester, England, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-01T14:45:30.000Z"
     },
     {
       "id": "arbeitnow-quality-assurance-specialist-hochheim-am-main-germany-452742",
