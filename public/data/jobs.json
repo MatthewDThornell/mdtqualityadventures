@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-01T03:55:29.240Z",
+  "fetchedAt": "2026-10-01T12:21:31.279Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-01T02:38:35-04:00"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-specialist-hochheim-am-main-germany-452742",
+      "title": "Quality Assurance Specialist",
+      "company": "Ircagroup",
+      "url": "https://www.arbeitnow.com/jobs/companies/ircagroup/quality-assurance-specialist-hochheim-am-main-germany-452742",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Hochheim am Main, Germany",
+      "country": "Germany",
+      "postedAt": "2026-10-01T05:24:46.000Z"
+    },
     {
       "id": "arbeitnow-remote-qa-engineer-ultimate-team-225173",
       "title": "QA Engineer (Ultimate team)",
@@ -67,19 +93,6 @@
       "postedAt": "2026-09-30T18:41:25-04:00"
     },
     {
-      "id": "arbeitnow-senior-lead-qa-specialist-anywhere-in-uk-393557",
-      "title": "Senior/Lead QA Specialist",
-      "company": "TransPerfect",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/transperfect/senior-lead-qa-specialist-anywhere-in-uk-393557",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Anywhere in UK, Greater London, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-09-30T21:30:34.000Z"
-    },
-    {
       "id": "ashby-cerebras-5ddcef34-82e8-4e20-9938-47aa49e6418d",
       "title": "AI and Automation Engineer - Business Systems",
       "company": "Cerebras",
@@ -91,19 +104,6 @@
       "location": "Sunnyvale, CA",
       "country": "United States",
       "postedAt": "2026-09-30T19:32:56.410+00:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-09-30T14:39:10-04:00"
     },
     {
       "id": "arbeitnow-unpaid-mandatory-internship-software-test-qa-automation-engineer-berlin-320686",
@@ -325,19 +325,6 @@
       "location": "",
       "country": "Remote / Unspecified",
       "postedAt": "2026-09-28T02:55:13.000Z"
-    },
-    {
-      "id": "arbeitnow-systems-integration-qa-engineer-all-genders-munich-317938",
-      "title": "Systems Integration & QA Engineer (All genders)",
-      "company": "Stark",
-      "url": "https://www.arbeitnow.com/jobs/companies/stark/systems-integration-qa-engineer-all-genders-munich-317938",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich",
-      "country": "Germany",
-      "postedAt": "2026-09-27T11:09:58.000Z"
     },
     {
       "id": "lever-shieldai-cc36d8ce-4afc-4d86-a4ad-8d5612b184d4",
