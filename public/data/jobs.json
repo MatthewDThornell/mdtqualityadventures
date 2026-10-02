@@ -1,6 +1,71 @@
 {
-  "fetchedAt": "2026-10-02T17:22:36.115Z",
+  "fetchedAt": "2026-10-02T21:46:46.652Z",
   "jobs": [
+    {
+      "id": "arbeitnow-vp-quality-assurance-paris-315772",
+      "title": "VP, Quality Assurance",
+      "company": "Allucent",
+      "url": "https://www.arbeitnow.fr/jobs/companies/allucent/vp-quality-assurance-paris-315772",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Paris, France",
+      "country": "France",
+      "postedAt": "2026-10-02T19:20:05.000Z"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-02T14:39:36-04:00"
+    },
+    {
+      "id": "arbeitnow-intern-software-test-automation-munich-bavaria-68883",
+      "title": "Intern (m/f/d) Software Test Automation",
+      "company": "Agilerobotsse",
+      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/intern-software-test-automation-munich-bavaria-68883",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich, Bavaria",
+      "country": "Germany",
+      "postedAt": "2026-10-02T17:55:17.000Z"
+    },
+    {
+      "id": "arbeitnow-propulsion-test-engineer-bordeaux-487588",
+      "title": "Propulsion Test Engineer",
+      "company": "The Exploration Company",
+      "url": "https://www.arbeitnow.fr/jobs/companies/the-exploration-company/propulsion-test-engineer-bordeaux-487588",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Bordeaux, France",
+      "country": "France",
+      "postedAt": "2026-10-02T16:40:04.000Z"
+    },
+    {
+      "id": "jobicy-154427",
+      "title": "Contact Center/CX Quality Assurance Lead (Houston)",
+      "company": "Clover Health",
+      "url": "https://jobicy.com/jobs/154427-contact-center-cx-quality-assurance-lead-houston",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "USA",
+      "country": "United States",
+      "postedAt": "2026-10-02T15:24:05+00:00"
+    },
     {
       "id": "greenhouse-pinterest-8011568",
       "title": "SDET II, tvScientific",
@@ -52,45 +117,6 @@
       "location": "London",
       "country": "United Kingdom",
       "postedAt": "2026-10-02T09:55:14.000Z"
-    },
-    {
-      "id": "arbeitnow-design-quality-engineer-london-490232",
-      "title": "Design Quality Engineer",
-      "company": "Heidi",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/heidi/design-quality-engineer-london-490232",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-02T06:40:08.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-02T02:38:57-04:00"
-    },
-    {
-      "id": "arbeitnow-senior-fsqa-manager-phf-all-genders-london-365617",
-      "title": "Senior FSQA Manager - PHF (all genders)",
-      "company": "hellofresh",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/hellofresh/senior-fsqa-manager-phf-all-genders-london-365617",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-02T03:55:09.000Z"
     },
     {
       "id": "jobicy-152334",
@@ -184,6 +210,58 @@
       "postedAt": "2026-10-01T05:24:46.000Z"
     },
     {
+      "id": "arbeitnow-remote-qa-engineer-ultimate-team-225173",
+      "title": "QA Engineer (Ultimate team)",
+      "company": "jetbrains",
+      "url": "https://www.arbeitnow.com/jobs/companies/jetbrains/remote-qa-engineer-ultimate-team-225173",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Berlin; Munich; Remote",
+      "country": "Germany",
+      "postedAt": "2026-09-30T23:55:06.000Z"
+    },
+    {
+      "id": "arbeitnow-qa-engineer-ij-platform-remote-development-berlin-munich-286131",
+      "title": "QA Engineer (IJ Platform / Remote Development)",
+      "company": "jetbrains",
+      "url": "https://www.arbeitnow.com/jobs/companies/jetbrains/qa-engineer-ij-platform-remote-development-berlin-munich-286131",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Berlin; Munich",
+      "country": "Germany",
+      "postedAt": "2026-09-30T23:55:06.000Z"
+    },
+    {
+      "id": "arbeitnow-remote-qa-engineer-ij-kotlin-plugin-187317",
+      "title": "QA Engineer (IJ Kotlin Plugin)",
+      "company": "jetbrains",
+      "url": "https://www.arbeitnow.com/jobs/companies/jetbrains/remote-qa-engineer-ij-kotlin-plugin-187317",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Berlin; Munich; Remote",
+      "country": "Germany",
+      "postedAt": "2026-09-30T23:55:06.000Z"
+    },
+    {
+      "id": "arbeitnow-qa-automation-engineer-ij-platform-core-team-berlin-munich-275658",
+      "title": "QA Automation Engineer (IJ Platform / Core team)",
+      "company": "jetbrains",
+      "url": "https://www.arbeitnow.com/jobs/companies/jetbrains/qa-automation-engineer-ij-platform-core-team-berlin-munich-275658",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Berlin; Munich",
+      "country": "Germany",
+      "postedAt": "2026-09-30T23:55:06.000Z"
+    },
+    {
       "id": "greenhouse-airbnb-8154749",
       "title": "Early Career Software Engineer, Quality Engineering",
       "company": "Airbnb",
@@ -275,43 +353,17 @@
       "postedAt": "2026-09-29T20:00:54-04:00"
     },
     {
-      "id": "arbeitnow-propulsion-test-engineer-germany-114592",
-      "title": "Propulsion Test Engineer",
-      "company": "Momentumaerospace",
-      "url": "https://www.arbeitnow.com/jobs/companies/momentumaerospace/propulsion-test-engineer-germany-114592",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Germany",
-      "country": "Germany",
-      "postedAt": "2026-09-29T11:40:02.000Z"
-    },
-    {
-      "id": "arbeitnow-werkstudent-quality-assurance-medizinalcannabis-koln-69832",
-      "title": "Werkstudent Quality Assurance (m/w/d) - Medizinalcannabis",
-      "company": "Semdor Pharma Group GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/werkstudent-quality-assurance-medizinalcannabis-koln-69832",
+      "id": "arbeitnow-production-test-engineer-de-berlin-275770",
+      "title": "Production Test Engineer (m/f/d)",
+      "company": "Swissbit",
+      "url": "https://www.arbeitnow.com/jobs/companies/swissbit/production-test-engineer-de-berlin-275770",
       "source": "Arbeitnow",
       "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
       "workType": "On-site",
-      "location": "Köln",
+      "location": "DE-Berlin",
       "country": "Germany",
-      "postedAt": "2026-09-29T11:09:48.000Z"
-    },
-    {
-      "id": "arbeitnow-head-of-quality-assurance-koln-393437",
-      "title": "Head of Quality Assurance (m/w/d)",
-      "company": "Semdor Pharma Group GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/head-of-quality-assurance-koln-393437",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Köln",
-      "country": "Germany",
-      "postedAt": "2026-09-29T11:09:48.000Z"
+      "postedAt": "2026-09-29T14:09:37.000Z"
     },
     {
       "id": "greenhouse-verkada-5237420007",
@@ -338,19 +390,6 @@
       "location": "San Mateo, CA United States",
       "country": "United States",
       "postedAt": "2026-09-28T18:36:46-04:00"
-    },
-    {
-      "id": "arbeitnow-key-account-manager-quality-assurance-312366",
-      "title": "Key Account Manager- Quality Assurance",
-      "company": "Xebiadach",
-      "url": "https://www.arbeitnow.ch/jobs/companies/xebiadach/key-account-manager-quality-assurance-312366",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-09-28T02:55:13.000Z"
     },
     {
       "id": "lever-shieldai-cc36d8ce-4afc-4d86-a4ad-8d5612b184d4",
