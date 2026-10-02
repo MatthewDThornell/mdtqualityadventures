@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-02T11:49:08.312Z",
+  "fetchedAt": "2026-10-02T17:22:36.115Z",
   "jobs": [
+    {
+      "id": "greenhouse-pinterest-8011568",
+      "title": "SDET II, tvScientific",
+      "company": "Pinterest",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8011568",
+      "source": "Pinterest",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "San Francisco, CA, US; Remote, US",
+      "country": "United States",
+      "postedAt": "2026-10-02T10:25:30-04:00"
+    },
+    {
+      "id": "arbeitnow-vp-quality-assurance-munich-306110",
+      "title": "VP, Quality Assurance",
+      "company": "Allucent",
+      "url": "https://www.arbeitnow.com/jobs/companies/allucent/vp-quality-assurance-munich-306110",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich, Germany",
+      "country": "Germany",
+      "postedAt": "2026-10-02T14:20:06.000Z"
+    },
     {
       "id": "arbeitnow-test-engineer-ground-london-18677",
       "title": "Test Engineer - Ground",
@@ -145,56 +171,17 @@
       "postedAt": "2026-10-02T02:09:12.000Z"
     },
     {
-      "id": "arbeitnow-remote-qa-engineer-ultimate-team-225173",
-      "title": "QA Engineer (Ultimate team)",
-      "company": "jetbrains",
-      "url": "https://www.arbeitnow.com/jobs/companies/jetbrains/remote-qa-engineer-ultimate-team-225173",
+      "id": "arbeitnow-quality-assurance-specialist-hochheim-am-main-germany-452742",
+      "title": "Quality Assurance Specialist",
+      "company": "Ircagroup",
+      "url": "https://www.arbeitnow.com/jobs/companies/ircagroup/quality-assurance-specialist-hochheim-am-main-germany-452742",
       "source": "Arbeitnow",
       "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
-      "workType": "Remote",
-      "location": "Berlin; Munich; Remote",
+      "workType": "On-site",
+      "location": "Hochheim am Main, Germany",
       "country": "Germany",
-      "postedAt": "2026-09-30T23:55:06.000Z"
-    },
-    {
-      "id": "arbeitnow-qa-engineer-ij-platform-remote-development-berlin-munich-286131",
-      "title": "QA Engineer (IJ Platform / Remote Development)",
-      "company": "jetbrains",
-      "url": "https://www.arbeitnow.com/jobs/companies/jetbrains/qa-engineer-ij-platform-remote-development-berlin-munich-286131",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin; Munich",
-      "country": "Germany",
-      "postedAt": "2026-09-30T23:55:06.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-qa-engineer-ij-kotlin-plugin-187317",
-      "title": "QA Engineer (IJ Kotlin Plugin)",
-      "company": "jetbrains",
-      "url": "https://www.arbeitnow.com/jobs/companies/jetbrains/remote-qa-engineer-ij-kotlin-plugin-187317",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin; Munich; Remote",
-      "country": "Germany",
-      "postedAt": "2026-09-30T23:55:06.000Z"
-    },
-    {
-      "id": "arbeitnow-qa-automation-engineer-ij-platform-core-team-berlin-munich-275658",
-      "title": "QA Automation Engineer (IJ Platform / Core team)",
-      "company": "jetbrains",
-      "url": "https://www.arbeitnow.com/jobs/companies/jetbrains/qa-automation-engineer-ij-platform-core-team-berlin-munich-275658",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin; Munich",
-      "country": "Germany",
-      "postedAt": "2026-09-30T23:55:06.000Z"
+      "postedAt": "2026-10-01T05:24:46.000Z"
     },
     {
       "id": "greenhouse-airbnb-8154749",
@@ -288,19 +275,6 @@
       "postedAt": "2026-09-29T20:00:54-04:00"
     },
     {
-      "id": "arbeitnow-production-test-engineer-de-berlin-275770",
-      "title": "Production Test Engineer (m/f/d)",
-      "company": "Swissbit",
-      "url": "https://www.arbeitnow.com/jobs/companies/swissbit/production-test-engineer-de-berlin-275770",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "DE-Berlin",
-      "country": "Germany",
-      "postedAt": "2026-09-29T14:09:37.000Z"
-    },
-    {
       "id": "arbeitnow-propulsion-test-engineer-germany-114592",
       "title": "Propulsion Test Engineer",
       "company": "Momentumaerospace",
@@ -364,19 +338,6 @@
       "location": "San Mateo, CA United States",
       "country": "United States",
       "postedAt": "2026-09-28T18:36:46-04:00"
-    },
-    {
-      "id": "greenhouse-pinterest-8011568",
-      "title": "SDET II, tvScientific",
-      "company": "Pinterest",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8011568",
-      "source": "Pinterest",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "San Francisco, CA, US; Remote, US",
-      "country": "United States",
-      "postedAt": "2026-09-28T11:38:53-04:00"
     },
     {
       "id": "arbeitnow-key-account-manager-quality-assurance-312366",
