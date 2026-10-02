@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-10-01T22:17:39.582Z",
+  "fetchedAt": "2026-10-02T03:52:42.531Z",
   "jobs": [
+    {
+      "id": "arbeitnow-systems-integration-qa-engineer-all-genders-munich-442670",
+      "title": "Systems Integration & QA Engineer (All genders)",
+      "company": "Stark",
+      "url": "https://www.arbeitnow.com/jobs/companies/stark/systems-integration-qa-engineer-all-genders-munich-442670",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich",
+      "country": "Germany",
+      "postedAt": "2026-10-02T02:09:12.000Z"
+    },
     {
       "id": "greenhouse-roblox-8069987",
       "title": "Quality Analyst",
@@ -312,19 +325,6 @@
       "location": "San Francisco, CA, US; Remote, US",
       "country": "United States",
       "postedAt": "2026-09-28T11:38:53-04:00"
-    },
-    {
-      "id": "arbeitnow-sr-manager-quality-assurance-zug-142731",
-      "title": "Sr. Manager, Quality Assurance",
-      "company": "Acadia Job Listings",
-      "url": "https://www.arbeitnow.ch/jobs/companies/acadia-job-listings/sr-manager-quality-assurance-zug-142731",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Zug",
-      "country": "Other",
-      "postedAt": "2026-09-28T02:55:18.000Z"
     },
     {
       "id": "arbeitnow-key-account-manager-quality-assurance-312366",
