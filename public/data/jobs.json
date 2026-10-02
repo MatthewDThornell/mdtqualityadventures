@@ -1,18 +1,44 @@
 {
-  "fetchedAt": "2026-10-02T03:52:42.531Z",
+  "fetchedAt": "2026-10-02T11:49:08.312Z",
   "jobs": [
     {
-      "id": "arbeitnow-systems-integration-qa-engineer-all-genders-munich-442670",
-      "title": "Systems Integration & QA Engineer (All genders)",
-      "company": "Stark",
-      "url": "https://www.arbeitnow.com/jobs/companies/stark/systems-integration-qa-engineer-all-genders-munich-442670",
+      "id": "arbeitnow-test-engineer-ground-london-18677",
+      "title": "Test Engineer - Ground",
+      "company": "helsing",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/helsing/test-engineer-ground-london-18677",
       "source": "Arbeitnow",
       "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
-      "workType": "On-site",
-      "location": "Munich",
-      "country": "Germany",
-      "postedAt": "2026-10-02T02:09:12.000Z"
+      "workType": "Remote",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-02T09:55:14.000Z"
+    },
+    {
+      "id": "arbeitnow-test-engineer-environment-london-442847",
+      "title": "Test Engineer - Environment",
+      "company": "helsing",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/helsing/test-engineer-environment-london-442847",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-02T09:55:14.000Z"
+    },
+    {
+      "id": "arbeitnow-design-quality-engineer-london-490232",
+      "title": "Design Quality Engineer",
+      "company": "Heidi",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/heidi/design-quality-engineer-london-490232",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-02T06:40:08.000Z"
     },
     {
       "id": "greenhouse-roblox-8069987",
@@ -25,33 +51,98 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-10-01T14:38:50-04:00"
+      "postedAt": "2026-10-02T02:38:57-04:00"
     },
     {
-      "id": "arbeitnow-quality-assurance-manager-manchester-264893",
-      "title": "Quality Assurance Manager",
-      "company": "PHMG Careers",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/phmg-careers/quality-assurance-manager-manchester-264893",
+      "id": "arbeitnow-senior-fsqa-manager-phf-all-genders-london-365617",
+      "title": "Senior FSQA Manager - PHF (all genders)",
+      "company": "hellofresh",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/hellofresh/senior-fsqa-manager-phf-all-genders-london-365617",
       "source": "Arbeitnow",
       "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
-      "workType": "On-site",
-      "location": "Manchester, England, United Kingdom",
+      "workType": "Hybrid",
+      "location": "London",
       "country": "United Kingdom",
-      "postedAt": "2026-10-01T14:45:30.000Z"
+      "postedAt": "2026-10-02T03:55:09.000Z"
     },
     {
-      "id": "arbeitnow-quality-assurance-specialist-hochheim-am-main-germany-452742",
-      "title": "Quality Assurance Specialist",
-      "company": "Ircagroup",
-      "url": "https://www.arbeitnow.com/jobs/companies/ircagroup/quality-assurance-specialist-hochheim-am-main-germany-452742",
+      "id": "jobicy-152334",
+      "title": "Senior QA Automation Developer (Platform)",
+      "company": "Upgrade",
+      "url": "https://jobicy.com/jobs/152334-senior-qa-automation-developer-platform",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Canada",
+      "country": "Canada",
+      "postedAt": "2026-10-02T03:40:18+00:00"
+    },
+    {
+      "id": "jobicy-152333",
+      "title": "QA Analyst (Future Roles)",
+      "company": "Testlio",
+      "url": "https://jobicy.com/jobs/152333-qa-analyst-future-roles",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Argentina,  Brazil,  Canada,  Czechia,  Estonia,  Ireland,  Mexico,  Poland,  Portugal,  Romania,  Spain,  UK,  Ukraine,  USA",
+      "country": "United States",
+      "postedAt": "2026-10-02T03:40:17+00:00"
+    },
+    {
+      "id": "jobicy-152330",
+      "title": "Quality Engineer",
+      "company": "StackAdapt",
+      "url": "https://jobicy.com/jobs/152330-quality-engineer-2",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Canada",
+      "country": "Canada",
+      "postedAt": "2026-10-02T03:40:14+00:00"
+    },
+    {
+      "id": "jobicy-152325",
+      "title": "Senior QA Engineer",
+      "company": "Caylent",
+      "url": "https://jobicy.com/jobs/152325-senior-qa-engineer-2",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "USA",
+      "country": "United States",
+      "postedAt": "2026-10-02T03:40:12+00:00"
+    },
+    {
+      "id": "jobicy-152332",
+      "title": "Email Automation & QA Specialist",
+      "company": "Imprint",
+      "url": "https://jobicy.com/jobs/152332-email-automation-qa-specialist",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "USA",
+      "country": "United States",
+      "postedAt": "2026-10-02T03:40:05+00:00"
+    },
+    {
+      "id": "arbeitnow-systems-integration-qa-engineer-all-genders-munich-442670",
+      "title": "Systems Integration & QA Engineer (All genders)",
+      "company": "Stark",
+      "url": "https://www.arbeitnow.com/jobs/companies/stark/systems-integration-qa-engineer-all-genders-munich-442670",
       "source": "Arbeitnow",
       "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
       "workType": "On-site",
-      "location": "Hochheim am Main, Germany",
+      "location": "Munich",
       "country": "Germany",
-      "postedAt": "2026-10-01T05:24:46.000Z"
+      "postedAt": "2026-10-02T02:09:12.000Z"
     },
     {
       "id": "arbeitnow-remote-qa-engineer-ultimate-team-225173",
@@ -158,19 +249,6 @@
       "postedAt": "2026-09-30T09:31:29.000Z"
     },
     {
-      "id": "jobicy-152081",
-      "title": "QA Engineer 区块链测试工程师",
-      "company": "Windranger Labs",
-      "url": "https://jobicy.com/jobs/152081-qa-engineer-%e5%8c%ba%e5%9d%97%e9%93%be%e6%b5%8b%e8%af%95%e5%b7%a5%e7%a8%8b%e5%b8%88",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "APAC",
-      "country": "Other",
-      "postedAt": "2026-09-30T04:10:08+00:00"
-    },
-    {
       "id": "greenhouse-samsara-8139255",
       "title": "Senior Manager, Quality Engineering",
       "company": "Samsara",
@@ -262,19 +340,6 @@
       "postedAt": "2026-09-29T11:09:48.000Z"
     },
     {
-      "id": "arbeitnow-qa-engineer-map-fixture-berlin-476390",
-      "title": "QA Engineer (map fixture)",
-      "company": "Dataset Labs Recruiting",
-      "url": "https://www.arbeitnow.com/jobs/companies/dataset-labs-recruiting/qa-engineer-map-fixture-berlin-476390",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-09-29T06:00:33.000Z"
-    },
-    {
       "id": "greenhouse-verkada-5237420007",
       "title": "QA Automation Engineer",
       "company": "Verkada",
@@ -299,19 +364,6 @@
       "location": "San Mateo, CA United States",
       "country": "United States",
       "postedAt": "2026-09-28T18:36:46-04:00"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-engineer-software-all-genders-munich-office-156717",
-      "title": "Quality Assurance Engineer (Software) (all genders)",
-      "company": "Proglove",
-      "url": "https://www.arbeitnow.com/jobs/companies/proglove/quality-assurance-engineer-software-all-genders-munich-office-156717",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich Office",
-      "country": "Germany",
-      "postedAt": "2026-09-28T20:09:53.000Z"
     },
     {
       "id": "greenhouse-pinterest-8011568",
