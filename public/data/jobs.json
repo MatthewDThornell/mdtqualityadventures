@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-10-03T03:37:17.323Z",
+  "fetchedAt": "2026-10-03T11:02:31.221Z",
   "jobs": [
+    {
+      "id": "arbeitnow-production-test-engineer-gilching-120244",
+      "title": "Production Test Engineer (m/f/d)",
+      "company": "Quantum-Systems GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/quantum-systems-gmbh/production-test-engineer-gilching-120244",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Gilching, Bayern, Germany",
+      "country": "Germany",
+      "postedAt": "2026-10-03T05:30:11.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-engineer-software-all-genders-munich-office-479329",
+      "title": "Quality Assurance Engineer (Software) (all genders)",
+      "company": "Proglove",
+      "url": "https://www.arbeitnow.com/jobs/companies/proglove/quality-assurance-engineer-software-all-genders-munich-office-479329",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich Office",
+      "country": "Germany",
+      "postedAt": "2026-10-03T05:09:50.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-engineer-london-223131",
+      "title": "Quality Engineer",
+      "company": "Artificial Labs",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/artificial-labs/quality-engineer-london-223131",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-03T03:40:09.000Z"
+    },
     {
       "id": "arbeitnow-electric-propulsion-test-engineer-reading-119954",
       "title": "Electric Propulsion Test Engineer",
@@ -26,19 +65,6 @@
       "location": "Berlin, Berlin",
       "country": "Germany",
       "postedAt": "2026-10-02T23:55:10.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-qa-engineer-dundee-86737",
-      "title": "Senior QA Engineer",
-      "company": "Waracle",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/waracle/senior-qa-engineer-dundee-86737",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Dundee, Scotland, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-02T21:30:30.000Z"
     },
     {
       "id": "arbeitnow-vp-quality-assurance-paris-315772",
