@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-10-02T21:46:46.652Z",
+  "fetchedAt": "2026-10-03T03:37:17.323Z",
   "jobs": [
+    {
+      "id": "arbeitnow-electric-propulsion-test-engineer-reading-119954",
+      "title": "Electric Propulsion Test Engineer",
+      "company": "Neworbit",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/neworbit/electric-propulsion-test-engineer-reading-119954",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Reading, UK",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-03T00:40:05.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-fsqa-manager-phf-all-genders-berlin-berlin-328691",
+      "title": "Senior FSQA Manager - PHF (all genders)",
+      "company": "hellofresh",
+      "url": "https://www.arbeitnow.com/jobs/companies/hellofresh/senior-fsqa-manager-phf-all-genders-berlin-berlin-328691",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Berlin, Berlin",
+      "country": "Germany",
+      "postedAt": "2026-10-02T23:55:10.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-qa-engineer-dundee-86737",
+      "title": "Senior QA Engineer",
+      "company": "Waracle",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/waracle/senior-qa-engineer-dundee-86737",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Dundee, Scotland, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-02T21:30:30.000Z"
+    },
     {
       "id": "arbeitnow-vp-quality-assurance-paris-315772",
       "title": "VP, Quality Assurance",
@@ -91,32 +130,6 @@
       "location": "Munich, Germany",
       "country": "Germany",
       "postedAt": "2026-10-02T14:20:06.000Z"
-    },
-    {
-      "id": "arbeitnow-test-engineer-ground-london-18677",
-      "title": "Test Engineer - Ground",
-      "company": "helsing",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/helsing/test-engineer-ground-london-18677",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-02T09:55:14.000Z"
-    },
-    {
-      "id": "arbeitnow-test-engineer-environment-london-442847",
-      "title": "Test Engineer - Environment",
-      "company": "helsing",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/helsing/test-engineer-environment-london-442847",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-02T09:55:14.000Z"
     },
     {
       "id": "jobicy-152334",
@@ -351,19 +364,6 @@
       "location": "Brazil - Remote",
       "country": "Brazil",
       "postedAt": "2026-09-29T20:00:54-04:00"
-    },
-    {
-      "id": "arbeitnow-production-test-engineer-de-berlin-275770",
-      "title": "Production Test Engineer (m/f/d)",
-      "company": "Swissbit",
-      "url": "https://www.arbeitnow.com/jobs/companies/swissbit/production-test-engineer-de-berlin-275770",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "DE-Berlin",
-      "country": "Germany",
-      "postedAt": "2026-09-29T14:09:37.000Z"
     },
     {
       "id": "greenhouse-verkada-5237420007",
