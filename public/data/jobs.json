@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-03T15:38:58.670Z",
+  "fetchedAt": "2026-10-03T20:33:17.729Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-03T14:38:20-04:00"
+    },
+    {
+      "id": "arbeitnow-environmental-test-engineer-munchen-356940",
+      "title": "Environmental Test Engineer",
+      "company": "Mynaric",
+      "url": "https://www.arbeitnow.com/jobs/companies/mynaric/environmental-test-engineer-munchen-356940",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "München",
+      "country": "Germany",
+      "postedAt": "2026-10-03T17:09:54.000Z"
+    },
     {
       "id": "arbeitnow-production-test-engineer-gilching-120244",
       "title": "Production Test Engineer (m/f/d)",
@@ -41,19 +67,6 @@
       "postedAt": "2026-10-03T03:40:09.000Z"
     },
     {
-      "id": "arbeitnow-electric-propulsion-test-engineer-reading-119954",
-      "title": "Electric Propulsion Test Engineer",
-      "company": "Neworbit",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/neworbit/electric-propulsion-test-engineer-reading-119954",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Reading, UK",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-03T00:40:05.000Z"
-    },
-    {
       "id": "arbeitnow-senior-fsqa-manager-phf-all-genders-berlin-berlin-328691",
       "title": "Senior FSQA Manager - PHF (all genders)",
       "company": "hellofresh",
@@ -78,19 +91,6 @@
       "location": "Paris, France",
       "country": "France",
       "postedAt": "2026-10-02T19:20:05.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-02T14:39:36-04:00"
     },
     {
       "id": "arbeitnow-intern-software-test-automation-munich-bavaria-68883",
@@ -338,19 +338,6 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-09-30T15:31:10.000Z"
-    },
-    {
-      "id": "arbeitnow-security-qa-engineer-garching-322167",
-      "title": "Security & QA Engineer (m/w/d)",
-      "company": "ATIX AG",
-      "url": "https://www.arbeitnow.com/jobs/companies/atix-ag/security-qa-engineer-garching-322167",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Garching",
-      "country": "Other",
-      "postedAt": "2026-09-30T09:31:29.000Z"
     },
     {
       "id": "greenhouse-samsara-8139255",
