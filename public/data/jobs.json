@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-04T16:22:37.356Z",
+  "fetchedAt": "2026-10-04T20:49:34.354Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-04T14:38:16-04:00"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-rater-german-germany-berlin-112725",
+      "title": "Quality Assurance Rater - German (Germany)",
+      "company": "TELUS Digital",
+      "url": "https://www.arbeitnow.com/jobs/companies/telus-digital/quality-assurance-rater-german-germany-berlin-112725",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-10-04T16:00:27.000Z"
+    },
     {
       "id": "arbeitnow-quality-assurance-coordinator-product-integrity-12-month-fct-solihull-133846",
       "title": "Quality Assurance Coordinator - Product Integrity - 12 Month FCT",
@@ -26,19 +52,6 @@
       "location": "Remote job",
       "country": "Other",
       "postedAt": "2026-10-04T08:30:08.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-04T02:38:38-04:00"
     },
     {
       "id": "jobicy-152401",
