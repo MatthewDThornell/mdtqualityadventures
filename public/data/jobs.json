@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-10-03T20:33:17.729Z",
+  "fetchedAt": "2026-10-04T04:06:54.360Z",
   "jobs": [
+    {
+      "id": "arbeitnow-production-test-engineer-de-berlin-40043",
+      "title": "Production Test Engineer (m/f/d)",
+      "company": "Swissbit",
+      "url": "https://www.arbeitnow.com/jobs/companies/swissbit/production-test-engineer-de-berlin-40043",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "DE-Berlin",
+      "country": "Germany",
+      "postedAt": "2026-10-03T20:09:53.000Z"
+    },
+    {
+      "id": "arbeitnow-werkstudent-quality-assurance-medizinalcannabis-koln-467137",
+      "title": "Werkstudent Quality Assurance (m/w/d) - Medizinalcannabis",
+      "company": "Semdor Pharma Group GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/werkstudent-quality-assurance-medizinalcannabis-koln-467137",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Köln",
+      "country": "Germany",
+      "postedAt": "2026-10-03T20:09:14.000Z"
+    },
+    {
+      "id": "arbeitnow-head-of-quality-assurance-koln-389931",
+      "title": "Head of Quality Assurance (m/w/d)",
+      "company": "Semdor Pharma Group GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/head-of-quality-assurance-koln-389931",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Köln",
+      "country": "Germany",
+      "postedAt": "2026-10-03T20:09:14.000Z"
+    },
     {
       "id": "greenhouse-roblox-8069987",
       "title": "Quality Analyst",
@@ -327,19 +366,6 @@
       "postedAt": "2026-09-30T19:32:56.410+00:00"
     },
     {
-      "id": "arbeitnow-unpaid-mandatory-internship-software-test-qa-automation-engineer-berlin-320686",
-      "title": "(Unpaid) Mandatory Internship : Software Test (QA) Automation Engineer",
-      "company": "IndieKidz GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/indiekidz-gmbh/unpaid-mandatory-internship-software-test-qa-automation-engineer-berlin-320686",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-09-30T15:31:10.000Z"
-    },
-    {
       "id": "greenhouse-samsara-8139255",
       "title": "Senior Manager, Quality Engineering",
       "company": "Samsara",
@@ -561,19 +587,6 @@
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-8191523",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Quito, Ecuador",
-      "country": "Other",
-      "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-8200468",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -584,6 +597,19 @@
       "workType": "Hybrid",
       "location": "Singapore, Singapore",
       "country": "Singapore",
+      "postedAt": "2026-09-21T10:52:24-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8191523",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Quito, Ecuador",
+      "country": "Other",
       "postedAt": "2026-09-21T10:52:24-04:00"
     }
   ]
