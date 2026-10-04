@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-10-04T11:43:55.895Z",
+  "fetchedAt": "2026-10-04T16:22:37.356Z",
   "jobs": [
+    {
+      "id": "arbeitnow-quality-assurance-coordinator-product-integrity-12-month-fct-solihull-133846",
+      "title": "Quality Assurance Coordinator - Product Integrity - 12 Month FCT",
+      "company": "Gymshark",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/gymshark/quality-assurance-coordinator-product-integrity-12-month-fct-solihull-133846",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Solihull",
+      "country": "Other",
+      "postedAt": "2026-10-04T12:55:05.000Z"
+    },
     {
       "id": "arbeitnow-remote-qa-engineer-mobile-berlin-166747",
       "title": "QA Engineer Mobile",
@@ -158,6 +171,19 @@
       "postedAt": "2026-10-03T05:30:11.000Z"
     },
     {
+      "id": "arbeitnow-quality-assurance-engineer-software-all-genders-munich-office-479329",
+      "title": "Quality Assurance Engineer (Software) (all genders)",
+      "company": "Proglove",
+      "url": "https://www.arbeitnow.com/jobs/companies/proglove/quality-assurance-engineer-software-all-genders-munich-office-479329",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich Office",
+      "country": "Germany",
+      "postedAt": "2026-10-03T05:09:50.000Z"
+    },
+    {
       "id": "arbeitnow-senior-fsqa-manager-phf-all-genders-berlin-berlin-328691",
       "title": "Senior FSQA Manager - PHF (all genders)",
       "company": "hellofresh",
@@ -260,58 +286,6 @@
       "location": "Hochheim am Main, Germany",
       "country": "Germany",
       "postedAt": "2026-10-01T05:24:46.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-qa-engineer-ultimate-team-225173",
-      "title": "QA Engineer (Ultimate team)",
-      "company": "jetbrains",
-      "url": "https://www.arbeitnow.com/jobs/companies/jetbrains/remote-qa-engineer-ultimate-team-225173",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin; Munich; Remote",
-      "country": "Germany",
-      "postedAt": "2026-09-30T23:55:06.000Z"
-    },
-    {
-      "id": "arbeitnow-qa-engineer-ij-platform-remote-development-berlin-munich-286131",
-      "title": "QA Engineer (IJ Platform / Remote Development)",
-      "company": "jetbrains",
-      "url": "https://www.arbeitnow.com/jobs/companies/jetbrains/qa-engineer-ij-platform-remote-development-berlin-munich-286131",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin; Munich",
-      "country": "Germany",
-      "postedAt": "2026-09-30T23:55:06.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-qa-engineer-ij-kotlin-plugin-187317",
-      "title": "QA Engineer (IJ Kotlin Plugin)",
-      "company": "jetbrains",
-      "url": "https://www.arbeitnow.com/jobs/companies/jetbrains/remote-qa-engineer-ij-kotlin-plugin-187317",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin; Munich; Remote",
-      "country": "Germany",
-      "postedAt": "2026-09-30T23:55:06.000Z"
-    },
-    {
-      "id": "arbeitnow-qa-automation-engineer-ij-platform-core-team-berlin-munich-275658",
-      "title": "QA Automation Engineer (IJ Platform / Core team)",
-      "company": "jetbrains",
-      "url": "https://www.arbeitnow.com/jobs/companies/jetbrains/qa-automation-engineer-ij-platform-core-team-berlin-munich-275658",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin; Munich",
-      "country": "Germany",
-      "postedAt": "2026-09-30T23:55:06.000Z"
     },
     {
       "id": "greenhouse-airbnb-8154749",
