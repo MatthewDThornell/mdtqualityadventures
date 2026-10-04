@@ -1,6 +1,97 @@
 {
-  "fetchedAt": "2026-10-04T04:06:54.360Z",
+  "fetchedAt": "2026-10-04T11:43:55.895Z",
   "jobs": [
+    {
+      "id": "arbeitnow-remote-qa-engineer-mobile-berlin-166747",
+      "title": "QA Engineer Mobile",
+      "company": "ScholarshipOwl",
+      "url": "https://www.arbeitnow.com/jobs/companies/scholarshipowl/remote-qa-engineer-mobile-berlin-166747",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Remote job",
+      "country": "Other",
+      "postedAt": "2026-10-04T08:30:08.000Z"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-04T02:38:38-04:00"
+    },
+    {
+      "id": "jobicy-152401",
+      "title": "QA Tester (Future Roles)",
+      "company": "Testlio",
+      "url": "https://jobicy.com/jobs/152401-qa-tester-future-roles",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Anywhere",
+      "country": "Other",
+      "postedAt": "2026-10-04T04:35:21+00:00"
+    },
+    {
+      "id": "jobicy-152402",
+      "title": "Staff Quality Engineer",
+      "company": "StackAdapt",
+      "url": "https://jobicy.com/jobs/152402-staff-quality-engineer",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Canada,  USA",
+      "country": "United States",
+      "postedAt": "2026-10-04T04:35:12+00:00"
+    },
+    {
+      "id": "jobicy-152404",
+      "title": "SDET II, tvScientific",
+      "company": "Pinterest",
+      "url": "https://jobicy.com/jobs/152404-sdet-ii-tvscientific",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "USA",
+      "country": "United States",
+      "postedAt": "2026-10-04T04:30:45+00:00"
+    },
+    {
+      "id": "jobicy-152407",
+      "title": "Senior QA Automation Engineer (Platform)",
+      "company": "Upgrade",
+      "url": "https://jobicy.com/jobs/152407-senior-qa-automation-engineer-platform",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "USA",
+      "country": "United States",
+      "postedAt": "2026-10-04T04:30:14+00:00"
+    },
+    {
+      "id": "jobicy-152406",
+      "title": "Senior Quality Assurance Engineer (Personify team)",
+      "company": "Bloomreach",
+      "url": "https://jobicy.com/jobs/152406-senior-quality-assurance-engineer-personify-team",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Czechia",
+      "country": "Other",
+      "postedAt": "2026-10-04T04:30:13+00:00"
+    },
     {
       "id": "arbeitnow-production-test-engineer-de-berlin-40043",
       "title": "Production Test Engineer (m/f/d)",
@@ -41,19 +132,6 @@
       "postedAt": "2026-10-03T20:09:14.000Z"
     },
     {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-03T14:38:20-04:00"
-    },
-    {
       "id": "arbeitnow-environmental-test-engineer-munchen-356940",
       "title": "Environmental Test Engineer",
       "company": "Mynaric",
@@ -78,32 +156,6 @@
       "location": "Gilching, Bayern, Germany",
       "country": "Germany",
       "postedAt": "2026-10-03T05:30:11.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-engineer-software-all-genders-munich-office-479329",
-      "title": "Quality Assurance Engineer (Software) (all genders)",
-      "company": "Proglove",
-      "url": "https://www.arbeitnow.com/jobs/companies/proglove/quality-assurance-engineer-software-all-genders-munich-office-479329",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich Office",
-      "country": "Germany",
-      "postedAt": "2026-10-03T05:09:50.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-engineer-london-223131",
-      "title": "Quality Engineer",
-      "company": "Artificial Labs",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/artificial-labs/quality-engineer-london-223131",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-03T03:40:09.000Z"
     },
     {
       "id": "arbeitnow-senior-fsqa-manager-phf-all-genders-berlin-berlin-328691",
@@ -158,19 +210,6 @@
       "postedAt": "2026-10-02T16:40:04.000Z"
     },
     {
-      "id": "jobicy-154427",
-      "title": "Contact Center/CX Quality Assurance Lead (Houston)",
-      "company": "Clover Health",
-      "url": "https://jobicy.com/jobs/154427-contact-center-cx-quality-assurance-lead-houston",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "USA",
-      "country": "United States",
-      "postedAt": "2026-10-02T15:24:05+00:00"
-    },
-    {
       "id": "greenhouse-pinterest-8011568",
       "title": "SDET II, tvScientific",
       "company": "Pinterest",
@@ -195,71 +234,6 @@
       "location": "Munich, Germany",
       "country": "Germany",
       "postedAt": "2026-10-02T14:20:06.000Z"
-    },
-    {
-      "id": "jobicy-152334",
-      "title": "Senior QA Automation Developer (Platform)",
-      "company": "Upgrade",
-      "url": "https://jobicy.com/jobs/152334-senior-qa-automation-developer-platform",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Canada",
-      "country": "Canada",
-      "postedAt": "2026-10-02T03:40:18+00:00"
-    },
-    {
-      "id": "jobicy-152333",
-      "title": "QA Analyst (Future Roles)",
-      "company": "Testlio",
-      "url": "https://jobicy.com/jobs/152333-qa-analyst-future-roles",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Argentina,  Brazil,  Canada,  Czechia,  Estonia,  Ireland,  Mexico,  Poland,  Portugal,  Romania,  Spain,  UK,  Ukraine,  USA",
-      "country": "United States",
-      "postedAt": "2026-10-02T03:40:17+00:00"
-    },
-    {
-      "id": "jobicy-152330",
-      "title": "Quality Engineer",
-      "company": "StackAdapt",
-      "url": "https://jobicy.com/jobs/152330-quality-engineer-2",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Canada",
-      "country": "Canada",
-      "postedAt": "2026-10-02T03:40:14+00:00"
-    },
-    {
-      "id": "jobicy-152325",
-      "title": "Senior QA Engineer",
-      "company": "Caylent",
-      "url": "https://jobicy.com/jobs/152325-senior-qa-engineer-2",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "USA",
-      "country": "United States",
-      "postedAt": "2026-10-02T03:40:12+00:00"
-    },
-    {
-      "id": "jobicy-152332",
-      "title": "Email Automation & QA Specialist",
-      "company": "Imprint",
-      "url": "https://jobicy.com/jobs/152332-email-automation-qa-specialist",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "USA",
-      "country": "United States",
-      "postedAt": "2026-10-02T03:40:05+00:00"
     },
     {
       "id": "arbeitnow-systems-integration-qa-engineer-all-genders-munich-442670",
@@ -587,19 +561,6 @@
       "postedAt": "2026-09-21T10:52:24-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-8200468",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
-      "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-8191523",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -610,6 +571,19 @@
       "workType": "On-site",
       "location": "Quito, Ecuador",
       "country": "Other",
+      "postedAt": "2026-09-21T10:52:24-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8200468",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Singapore, Singapore",
+      "country": "Singapore",
       "postedAt": "2026-09-21T10:52:24-04:00"
     }
   ]
