@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-04T20:49:34.354Z",
+  "fetchedAt": "2026-10-05T03:51:48.822Z",
   "jobs": [
     {
       "id": "greenhouse-roblox-8069987",
@@ -288,19 +288,6 @@
       "postedAt": "2026-10-02T02:09:12.000Z"
     },
     {
-      "id": "arbeitnow-quality-assurance-specialist-hochheim-am-main-germany-452742",
-      "title": "Quality Assurance Specialist",
-      "company": "Ircagroup",
-      "url": "https://www.arbeitnow.com/jobs/companies/ircagroup/quality-assurance-specialist-hochheim-am-main-germany-452742",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Hochheim am Main, Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-01T05:24:46.000Z"
-    },
-    {
       "id": "greenhouse-airbnb-8154749",
       "title": "Early Career Software Engineer, Quality Engineering",
       "company": "Airbnb",
@@ -392,19 +379,6 @@
       "postedAt": "2026-09-28T18:36:46-04:00"
     },
     {
-      "id": "lever-shieldai-cc36d8ce-4afc-4d86-a4ad-8d5612b184d4",
-      "title": "Staff Engineer, Test Automation (R5792)",
-      "company": "Shield AI",
-      "url": "https://jobs.lever.co/shieldai/cc36d8ce-4afc-4d86-a4ad-8d5612b184d4",
-      "source": "Shield AI",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Diego, California",
-      "country": "United States",
-      "postedAt": "2026-09-26T20:48:27.803Z"
-    },
-    {
       "id": "greenhouse-stripe-8153331",
       "title": "Software Quality Assurance Engineer",
       "company": "Stripe",
@@ -429,19 +403,6 @@
       "location": "Toronto, Ontario, Canada",
       "country": "Canada",
       "postedAt": "2026-09-25T08:28:18-04:00"
-    },
-    {
-      "id": "lever-shieldai-01a2d105-fe26-495e-bd62-c0aeb11cdbdd",
-      "title": "Engineering Technician 4, Quality Assurance (R5977)",
-      "company": "Shield AI",
-      "url": "https://jobs.lever.co/shieldai/01a2d105-fe26-495e-bd62-c0aeb11cdbdd",
-      "source": "Shield AI",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Remote",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-09-24T21:00:22.513Z"
     },
     {
       "id": "greenhouse-testlio-8226930",
