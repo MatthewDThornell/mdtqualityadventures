@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-10-05T13:29:30.526Z",
+  "fetchedAt": "2026-10-05T23:40:33.343Z",
   "jobs": [
+    {
+      "id": "arbeitnow-vo2-force-qa-engineer-paris-france-324167",
+      "title": "[ VO2 FORCE ] - QA Engineer",
+      "company": "VO2 Group",
+      "url": "https://www.arbeitnow.fr/jobs/companies/vo2-group/vo2-force-qa-engineer-paris-france-324167",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Paris, France",
+      "country": "France",
+      "postedAt": "2026-10-05T19:04:45.000Z"
+    },
     {
       "id": "greenhouse-roblox-8069987",
       "title": "Quality Analyst",
@@ -12,7 +25,46 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-10-05T02:38:36-04:00"
+      "postedAt": "2026-10-05T14:39:49-04:00"
+    },
+    {
+      "id": "jobicy-154616",
+      "title": "Senior Quality Engineer",
+      "company": "Karbon",
+      "url": "https://jobicy.com/jobs/154616-senior-quality-engineer-2",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Australia",
+      "country": "Australia",
+      "postedAt": "2026-10-05T15:31:37+00:00"
+    },
+    {
+      "id": "jobicy-154591",
+      "title": "Freelance Software Tester With Smart TVs (Remote in Germany)",
+      "company": "Testlio",
+      "url": "https://jobicy.com/jobs/154591-freelance-software-tester-with-smart-tvs-remote-in-germany",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Germany",
+      "country": "Germany",
+      "postedAt": "2026-10-05T13:52:57+00:00"
+    },
+    {
+      "id": "jobicy-154595",
+      "title": "Freelance Software Tester With Smart TVs (Remote in Ireland)",
+      "company": "Testlio",
+      "url": "https://jobicy.com/jobs/154595-freelance-software-tester-with-smart-tvs-remote-in-ireland",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Ireland",
+      "country": "Ireland",
+      "postedAt": "2026-10-05T13:52:55+00:00"
     },
     {
       "id": "jobicy-154529",
@@ -39,19 +91,6 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-10-04T16:00:27.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-coordinator-product-integrity-12-month-fct-solihull-133846",
-      "title": "Quality Assurance Coordinator - Product Integrity - 12 Month FCT",
-      "company": "Gymshark",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/gymshark/quality-assurance-coordinator-product-integrity-12-month-fct-solihull-133846",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Solihull",
-      "country": "Other",
-      "postedAt": "2026-10-04T12:55:05.000Z"
     },
     {
       "id": "arbeitnow-remote-qa-engineer-mobile-berlin-166747",
@@ -104,32 +143,6 @@
       "location": "USA",
       "country": "United States",
       "postedAt": "2026-10-04T04:30:45+00:00"
-    },
-    {
-      "id": "jobicy-152407",
-      "title": "Senior QA Automation Engineer (Platform)",
-      "company": "Upgrade",
-      "url": "https://jobicy.com/jobs/152407-senior-qa-automation-engineer-platform",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "USA",
-      "country": "United States",
-      "postedAt": "2026-10-04T04:30:14+00:00"
-    },
-    {
-      "id": "jobicy-152406",
-      "title": "Senior Quality Assurance Engineer (Personify team)",
-      "company": "Bloomreach",
-      "url": "https://jobicy.com/jobs/152406-senior-quality-assurance-engineer-personify-team",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Czechia",
-      "country": "Other",
-      "postedAt": "2026-10-04T04:30:13+00:00"
     },
     {
       "id": "arbeitnow-production-test-engineer-de-berlin-40043",
@@ -223,45 +236,6 @@
       "postedAt": "2026-10-02T23:55:10.000Z"
     },
     {
-      "id": "arbeitnow-vp-quality-assurance-paris-315772",
-      "title": "VP, Quality Assurance",
-      "company": "Allucent",
-      "url": "https://www.arbeitnow.fr/jobs/companies/allucent/vp-quality-assurance-paris-315772",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Paris, France",
-      "country": "France",
-      "postedAt": "2026-10-02T19:20:05.000Z"
-    },
-    {
-      "id": "arbeitnow-intern-software-test-automation-munich-bavaria-68883",
-      "title": "Intern (m/f/d) Software Test Automation",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/intern-software-test-automation-munich-bavaria-68883",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich, Bavaria",
-      "country": "Germany",
-      "postedAt": "2026-10-02T17:55:17.000Z"
-    },
-    {
-      "id": "arbeitnow-propulsion-test-engineer-bordeaux-487588",
-      "title": "Propulsion Test Engineer",
-      "company": "The Exploration Company",
-      "url": "https://www.arbeitnow.fr/jobs/companies/the-exploration-company/propulsion-test-engineer-bordeaux-487588",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Bordeaux, France",
-      "country": "France",
-      "postedAt": "2026-10-02T16:40:04.000Z"
-    },
-    {
       "id": "greenhouse-pinterest-8011568",
       "title": "SDET II, tvScientific",
       "company": "Pinterest",
@@ -286,19 +260,6 @@
       "location": "Munich, Germany",
       "country": "Germany",
       "postedAt": "2026-10-02T14:20:06.000Z"
-    },
-    {
-      "id": "arbeitnow-systems-integration-qa-engineer-all-genders-munich-442670",
-      "title": "Systems Integration & QA Engineer (All genders)",
-      "company": "Stark",
-      "url": "https://www.arbeitnow.com/jobs/companies/stark/systems-integration-qa-engineer-all-genders-munich-442670",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich",
-      "country": "Germany",
-      "postedAt": "2026-10-02T02:09:12.000Z"
     },
     {
       "id": "greenhouse-airbnb-8154749",
@@ -338,19 +299,6 @@
       "location": "Remote - US",
       "country": "United States",
       "postedAt": "2026-09-30T00:07:53-04:00"
-    },
-    {
-      "id": "greenhouse-airbnb-7380185",
-      "title": "Senior Fullstack Engineer, Quality Engineering",
-      "company": "Airbnb",
-      "url": "https://careers.airbnb.com/positions/7380185?gh_jid=7380185",
-      "source": "Airbnb",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Brazil - Remote",
-      "country": "Brazil",
-      "postedAt": "2026-09-29T20:00:54-04:00"
     },
     {
       "id": "greenhouse-airbnb-7453190",
@@ -533,58 +481,6 @@
       "location": "Remote in EMEA",
       "country": "Other",
       "postedAt": "2026-09-22T08:09:18-04:00"
-    },
-    {
-      "id": "greenhouse-coursera-6141559004",
-      "title": "Senior Software Test Engineer",
-      "company": "Coursera",
-      "url": "https://job-boards.greenhouse.io/coursera/jobs/6141559004",
-      "source": "Coursera",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Toronto, Canada",
-      "country": "Canada",
-      "postedAt": "2026-09-21T14:07:37-04:00"
-    },
-    {
-      "id": "greenhouse-thoughtworks-8200468",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
-      "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
-      "id": "greenhouse-thoughtworks-7964148",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Lima, Peru",
-      "country": "Other",
-      "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
-      "id": "greenhouse-thoughtworks-8191523",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Quito, Ecuador",
-      "country": "Other",
-      "postedAt": "2026-09-21T10:52:24-04:00"
     }
   ]
 }
