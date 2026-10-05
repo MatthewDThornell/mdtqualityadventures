@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-05T03:51:48.822Z",
+  "fetchedAt": "2026-10-05T13:29:30.526Z",
   "jobs": [
     {
       "id": "greenhouse-roblox-8069987",
@@ -12,7 +12,20 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-10-04T14:38:16-04:00"
+      "postedAt": "2026-10-05T02:38:36-04:00"
+    },
+    {
+      "id": "jobicy-154529",
+      "title": "Freelance Software Tester With Smart TVs (Remote in Austria)",
+      "company": "Testlio",
+      "url": "https://jobicy.com/jobs/154529-freelance-software-tester-with-smart-tvs-remote-in-austria",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Austria",
+      "country": "Other",
+      "postedAt": "2026-10-05T05:28:32+00:00"
     },
     {
       "id": "arbeitnow-quality-assurance-rater-german-germany-berlin-112725",
@@ -379,6 +392,19 @@
       "postedAt": "2026-09-28T18:36:46-04:00"
     },
     {
+      "id": "lever-shieldai-cc36d8ce-4afc-4d86-a4ad-8d5612b184d4",
+      "title": "Staff Engineer, Test Automation (R5792)",
+      "company": "Shield AI",
+      "url": "https://jobs.lever.co/shieldai/cc36d8ce-4afc-4d86-a4ad-8d5612b184d4",
+      "source": "Shield AI",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Diego, California",
+      "country": "United States",
+      "postedAt": "2026-09-26T20:48:27.803Z"
+    },
+    {
       "id": "greenhouse-stripe-8153331",
       "title": "Software Quality Assurance Engineer",
       "company": "Stripe",
@@ -403,6 +429,32 @@
       "location": "Toronto, Ontario, Canada",
       "country": "Canada",
       "postedAt": "2026-09-25T08:28:18-04:00"
+    },
+    {
+      "id": "lever-shieldai-01a2d105-fe26-495e-bd62-c0aeb11cdbdd",
+      "title": "Engineering Technician 4, Quality Assurance (R5977)",
+      "company": "Shield AI",
+      "url": "https://jobs.lever.co/shieldai/01a2d105-fe26-495e-bd62-c0aeb11cdbdd",
+      "source": "Shield AI",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Remote",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-09-24T21:00:22.513Z"
+    },
+    {
+      "id": "lever-shieldai-d7a24b6e-caac-4bbd-84d3-44d089721f92",
+      "title": "Senior Engineer, Quality Assurance (R5985)",
+      "company": "Shield AI",
+      "url": "https://jobs.lever.co/shieldai/d7a24b6e-caac-4bbd-84d3-44d089721f92",
+      "source": "Shield AI",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Melbourne",
+      "country": "Australia",
+      "postedAt": "2026-09-24T20:34:35.693Z"
     },
     {
       "id": "greenhouse-testlio-8226930",
@@ -496,6 +548,19 @@
       "postedAt": "2026-09-21T14:07:37-04:00"
     },
     {
+      "id": "greenhouse-thoughtworks-8200468",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Singapore, Singapore",
+      "country": "Singapore",
+      "postedAt": "2026-09-21T10:52:24-04:00"
+    },
+    {
       "id": "greenhouse-thoughtworks-7964148",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -519,19 +584,6 @@
       "workType": "On-site",
       "location": "Quito, Ecuador",
       "country": "Other",
-      "postedAt": "2026-09-21T10:52:24-04:00"
-    },
-    {
-      "id": "greenhouse-thoughtworks-8200468",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
       "postedAt": "2026-09-21T10:52:24-04:00"
     }
   ]
