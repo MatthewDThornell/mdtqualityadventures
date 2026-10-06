@@ -1,6 +1,97 @@
 {
-  "fetchedAt": "2026-10-06T12:41:10.761Z",
+  "fetchedAt": "2026-10-06T22:15:42.479Z",
   "jobs": [
+    {
+      "id": "arbeitnow-senior-test-data-quality-engineer-azure-databricks-frankfurt-239611",
+      "title": "Senior Test & Data Quality Engineer (Azure Databricks)",
+      "company": "Callista Group AG",
+      "url": "https://www.arbeitnow.com/jobs/companies/callista-group-ag/senior-test-data-quality-engineer-azure-databricks-frankfurt-239611",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Frankfurt, Hessen, Germany",
+      "country": "Germany",
+      "postedAt": "2026-10-06T20:30:23.000Z"
+    },
+    {
+      "id": "greenhouse-airbnb-8259240",
+      "title": "Quality Assurance & Standards Manager",
+      "company": "Airbnb",
+      "url": "https://careers.airbnb.com/positions/8259240?gh_jid=8259240",
+      "source": "Airbnb",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Bangalore, India",
+      "country": "India",
+      "postedAt": "2026-10-06T15:33:58-04:00"
+    },
+    {
+      "id": "greenhouse-airbnb-8259224",
+      "title": "Quality Assurance & Standards Manager",
+      "company": "Airbnb",
+      "url": "https://careers.airbnb.com/positions/8259224?gh_jid=8259224",
+      "source": "Airbnb",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "United States ",
+      "country": "United States",
+      "postedAt": "2026-10-06T15:33:56-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-06T14:40:23-04:00"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-specialist-brighton-430310",
+      "title": "Quality Assurance Specialist",
+      "company": "Motorway",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/motorway/quality-assurance-specialist-brighton-430310",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Brighton",
+      "country": "Other",
+      "postedAt": "2026-10-06T18:40:02.000Z"
+    },
+    {
+      "id": "greenhouse-robinhood-8082056",
+      "title": "Staff Quality Engineer  ",
+      "company": "Robinhood",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/8082056?t=gh_src=&gh_jid=8082056",
+      "source": "Robinhood",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Menlo Park, CA",
+      "country": "United States",
+      "postedAt": "2026-10-06T12:12:00-04:00"
+    },
+    {
+      "id": "arbeitnow-system-test-automation-engineer-leonberg-germany-102280",
+      "title": "System Test Automation Engineer",
+      "company": "Wayve",
+      "url": "https://www.arbeitnow.com/jobs/companies/wayve/system-test-automation-engineer-leonberg-germany-102280",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Leonberg, Germany",
+      "country": "Germany",
+      "postedAt": "2026-10-06T11:40:04.000Z"
+    },
     {
       "id": "arbeitnow-systems-integration-qa-engineer-all-genders-munich-29974",
       "title": "Systems Integration & QA Engineer (All genders)",
@@ -13,6 +104,19 @@
       "location": "Munich",
       "country": "Germany",
       "postedAt": "2026-10-06T11:09:38.000Z"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8191523",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Quito, Ecuador",
+      "country": "Other",
+      "postedAt": "2026-10-06T04:15:29-04:00"
     },
     {
       "id": "greenhouse-thoughtworks-7964148",
@@ -39,58 +143,6 @@
       "location": "Singapore, Singapore",
       "country": "Singapore",
       "postedAt": "2026-10-06T04:15:29-04:00"
-    },
-    {
-      "id": "greenhouse-thoughtworks-8191523",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Quito, Ecuador",
-      "country": "Other",
-      "postedAt": "2026-10-06T04:15:29-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-06T02:39:00-04:00"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-associate-avp-glasgow-230468",
-      "title": "Quality Assurance Associate AVP",
-      "company": "Delta Capita",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/delta-capita/quality-assurance-associate-avp-glasgow-230468",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Glasgow, Glasgow City, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-06T00:30:27.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-associate-glasgow-239678",
-      "title": "Quality Assurance Associate",
-      "company": "Delta Capita",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/delta-capita/quality-assurance-associate-glasgow-239678",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Glasgow, Glasgow City, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-06T00:30:27.000Z"
     },
     {
       "id": "arbeitnow-vo2-force-qa-engineer-paris-france-324167",
@@ -143,19 +195,6 @@
       "location": "Ireland",
       "country": "Ireland",
       "postedAt": "2026-10-05T13:52:55+00:00"
-    },
-    {
-      "id": "jobicy-154529",
-      "title": "Freelance Software Tester With Smart TVs (Remote in Austria)",
-      "company": "Testlio",
-      "url": "https://jobicy.com/jobs/154529-freelance-software-tester-with-smart-tvs-remote-in-austria",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Austria",
-      "country": "Other",
-      "postedAt": "2026-10-05T05:28:32+00:00"
     },
     {
       "id": "arbeitnow-quality-assurance-rater-german-germany-berlin-112725",
@@ -286,19 +325,6 @@
       "location": "San Francisco, CA, US; Remote, US",
       "country": "United States",
       "postedAt": "2026-10-02T10:25:30-04:00"
-    },
-    {
-      "id": "arbeitnow-vp-quality-assurance-munich-306110",
-      "title": "VP, Quality Assurance",
-      "company": "Allucent",
-      "url": "https://www.arbeitnow.com/jobs/companies/allucent/vp-quality-assurance-munich-306110",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich, Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-02T14:20:06.000Z"
     },
     {
       "id": "greenhouse-airbnb-8154749",
