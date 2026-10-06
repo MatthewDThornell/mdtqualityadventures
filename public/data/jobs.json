@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-05T23:40:33.343Z",
+  "fetchedAt": "2026-10-06T04:39:36.381Z",
   "jobs": [
+    {
+      "id": "arbeitnow-quality-assurance-associate-avp-glasgow-230468",
+      "title": "Quality Assurance Associate AVP",
+      "company": "Delta Capita",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/delta-capita/quality-assurance-associate-avp-glasgow-230468",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Glasgow, Glasgow City, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-06T00:30:27.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-associate-glasgow-239678",
+      "title": "Quality Assurance Associate",
+      "company": "Delta Capita",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/delta-capita/quality-assurance-associate-glasgow-239678",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Glasgow, Glasgow City, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-06T00:30:27.000Z"
+    },
     {
       "id": "arbeitnow-vo2-force-qa-engineer-paris-france-324167",
       "title": "[ VO2 FORCE ] - QA Engineer",
@@ -234,6 +260,19 @@
       "location": "Berlin, Berlin",
       "country": "Germany",
       "postedAt": "2026-10-02T23:55:10.000Z"
+    },
+    {
+      "id": "arbeitnow-intern-software-test-automation-munich-bavaria-68883",
+      "title": "Intern (m/f/d) Software Test Automation",
+      "company": "Agilerobotsse",
+      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/intern-software-test-automation-munich-bavaria-68883",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich, Bavaria",
+      "country": "Germany",
+      "postedAt": "2026-10-02T17:55:17.000Z"
     },
     {
       "id": "greenhouse-pinterest-8011568",
