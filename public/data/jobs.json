@@ -1,6 +1,71 @@
 {
-  "fetchedAt": "2026-10-06T04:39:36.381Z",
+  "fetchedAt": "2026-10-06T12:41:10.761Z",
   "jobs": [
+    {
+      "id": "arbeitnow-systems-integration-qa-engineer-all-genders-munich-29974",
+      "title": "Systems Integration & QA Engineer (All genders)",
+      "company": "Stark",
+      "url": "https://www.arbeitnow.com/jobs/companies/stark/systems-integration-qa-engineer-all-genders-munich-29974",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich",
+      "country": "Germany",
+      "postedAt": "2026-10-06T11:09:38.000Z"
+    },
+    {
+      "id": "greenhouse-thoughtworks-7964148",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Lima, Peru",
+      "country": "Other",
+      "postedAt": "2026-10-06T04:15:29-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8200468",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Singapore, Singapore",
+      "country": "Singapore",
+      "postedAt": "2026-10-06T04:15:29-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8191523",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Quito, Ecuador",
+      "country": "Other",
+      "postedAt": "2026-10-06T04:15:29-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-06T02:39:00-04:00"
+    },
     {
       "id": "arbeitnow-quality-assurance-associate-avp-glasgow-230468",
       "title": "Quality Assurance Associate AVP",
@@ -39,19 +104,6 @@
       "location": "Paris, France",
       "country": "France",
       "postedAt": "2026-10-05T19:04:45.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-05T14:39:49-04:00"
     },
     {
       "id": "jobicy-154616",
@@ -130,45 +182,6 @@
       "location": "Remote job",
       "country": "Other",
       "postedAt": "2026-10-04T08:30:08.000Z"
-    },
-    {
-      "id": "jobicy-152401",
-      "title": "QA Tester (Future Roles)",
-      "company": "Testlio",
-      "url": "https://jobicy.com/jobs/152401-qa-tester-future-roles",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Anywhere",
-      "country": "Other",
-      "postedAt": "2026-10-04T04:35:21+00:00"
-    },
-    {
-      "id": "jobicy-152402",
-      "title": "Staff Quality Engineer",
-      "company": "StackAdapt",
-      "url": "https://jobicy.com/jobs/152402-staff-quality-engineer",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Canada,  USA",
-      "country": "United States",
-      "postedAt": "2026-10-04T04:35:12+00:00"
-    },
-    {
-      "id": "jobicy-152404",
-      "title": "SDET II, tvScientific",
-      "company": "Pinterest",
-      "url": "https://jobicy.com/jobs/152404-sdet-ii-tvscientific",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "USA",
-      "country": "United States",
-      "postedAt": "2026-10-04T04:30:45+00:00"
     },
     {
       "id": "arbeitnow-production-test-engineer-de-berlin-40043",
@@ -260,19 +273,6 @@
       "location": "Berlin, Berlin",
       "country": "Germany",
       "postedAt": "2026-10-02T23:55:10.000Z"
-    },
-    {
-      "id": "arbeitnow-intern-software-test-automation-munich-bavaria-68883",
-      "title": "Intern (m/f/d) Software Test Automation",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/intern-software-test-automation-munich-bavaria-68883",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich, Bavaria",
-      "country": "Germany",
-      "postedAt": "2026-10-02T17:55:17.000Z"
     },
     {
       "id": "greenhouse-pinterest-8011568",
@@ -507,19 +507,6 @@
       "location": "Remote in EMEA",
       "country": "Other",
       "postedAt": "2026-09-23T06:55:38-04:00"
-    },
-    {
-      "id": "greenhouse-testlio-8213556",
-      "title": "Freelance Software Tester With Smart TVs (Remote in Italy)",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8213556",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Remote in EMEA",
-      "country": "Other",
-      "postedAt": "2026-09-22T08:09:18-04:00"
     }
   ]
 }
