@@ -1,6 +1,84 @@
 {
-  "fetchedAt": "2026-10-07T04:05:49.354Z",
+  "fetchedAt": "2026-10-07T12:34:37.205Z",
   "jobs": [
+    {
+      "id": "greenhouse-stripe-8153331",
+      "title": "Software Quality Assurance Engineer",
+      "company": "Stripe",
+      "url": "https://stripe.com/jobs/search?gh_jid=8153331",
+      "source": "Stripe",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Taipei,Taiwan",
+      "country": "Taiwan",
+      "postedAt": "2026-10-07T07:57:26-04:00"
+    },
+    {
+      "id": "arbeitnow-banking-test-architect-47527",
+      "title": "Banking Test Architect (m/w/d)",
+      "company": "capco",
+      "url": "https://www.arbeitnow.com/jobs/companies/capco/banking-test-architect-47527",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-10-07T08:55:03.000Z"
+    },
+    {
+      "id": "jobicy-154770",
+      "title": "Senior Software Development Engineer in Test (SDET)",
+      "company": "Flex",
+      "url": "https://jobicy.com/jobs/154770-senior-software-development-engineer-in-test-sdet",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Anywhere",
+      "country": "Other",
+      "postedAt": "2026-10-07T08:50:12+00:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-07T02:38:54-04:00"
+    },
+    {
+      "id": "arbeitnow-data-quality-analyst-befristet-als-elternzeitvertretung-berlin-482612",
+      "title": "Data Quality Analyst (f/m/d, befristet als Elternzeitvertretung)",
+      "company": "Workist GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/workist-gmbh/data-quality-analyst-befristet-als-elternzeitvertretung-berlin-482612",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-10-07T05:30:44.000Z"
+    },
+    {
+      "id": "arbeitnow-remote-senior-qa-engineer-gn-80961",
+      "title": "Senior QA Engineer (gn)",
+      "company": "Bikeleasing",
+      "url": "https://www.arbeitnow.com/jobs/companies/bikeleasing/remote-senior-qa-engineer-gn-80961",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Remote Deutschland",
+      "country": "Other",
+      "postedAt": "2026-10-07T05:09:54.000Z"
+    },
     {
       "id": "arbeitnow-senior-product-quality-analyst-ai-voice-london-457694",
       "title": "Senior Product Quality Analyst - AI Voice",
@@ -80,32 +158,6 @@
       "postedAt": "2026-10-06T15:33:56-04:00"
     },
     {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-06T14:40:23-04:00"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-specialist-brighton-430310",
-      "title": "Quality Assurance Specialist",
-      "company": "Motorway",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/motorway/quality-assurance-specialist-brighton-430310",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Brighton",
-      "country": "Other",
-      "postedAt": "2026-10-06T18:40:02.000Z"
-    },
-    {
       "id": "greenhouse-robinhood-8082056",
       "title": "Staff Quality Engineer  ",
       "company": "Robinhood",
@@ -145,6 +197,19 @@
       "postedAt": "2026-10-06T11:09:38.000Z"
     },
     {
+      "id": "greenhouse-thoughtworks-8191523",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Quito, Ecuador",
+      "country": "Other",
+      "postedAt": "2026-10-06T04:15:29-04:00"
+    },
+    {
       "id": "greenhouse-thoughtworks-8200468",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -169,71 +234,6 @@
       "location": "Lima, Peru",
       "country": "Other",
       "postedAt": "2026-10-06T04:15:29-04:00"
-    },
-    {
-      "id": "greenhouse-thoughtworks-8191523",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Quito, Ecuador",
-      "country": "Other",
-      "postedAt": "2026-10-06T04:15:29-04:00"
-    },
-    {
-      "id": "arbeitnow-vo2-force-qa-engineer-paris-france-324167",
-      "title": "[ VO2 FORCE ] - QA Engineer",
-      "company": "VO2 Group",
-      "url": "https://www.arbeitnow.fr/jobs/companies/vo2-group/vo2-force-qa-engineer-paris-france-324167",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Paris, France",
-      "country": "France",
-      "postedAt": "2026-10-05T19:04:45.000Z"
-    },
-    {
-      "id": "jobicy-154616",
-      "title": "Senior Quality Engineer",
-      "company": "Karbon",
-      "url": "https://jobicy.com/jobs/154616-senior-quality-engineer-2",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Australia",
-      "country": "Australia",
-      "postedAt": "2026-10-05T15:31:37+00:00"
-    },
-    {
-      "id": "jobicy-154591",
-      "title": "Freelance Software Tester With Smart TVs (Remote in Germany)",
-      "company": "Testlio",
-      "url": "https://jobicy.com/jobs/154591-freelance-software-tester-with-smart-tvs-remote-in-germany",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-05T13:52:57+00:00"
-    },
-    {
-      "id": "jobicy-154595",
-      "title": "Freelance Software Tester With Smart TVs (Remote in Ireland)",
-      "company": "Testlio",
-      "url": "https://jobicy.com/jobs/154595-freelance-software-tester-with-smart-tvs-remote-in-ireland",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Ireland",
-      "country": "Ireland",
-      "postedAt": "2026-10-05T13:52:55+00:00"
     },
     {
       "id": "arbeitnow-quality-assurance-rater-german-germany-berlin-112725",
@@ -299,58 +299,6 @@
       "location": "Köln",
       "country": "Germany",
       "postedAt": "2026-10-03T20:09:14.000Z"
-    },
-    {
-      "id": "arbeitnow-environmental-test-engineer-munchen-356940",
-      "title": "Environmental Test Engineer",
-      "company": "Mynaric",
-      "url": "https://www.arbeitnow.com/jobs/companies/mynaric/environmental-test-engineer-munchen-356940",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "München",
-      "country": "Germany",
-      "postedAt": "2026-10-03T17:09:54.000Z"
-    },
-    {
-      "id": "arbeitnow-production-test-engineer-gilching-120244",
-      "title": "Production Test Engineer (m/f/d)",
-      "company": "Quantum-Systems GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/quantum-systems-gmbh/production-test-engineer-gilching-120244",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Gilching, Bayern, Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-03T05:30:11.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-engineer-software-all-genders-munich-office-479329",
-      "title": "Quality Assurance Engineer (Software) (all genders)",
-      "company": "Proglove",
-      "url": "https://www.arbeitnow.com/jobs/companies/proglove/quality-assurance-engineer-software-all-genders-munich-office-479329",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich Office",
-      "country": "Germany",
-      "postedAt": "2026-10-03T05:09:50.000Z"
-    },
-    {
-      "id": "greenhouse-pinterest-8011568",
-      "title": "SDET II, tvScientific",
-      "company": "Pinterest",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8011568",
-      "source": "Pinterest",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "San Francisco, CA, US; Remote, US",
-      "country": "United States",
-      "postedAt": "2026-10-02T10:25:30-04:00"
     },
     {
       "id": "greenhouse-airbnb-8154749",
@@ -429,19 +377,6 @@
       "location": "San Diego, California",
       "country": "United States",
       "postedAt": "2026-09-26T20:48:27.803Z"
-    },
-    {
-      "id": "greenhouse-stripe-8153331",
-      "title": "Software Quality Assurance Engineer",
-      "company": "Stripe",
-      "url": "https://stripe.com/jobs/search?gh_jid=8153331",
-      "source": "Stripe",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Taipei,Taiwan",
-      "country": "Taiwan",
-      "postedAt": "2026-09-25T16:44:57-04:00"
     },
     {
       "id": "greenhouse-okta-8212003",
@@ -533,19 +468,6 @@
       "location": "Remote in EMEA",
       "country": "Other",
       "postedAt": "2026-09-23T12:51:19-04:00"
-    },
-    {
-      "id": "greenhouse-testlio-8185386",
-      "title": "Freelance Software Tester With Smart TVs (Remote in Austria)",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8185386",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Remote in EMEA",
-      "country": "Other",
-      "postedAt": "2026-09-23T06:55:38-04:00"
     }
   ]
 }
