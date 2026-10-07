@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-10-06T22:15:42.479Z",
+  "fetchedAt": "2026-10-07T04:05:49.354Z",
   "jobs": [
+    {
+      "id": "arbeitnow-senior-product-quality-analyst-ai-voice-london-457694",
+      "title": "Senior Product Quality Analyst - AI Voice",
+      "company": "Spotify",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/spotify/senior-product-quality-analyst-ai-voice-london-457694",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-07T03:04:18.000Z"
+    },
+    {
+      "id": "arbeitnow-teamleitung-food-safety-and-quality-assurance-all-genders-verden-niedersachsen-168299",
+      "title": "Teamleitung Food Safety and Quality Assurance (all genders)",
+      "company": "hellofresh",
+      "url": "https://www.arbeitnow.com/jobs/companies/hellofresh/teamleitung-food-safety-and-quality-assurance-all-genders-verden-niedersachsen-168299",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Verden, Niedersachsen",
+      "country": "Other",
+      "postedAt": "2026-10-07T02:55:11.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-engineer-paris-491894",
+      "title": "Quality Engineer",
+      "company": "Odaseva",
+      "url": "https://www.arbeitnow.fr/jobs/companies/odaseva/quality-engineer-paris-491894",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Paris",
+      "country": "France",
+      "postedAt": "2026-10-07T01:24:46.000Z"
+    },
     {
       "id": "arbeitnow-senior-test-data-quality-engineer-azure-databricks-frankfurt-239611",
       "title": "Senior Test & Data Quality Engineer (Azure Databricks)",
@@ -106,16 +145,16 @@
       "postedAt": "2026-10-06T11:09:38.000Z"
     },
     {
-      "id": "greenhouse-thoughtworks-8191523",
+      "id": "greenhouse-thoughtworks-8200468",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
       "source": "Thoughtworks",
       "sourceUrl": null,
       "direct": true,
-      "workType": "On-site",
-      "location": "Quito, Ecuador",
-      "country": "Other",
+      "workType": "Hybrid",
+      "location": "Singapore, Singapore",
+      "country": "Singapore",
       "postedAt": "2026-10-06T04:15:29-04:00"
     },
     {
@@ -132,16 +171,16 @@
       "postedAt": "2026-10-06T04:15:29-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-8200468",
+      "id": "greenhouse-thoughtworks-8191523",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
       "source": "Thoughtworks",
       "sourceUrl": null,
       "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
+      "workType": "On-site",
+      "location": "Quito, Ecuador",
+      "country": "Other",
       "postedAt": "2026-10-06T04:15:29-04:00"
     },
     {
@@ -301,19 +340,6 @@
       "postedAt": "2026-10-03T05:09:50.000Z"
     },
     {
-      "id": "arbeitnow-senior-fsqa-manager-phf-all-genders-berlin-berlin-328691",
-      "title": "Senior FSQA Manager - PHF (all genders)",
-      "company": "hellofresh",
-      "url": "https://www.arbeitnow.com/jobs/companies/hellofresh/senior-fsqa-manager-phf-all-genders-berlin-berlin-328691",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Berlin, Berlin",
-      "country": "Germany",
-      "postedAt": "2026-10-02T23:55:10.000Z"
-    },
-    {
       "id": "greenhouse-pinterest-8011568",
       "title": "SDET II, tvScientific",
       "company": "Pinterest",
@@ -364,19 +390,6 @@
       "location": "Remote - US",
       "country": "United States",
       "postedAt": "2026-09-30T00:07:53-04:00"
-    },
-    {
-      "id": "greenhouse-airbnb-7453190",
-      "title": "Senior Mobile Software Engineer, Quality Engineering",
-      "company": "Airbnb",
-      "url": "https://careers.airbnb.com/positions/7453190?gh_jid=7453190",
-      "source": "Airbnb",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Brazil - Remote",
-      "country": "Brazil",
-      "postedAt": "2026-09-29T20:00:54-04:00"
     },
     {
       "id": "greenhouse-verkada-5237420007",
