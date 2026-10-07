@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-07T12:34:37.205Z",
+  "fetchedAt": "2026-10-07T22:37:32.384Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-07T14:39:32-04:00"
+    },
+    {
+      "id": "arbeitnow-senior-qa-engineer-berlin-hybrid-138845",
+      "title": "Senior QA Engineer (Berlin, hybrid)",
+      "company": "Kittl",
+      "url": "https://www.arbeitnow.com/jobs/companies/kittl/senior-qa-engineer-berlin-hybrid-138845",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-10-07T17:00:48.000Z"
+    },
     {
       "id": "greenhouse-stripe-8153331",
       "title": "Software Quality Assurance Engineer",
@@ -41,17 +67,17 @@
       "postedAt": "2026-10-07T08:50:12+00:00"
     },
     {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
+      "id": "arbeitnow-qa-automation-engineer-heidelberg-ger-436564",
+      "title": "QA Automation Engineer",
+      "company": "Turbalance",
+      "url": "https://www.arbeitnow.com/jobs/companies/turbalance/qa-automation-engineer-heidelberg-ger-436564",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
       "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-07T02:38:54-04:00"
+      "location": "Heidelberg, GER",
+      "country": "Other",
+      "postedAt": "2026-10-07T08:09:59.000Z"
     },
     {
       "id": "arbeitnow-data-quality-analyst-befristet-als-elternzeitvertretung-berlin-482612",
@@ -104,19 +130,6 @@
       "location": "Verden, Niedersachsen",
       "country": "Other",
       "postedAt": "2026-10-07T02:55:11.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-engineer-paris-491894",
-      "title": "Quality Engineer",
-      "company": "Odaseva",
-      "url": "https://www.arbeitnow.fr/jobs/companies/odaseva/quality-engineer-paris-491894",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Paris",
-      "country": "France",
-      "postedAt": "2026-10-07T01:24:46.000Z"
     },
     {
       "id": "arbeitnow-senior-test-data-quality-engineer-azure-databricks-frankfurt-239611",
@@ -197,19 +210,6 @@
       "postedAt": "2026-10-06T11:09:38.000Z"
     },
     {
-      "id": "greenhouse-thoughtworks-8191523",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Quito, Ecuador",
-      "country": "Other",
-      "postedAt": "2026-10-06T04:15:29-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-8200468",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -232,6 +232,19 @@
       "direct": true,
       "workType": "On-site",
       "location": "Lima, Peru",
+      "country": "Other",
+      "postedAt": "2026-10-06T04:15:29-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8191523",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Quito, Ecuador",
       "country": "Other",
       "postedAt": "2026-10-06T04:15:29-04:00"
     },
@@ -260,45 +273,6 @@
       "location": "Remote job",
       "country": "Other",
       "postedAt": "2026-10-04T08:30:08.000Z"
-    },
-    {
-      "id": "arbeitnow-production-test-engineer-de-berlin-40043",
-      "title": "Production Test Engineer (m/f/d)",
-      "company": "Swissbit",
-      "url": "https://www.arbeitnow.com/jobs/companies/swissbit/production-test-engineer-de-berlin-40043",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "DE-Berlin",
-      "country": "Germany",
-      "postedAt": "2026-10-03T20:09:53.000Z"
-    },
-    {
-      "id": "arbeitnow-werkstudent-quality-assurance-medizinalcannabis-koln-467137",
-      "title": "Werkstudent Quality Assurance (m/w/d) - Medizinalcannabis",
-      "company": "Semdor Pharma Group GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/werkstudent-quality-assurance-medizinalcannabis-koln-467137",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Köln",
-      "country": "Germany",
-      "postedAt": "2026-10-03T20:09:14.000Z"
-    },
-    {
-      "id": "arbeitnow-head-of-quality-assurance-koln-389931",
-      "title": "Head of Quality Assurance (m/w/d)",
-      "company": "Semdor Pharma Group GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/head-of-quality-assurance-koln-389931",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Köln",
-      "country": "Germany",
-      "postedAt": "2026-10-03T20:09:14.000Z"
     },
     {
       "id": "greenhouse-airbnb-8154749",
@@ -366,19 +340,6 @@
       "postedAt": "2026-09-28T18:36:46-04:00"
     },
     {
-      "id": "lever-shieldai-cc36d8ce-4afc-4d86-a4ad-8d5612b184d4",
-      "title": "Staff Engineer, Test Automation (R5792)",
-      "company": "Shield AI",
-      "url": "https://jobs.lever.co/shieldai/cc36d8ce-4afc-4d86-a4ad-8d5612b184d4",
-      "source": "Shield AI",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Diego, California",
-      "country": "United States",
-      "postedAt": "2026-09-26T20:48:27.803Z"
-    },
-    {
       "id": "greenhouse-okta-8212003",
       "title": "Senior Engineering Manager, SDET  - Okta Identity Governance (OIG)",
       "company": "Okta",
@@ -390,84 +351,6 @@
       "location": "Toronto, Ontario, Canada",
       "country": "Canada",
       "postedAt": "2026-09-25T08:28:18-04:00"
-    },
-    {
-      "id": "lever-shieldai-01a2d105-fe26-495e-bd62-c0aeb11cdbdd",
-      "title": "Engineering Technician 4, Quality Assurance (R5977)",
-      "company": "Shield AI",
-      "url": "https://jobs.lever.co/shieldai/01a2d105-fe26-495e-bd62-c0aeb11cdbdd",
-      "source": "Shield AI",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Remote",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-09-24T21:00:22.513Z"
-    },
-    {
-      "id": "lever-shieldai-d7a24b6e-caac-4bbd-84d3-44d089721f92",
-      "title": "Senior Engineer, Quality Assurance (R5985)",
-      "company": "Shield AI",
-      "url": "https://jobs.lever.co/shieldai/d7a24b6e-caac-4bbd-84d3-44d089721f92",
-      "source": "Shield AI",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Melbourne",
-      "country": "Australia",
-      "postedAt": "2026-09-24T20:34:35.693Z"
-    },
-    {
-      "id": "greenhouse-testlio-8226930",
-      "title": "Freelance Software Tester With Smart TVs (Remote in the United Kingdom)",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8226930",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Remote in EMEA",
-      "country": "Other",
-      "postedAt": "2026-09-23T13:44:15-04:00"
-    },
-    {
-      "id": "greenhouse-testlio-8226948",
-      "title": "Freelance Software Tester With Smart TVs (Remote in Germany)",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8226948",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Remote in EMEA",
-      "country": "Other",
-      "postedAt": "2026-09-23T13:43:24-04:00"
-    },
-    {
-      "id": "greenhouse-testlio-8213583",
-      "title": "Freelance Software Tester With Smart TVs (Remote in Ireland)",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8213583",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Remote in EMEA",
-      "country": "Other",
-      "postedAt": "2026-09-23T13:16:11-04:00"
-    },
-    {
-      "id": "greenhouse-testlio-8222868",
-      "title": "Freelance Software Tester With Smart TVs (Remote in Austria)",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8222868",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Remote in EMEA",
-      "country": "Other",
-      "postedAt": "2026-09-23T12:51:19-04:00"
     }
   ]
 }
