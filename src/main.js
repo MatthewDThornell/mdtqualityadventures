@@ -72,6 +72,10 @@ const eyebrowTypewriter = initTypewriter(
 
 const taglinePhrases = [
   'Software QA Engineer & Quality Advocate',
+  // the current role rides as a plain phrase on purpose: addToCareerTrail()
+  // only walks phrases with segments, and the trail is career *history* — a
+  // job still being done doesn't belong in it
+  'Quality Engineer / SDET at Optum',
   {
     text: 'Former QA Coach and Architect at\nVeterans United',
     segments: [

@@ -1843,6 +1843,18 @@ html.pen-active .typewriter .tw-quill {
   color: #4a90d9;
 }
 
+/* Optum orange as published. UnitedHealth Group's own blue is #002677, which
+   on this parchment-on-dark page reads as a dead spot rather than a link, so
+   the parent company gets a lightened cousin of it — same family as
+   .brand-werner, which solved the same problem. */
+.brand-optum {
+  color: #ff612b;
+}
+
+.brand-uhg {
+  color: #6f9fe0;
+}
+
 .origin-subhead {
   font-family: var(--font-display);
   font-size: 1.25rem;

@@ -11,6 +11,7 @@ import { HomePage } from '../pages/HomePage';
 test.describe('Adventures', () => {
   const SLUGS = [
     'gentlemans-game',
+    'quality-knights',
     'patricks-test-pilot',
     'city-barbers',
     'city-barbers-ace',

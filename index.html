@@ -269,6 +269,19 @@
             </div>
 
             <ol class="timeline">
+              <li data-testid="timeline-item-optum">
+                <div class="timeline-when">Sep 2026 &ndash; Present &middot; Eden Prairie, MN (Remote)</div>
+                <h3>Quality Engineer / SDET</h3>
+                <p class="timeline-org"><img class="timeline-logo" src="/images/logos/optum.png" width="180" height="180" alt="" loading="lazy" /><a class="brand-link brand-optum" href="https://www.optum.com/" target="_blank" rel="noopener">Optum</a> / <a class="brand-link brand-uhg" href="https://www.unitedhealthgroup.com/" target="_blank" rel="noopener">UnitedHealth Group</a></p>
+                <p>
+                  Modernizing the Disability Benefits Questionnaire (DBQ) platform, and building
+                  the agentic test framework behind it: self-healing, context-aware, and
+                  test-generating agents that produce genuinely thorough coverage and the quality
+                  metrics to prove it. Those metrics sync into custom dashboards, so the business
+                  can see where a release is under strain, drill into the root cause, and extract
+                  the data into systems of their own. Architect-designed, spearheaded by my team.
+                </p>
+              </li>
               <li data-testid="timeline-item-veterans-united">
                 <div class="timeline-when">Nov 2025 &ndash; Jul 2026 &middot; Columbia, MO (Remote)</div>
                 <h3>Software QA Engineer, QA Coach/Architect</h3>
@@ -382,6 +395,50 @@
             <p class="chapter-intro">A few entries from the work itself.</p>
 
             <div class="card-grid">
+              <article class="card card-tested" data-testid="accomplishment-card-optum-ai-framework">
+                <img class="card-photo" src="/images/optum-wordmark.png" width="600" height="600" alt="The Optum wordmark" loading="lazy" />
+                <h3>An AI framework the business can read</h3>
+                <p class="card-meta"><img class="timeline-logo" src="/images/logos/optum.png" width="180" height="180" alt="" loading="lazy" /><a class="brand-link brand-optum" href="https://www.optum.com/" target="_blank" rel="noopener">Optum</a></p>
+                <details class="rec-test" data-testid="accomplishment-test-optum-ai-framework" data-lang="ts">
+                  <summary>
+                    <span class="rec-test-lang"><img src="/images/logos/tech/playwright.svg" width="128" height="128" alt="" />Playwright · TypeScript</span>
+                    <span class="rec-test-name">Test Case 3101 - OPT - Accomplishment Entry Renders</span>
+                    <span class="rec-test-status">4 steps</span>
+                  </summary>
+                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test Case 3101 - OPT - Accomplishment Entry Renders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
+  <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
+  <span class="tok-kw">const</span> card = home.accomplishmentCard(<span class="tok-str">'optum-ai-framework'</span>);
+
+  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the entry is headed "An AI framework the business can read"'</span>, <span class="tok-kw">async</span> () =&gt; {
+    <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'h3'</span>)).toHaveText(<span class="tok-str">'An AI framework the business can read'</span>);
+  });
+
+  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then it names Optum, linking out to their site in a new tab'</span>, <span class="tok-kw">async</span> () =&gt; {
+    <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'.card-meta a'</span>)).toHaveAttribute(<span class="tok-str">'href'</span>, <span class="tok-str">'https://www.optum.com/'</span>);
+    <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'.card-meta a'</span>)).toHaveAttribute(<span class="tok-str">'target'</span>, <span class="tok-str">'_blank'</span>);
+    <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'.card-meta a'</span>)).toHaveAttribute(<span class="tok-str">'rel'</span>, <span class="tok-str">/noopener/</span>);
+  });
+
+  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the photograph has loaded and is described for a screen reader'</span>, <span class="tok-kw">async</span> () =&gt; {
+    expect(<span class="tok-kw">await</span> card.locator(<span class="tok-str">'.card-photo'</span>).evaluate((img: HTMLImageElement) =&gt; img.naturalWidth)).toBeGreaterThan(<span class="tok-num">0</span>);
+    <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'.card-photo'</span>)).toHaveAttribute(<span class="tok-str">'alt'</span>, <span class="tok-str">'The Optum wordmark'</span>);
+  });
+
+  <span class="tok-kw">await</span> test.step(<span class="tok-str">'Then the entry decrypts and reads in full'</span>, <span class="tok-kw">async</span> () =&gt; {
+    <span class="tok-kw">await</span> expect(card.locator(<span class="tok-str">'.card-body p'</span>)).toContainText(<span class="tok-str">'Establishing a well-considered AI testing framework, built'</span>);
+    <span class="tok-kw">await</span> expect(card, <span class="tok-str">'an entry that read in full is a pass'</span>).toHaveAttribute(<span class="tok-str">'data-status'</span>, <span class="tok-str">'pass'</span>);
+  });
+});</code></pre>
+                </details>
+                <div class="card-body">
+                  <p>
+                    Establishing a well-considered AI testing framework, built so that both my
+                    team and upper management get what they need to succeed &mdash; tests that
+                    hold up under real conditions, and quality signals that actually reach the
+                    people making the decisions.
+                  </p>
+                </div>
+              </article>
               <article class="card card-tested" data-testid="accomplishment-card-veterans-united-coverage">
                 <img class="card-photo card-photo-top" src="/images/veterans-united-sign.webp" width="900" height="900" alt="The Veterans United Home Loans sign outside the Columbia, Missouri office" loading="lazy" />
                 <h3>Zero to 80% coverage</h3>
@@ -389,10 +446,10 @@
                 <details class="rec-test" data-testid="accomplishment-test-veterans-united-coverage" data-lang="ts">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/playwright.svg" width="128" height="128" alt="" />Playwright · TypeScript</span>
-                    <span class="rec-test-name">Test Case 3101 - VU - Accomplishment Entry Renders</span>
+                    <span class="rec-test-name">Test Case 3102 - VU - Accomplishment Entry Renders</span>
                     <span class="rec-test-status">4 steps</span>
                   </summary>
-                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test Case 3101 - VU - Accomplishment Entry Renders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
+                  <pre class="qa-code"><code><span class="tok-fn">test</span>(<span class="tok-str">'Test Case 3102 - VU - Accomplishment Entry Renders'</span>, { tag: <span class="tok-str">'@smoke'</span> }, <span class="tok-kw">async</span> ({ page }) =&gt; {
   <span class="tok-kw">const</span> home = <span class="tok-kw">new</span> HomePage(page);
   <span class="tok-kw">const</span> card = home.accomplishmentCard(<span class="tok-str">'veterans-united-coverage'</span>);
 
@@ -432,14 +489,14 @@
                 <details class="rec-test" data-testid="accomplishment-test-werner-reporting" data-lang="cs">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/csharp.svg" width="128" height="128" alt="" />Playwright · C#</span>
-                    <span class="rec-test-name">Test Case 3102 - WE - Accomplishment Entry Renders</span>
+                    <span class="rec-test-name">Test Case 3103 - WE - Accomplishment Entry Renders</span>
                     <span class="rec-test-status">4 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-kw">[TestFixture]</span>
 <span class="tok-kw">public</span> <span class="tok-kw">class</span> HomeTests : PageTest
 {
-    <span class="tok-kw">[Test, Category("smoke"), Description("Test Case 3102 - WE - Accomplishment Entry Renders")]</span>
-    <span class="tok-kw">public</span> <span class="tok-kw">async</span> <span class="tok-kw">Task</span> <span class="tok-fn">TestCase3102_WE_AccomplishmentEntryRenders</span>()
+    <span class="tok-kw">[Test, Category("smoke"), Description("Test Case 3103 - WE - Accomplishment Entry Renders")]</span>
+    <span class="tok-kw">public</span> <span class="tok-kw">async</span> <span class="tok-kw">Task</span> <span class="tok-fn">TestCase3103_WE_AccomplishmentEntryRenders</span>()
     {
         <span class="tok-kw">var</span> home = <span class="tok-kw">new</span> HomePage(Page);
         <span class="tok-kw">var</span> card = home.AccomplishmentCard(<span class="tok-str">"werner-reporting"</span>);
@@ -477,11 +534,11 @@
                 <details class="rec-test" data-testid="accomplishment-test-conexed-migration" data-lang="cy">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/cypress.svg" width="24" height="24" alt="" />Cypress · JavaScript</span>
-                    <span class="rec-test-name">Test Case 3103 - CX - Accomplishment Entry Renders</span>
+                    <span class="rec-test-name">Test Case 3104 - CX - Accomplishment Entry Renders</span>
                     <span class="rec-test-status">4 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-fn">describe</span>(<span class="tok-str">'Home'</span>, { tags: [<span class="tok-str">'@smoke'</span>] }, () =&gt; {
-  <span class="tok-fn">it</span>(<span class="tok-str">'Test Case 3103 - CX - Accomplishment Entry Renders'</span>, () =&gt; {
+  <span class="tok-fn">it</span>(<span class="tok-str">'Test Case 3104 - CX - Accomplishment Entry Renders'</span>, () =&gt; {
     cy.visit(<span class="tok-str">'/'</span>);
     cy.get(<span class="tok-str">'[data-testid="accomplishment-card-conexed-migration"]'</span>).as(<span class="tok-str">'card'</span>);
 
@@ -518,7 +575,7 @@
                 <details class="rec-test" data-testid="accomplishment-test-seekwell-stabilizing" data-lang="py">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/python.svg" width="24" height="24" alt="" />Playwright · Python</span>
-                    <span class="rec-test-name">Test Case 3104 - SW - Accomplishment Entry Renders</span>
+                    <span class="rec-test-name">Test Case 3105 - SW - Accomplishment Entry Renders</span>
                     <span class="rec-test-status">4 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-kw">import</span> re
@@ -529,8 +586,8 @@
 
 
 <span class="tok-kw">@pytest.mark.smoke</span>
-<span class="tok-kw">def</span> <span class="tok-fn">test_case_3104_sw_accomplishment_entry_renders</span>(page: Page):
-    <span class="tok-str">""</span><span class="tok-str">"Test Case 3104 - SW - Accomplishment Entry Renders"</span><span class="tok-str">""</span>
+<span class="tok-kw">def</span> <span class="tok-fn">test_case_3105_sw_accomplishment_entry_renders</span>(page: Page):
+    <span class="tok-str">""</span><span class="tok-str">"Test Case 3105 - SW - Accomplishment Entry Renders"</span><span class="tok-str">""</span>
     home = HomePage(page)
     card = home.accomplishment_card(<span class="tok-str">"seekwell-stabilizing"</span>)
 
@@ -565,7 +622,7 @@
                 <details class="rec-test" data-testid="accomplishment-test-cast-speaking" data-lang="rf">
                   <summary>
                     <span class="rec-test-lang"><img src="/images/logos/tech/robotframework-dark.svg" width="24" height="24" alt="" />Robot Framework</span>
-                    <span class="rec-test-name">Test Case 3105 - AST - Accomplishment Entry Renders</span>
+                    <span class="rec-test-name">Test Case 3106 - AST - Accomplishment Entry Renders</span>
                     <span class="rec-test-status">4 steps</span>
                   </summary>
                   <pre class="qa-code"><code><span class="tok-kw">*** Settings ***</span>
@@ -574,7 +631,7 @@
 <span class="tok-kw">Test Tags</span>       smoke
 
 <span class="tok-kw">*** Test Cases ***</span>
-<span class="tok-fn">Test Case 3105 - AST - Accomplishment Entry Renders</span>
+<span class="tok-fn">Test Case 3106 - AST - Accomplishment Entry Renders</span>
     <span class="tok-kw">[Documentation]</span>    The "Asking the Right Questions" entry renders with its company link and reads in full.
 <span class="tok-kw">    Given</span> The Home Page Is Open
     <span class="tok-num">${card}</span>=    Set Variable    [data-testid="accomplishment-card-cast-speaking"]
@@ -917,6 +974,31 @@
                 <div class="photo-strip">
                   <img src="/images/gg-game-night.jpg" width="688" height="918" alt="A Gentleman's Game board game night" loading="lazy" />
                   <img src="/images/gg-poker-trophies.jpg" width="753" height="1000" alt="Poker chips, dealer button, and card guards won at a Gentleman's Game night" loading="lazy" />
+                </div>
+              </article>
+              <article class="card adventure" data-testid="adventure-card-quality-knights">
+                <div class="adventure-rail">
+                  <div class="adventure-media">
+                    <img src="/images/quality-knights-crest.webp" width="600" height="600" alt="The Quality Knights crest: a black knight and a white knight facing each other across a divided shield" loading="lazy" />
+                  </div>
+                  <img class="adventure-rail-photo" src="/images/quality-knights-ryan-ertl.jpg" width="680" height="680" alt="Ryan Ertl, software engineer and Quality Knights rival" loading="lazy" />
+                </div>
+                <div class="adventure-body">
+                  <h3>Quality Knights</h3>
+                  <p class="card-meta"><img class="timeline-logo" src="/images/logos/optum.png" width="180" height="180" alt="" loading="lazy" /><a class="brand-link brand-optum" href="https://www.optum.com/" target="_blank" rel="noopener">Optum</a> &middot; Lunch-hour chess club</p>
+                  <p>
+                    An Optum-run chess tournament played over the lunch hour. We play, and in
+                    playing we meet the people we work with somewhere other than a stand-up
+                    &mdash; which is where trust actually gets built. The rest of it is the plain
+                    fun of trying to outsmart the person across the board.
+                  </p>
+                  <p>
+                    <strong>Ryan Ertl</strong>, one of the software engineers who joined the club,
+                    became my rival in the best sense of the word. We landed at almost exactly the
+                    same level, so the games ran evenly the whole way down and were decided by a
+                    single mistake &mdash; whoever made it first, lost.
+                  </p>
+                  <p class="card-kicker"><em>One mistake decides the game. That is true of rather more than chess.</em></p>
                 </div>
               </article>
             </div>

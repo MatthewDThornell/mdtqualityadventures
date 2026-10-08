@@ -95,6 +95,7 @@ test.describe('Professional Experience — Credentials', () => {
 
       await test.step('Then every employer timeline entry is present, most recent first', async () => {
         const expectedOrder = [
+          'optum',
           'veterans-united',
           'seekwell-1800contacts',
           'werner',

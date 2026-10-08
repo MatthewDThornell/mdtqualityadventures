@@ -11,6 +11,7 @@ import { HomePage } from '../pages/HomePage';
 // frameworks, one voice, and every one of them has to read as real code.
 test.describe('Accomplishments', () => {
   const CARD_LINKS: Record<string, { name: RegExp | string; href: string }> = {
+    'optum-ai-framework': { name: 'Optum', href: 'https://www.optum.com/' },
     'veterans-united-coverage': {
       name: /veterans united/i,
       href: 'https://www.veteransunited.com/',
@@ -56,6 +57,7 @@ test.describe('Accomplishments', () => {
 
       await test.step('Then each card has its own non-empty h3 headline', async () => {
         const headlines: Record<string, string> = {
+          'optum-ai-framework': 'An AI framework the business can read',
           'veterans-united-coverage': 'Zero to 80% coverage',
           'werner-reporting': 'Quality by the numbers',
           'conexed-migration': '400+ tests, 60% faster',
@@ -76,34 +78,40 @@ test.describe('Accomplishments', () => {
 
   // each entry's test is written in the tool the work itself was done in
   const CARD_TESTS: Record<string, { lang: string; label: string; name: string; steps: number }> = {
+    'optum-ai-framework': {
+      lang: 'ts',
+      label: 'Playwright · TypeScript',
+      name: 'Test Case 3101 - OPT - Accomplishment Entry Renders',
+      steps: 4,
+    },
     'veterans-united-coverage': {
       lang: 'ts',
       label: 'Playwright · TypeScript',
-      name: 'Test Case 3101 - VU - Accomplishment Entry Renders',
+      name: 'Test Case 3102 - VU - Accomplishment Entry Renders',
       steps: 4,
     },
     'werner-reporting': {
       lang: 'cs',
       label: 'Playwright · C#',
-      name: 'Test Case 3102 - WE - Accomplishment Entry Renders',
+      name: 'Test Case 3103 - WE - Accomplishment Entry Renders',
       steps: 4,
     },
     'conexed-migration': {
       lang: 'cy',
       label: 'Cypress · JavaScript',
-      name: 'Test Case 3103 - CX - Accomplishment Entry Renders',
+      name: 'Test Case 3104 - CX - Accomplishment Entry Renders',
       steps: 4,
     },
     'seekwell-stabilizing': {
       lang: 'py',
       label: 'Playwright · Python',
-      name: 'Test Case 3104 - SW - Accomplishment Entry Renders',
+      name: 'Test Case 3105 - SW - Accomplishment Entry Renders',
       steps: 4,
     },
     'cast-speaking': {
       lang: 'rf',
       label: 'Robot Framework',
-      name: 'Test Case 3105 - AST - Accomplishment Entry Renders',
+      name: 'Test Case 3106 - AST - Accomplishment Entry Renders',
       steps: 4,
     },
   };
@@ -143,7 +151,7 @@ test.describe('Accomplishments', () => {
         await expect.soft(page.locator('.card-tested .quote-decrypt')).toHaveCount(0);
       });
 
-      await test.step('Then the five tests are in five different frameworks', async () => {
+      await test.step('Then the entries still cover all five frameworks between them', async () => {
         const langs = await page
           .locator('.card-tested .rec-test')
           .evaluateAll((els) => els.map((el) => el.getAttribute('data-lang')));

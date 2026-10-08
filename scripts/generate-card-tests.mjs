@@ -34,6 +34,7 @@ const CYCLE = Object.keys(LANGUAGES);
 // titled by where the work happened — the initials a recommendation's title
 // takes from the person, an accomplishment's takes from the company.
 const ACCOMPLISHMENTS = {
+  'optum-ai-framework': { lang: 'ts', code: 'OPT' }, // the agentic framework, in the stack it is being built in
   'veterans-united-coverage': { lang: 'ts', code: 'VU' }, // the Playwright framework built from scratch
   'werner-reporting': { lang: 'cs', code: 'WE' }, // Werner's .NET shop
   'conexed-migration': { lang: 'cy', code: 'CX' }, // the 400 tests migrated into Cypress
