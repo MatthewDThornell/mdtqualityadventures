@@ -2,8 +2,9 @@ import { test, expect } from '@playwright/test';
 import { HomePage } from '../pages/HomePage';
 
 // What It Tests: That the animations which run while someone is reading stay
-// cheap — the typewriter rewrites only the word it is writing, and the hero's
-// own typewriter stops once the cover is off screen.
+// cheap — the typewriter rewrites only the word it is writing, and both the
+// hero's typewriter and the Quality Knights chess board stop once the thing
+// they belong to is off screen.
 // Why It Matters: Both of these were measured, not guessed. The typewriter
 // used to rewrite every word span of a paragraph on every frame, finished or
 // not: about 57 DOM mutations a frame, 1,100 a second, to reveal 33
@@ -101,6 +102,43 @@ test.describe('Performance', () => {
           .locator('#top')
           .evaluate((el) => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
         await expect.poll(() => tagline.textContent(), { timeout: 20_000 }).not.toBe(stoppedAt);
+      });
+    },
+  );
+
+  test(
+    'Test_Case_16002_ChessReplay_StopsWhenItsCardIsOffScreen',
+    { tag: '@regression' },
+    async ({ page }) => {
+      test.slow();
+      const home = new HomePage(page);
+      await home.goto();
+
+      await test.step('Given the Quality Knights card is on screen, the board is playing', async () => {
+        await home.chessReplay.scrollIntoViewIfNeeded();
+        const first = await home.chessMove.textContent();
+        await expect.poll(() => home.chessMove.textContent(), { timeout: 20_000 }).not.toBe(first);
+      });
+
+      await test.step('When the reader scrolls away, Then the game stops where it stood', async () => {
+        await page
+          .locator('#top')
+          .evaluate((el) => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
+        // let the ply already in flight land, then watch for several more
+        await page.waitForTimeout(1500);
+        const stoppedAt = await home.chessMove.textContent();
+        await page.waitForTimeout(4000);
+        expect
+          .soft(await home.chessMove.textContent(), 'the board played on with nobody watching')
+          .toBe(stoppedAt);
+      });
+
+      await test.step('When they come back, Then it carries on from there', async () => {
+        const stoppedAt = await home.chessMove.textContent();
+        await home.chessReplay.scrollIntoViewIfNeeded();
+        await expect
+          .poll(() => home.chessMove.textContent(), { timeout: 20_000 })
+          .not.toBe(stoppedAt);
       });
     },
   );

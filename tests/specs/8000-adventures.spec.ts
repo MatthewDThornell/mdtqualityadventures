@@ -158,3 +158,71 @@ test.describe('Adventures', () => {
     },
   );
 });
+
+// What It Tests: The board on the Quality Knights card plays a real game
+// forward — pieces get captured, the move readout advances — and, with motion
+// turned off, simply shows the finished game instead.
+// Why It Matters: The moves are generated from a PGN by
+// scripts/generate-chess-replay.mjs, and the runtime deliberately knows no
+// chess: it slides a piece and then applies the position it was handed. If the
+// generated data and the player ever disagree about which square is which, the
+// board would still animate — it would just be playing nonsense. Counting
+// captures is the cheapest way to prove the position is really being applied.
+test.describe('Adventures — the Quality Knights board', () => {
+  test(
+    'Test_Case_8004_Adventures_ChessReplay_PlaysTheGameForward',
+    { tag: '@regression' },
+    async ({ page }) => {
+      test.slow();
+      const home = new HomePage(page);
+      await home.goto();
+
+      await test.step('Then the board is drawn as 64 squares with all 32 pieces on it', async () => {
+        await home.chessReplay.scrollIntoViewIfNeeded();
+        await expect.soft(home.chessSquares).toHaveCount(64);
+        await expect.soft(home.chessOccupiedSquares).toHaveCount(32);
+        await expect.soft(home.chessReplay).toContainText('Carlsen vs Nakamura');
+      });
+
+      await test.step('When it runs, Then the move readout advances through the game', async () => {
+        await expect
+          .poll(() => home.chessMove.textContent(), { timeout: 20_000 })
+          .toMatch(/^\d+\.{1,3} \S+/);
+        const early = await home.chessMove.textContent();
+        await expect.poll(() => home.chessMove.textContent(), { timeout: 20_000 }).not.toBe(early);
+      });
+
+      await test.step('Then pieces come off the board, so the real position is being applied', async () => {
+        // the game's first capture is 4...Nxe4; nothing returns to the board
+        // once taken, so the count only ever falls
+        await expect
+          .poll(() => home.chessOccupiedSquares.count(), { timeout: 40_000 })
+          .toBeLessThan(32);
+      });
+    },
+  );
+
+  test(
+    'Test_Case_8005_Adventures_ChessReplay_ReducedMotion_ShowsTheFinishedGame',
+    { tag: '@regression' },
+    async ({ page }) => {
+      await page.emulateMedia({ reducedMotion: 'reduce' });
+      const home = new HomePage(page);
+      await home.goto();
+
+      await test.step('Then the board stands at the final position and states the result', async () => {
+        await home.chessReplay.scrollIntoViewIfNeeded();
+        await expect.soft(home.chessMove).toHaveText('0-1');
+        // the game ends a rook, a knight and most of the pawns down from 32
+        const left = await home.chessOccupiedSquares.count();
+        expect.soft(left, `${left} pieces left at the final position`).toBeLessThan(32);
+      });
+
+      await test.step('Then nothing moves, because nothing is animating', async () => {
+        const before = await home.chessMove.textContent();
+        await page.waitForTimeout(3000);
+        await expect.soft(home.chessMove).toHaveText(before ?? '');
+      });
+    },
+  );
+});

@@ -214,6 +214,25 @@ export class HomePage extends BasePage {
     return this.page.getByTestId(`adventure-card-${slug}`);
   }
 
+  // the board on the Quality Knights card, replaying a real Carlsen-Nakamura game
+  get chessReplay(): Locator {
+    return this.page.getByTestId('chess-replay');
+  }
+
+  get chessSquares(): Locator {
+    return this.chessReplay.locator('.chess-square');
+  }
+
+  // only the squares actually holding a piece — an empty square keeps its
+  // element, it just has no glyph in it
+  get chessOccupiedSquares(): Locator {
+    return this.chessReplay.locator('.chess-piece.is-white, .chess-piece.is-black');
+  }
+
+  get chessMove(): Locator {
+    return this.chessReplay.locator('.chess-move');
+  }
+
   // --- Contact ---
   contactLink(kind: ContactLinkKind): Locator {
     return this.page.getByTestId(`contact-link-${kind}`);

@@ -10,6 +10,7 @@ import { initTitleDecrypt } from './title-decrypt.js';
 import { initTypeOnView } from './type-reveal.js';
 import { initPolishPass } from './polish-pass.js';
 import { initIncidentReport } from './incident-report.js';
+import { initChessReplay } from './chess-replay.js';
 import {
   initScrollRibbon,
   initInkCursor,
@@ -219,6 +220,32 @@ initQuillCursor({
   },
 });
 
+// The Quality Knights board plays a whole game, so it is the one animation on
+// this page that would otherwise still be running long after the reader has
+// left the card. It pauses on both counts: the tab going away, and the card
+// itself leaving the screen.
+const chessReplay = initChessReplay(document.querySelector('[data-testid="chess-replay"]'));
+if (chessReplay) {
+  const knights = document.querySelector('[data-testid="adventure-card-quality-knights"]');
+  if (knights && 'IntersectionObserver' in window) {
+    // held from the start: the observer fires once on registration and lets it
+    // go again straight away if the card is already in view
+    let onScreen = false;
+    chessReplay.pause();
+    new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting === onScreen) continue;
+          onScreen = entry.isIntersecting;
+          if (onScreen) chessReplay.resume();
+          else chessReplay.pause();
+        }
+      },
+      { threshold: 0 },
+    ).observe(knights);
+  }
+}
+
 // the rain now runs as a fixed background across the whole site, so pause it
 // only when the tab itself isn't visible (saves battery/CPU in a background tab)
 document.addEventListener('visibilitychange', () => {
@@ -226,10 +253,12 @@ document.addEventListener('visibilitychange', () => {
     coverScene.pause();
     quoteRotator.pause();
     heroTypewritersPause();
+    chessReplay?.pause();
   } else {
     coverScene.resume();
     quoteRotator.resume();
     heroTypewritersResume();
+    chessReplay?.resume();
   }
 });
 

@@ -5000,3 +5000,100 @@ a.tau-course-name:hover {
 .book-btn {
   font-size: 0.68rem;
 }
+
+/* A real game played back on the Quality Knights card: Carlsen-Nakamura,
+   Speed Chess Championship 2023. The squares are built by src/chess-replay.js
+   and the moves come from scripts/generate-chess-replay.mjs — nothing here
+   knows the rules, it just colours what it is given. */
+.chess-replay {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+  margin: 1.25rem 0 0;
+}
+
+.chess-board {
+  flex: none;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  width: 184px;
+  aspect-ratio: 1;
+  border: 1px solid rgba(var(--brass-rgb), 0.45);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* position:relative, but deliberately no z-index: the squares must not become
+   stacking contexts, or the piece sliding across them would be trapped under
+   whichever square comes later in the DOM */
+.chess-square {
+  position: relative;
+}
+
+.chess-square.is-light {
+  background: #cdbb9b;
+}
+
+.chess-square.is-dark {
+  background: #6a5338;
+}
+
+.chess-square.is-last-move::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(var(--brass-bright-rgb), 0.38);
+}
+
+.chess-piece {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+.chess-piece.is-white {
+  color: #fbf5e8;
+  text-shadow:
+    0 0 1px #241c12,
+    0 1px 1px rgba(0, 0, 0, 0.45);
+}
+
+.chess-piece.is-black {
+  color: #15120e;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+/* only the piece actually travelling gets a transition, so the other
+   thirty-one are never asked to animate anything */
+.chess-piece.is-sliding {
+  z-index: 3;
+  transition: transform 300ms ease;
+}
+
+.chess-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.chess-players {
+  color: var(--brass-bright);
+  font-weight: 600;
+}
+
+.chess-move {
+  color: var(--teal-bright);
+  font-variant-numeric: tabular-nums;
+  min-height: 1.1em;
+}

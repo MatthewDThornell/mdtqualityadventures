@@ -75,6 +75,8 @@ Test_Case_{ID}_{Feature}_{Element}_{Behavior}
 | 12000–12999 | Integration (cross-page navigation) | covered |
 | 13000–13999 | Accessibility                       | covered |
 | 14000–14999 | Jobs page                           | covered |
+| 15000–15999 | Security headers                    | covered |
+| 16000–16999 | Performance                         | covered |
 
 "Reserved" ranges have page-object support already in place (`HomePage.ts` has
 `accomplishmentCard()`, `mentorCard()`, `menteeCard()`, `adventureCard()`, `contactLink()`, etc.) —
