@@ -111,10 +111,14 @@ test.describe('Adventures', () => {
         await card.evaluate((el) => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
         // the mark is lazy — it only has pixels once the card is actually on screen
         await expect
-          .poll(() =>
-            card
-              .locator('.adventure-media-mark img')
-              .evaluate((img: HTMLImageElement) => img.naturalWidth),
+          .poll(
+            () =>
+              card
+                .locator('.adventure-media-mark img')
+                .evaluate((img: HTMLImageElement) => img.naturalWidth),
+            // a lazy image, fetched only once the card is on screen, and slow
+            // to arrive when four workers share one dev server
+            { timeout: 15_000 },
           )
           .toBeGreaterThan(0);
         await expect(shoutOut).toHaveClass(/is-typing|tw-written/, { timeout: 15_000 });

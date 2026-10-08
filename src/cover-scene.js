@@ -52,7 +52,14 @@ const CODE_COLUMN_CHANCE = 0.12;
 const FONT_SIZE = 20;
 const TRAIL_LENGTH = 9;
 const TARGET_FPS = 30;
-const FRAME_INTERVAL = 1000 / TARGET_FPS;
+// Past the cover the rain is a whisper at 0.32 opacity behind the text
+// (html.past-cover in style.css), and it is the one thing on this site that
+// keeps a full-viewport canvas redrawing while someone reads. Two thirds of
+// the frames there are enough for glyphs that faint, and it hands the rest of
+// the budget to whatever is actually being read.
+const WHISPER_FPS = 20;
+const frameInterval = () =>
+  1000 / (document.documentElement.classList.contains('past-cover') ? WHISPER_FPS : TARGET_FPS);
 const TEXT_ZONE_REFRESH_FRAMES = 6; // getBoundingClientRect() forces a layout read; no need every frame
 const BRASS = '201, 161, 90';
 const TEAL = '107, 156, 137';
@@ -502,7 +509,7 @@ export function initCoverScene(canvas, options = {}) {
     // on a 120/144Hz display the un-throttled loop was doing 2-4x the
     // fillText/layout work of a 60Hz one for a visual effect that doesn't
     // benefit from it, which is most of where the reported GPU load came from
-    if (accumulator < FRAME_INTERVAL) {
+    if (accumulator < frameInterval()) {
       frameId = requestAnimationFrame(tick);
       return;
     }

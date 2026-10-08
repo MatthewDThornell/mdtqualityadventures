@@ -51,24 +51,52 @@ export function typeReveal(el, msPerChar) {
 
   return new Promise((resolve) => {
     const start = performance.now();
-    // Paced by the clock rather than the frame, like every other animation
-    // here: a slow frame reveals more at once instead of running long.
+    // Only the word being written is touched each frame.
+    //
+    // The first version of this walked all of `parts` every frame and rewrote
+    // both spans of every one, finished or not — around 57 DOM mutations a
+    // frame, 1,100 a second, to reveal about 33 characters. Every one of them
+    // invalidated the paragraph's layout, and on a card as long as the Detail
+    // Guy's it cost enough main thread that a right-click took ~165ms to show
+    // the pen. A word already written never changes again, and a word not yet
+    // reached is already in its starting state, so the loop below commits each
+    // word once as it is passed and otherwise writes one span pair per frame —
+    // and not even that when the character count has not moved.
+    let index = 0; // the word being written
+    let committed = 0; // characters in the words already finished
+    let shown = -1; // how much of the current word is showing
+    let writing = null; // the span carrying the caret
+
     const tick = (now) => {
-      let budget = Math.floor((now - start) / msPerChar);
-      let carried = false;
-      for (const { typed, pending, text } of parts) {
-        const take = Math.max(0, Math.min(text.length, budget));
-        typed.textContent = text.slice(0, take);
-        pending.textContent = text.slice(take);
-        // the caret rides the one node currently being written into
-        typed.classList.toggle('is-writing', !carried && take < text.length);
-        if (take < text.length) carried = true;
-        budget -= take;
+      const budget = Math.floor((now - start) / msPerChar);
+
+      while (index < parts.length && budget - committed >= parts[index].text.length) {
+        const part = parts[index];
+        part.typed.textContent = part.text;
+        part.pending.textContent = '';
+        committed += part.text.length;
+        index += 1;
+        shown = -1;
       }
-      if (budget >= 0 && !carried) {
+
+      if (index >= parts.length) {
+        writing?.classList.remove('is-writing');
         restore();
         resolve();
         return;
+      }
+
+      const part = parts[index];
+      const take = budget - committed;
+      if (take !== shown) {
+        part.typed.textContent = part.text.slice(0, take);
+        part.pending.textContent = part.text.slice(take);
+        shown = take;
+      }
+      if (writing !== part.typed) {
+        writing?.classList.remove('is-writing');
+        part.typed.classList.add('is-writing');
+        writing = part.typed;
       }
       requestAnimationFrame(tick);
     };

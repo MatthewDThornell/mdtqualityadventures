@@ -190,10 +190,20 @@ export function initTypewriter(el, phrases, options = {}) {
 
   // A quick nib-down "tap" each time a letter lands, replacing a continuous
   // idle wiggle that ran regardless of whether anything was actually being
-  // written — restart the animation by removing then re-adding the class
-  // (same restart trick as .magic-word-pop) so back-to-back keystrokes each
-  // get their own tap instead of the first one just being cut short.
+  // written. Each keystroke needs its own tap rather than the first one being
+  // cut short, so the animation is rewound — through the animation itself
+  // where the browser supports it, because the class-off/read-offsetWidth/
+  // class-on restart this used to do forces a synchronous layout of the whole
+  // document, ~18 times a second, for a 12px icon.
   function tapQuill() {
+    const running = quillEl.getAnimations?.() ?? [];
+    if (running.length) {
+      for (const animation of running) {
+        animation.currentTime = 0;
+        animation.play();
+      }
+      return;
+    }
     quillEl.classList.remove('is-writing');
     void quillEl.offsetWidth;
     quillEl.classList.add('is-writing');
@@ -204,7 +214,11 @@ export function initTypewriter(el, phrases, options = {}) {
   let phraseIndex = 0;
   let charIndex = 0;
   let timeoutId = null;
-  let paused = false;
+  // a count rather than a boolean, for the same reason the quote rotator
+  // keeps one: the pen, the tab going hidden and the cover scrolling out of
+  // view all pause this independently, and whichever lets go first must not
+  // start it writing again underneath the other two
+  let pauseCount = 0;
   // whichever function is currently scheduled behind timeoutId, plus the
   // delay it was scheduled with — so pause()/resume() can freeze and later
   // re-fire the *right* next step regardless of which phase (typing this
@@ -280,14 +294,16 @@ export function initTypewriter(el, phrases, options = {}) {
     // is a plain CSS animation on ::after, so it keeps blinking on its own
     // the whole time this is paused.
     pause() {
-      if (paused || finished) return;
-      paused = true;
+      if (finished) return;
+      pauseCount += 1;
+      if (pauseCount > 1) return;
       clearTimeout(timeoutId);
       timeoutId = null;
     },
     resume() {
-      if (!paused || finished) return;
-      paused = false;
+      if (finished || pauseCount === 0) return;
+      pauseCount -= 1;
+      if (pauseCount > 0) return;
       timeoutId = setTimeout(pendingFn, pendingDelay);
     },
   };

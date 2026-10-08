@@ -14,10 +14,13 @@ export function initPolishPass(body, lines) {
   if (!body || targets.length === 0) return;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
+  // one moving box — the shine, with the rag riding its leading edge — so the
+  // pass is a single transform the compositor can run rather than an animated
+  // `left`, which would ask for a layout on every frame of the sweep
   const pass = document.createElement('span');
   pass.className = 'polish-pass';
   pass.setAttribute('aria-hidden', 'true');
-  pass.innerHTML = '<span class="polish-rag"></span>';
+  pass.innerHTML = '<span class="polish-sweeper"><span class="polish-rag"></span></span>';
   body.appendChild(pass);
 
   // type-revealed bubbles from each line as it finishes; the pass waits for

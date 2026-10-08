@@ -221,11 +221,46 @@ document.addEventListener('visibilitychange', () => {
   if (document.hidden) {
     coverScene.pause();
     quoteRotator.pause();
+    heroTypewritersPause();
   } else {
     coverScene.resume();
     quoteRotator.resume();
+    heroTypewritersResume();
   }
 });
+
+// The hero's eyebrow and tagline used to keep typing, erasing and retyping for
+// as long as the page was open — a timer per character, a DOM rewrite per
+// character, and the quill's tap on top, all of it for a cover the reader
+// scrolled past ten screens ago. They now write only while the cover is on
+// screen, which leaves the main thread to whatever the reader is actually
+// looking at.
+let heroPaused = false;
+function heroTypewritersPause() {
+  if (heroPaused) return;
+  heroPaused = true;
+  eyebrowTypewriter.pause();
+  taglineTypewriter.pause();
+}
+function heroTypewritersResume() {
+  if (!heroPaused) return;
+  heroPaused = false;
+  eyebrowTypewriter.resume();
+  taglineTypewriter.resume();
+}
+
+const cover = document.getElementById('top');
+if (cover && 'IntersectionObserver' in window) {
+  new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) heroTypewritersResume();
+        else heroTypewritersPause();
+      }
+    },
+    { threshold: 0 },
+  ).observe(cover);
+}
 
 initSiteNav({
   nav: document.getElementById('siteNav'),
