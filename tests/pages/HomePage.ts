@@ -214,11 +214,17 @@ export class HomePage extends BasePage {
     return this.page.getByTestId(`adventure-card-${slug}`);
   }
 
-  // the board on the Quality Knights card, replaying a real Carlsen-Nakamura game
+  // the pair of boards on the Quality Knights card, replaying one game from
+  // either side of the table
   get chessReplay(): Locator {
     return this.page.getByTestId('chess-replay');
   }
 
+  get chessBoards(): Locator {
+    return this.chessReplay.locator('.chess-board');
+  }
+
+  // squares across both boards, so the counts below are always per-board × 2
   get chessSquares(): Locator {
     return this.chessReplay.locator('.chess-square');
   }
@@ -229,8 +235,11 @@ export class HomePage extends BasePage {
     return this.chessReplay.locator('.chess-piece.is-white, .chess-piece.is-black');
   }
 
-  get chessMove(): Locator {
-    return this.chessReplay.locator('.chess-move');
+  // How far through the game the boards are. Nothing on the card says so any
+  // more, so this attribute is the only handle a test has on a replay whose
+  // output is otherwise purely pictorial.
+  chessPly(): Promise<string | null> {
+    return this.chessReplay.getAttribute('data-ply');
   }
 
   // --- Contact ---

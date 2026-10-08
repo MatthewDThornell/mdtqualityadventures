@@ -114,10 +114,10 @@ test.describe('Performance', () => {
       const home = new HomePage(page);
       await home.goto();
 
-      await test.step('Given the Quality Knights card is on screen, the board is playing', async () => {
+      await test.step('Given the Quality Knights card is on screen, the boards are playing', async () => {
         await home.chessReplay.scrollIntoViewIfNeeded();
-        const first = await home.chessMove.textContent();
-        await expect.poll(() => home.chessMove.textContent(), { timeout: 20_000 }).not.toBe(first);
+        const first = await home.chessPly();
+        await expect.poll(() => home.chessPly(), { timeout: 20_000 }).not.toBe(first);
       });
 
       await test.step('When the reader scrolls away, Then the game stops where it stood', async () => {
@@ -126,19 +126,17 @@ test.describe('Performance', () => {
           .evaluate((el) => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
         // let the ply already in flight land, then watch for several more
         await page.waitForTimeout(1500);
-        const stoppedAt = await home.chessMove.textContent();
+        const stoppedAt = await home.chessPly();
         await page.waitForTimeout(4000);
         expect
-          .soft(await home.chessMove.textContent(), 'the board played on with nobody watching')
+          .soft(await home.chessPly(), 'the boards played on with nobody watching')
           .toBe(stoppedAt);
       });
 
       await test.step('When they come back, Then it carries on from there', async () => {
-        const stoppedAt = await home.chessMove.textContent();
+        const stoppedAt = await home.chessPly();
         await home.chessReplay.scrollIntoViewIfNeeded();
-        await expect
-          .poll(() => home.chessMove.textContent(), { timeout: 20_000 })
-          .not.toBe(stoppedAt);
+        await expect.poll(() => home.chessPly(), { timeout: 20_000 }).not.toBe(stoppedAt);
       });
     },
   );

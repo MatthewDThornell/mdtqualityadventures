@@ -5001,23 +5001,27 @@ a.tau-course-name:hover {
   font-size: 0.68rem;
 }
 
-/* A real game played back on the Quality Knights card: Carlsen-Nakamura,
-   Speed Chess Championship 2023. The squares are built by src/chess-replay.js
-   and the moves come from scripts/generate-chess-replay.mjs — nothing here
-   knows the rules, it just colours what it is given. */
+/* One game played back on the Quality Knights card, on two boards at once:
+   the same position from either side of the table. The squares are built by
+   src/chess-replay.js and the moves come from
+   scripts/generate-chess-replay.mjs — nothing here knows the rules, it just
+   colours what it is given. */
 .chess-replay {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1.1rem;
+  gap: 1rem;
   margin: 1.25rem 0 0;
 }
 
+/* both boards shrink together rather than one wrapping under the other, down
+   to the point where a square stops being readable at all */
 .chess-board {
-  flex: none;
+  flex: 1 1 150px;
+  max-width: 184px;
+  min-width: 128px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  width: 184px;
   aspect-ratio: 1;
   border: 1px solid rgba(var(--brass-rgb), 0.45);
   border-radius: 5px;
@@ -5054,8 +5058,22 @@ a.tau-course-name:hover {
   place-items: center;
   width: 100%;
   height: 100%;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   line-height: 1;
+}
+
+/* Now that the boards flex rather than sit at a fixed 184px, a fixed glyph
+   size would overflow the square on the narrow end of that range. A square is
+   an eighth of the board, so 9.5% of the board's own width fills it nicely;
+   the rem above stays as the fallback where container units aren't understood. */
+@supports (font-size: 1cqw) {
+  .chess-board {
+    container-type: inline-size;
+  }
+
+  .chess-piece {
+    font-size: 9.5cqw;
+  }
 }
 
 .chess-piece.is-white {
@@ -5075,25 +5093,4 @@ a.tau-course-name:hover {
 .chess-piece.is-sliding {
   z-index: 3;
   transition: transform 300ms ease;
-}
-
-.chess-caption {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  font-family: var(--font-mono);
-  font-size: 0.74rem;
-  letter-spacing: 0.04em;
-  color: var(--text-muted);
-}
-
-.chess-players {
-  color: var(--brass-bright);
-  font-weight: 600;
-}
-
-.chess-move {
-  color: var(--teal-bright);
-  font-variant-numeric: tabular-nums;
-  min-height: 1.1em;
 }

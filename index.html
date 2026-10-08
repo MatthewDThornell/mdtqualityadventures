@@ -1004,16 +1004,15 @@
                     Having someone like Ryan to play with made onboarding feel a lot less like
                     being the new guy and a lot more like finding my place.
                   </p>
-                  <!-- A real game, played out move by move: the board is built by
-                       src/chess-replay.js from data scripts/generate-chess-replay.mjs
-                       pulled out of the PGN. -->
-                  <figure class="chess-replay" data-testid="chess-replay">
-                    <figcaption class="chess-caption">
-                      <span class="chess-players">Carlsen vs Nakamura</span>
-                      <span>Speed Chess Championship, 2023</span>
-                      <span class="chess-move" data-chess-move aria-hidden="true"></span>
-                    </figcaption>
-                  </figure>
+                  <!-- One game, played out move by move on two boards at once: the
+                       same position from either side of the table, like the two
+                       knights facing each other on the crest. Both are filled by
+                       src/chess-replay.js from the moves
+                       scripts/generate-chess-replay.mjs pulled out of a PGN. -->
+                  <div class="chess-replay" data-testid="chess-replay" role="img" aria-label="Two chess boards replaying the same game, each seen from one player's side">
+                    <div data-chess-board></div>
+                    <div data-chess-board data-chess-flipped></div>
+                  </div>
                 </div>
               </article>
             </div>

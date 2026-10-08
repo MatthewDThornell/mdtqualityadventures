@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, type Locator } from '@playwright/test';
 import { HomePage } from '../pages/HomePage';
 
 // What It Tests: Every adventure card — the businesses and rooms in the
@@ -159,45 +159,65 @@ test.describe('Adventures', () => {
   );
 });
 
-// What It Tests: The board on the Quality Knights card plays a real game
-// forward — pieces get captured, the move readout advances — and, with motion
-// turned off, simply shows the finished game instead.
+// What It Tests: The two boards on the Quality Knights card play one real game
+// forward, in step with each other and from opposite sides, and with motion
+// turned off simply show the finished game instead.
 // Why It Matters: The moves are generated from a PGN by
 // scripts/generate-chess-replay.mjs, and the runtime deliberately knows no
 // chess: it slides a piece and then applies the position it was handed. If the
 // generated data and the player ever disagree about which square is which, the
-// board would still animate — it would just be playing nonsense. Counting
-// captures is the cheapest way to prove the position is really being applied.
-test.describe('Adventures — the Quality Knights board', () => {
+// boards would still animate — they would just be playing nonsense. Counting
+// captures is the cheapest way to prove the position is really being applied,
+// and comparing the two boards is the cheapest way to prove the flipped one is
+// the same game rather than a second one running loose.
+test.describe('Adventures — the Quality Knights boards', () => {
+  // the piece on a square, read off a board in its own display order
+  const readBoard = (board: Locator) =>
+    board.locator('.chess-piece').evaluateAll((els) => els.map((el) => el.textContent ?? ''));
+
   test(
-    'Test_Case_8004_Adventures_ChessReplay_PlaysTheGameForward',
+    'Test_Case_8004_Adventures_ChessReplay_PlaysOneGameOnBothBoards',
     { tag: '@regression' },
     async ({ page }) => {
       test.slow();
       const home = new HomePage(page);
       await home.goto();
 
-      await test.step('Then the board is drawn as 64 squares with all 32 pieces on it', async () => {
+      await test.step('Then two boards are drawn, 64 squares and 32 pieces each', async () => {
         await home.chessReplay.scrollIntoViewIfNeeded();
-        await expect.soft(home.chessSquares).toHaveCount(64);
-        await expect.soft(home.chessOccupiedSquares).toHaveCount(32);
-        await expect.soft(home.chessReplay).toContainText('Carlsen vs Nakamura');
+        await expect.soft(home.chessBoards).toHaveCount(2);
+        await expect.soft(home.chessSquares).toHaveCount(128);
+        await expect.soft(home.chessOccupiedSquares).toHaveCount(64);
       });
 
-      await test.step('When it runs, Then the move readout advances through the game', async () => {
-        await expect
-          .poll(() => home.chessMove.textContent(), { timeout: 20_000 })
-          .toMatch(/^\d+\.{1,3} \S+/);
-        const early = await home.chessMove.textContent();
-        await expect.poll(() => home.chessMove.textContent(), { timeout: 20_000 }).not.toBe(early);
+      await test.step('Then the second board is the first one turned around, not a different game', async () => {
+        const [first, second] = await Promise.all([
+          readBoard(home.chessBoards.nth(0)),
+          readBoard(home.chessBoards.nth(1)),
+        ]);
+        expect.soft(second).toEqual([...first].reverse());
       });
 
-      await test.step('Then pieces come off the board, so the real position is being applied', async () => {
+      await test.step('When it runs, Then the game advances ply by ply', async () => {
+        const early = await home.chessPly();
+        expect.soft(Number(early)).toBeGreaterThanOrEqual(0);
+        await expect.poll(() => home.chessPly(), { timeout: 20_000 }).not.toBe(early);
+      });
+
+      await test.step('Then pieces come off both boards, so the real position is being applied', async () => {
         // the game's first capture is 4...Nxe4; nothing returns to the board
         // once taken, so the count only ever falls
         await expect
           .poll(() => home.chessOccupiedSquares.count(), { timeout: 40_000 })
-          .toBeLessThan(32);
+          .toBeLessThan(64);
+      });
+
+      await test.step('Then the two boards are still mirrors of each other mid-game', async () => {
+        const [first, second] = await Promise.all([
+          readBoard(home.chessBoards.nth(0)),
+          readBoard(home.chessBoards.nth(1)),
+        ]);
+        expect.soft(second).toEqual([...first].reverse());
       });
     },
   );
@@ -210,18 +230,18 @@ test.describe('Adventures — the Quality Knights board', () => {
       const home = new HomePage(page);
       await home.goto();
 
-      await test.step('Then the board stands at the final position and states the result', async () => {
+      await test.step('Then the boards stand at the final position of the game', async () => {
         await home.chessReplay.scrollIntoViewIfNeeded();
-        await expect.soft(home.chessMove).toHaveText('0-1');
-        // the game ends a rook, a knight and most of the pawns down from 32
+        // 102 plies in the generated game, so the end of it
+        await expect.soft(home.chessReplay).toHaveAttribute('data-ply', '102');
         const left = await home.chessOccupiedSquares.count();
-        expect.soft(left, `${left} pieces left at the final position`).toBeLessThan(32);
+        expect.soft(left, `${left} pieces left across both boards`).toBeLessThan(64);
       });
 
       await test.step('Then nothing moves, because nothing is animating', async () => {
-        const before = await home.chessMove.textContent();
+        const before = await home.chessPly();
         await page.waitForTimeout(3000);
-        await expect.soft(home.chessMove).toHaveText(before ?? '');
+        expect.soft(await home.chessPly()).toBe(before);
       });
     },
   );
