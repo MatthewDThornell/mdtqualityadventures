@@ -1,6 +1,97 @@
 {
-  "fetchedAt": "2026-10-08T04:18:18.413Z",
+  "fetchedAt": "2026-10-08T12:44:25.978Z",
   "jobs": [
+    {
+      "id": "arbeitnow-production-test-engineer-de-berlin-231244",
+      "title": "Production Test Engineer (m/f/d)",
+      "company": "Swissbit",
+      "url": "https://www.arbeitnow.com/jobs/companies/swissbit/production-test-engineer-de-berlin-231244",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "DE-Berlin",
+      "country": "Germany",
+      "postedAt": "2026-10-08T11:09:29.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-qa-engineer-bonn-339277",
+      "title": "Senior QA Engineer*",
+      "company": "Haeger Consulting GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/haeger-consulting-gmbh/senior-qa-engineer-bonn-339277",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Bonn",
+      "country": "Germany",
+      "postedAt": "2026-10-08T08:31:39.000Z"
+    },
+    {
+      "id": "arbeitnow-werkstudent-quality-assurance-medizinalcannabis-koln-62082",
+      "title": "Werkstudent Quality Assurance (m/w/d) - Medizinalcannabis",
+      "company": "Semdor Pharma Group GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/werkstudent-quality-assurance-medizinalcannabis-koln-62082",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Köln",
+      "country": "Germany",
+      "postedAt": "2026-10-08T08:09:41.000Z"
+    },
+    {
+      "id": "arbeitnow-head-of-quality-assurance-koln-261704",
+      "title": "Head of Quality Assurance (m/w/d)",
+      "company": "Semdor Pharma Group GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/semdor-pharma-group-gmbh/head-of-quality-assurance-koln-261704",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Köln",
+      "country": "Germany",
+      "postedAt": "2026-10-08T08:09:41.000Z"
+    },
+    {
+      "id": "arbeitnow-environmental-test-engineer-munchen-424367",
+      "title": "Environmental Test Engineer",
+      "company": "Mynaric",
+      "url": "https://www.arbeitnow.com/jobs/companies/mynaric/environmental-test-engineer-munchen-424367",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "München",
+      "country": "Germany",
+      "postedAt": "2026-10-08T08:09:25.000Z"
+    },
+    {
+      "id": "arbeitnow-qa-engineer-intern-6-months-113722",
+      "title": "QA Engineer Intern (6 months)",
+      "company": "shifttechnology",
+      "url": "https://www.arbeitnow.fr/jobs/companies/shifttechnology/qa-engineer-intern-6-months-113722",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-10-08T07:55:06.000Z"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-08T02:39:16-04:00"
+    },
     {
       "id": "greenhouse-thoughtworks-8200468",
       "title": "Lead Quality Analyst",
@@ -26,19 +117,6 @@
       "location": "Taipei,Taiwan",
       "country": "Taiwan",
       "postedAt": "2026-10-07T19:02:27-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-07T14:39:32-04:00"
     },
     {
       "id": "arbeitnow-senior-qa-engineer-berlin-hybrid-138845",
@@ -210,19 +288,6 @@
       "postedAt": "2026-10-06T11:09:38.000Z"
     },
     {
-      "id": "greenhouse-thoughtworks-7964148",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Lima, Peru",
-      "country": "Other",
-      "postedAt": "2026-10-06T04:15:29-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-8191523",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -232,6 +297,19 @@
       "direct": true,
       "workType": "On-site",
       "location": "Quito, Ecuador",
+      "country": "Other",
+      "postedAt": "2026-10-06T04:15:29-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-7964148",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Lima, Peru",
       "country": "Other",
       "postedAt": "2026-10-06T04:15:29-04:00"
     },
