@@ -1,18 +1,135 @@
 {
-  "fetchedAt": "2026-10-08T12:44:25.978Z",
+  "fetchedAt": "2026-10-08T22:49:08.984Z",
   "jobs": [
     {
-      "id": "arbeitnow-production-test-engineer-de-berlin-231244",
-      "title": "Production Test Engineer (m/f/d)",
-      "company": "Swissbit",
-      "url": "https://www.arbeitnow.com/jobs/companies/swissbit/production-test-engineer-de-berlin-231244",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "id": "jobicy-154879",
+      "title": "Senior Design Quality Engineer",
+      "company": "Bayesian Health",
+      "url": "https://jobicy.com/jobs/154879-senior-design-quality-engineer",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
       "direct": false,
+      "workType": "Remote",
+      "location": "USA",
+      "country": "United States",
+      "postedAt": "2026-10-08T19:08:06+00:00"
+    },
+    {
+      "id": "jobicy-154875",
+      "title": "Quality Assurance Engineer II",
+      "company": "Bloomreach",
+      "url": "https://jobicy.com/jobs/154875-quality-assurance-engineer-ii",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Slovakia",
+      "country": "Other",
+      "postedAt": "2026-10-08T19:08:06+00:00"
+    },
+    {
+      "id": "jobicy-154871",
+      "title": "Senior Quality Engineer",
+      "company": "StackAdapt",
+      "url": "https://jobicy.com/jobs/154871-senior-quality-engineer-3",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Canada,  USA",
+      "country": "United States",
+      "postedAt": "2026-10-08T19:08:04+00:00"
+    },
+    {
+      "id": "jobicy-154877",
+      "title": "Sr. Engineering Manager, SDET",
+      "company": "Cribl",
+      "url": "https://jobicy.com/jobs/154877-sr-engineering-manager-sdet",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "USA",
+      "country": "United States",
+      "postedAt": "2026-10-08T19:08:02+00:00"
+    },
+    {
+      "id": "jobicy-154880",
+      "title": "Freelance Software Tester With Smart TVs (Remote in Italy)",
+      "company": "Testlio",
+      "url": "https://jobicy.com/jobs/154880-freelance-software-tester-with-smart-tvs-remote-in-italy",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Italy",
+      "country": "Other",
+      "postedAt": "2026-10-08T19:08:01+00:00"
+    },
+    {
+      "id": "jobicy-154874",
+      "title": "QA Engineer (Anywhere in Europe)",
+      "company": "PadSplit",
+      "url": "https://jobicy.com/jobs/154874-qa-engineer-anywhere-in-europe",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Europe",
+      "country": "Other",
+      "postedAt": "2026-10-08T19:08:01+00:00"
+    },
+    {
+      "id": "jobicy-154878",
+      "title": "Junior QA Engineer - US Remote",
+      "company": "PerfectServe",
+      "url": "https://jobicy.com/jobs/154878-junior-qa-engineer-us-remote",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "USA",
+      "country": "United States",
+      "postedAt": "2026-10-08T19:08:00+00:00"
+    },
+    {
+      "id": "jobicy-154872",
+      "title": "Software Test Engineer",
+      "company": "Deepgram",
+      "url": "https://jobicy.com/jobs/154872-software-test-engineer",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "USA",
+      "country": "United States",
+      "postedAt": "2026-10-08T19:08:00+00:00"
+    },
+    {
+      "id": "jobicy-154873",
+      "title": "QA Analyst (Mexico, Remote)",
+      "company": "Varicent",
+      "url": "https://jobicy.com/jobs/154873-qa-analyst-mexico-remote",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Mexico",
+      "country": "Mexico",
+      "postedAt": "2026-10-08T19:07:58+00:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
       "workType": "On-site",
-      "location": "DE-Berlin",
-      "country": "Germany",
-      "postedAt": "2026-10-08T11:09:29.000Z"
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-08T14:40:43-04:00"
     },
     {
       "id": "arbeitnow-senior-qa-engineer-bonn-339277",
@@ -25,7 +142,46 @@
       "workType": "On-site",
       "location": "Bonn",
       "country": "Germany",
-      "postedAt": "2026-10-08T08:31:39.000Z"
+      "postedAt": "2026-10-08T16:47:45.000Z"
+    },
+    {
+      "id": "greenhouse-stripe-8206729",
+      "title": "Team Lead, Quality Analyst, Product Support Operations",
+      "company": "Stripe",
+      "url": "https://stripe.com/jobs/search?gh_jid=8206729",
+      "source": "Stripe",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Mexico City",
+      "country": "Mexico",
+      "postedAt": "2026-10-08T09:57:43-04:00"
+    },
+    {
+      "id": "arbeitnow-head-of-production-test-engineering-london-312719",
+      "title": "Head of Production Test Engineering",
+      "company": "Flipper",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/flipper/head-of-production-test-engineering-london-312719",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "London Office",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-08T12:40:10.000Z"
+    },
+    {
+      "id": "arbeitnow-production-test-engineer-de-berlin-231244",
+      "title": "Production Test Engineer (m/f/d)",
+      "company": "Swissbit",
+      "url": "https://www.arbeitnow.com/jobs/companies/swissbit/production-test-engineer-de-berlin-231244",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "DE-Berlin",
+      "country": "Germany",
+      "postedAt": "2026-10-08T11:09:29.000Z"
     },
     {
       "id": "arbeitnow-werkstudent-quality-assurance-medizinalcannabis-koln-62082",
@@ -78,19 +234,6 @@
       "location": "",
       "country": "Remote / Unspecified",
       "postedAt": "2026-10-08T07:55:06.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-08T02:39:16-04:00"
     },
     {
       "id": "greenhouse-thoughtworks-8200468",
@@ -223,32 +366,6 @@
       "postedAt": "2026-10-06T20:30:23.000Z"
     },
     {
-      "id": "greenhouse-airbnb-8259240",
-      "title": "Quality Assurance & Standards Manager",
-      "company": "Airbnb",
-      "url": "https://careers.airbnb.com/positions/8259240?gh_jid=8259240",
-      "source": "Airbnb",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Bangalore, India",
-      "country": "India",
-      "postedAt": "2026-10-06T15:33:58-04:00"
-    },
-    {
-      "id": "greenhouse-airbnb-8259224",
-      "title": "Quality Assurance & Standards Manager",
-      "company": "Airbnb",
-      "url": "https://careers.airbnb.com/positions/8259224?gh_jid=8259224",
-      "source": "Airbnb",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "United States ",
-      "country": "United States",
-      "postedAt": "2026-10-06T15:33:56-04:00"
-    },
-    {
       "id": "greenhouse-robinhood-8082056",
       "title": "Staff Quality Engineer  ",
       "company": "Robinhood",
@@ -288,19 +405,6 @@
       "postedAt": "2026-10-06T11:09:38.000Z"
     },
     {
-      "id": "greenhouse-thoughtworks-8191523",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Quito, Ecuador",
-      "country": "Other",
-      "postedAt": "2026-10-06T04:15:29-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-7964148",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -310,6 +414,19 @@
       "direct": true,
       "workType": "On-site",
       "location": "Lima, Peru",
+      "country": "Other",
+      "postedAt": "2026-10-06T04:15:29-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8191523",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Quito, Ecuador",
       "country": "Other",
       "postedAt": "2026-10-06T04:15:29-04:00"
     },
@@ -403,32 +520,6 @@
       "location": "Toronto, Ontario, Canada",
       "country": "Canada",
       "postedAt": "2026-09-25T08:28:18-04:00"
-    },
-    {
-      "id": "lever-shieldai-01a2d105-fe26-495e-bd62-c0aeb11cdbdd",
-      "title": "Engineering Technician 4, Quality Assurance (R5977)",
-      "company": "Shield AI",
-      "url": "https://jobs.lever.co/shieldai/01a2d105-fe26-495e-bd62-c0aeb11cdbdd",
-      "source": "Shield AI",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Remote",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-09-24T21:00:22.513Z"
-    },
-    {
-      "id": "lever-shieldai-d7a24b6e-caac-4bbd-84d3-44d089721f92",
-      "title": "Senior Engineer, Quality Assurance (R5985)",
-      "company": "Shield AI",
-      "url": "https://jobs.lever.co/shieldai/d7a24b6e-caac-4bbd-84d3-44d089721f92",
-      "source": "Shield AI",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Melbourne",
-      "country": "Australia",
-      "postedAt": "2026-09-24T20:34:35.693Z"
     }
   ]
 }
