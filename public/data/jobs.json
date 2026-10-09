@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-10-08T22:49:08.984Z",
+  "fetchedAt": "2026-10-09T04:23:09.275Z",
   "jobs": [
+    {
+      "id": "arbeitnow-qa-engineer-manchester-162642",
+      "title": "QA Engineer",
+      "company": "Foundation Health",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/foundation-health/qa-engineer-manchester-162642",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Manchester",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-09T00:40:07.000Z"
+    },
+    {
+      "id": "arbeitnow-qa-lead-manchester-270027",
+      "title": "QA Lead",
+      "company": "Foundation Health",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/foundation-health/qa-lead-manchester-270027",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Manchester",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-09T00:40:07.000Z"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-08T19:15:33-04:00"
+    },
     {
       "id": "jobicy-154879",
       "title": "Senior Design Quality Engineer",
@@ -117,19 +156,6 @@
       "location": "Mexico",
       "country": "Mexico",
       "postedAt": "2026-10-08T19:07:58+00:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-08T14:40:43-04:00"
     },
     {
       "id": "arbeitnow-senior-qa-engineer-bonn-339277",
