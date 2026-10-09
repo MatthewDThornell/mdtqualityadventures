@@ -1,6 +1,97 @@
 {
-  "fetchedAt": "2026-10-09T04:23:09.275Z",
+  "fetchedAt": "2026-10-09T12:31:00.037Z",
   "jobs": [
+    {
+      "id": "lever-shieldai-cbba120f-2089-4531-9e41-1dad856473a7",
+      "title": "Systems Test Engineer",
+      "company": "Shield AI",
+      "url": "https://jobs.lever.co/shieldai/cbba120f-2089-4531-9e41-1dad856473a7",
+      "source": "Shield AI",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Bangalore",
+      "country": "India",
+      "postedAt": "2026-10-09T11:59:55.378Z"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-09T02:39:45-04:00"
+    },
+    {
+      "id": "arbeitnow-test-automation-engineer-kommunikationssysteme-dresden-hybrid-60000-80000-218646",
+      "title": "Test Automation Engineer (m/w/d) Kommunikationssysteme, Dresden hybrid 60.000 - 80.000",
+      "company": "wabcon",
+      "url": "https://www.arbeitnow.com/jobs/companies/wabcon/test-automation-engineer-kommunikationssysteme-dresden-hybrid-60000-80000-218646",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Dresden",
+      "country": "Germany",
+      "postedAt": "2026-10-09T06:30:41.000Z"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8191523",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Quito, Ecuador",
+      "country": "Other",
+      "postedAt": "2026-10-09T02:08:18-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-7964148",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Lima, Peru",
+      "country": "Other",
+      "postedAt": "2026-10-09T02:08:18-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8200468",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Singapore, Singapore",
+      "country": "Singapore",
+      "postedAt": "2026-10-09T02:08:18-04:00"
+    },
+    {
+      "id": "arbeitnow-qa-engineer-paris-107303",
+      "title": "QA Engineer",
+      "company": "Npv",
+      "url": "https://www.arbeitnow.fr/jobs/companies/npv/qa-engineer-paris-107303",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Paris",
+      "country": "France",
+      "postedAt": "2026-10-09T04:40:12.000Z"
+    },
     {
       "id": "arbeitnow-qa-engineer-manchester-162642",
       "title": "QA Engineer",
@@ -26,19 +117,6 @@
       "location": "Manchester",
       "country": "United Kingdom",
       "postedAt": "2026-10-09T00:40:07.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-08T19:15:33-04:00"
     },
     {
       "id": "jobicy-154879",
@@ -158,19 +236,6 @@
       "postedAt": "2026-10-08T19:07:58+00:00"
     },
     {
-      "id": "arbeitnow-senior-qa-engineer-bonn-339277",
-      "title": "Senior QA Engineer*",
-      "company": "Haeger Consulting GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/haeger-consulting-gmbh/senior-qa-engineer-bonn-339277",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Bonn",
-      "country": "Germany",
-      "postedAt": "2026-10-08T16:47:45.000Z"
-    },
-    {
       "id": "greenhouse-stripe-8206729",
       "title": "Team Lead, Quality Analyst, Product Support Operations",
       "company": "Stripe",
@@ -182,19 +247,6 @@
       "location": "Mexico City",
       "country": "Mexico",
       "postedAt": "2026-10-08T09:57:43-04:00"
-    },
-    {
-      "id": "arbeitnow-head-of-production-test-engineering-london-312719",
-      "title": "Head of Production Test Engineering",
-      "company": "Flipper",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/flipper/head-of-production-test-engineering-london-312719",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "London Office",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-08T12:40:10.000Z"
     },
     {
       "id": "arbeitnow-production-test-engineer-de-berlin-231244",
@@ -262,19 +314,6 @@
       "postedAt": "2026-10-08T07:55:06.000Z"
     },
     {
-      "id": "greenhouse-thoughtworks-8200468",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
-      "postedAt": "2026-10-07T23:46:15-04:00"
-    },
-    {
       "id": "greenhouse-stripe-8153331",
       "title": "Software Quality Assurance Engineer",
       "company": "Stripe",
@@ -288,19 +327,6 @@
       "postedAt": "2026-10-07T19:02:27-04:00"
     },
     {
-      "id": "arbeitnow-senior-qa-engineer-berlin-hybrid-138845",
-      "title": "Senior QA Engineer (Berlin, hybrid)",
-      "company": "Kittl",
-      "url": "https://www.arbeitnow.com/jobs/companies/kittl/senior-qa-engineer-berlin-hybrid-138845",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-10-07T17:00:48.000Z"
-    },
-    {
       "id": "arbeitnow-banking-test-architect-47527",
       "title": "Banking Test Architect (m/w/d)",
       "company": "capco",
@@ -312,19 +338,6 @@
       "location": "",
       "country": "Remote / Unspecified",
       "postedAt": "2026-10-07T08:55:03.000Z"
-    },
-    {
-      "id": "jobicy-154770",
-      "title": "Senior Software Development Engineer in Test (SDET)",
-      "company": "Flex",
-      "url": "https://jobicy.com/jobs/154770-senior-software-development-engineer-in-test-sdet",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Anywhere",
-      "country": "Other",
-      "postedAt": "2026-10-07T08:50:12+00:00"
     },
     {
       "id": "arbeitnow-qa-automation-engineer-heidelberg-ger-436564",
@@ -405,58 +418,6 @@
       "postedAt": "2026-10-06T12:12:00-04:00"
     },
     {
-      "id": "arbeitnow-system-test-automation-engineer-leonberg-germany-102280",
-      "title": "System Test Automation Engineer",
-      "company": "Wayve",
-      "url": "https://www.arbeitnow.com/jobs/companies/wayve/system-test-automation-engineer-leonberg-germany-102280",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Leonberg, Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-06T11:40:04.000Z"
-    },
-    {
-      "id": "arbeitnow-systems-integration-qa-engineer-all-genders-munich-29974",
-      "title": "Systems Integration & QA Engineer (All genders)",
-      "company": "Stark",
-      "url": "https://www.arbeitnow.com/jobs/companies/stark/systems-integration-qa-engineer-all-genders-munich-29974",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich",
-      "country": "Germany",
-      "postedAt": "2026-10-06T11:09:38.000Z"
-    },
-    {
-      "id": "greenhouse-thoughtworks-7964148",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Lima, Peru",
-      "country": "Other",
-      "postedAt": "2026-10-06T04:15:29-04:00"
-    },
-    {
-      "id": "greenhouse-thoughtworks-8191523",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Quito, Ecuador",
-      "country": "Other",
-      "postedAt": "2026-10-06T04:15:29-04:00"
-    },
-    {
       "id": "greenhouse-airbnb-8154749",
       "title": "Early Career Software Engineer, Quality Engineering",
       "company": "Airbnb",
@@ -533,19 +494,6 @@
       "location": "San Diego, California",
       "country": "United States",
       "postedAt": "2026-09-26T20:48:27.803Z"
-    },
-    {
-      "id": "greenhouse-okta-8212003",
-      "title": "Senior Engineering Manager, SDET  - Okta Identity Governance (OIG)",
-      "company": "Okta",
-      "url": "https://www.okta.com/company/careers/opportunity/8212003?gh_jid=8212003",
-      "source": "Okta",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Toronto, Ontario, Canada",
-      "country": "Canada",
-      "postedAt": "2026-09-25T08:28:18-04:00"
     }
   ]
 }
