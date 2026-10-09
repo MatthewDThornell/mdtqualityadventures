@@ -1,6 +1,84 @@
 {
-  "fetchedAt": "2026-10-09T12:31:00.037Z",
+  "fetchedAt": "2026-10-09T22:11:45.519Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior QA Engineer, Safety",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-09T16:54:57-04:00"
+    },
+    {
+      "id": "greenhouse-samsara-8139255",
+      "title": "Senior Manager, AI Quality Engineering",
+      "company": "Samsara",
+      "url": "https://www.samsara.com/company/careers/roles/8139255?gh_jid=8139255",
+      "source": "Samsara",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Remote - US",
+      "country": "United States",
+      "postedAt": "2026-10-09T16:16:53-04:00"
+    },
+    {
+      "id": "arbeitnow-test-automation-engineer-kommunikationssysteme-dresden-hybrid-60000-80000-218646",
+      "title": "Test Automation Engineer (m/w/d) Kommunikationssysteme, Dresden hybrid 60.000 - 80.000",
+      "company": "wabcon",
+      "url": "https://www.arbeitnow.com/jobs/companies/wabcon/test-automation-engineer-kommunikationssysteme-dresden-hybrid-60000-80000-218646",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Dresden",
+      "country": "Germany",
+      "postedAt": "2026-10-09T19:22:33.000Z"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-09T14:40:13-04:00"
+    },
+    {
+      "id": "greenhouse-scaleai-4742042005",
+      "title": "Systems Engineering Integration & Test Lead, Public Sector",
+      "company": "Scale AI",
+      "url": "https://job-boards.greenhouse.io/scaleai/jobs/4742042005",
+      "source": "Scale AI",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Washington, DC",
+      "country": "United States",
+      "postedAt": "2026-10-09T12:10:45-04:00"
+    },
+    {
+      "id": "arbeitnow-financial-crime-quality-assurance-analyst-glasgow-316252",
+      "title": "Financial Crime Quality Assurance Analyst",
+      "company": "Delta Capita",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/delta-capita/financial-crime-quality-assurance-analyst-glasgow-316252",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Glasgow, Glasgow City, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-09T15:30:13.000Z"
+    },
     {
       "id": "lever-shieldai-cbba120f-2089-4531-9e41-1dad856473a7",
       "title": "Systems Test Engineer",
@@ -15,30 +93,17 @@
       "postedAt": "2026-10-09T11:59:55.378Z"
     },
     {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
+      "id": "greenhouse-thoughtworks-8200468",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
+      "source": "Thoughtworks",
       "sourceUrl": null,
       "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-09T02:39:45-04:00"
-    },
-    {
-      "id": "arbeitnow-test-automation-engineer-kommunikationssysteme-dresden-hybrid-60000-80000-218646",
-      "title": "Test Automation Engineer (m/w/d) Kommunikationssysteme, Dresden hybrid 60.000 - 80.000",
-      "company": "wabcon",
-      "url": "https://www.arbeitnow.com/jobs/companies/wabcon/test-automation-engineer-kommunikationssysteme-dresden-hybrid-60000-80000-218646",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
       "workType": "Hybrid",
-      "location": "Dresden",
-      "country": "Germany",
-      "postedAt": "2026-10-09T06:30:41.000Z"
+      "location": "Singapore, Singapore",
+      "country": "Singapore",
+      "postedAt": "2026-10-09T02:08:18-04:00"
     },
     {
       "id": "greenhouse-thoughtworks-8191523",
@@ -67,19 +132,6 @@
       "postedAt": "2026-10-09T02:08:18-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-8200468",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
-      "postedAt": "2026-10-09T02:08:18-04:00"
-    },
-    {
       "id": "arbeitnow-qa-engineer-paris-107303",
       "title": "QA Engineer",
       "company": "Npv",
@@ -91,32 +143,6 @@
       "location": "Paris",
       "country": "France",
       "postedAt": "2026-10-09T04:40:12.000Z"
-    },
-    {
-      "id": "arbeitnow-qa-engineer-manchester-162642",
-      "title": "QA Engineer",
-      "company": "Foundation Health",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/foundation-health/qa-engineer-manchester-162642",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Manchester",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-09T00:40:07.000Z"
-    },
-    {
-      "id": "arbeitnow-qa-lead-manchester-270027",
-      "title": "QA Lead",
-      "company": "Foundation Health",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/foundation-health/qa-lead-manchester-270027",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Manchester",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-09T00:40:07.000Z"
     },
     {
       "id": "jobicy-154879",
@@ -223,17 +249,17 @@
       "postedAt": "2026-10-08T19:08:00+00:00"
     },
     {
-      "id": "jobicy-154873",
-      "title": "QA Analyst (Mexico, Remote)",
-      "company": "Varicent",
-      "url": "https://jobicy.com/jobs/154873-qa-analyst-mexico-remote",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "id": "arbeitnow-senior-qa-engineer-bonn-339277",
+      "title": "Senior QA Engineer*",
+      "company": "Haeger Consulting GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/haeger-consulting-gmbh/senior-qa-engineer-bonn-339277",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
-      "workType": "Hybrid",
-      "location": "Mexico",
-      "country": "Mexico",
-      "postedAt": "2026-10-08T19:07:58+00:00"
+      "workType": "On-site",
+      "location": "Bonn",
+      "country": "Germany",
+      "postedAt": "2026-10-08T16:47:45.000Z"
     },
     {
       "id": "greenhouse-stripe-8206729",
@@ -301,19 +327,6 @@
       "postedAt": "2026-10-08T08:09:25.000Z"
     },
     {
-      "id": "arbeitnow-qa-engineer-intern-6-months-113722",
-      "title": "QA Engineer Intern (6 months)",
-      "company": "shifttechnology",
-      "url": "https://www.arbeitnow.fr/jobs/companies/shifttechnology/qa-engineer-intern-6-months-113722",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-10-08T07:55:06.000Z"
-    },
-    {
       "id": "greenhouse-stripe-8153331",
       "title": "Software Quality Assurance Engineer",
       "company": "Stripe",
@@ -325,6 +338,19 @@
       "location": "Taipei,Taiwan",
       "country": "Taiwan",
       "postedAt": "2026-10-07T19:02:27-04:00"
+    },
+    {
+      "id": "arbeitnow-senior-qa-engineer-berlin-hybrid-138845",
+      "title": "Senior QA Engineer (Berlin, hybrid)",
+      "company": "Kittl",
+      "url": "https://www.arbeitnow.com/jobs/companies/kittl/senior-qa-engineer-berlin-hybrid-138845",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-10-07T17:00:48.000Z"
     },
     {
       "id": "arbeitnow-banking-test-architect-47527",
@@ -351,58 +377,6 @@
       "location": "Heidelberg, GER",
       "country": "Other",
       "postedAt": "2026-10-07T08:09:59.000Z"
-    },
-    {
-      "id": "arbeitnow-data-quality-analyst-befristet-als-elternzeitvertretung-berlin-482612",
-      "title": "Data Quality Analyst (f/m/d, befristet als Elternzeitvertretung)",
-      "company": "Workist GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/workist-gmbh/data-quality-analyst-befristet-als-elternzeitvertretung-berlin-482612",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-10-07T05:30:44.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-senior-qa-engineer-gn-80961",
-      "title": "Senior QA Engineer (gn)",
-      "company": "Bikeleasing",
-      "url": "https://www.arbeitnow.com/jobs/companies/bikeleasing/remote-senior-qa-engineer-gn-80961",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Remote Deutschland",
-      "country": "Other",
-      "postedAt": "2026-10-07T05:09:54.000Z"
-    },
-    {
-      "id": "arbeitnow-teamleitung-food-safety-and-quality-assurance-all-genders-verden-niedersachsen-168299",
-      "title": "Teamleitung Food Safety and Quality Assurance (all genders)",
-      "company": "hellofresh",
-      "url": "https://www.arbeitnow.com/jobs/companies/hellofresh/teamleitung-food-safety-and-quality-assurance-all-genders-verden-niedersachsen-168299",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Verden, Niedersachsen",
-      "country": "Other",
-      "postedAt": "2026-10-07T02:55:11.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-test-data-quality-engineer-azure-databricks-frankfurt-239611",
-      "title": "Senior Test & Data Quality Engineer (Azure Databricks)",
-      "company": "Callista Group AG",
-      "url": "https://www.arbeitnow.com/jobs/companies/callista-group-ag/senior-test-data-quality-engineer-azure-databricks-frankfurt-239611",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Frankfurt, Hessen, Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-06T20:30:23.000Z"
     },
     {
       "id": "greenhouse-robinhood-8082056",
@@ -442,19 +416,6 @@
       "location": "Sunnyvale, CA",
       "country": "United States",
       "postedAt": "2026-09-30T19:32:56.410+00:00"
-    },
-    {
-      "id": "greenhouse-samsara-8139255",
-      "title": "Senior Manager, Quality Engineering",
-      "company": "Samsara",
-      "url": "https://www.samsara.com/company/careers/roles/8139255?gh_jid=8139255",
-      "source": "Samsara",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Remote - US",
-      "country": "United States",
-      "postedAt": "2026-09-30T00:07:53-04:00"
     },
     {
       "id": "greenhouse-verkada-5237420007",
