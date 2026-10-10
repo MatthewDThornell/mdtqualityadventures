@@ -1,18 +1,44 @@
 {
-  "fetchedAt": "2026-10-10T16:53:36.691Z",
+  "fetchedAt": "2026-10-10T21:06:17.970Z",
   "jobs": [
     {
-      "id": "arbeitnow-senior-qa-engineer-berlin-hybrid-138845",
-      "title": "Senior QA Engineer (Berlin, hybrid)",
-      "company": "Kittl",
-      "url": "https://www.arbeitnow.com/jobs/companies/kittl/senior-qa-engineer-berlin-hybrid-138845",
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior QA Engineer, Safety",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-10T14:41:26-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-10T14:38:51-04:00"
+    },
+    {
+      "id": "arbeitnow-quality-engineer-paris-paris-villeneuve-dascq-nord-446271",
+      "title": "Quality Engineer (f/m/d)",
+      "company": "Junior Data Scientist - Downstream Demand Forecast - Value Chain ...",
+      "url": "https://www.arbeitnow.fr/jobs/companies/junior-data-scientist-downstream-demand-forecast-value-chain/quality-engineer-paris-paris-villeneuve-dascq-nord-446271",
       "source": "Arbeitnow",
       "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
-      "workType": "Hybrid",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-10-10T09:02:37.000Z"
+      "workType": "On-site",
+      "location": "Paris, Paris; Villeneuve-d'Ascq, Nord",
+      "country": "France",
+      "postedAt": "2026-10-10T16:55:06.000Z"
     },
     {
       "id": "arbeitnow-senior-ate-test-engineer-aachen-101817",
@@ -54,19 +80,6 @@
       "postedAt": "2026-10-10T03:40:06.000Z"
     },
     {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior QA Engineer, Safety",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-09T16:54:57-04:00"
-    },
-    {
       "id": "greenhouse-samsara-8139255",
       "title": "Senior Manager, AI Quality Engineering",
       "company": "Samsara",
@@ -91,19 +104,6 @@
       "location": "Dresden",
       "country": "Germany",
       "postedAt": "2026-10-09T19:22:33.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-09T14:40:13-04:00"
     },
     {
       "id": "greenhouse-scaleai-4742042005",
@@ -145,19 +145,6 @@
       "postedAt": "2026-10-09T02:08:18-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-7964148",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Lima, Peru",
-      "country": "Other",
-      "postedAt": "2026-10-09T02:08:18-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-8200468",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -168,6 +155,19 @@
       "workType": "Hybrid",
       "location": "Singapore, Singapore",
       "country": "Singapore",
+      "postedAt": "2026-10-09T02:08:18-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-7964148",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Lima, Peru",
+      "country": "Other",
       "postedAt": "2026-10-09T02:08:18-04:00"
     },
     {
@@ -429,19 +429,6 @@
       "location": "San Mateo, CA United States",
       "country": "United States",
       "postedAt": "2026-09-28T18:36:46-04:00"
-    },
-    {
-      "id": "lever-shieldai-cc36d8ce-4afc-4d86-a4ad-8d5612b184d4",
-      "title": "Staff Engineer, Test Automation (R5792)",
-      "company": "Shield AI",
-      "url": "https://jobs.lever.co/shieldai/cc36d8ce-4afc-4d86-a4ad-8d5612b184d4",
-      "source": "Shield AI",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Diego, California",
-      "country": "United States",
-      "postedAt": "2026-09-26T20:48:27.803Z"
     }
   ]
 }
