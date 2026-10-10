@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-10T11:50:27.292Z",
+  "fetchedAt": "2026-10-10T16:53:36.691Z",
   "jobs": [
     {
       "id": "arbeitnow-senior-qa-engineer-berlin-hybrid-138845",
@@ -364,19 +364,6 @@
       "location": "Taipei,Taiwan",
       "country": "Taiwan",
       "postedAt": "2026-10-07T19:02:27-04:00"
-    },
-    {
-      "id": "arbeitnow-banking-test-architect-47527",
-      "title": "Banking Test Architect (m/w/d)",
-      "company": "capco",
-      "url": "https://www.arbeitnow.com/jobs/companies/capco/banking-test-architect-47527",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-10-07T08:55:03.000Z"
     },
     {
       "id": "greenhouse-robinhood-8082056",
