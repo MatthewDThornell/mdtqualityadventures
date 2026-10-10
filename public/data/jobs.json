@@ -1,6 +1,58 @@
 {
-  "fetchedAt": "2026-10-10T04:08:24.765Z",
+  "fetchedAt": "2026-10-10T11:50:27.292Z",
   "jobs": [
+    {
+      "id": "arbeitnow-senior-qa-engineer-berlin-hybrid-138845",
+      "title": "Senior QA Engineer (Berlin, hybrid)",
+      "company": "Kittl",
+      "url": "https://www.arbeitnow.com/jobs/companies/kittl/senior-qa-engineer-berlin-hybrid-138845",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-10-10T09:02:37.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-ate-test-engineer-aachen-101817",
+      "title": "Senior ATE Test Engineer (f/m/d)",
+      "company": "Black Semiconductor GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/black-semiconductor-gmbh/senior-ate-test-engineer-aachen-101817",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Aachen, Germany",
+      "country": "Germany",
+      "postedAt": "2026-10-10T08:40:05.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-qa-engineer-bonn-339277",
+      "title": "Senior QA Engineer*",
+      "company": "Haeger Consulting GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/haeger-consulting-gmbh/senior-qa-engineer-bonn-339277",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Bonn",
+      "country": "Germany",
+      "postedAt": "2026-10-10T07:07:45.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-engineer-london-263577",
+      "title": "Quality Engineer",
+      "company": "Lupa Pets",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/lupa-pets/quality-engineer-london-263577",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-10T03:40:06.000Z"
+    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior QA Engineer, Safety",
@@ -67,19 +119,6 @@
       "postedAt": "2026-10-09T12:10:45-04:00"
     },
     {
-      "id": "arbeitnow-financial-crime-quality-assurance-analyst-glasgow-316252",
-      "title": "Financial Crime Quality Assurance Analyst",
-      "company": "Delta Capita",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/delta-capita/financial-crime-quality-assurance-analyst-glasgow-316252",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Glasgow, Glasgow City, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-09T15:30:13.000Z"
-    },
-    {
       "id": "lever-shieldai-cbba120f-2089-4531-9e41-1dad856473a7",
       "title": "Systems Test Engineer",
       "company": "Shield AI",
@@ -91,19 +130,6 @@
       "location": "Bangalore",
       "country": "India",
       "postedAt": "2026-10-09T11:59:55.378Z"
-    },
-    {
-      "id": "greenhouse-thoughtworks-8200468",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
-      "postedAt": "2026-10-09T02:08:18-04:00"
     },
     {
       "id": "greenhouse-thoughtworks-8191523",
@@ -129,6 +155,19 @@
       "workType": "On-site",
       "location": "Lima, Peru",
       "country": "Other",
+      "postedAt": "2026-10-09T02:08:18-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8200468",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Singapore, Singapore",
+      "country": "Singapore",
       "postedAt": "2026-10-09T02:08:18-04:00"
     },
     {
@@ -249,19 +288,6 @@
       "postedAt": "2026-10-08T19:08:00+00:00"
     },
     {
-      "id": "arbeitnow-senior-qa-engineer-bonn-339277",
-      "title": "Senior QA Engineer*",
-      "company": "Haeger Consulting GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/haeger-consulting-gmbh/senior-qa-engineer-bonn-339277",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Bonn",
-      "country": "Germany",
-      "postedAt": "2026-10-08T16:47:45.000Z"
-    },
-    {
       "id": "greenhouse-stripe-8206729",
       "title": "Team Lead, Quality Analyst, Product Support Operations",
       "company": "Stripe",
@@ -340,19 +366,6 @@
       "postedAt": "2026-10-07T19:02:27-04:00"
     },
     {
-      "id": "arbeitnow-senior-qa-engineer-berlin-hybrid-138845",
-      "title": "Senior QA Engineer (Berlin, hybrid)",
-      "company": "Kittl",
-      "url": "https://www.arbeitnow.com/jobs/companies/kittl/senior-qa-engineer-berlin-hybrid-138845",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-10-07T17:00:48.000Z"
-    },
-    {
       "id": "arbeitnow-banking-test-architect-47527",
       "title": "Banking Test Architect (m/w/d)",
       "company": "capco",
@@ -364,19 +377,6 @@
       "location": "",
       "country": "Remote / Unspecified",
       "postedAt": "2026-10-07T08:55:03.000Z"
-    },
-    {
-      "id": "arbeitnow-qa-automation-engineer-heidelberg-ger-436564",
-      "title": "QA Automation Engineer",
-      "company": "Turbalance",
-      "url": "https://www.arbeitnow.com/jobs/companies/turbalance/qa-automation-engineer-heidelberg-ger-436564",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Heidelberg, GER",
-      "country": "Other",
-      "postedAt": "2026-10-07T08:09:59.000Z"
     },
     {
       "id": "greenhouse-robinhood-8082056",
