@@ -1,6 +1,97 @@
 {
-  "fetchedAt": "2026-10-11T12:02:14.765Z",
+  "fetchedAt": "2026-10-11T21:25:45.244Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer, Safety",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-11T14:41:50-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-11T14:39:16-04:00"
+    },
+    {
+      "id": "arbeitnow-automation-engineer-solihull-315390",
+      "title": "Automation Engineer",
+      "company": "Gymshark",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/gymshark/automation-engineer-solihull-315390",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Solihull",
+      "country": "Other",
+      "postedAt": "2026-10-11T12:55:09.000Z"
+    },
+    {
+      "id": "arbeitnow-systems-integration-qa-engineer-all-genders-197131",
+      "title": "Systems Integration & QA Engineer (All Genders)",
+      "company": "Skdse",
+      "url": "https://www.arbeitnow.com/jobs/companies/skdse/systems-integration-qa-engineer-all-genders-197131",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-10-11T11:55:08.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-ground-test-engineer-all-genders-306728",
+      "title": "Senior Ground Test Engineer (All Genders)",
+      "company": "Skdse",
+      "url": "https://www.arbeitnow.com/jobs/companies/skdse/senior-ground-test-engineer-all-genders-306728",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-10-11T11:55:08.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-embedded-systems-test-engineer-all-genders-97430",
+      "title": "Senior Embedded Systems Test Engineer (All Genders)",
+      "company": "Skdse",
+      "url": "https://www.arbeitnow.com/jobs/companies/skdse/senior-embedded-systems-test-engineer-all-genders-97430",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-10-11T11:55:08.000Z"
+    },
+    {
+      "id": "arbeitnow-automation-engineer-all-genders-munich-bavaria-59281",
+      "title": "Automation Engineer (All Genders)",
+      "company": "Skdse",
+      "url": "https://www.arbeitnow.com/jobs/companies/skdse/automation-engineer-all-genders-munich-bavaria-59281",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich, Bavaria",
+      "country": "Germany",
+      "postedAt": "2026-10-11T11:55:08.000Z"
+    },
     {
       "id": "arbeitnow-qa-engineer-london-196348",
       "title": "QA Engineer",
@@ -26,32 +117,6 @@
       "location": "Remote Deutschland",
       "country": "Other",
       "postedAt": "2026-10-11T08:09:50.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior QA Engineer, Safety",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-11T02:41:40-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-11T02:39:09-04:00"
     },
     {
       "id": "arbeitnow-remote-senior-qa-engineer-all-genders-berlin-68172",
@@ -171,19 +236,6 @@
       "postedAt": "2026-10-09T02:08:18-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-7964148",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Lima, Peru",
-      "country": "Other",
-      "postedAt": "2026-10-09T02:08:18-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-8200468",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -197,17 +249,17 @@
       "postedAt": "2026-10-09T02:08:18-04:00"
     },
     {
-      "id": "arbeitnow-qa-engineer-paris-107303",
-      "title": "QA Engineer",
-      "company": "Npv",
-      "url": "https://www.arbeitnow.fr/jobs/companies/npv/qa-engineer-paris-107303",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Paris",
-      "country": "France",
-      "postedAt": "2026-10-09T04:40:12.000Z"
+      "id": "greenhouse-thoughtworks-7964148",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Lima, Peru",
+      "country": "Other",
+      "postedAt": "2026-10-09T02:08:18-04:00"
     },
     {
       "id": "greenhouse-stripe-8206729",
