@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-10-10T21:06:17.970Z",
+  "fetchedAt": "2026-10-11T03:45:17.016Z",
   "jobs": [
+    {
+      "id": "arbeitnow-remote-senior-qa-engineer-all-genders-berlin-68172",
+      "title": "Senior QA Engineer (All genders)",
+      "company": "Distribusion Technologies",
+      "url": "https://www.arbeitnow.com/jobs/companies/distribusion-technologies/remote-senior-qa-engineer-all-genders-berlin-68172",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Remote job",
+      "country": "Other",
+      "postedAt": "2026-10-10T20:30:22.000Z"
+    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior QA Engineer, Safety",
@@ -41,6 +54,19 @@
       "postedAt": "2026-10-10T16:55:06.000Z"
     },
     {
+      "id": "arbeitnow-senior-qa-engineer-berlin-hybrid-138845",
+      "title": "Senior QA Engineer (Berlin, hybrid)",
+      "company": "Kittl",
+      "url": "https://www.arbeitnow.com/jobs/companies/kittl/senior-qa-engineer-berlin-hybrid-138845",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-10-10T09:02:37.000Z"
+    },
+    {
       "id": "arbeitnow-senior-ate-test-engineer-aachen-101817",
       "title": "Senior ATE Test Engineer (f/m/d)",
       "company": "Black Semiconductor GmbH",
@@ -65,19 +91,6 @@
       "location": "Bonn",
       "country": "Germany",
       "postedAt": "2026-10-10T07:07:45.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-engineer-london-263577",
-      "title": "Quality Engineer",
-      "company": "Lupa Pets",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/lupa-pets/quality-engineer-london-263577",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-10T03:40:06.000Z"
     },
     {
       "id": "greenhouse-samsara-8139255",
@@ -145,19 +158,6 @@
       "postedAt": "2026-10-09T02:08:18-04:00"
     },
     {
-      "id": "greenhouse-thoughtworks-8200468",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
-      "postedAt": "2026-10-09T02:08:18-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-7964148",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -168,6 +168,19 @@
       "workType": "On-site",
       "location": "Lima, Peru",
       "country": "Other",
+      "postedAt": "2026-10-09T02:08:18-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8200468",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Singapore, Singapore",
+      "country": "Singapore",
       "postedAt": "2026-10-09T02:08:18-04:00"
     },
     {
