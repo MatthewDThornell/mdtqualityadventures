@@ -2383,6 +2383,13 @@ html.pen-active .typewriter .tw-quill {
   object-fit: contain;
 }
 
+/* The Quality Knights crest is drawn square, QK shield and all. Cropped to
+   4/3 like a photograph, the shield at its foot is the first thing to go, so
+   the crest keeps a box of its own shape and is shown whole. */
+.adventure-media-crest {
+  aspect-ratio: 1;
+}
+
 .adventure-media-badges {
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -5022,6 +5029,11 @@ a.tau-course-name:hover {
   min-width: 128px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+  /* the ranks are stated as plainly as the files: left implicit they are auto
+     tracks, so an empty rank collapses towards nothing while an occupied one
+     swells to its glyphs — the squares stop being square, and the board
+     reshuffles itself every time a piece comes off it */
+  grid-template-rows: repeat(8, 1fr);
   aspect-ratio: 1;
   border: 1px solid rgba(var(--brass-rgb), 0.45);
   border-radius: 5px;
