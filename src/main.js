@@ -73,10 +73,24 @@ const eyebrowTypewriter = initTypewriter(
 
 const taglinePhrases = [
   'Software QA Engineer & Quality Advocate',
-  // the current role rides as a plain phrase on purpose: addToCareerTrail()
-  // only walks phrases with segments, and the trail is career *history* — a
-  // job still being done doesn't belong in it
-  'Quality Engineer / SDET at Optum',
+  // The current role is dressed like the roles that came before it — same
+  // logo, same brand color — but it is not history, and the career trail is.
+  // Segments are the only thing addToCareerTrail() looks for, so now that this
+  // phrase has them to be styled with, it has to say plainly that it stays out.
+  {
+    text: 'Current QE/SDET at\nOptum',
+    trail: false,
+    segments: [
+      brandSegment('QE/SDET', 'brand-optum', null),
+      brandSegment(
+        'Optum',
+        'brand-optum',
+        'https://www.optum.com/',
+        '/images/logos/optum.png',
+        true,
+      ),
+    ],
+  },
   {
     text: 'Former QA Coach and Architect at\nVeterans United',
     segments: [
@@ -182,9 +196,11 @@ function slugify(text) {
 }
 
 function addToCareerTrail(phrase) {
-  // only the "Former X at Y" phrases carry segments — the current role and the
-  // whimsical one-liners aren't career history, so they don't belong in the trail
-  if (!phrase.segments || seenCareerPhrases.has(phrase.text)) return;
+  // the "Former X at Y" phrases are the career history. The whimsical one-liners
+  // carry no segments at all, and the current role carries them only to be styled
+  // like its predecessors — it says trail: false because the job is still being
+  // done, and a trail is for ground already covered
+  if (!phrase.segments || phrase.trail === false || seenCareerPhrases.has(phrase.text)) return;
   seenCareerPhrases.add(phrase.text);
 
   const logoSeg = phrase.segments.find((s) => s.logoSrc);
