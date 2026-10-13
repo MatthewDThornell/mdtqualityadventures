@@ -1,6 +1,97 @@
 {
-  "fetchedAt": "2026-10-13T13:28:38.274Z",
+  "fetchedAt": "2026-10-13T22:15:35.995Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer, Social",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-13T14:43:13-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-13T14:40:15-04:00"
+    },
+    {
+      "id": "arbeitnow-senior-mes-automation-engineer-delft-464428",
+      "title": "Senior MES & Automation Engineer",
+      "company": "Quantware",
+      "url": "https://www.arbeitnow.nl/jobs/companies/quantware/senior-mes-automation-engineer-delft-464428",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Delft",
+      "country": "Other",
+      "postedAt": "2026-10-13T17:40:48.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-specialist-the-hague-332503",
+      "title": "Quality Assurance Specialist",
+      "company": "Robin Radar",
+      "url": "https://www.arbeitnow.nl/jobs/companies/robin-radar/quality-assurance-specialist-the-hague-332503",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Delft",
+      "country": "Other",
+      "postedAt": "2026-10-13T17:40:48.000Z"
+    },
+    {
+      "id": "arbeitnow-field-test-engineer-berlin-363034",
+      "title": "Field Test Engineer (m/w/d)",
+      "company": "MOTOR Ai",
+      "url": "https://www.arbeitnow.com/jobs/companies/motor-ai/field-test-engineer-berlin-363034",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-10-13T16:31:34.000Z"
+    },
+    {
+      "id": "arbeitnow-staff-quality-assurance-engineer-geneva-19465",
+      "title": "Staff Quality Assurance Engineer",
+      "company": "ionq",
+      "url": "https://www.arbeitnow.ch/jobs/companies/ionq/staff-quality-assurance-engineer-geneva-19465",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Geneva",
+      "country": "Other",
+      "postedAt": "2026-10-13T14:55:07.000Z"
+    },
+    {
+      "id": "greenhouse-testlio-8278471",
+      "title": "Freelancer Software Tester- Visit St. Louis Airport",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8278471",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "United States",
+      "country": "United States",
+      "postedAt": "2026-10-13T10:50:52-04:00"
+    },
     {
       "id": "arbeitnow-head-of-quality-assurance-industrial-corrosion-protection-bockenem-36496",
       "title": "Head of Quality Assurance – Industrial Corrosion Protection (w/m/d)",
@@ -52,32 +143,6 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-10-13T08:00:47.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer, Social",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-13T02:43:50-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-13T02:40:35-04:00"
     },
     {
       "id": "jobicy-149048",
@@ -275,58 +340,6 @@
       "postedAt": "2026-10-12T03:30:31.000Z"
     },
     {
-      "id": "arbeitnow-software-tester-technisch-en-functioneel-enschede-68764",
-      "title": "Software tester (technisch en functioneel)",
-      "company": "Innovadis B.V.",
-      "url": "https://www.arbeitnow.nl/jobs/companies/innovadis-bv/software-tester-technisch-en-functioneel-enschede-68764",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Enschede, Overijssel, Nederland",
-      "country": "Other",
-      "postedAt": "2026-10-12T00:30:31.000Z"
-    },
-    {
-      "id": "arbeitnow-software-quality-engineer-capelle-aan-den-ijssel-118034",
-      "title": "Software Quality Engineer (v/m/x)",
-      "company": "Conxillium Group",
-      "url": "https://www.arbeitnow.nl/jobs/companies/conxillium-group/software-quality-engineer-capelle-aan-den-ijssel-118034",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Capelle aan den IJssel, Zuid-Holland, Nederland",
-      "country": "Other",
-      "postedAt": "2026-10-11T21:30:28.000Z"
-    },
-    {
-      "id": "arbeitnow-growth-marketer-ai-powered-qa-automation-amsterdam-495662",
-      "title": "Growth Marketer (AI-Powered QA Automation)",
-      "company": "jetbrains",
-      "url": "https://www.arbeitnow.nl/jobs/companies/jetbrains/growth-marketer-ai-powered-qa-automation-amsterdam-495662",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Amsterdam",
-      "country": "Netherlands",
-      "postedAt": "2026-10-11T18:55:19.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-fsqa-manager-phf-all-genders-amsterdam-310585",
-      "title": "Senior FSQA Manager - PHF (all genders)",
-      "company": "hellofresh",
-      "url": "https://www.arbeitnow.nl/jobs/companies/hellofresh/senior-fsqa-manager-phf-all-genders-amsterdam-310585",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Amsterdam",
-      "country": "Netherlands",
-      "postedAt": "2026-10-11T18:55:11.000Z"
-    },
-    {
       "id": "arbeitnow-automation-engineer-solihull-315390",
       "title": "Automation Engineer",
       "company": "Gymshark",
@@ -455,19 +468,6 @@
       "location": "Aachen, Germany",
       "country": "Germany",
       "postedAt": "2026-10-10T08:40:05.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-engineer-london-263577",
-      "title": "Quality Engineer",
-      "company": "Lupa Pets",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/lupa-pets/quality-engineer-london-263577",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-10T03:40:06.000Z"
     },
     {
       "id": "greenhouse-samsara-8139255",
@@ -611,19 +611,6 @@
       "location": "Menlo Park, CA",
       "country": "United States",
       "postedAt": "2026-10-06T12:12:00-04:00"
-    },
-    {
-      "id": "greenhouse-airbnb-8154749",
-      "title": "Early Career Software Engineer, Quality Engineering",
-      "company": "Airbnb",
-      "url": "https://careers.airbnb.com/positions/8154749?gh_jid=8154749",
-      "source": "Airbnb",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Sao Paulo - Brazil",
-      "country": "Brazil",
-      "postedAt": "2026-09-30T18:41:25-04:00"
     },
     {
       "id": "ashby-cerebras-5ddcef34-82e8-4e20-9938-47aa49e6418d",
