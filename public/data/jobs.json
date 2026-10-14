@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-10-14T16:26:48.902Z",
+  "fetchedAt": "2026-10-14T21:15:11.993Z",
   "jobs": [
+    {
+      "id": "arbeitnow-qa-test-engineer-s-hertogenbosch-140808",
+      "title": "QA / Test Engineer",
+      "company": "Prijsvrij Vakanties",
+      "url": "https://www.arbeitnow.nl/jobs/companies/prijsvrij-vakanties/qa-test-engineer-s-hertogenbosch-140808",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "'s-Hertogenbosch, Noord-Brabant, Nederland",
+      "country": "Other",
+      "postedAt": "2026-10-14T20:32:31.000Z"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-14T14:41:05-04:00"
+    },
+    {
+      "id": "arbeitnow-software-test-qa-automation-engineer-ai-startup-remote-eu-time-zone-berlin-458991",
+      "title": "Junior Software Test (QA) Automation Engineer - AI Startup (Remote)",
+      "company": "IndieKidz GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/indiekidz-gmbh/software-test-qa-automation-engineer-ai-startup-remote-eu-time-zone-berlin-458991",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-10-14T17:33:01.000Z"
+    },
     {
       "id": "arbeitnow-banking-test-architect-190004",
       "title": "Banking Test Architect (m/w/d)",
@@ -65,19 +104,6 @@
       "location": "San Mateo, CA, United States",
       "country": "United States",
       "postedAt": "2026-10-14T02:42:04-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-14T02:39:29-04:00"
     },
     {
       "id": "jobicy-154873",
@@ -210,19 +236,6 @@
       "postedAt": "2026-10-13T08:30:44.000Z"
     },
     {
-      "id": "arbeitnow-software-test-qa-automation-engineer-ai-startup-remote-eu-time-zone-berlin-458991",
-      "title": "Software Test (QA) Automation Engineer - AI Startup (Remote EU time zone)",
-      "company": "IndieKidz GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/indiekidz-gmbh/software-test-qa-automation-engineer-ai-startup-remote-eu-time-zone-berlin-458991",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-10-13T08:00:47.000Z"
-    },
-    {
       "id": "jobicy-149048",
       "title": "QA Automation Lead [gn] Data Intelligence",
       "company": "Actian",
@@ -327,19 +340,6 @@
       "postedAt": "2026-10-12T14:09:52.000Z"
     },
     {
-      "id": "arbeitnow-test-architect-test-manager-eindhoven-375160",
-      "title": "Test Architect / Test Manager",
-      "company": "Itility B.V.",
-      "url": "https://www.arbeitnow.nl/jobs/companies/itility-bv/test-architect-test-manager-eindhoven-375160",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Eindhoven, Noord-Brabant, Netherlands",
-      "country": "Netherlands",
-      "postedAt": "2026-10-12T12:30:24.000Z"
-    },
-    {
       "id": "arbeitnow-system-test-engineer-gilching-294473",
       "title": "System Test Engineer (m/f/d)",
       "company": "Quantum-Systems GmbH",
@@ -377,32 +377,6 @@
       "location": "Oberkochen",
       "country": "Other",
       "postedAt": "2026-10-12T07:20:10.000Z"
-    },
-    {
-      "id": "arbeitnow-software-tester-driebergen-rijsenburg-99318",
-      "title": "Software Tester",
-      "company": "Intus Workforce Solutions B.V.",
-      "url": "https://www.arbeitnow.nl/jobs/companies/intus-workforce-solutions-bv/software-tester-driebergen-rijsenburg-99318",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Driebergen-Rijsenburg, Utrecht, Netherlands",
-      "country": "Netherlands",
-      "postedAt": "2026-10-12T06:30:31.000Z"
-    },
-    {
-      "id": "arbeitnow-vp-quality-assurance-amsterdam-192861",
-      "title": "VP, Quality Assurance",
-      "company": "Allucent",
-      "url": "https://www.arbeitnow.nl/jobs/companies/allucent/vp-quality-assurance-amsterdam-192861",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Amsterdam, Netherlands",
-      "country": "Netherlands",
-      "postedAt": "2026-10-12T06:20:13.000Z"
     },
     {
       "id": "arbeitnow-systems-integration-qa-engineer-all-genders-197131",
@@ -468,19 +442,6 @@
       "location": "Remote Deutschland",
       "country": "Other",
       "postedAt": "2026-10-11T08:09:50.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-engineer-paris-paris-villeneuve-dascq-nord-446271",
-      "title": "Quality Engineer (f/m/d)",
-      "company": "Junior Data Scientist - Downstream Demand Forecast - Value Chain ...",
-      "url": "https://www.arbeitnow.fr/jobs/companies/junior-data-scientist-downstream-demand-forecast-value-chain/quality-engineer-paris-paris-villeneuve-dascq-nord-446271",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Paris, Paris; Villeneuve-d'Ascq, Nord",
-      "country": "France",
-      "postedAt": "2026-10-10T16:55:06.000Z"
     },
     {
       "id": "greenhouse-samsara-8139255",
@@ -611,19 +572,6 @@
       "location": "Menlo Park, CA",
       "country": "United States",
       "postedAt": "2026-10-06T12:12:00-04:00"
-    },
-    {
-      "id": "ashby-cerebras-5ddcef34-82e8-4e20-9938-47aa49e6418d",
-      "title": "AI and Automation Engineer - Business Systems",
-      "company": "Cerebras",
-      "url": "https://jobs.ashbyhq.com/cerebras/5ddcef34-82e8-4e20-9938-47aa49e6418d",
-      "source": "Cerebras",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Sunnyvale, CA",
-      "country": "United States",
-      "postedAt": "2026-09-30T19:32:56.410+00:00"
     }
   ]
 }
