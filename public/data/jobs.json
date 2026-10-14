@@ -1,19 +1,6 @@
 {
-  "fetchedAt": "2026-10-13T22:15:35.995Z",
+  "fetchedAt": "2026-10-14T03:22:20.406Z",
   "jobs": [
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer, Social",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-13T14:43:13-04:00"
-    },
     {
       "id": "greenhouse-roblox-8069987",
       "title": "Quality Analyst",
@@ -25,7 +12,33 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-10-13T14:40:15-04:00"
+      "postedAt": "2026-10-13T20:05:20-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer, Social",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-13T20:05:20-04:00"
+    },
+    {
+      "id": "arbeitnow-senior-sdet-london-243563",
+      "title": "Senior SDET",
+      "company": "Radiant",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/radiant/senior-sdet-london-243563",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-13T23:40:16.000Z"
     },
     {
       "id": "arbeitnow-senior-mes-automation-engineer-delft-464428",
@@ -496,6 +509,19 @@
       "postedAt": "2026-10-09T11:59:55.378Z"
     },
     {
+      "id": "greenhouse-thoughtworks-7964148",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Lima, Peru",
+      "country": "Other",
+      "postedAt": "2026-10-09T02:08:18-04:00"
+    },
+    {
       "id": "greenhouse-thoughtworks-8191523",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -519,19 +545,6 @@
       "workType": "Hybrid",
       "location": "Singapore, Singapore",
       "country": "Singapore",
-      "postedAt": "2026-10-09T02:08:18-04:00"
-    },
-    {
-      "id": "greenhouse-thoughtworks-7964148",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Lima, Peru",
-      "country": "Other",
       "postedAt": "2026-10-09T02:08:18-04:00"
     },
     {
@@ -585,19 +598,6 @@
       "location": "Taipei,Taiwan",
       "country": "Taiwan",
       "postedAt": "2026-10-07T19:02:27-04:00"
-    },
-    {
-      "id": "arbeitnow-quality-engineer-paris-491894",
-      "title": "Quality Engineer",
-      "company": "Odaseva",
-      "url": "https://www.arbeitnow.fr/jobs/companies/odaseva/quality-engineer-paris-491894",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Paris",
-      "country": "France",
-      "postedAt": "2026-10-07T01:24:46.000Z"
     },
     {
       "id": "greenhouse-robinhood-8082056",
