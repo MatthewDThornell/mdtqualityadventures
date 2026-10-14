@@ -1,19 +1,6 @@
 {
-  "fetchedAt": "2026-10-14T03:22:20.406Z",
+  "fetchedAt": "2026-10-14T11:06:08.917Z",
   "jobs": [
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-13T20:05:20-04:00"
-    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior Quality Engineer, Social",
@@ -25,7 +12,33 @@
       "workType": "On-site",
       "location": "San Mateo, CA, United States",
       "country": "United States",
-      "postedAt": "2026-10-13T20:05:20-04:00"
+      "postedAt": "2026-10-14T02:42:04-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-14T02:39:29-04:00"
+    },
+    {
+      "id": "jobicy-154873",
+      "title": "QA Analyst (Mexico, Remote)",
+      "company": "Varicent",
+      "url": "https://jobicy.com/jobs/154873-qa-analyst-mexico-remote",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Mexico",
+      "country": "Mexico",
+      "postedAt": "2026-10-14T03:05:05+00:00"
     },
     {
       "id": "arbeitnow-senior-sdet-london-243563",
@@ -468,19 +481,6 @@
       "location": "Paris, Paris; Villeneuve-d'Ascq, Nord",
       "country": "France",
       "postedAt": "2026-10-10T16:55:06.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-ate-test-engineer-aachen-101817",
-      "title": "Senior ATE Test Engineer (f/m/d)",
-      "company": "Black Semiconductor GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/black-semiconductor-gmbh/senior-ate-test-engineer-aachen-101817",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Aachen, Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-10T08:40:05.000Z"
     },
     {
       "id": "greenhouse-samsara-8139255",
