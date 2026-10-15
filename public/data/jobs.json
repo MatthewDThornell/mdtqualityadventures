@@ -1,6 +1,58 @@
 {
-  "fetchedAt": "2026-10-14T21:15:11.993Z",
+  "fetchedAt": "2026-10-15T03:00:20.886Z",
   "jobs": [
+    {
+      "id": "arbeitnow-software-test-engineer-amsterdam-332708",
+      "title": "Software Test Engineer",
+      "company": "Optics11",
+      "url": "https://www.arbeitnow.nl/jobs/companies/optics11/software-test-engineer-amsterdam-332708",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Amsterdam, Noord-Holland, Netherlands",
+      "country": "Netherlands",
+      "postedAt": "2026-10-14T20:32:33.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-embedded-software-test-engineer-amsterdam-92032",
+      "title": "Senior Embedded Software Test Engineer",
+      "company": "Optics11",
+      "url": "https://www.arbeitnow.nl/jobs/companies/optics11/senior-embedded-software-test-engineer-amsterdam-92032",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Amsterdam, Noord-Holland, Netherlands",
+      "country": "Netherlands",
+      "postedAt": "2026-10-14T20:32:33.000Z"
+    },
+    {
+      "id": "arbeitnow-test-engineer-windtunnels-marknesse-84869",
+      "title": "Test Engineer Windtunnels (m/v/x)",
+      "company": "Koninklijk Nederlands Lucht- en Ruimtevaartcentrum",
+      "url": "https://www.arbeitnow.nl/jobs/companies/koninklijk-nederlands-lucht-en-ruimtevaartcentrum/test-engineer-windtunnels-marknesse-84869",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Marknesse, Flevoland, Nederland",
+      "country": "Other",
+      "postedAt": "2026-10-14T20:32:33.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-test-engineer-groningen-261620",
+      "title": "Senior Test Engineer",
+      "company": "Centric",
+      "url": "https://www.arbeitnow.nl/jobs/companies/centric/senior-test-engineer-groningen-261620",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Groningen, Groningen, Nederland",
+      "country": "Other",
+      "postedAt": "2026-10-14T20:32:32.000Z"
+    },
     {
       "id": "arbeitnow-qa-test-engineer-s-hertogenbosch-140808",
       "title": "QA / Test Engineer",
@@ -13,6 +65,19 @@
       "location": "'s-Hertogenbosch, Noord-Brabant, Nederland",
       "country": "Other",
       "postedAt": "2026-10-14T20:32:31.000Z"
+    },
+    {
+      "id": "arbeitnow-remote-software-test-engineer-bern-277047",
+      "title": "Software Test Engineer",
+      "company": "SwissPeak Partners GmbH",
+      "url": "https://www.arbeitnow.ch/jobs/companies/swisspeak-partners-gmbh/remote-software-test-engineer-bern-277047",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Remote job",
+      "country": "Other",
+      "postedAt": "2026-10-14T20:32:27.000Z"
     },
     {
       "id": "greenhouse-roblox-8069987",
@@ -158,19 +223,6 @@
       "postedAt": "2026-10-13T17:40:48.000Z"
     },
     {
-      "id": "arbeitnow-field-test-engineer-berlin-363034",
-      "title": "Field Test Engineer (m/w/d)",
-      "company": "MOTOR Ai",
-      "url": "https://www.arbeitnow.com/jobs/companies/motor-ai/field-test-engineer-berlin-363034",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-10-13T16:31:34.000Z"
-    },
-    {
       "id": "arbeitnow-staff-quality-assurance-engineer-geneva-19465",
       "title": "Staff Quality Assurance Engineer",
       "company": "ionq",
@@ -249,19 +301,6 @@
       "postedAt": "2026-10-13T02:48:27+00:00"
     },
     {
-      "id": "arbeitnow-remote-senior-manager-qa-engineering-470969",
-      "title": "Senior Manager, QA Engineering",
-      "company": "Camunda",
-      "url": "https://www.arbeitnow.com/jobs/companies/camunda/remote-senior-manager-qa-engineering-470969",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Remote",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-10-13T02:40:04.000Z"
-    },
-    {
       "id": "arbeitnow-test-engineer-all-genders-remote-germany-or-hungary-209316",
       "title": "Test Engineer (all genders) - Remote Germany or Hungary",
       "company": "Linro",
@@ -299,19 +338,6 @@
       "location": "Nijverdal, Overijssel, Nederland",
       "country": "Other",
       "postedAt": "2026-10-12T18:30:58.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-mobile-qa-engineer-contract-london-366677",
-      "title": "Senior Mobile QA Engineer - Contract",
-      "company": "Waracle",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/waracle/senior-mobile-qa-engineer-contract-london-366677",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "London, England, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-12T18:30:28.000Z"
     },
     {
       "id": "arbeitnow-test-analyst-data-driven-applications-sql-python-almere-netherlands-181968",
@@ -431,17 +457,17 @@
       "postedAt": "2026-10-11T11:55:08.000Z"
     },
     {
-      "id": "arbeitnow-remote-senior-qa-engineer-gn-298617",
-      "title": "Senior QA Engineer (gn)",
-      "company": "Bikeleasing",
-      "url": "https://www.arbeitnow.com/jobs/companies/bikeleasing/remote-senior-qa-engineer-gn-298617",
+      "id": "arbeitnow-quality-engineer-paris-paris-villeneuve-dascq-nord-446271",
+      "title": "Quality Engineer (f/m/d)",
+      "company": "Junior Data Scientist - Downstream Demand Forecast - Value Chain ...",
+      "url": "https://www.arbeitnow.fr/jobs/companies/junior-data-scientist-downstream-demand-forecast-value-chain/quality-engineer-paris-paris-villeneuve-dascq-nord-446271",
       "source": "Arbeitnow",
       "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
-      "workType": "Remote",
-      "location": "Remote Deutschland",
-      "country": "Other",
-      "postedAt": "2026-10-11T08:09:50.000Z"
+      "workType": "On-site",
+      "location": "Paris, Paris; Villeneuve-d'Ascq, Nord",
+      "country": "France",
+      "postedAt": "2026-10-10T16:55:06.000Z"
     },
     {
       "id": "greenhouse-samsara-8139255",
