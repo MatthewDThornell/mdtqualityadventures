@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-10-15T10:47:56.492Z",
+  "fetchedAt": "2026-10-15T16:13:53.472Z",
   "jobs": [
+    {
+      "id": "arbeitnow-qa-engineering-intern-d-berlin-318733",
+      "title": "QA Engineering Intern (w/m/x/d)",
+      "company": "MILES Mobility",
+      "url": "https://www.arbeitnow.com/jobs/companies/miles-mobility/qa-engineering-intern-d-berlin-318733",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-10-15T12:47:30.000Z"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8200468",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Singapore, Singapore",
+      "country": "Singapore",
+      "postedAt": "2026-10-15T08:00:15-04:00"
+    },
+    {
+      "id": "arbeitnow-software-test-qa-automation-engineer-ai-startup-remote-eu-time-zone-berlin-458991",
+      "title": "Junior Software Test (QA) Automation Engineer - AI Startup (Remote)",
+      "company": "IndieKidz GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/indiekidz-gmbh/software-test-qa-automation-engineer-ai-startup-remote-eu-time-zone-berlin-458991",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Mumbai",
+      "country": "India",
+      "postedAt": "2026-10-15T10:17:32.000Z"
+    },
     {
       "id": "arbeitnow-senior-quality-assurance-engineer-hamburg-186511",
       "title": "Senior Quality Assurance Engineer (f/m/d)",
@@ -26,19 +65,6 @@
       "location": "Hybrid Winnersh",
       "country": "Other",
       "postedAt": "2026-10-15T08:40:34.000Z"
-    },
-    {
-      "id": "arbeitnow-qa-engineering-intern-d-berlin-318733",
-      "title": "QA Engineering Intern (w/m/x/d)",
-      "company": "MILES Mobility",
-      "url": "https://www.arbeitnow.com/jobs/companies/miles-mobility/qa-engineering-intern-d-berlin-318733",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-10-15T08:31:19.000Z"
     },
     {
       "id": "arbeitnow-senior-qa-test-engineer-d-berlin-24647",
@@ -182,19 +208,6 @@
       "location": "Remote job",
       "country": "Other",
       "postedAt": "2026-10-14T20:32:27.000Z"
-    },
-    {
-      "id": "arbeitnow-software-test-qa-automation-engineer-ai-startup-remote-eu-time-zone-berlin-458991",
-      "title": "Junior Software Test (QA) Automation Engineer - AI Startup (Remote)",
-      "company": "IndieKidz GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/indiekidz-gmbh/software-test-qa-automation-engineer-ai-startup-remote-eu-time-zone-berlin-458991",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-10-14T17:33:01.000Z"
     },
     {
       "id": "arbeitnow-banking-test-architect-190004",
@@ -535,32 +548,6 @@
       "postedAt": "2026-10-09T11:59:55.378Z"
     },
     {
-      "id": "greenhouse-thoughtworks-7964148",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Lima, Peru",
-      "country": "Other",
-      "postedAt": "2026-10-09T02:08:18-04:00"
-    },
-    {
-      "id": "greenhouse-thoughtworks-8200468",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
-      "postedAt": "2026-10-09T02:08:18-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-8191523",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -570,6 +557,19 @@
       "direct": true,
       "workType": "On-site",
       "location": "Quito, Ecuador",
+      "country": "Other",
+      "postedAt": "2026-10-09T02:08:18-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-7964148",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Lima, Peru",
       "country": "Other",
       "postedAt": "2026-10-09T02:08:18-04:00"
     },
