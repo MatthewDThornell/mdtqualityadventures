@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-16T10:36:44.212Z",
+  "fetchedAt": "2026-10-16T16:00:00.395Z",
   "jobs": [
+    {
+      "id": "greenhouse-coursera-6141559004",
+      "title": "Senior Software Test Engineer",
+      "company": "Coursera",
+      "url": "https://job-boards.greenhouse.io/coursera/jobs/6141559004",
+      "source": "Coursera",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Toronto, Canada",
+      "country": "Canada",
+      "postedAt": "2026-10-16T10:46:19-04:00"
+    },
+    {
+      "id": "arbeitnow-qa-tester-leeds-72724",
+      "title": "QA tester",
+      "company": "Kryptos Technologies limited",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/kryptos-technologies-limited/qa-tester-leeds-72724",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Leeds",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-16T11:00:56.000Z"
+    },
     {
       "id": "arbeitnow-test-lead-with-murex-london-416814",
       "title": "Test Lead with Murex",
@@ -130,19 +156,6 @@
       "location": "Singapore, Singapore",
       "country": "Singapore",
       "postedAt": "2026-10-15T08:00:15-04:00"
-    },
-    {
-      "id": "arbeitnow-software-test-qa-automation-engineer-ai-startup-remote-eu-time-zone-berlin-458991",
-      "title": "Junior Software Test (QA) Automation Engineer - AI Startup (Remote)",
-      "company": "IndieKidz GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/indiekidz-gmbh/software-test-qa-automation-engineer-ai-startup-remote-eu-time-zone-berlin-458991",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Mumbai",
-      "country": "India",
-      "postedAt": "2026-10-15T10:17:32.000Z"
     },
     {
       "id": "arbeitnow-senior-quality-assurance-engineer-hamburg-186511",
@@ -457,19 +470,6 @@
       "postedAt": "2026-10-13T02:40:04.000Z"
     },
     {
-      "id": "arbeitnow-test-engineer-all-genders-remote-germany-or-hungary-209316",
-      "title": "Test Engineer (all genders) - Remote Germany or Hungary",
-      "company": "Linro",
-      "url": "https://www.arbeitnow.com/jobs/companies/linro/test-engineer-all-genders-remote-germany-or-hungary-209316",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-12T23:40:10.000Z"
-    },
-    {
       "id": "greenhouse-scaleai-4742042005",
       "title": "Systems Engineering Integration & Test Lead, Public Sector",
       "company": "Scale AI",
@@ -548,19 +548,6 @@
       "postedAt": "2026-10-09T11:59:55.378Z"
     },
     {
-      "id": "greenhouse-thoughtworks-8191523",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Quito, Ecuador",
-      "country": "Other",
-      "postedAt": "2026-10-09T02:08:18-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-7964148",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -570,6 +557,19 @@
       "direct": true,
       "workType": "On-site",
       "location": "Lima, Peru",
+      "country": "Other",
+      "postedAt": "2026-10-09T02:08:18-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8191523",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Quito, Ecuador",
       "country": "Other",
       "postedAt": "2026-10-09T02:08:18-04:00"
     },
