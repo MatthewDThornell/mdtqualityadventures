@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-16T16:00:00.395Z",
+  "fetchedAt": "2026-10-16T20:27:36.813Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer, Social",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-16T14:42:55-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-16T14:40:30-04:00"
+    },
     {
       "id": "greenhouse-coursera-6141559004",
       "title": "Senior Software Test Engineer",
@@ -12,7 +38,20 @@
       "workType": "On-site",
       "location": "Toronto, Canada",
       "country": "Canada",
-      "postedAt": "2026-10-16T10:46:19-04:00"
+      "postedAt": "2026-10-16T14:34:41-04:00"
+    },
+    {
+      "id": "arbeitnow-finance-data-annotation-quality-analyst-paris-357673",
+      "title": "Finance Data Annotation Quality Analyst",
+      "company": "Mistral.ai",
+      "url": "https://www.arbeitnow.fr/jobs/companies/mistralai/finance-data-annotation-quality-analyst-paris-357673",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Paris",
+      "country": "France",
+      "postedAt": "2026-10-16T17:40:17.000Z"
     },
     {
       "id": "arbeitnow-qa-tester-leeds-72724",
@@ -39,32 +78,6 @@
       "location": "London",
       "country": "United Kingdom",
       "postedAt": "2026-10-16T07:30:57.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer, Social",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-16T02:42:16-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-16T02:39:46-04:00"
     },
     {
       "id": "arbeitnow-senior-quality-assurance-engineer-berlin-143571",
@@ -208,19 +221,6 @@
       "location": "Boulogne-Billancourt, France",
       "country": "France",
       "postedAt": "2026-10-15T04:20:07.000Z"
-    },
-    {
-      "id": "jobicy-145995",
-      "title": "Ubuntu Linux Kernel Test Engineer",
-      "company": "Canonical",
-      "url": "https://jobicy.com/jobs/145995-ubuntu-linux-kernel-test-engineer",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "APAC,  China",
-      "country": "Other",
-      "postedAt": "2026-10-15T02:45:16+00:00"
     },
     {
       "id": "arbeitnow-software-test-engineer-amsterdam-332708",
@@ -457,19 +457,6 @@
       "postedAt": "2026-10-13T08:30:44.000Z"
     },
     {
-      "id": "arbeitnow-remote-senior-manager-qa-engineering-470969",
-      "title": "Senior Manager, QA Engineering",
-      "company": "Camunda",
-      "url": "https://www.arbeitnow.com/jobs/companies/camunda/remote-senior-manager-qa-engineering-470969",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Remote",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-10-13T02:40:04.000Z"
-    },
-    {
       "id": "greenhouse-scaleai-4742042005",
       "title": "Systems Engineering Integration & Test Lead, Public Sector",
       "company": "Scale AI",
@@ -494,19 +481,6 @@
       "location": "Nijverdal, Overijssel, Nederland",
       "country": "Other",
       "postedAt": "2026-10-12T18:30:58.000Z"
-    },
-    {
-      "id": "arbeitnow-test-analyst-data-driven-applications-sql-python-almere-netherlands-181968",
-      "title": "Test Analyst | Data Driven Applications | SQL & Python | Almere, Netherlands",
-      "company": "Ilias Solutions",
-      "url": "https://www.arbeitnow.nl/jobs/companies/ilias-solutions/test-analyst-data-driven-applications-sql-python-almere-netherlands-181968",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Almere",
-      "country": "Other",
-      "postedAt": "2026-10-12T18:09:40.000Z"
     },
     {
       "id": "arbeitnow-quality-engineer-paris-paris-villeneuve-dascq-nord-446271",
@@ -548,19 +522,6 @@
       "postedAt": "2026-10-09T11:59:55.378Z"
     },
     {
-      "id": "greenhouse-thoughtworks-7964148",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Lima, Peru",
-      "country": "Other",
-      "postedAt": "2026-10-09T02:08:18-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-8191523",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -570,6 +531,19 @@
       "direct": true,
       "workType": "On-site",
       "location": "Quito, Ecuador",
+      "country": "Other",
+      "postedAt": "2026-10-09T02:08:18-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-7964148",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Lima, Peru",
       "country": "Other",
       "postedAt": "2026-10-09T02:08:18-04:00"
     },
