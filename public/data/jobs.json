@@ -1,6 +1,71 @@
 {
-  "fetchedAt": "2026-10-16T02:58:05.916Z",
+  "fetchedAt": "2026-10-16T10:36:44.212Z",
   "jobs": [
+    {
+      "id": "arbeitnow-test-lead-with-murex-london-416814",
+      "title": "Test Lead with Murex",
+      "company": "Market Cloud",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/market-cloud/test-lead-with-murex-london-416814",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-16T07:30:57.000Z"
+    },
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer, Social",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-16T02:42:16-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-16T02:39:46-04:00"
+    },
+    {
+      "id": "arbeitnow-senior-quality-assurance-engineer-berlin-143571",
+      "title": "Senior Quality Assurance Engineer",
+      "company": "Trading212",
+      "url": "https://www.arbeitnow.com/jobs/companies/trading212/senior-quality-assurance-engineer-berlin-143571",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-10-16T05:40:17.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-qa-engineer-1-london-office-271743",
+      "title": "Senior QA Engineer 1",
+      "company": "Moneybox",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/moneybox/senior-qa-engineer-1-london-office-271743",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London Office",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-16T02:30:13.000Z"
+    },
     {
       "id": "greenhouse-okta-8287689",
       "title": "Senior Director, Quality Engineering – Performance, Scalability & Reliability",
@@ -39,32 +104,6 @@
       "location": "Bonn",
       "country": "Germany",
       "postedAt": "2026-10-15T21:01:21.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer, Social",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-15T14:43:01-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-15T14:40:22-04:00"
     },
     {
       "id": "arbeitnow-qa-engineering-intern-d-berlin-318733",
@@ -301,6 +340,32 @@
       "postedAt": "2026-10-14T11:55:53.000Z"
     },
     {
+      "id": "arbeitnow-senior-sdet-london-243563",
+      "title": "Senior SDET",
+      "company": "Radiant",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/radiant/senior-sdet-london-243563",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-13T23:40:16.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-mes-automation-engineer-delft-464428",
+      "title": "Senior MES & Automation Engineer",
+      "company": "Quantware",
+      "url": "https://www.arbeitnow.nl/jobs/companies/quantware/senior-mes-automation-engineer-delft-464428",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Delft",
+      "country": "Other",
+      "postedAt": "2026-10-13T17:40:48.000Z"
+    },
+    {
       "id": "arbeitnow-quality-assurance-specialist-the-hague-332503",
       "title": "Quality Assurance Specialist",
       "company": "Robin Radar",
@@ -444,19 +509,6 @@
       "postedAt": "2026-10-12T18:09:40.000Z"
     },
     {
-      "id": "arbeitnow-production-test-engineer-de-berlin-68027",
-      "title": "Production Test Engineer (m/f/d)",
-      "company": "Swissbit",
-      "url": "https://www.arbeitnow.com/jobs/companies/swissbit/production-test-engineer-de-berlin-68027",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "DE-Berlin",
-      "country": "Germany",
-      "postedAt": "2026-10-12T14:09:52.000Z"
-    },
-    {
       "id": "arbeitnow-quality-engineer-paris-paris-villeneuve-dascq-nord-446271",
       "title": "Quality Engineer (f/m/d)",
       "company": "Junior Data Scientist - Downstream Demand Forecast - Value Chain ...",
@@ -520,19 +572,6 @@
       "location": "Lima, Peru",
       "country": "Other",
       "postedAt": "2026-10-09T02:08:18-04:00"
-    },
-    {
-      "id": "arbeitnow-qa-engineer-paris-107303",
-      "title": "QA Engineer",
-      "company": "Npv",
-      "url": "https://www.arbeitnow.fr/jobs/companies/npv/qa-engineer-paris-107303",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Paris",
-      "country": "France",
-      "postedAt": "2026-10-09T04:40:12.000Z"
     },
     {
       "id": "greenhouse-stripe-8206729",
