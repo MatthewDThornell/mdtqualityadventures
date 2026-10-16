@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-10-15T20:53:51.391Z",
+  "fetchedAt": "2026-10-16T02:58:05.916Z",
   "jobs": [
+    {
+      "id": "greenhouse-okta-8287689",
+      "title": "Senior Director, Quality Engineering – Performance, Scalability & Reliability",
+      "company": "Okta",
+      "url": "https://www.okta.com/company/careers/opportunity/8287689?gh_jid=8287689",
+      "source": "Okta",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "San Francisco, California",
+      "country": "United States",
+      "postedAt": "2026-10-15T20:39:39-04:00"
+    },
+    {
+      "id": "arbeitnow-quality-engineer-schwerpunkt-testautomatisierung-all-genders-karlsruhe-435393",
+      "title": "Quality Engineer - Schwerpunkt Testautomatisierung (all genders)",
+      "company": "Starface GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/starface-gmbh/quality-engineer-schwerpunkt-testautomatisierung-all-genders-karlsruhe-435393",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Karlsruhe",
+      "country": "Germany",
+      "postedAt": "2026-10-15T21:30:53.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-qa-engineer-bonn-222874",
+      "title": "Senior QA Engineer*",
+      "company": "Haeger Consulting GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/haeger-consulting-gmbh/senior-qa-engineer-bonn-222874",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Bonn",
+      "country": "Germany",
+      "postedAt": "2026-10-15T21:01:21.000Z"
+    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior Quality Engineer, Social",
@@ -262,32 +301,6 @@
       "postedAt": "2026-10-14T11:55:53.000Z"
     },
     {
-      "id": "arbeitnow-senior-sdet-london-243563",
-      "title": "Senior SDET",
-      "company": "Radiant",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/radiant/senior-sdet-london-243563",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-13T23:40:16.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-mes-automation-engineer-delft-464428",
-      "title": "Senior MES & Automation Engineer",
-      "company": "Quantware",
-      "url": "https://www.arbeitnow.nl/jobs/companies/quantware/senior-mes-automation-engineer-delft-464428",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Delft",
-      "country": "Other",
-      "postedAt": "2026-10-13T17:40:48.000Z"
-    },
-    {
       "id": "arbeitnow-quality-assurance-specialist-the-hague-332503",
       "title": "Quality Assurance Specialist",
       "company": "Robin Radar",
@@ -338,19 +351,6 @@
       "location": "United States",
       "country": "United States",
       "postedAt": "2026-10-13T10:50:52-04:00"
-    },
-    {
-      "id": "arbeitnow-head-of-quality-assurance-industrial-corrosion-protection-bockenem-36496",
-      "title": "Head of Quality Assurance – Industrial Corrosion Protection (w/m/d)",
-      "company": "Right Search",
-      "url": "https://www.arbeitnow.com/jobs/companies/right-search/head-of-quality-assurance-industrial-corrosion-protection-bockenem-36496",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Bockenem",
-      "country": "Other",
-      "postedAt": "2026-10-13T12:37:51.000Z"
     },
     {
       "id": "arbeitnow-qa-automation-engineer-intellij-idea-java-build-tools-berlin-munich-267354",
@@ -455,32 +455,6 @@
       "location": "DE-Berlin",
       "country": "Germany",
       "postedAt": "2026-10-12T14:09:52.000Z"
-    },
-    {
-      "id": "arbeitnow-system-test-engineer-gilching-294473",
-      "title": "System Test Engineer (m/f/d)",
-      "company": "Quantum-Systems GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/quantum-systems-gmbh/system-test-engineer-gilching-294473",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Gilching",
-      "country": "Other",
-      "postedAt": "2026-10-12T11:20:12.000Z"
-    },
-    {
-      "id": "arbeitnow-environmental-test-engineer-munchen-8650",
-      "title": "Environmental Test Engineer",
-      "company": "Mynaric",
-      "url": "https://www.arbeitnow.com/jobs/companies/mynaric/environmental-test-engineer-munchen-8650",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "München",
-      "country": "Germany",
-      "postedAt": "2026-10-12T11:09:42.000Z"
     },
     {
       "id": "arbeitnow-quality-engineer-paris-paris-villeneuve-dascq-nord-446271",
