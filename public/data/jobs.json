@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-17T14:53:08.497Z",
+  "fetchedAt": "2026-10-17T20:02:21.110Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer, Social",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-17T14:45:30-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-17T14:43:15-04:00"
+    },
     {
       "id": "arbeitnow-senior-test-automation-engineer-aachen-266252",
       "title": "Senior Test Automation Engineer",
@@ -52,32 +78,6 @@
       "location": "San Francisco, California",
       "country": "United States",
       "postedAt": "2026-10-16T21:55:08-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer, Social",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-16T14:42:55-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-16T14:40:30-04:00"
     },
     {
       "id": "greenhouse-coursera-6141559004",
@@ -470,6 +470,19 @@
       "postedAt": "2026-10-13T08:55:03.000Z"
     },
     {
+      "id": "arbeitnow-system-test-engineer-gilching-148694",
+      "title": "System Test Engineer (m/f/d)",
+      "company": "Quantum-Systems GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/quantum-systems-gmbh/system-test-engineer-gilching-148694",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Gilching, Bayern, Germany",
+      "country": "Germany",
+      "postedAt": "2026-10-13T08:30:44.000Z"
+    },
+    {
       "id": "greenhouse-scaleai-4742042005",
       "title": "Systems Engineering Integration & Test Lead, Public Sector",
       "company": "Scale AI",
@@ -494,19 +507,6 @@
       "location": "Nijverdal, Overijssel, Nederland",
       "country": "Other",
       "postedAt": "2026-10-12T18:30:58.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-engineer-paris-paris-villeneuve-dascq-nord-446271",
-      "title": "Quality Engineer (f/m/d)",
-      "company": "Junior Data Scientist - Downstream Demand Forecast - Value Chain ...",
-      "url": "https://www.arbeitnow.fr/jobs/companies/junior-data-scientist-downstream-demand-forecast-value-chain/quality-engineer-paris-paris-villeneuve-dascq-nord-446271",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Paris, Paris; Villeneuve-d'Ascq, Nord",
-      "country": "France",
-      "postedAt": "2026-10-10T16:55:06.000Z"
     },
     {
       "id": "greenhouse-samsara-8139255",
