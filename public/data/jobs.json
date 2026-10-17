@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-17T02:50:01.702Z",
+  "fetchedAt": "2026-10-17T10:05:56.226Z",
   "jobs": [
+    {
+      "id": "arbeitnow-senior-test-automation-engineer-aachen-266252",
+      "title": "Senior Test Automation Engineer",
+      "company": "Keyfactorinc",
+      "url": "https://www.arbeitnow.com/jobs/companies/keyfactorinc/senior-test-automation-engineer-aachen-266252",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Aachen",
+      "country": "Germany",
+      "postedAt": "2026-10-17T05:55:14.000Z"
+    },
+    {
+      "id": "jobicy-153469",
+      "title": "Senior QA Automation Engineer - Product (LATAM)",
+      "company": "Upgrade",
+      "url": "https://jobicy.com/jobs/153469-senior-qa-automation-engineer-product-latam",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Argentina,  Brazil",
+      "country": "Brazil",
+      "postedAt": "2026-10-17T04:10:28+00:00"
+    },
     {
       "id": "arbeitnow-senior-qa-engineer-berlin-153034",
       "title": "Senior QA Engineer - Berlin",
@@ -366,19 +392,6 @@
       "postedAt": "2026-10-14T11:55:53.000Z"
     },
     {
-      "id": "arbeitnow-senior-sdet-london-243563",
-      "title": "Senior SDET",
-      "company": "Radiant",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/radiant/senior-sdet-london-243563",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-13T23:40:16.000Z"
-    },
-    {
       "id": "arbeitnow-senior-mes-automation-engineer-delft-464428",
       "title": "Senior MES & Automation Engineer",
       "company": "Quantware",
@@ -457,19 +470,6 @@
       "postedAt": "2026-10-13T08:55:03.000Z"
     },
     {
-      "id": "arbeitnow-system-test-engineer-gilching-148694",
-      "title": "System Test Engineer (m/f/d)",
-      "company": "Quantum-Systems GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/quantum-systems-gmbh/system-test-engineer-gilching-148694",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Gilching, Bayern, Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-13T08:30:44.000Z"
-    },
-    {
       "id": "greenhouse-scaleai-4742042005",
       "title": "Systems Engineering Integration & Test Lead, Public Sector",
       "company": "Scale AI",
@@ -520,6 +520,19 @@
       "location": "Remote - US",
       "country": "United States",
       "postedAt": "2026-10-09T16:16:53-04:00"
+    },
+    {
+      "id": "lever-shieldai-cbba120f-2089-4531-9e41-1dad856473a7",
+      "title": "Systems Test Engineer",
+      "company": "Shield AI",
+      "url": "https://jobs.lever.co/shieldai/cbba120f-2089-4531-9e41-1dad856473a7",
+      "source": "Shield AI",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Bangalore",
+      "country": "India",
+      "postedAt": "2026-10-09T11:59:55.378Z"
     },
     {
       "id": "greenhouse-thoughtworks-8191523",
