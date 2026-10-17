@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-16T20:27:36.813Z",
+  "fetchedAt": "2026-10-17T02:50:01.702Z",
   "jobs": [
+    {
+      "id": "arbeitnow-senior-qa-engineer-berlin-153034",
+      "title": "Senior QA Engineer - Berlin",
+      "company": "Resident Advisor",
+      "url": "https://www.arbeitnow.com/jobs/companies/resident-advisor/senior-qa-engineer-berlin-153034",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Berlin, Germany",
+      "country": "Germany",
+      "postedAt": "2026-10-17T02:20:17.000Z"
+    },
+    {
+      "id": "greenhouse-okta-8287689",
+      "title": "Senior Director, Quality Engineering – Performance, Scalability & Reliability",
+      "company": "Okta",
+      "url": "https://www.okta.com/company/careers/opportunity/8287689?gh_jid=8287689",
+      "source": "Okta",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "San Francisco, California",
+      "country": "United States",
+      "postedAt": "2026-10-16T21:55:08-04:00"
+    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior Quality Engineer, Social",
@@ -104,19 +130,6 @@
       "location": "London Office",
       "country": "United Kingdom",
       "postedAt": "2026-10-16T02:30:13.000Z"
-    },
-    {
-      "id": "greenhouse-okta-8287689",
-      "title": "Senior Director, Quality Engineering – Performance, Scalability & Reliability",
-      "company": "Okta",
-      "url": "https://www.okta.com/company/careers/opportunity/8287689?gh_jid=8287689",
-      "source": "Okta",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "San Francisco, California",
-      "country": "United States",
-      "postedAt": "2026-10-15T20:39:39-04:00"
     },
     {
       "id": "arbeitnow-quality-engineer-schwerpunkt-testautomatisierung-all-genders-karlsruhe-435393",
@@ -507,19 +520,6 @@
       "location": "Remote - US",
       "country": "United States",
       "postedAt": "2026-10-09T16:16:53-04:00"
-    },
-    {
-      "id": "lever-shieldai-cbba120f-2089-4531-9e41-1dad856473a7",
-      "title": "Systems Test Engineer",
-      "company": "Shield AI",
-      "url": "https://jobs.lever.co/shieldai/cbba120f-2089-4531-9e41-1dad856473a7",
-      "source": "Shield AI",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Bangalore",
-      "country": "India",
-      "postedAt": "2026-10-09T11:59:55.378Z"
     },
     {
       "id": "greenhouse-thoughtworks-8191523",
