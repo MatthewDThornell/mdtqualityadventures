@@ -1,6 +1,97 @@
 {
-  "fetchedAt": "2026-10-18T02:51:29.330Z",
+  "fetchedAt": "2026-10-18T10:19:14.543Z",
   "jobs": [
+    {
+      "id": "arbeitnow-member-experience-training-quality-specialist-uk-london-185293",
+      "title": "Member Experience Training & Quality Specialist - UK",
+      "company": "Neko Health",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/neko-health/member-experience-training-quality-specialist-uk-london-185293",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-18T08:40:20.000Z"
+    },
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer, Social",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-18T02:51:25-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-18T02:47:04-04:00"
+    },
+    {
+      "id": "arbeitnow-senior-qa-test-engineer-d-berlin-370347",
+      "title": "Senior QA / Test Engineer (w/m/x/d)",
+      "company": "MILES Mobility GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/miles-mobility-gmbh/senior-qa-test-engineer-d-berlin-370347",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-10-18T05:13:14.000Z"
+    },
+    {
+      "id": "arbeitnow-qa-engineering-intern-d-berlin-458294",
+      "title": "QA Engineering Intern (w/m/x/d)",
+      "company": "MILES Mobility GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/miles-mobility-gmbh/qa-engineering-intern-d-berlin-458294",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-10-18T05:13:14.000Z"
+    },
+    {
+      "id": "arbeitnow-remote-senior-quality-engineer-tellent-intelligence-ai-amsterdam-295070",
+      "title": "Senior Quality Engineer - Tellent Intelligence (AI)",
+      "company": "Tellent",
+      "url": "https://www.arbeitnow.nl/jobs/companies/tellent/remote-senior-quality-engineer-tellent-intelligence-ai-amsterdam-295070",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Remote job",
+      "country": "Other",
+      "postedAt": "2026-10-18T02:32:17.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-test-engineer-fur-brandenburg-braunschweig-berlin-329978",
+      "title": "Senior Test Engineer (m/w/d) für Brandenburg, Braunschweig, Berlin",
+      "company": "HyPlus Technology GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/hyplus-technology-gmbh/senior-test-engineer-fur-brandenburg-braunschweig-berlin-329978",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Berlin, Berlin, Germany",
+      "country": "Germany",
+      "postedAt": "2026-10-18T02:32:10.000Z"
+    },
     {
       "id": "arbeitnow-remote-senior-qa-automation-engineer-ai-focused-germany-395255",
       "title": "Senior QA Automation Engineer (AI-Focused)",
@@ -54,30 +145,17 @@
       "postedAt": "2026-10-17T21:20:16.000Z"
     },
     {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer, Social",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-17T14:45:30-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-17T14:43:15-04:00"
+      "id": "arbeitnow-senior-test-automation-engineer-aachen-266252",
+      "title": "Senior Test Automation Engineer",
+      "company": "Keyfactorinc",
+      "url": "https://www.arbeitnow.com/jobs/companies/keyfactorinc/senior-test-automation-engineer-aachen-266252",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Aachen",
+      "country": "Germany",
+      "postedAt": "2026-10-17T05:55:14.000Z"
     },
     {
       "id": "jobicy-153469",
@@ -91,6 +169,19 @@
       "location": "Argentina,  Brazil",
       "country": "Brazil",
       "postedAt": "2026-10-17T04:10:28+00:00"
+    },
+    {
+      "id": "arbeitnow-senior-qa-engineer-berlin-153034",
+      "title": "Senior QA Engineer - Berlin",
+      "company": "Resident Advisor",
+      "url": "https://www.arbeitnow.com/jobs/companies/resident-advisor/senior-qa-engineer-berlin-153034",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Berlin, Germany",
+      "country": "Germany",
+      "postedAt": "2026-10-17T02:20:17.000Z"
     },
     {
       "id": "greenhouse-okta-8287689",
@@ -288,6 +379,19 @@
       "postedAt": "2026-10-15T04:20:07.000Z"
     },
     {
+      "id": "arbeitnow-software-test-engineer-amsterdam-332708",
+      "title": "Software Test Engineer",
+      "company": "Optics11",
+      "url": "https://www.arbeitnow.nl/jobs/companies/optics11/software-test-engineer-amsterdam-332708",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Amsterdam, Noord-Holland, Netherlands",
+      "country": "Netherlands",
+      "postedAt": "2026-10-14T20:32:33.000Z"
+    },
+    {
       "id": "arbeitnow-senior-embedded-software-test-engineer-amsterdam-92032",
       "title": "Senior Embedded Software Test Engineer",
       "company": "Optics11",
@@ -353,6 +457,58 @@
       "postedAt": "2026-10-14T20:32:27.000Z"
     },
     {
+      "id": "arbeitnow-banking-test-architect-190004",
+      "title": "Banking Test Architect (m/w/d)",
+      "company": "capco",
+      "url": "https://www.arbeitnow.com/jobs/companies/capco/banking-test-architect-190004",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-10-14T11:55:53.000Z"
+    },
+    {
+      "id": "arbeitnow-banking-test-architect-380650",
+      "title": "Banking Test Architect (m/w/d)",
+      "company": "capco",
+      "url": "https://www.arbeitnow.com/jobs/companies/capco/banking-test-architect-380650",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-10-14T11:55:53.000Z"
+    },
+    {
+      "id": "arbeitnow-banking-test-architect-493674",
+      "title": "Banking Test Architect (m/w/d)",
+      "company": "capco",
+      "url": "https://www.arbeitnow.com/jobs/companies/capco/banking-test-architect-493674",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-10-14T11:55:53.000Z"
+    },
+    {
+      "id": "arbeitnow-banking-test-architect-106530",
+      "title": "Banking Test Architect (m/w/d)",
+      "company": "capco",
+      "url": "https://www.arbeitnow.com/jobs/companies/capco/banking-test-architect-106530",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-10-14T11:55:53.000Z"
+    },
+    {
       "id": "arbeitnow-senior-mes-automation-engineer-delft-464428",
       "title": "Senior MES & Automation Engineer",
       "company": "Quantware",
@@ -416,32 +572,6 @@
       "location": "United States",
       "country": "United States",
       "postedAt": "2026-10-13T10:50:52-04:00"
-    },
-    {
-      "id": "arbeitnow-qa-automation-engineer-intellij-idea-java-build-tools-berlin-munich-267354",
-      "title": "QA Automation Engineer (IntelliJ IDEA Java Build Tools)",
-      "company": "jetbrains",
-      "url": "https://www.arbeitnow.com/jobs/companies/jetbrains/qa-automation-engineer-intellij-idea-java-build-tools-berlin-munich-267354",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin; Munich",
-      "country": "Germany",
-      "postedAt": "2026-10-13T08:55:03.000Z"
-    },
-    {
-      "id": "arbeitnow-system-test-engineer-gilching-148694",
-      "title": "System Test Engineer (m/f/d)",
-      "company": "Quantum-Systems GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/quantum-systems-gmbh/system-test-engineer-gilching-148694",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Gilching, Bayern, Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-13T08:30:44.000Z"
     },
     {
       "id": "greenhouse-scaleai-4742042005",
