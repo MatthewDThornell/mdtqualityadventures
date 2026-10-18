@@ -1,6 +1,110 @@
 {
-  "fetchedAt": "2026-10-18T15:19:01.565Z",
+  "fetchedAt": "2026-10-18T20:01:41.508Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer, Social",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-18T14:44:59-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-18T14:42:41-04:00"
+    },
+    {
+      "id": "arbeitnow-professional-senior-software-test-automation-engineer-zurich-324109",
+      "title": "Professional/Senior Software Test Automation Engineer",
+      "company": "Infometis AG",
+      "url": "https://www.arbeitnow.ch/jobs/companies/infometis-ag/professional-senior-software-test-automation-engineer-zurich-324109",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Zürich",
+      "country": "Other",
+      "postedAt": "2026-10-18T18:00:47.000Z"
+    },
+    {
+      "id": "arbeitnow-test-automation-engineer-senior-consultant-mwd-zurich-294124",
+      "title": "Test Automation Engineer - (Senior) Consultant (m,w,d)",
+      "company": "QESTIT",
+      "url": "https://www.arbeitnow.ch/jobs/companies/qestit/test-automation-engineer-senior-consultant-mwd-zurich-294124",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Zürich",
+      "country": "Other",
+      "postedAt": "2026-10-18T17:31:22.000Z"
+    },
+    {
+      "id": "arbeitnow-junior-systems-test-engineer-m-f-lausanne-145273",
+      "title": "Junior Systems Test Engineer (M/F)",
+      "company": "Enova Consulting",
+      "url": "https://www.arbeitnow.ch/jobs/companies/enova-consulting/junior-systems-test-engineer-m-f-lausanne-145273",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Lausanne",
+      "country": "Other",
+      "postedAt": "2026-10-18T17:31:20.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-qa-manager-consultant-gmp-cqv-100-basel-470349",
+      "title": "Senior QA Manager (Consultant) / GMP & CQV  100% (w/m/d)",
+      "company": "Azimuth Quality",
+      "url": "https://www.arbeitnow.ch/jobs/companies/azimuth-quality/senior-qa-manager-consultant-gmp-cqv-100-basel-470349",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Basel",
+      "country": "Other",
+      "postedAt": "2026-10-18T16:31:12.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-sales-manager-mwd-fur-die-sparte-software-quality-assurance-zurich-247337",
+      "title": "Senior Sales Manager (m,w,d) für die Sparte \"Software Quality Assurance\"",
+      "company": "QESTIT",
+      "url": "https://www.arbeitnow.ch/jobs/companies/qestit/senior-sales-manager-mwd-fur-die-sparte-software-quality-assurance-zurich-247337",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Zürich",
+      "country": "Other",
+      "postedAt": "2026-10-18T16:31:10.000Z"
+    },
+    {
+      "id": "arbeitnow-test-analystin-60-bern-362923",
+      "title": "Test Analyst:in 60%",
+      "company": "Coopers Group AG",
+      "url": "https://www.arbeitnow.ch/jobs/companies/coopers-group-ag/test-analystin-60-bern-362923",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Bern",
+      "country": "Other",
+      "postedAt": "2026-10-18T15:31:16.000Z"
+    },
     {
       "id": "arbeitnow-test-engineer-delft-144727",
       "title": "Test Engineer",
@@ -39,32 +143,6 @@
       "location": "London",
       "country": "United Kingdom",
       "postedAt": "2026-10-18T08:40:20.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer, Social",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-18T02:51:25-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-18T02:47:04-04:00"
     },
     {
       "id": "arbeitnow-senior-qa-test-engineer-d-berlin-370347",
@@ -145,6 +223,19 @@
       "postedAt": "2026-10-17T23:40:16.000Z"
     },
     {
+      "id": "arbeitnow-remote-senior-quality-engineer-checkout-payments-schoppingen-296821",
+      "title": "Senior Quality Engineer - Checkout & Payments (m/w/d)",
+      "company": "shopware AG",
+      "url": "https://www.arbeitnow.com/jobs/companies/shopware-ag/remote-senior-quality-engineer-checkout-payments-schoppingen-296821",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Homeoffice",
+      "country": "Other",
+      "postedAt": "2026-10-17T23:31:43.000Z"
+    },
+    {
       "id": "arbeitnow-quality-assurance-specialist-klazienaveen-129201",
       "title": "Quality Assurance Specialist",
       "company": "Norit",
@@ -169,19 +260,6 @@
       "location": "Aachen",
       "country": "Germany",
       "postedAt": "2026-10-17T05:55:14.000Z"
-    },
-    {
-      "id": "jobicy-153469",
-      "title": "Senior QA Automation Engineer - Product (LATAM)",
-      "company": "Upgrade",
-      "url": "https://jobicy.com/jobs/153469-senior-qa-automation-engineer-product-latam",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Argentina,  Brazil",
-      "country": "Brazil",
-      "postedAt": "2026-10-17T04:10:28+00:00"
     },
     {
       "id": "arbeitnow-senior-qa-engineer-berlin-153034",
@@ -223,6 +301,19 @@
       "postedAt": "2026-10-16T14:34:41-04:00"
     },
     {
+      "id": "arbeitnow-finance-data-annotation-quality-analyst-paris-357673",
+      "title": "Finance Data Annotation Quality Analyst",
+      "company": "Mistral.ai",
+      "url": "https://www.arbeitnow.fr/jobs/companies/mistralai/finance-data-annotation-quality-analyst-paris-357673",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Paris",
+      "country": "France",
+      "postedAt": "2026-10-16T17:40:17.000Z"
+    },
+    {
       "id": "arbeitnow-qa-tester-leeds-72724",
       "title": "QA tester",
       "company": "Kryptos Technologies limited",
@@ -260,6 +351,19 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-10-16T05:40:17.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-qa-engineer-1-london-office-271743",
+      "title": "Senior QA Engineer 1",
+      "company": "Moneybox",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/moneybox/senior-qa-engineer-1-london-office-271743",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London Office",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-16T02:30:13.000Z"
     },
     {
       "id": "arbeitnow-quality-engineer-schwerpunkt-testautomatisierung-all-genders-karlsruhe-435393",
@@ -353,17 +457,30 @@
       "postedAt": "2026-10-15T08:01:06.000Z"
     },
     {
-      "id": "arbeitnow-quality-assurance-pharmacist-boulogne-billancourt-83480",
-      "title": "Quality Assurance Pharmacist",
-      "company": "Excelya",
-      "url": "https://www.arbeitnow.fr/jobs/companies/excelya/quality-assurance-pharmacist-boulogne-billancourt-83480",
+      "id": "arbeitnow-software-test-engineer-amsterdam-332708",
+      "title": "Software Test Engineer",
+      "company": "Optics11",
+      "url": "https://www.arbeitnow.nl/jobs/companies/optics11/software-test-engineer-amsterdam-332708",
       "source": "Arbeitnow",
       "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
       "workType": "On-site",
-      "location": "Boulogne-Billancourt, France",
-      "country": "France",
-      "postedAt": "2026-10-15T04:20:07.000Z"
+      "location": "Amsterdam, Noord-Holland, Netherlands",
+      "country": "Netherlands",
+      "postedAt": "2026-10-14T20:32:33.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-embedded-software-test-engineer-amsterdam-92032",
+      "title": "Senior Embedded Software Test Engineer",
+      "company": "Optics11",
+      "url": "https://www.arbeitnow.nl/jobs/companies/optics11/senior-embedded-software-test-engineer-amsterdam-92032",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Amsterdam, Noord-Holland, Netherlands",
+      "country": "Netherlands",
+      "postedAt": "2026-10-14T20:32:33.000Z"
     },
     {
       "id": "arbeitnow-test-engineer-windtunnels-marknesse-84869",
@@ -405,19 +522,6 @@
       "postedAt": "2026-10-14T20:32:31.000Z"
     },
     {
-      "id": "arbeitnow-remote-software-test-engineer-bern-277047",
-      "title": "Software Test Engineer",
-      "company": "SwissPeak Partners GmbH",
-      "url": "https://www.arbeitnow.ch/jobs/companies/swisspeak-partners-gmbh/remote-software-test-engineer-bern-277047",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Remote job",
-      "country": "Other",
-      "postedAt": "2026-10-14T20:32:27.000Z"
-    },
-    {
       "id": "arbeitnow-senior-mes-automation-engineer-delft-464428",
       "title": "Senior MES & Automation Engineer",
       "company": "Quantware",
@@ -442,32 +546,6 @@
       "location": "Delft",
       "country": "Other",
       "postedAt": "2026-10-13T17:40:48.000Z"
-    },
-    {
-      "id": "arbeitnow-field-test-engineer-berlin-363034",
-      "title": "Field Test Engineer (m/w/d)",
-      "company": "MOTOR Ai",
-      "url": "https://www.arbeitnow.com/jobs/companies/motor-ai/field-test-engineer-berlin-363034",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-10-13T16:31:34.000Z"
-    },
-    {
-      "id": "arbeitnow-staff-quality-assurance-engineer-geneva-19465",
-      "title": "Staff Quality Assurance Engineer",
-      "company": "ionq",
-      "url": "https://www.arbeitnow.ch/jobs/companies/ionq/staff-quality-assurance-engineer-geneva-19465",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Geneva",
-      "country": "Other",
-      "postedAt": "2026-10-13T14:55:07.000Z"
     },
     {
       "id": "greenhouse-testlio-8278471",
