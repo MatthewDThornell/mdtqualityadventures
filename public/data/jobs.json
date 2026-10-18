@@ -1,6 +1,58 @@
 {
-  "fetchedAt": "2026-10-17T20:02:21.110Z",
+  "fetchedAt": "2026-10-18T02:51:29.330Z",
   "jobs": [
+    {
+      "id": "arbeitnow-remote-senior-qa-automation-engineer-ai-focused-germany-395255",
+      "title": "Senior QA Automation Engineer (AI-Focused)",
+      "company": "Workmotion",
+      "url": "https://www.arbeitnow.com/jobs/companies/workmotion/remote-senior-qa-automation-engineer-ai-focused-germany-395255",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Germany",
+      "country": "Germany",
+      "postedAt": "2026-10-18T02:20:03.000Z"
+    },
+    {
+      "id": "arbeitnow-test-engineer-leonberg-germany-121053",
+      "title": "Test Engineer",
+      "company": "Wayve",
+      "url": "https://www.arbeitnow.com/jobs/companies/wayve/test-engineer-leonberg-germany-121053",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Leonberg, Germany",
+      "country": "Germany",
+      "postedAt": "2026-10-17T23:40:16.000Z"
+    },
+    {
+      "id": "arbeitnow-remote-senior-quality-engineer-checkout-payments-schoppingen-296821",
+      "title": "Senior Quality Engineer - Checkout & Payments (m/w/d)",
+      "company": "shopware AG",
+      "url": "https://www.arbeitnow.com/jobs/companies/shopware-ag/remote-senior-quality-engineer-checkout-payments-schoppingen-296821",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Homeoffice",
+      "country": "Other",
+      "postedAt": "2026-10-17T23:31:43.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-specialist-klazienaveen-129201",
+      "title": "Quality Assurance Specialist",
+      "company": "Norit",
+      "url": "https://www.arbeitnow.nl/jobs/companies/norit/quality-assurance-specialist-klazienaveen-129201",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Klazienaveen, Netherlands",
+      "country": "Netherlands",
+      "postedAt": "2026-10-17T21:20:16.000Z"
+    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior Quality Engineer, Social",
@@ -28,19 +80,6 @@
       "postedAt": "2026-10-17T14:43:15-04:00"
     },
     {
-      "id": "arbeitnow-senior-test-automation-engineer-aachen-266252",
-      "title": "Senior Test Automation Engineer",
-      "company": "Keyfactorinc",
-      "url": "https://www.arbeitnow.com/jobs/companies/keyfactorinc/senior-test-automation-engineer-aachen-266252",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Aachen",
-      "country": "Germany",
-      "postedAt": "2026-10-17T05:55:14.000Z"
-    },
-    {
       "id": "jobicy-153469",
       "title": "Senior QA Automation Engineer - Product (LATAM)",
       "company": "Upgrade",
@@ -52,19 +91,6 @@
       "location": "Argentina,  Brazil",
       "country": "Brazil",
       "postedAt": "2026-10-17T04:10:28+00:00"
-    },
-    {
-      "id": "arbeitnow-senior-qa-engineer-berlin-153034",
-      "title": "Senior QA Engineer - Berlin",
-      "company": "Resident Advisor",
-      "url": "https://www.arbeitnow.com/jobs/companies/resident-advisor/senior-qa-engineer-berlin-153034",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Berlin, Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-17T02:20:17.000Z"
     },
     {
       "id": "greenhouse-okta-8287689",
@@ -262,19 +288,6 @@
       "postedAt": "2026-10-15T04:20:07.000Z"
     },
     {
-      "id": "arbeitnow-software-test-engineer-amsterdam-332708",
-      "title": "Software Test Engineer",
-      "company": "Optics11",
-      "url": "https://www.arbeitnow.nl/jobs/companies/optics11/software-test-engineer-amsterdam-332708",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Amsterdam, Noord-Holland, Netherlands",
-      "country": "Netherlands",
-      "postedAt": "2026-10-14T20:32:33.000Z"
-    },
-    {
       "id": "arbeitnow-senior-embedded-software-test-engineer-amsterdam-92032",
       "title": "Senior Embedded Software Test Engineer",
       "company": "Optics11",
@@ -338,58 +351,6 @@
       "location": "Remote job",
       "country": "Other",
       "postedAt": "2026-10-14T20:32:27.000Z"
-    },
-    {
-      "id": "arbeitnow-banking-test-architect-190004",
-      "title": "Banking Test Architect (m/w/d)",
-      "company": "capco",
-      "url": "https://www.arbeitnow.com/jobs/companies/capco/banking-test-architect-190004",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-10-14T11:55:53.000Z"
-    },
-    {
-      "id": "arbeitnow-banking-test-architect-380650",
-      "title": "Banking Test Architect (m/w/d)",
-      "company": "capco",
-      "url": "https://www.arbeitnow.com/jobs/companies/capco/banking-test-architect-380650",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-10-14T11:55:53.000Z"
-    },
-    {
-      "id": "arbeitnow-banking-test-architect-493674",
-      "title": "Banking Test Architect (m/w/d)",
-      "company": "capco",
-      "url": "https://www.arbeitnow.com/jobs/companies/capco/banking-test-architect-493674",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-10-14T11:55:53.000Z"
-    },
-    {
-      "id": "arbeitnow-banking-test-architect-106530",
-      "title": "Banking Test Architect (m/w/d)",
-      "company": "capco",
-      "url": "https://www.arbeitnow.com/jobs/companies/capco/banking-test-architect-106530",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-10-14T11:55:53.000Z"
     },
     {
       "id": "arbeitnow-senior-mes-automation-engineer-delft-464428",
