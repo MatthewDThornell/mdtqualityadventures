@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-18T20:01:41.508Z",
+  "fetchedAt": "2026-10-19T03:04:38.572Z",
   "jobs": [
     {
       "id": "greenhouse-roblox-7656541",
@@ -93,6 +93,32 @@
       "postedAt": "2026-10-18T16:31:10.000Z"
     },
     {
+      "id": "jobicy-155766",
+      "title": "Senior QA Engineer",
+      "company": "Airtm",
+      "url": "https://jobicy.com/jobs/155766-senior-qa-engineer-3",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "LATAM,  Canada,  USA",
+      "country": "United States",
+      "postedAt": "2026-10-18T16:18:48+00:00"
+    },
+    {
+      "id": "jobicy-155760",
+      "title": "Test Architect – Regression & Quality Strategy",
+      "company": "Oowlish Technology",
+      "url": "https://jobicy.com/jobs/155760-test-architect-regression-quality-strategy",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Argentina,  Brazil,  Mexico",
+      "country": "Brazil",
+      "postedAt": "2026-10-18T16:10:39+00:00"
+    },
+    {
       "id": "arbeitnow-test-analystin-60-bern-362923",
       "title": "Test Analyst:in 60%",
       "company": "Coopers Group AG",
@@ -130,19 +156,6 @@
       "location": "Köln, Nordrhein-Westfalen, Deutschland",
       "country": "Germany",
       "postedAt": "2026-10-18T11:31:13.000Z"
-    },
-    {
-      "id": "arbeitnow-member-experience-training-quality-specialist-uk-london-185293",
-      "title": "Member Experience Training & Quality Specialist - UK",
-      "company": "Neko Health",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/neko-health/member-experience-training-quality-specialist-uk-london-185293",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-18T08:40:20.000Z"
     },
     {
       "id": "arbeitnow-senior-qa-test-engineer-d-berlin-370347",
@@ -455,6 +468,19 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-10-15T08:01:06.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-pharmacist-boulogne-billancourt-83480",
+      "title": "Quality Assurance Pharmacist",
+      "company": "Excelya",
+      "url": "https://www.arbeitnow.fr/jobs/companies/excelya/quality-assurance-pharmacist-boulogne-billancourt-83480",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Boulogne-Billancourt, France",
+      "country": "France",
+      "postedAt": "2026-10-15T04:20:07.000Z"
     },
     {
       "id": "arbeitnow-software-test-engineer-amsterdam-332708",
