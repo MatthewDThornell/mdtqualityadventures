@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-19T11:59:36.883Z",
+  "fetchedAt": "2026-10-19T18:40:14.844Z",
   "jobs": [
+    {
+      "id": "arbeitnow-remote-software-test-engineer-bern-226881",
+      "title": "Software Test Engineer",
+      "company": "SwissPeak Partners GmbH",
+      "url": "https://www.arbeitnow.ch/jobs/companies/swisspeak-partners-gmbh/remote-software-test-engineer-bern-226881",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Remote job",
+      "country": "Other",
+      "postedAt": "2026-10-19T17:31:28.000Z"
+    },
+    {
+      "id": "ashby-cerebras-08ffd14b-cb60-4916-9946-735e49594308",
+      "title": "AI Inference Core - Senior SDET, Release Integration Testing",
+      "company": "Cerebras",
+      "url": "https://jobs.ashbyhq.com/cerebras/08ffd14b-cb60-4916-9946-735e49594308",
+      "source": "Cerebras",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Sunnyvale, CA",
+      "country": "United States",
+      "postedAt": "2026-10-19T17:20:23.739+00:00"
+    },
     {
       "id": "greenhouse-thoughtworks-8200468",
       "title": "Lead Quality Analyst",
@@ -223,19 +249,6 @@
       "postedAt": "2026-10-18T02:32:17.000Z"
     },
     {
-      "id": "arbeitnow-senior-test-engineer-fur-brandenburg-braunschweig-berlin-329978",
-      "title": "Senior Test Engineer (m/w/d) für Brandenburg, Braunschweig, Berlin",
-      "company": "HyPlus Technology GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/hyplus-technology-gmbh/senior-test-engineer-fur-brandenburg-braunschweig-berlin-329978",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Berlin, Berlin, Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-18T02:32:10.000Z"
-    },
-    {
       "id": "arbeitnow-remote-senior-qa-automation-engineer-ai-focused-germany-395255",
       "title": "Senior QA Automation Engineer (AI-Focused)",
       "company": "Workmotion",
@@ -364,19 +377,6 @@
       "location": "Leeds",
       "country": "United Kingdom",
       "postedAt": "2026-10-16T11:00:56.000Z"
-    },
-    {
-      "id": "arbeitnow-test-lead-with-murex-london-416814",
-      "title": "Test Lead with Murex",
-      "company": "Market Cloud",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/market-cloud/test-lead-with-murex-london-416814",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-16T07:30:57.000Z"
     },
     {
       "id": "arbeitnow-senior-quality-assurance-engineer-berlin-143571",
@@ -639,19 +639,6 @@
       "postedAt": "2026-10-09T11:59:55.378Z"
     },
     {
-      "id": "greenhouse-thoughtworks-8191523",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Quito, Ecuador",
-      "country": "Other",
-      "postedAt": "2026-10-09T02:08:18-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-7964148",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -661,6 +648,19 @@
       "direct": true,
       "workType": "On-site",
       "location": "Lima, Peru",
+      "country": "Other",
+      "postedAt": "2026-10-09T02:08:18-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8191523",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Quito, Ecuador",
       "country": "Other",
       "postedAt": "2026-10-09T02:08:18-04:00"
     },
