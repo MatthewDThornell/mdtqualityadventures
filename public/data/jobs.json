@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-10-19T03:04:38.572Z",
+  "fetchedAt": "2026-10-19T11:59:36.883Z",
   "jobs": [
+    {
+      "id": "greenhouse-thoughtworks-8200468",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Singapore, Singapore",
+      "country": "Singapore",
+      "postedAt": "2026-10-19T04:51:50-04:00"
+    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior Quality Engineer, Social",
@@ -12,7 +25,7 @@
       "workType": "On-site",
       "location": "San Mateo, CA, United States",
       "country": "United States",
-      "postedAt": "2026-10-18T14:44:59-04:00"
+      "postedAt": "2026-10-19T02:45:09-04:00"
     },
     {
       "id": "greenhouse-roblox-8069987",
@@ -25,7 +38,7 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-10-18T14:42:41-04:00"
+      "postedAt": "2026-10-19T02:42:43-04:00"
     },
     {
       "id": "arbeitnow-professional-senior-software-test-automation-engineer-zurich-324109",
@@ -156,6 +169,19 @@
       "location": "Köln, Nordrhein-Westfalen, Deutschland",
       "country": "Germany",
       "postedAt": "2026-10-18T11:31:13.000Z"
+    },
+    {
+      "id": "arbeitnow-member-experience-training-quality-specialist-uk-london-185293",
+      "title": "Member Experience Training & Quality Specialist - UK",
+      "company": "Neko Health",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/neko-health/member-experience-training-quality-specialist-uk-london-185293",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-18T08:40:20.000Z"
     },
     {
       "id": "arbeitnow-senior-qa-test-engineer-d-berlin-370347",
@@ -416,19 +442,6 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-10-15T12:47:30.000Z"
-    },
-    {
-      "id": "greenhouse-thoughtworks-8200468",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
-      "postedAt": "2026-10-15T08:00:15-04:00"
     },
     {
       "id": "arbeitnow-senior-quality-assurance-engineer-hamburg-186511",
