@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-10-19T18:40:14.844Z",
+  "fetchedAt": "2026-10-20T03:13:39.059Z",
   "jobs": [
+    {
+      "id": "greenhouse-lyft-8767534002",
+      "title": "Software Engineer Intern, Test Automation (Summer 2027)",
+      "company": "Lyft",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8767534002?gh_jid=8767534002",
+      "source": "Lyft",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Montreal, Canada",
+      "country": "Canada",
+      "postedAt": "2026-10-19T18:43:36-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer, Social",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-19T14:45:43-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-19T14:43:20-04:00"
+    },
     {
       "id": "arbeitnow-remote-software-test-engineer-bern-226881",
       "title": "Software Test Engineer",
@@ -28,6 +67,84 @@
       "postedAt": "2026-10-19T17:20:23.739+00:00"
     },
     {
+      "id": "jobicy-155925",
+      "title": "Binance Accelerator Program - QA Automation",
+      "company": "Binance",
+      "url": "https://jobicy.com/jobs/155925-binance-accelerator-program-qa-automation",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Singapore",
+      "country": "Singapore",
+      "postedAt": "2026-10-19T17:09:58+00:00"
+    },
+    {
+      "id": "jobicy-155928",
+      "title": "Senior Software Development Engineer in Test (SDET)",
+      "company": "Flex",
+      "url": "https://jobicy.com/jobs/155928-senior-software-development-engineer-in-test-sdet-2",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Anywhere",
+      "country": "Other",
+      "postedAt": "2026-10-19T17:09:57+00:00"
+    },
+    {
+      "id": "jobicy-155922",
+      "title": "Senior Clinical QA Specialist, AI",
+      "company": "BetterHelp",
+      "url": "https://jobicy.com/jobs/155922-senior-clinical-qa-specialist-ai",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "USA",
+      "country": "United States",
+      "postedAt": "2026-10-19T17:09:57+00:00"
+    },
+    {
+      "id": "jobicy-155930",
+      "title": "Quality Engineer",
+      "company": "StackAdapt",
+      "url": "https://jobicy.com/jobs/155930-quality-engineer-3",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Canada",
+      "country": "Canada",
+      "postedAt": "2026-10-19T17:09:56+00:00"
+    },
+    {
+      "id": "jobicy-155929",
+      "title": "Kazakh Localization QA Tester / Proofreader",
+      "company": "Welo Global",
+      "url": "https://jobicy.com/jobs/155929-kazakh-localization-qa-tester-proofreader",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "France,  Germany,  Greece,  Ireland,  Romania,  Spain,  UK",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-19T17:09:56+00:00"
+    },
+    {
+      "id": "jobicy-155927",
+      "title": "QA Automation Engineer - Digital Media & Advertising - Brazil",
+      "company": "Truelogic",
+      "url": "https://jobicy.com/jobs/155927-qa-automation-engineer-digital-media-advertising-brazil",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Brazil",
+      "country": "Brazil",
+      "postedAt": "2026-10-19T17:09:55+00:00"
+    },
+    {
       "id": "greenhouse-thoughtworks-8200468",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -39,32 +156,6 @@
       "location": "Singapore, Singapore",
       "country": "Singapore",
       "postedAt": "2026-10-19T04:51:50-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer, Social",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-19T02:45:09-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-19T02:42:43-04:00"
     },
     {
       "id": "arbeitnow-professional-senior-software-test-automation-engineer-zurich-324109",
@@ -143,19 +234,6 @@
       "location": "LATAM,  Canada,  USA",
       "country": "United States",
       "postedAt": "2026-10-18T16:18:48+00:00"
-    },
-    {
-      "id": "jobicy-155760",
-      "title": "Test Architect – Regression & Quality Strategy",
-      "company": "Oowlish Technology",
-      "url": "https://jobicy.com/jobs/155760-test-architect-regression-quality-strategy",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Argentina,  Brazil,  Mexico",
-      "country": "Brazil",
-      "postedAt": "2026-10-18T16:10:39+00:00"
     },
     {
       "id": "arbeitnow-test-analystin-60-bern-362923",
@@ -247,6 +325,19 @@
       "location": "Remote job",
       "country": "Other",
       "postedAt": "2026-10-18T02:32:17.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-test-engineer-fur-brandenburg-braunschweig-berlin-329978",
+      "title": "Senior Test Engineer (m/w/d) für Brandenburg, Braunschweig, Berlin",
+      "company": "HyPlus Technology GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/hyplus-technology-gmbh/senior-test-engineer-fur-brandenburg-braunschweig-berlin-329978",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Berlin, Berlin, Germany",
+      "country": "Germany",
+      "postedAt": "2026-10-18T02:32:10.000Z"
     },
     {
       "id": "arbeitnow-remote-senior-qa-automation-engineer-ai-focused-germany-395255",
@@ -548,19 +639,6 @@
       "postedAt": "2026-10-14T20:32:32.000Z"
     },
     {
-      "id": "arbeitnow-qa-test-engineer-s-hertogenbosch-140808",
-      "title": "QA / Test Engineer",
-      "company": "Prijsvrij Vakanties",
-      "url": "https://www.arbeitnow.nl/jobs/companies/prijsvrij-vakanties/qa-test-engineer-s-hertogenbosch-140808",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "'s-Hertogenbosch, Noord-Brabant, Nederland",
-      "country": "Other",
-      "postedAt": "2026-10-14T20:32:31.000Z"
-    },
-    {
       "id": "arbeitnow-senior-mes-automation-engineer-delft-464428",
       "title": "Senior MES & Automation Engineer",
       "company": "Quantware",
@@ -639,19 +717,6 @@
       "postedAt": "2026-10-09T11:59:55.378Z"
     },
     {
-      "id": "greenhouse-thoughtworks-7964148",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Lima, Peru",
-      "country": "Other",
-      "postedAt": "2026-10-09T02:08:18-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-8191523",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -661,6 +726,19 @@
       "direct": true,
       "workType": "On-site",
       "location": "Quito, Ecuador",
+      "country": "Other",
+      "postedAt": "2026-10-09T02:08:18-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-7964148",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Lima, Peru",
       "country": "Other",
       "postedAt": "2026-10-09T02:08:18-04:00"
     },
