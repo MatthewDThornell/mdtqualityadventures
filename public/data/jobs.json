@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-20T10:52:57.367Z",
+  "fetchedAt": "2026-10-20T16:17:39.456Z",
   "jobs": [
     {
       "id": "greenhouse-roblox-7656541",
@@ -509,45 +509,6 @@
       "postedAt": "2026-10-15T21:01:21.000Z"
     },
     {
-      "id": "arbeitnow-qa-engineering-intern-d-berlin-318733",
-      "title": "QA Engineering Intern (w/m/x/d)",
-      "company": "MILES Mobility",
-      "url": "https://www.arbeitnow.com/jobs/companies/miles-mobility/qa-engineering-intern-d-berlin-318733",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-10-15T12:47:30.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-quality-assurance-engineer-hamburg-186511",
-      "title": "Senior Quality Assurance Engineer (f/m/d)",
-      "company": "Zeal Network",
-      "url": "https://www.arbeitnow.com/jobs/companies/zeal-network/senior-quality-assurance-engineer-hamburg-186511",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Hamburg",
-      "country": "Germany",
-      "postedAt": "2026-10-15T08:40:35.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-qa-test-engineer-d-berlin-24647",
-      "title": "Senior QA / Test Engineer (w/m/x/d)",
-      "company": "MILES Mobility",
-      "url": "https://www.arbeitnow.com/jobs/companies/miles-mobility/senior-qa-test-engineer-d-berlin-24647",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-10-15T08:01:06.000Z"
-    },
-    {
       "id": "arbeitnow-quality-assurance-pharmacist-boulogne-billancourt-83480",
       "title": "Quality Assurance Pharmacist",
       "company": "Excelya",
@@ -754,19 +715,6 @@
       "location": "Taipei,Taiwan",
       "country": "Taiwan",
       "postedAt": "2026-10-07T19:02:27-04:00"
-    },
-    {
-      "id": "greenhouse-robinhood-8082056",
-      "title": "Staff Quality Engineer  ",
-      "company": "Robinhood",
-      "url": "https://boards.greenhouse.io/robinhood/jobs/8082056?t=gh_src=&gh_jid=8082056",
-      "source": "Robinhood",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Menlo Park, CA",
-      "country": "United States",
-      "postedAt": "2026-10-06T12:12:00-04:00"
     }
   ]
 }
