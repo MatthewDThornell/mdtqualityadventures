@@ -1,19 +1,6 @@
 {
-  "fetchedAt": "2026-10-20T03:13:39.059Z",
+  "fetchedAt": "2026-10-20T10:52:57.367Z",
   "jobs": [
-    {
-      "id": "greenhouse-lyft-8767534002",
-      "title": "Software Engineer Intern, Test Automation (Summer 2027)",
-      "company": "Lyft",
-      "url": "https://app.careerpuck.com/job-board/lyft/job/8767534002?gh_jid=8767534002",
-      "source": "Lyft",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Montreal, Canada",
-      "country": "Canada",
-      "postedAt": "2026-10-19T18:43:36-04:00"
-    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior Quality Engineer, Social",
@@ -25,7 +12,7 @@
       "workType": "On-site",
       "location": "San Mateo, CA, United States",
       "country": "United States",
-      "postedAt": "2026-10-19T14:45:43-04:00"
+      "postedAt": "2026-10-20T02:45:16-04:00"
     },
     {
       "id": "greenhouse-roblox-8069987",
@@ -38,7 +25,20 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-10-19T14:43:20-04:00"
+      "postedAt": "2026-10-20T02:43:00-04:00"
+    },
+    {
+      "id": "greenhouse-lyft-8767534002",
+      "title": "Software Engineer Intern, Test Automation (Summer 2027)",
+      "company": "Lyft",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8767534002?gh_jid=8767534002",
+      "source": "Lyft",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Montreal, Canada",
+      "country": "Canada",
+      "postedAt": "2026-10-19T18:43:36-04:00"
     },
     {
       "id": "arbeitnow-remote-software-test-engineer-bern-226881",
@@ -221,19 +221,6 @@
       "location": "Zürich",
       "country": "Other",
       "postedAt": "2026-10-18T16:31:10.000Z"
-    },
-    {
-      "id": "jobicy-155766",
-      "title": "Senior QA Engineer",
-      "company": "Airtm",
-      "url": "https://jobicy.com/jobs/155766-senior-qa-engineer-3",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "LATAM,  Canada,  USA",
-      "country": "United States",
-      "postedAt": "2026-10-18T16:18:48+00:00"
     },
     {
       "id": "arbeitnow-test-analystin-60-bern-362923",
@@ -548,19 +535,6 @@
       "postedAt": "2026-10-15T08:40:35.000Z"
     },
     {
-      "id": "arbeitnow-quality-assurance-officer-hybrid-winnersh-266503",
-      "title": "Quality Assurance Officer",
-      "company": "Montu Uk",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/montu-uk/quality-assurance-officer-hybrid-winnersh-266503",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Hybrid Winnersh",
-      "country": "Other",
-      "postedAt": "2026-10-15T08:40:34.000Z"
-    },
-    {
       "id": "arbeitnow-senior-qa-test-engineer-d-berlin-24647",
       "title": "Senior QA / Test Engineer (w/m/x/d)",
       "company": "MILES Mobility",
@@ -637,6 +611,19 @@
       "location": "Groningen, Groningen, Nederland",
       "country": "Other",
       "postedAt": "2026-10-14T20:32:32.000Z"
+    },
+    {
+      "id": "arbeitnow-qa-test-engineer-s-hertogenbosch-140808",
+      "title": "QA / Test Engineer",
+      "company": "Prijsvrij Vakanties",
+      "url": "https://www.arbeitnow.nl/jobs/companies/prijsvrij-vakanties/qa-test-engineer-s-hertogenbosch-140808",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "'s-Hertogenbosch, Noord-Brabant, Nederland",
+      "country": "Other",
+      "postedAt": "2026-10-14T20:32:31.000Z"
     },
     {
       "id": "arbeitnow-senior-mes-automation-engineer-delft-464428",
@@ -717,19 +704,6 @@
       "postedAt": "2026-10-09T11:59:55.378Z"
     },
     {
-      "id": "greenhouse-thoughtworks-8191523",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Quito, Ecuador",
-      "country": "Other",
-      "postedAt": "2026-10-09T02:08:18-04:00"
-    },
-    {
       "id": "greenhouse-thoughtworks-7964148",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -739,6 +713,19 @@
       "direct": true,
       "workType": "On-site",
       "location": "Lima, Peru",
+      "country": "Other",
+      "postedAt": "2026-10-09T02:08:18-04:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8191523",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Quito, Ecuador",
       "country": "Other",
       "postedAt": "2026-10-09T02:08:18-04:00"
     },
