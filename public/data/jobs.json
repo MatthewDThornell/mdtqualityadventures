@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-20T16:17:39.456Z",
+  "fetchedAt": "2026-10-20T21:12:22.095Z",
   "jobs": [
     {
       "id": "greenhouse-roblox-7656541",
@@ -12,7 +12,7 @@
       "workType": "On-site",
       "location": "San Mateo, CA, United States",
       "country": "United States",
-      "postedAt": "2026-10-20T02:45:16-04:00"
+      "postedAt": "2026-10-20T14:46:07-04:00"
     },
     {
       "id": "greenhouse-roblox-8069987",
@@ -25,7 +25,7 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-10-20T02:43:00-04:00"
+      "postedAt": "2026-10-20T14:43:47-04:00"
     },
     {
       "id": "greenhouse-lyft-8767534002",
@@ -470,19 +470,6 @@
       "postedAt": "2026-10-16T05:40:17.000Z"
     },
     {
-      "id": "arbeitnow-senior-qa-engineer-1-london-office-271743",
-      "title": "Senior QA Engineer 1",
-      "company": "Moneybox",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/moneybox/senior-qa-engineer-1-london-office-271743",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London Office",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-16T02:30:13.000Z"
-    },
-    {
       "id": "arbeitnow-quality-engineer-schwerpunkt-testautomatisierung-all-genders-karlsruhe-435393",
       "title": "Quality Engineer - Schwerpunkt Testautomatisierung (all genders)",
       "company": "Starface GmbH",
@@ -587,32 +574,6 @@
       "postedAt": "2026-10-14T20:32:31.000Z"
     },
     {
-      "id": "arbeitnow-senior-mes-automation-engineer-delft-464428",
-      "title": "Senior MES & Automation Engineer",
-      "company": "Quantware",
-      "url": "https://www.arbeitnow.nl/jobs/companies/quantware/senior-mes-automation-engineer-delft-464428",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Delft",
-      "country": "Other",
-      "postedAt": "2026-10-13T17:40:48.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-specialist-the-hague-332503",
-      "title": "Quality Assurance Specialist",
-      "company": "Robin Radar",
-      "url": "https://www.arbeitnow.nl/jobs/companies/robin-radar/quality-assurance-specialist-the-hague-332503",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Delft",
-      "country": "Other",
-      "postedAt": "2026-10-13T17:40:48.000Z"
-    },
-    {
       "id": "greenhouse-testlio-8278471",
       "title": "Freelancer Software Tester- Visit St. Louis Airport",
       "company": "Testlio",
@@ -663,32 +624,6 @@
       "location": "Bangalore",
       "country": "India",
       "postedAt": "2026-10-09T11:59:55.378Z"
-    },
-    {
-      "id": "greenhouse-thoughtworks-7964148",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/7964148?gh_jid=7964148",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Lima, Peru",
-      "country": "Other",
-      "postedAt": "2026-10-09T02:08:18-04:00"
-    },
-    {
-      "id": "greenhouse-thoughtworks-8191523",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8191523?gh_jid=8191523",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Quito, Ecuador",
-      "country": "Other",
-      "postedAt": "2026-10-09T02:08:18-04:00"
     },
     {
       "id": "greenhouse-stripe-8206729",
