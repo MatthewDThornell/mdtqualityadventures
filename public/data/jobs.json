@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-10-21T11:05:25.120Z",
+  "fetchedAt": "2026-10-21T16:32:49.634Z",
   "jobs": [
+    {
+      "id": "jobicy-156183",
+      "title": "Senior Product Quality Analyst - AI Voice",
+      "company": "Spotify",
+      "url": "https://jobicy.com/jobs/156183-senior-product-quality-analyst-ai-voice",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "UK",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-21T10:45:10+00:00"
+    },
     {
       "id": "greenhouse-samsara-8139255",
       "title": "Senior Manager, AI Quality Engineering",
@@ -403,32 +416,6 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-10-16T05:40:17.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-engineer-schwerpunkt-testautomatisierung-all-genders-karlsruhe-435393",
-      "title": "Quality Engineer - Schwerpunkt Testautomatisierung (all genders)",
-      "company": "Starface GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/starface-gmbh/quality-engineer-schwerpunkt-testautomatisierung-all-genders-karlsruhe-435393",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Karlsruhe",
-      "country": "Germany",
-      "postedAt": "2026-10-15T21:30:53.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-qa-engineer-bonn-222874",
-      "title": "Senior QA Engineer*",
-      "company": "Haeger Consulting GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/haeger-consulting-gmbh/senior-qa-engineer-bonn-222874",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Bonn",
-      "country": "Germany",
-      "postedAt": "2026-10-15T21:01:21.000Z"
     },
     {
       "id": "arbeitnow-software-test-engineer-amsterdam-332708",
