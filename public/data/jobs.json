@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-20T21:12:22.095Z",
+  "fetchedAt": "2026-10-21T03:09:13.967Z",
   "jobs": [
+    {
+      "id": "greenhouse-stripe-8206729",
+      "title": "Team Lead, Quality Analyst, Product Support Operations",
+      "company": "Stripe",
+      "url": "https://stripe.com/jobs/search?gh_jid=8206729",
+      "source": "Stripe",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Mexico City",
+      "country": "Mexico",
+      "postedAt": "2026-10-20T17:25:57-04:00"
+    },
+    {
+      "id": "greenhouse-stripe-8153331",
+      "title": "Software Quality Assurance Engineer",
+      "company": "Stripe",
+      "url": "https://stripe.com/jobs/search?gh_jid=8153331",
+      "source": "Stripe",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Taipei,Taiwan",
+      "country": "Taiwan",
+      "postedAt": "2026-10-20T17:25:52-04:00"
+    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior Quality Engineer, Social",
@@ -65,84 +91,6 @@
       "location": "Sunnyvale, CA",
       "country": "United States",
       "postedAt": "2026-10-19T17:20:23.739+00:00"
-    },
-    {
-      "id": "jobicy-155925",
-      "title": "Binance Accelerator Program - QA Automation",
-      "company": "Binance",
-      "url": "https://jobicy.com/jobs/155925-binance-accelerator-program-qa-automation",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Singapore",
-      "country": "Singapore",
-      "postedAt": "2026-10-19T17:09:58+00:00"
-    },
-    {
-      "id": "jobicy-155928",
-      "title": "Senior Software Development Engineer in Test (SDET)",
-      "company": "Flex",
-      "url": "https://jobicy.com/jobs/155928-senior-software-development-engineer-in-test-sdet-2",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Anywhere",
-      "country": "Other",
-      "postedAt": "2026-10-19T17:09:57+00:00"
-    },
-    {
-      "id": "jobicy-155922",
-      "title": "Senior Clinical QA Specialist, AI",
-      "company": "BetterHelp",
-      "url": "https://jobicy.com/jobs/155922-senior-clinical-qa-specialist-ai",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "USA",
-      "country": "United States",
-      "postedAt": "2026-10-19T17:09:57+00:00"
-    },
-    {
-      "id": "jobicy-155930",
-      "title": "Quality Engineer",
-      "company": "StackAdapt",
-      "url": "https://jobicy.com/jobs/155930-quality-engineer-3",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Canada",
-      "country": "Canada",
-      "postedAt": "2026-10-19T17:09:56+00:00"
-    },
-    {
-      "id": "jobicy-155929",
-      "title": "Kazakh Localization QA Tester / Proofreader",
-      "company": "Welo Global",
-      "url": "https://jobicy.com/jobs/155929-kazakh-localization-qa-tester-proofreader",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "France,  Germany,  Greece,  Ireland,  Romania,  Spain,  UK",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-19T17:09:56+00:00"
-    },
-    {
-      "id": "jobicy-155927",
-      "title": "QA Automation Engineer - Digital Media & Advertising - Brazil",
-      "company": "Truelogic",
-      "url": "https://jobicy.com/jobs/155927-qa-automation-engineer-digital-media-advertising-brazil",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Brazil",
-      "country": "Brazil",
-      "postedAt": "2026-10-19T17:09:55+00:00"
     },
     {
       "id": "greenhouse-thoughtworks-8200468",
@@ -405,19 +353,6 @@
       "postedAt": "2026-10-17T02:20:17.000Z"
     },
     {
-      "id": "greenhouse-okta-8287689",
-      "title": "Senior Director, Quality Engineering – Performance, Scalability & Reliability",
-      "company": "Okta",
-      "url": "https://www.okta.com/company/careers/opportunity/8287689?gh_jid=8287689",
-      "source": "Okta",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "San Francisco, California",
-      "country": "United States",
-      "postedAt": "2026-10-16T21:55:08-04:00"
-    },
-    {
       "id": "greenhouse-coursera-6141559004",
       "title": "Senior Software Test Engineer",
       "company": "Coursera",
@@ -442,19 +377,6 @@
       "location": "Paris",
       "country": "France",
       "postedAt": "2026-10-16T17:40:17.000Z"
-    },
-    {
-      "id": "arbeitnow-qa-tester-leeds-72724",
-      "title": "QA tester",
-      "company": "Kryptos Technologies limited",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/kryptos-technologies-limited/qa-tester-leeds-72724",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Leeds",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-16T11:00:56.000Z"
     },
     {
       "id": "arbeitnow-senior-quality-assurance-engineer-berlin-143571",
@@ -624,32 +546,6 @@
       "location": "Bangalore",
       "country": "India",
       "postedAt": "2026-10-09T11:59:55.378Z"
-    },
-    {
-      "id": "greenhouse-stripe-8206729",
-      "title": "Team Lead, Quality Analyst, Product Support Operations",
-      "company": "Stripe",
-      "url": "https://stripe.com/jobs/search?gh_jid=8206729",
-      "source": "Stripe",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Mexico City",
-      "country": "Mexico",
-      "postedAt": "2026-10-08T09:57:43-04:00"
-    },
-    {
-      "id": "greenhouse-stripe-8153331",
-      "title": "Software Quality Assurance Engineer",
-      "company": "Stripe",
-      "url": "https://stripe.com/jobs/search?gh_jid=8153331",
-      "source": "Stripe",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Taipei,Taiwan",
-      "country": "Taiwan",
-      "postedAt": "2026-10-07T19:02:27-04:00"
     }
   ]
 }
