@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-10-21T03:09:13.967Z",
+  "fetchedAt": "2026-10-21T11:05:25.120Z",
   "jobs": [
+    {
+      "id": "greenhouse-samsara-8139255",
+      "title": "Senior Manager, AI Quality Engineering",
+      "company": "Samsara",
+      "url": "https://www.samsara.com/company/careers/roles/8139255?gh_jid=8139255",
+      "source": "Samsara",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Remote - US",
+      "country": "United States",
+      "postedAt": "2026-10-21T05:03:15-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer, Social",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-21T02:45:31-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-21T02:43:11-04:00"
+    },
     {
       "id": "greenhouse-stripe-8206729",
       "title": "Team Lead, Quality Analyst, Product Support Operations",
@@ -26,32 +65,6 @@
       "location": "Taipei,Taiwan",
       "country": "Taiwan",
       "postedAt": "2026-10-20T17:25:52-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer, Social",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-20T14:46:07-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-20T14:43:47-04:00"
     },
     {
       "id": "greenhouse-lyft-8767534002",
@@ -418,19 +431,6 @@
       "postedAt": "2026-10-15T21:01:21.000Z"
     },
     {
-      "id": "arbeitnow-quality-assurance-pharmacist-boulogne-billancourt-83480",
-      "title": "Quality Assurance Pharmacist",
-      "company": "Excelya",
-      "url": "https://www.arbeitnow.fr/jobs/companies/excelya/quality-assurance-pharmacist-boulogne-billancourt-83480",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Boulogne-Billancourt, France",
-      "country": "France",
-      "postedAt": "2026-10-15T04:20:07.000Z"
-    },
-    {
       "id": "arbeitnow-software-test-engineer-amsterdam-332708",
       "title": "Software Test Engineer",
       "company": "Optics11",
@@ -520,19 +520,6 @@
       "location": "Washington, DC",
       "country": "United States",
       "postedAt": "2026-10-12T17:06:11-04:00"
-    },
-    {
-      "id": "greenhouse-samsara-8139255",
-      "title": "Senior Manager, AI Quality Engineering",
-      "company": "Samsara",
-      "url": "https://www.samsara.com/company/careers/roles/8139255?gh_jid=8139255",
-      "source": "Samsara",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Remote - US",
-      "country": "United States",
-      "postedAt": "2026-10-09T16:16:53-04:00"
     },
     {
       "id": "lever-shieldai-cbba120f-2089-4531-9e41-1dad856473a7",
