@@ -1,6 +1,58 @@
 {
-  "fetchedAt": "2026-10-21T16:32:49.634Z",
+  "fetchedAt": "2026-10-21T21:12:13.600Z",
   "jobs": [
+    {
+      "id": "greenhouse-stripe-8153331",
+      "title": "Software Quality Assurance Engineer",
+      "company": "Stripe",
+      "url": "https://stripe.com/jobs/search?gh_jid=8153331",
+      "source": "Stripe",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Taipei,Taiwan",
+      "country": "Taiwan",
+      "postedAt": "2026-10-21T14:53:01-04:00"
+    },
+    {
+      "id": "greenhouse-stripe-8206729",
+      "title": "Team Lead, Quality Analyst, Product Support Operations",
+      "company": "Stripe",
+      "url": "https://stripe.com/jobs/search?gh_jid=8206729",
+      "source": "Stripe",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Mexico City",
+      "country": "Mexico",
+      "postedAt": "2026-10-21T14:53:01-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer, Social",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-21T14:46:36-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-21T14:43:56-04:00"
+    },
     {
       "id": "jobicy-156183",
       "title": "Senior Product Quality Analyst - AI Voice",
@@ -26,58 +78,6 @@
       "location": "Remote - US",
       "country": "United States",
       "postedAt": "2026-10-21T05:03:15-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer, Social",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-21T02:45:31-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-21T02:43:11-04:00"
-    },
-    {
-      "id": "greenhouse-stripe-8206729",
-      "title": "Team Lead, Quality Analyst, Product Support Operations",
-      "company": "Stripe",
-      "url": "https://stripe.com/jobs/search?gh_jid=8206729",
-      "source": "Stripe",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Mexico City",
-      "country": "Mexico",
-      "postedAt": "2026-10-20T17:25:57-04:00"
-    },
-    {
-      "id": "greenhouse-stripe-8153331",
-      "title": "Software Quality Assurance Engineer",
-      "company": "Stripe",
-      "url": "https://stripe.com/jobs/search?gh_jid=8153331",
-      "source": "Stripe",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Taipei,Taiwan",
-      "country": "Taiwan",
-      "postedAt": "2026-10-20T17:25:52-04:00"
     },
     {
       "id": "greenhouse-lyft-8767534002",
@@ -223,19 +223,6 @@
       "postedAt": "2026-10-18T11:31:18.000Z"
     },
     {
-      "id": "arbeitnow-automotive-validation-test-engineer-all-genders-koln-358113",
-      "title": "Automotive Validation & Test Engineer (all genders)",
-      "company": "TECOSIM GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/tecosim-gmbh/automotive-validation-test-engineer-all-genders-koln-358113",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Köln, Nordrhein-Westfalen, Deutschland",
-      "country": "Germany",
-      "postedAt": "2026-10-18T11:31:13.000Z"
-    },
-    {
       "id": "arbeitnow-member-experience-training-quality-specialist-uk-london-185293",
       "title": "Member Experience Training & Quality Specialist - UK",
       "company": "Neko Health",
@@ -273,19 +260,6 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-10-18T05:13:14.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-senior-quality-engineer-tellent-intelligence-ai-amsterdam-295070",
-      "title": "Senior Quality Engineer - Tellent Intelligence (AI)",
-      "company": "Tellent",
-      "url": "https://www.arbeitnow.nl/jobs/companies/tellent/remote-senior-quality-engineer-tellent-intelligence-ai-amsterdam-295070",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Remote job",
-      "country": "Other",
-      "postedAt": "2026-10-18T02:32:17.000Z"
     },
     {
       "id": "arbeitnow-senior-test-engineer-fur-brandenburg-braunschweig-berlin-329978",
@@ -418,45 +392,6 @@
       "postedAt": "2026-10-16T05:40:17.000Z"
     },
     {
-      "id": "arbeitnow-software-test-engineer-amsterdam-332708",
-      "title": "Software Test Engineer",
-      "company": "Optics11",
-      "url": "https://www.arbeitnow.nl/jobs/companies/optics11/software-test-engineer-amsterdam-332708",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Amsterdam, Noord-Holland, Netherlands",
-      "country": "Netherlands",
-      "postedAt": "2026-10-14T20:32:33.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-embedded-software-test-engineer-amsterdam-92032",
-      "title": "Senior Embedded Software Test Engineer",
-      "company": "Optics11",
-      "url": "https://www.arbeitnow.nl/jobs/companies/optics11/senior-embedded-software-test-engineer-amsterdam-92032",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Amsterdam, Noord-Holland, Netherlands",
-      "country": "Netherlands",
-      "postedAt": "2026-10-14T20:32:33.000Z"
-    },
-    {
-      "id": "arbeitnow-test-engineer-windtunnels-marknesse-84869",
-      "title": "Test Engineer Windtunnels (m/v/x)",
-      "company": "Koninklijk Nederlands Lucht- en Ruimtevaartcentrum",
-      "url": "https://www.arbeitnow.nl/jobs/companies/koninklijk-nederlands-lucht-en-ruimtevaartcentrum/test-engineer-windtunnels-marknesse-84869",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Marknesse, Flevoland, Nederland",
-      "country": "Other",
-      "postedAt": "2026-10-14T20:32:33.000Z"
-    },
-    {
       "id": "arbeitnow-senior-test-engineer-groningen-261620",
       "title": "Senior Test Engineer",
       "company": "Centric",
@@ -468,19 +403,6 @@
       "location": "Groningen, Groningen, Nederland",
       "country": "Other",
       "postedAt": "2026-10-14T20:32:32.000Z"
-    },
-    {
-      "id": "arbeitnow-qa-test-engineer-s-hertogenbosch-140808",
-      "title": "QA / Test Engineer",
-      "company": "Prijsvrij Vakanties",
-      "url": "https://www.arbeitnow.nl/jobs/companies/prijsvrij-vakanties/qa-test-engineer-s-hertogenbosch-140808",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "'s-Hertogenbosch, Noord-Brabant, Nederland",
-      "country": "Other",
-      "postedAt": "2026-10-14T20:32:31.000Z"
     },
     {
       "id": "greenhouse-testlio-8278471",
