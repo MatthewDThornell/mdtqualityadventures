@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-10-22T16:33:43.709Z",
+  "fetchedAt": "2026-10-22T21:09:28.917Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer, Social",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-22T14:46:04-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-22T14:43:42-04:00"
+    },
+    {
+      "id": "greenhouse-scaleai-4742042005",
+      "title": "Systems Engineering Integration & Test Lead, Public Sector",
+      "company": "Scale AI",
+      "url": "https://job-boards.greenhouse.io/scaleai/jobs/4742042005",
+      "source": "Scale AI",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Washington, DC",
+      "country": "United States",
+      "postedAt": "2026-10-22T14:10:38-04:00"
+    },
     {
       "id": "ashby-crusoe-d202513c-b746-4d86-a468-8f2cf2c3e37e",
       "title": "Senior Supervisor, Quality Engineering",
@@ -104,32 +143,6 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-10-22T11:00:50.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer, Social",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-22T02:45:08-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-22T02:43:03-04:00"
     },
     {
       "id": "arbeitnow-senior-quality-assurance-engineer-hamburg-378874",
@@ -455,19 +468,6 @@
       "location": "United States",
       "country": "United States",
       "postedAt": "2026-10-13T10:50:52-04:00"
-    },
-    {
-      "id": "greenhouse-scaleai-4742042005",
-      "title": "Systems Engineering Integration & Test Lead, Public Sector",
-      "company": "Scale AI",
-      "url": "https://job-boards.greenhouse.io/scaleai/jobs/4742042005",
-      "source": "Scale AI",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Washington, DC",
-      "country": "United States",
-      "postedAt": "2026-10-12T17:06:11-04:00"
     },
     {
       "id": "lever-shieldai-cbba120f-2089-4531-9e41-1dad856473a7",
