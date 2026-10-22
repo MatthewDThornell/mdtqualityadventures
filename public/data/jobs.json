@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-22T03:10:37.819Z",
+  "fetchedAt": "2026-10-22T11:05:17.441Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer, Social",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-22T02:45:08-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-22T02:43:03-04:00"
+    },
     {
       "id": "arbeitnow-senior-quality-assurance-engineer-hamburg-378874",
       "title": "(Senior) Quality Assurance Engineer (f/m/d)",
@@ -52,32 +78,6 @@
       "location": "Mexico City",
       "country": "Mexico",
       "postedAt": "2026-10-21T14:53:01-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer, Social",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-21T14:46:36-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-21T14:43:56-04:00"
     },
     {
       "id": "jobicy-156183",
@@ -275,45 +275,6 @@
       "postedAt": "2026-10-18T08:40:20.000Z"
     },
     {
-      "id": "arbeitnow-senior-qa-test-engineer-d-berlin-370347",
-      "title": "Senior QA / Test Engineer (w/m/x/d)",
-      "company": "MILES Mobility GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/miles-mobility-gmbh/senior-qa-test-engineer-d-berlin-370347",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-10-18T05:13:14.000Z"
-    },
-    {
-      "id": "arbeitnow-qa-engineering-intern-d-berlin-458294",
-      "title": "QA Engineering Intern (w/m/x/d)",
-      "company": "MILES Mobility GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/miles-mobility-gmbh/qa-engineering-intern-d-berlin-458294",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-10-18T05:13:14.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-senior-quality-engineer-tellent-intelligence-ai-amsterdam-295070",
-      "title": "Senior Quality Engineer - Tellent Intelligence (AI)",
-      "company": "Tellent",
-      "url": "https://www.arbeitnow.nl/jobs/companies/tellent/remote-senior-quality-engineer-tellent-intelligence-ai-amsterdam-295070",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Remote job",
-      "country": "Other",
-      "postedAt": "2026-10-18T02:32:17.000Z"
-    },
-    {
       "id": "arbeitnow-senior-test-engineer-fur-brandenburg-braunschweig-berlin-329978",
       "title": "Senior Test Engineer (m/w/d) für Brandenburg, Braunschweig, Berlin",
       "company": "HyPlus Technology GmbH",
@@ -325,32 +286,6 @@
       "location": "Berlin, Berlin, Germany",
       "country": "Germany",
       "postedAt": "2026-10-18T02:32:10.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-senior-qa-automation-engineer-ai-focused-germany-395255",
-      "title": "Senior QA Automation Engineer (AI-Focused)",
-      "company": "Workmotion",
-      "url": "https://www.arbeitnow.com/jobs/companies/workmotion/remote-senior-qa-automation-engineer-ai-focused-germany-395255",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-18T02:20:03.000Z"
-    },
-    {
-      "id": "arbeitnow-test-engineer-leonberg-germany-121053",
-      "title": "Test Engineer",
-      "company": "Wayve",
-      "url": "https://www.arbeitnow.com/jobs/companies/wayve/test-engineer-leonberg-germany-121053",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Leonberg, Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-17T23:40:16.000Z"
     },
     {
       "id": "arbeitnow-quality-assurance-specialist-klazienaveen-129201",
@@ -379,19 +314,6 @@
       "postedAt": "2026-10-17T05:55:14.000Z"
     },
     {
-      "id": "arbeitnow-senior-qa-engineer-berlin-153034",
-      "title": "Senior QA Engineer - Berlin",
-      "company": "Resident Advisor",
-      "url": "https://www.arbeitnow.com/jobs/companies/resident-advisor/senior-qa-engineer-berlin-153034",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Berlin, Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-17T02:20:17.000Z"
-    },
-    {
       "id": "greenhouse-coursera-6141559004",
       "title": "Senior Software Test Engineer",
       "company": "Coursera",
@@ -403,32 +325,6 @@
       "location": "Toronto, Canada",
       "country": "Canada",
       "postedAt": "2026-10-16T14:34:41-04:00"
-    },
-    {
-      "id": "arbeitnow-finance-data-annotation-quality-analyst-paris-357673",
-      "title": "Finance Data Annotation Quality Analyst",
-      "company": "Mistral.ai",
-      "url": "https://www.arbeitnow.fr/jobs/companies/mistralai/finance-data-annotation-quality-analyst-paris-357673",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Paris",
-      "country": "France",
-      "postedAt": "2026-10-16T17:40:17.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-quality-assurance-engineer-berlin-143571",
-      "title": "Senior Quality Assurance Engineer",
-      "company": "Trading212",
-      "url": "https://www.arbeitnow.com/jobs/companies/trading212/senior-quality-assurance-engineer-berlin-143571",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-10-16T05:40:17.000Z"
     },
     {
       "id": "greenhouse-testlio-8278471",
