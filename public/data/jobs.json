@@ -1,6 +1,110 @@
 {
-  "fetchedAt": "2026-10-22T11:05:17.441Z",
+  "fetchedAt": "2026-10-22T16:33:43.709Z",
   "jobs": [
+    {
+      "id": "ashby-crusoe-d202513c-b746-4d86-a468-8f2cf2c3e37e",
+      "title": "Senior Supervisor, Quality Engineering",
+      "company": "Crusoe",
+      "url": "https://jobs.ashbyhq.com/crusoe/d202513c-b746-4d86-a468-8f2cf2c3e37e",
+      "source": "Crusoe",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Arvada, CO - US",
+      "country": "United States",
+      "postedAt": "2026-10-22T15:39:14.177+00:00"
+    },
+    {
+      "id": "arbeitnow-software-tester-erlangen-310339",
+      "title": "Software Test Engineer (m/w/x)",
+      "company": "K-tronik GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/k-tronik-gmbh/software-tester-erlangen-310339",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Erlangen",
+      "country": "Other",
+      "postedAt": "2026-10-22T13:17:42.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-powertrain-test-engineer-all-genders-40978",
+      "title": "Senior Powertrain Test Engineer (All genders)",
+      "company": "Skdse",
+      "url": "https://www.arbeitnow.com/jobs/companies/skdse/senior-powertrain-test-engineer-all-genders-40978",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-10-22T11:55:21.000Z"
+    },
+    {
+      "id": "arbeitnow-qa-engineer-amsterdam-349908",
+      "title": "QA Engineer",
+      "company": "Creative Clicks B.V.",
+      "url": "https://www.arbeitnow.nl/jobs/companies/creative-clicks-bv/qa-engineer-amsterdam-349908",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Amsterdam, Noord-Holland, Netherlands",
+      "country": "Netherlands",
+      "postedAt": "2026-10-22T11:51:51.000Z"
+    },
+    {
+      "id": "arbeitnow-software-test-engineer-eindhoven-229483",
+      "title": "Software Test Engineer",
+      "company": "GradeMatch",
+      "url": "https://www.arbeitnow.nl/jobs/companies/gradematch/software-test-engineer-eindhoven-229483",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Eindhoven, Noord-Brabant, Nederland",
+      "country": "Other",
+      "postedAt": "2026-10-22T11:51:51.000Z"
+    },
+    {
+      "id": "arbeitnow-test-engineer-almelo-397717",
+      "title": "Test Engineer",
+      "company": "Benchmark",
+      "url": "https://www.arbeitnow.nl/jobs/companies/benchmark/test-engineer-almelo-397717",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Almelo, Overijssel, Nederland",
+      "country": "Other",
+      "postedAt": "2026-10-22T11:51:51.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-quality-engineer-almelo-97779",
+      "title": "Senior Quality Engineer",
+      "company": "Benchmark",
+      "url": "https://www.arbeitnow.nl/jobs/companies/benchmark/senior-quality-engineer-almelo-97779",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Almelo, Overijssel, Nederland",
+      "country": "Other",
+      "postedAt": "2026-10-22T11:51:51.000Z"
+    },
+    {
+      "id": "arbeitnow-principal-engineer-quality-assurance-berlin-59898",
+      "title": "Principal Engineer - Quality Assurance",
+      "company": "Zattoo",
+      "url": "https://www.arbeitnow.com/jobs/companies/zattoo/principal-engineer-quality-assurance-berlin-59898",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-10-22T11:00:50.000Z"
+    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior Quality Engineer, Social",
@@ -78,19 +182,6 @@
       "location": "Mexico City",
       "country": "Mexico",
       "postedAt": "2026-10-21T14:53:01-04:00"
-    },
-    {
-      "id": "jobicy-156183",
-      "title": "Senior Product Quality Analyst - AI Voice",
-      "company": "Spotify",
-      "url": "https://jobicy.com/jobs/156183-senior-product-quality-analyst-ai-voice",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "UK",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-21T10:45:10+00:00"
     },
     {
       "id": "greenhouse-samsara-8139255",
@@ -262,19 +353,6 @@
       "postedAt": "2026-10-18T11:31:13.000Z"
     },
     {
-      "id": "arbeitnow-member-experience-training-quality-specialist-uk-london-185293",
-      "title": "Member Experience Training & Quality Specialist - UK",
-      "company": "Neko Health",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/neko-health/member-experience-training-quality-specialist-uk-london-185293",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-18T08:40:20.000Z"
-    },
-    {
       "id": "arbeitnow-senior-test-engineer-fur-brandenburg-braunschweig-berlin-329978",
       "title": "Senior Test Engineer (m/w/d) für Brandenburg, Braunschweig, Berlin",
       "company": "HyPlus Technology GmbH",
@@ -286,6 +364,32 @@
       "location": "Berlin, Berlin, Germany",
       "country": "Germany",
       "postedAt": "2026-10-18T02:32:10.000Z"
+    },
+    {
+      "id": "arbeitnow-remote-senior-qa-automation-engineer-ai-focused-germany-395255",
+      "title": "Senior QA Automation Engineer (AI-Focused)",
+      "company": "Workmotion",
+      "url": "https://www.arbeitnow.com/jobs/companies/workmotion/remote-senior-qa-automation-engineer-ai-focused-germany-395255",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Germany",
+      "country": "Germany",
+      "postedAt": "2026-10-18T02:20:03.000Z"
+    },
+    {
+      "id": "arbeitnow-test-engineer-leonberg-germany-121053",
+      "title": "Test Engineer",
+      "company": "Wayve",
+      "url": "https://www.arbeitnow.com/jobs/companies/wayve/test-engineer-leonberg-germany-121053",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Leonberg, Germany",
+      "country": "Germany",
+      "postedAt": "2026-10-17T23:40:16.000Z"
     },
     {
       "id": "arbeitnow-quality-assurance-specialist-klazienaveen-129201",
@@ -312,6 +416,19 @@
       "location": "Aachen",
       "country": "Germany",
       "postedAt": "2026-10-17T05:55:14.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-qa-engineer-berlin-153034",
+      "title": "Senior QA Engineer - Berlin",
+      "company": "Resident Advisor",
+      "url": "https://www.arbeitnow.com/jobs/companies/resident-advisor/senior-qa-engineer-berlin-153034",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Berlin, Germany",
+      "country": "Germany",
+      "postedAt": "2026-10-17T02:20:17.000Z"
     },
     {
       "id": "greenhouse-coursera-6141559004",
