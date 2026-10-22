@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-21T21:12:13.600Z",
+  "fetchedAt": "2026-10-22T03:10:37.819Z",
   "jobs": [
+    {
+      "id": "arbeitnow-senior-quality-assurance-engineer-hamburg-378874",
+      "title": "(Senior) Quality Assurance Engineer (f/m/d)",
+      "company": "Zeal Network",
+      "url": "https://www.arbeitnow.com/jobs/companies/zeal-network/senior-quality-assurance-engineer-hamburg-378874",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Hamburg",
+      "country": "Germany",
+      "postedAt": "2026-10-21T23:40:16.000Z"
+    },
+    {
+      "id": "lever-shieldai-427ac807-bc6a-4e8c-8f15-8322880ffcaf",
+      "title": "Staff Engineer, Test Automation - San Mateo (R5792)",
+      "company": "Shield AI",
+      "url": "https://jobs.lever.co/shieldai/427ac807-bc6a-4e8c-8f15-8322880ffcaf",
+      "source": "Shield AI",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, California",
+      "country": "United States",
+      "postedAt": "2026-10-21T21:43:26.294Z"
+    },
     {
       "id": "greenhouse-stripe-8153331",
       "title": "Software Quality Assurance Engineer",
@@ -223,6 +249,19 @@
       "postedAt": "2026-10-18T11:31:18.000Z"
     },
     {
+      "id": "arbeitnow-automotive-validation-test-engineer-all-genders-koln-358113",
+      "title": "Automotive Validation & Test Engineer (all genders)",
+      "company": "TECOSIM GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/tecosim-gmbh/automotive-validation-test-engineer-all-genders-koln-358113",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Köln, Nordrhein-Westfalen, Deutschland",
+      "country": "Germany",
+      "postedAt": "2026-10-18T11:31:13.000Z"
+    },
+    {
       "id": "arbeitnow-member-experience-training-quality-specialist-uk-london-185293",
       "title": "Member Experience Training & Quality Specialist - UK",
       "company": "Neko Health",
@@ -262,6 +301,19 @@
       "postedAt": "2026-10-18T05:13:14.000Z"
     },
     {
+      "id": "arbeitnow-remote-senior-quality-engineer-tellent-intelligence-ai-amsterdam-295070",
+      "title": "Senior Quality Engineer - Tellent Intelligence (AI)",
+      "company": "Tellent",
+      "url": "https://www.arbeitnow.nl/jobs/companies/tellent/remote-senior-quality-engineer-tellent-intelligence-ai-amsterdam-295070",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Remote job",
+      "country": "Other",
+      "postedAt": "2026-10-18T02:32:17.000Z"
+    },
+    {
       "id": "arbeitnow-senior-test-engineer-fur-brandenburg-braunschweig-berlin-329978",
       "title": "Senior Test Engineer (m/w/d) für Brandenburg, Braunschweig, Berlin",
       "company": "HyPlus Technology GmbH",
@@ -299,19 +351,6 @@
       "location": "Leonberg, Germany",
       "country": "Germany",
       "postedAt": "2026-10-17T23:40:16.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-senior-quality-engineer-checkout-payments-schoppingen-296821",
-      "title": "Senior Quality Engineer - Checkout & Payments (m/w/d)",
-      "company": "shopware AG",
-      "url": "https://www.arbeitnow.com/jobs/companies/shopware-ag/remote-senior-quality-engineer-checkout-payments-schoppingen-296821",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Homeoffice",
-      "country": "Other",
-      "postedAt": "2026-10-17T23:31:43.000Z"
     },
     {
       "id": "arbeitnow-quality-assurance-specialist-klazienaveen-129201",
@@ -390,19 +429,6 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-10-16T05:40:17.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-test-engineer-groningen-261620",
-      "title": "Senior Test Engineer",
-      "company": "Centric",
-      "url": "https://www.arbeitnow.nl/jobs/companies/centric/senior-test-engineer-groningen-261620",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Groningen, Groningen, Nederland",
-      "country": "Other",
-      "postedAt": "2026-10-14T20:32:32.000Z"
     },
     {
       "id": "greenhouse-testlio-8278471",
