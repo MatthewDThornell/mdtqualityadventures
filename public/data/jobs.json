@@ -1,18 +1,70 @@
 {
-  "fetchedAt": "2026-10-23T03:12:24.950Z",
+  "fetchedAt": "2026-10-23T10:57:40.018Z",
   "jobs": [
     {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
+      "id": "arbeitnow-ai-automation-engineer-berlin-239926",
+      "title": "AI Automation Engineer (d/m/f)",
+      "company": "Scout24",
+      "url": "https://www.arbeitnow.com/jobs/companies/scout24/ai-automation-engineer-berlin-239926",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-10-23T08:55:17.000Z"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8200468",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Singapore, Singapore",
+      "country": "Singapore",
+      "postedAt": "2026-10-23T02:56:29-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer, Social",
       "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
       "source": "Roblox",
       "sourceUrl": null,
       "direct": true,
       "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-22T17:14:31-04:00"
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-23T02:45:15-04:00"
+    },
+    {
+      "id": "arbeitnow-ai-quality-assurance-program-manager-london-26852",
+      "title": "AI Quality Assurance Program Manager",
+      "company": "tripadvisor",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/tripadvisor/ai-quality-assurance-program-manager-london-26852",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-23T05:55:15.000Z"
+    },
+    {
+      "id": "arbeitnow-principal-engineer-quality-assurance-berlin-berlin-196608",
+      "title": "Principal Engineer - Quality Assurance",
+      "company": "Zattoo",
+      "url": "https://www.arbeitnow.com/jobs/companies/zattoo/principal-engineer-quality-assurance-berlin-berlin-196608",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Berlin, Berlin",
+      "country": "Germany",
+      "postedAt": "2026-10-23T05:55:14.000Z"
     },
     {
       "id": "arbeitnow-board-test-engineer-bristol-452609",
@@ -39,19 +91,6 @@
       "location": "USA",
       "country": "United States",
       "postedAt": "2026-10-22T20:38:09+00:00"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer, Social",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-22T14:46:04-04:00"
     },
     {
       "id": "greenhouse-scaleai-4742042005",
@@ -275,19 +314,6 @@
       "postedAt": "2026-10-19T17:20:23.739+00:00"
     },
     {
-      "id": "greenhouse-thoughtworks-8200468",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
-      "postedAt": "2026-10-19T04:51:50-04:00"
-    },
-    {
       "id": "arbeitnow-professional-senior-software-test-automation-engineer-zurich-324109",
       "title": "Professional/Senior Software Test Automation Engineer",
       "company": "Infometis AG",
@@ -442,32 +468,6 @@
       "location": "Klazienaveen, Netherlands",
       "country": "Netherlands",
       "postedAt": "2026-10-17T21:20:16.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-test-automation-engineer-aachen-266252",
-      "title": "Senior Test Automation Engineer",
-      "company": "Keyfactorinc",
-      "url": "https://www.arbeitnow.com/jobs/companies/keyfactorinc/senior-test-automation-engineer-aachen-266252",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Aachen",
-      "country": "Germany",
-      "postedAt": "2026-10-17T05:55:14.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-qa-engineer-berlin-153034",
-      "title": "Senior QA Engineer - Berlin",
-      "company": "Resident Advisor",
-      "url": "https://www.arbeitnow.com/jobs/companies/resident-advisor/senior-qa-engineer-berlin-153034",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Berlin, Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-17T02:20:17.000Z"
     },
     {
       "id": "greenhouse-coursera-6141559004",
