@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-23T16:23:46.881Z",
+  "fetchedAt": "2026-10-23T20:56:35.958Z",
   "jobs": [
+    {
+      "id": "greenhouse-samsara-8139255",
+      "title": "Senior Manager, AI Quality Engineering",
+      "company": "Samsara",
+      "url": "https://www.samsara.com/company/careers/roles/8139255?gh_jid=8139255",
+      "source": "Samsara",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Remote - US",
+      "country": "United States",
+      "postedAt": "2026-10-23T16:03:57-04:00"
+    },
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer, Social",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-23T14:45:54-04:00"
+    },
     {
       "id": "arbeitnow-quality-assurance-manager-manchester-302187",
       "title": "Quality Assurance Manager",
@@ -65,19 +91,6 @@
       "location": "Singapore, Singapore",
       "country": "Singapore",
       "postedAt": "2026-10-23T02:56:29-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer, Social",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-23T02:45:15-04:00"
     },
     {
       "id": "arbeitnow-ai-quality-assurance-program-manager-london-26852",
@@ -301,19 +314,6 @@
       "postedAt": "2026-10-21T14:53:01-04:00"
     },
     {
-      "id": "greenhouse-samsara-8139255",
-      "title": "Senior Manager, AI Quality Engineering",
-      "company": "Samsara",
-      "url": "https://www.samsara.com/company/careers/roles/8139255?gh_jid=8139255",
-      "source": "Samsara",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Remote - US",
-      "country": "United States",
-      "postedAt": "2026-10-21T05:03:15-04:00"
-    },
-    {
       "id": "greenhouse-lyft-8767534002",
       "title": "Software Engineer Intern, Test Automation (Summer 2027)",
       "company": "Lyft",
@@ -325,19 +325,6 @@
       "location": "Montreal, Canada",
       "country": "Canada",
       "postedAt": "2026-10-19T18:43:36-04:00"
-    },
-    {
-      "id": "arbeitnow-remote-software-test-engineer-bern-226881",
-      "title": "Software Test Engineer",
-      "company": "SwissPeak Partners GmbH",
-      "url": "https://www.arbeitnow.ch/jobs/companies/swisspeak-partners-gmbh/remote-software-test-engineer-bern-226881",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Remote job",
-      "country": "Other",
-      "postedAt": "2026-10-19T17:31:28.000Z"
     },
     {
       "id": "ashby-cerebras-08ffd14b-cb60-4916-9946-735e49594308",
@@ -442,19 +429,6 @@
       "location": "Delft, Zuid-Holland, Netherlands",
       "country": "Netherlands",
       "postedAt": "2026-10-18T11:31:18.000Z"
-    },
-    {
-      "id": "arbeitnow-automotive-validation-test-engineer-all-genders-koln-358113",
-      "title": "Automotive Validation & Test Engineer (all genders)",
-      "company": "TECOSIM GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/tecosim-gmbh/automotive-validation-test-engineer-all-genders-koln-358113",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Köln, Nordrhein-Westfalen, Deutschland",
-      "country": "Germany",
-      "postedAt": "2026-10-18T11:31:13.000Z"
     },
     {
       "id": "arbeitnow-quality-assurance-specialist-klazienaveen-129201",
