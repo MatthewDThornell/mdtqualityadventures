@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-10-22T21:09:28.917Z",
+  "fetchedAt": "2026-10-23T03:12:24.950Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-8069987",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-10-22T17:14:31-04:00"
+    },
+    {
+      "id": "arbeitnow-board-test-engineer-bristol-452609",
+      "title": "Board Test Engineer",
+      "company": "Graphcore",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/graphcore/board-test-engineer-bristol-452609",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Bristol",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-22T20:55:34.000Z"
+    },
+    {
+      "id": "jobicy-156466",
+      "title": "Manager Software Test Automation",
+      "company": "Veracyte",
+      "url": "https://jobicy.com/jobs/156466-manager-software-test-automation",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "USA",
+      "country": "United States",
+      "postedAt": "2026-10-22T20:38:09+00:00"
+    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior Quality Engineer, Social",
@@ -13,19 +52,6 @@
       "location": "San Mateo, CA, United States",
       "country": "United States",
       "postedAt": "2026-10-22T14:46:04-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-8069987",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8069987?gh_jid=8069987",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-10-22T14:43:42-04:00"
     },
     {
       "id": "greenhouse-scaleai-4742042005",
@@ -455,19 +481,6 @@
       "location": "Toronto, Canada",
       "country": "Canada",
       "postedAt": "2026-10-16T14:34:41-04:00"
-    },
-    {
-      "id": "greenhouse-testlio-8278471",
-      "title": "Freelancer Software Tester- Visit St. Louis Airport",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8278471",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "United States",
-      "country": "United States",
-      "postedAt": "2026-10-13T10:50:52-04:00"
     },
     {
       "id": "lever-shieldai-cbba120f-2089-4531-9e41-1dad856473a7",
