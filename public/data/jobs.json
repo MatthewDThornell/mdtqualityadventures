@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-10-23T10:57:40.018Z",
+  "fetchedAt": "2026-10-23T16:23:46.881Z",
   "jobs": [
+    {
+      "id": "arbeitnow-quality-assurance-manager-manchester-302187",
+      "title": "Quality Assurance Manager",
+      "company": "PHMG Careers",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/phmg-careers/quality-assurance-manager-manchester-302187",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Manchester, England, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-23T14:45:23.000Z"
+    },
+    {
+      "id": "arbeitnow-remote-test-automation-engineer-strasbourg-449366",
+      "title": "Test Automation Engineer",
+      "company": "European Dynamics",
+      "url": "https://www.arbeitnow.fr/jobs/companies/european-dynamics/remote-test-automation-engineer-strasbourg-449366",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Strasbourg, France",
+      "country": "France",
+      "postedAt": "2026-10-23T10:20:08.000Z"
+    },
+    {
+      "id": "jobicy-156544",
+      "title": "Manual QA Engineer (Game Client)",
+      "company": "Playson",
+      "url": "https://jobicy.com/jobs/156544-manual-qa-engineer-game-client",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Europe",
+      "country": "Other",
+      "postedAt": "2026-10-23T09:12:15+00:00"
+    },
     {
       "id": "arbeitnow-ai-automation-engineer-berlin-239926",
       "title": "AI Automation Engineer (d/m/f)",
@@ -418,45 +457,6 @@
       "postedAt": "2026-10-18T11:31:13.000Z"
     },
     {
-      "id": "arbeitnow-senior-test-engineer-fur-brandenburg-braunschweig-berlin-329978",
-      "title": "Senior Test Engineer (m/w/d) für Brandenburg, Braunschweig, Berlin",
-      "company": "HyPlus Technology GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/hyplus-technology-gmbh/senior-test-engineer-fur-brandenburg-braunschweig-berlin-329978",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Berlin, Berlin, Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-18T02:32:10.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-senior-qa-automation-engineer-ai-focused-germany-395255",
-      "title": "Senior QA Automation Engineer (AI-Focused)",
-      "company": "Workmotion",
-      "url": "https://www.arbeitnow.com/jobs/companies/workmotion/remote-senior-qa-automation-engineer-ai-focused-germany-395255",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-18T02:20:03.000Z"
-    },
-    {
-      "id": "arbeitnow-test-engineer-leonberg-germany-121053",
-      "title": "Test Engineer",
-      "company": "Wayve",
-      "url": "https://www.arbeitnow.com/jobs/companies/wayve/test-engineer-leonberg-germany-121053",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Leonberg, Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-17T23:40:16.000Z"
-    },
-    {
       "id": "arbeitnow-quality-assurance-specialist-klazienaveen-129201",
       "title": "Quality Assurance Specialist",
       "company": "Norit",
@@ -481,19 +481,6 @@
       "location": "Toronto, Canada",
       "country": "Canada",
       "postedAt": "2026-10-16T14:34:41-04:00"
-    },
-    {
-      "id": "lever-shieldai-cbba120f-2089-4531-9e41-1dad856473a7",
-      "title": "Systems Test Engineer",
-      "company": "Shield AI",
-      "url": "https://jobs.lever.co/shieldai/cbba120f-2089-4531-9e41-1dad856473a7",
-      "source": "Shield AI",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Bangalore",
-      "country": "India",
-      "postedAt": "2026-10-09T11:59:55.378Z"
     }
   ]
 }
