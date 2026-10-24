@@ -1,19 +1,6 @@
 {
-  "fetchedAt": "2026-10-23T20:56:35.958Z",
+  "fetchedAt": "2026-10-24T03:07:09.192Z",
   "jobs": [
-    {
-      "id": "greenhouse-samsara-8139255",
-      "title": "Senior Manager, AI Quality Engineering",
-      "company": "Samsara",
-      "url": "https://www.samsara.com/company/careers/roles/8139255?gh_jid=8139255",
-      "source": "Samsara",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Remote - US",
-      "country": "United States",
-      "postedAt": "2026-10-23T16:03:57-04:00"
-    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior Quality Engineer, Social",
@@ -130,19 +117,6 @@
       "location": "Bristol",
       "country": "United Kingdom",
       "postedAt": "2026-10-22T20:55:34.000Z"
-    },
-    {
-      "id": "jobicy-156466",
-      "title": "Manager Software Test Automation",
-      "company": "Veracyte",
-      "url": "https://jobicy.com/jobs/156466-manager-software-test-automation",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "USA",
-      "country": "United States",
-      "postedAt": "2026-10-22T20:38:09+00:00"
     },
     {
       "id": "greenhouse-scaleai-4742042005",
