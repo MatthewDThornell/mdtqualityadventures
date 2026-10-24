@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-10-24T03:07:09.192Z",
+  "fetchedAt": "2026-10-24T10:13:00.094Z",
   "jobs": [
+    {
+      "id": "arbeitnow-mechatronics-test-engineer-munich-bavaria-451948",
+      "title": "Mechatronics Test Engineer (m/f/d)",
+      "company": "Agilerobotsse",
+      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/mechatronics-test-engineer-munich-bavaria-451948",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich, Bavaria",
+      "country": "Germany",
+      "postedAt": "2026-10-24T05:55:16.000Z"
+    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior Quality Engineer, Social",
@@ -39,19 +52,6 @@
       "location": "Strasbourg, France",
       "country": "France",
       "postedAt": "2026-10-23T10:20:08.000Z"
-    },
-    {
-      "id": "jobicy-156544",
-      "title": "Manual QA Engineer (Game Client)",
-      "company": "Playson",
-      "url": "https://jobicy.com/jobs/156544-manual-qa-engineer-game-client",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Europe",
-      "country": "Other",
-      "postedAt": "2026-10-23T09:12:15+00:00"
     },
     {
       "id": "arbeitnow-ai-automation-engineer-berlin-239926",
