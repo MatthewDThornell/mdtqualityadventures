@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-10-24T15:19:29.066Z",
+  "fetchedAt": "2026-10-24T20:09:00.294Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer, Social",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-24T14:46:35-04:00"
+    },
     {
       "id": "arbeitnow-mechatronics-test-engineer-munich-bavaria-451948",
       "title": "Mechatronics Test Engineer (m/f/d)",
@@ -13,19 +26,6 @@
       "location": "Munich, Bavaria",
       "country": "Germany",
       "postedAt": "2026-10-24T05:55:16.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer, Social",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-23T14:45:54-04:00"
     },
     {
       "id": "arbeitnow-quality-assurance-manager-manchester-302187",
@@ -247,19 +247,6 @@
       "location": "Hamburg",
       "country": "Germany",
       "postedAt": "2026-10-21T23:40:16.000Z"
-    },
-    {
-      "id": "lever-shieldai-427ac807-bc6a-4e8c-8f15-8322880ffcaf",
-      "title": "Staff Engineer, Test Automation - San Mateo (R5792)",
-      "company": "Shield AI",
-      "url": "https://jobs.lever.co/shieldai/427ac807-bc6a-4e8c-8f15-8322880ffcaf",
-      "source": "Shield AI",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, California",
-      "country": "United States",
-      "postedAt": "2026-10-21T21:43:26.294Z"
     },
     {
       "id": "greenhouse-stripe-8153331",
