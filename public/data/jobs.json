@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-10-24T20:09:00.294Z",
+  "fetchedAt": "2026-10-25T03:01:27.004Z",
   "jobs": [
+    {
+      "id": "arbeitnow-valve-test-engineer-bordeaux-296786",
+      "title": "Valve Test Engineer",
+      "company": "The Exploration Company",
+      "url": "https://www.arbeitnow.fr/jobs/companies/the-exploration-company/valve-test-engineer-bordeaux-296786",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Bordeaux, France",
+      "country": "France",
+      "postedAt": "2026-10-24T23:40:13.000Z"
+    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior Quality Engineer, Social",
@@ -145,19 +158,6 @@
       "postedAt": "2026-10-22T15:39:14.177+00:00"
     },
     {
-      "id": "arbeitnow-software-tester-erlangen-310339",
-      "title": "Software Test Engineer (m/w/x)",
-      "company": "K-tronik GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/k-tronik-gmbh/software-tester-erlangen-310339",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Erlangen",
-      "country": "Other",
-      "postedAt": "2026-10-22T13:17:42.000Z"
-    },
-    {
       "id": "arbeitnow-senior-powertrain-test-engineer-all-genders-40978",
       "title": "Senior Powertrain Test Engineer (All genders)",
       "company": "Skdse",
@@ -247,6 +247,19 @@
       "location": "Hamburg",
       "country": "Germany",
       "postedAt": "2026-10-21T23:40:16.000Z"
+    },
+    {
+      "id": "lever-shieldai-427ac807-bc6a-4e8c-8f15-8322880ffcaf",
+      "title": "Staff Engineer, Test Automation - San Mateo (R5792)",
+      "company": "Shield AI",
+      "url": "https://jobs.lever.co/shieldai/427ac807-bc6a-4e8c-8f15-8322880ffcaf",
+      "source": "Shield AI",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, California",
+      "country": "United States",
+      "postedAt": "2026-10-21T21:43:26.294Z"
     },
     {
       "id": "greenhouse-stripe-8153331",
@@ -390,19 +403,6 @@
       "location": "Delft, Zuid-Holland, Netherlands",
       "country": "Netherlands",
       "postedAt": "2026-10-18T11:31:18.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-specialist-klazienaveen-129201",
-      "title": "Quality Assurance Specialist",
-      "company": "Norit",
-      "url": "https://www.arbeitnow.nl/jobs/companies/norit/quality-assurance-specialist-klazienaveen-129201",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Klazienaveen, Netherlands",
-      "country": "Netherlands",
-      "postedAt": "2026-10-17T21:20:16.000Z"
     },
     {
       "id": "greenhouse-coursera-6141559004",
