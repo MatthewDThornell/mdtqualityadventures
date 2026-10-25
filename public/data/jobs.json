@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-10-25T10:38:22.292Z",
+  "fetchedAt": "2026-10-25T15:29:27.152Z",
   "jobs": [
+    {
+      "id": "arbeitnow-lead-automation-engineer-paris-188197",
+      "title": "Lead Automation Engineer",
+      "company": "Odaseva",
+      "url": "https://www.arbeitnow.fr/jobs/companies/odaseva/lead-automation-engineer-paris-188197",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Paris",
+      "country": "France",
+      "postedAt": "2026-10-25T12:07:45.000Z"
+    },
     {
       "id": "arbeitnow-test-automation-engineer-gilching-9716",
       "title": "Test Automation Engineer (m/f/d)",
@@ -104,6 +117,19 @@
       "location": "Manchester, England, United Kingdom",
       "country": "United Kingdom",
       "postedAt": "2026-10-23T14:45:23.000Z"
+    },
+    {
+      "id": "arbeitnow-remote-test-automation-engineer-strasbourg-449366",
+      "title": "Test Automation Engineer",
+      "company": "European Dynamics",
+      "url": "https://www.arbeitnow.fr/jobs/companies/european-dynamics/remote-test-automation-engineer-strasbourg-449366",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Strasbourg, France",
+      "country": "France",
+      "postedAt": "2026-10-23T10:20:08.000Z"
     },
     {
       "id": "arbeitnow-ai-automation-engineer-berlin-239926",
@@ -429,19 +455,6 @@
       "location": "Bern",
       "country": "Other",
       "postedAt": "2026-10-18T15:31:16.000Z"
-    },
-    {
-      "id": "arbeitnow-test-engineer-delft-144727",
-      "title": "Test Engineer",
-      "company": "Qualinx",
-      "url": "https://www.arbeitnow.nl/jobs/companies/qualinx/test-engineer-delft-144727",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Delft, Zuid-Holland, Netherlands",
-      "country": "Netherlands",
-      "postedAt": "2026-10-18T11:31:18.000Z"
     },
     {
       "id": "greenhouse-coursera-6141559004",
