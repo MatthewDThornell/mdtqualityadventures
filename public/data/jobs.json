@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-25T15:29:27.152Z",
+  "fetchedAt": "2026-10-25T20:20:07.679Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer, Social",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-25T14:46:21-04:00"
+    },
+    {
+      "id": "arbeitnow-qa-engineer-cadarache-81411",
+      "title": "QA Engineer",
+      "company": "ATG Europe",
+      "url": "https://www.arbeitnow.fr/jobs/companies/atg-europe/qa-engineer-cadarache-81411",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Cadarache, Provence-Alpes-Côte-d’Azur, France",
+      "country": "France",
+      "postedAt": "2026-10-25T15:31:13.000Z"
+    },
     {
       "id": "arbeitnow-lead-automation-engineer-paris-188197",
       "title": "Lead Automation Engineer",
@@ -26,19 +52,6 @@
       "location": "Gilching, Bayern, Germany",
       "country": "Germany",
       "postedAt": "2026-10-25T09:31:16.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer, Social",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-25T02:43:43-04:00"
     },
     {
       "id": "jobicy-154027",
@@ -377,84 +390,6 @@
       "location": "Sunnyvale, CA",
       "country": "United States",
       "postedAt": "2026-10-19T17:20:23.739+00:00"
-    },
-    {
-      "id": "arbeitnow-professional-senior-software-test-automation-engineer-zurich-324109",
-      "title": "Professional/Senior Software Test Automation Engineer",
-      "company": "Infometis AG",
-      "url": "https://www.arbeitnow.ch/jobs/companies/infometis-ag/professional-senior-software-test-automation-engineer-zurich-324109",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Zürich",
-      "country": "Other",
-      "postedAt": "2026-10-18T18:00:47.000Z"
-    },
-    {
-      "id": "arbeitnow-test-automation-engineer-senior-consultant-mwd-zurich-294124",
-      "title": "Test Automation Engineer - (Senior) Consultant (m,w,d)",
-      "company": "QESTIT",
-      "url": "https://www.arbeitnow.ch/jobs/companies/qestit/test-automation-engineer-senior-consultant-mwd-zurich-294124",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Zürich",
-      "country": "Other",
-      "postedAt": "2026-10-18T17:31:22.000Z"
-    },
-    {
-      "id": "arbeitnow-junior-systems-test-engineer-m-f-lausanne-145273",
-      "title": "Junior Systems Test Engineer (M/F)",
-      "company": "Enova Consulting",
-      "url": "https://www.arbeitnow.ch/jobs/companies/enova-consulting/junior-systems-test-engineer-m-f-lausanne-145273",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Lausanne",
-      "country": "Other",
-      "postedAt": "2026-10-18T17:31:20.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-qa-manager-consultant-gmp-cqv-100-basel-470349",
-      "title": "Senior QA Manager (Consultant) / GMP & CQV  100% (w/m/d)",
-      "company": "Azimuth Quality",
-      "url": "https://www.arbeitnow.ch/jobs/companies/azimuth-quality/senior-qa-manager-consultant-gmp-cqv-100-basel-470349",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Basel",
-      "country": "Other",
-      "postedAt": "2026-10-18T16:31:12.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-sales-manager-mwd-fur-die-sparte-software-quality-assurance-zurich-247337",
-      "title": "Senior Sales Manager (m,w,d) für die Sparte \"Software Quality Assurance\"",
-      "company": "QESTIT",
-      "url": "https://www.arbeitnow.ch/jobs/companies/qestit/senior-sales-manager-mwd-fur-die-sparte-software-quality-assurance-zurich-247337",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Zürich",
-      "country": "Other",
-      "postedAt": "2026-10-18T16:31:10.000Z"
-    },
-    {
-      "id": "arbeitnow-test-analystin-60-bern-362923",
-      "title": "Test Analyst:in 60%",
-      "company": "Coopers Group AG",
-      "url": "https://www.arbeitnow.ch/jobs/companies/coopers-group-ag/test-analystin-60-bern-362923",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Bern",
-      "country": "Other",
-      "postedAt": "2026-10-18T15:31:16.000Z"
     },
     {
       "id": "greenhouse-coursera-6141559004",
