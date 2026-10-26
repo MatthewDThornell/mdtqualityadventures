@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-25T20:20:07.679Z",
+  "fetchedAt": "2026-10-26T03:00:49.075Z",
   "jobs": [
+    {
+      "id": "arbeitnow-senior-qa-engineer-rennes-ille-et-vilaine-449682",
+      "title": "Senior QA Engineer (f/m/d)",
+      "company": "idnow",
+      "url": "https://www.arbeitnow.fr/jobs/companies/idnow/senior-qa-engineer-rennes-ille-et-vilaine-449682",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Rennes, Ille-et-Vilaine",
+      "country": "Other",
+      "postedAt": "2026-10-26T00:55:18.000Z"
+    },
+    {
+      "id": "greenhouse-figma-6233207004",
+      "title": "Technical Quality Specialist - Figma Weave (Singapore) ",
+      "company": "Figma",
+      "url": "https://boards.greenhouse.io/figma/jobs/6233207004?gh_jid=6233207004",
+      "source": "Figma",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Singapore",
+      "country": "Singapore",
+      "postedAt": "2026-10-25T17:43:33-04:00"
+    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior Quality Engineer, Social",
@@ -314,19 +340,6 @@
       "postedAt": "2026-10-22T11:00:50.000Z"
     },
     {
-      "id": "arbeitnow-senior-quality-assurance-engineer-hamburg-378874",
-      "title": "(Senior) Quality Assurance Engineer (f/m/d)",
-      "company": "Zeal Network",
-      "url": "https://www.arbeitnow.com/jobs/companies/zeal-network/senior-quality-assurance-engineer-hamburg-378874",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Hamburg",
-      "country": "Germany",
-      "postedAt": "2026-10-21T23:40:16.000Z"
-    },
-    {
       "id": "lever-shieldai-427ac807-bc6a-4e8c-8f15-8322880ffcaf",
       "title": "Staff Engineer, Test Automation - San Mateo (R5792)",
       "company": "Shield AI",
@@ -338,32 +351,6 @@
       "location": "San Mateo, California",
       "country": "United States",
       "postedAt": "2026-10-21T21:43:26.294Z"
-    },
-    {
-      "id": "greenhouse-stripe-8153331",
-      "title": "Software Quality Assurance Engineer",
-      "company": "Stripe",
-      "url": "https://stripe.com/jobs/search?gh_jid=8153331",
-      "source": "Stripe",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Taipei,Taiwan",
-      "country": "Taiwan",
-      "postedAt": "2026-10-21T14:53:01-04:00"
-    },
-    {
-      "id": "greenhouse-stripe-8206729",
-      "title": "Team Lead, Quality Analyst, Product Support Operations",
-      "company": "Stripe",
-      "url": "https://stripe.com/jobs/search?gh_jid=8206729",
-      "source": "Stripe",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Mexico City",
-      "country": "Mexico",
-      "postedAt": "2026-10-21T14:53:01-04:00"
     },
     {
       "id": "greenhouse-lyft-8767534002",
