@@ -1,6 +1,71 @@
 {
-  "fetchedAt": "2026-10-26T12:11:07.765Z",
+  "fetchedAt": "2026-10-26T22:15:18.359Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer, Social",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-26T14:47:04-04:00"
+    },
+    {
+      "id": "greenhouse-testlio-8324756",
+      "title": "Freelance Software Tester for Payments testing (Remote in Germany & the Netherlands)",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8324756",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Remote in EMEA",
+      "country": "Other",
+      "postedAt": "2026-10-26T12:11:45-04:00"
+    },
+    {
+      "id": "arbeitnow-propulsion-test-engineer-bordeaux-411077",
+      "title": "Propulsion Test Engineer",
+      "company": "The Exploration Company",
+      "url": "https://www.arbeitnow.fr/jobs/companies/the-exploration-company/propulsion-test-engineer-bordeaux-411077",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Bordeaux, France",
+      "country": "France",
+      "postedAt": "2026-10-26T15:40:14.000Z"
+    },
+    {
+      "id": "arbeitnow-remote-senior-gtm-systems-ai-and-automation-engineer-436740",
+      "title": "Senior GTM Systems AI and Automation Engineer",
+      "company": "Camunda",
+      "url": "https://www.arbeitnow.com/jobs/companies/camunda/remote-senior-gtm-systems-ai-and-automation-engineer-436740",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Remote",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-10-26T15:40:12.000Z"
+    },
+    {
+      "id": "arbeitnow-qualitatsingenieur-quality-engineer-mainz-213465",
+      "title": "Qualitätsingenieur / Quality Engineer (m/w/d)",
+      "company": "Xylem",
+      "url": "https://www.arbeitnow.com/jobs/companies/xylem/qualitatsingenieur-quality-engineer-mainz-213465",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Mainz",
+      "country": "Other",
+      "postedAt": "2026-10-26T14:30:54.000Z"
+    },
     {
       "id": "arbeitnow-test-engineer-automated-systems-ludwigsburg-75986",
       "title": "Test Engineer - Automated Systems (f/m/d)",
@@ -13,19 +78,6 @@
       "location": "Ludwigsburg",
       "country": "Other",
       "postedAt": "2026-10-26T10:20:12.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer, Social",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-26T02:44:01-04:00"
     },
     {
       "id": "arbeitnow-senior-qa-engineer-rennes-ille-et-vilaine-449682",
