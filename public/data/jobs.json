@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-26T03:00:49.075Z",
+  "fetchedAt": "2026-10-26T12:11:07.765Z",
   "jobs": [
+    {
+      "id": "arbeitnow-test-engineer-automated-systems-ludwigsburg-75986",
+      "title": "Test Engineer - Automated Systems (f/m/d)",
+      "company": "Instagrid",
+      "url": "https://www.arbeitnow.com/jobs/companies/instagrid/test-engineer-automated-systems-ludwigsburg-75986",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Ludwigsburg",
+      "country": "Other",
+      "postedAt": "2026-10-26T10:20:12.000Z"
+    },
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer, Social",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-26T02:44:01-04:00"
+    },
     {
       "id": "arbeitnow-senior-qa-engineer-rennes-ille-et-vilaine-449682",
       "title": "Senior QA Engineer (f/m/d)",
@@ -26,19 +52,6 @@
       "location": "Singapore",
       "country": "Singapore",
       "postedAt": "2026-10-25T17:43:33-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer, Social",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-25T14:46:21-04:00"
     },
     {
       "id": "arbeitnow-qa-engineer-cadarache-81411",
@@ -78,32 +91,6 @@
       "location": "Gilching, Bayern, Germany",
       "country": "Germany",
       "postedAt": "2026-10-25T09:31:16.000Z"
-    },
-    {
-      "id": "jobicy-154027",
-      "title": "Lead Automation Engineer",
-      "company": "Capital on Tap",
-      "url": "https://jobicy.com/jobs/154027-lead-automation-engineer",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Portugal",
-      "country": "Other",
-      "postedAt": "2026-10-25T04:20:11+00:00"
-    },
-    {
-      "id": "jobicy-153999",
-      "title": "Sr. Quality Engineer",
-      "company": "CentralReach",
-      "url": "https://jobicy.com/jobs/153999-sr-quality-engineer",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "USA",
-      "country": "United States",
-      "postedAt": "2026-10-25T04:15:27+00:00"
     },
     {
       "id": "arbeitnow-remote-software-test-engineer-bern-487044",
@@ -351,6 +338,32 @@
       "location": "San Mateo, California",
       "country": "United States",
       "postedAt": "2026-10-21T21:43:26.294Z"
+    },
+    {
+      "id": "greenhouse-stripe-8153331",
+      "title": "Software Quality Assurance Engineer",
+      "company": "Stripe",
+      "url": "https://stripe.com/jobs/search?gh_jid=8153331",
+      "source": "Stripe",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Taipei,Taiwan",
+      "country": "Taiwan",
+      "postedAt": "2026-10-21T14:53:01-04:00"
+    },
+    {
+      "id": "greenhouse-stripe-8206729",
+      "title": "Team Lead, Quality Analyst, Product Support Operations",
+      "company": "Stripe",
+      "url": "https://stripe.com/jobs/search?gh_jid=8206729",
+      "source": "Stripe",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Mexico City",
+      "country": "Mexico",
+      "postedAt": "2026-10-21T14:53:01-04:00"
     },
     {
       "id": "greenhouse-lyft-8767534002",
