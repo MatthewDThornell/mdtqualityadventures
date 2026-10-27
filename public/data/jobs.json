@@ -1,18 +1,18 @@
 {
-  "fetchedAt": "2026-10-27T17:24:04.101Z",
+  "fetchedAt": "2026-10-27T21:47:00.818Z",
   "jobs": [
     {
-      "id": "arbeitnow-qa-manager-paris-261424",
-      "title": "QA Manager",
-      "company": "Sonio",
-      "url": "https://www.arbeitnow.fr/jobs/companies/sonio/qa-manager-paris-261424",
+      "id": "arbeitnow-quality-assurance-engineer-research-participants-united-kingdom-243736",
+      "title": "Quality Assurance Engineer - Research Participants - United Kingdom",
+      "company": "Prolificacademicltd",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/prolificacademicltd/quality-assurance-engineer-research-participants-united-kingdom-243736",
       "source": "Arbeitnow",
       "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
-      "workType": "On-site",
-      "location": "Paris office",
-      "country": "France",
-      "postedAt": "2026-10-27T15:40:33.000Z"
+      "workType": "Remote",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-10-27T18:55:32.000Z"
     },
     {
       "id": "greenhouse-roblox-7656541",
@@ -25,7 +25,46 @@
       "workType": "On-site",
       "location": "San Mateo, CA, United States",
       "country": "United States",
-      "postedAt": "2026-10-27T02:43:52-04:00"
+      "postedAt": "2026-10-27T14:49:36-04:00"
+    },
+    {
+      "id": "arbeitnow-interim-qa-specialist-utrecht-458492",
+      "title": "Interim QA Specialist",
+      "company": "Rentman",
+      "url": "https://www.arbeitnow.nl/jobs/companies/rentman/interim-qa-specialist-utrecht-458492",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Utrecht",
+      "country": "Other",
+      "postedAt": "2026-10-27T18:40:39.000Z"
+    },
+    {
+      "id": "greenhouse-figma-6233207004",
+      "title": "Technical Quality Specialist - Figma Weave (Singapore) ",
+      "company": "Figma",
+      "url": "https://boards.greenhouse.io/figma/jobs/6233207004?gh_jid=6233207004",
+      "source": "Figma",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Singapore",
+      "country": "Singapore",
+      "postedAt": "2026-10-27T13:40:12-04:00"
+    },
+    {
+      "id": "arbeitnow-qa-manager-paris-261424",
+      "title": "QA Manager",
+      "company": "Sonio",
+      "url": "https://www.arbeitnow.fr/jobs/companies/sonio/qa-manager-paris-261424",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Paris office",
+      "country": "France",
+      "postedAt": "2026-10-27T15:40:33.000Z"
     },
     {
       "id": "arbeitnow-test-engineer-70162",
@@ -117,19 +156,6 @@
       "location": "Rennes, Ille-et-Vilaine",
       "country": "Other",
       "postedAt": "2026-10-26T00:55:18.000Z"
-    },
-    {
-      "id": "greenhouse-figma-6233207004",
-      "title": "Technical Quality Specialist - Figma Weave (Singapore) ",
-      "company": "Figma",
-      "url": "https://boards.greenhouse.io/figma/jobs/6233207004?gh_jid=6233207004",
-      "source": "Figma",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore",
-      "country": "Singapore",
-      "postedAt": "2026-10-25T17:43:33-04:00"
     },
     {
       "id": "arbeitnow-qa-engineer-cadarache-81411",
@@ -322,7 +348,7 @@
       "sourceUrl": null,
       "direct": true,
       "workType": "On-site",
-      "location": "Brighton, CO - US",
+      "location": "Arvada, CO - US",
       "country": "United States",
       "postedAt": "2026-10-22T15:39:14.177+00:00"
     },
