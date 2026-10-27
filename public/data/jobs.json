@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-10-27T11:32:41.073Z",
+  "fetchedAt": "2026-10-27T17:24:04.101Z",
   "jobs": [
+    {
+      "id": "arbeitnow-qa-manager-paris-261424",
+      "title": "QA Manager",
+      "company": "Sonio",
+      "url": "https://www.arbeitnow.fr/jobs/companies/sonio/qa-manager-paris-261424",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Paris office",
+      "country": "France",
+      "postedAt": "2026-10-27T15:40:33.000Z"
+    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior Quality Engineer, Social",
@@ -78,19 +91,6 @@
       "location": "Remote",
       "country": "Remote / Unspecified",
       "postedAt": "2026-10-26T15:40:12.000Z"
-    },
-    {
-      "id": "arbeitnow-qualitatsingenieur-quality-engineer-mainz-213465",
-      "title": "Qualitätsingenieur / Quality Engineer (m/w/d)",
-      "company": "Xylem",
-      "url": "https://www.arbeitnow.com/jobs/companies/xylem/qualitatsingenieur-quality-engineer-mainz-213465",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Mainz",
-      "country": "Other",
-      "postedAt": "2026-10-26T14:30:54.000Z"
     },
     {
       "id": "arbeitnow-test-engineer-automated-systems-ludwigsburg-75986",
@@ -195,6 +195,19 @@
       "location": "Bordeaux, France",
       "country": "France",
       "postedAt": "2026-10-24T23:40:13.000Z"
+    },
+    {
+      "id": "arbeitnow-mechatronics-test-engineer-munich-bavaria-451948",
+      "title": "Mechatronics Test Engineer (m/f/d)",
+      "company": "Agilerobotsse",
+      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/mechatronics-test-engineer-munich-bavaria-451948",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich, Bavaria",
+      "country": "Germany",
+      "postedAt": "2026-10-24T05:55:16.000Z"
     },
     {
       "id": "arbeitnow-quality-assurance-manager-manchester-302187",
