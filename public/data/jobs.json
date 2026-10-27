@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-10-27T03:32:50.689Z",
+  "fetchedAt": "2026-10-27T11:32:41.073Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer, Social",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-27T02:43:52-04:00"
+    },
     {
       "id": "arbeitnow-test-engineer-70162",
       "title": "Test Engineer (f/m/d)",
@@ -26,19 +39,6 @@
       "location": "Ludwigsburg, Baden-Württemberg, Germany",
       "country": "Germany",
       "postedAt": "2026-10-26T21:51:28.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer, Social",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-26T14:47:04-04:00"
     },
     {
       "id": "greenhouse-testlio-8324756",
@@ -195,19 +195,6 @@
       "location": "Bordeaux, France",
       "country": "France",
       "postedAt": "2026-10-24T23:40:13.000Z"
-    },
-    {
-      "id": "arbeitnow-mechatronics-test-engineer-munich-bavaria-451948",
-      "title": "Mechatronics Test Engineer (m/f/d)",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/mechatronics-test-engineer-munich-bavaria-451948",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich, Bavaria",
-      "country": "Germany",
-      "postedAt": "2026-10-24T05:55:16.000Z"
     },
     {
       "id": "arbeitnow-quality-assurance-manager-manchester-302187",
