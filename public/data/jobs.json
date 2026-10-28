@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-10-27T21:47:00.818Z",
+  "fetchedAt": "2026-10-28T03:48:44.803Z",
   "jobs": [
+    {
+      "id": "greenhouse-robinhood-8329677",
+      "title": "Senior Quality Engineer",
+      "company": "Robinhood",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/8329677?t=gh_src=&gh_jid=8329677",
+      "source": "Robinhood",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "New York, NY",
+      "country": "United States",
+      "postedAt": "2026-10-27T20:38:47-04:00"
+    },
     {
       "id": "arbeitnow-quality-assurance-engineer-research-participants-united-kingdom-243736",
       "title": "Quality Assurance Engineer - Research Participants - United Kingdom",
@@ -223,19 +236,6 @@
       "postedAt": "2026-10-24T23:40:13.000Z"
     },
     {
-      "id": "arbeitnow-mechatronics-test-engineer-munich-bavaria-451948",
-      "title": "Mechatronics Test Engineer (m/f/d)",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/mechatronics-test-engineer-munich-bavaria-451948",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich, Bavaria",
-      "country": "Germany",
-      "postedAt": "2026-10-24T05:55:16.000Z"
-    },
-    {
       "id": "arbeitnow-quality-assurance-manager-manchester-302187",
       "title": "Quality Assurance Manager",
       "company": "PHMG Careers",
@@ -286,19 +286,6 @@
       "location": "Singapore, Singapore",
       "country": "Singapore",
       "postedAt": "2026-10-23T02:56:29-04:00"
-    },
-    {
-      "id": "arbeitnow-ai-quality-assurance-program-manager-london-26852",
-      "title": "AI Quality Assurance Program Manager",
-      "company": "tripadvisor",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/tripadvisor/ai-quality-assurance-program-manager-london-26852",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-23T05:55:15.000Z"
     },
     {
       "id": "arbeitnow-principal-engineer-quality-assurance-berlin-berlin-196608",
