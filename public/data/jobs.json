@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-10-28T03:48:44.803Z",
+  "fetchedAt": "2026-10-28T12:02:54.591Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer, Social",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-10-28T02:49:57-04:00"
+    },
     {
       "id": "greenhouse-robinhood-8329677",
       "title": "Senior Quality Engineer",
@@ -26,19 +39,6 @@
       "location": "",
       "country": "Remote / Unspecified",
       "postedAt": "2026-10-27T18:55:32.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer, Social",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-27T14:49:36-04:00"
     },
     {
       "id": "arbeitnow-interim-qa-specialist-utrecht-458492",
@@ -236,6 +236,19 @@
       "postedAt": "2026-10-24T23:40:13.000Z"
     },
     {
+      "id": "arbeitnow-mechatronics-test-engineer-munich-bavaria-451948",
+      "title": "Mechatronics Test Engineer (m/f/d)",
+      "company": "Agilerobotsse",
+      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/mechatronics-test-engineer-munich-bavaria-451948",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich, Bavaria",
+      "country": "Germany",
+      "postedAt": "2026-10-24T05:55:16.000Z"
+    },
+    {
       "id": "arbeitnow-quality-assurance-manager-manchester-302187",
       "title": "Quality Assurance Manager",
       "company": "PHMG Careers",
@@ -286,6 +299,19 @@
       "location": "Singapore, Singapore",
       "country": "Singapore",
       "postedAt": "2026-10-23T02:56:29-04:00"
+    },
+    {
+      "id": "arbeitnow-ai-quality-assurance-program-manager-london-26852",
+      "title": "AI Quality Assurance Program Manager",
+      "company": "tripadvisor",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/tripadvisor/ai-quality-assurance-program-manager-london-26852",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-23T05:55:15.000Z"
     },
     {
       "id": "arbeitnow-principal-engineer-quality-assurance-berlin-berlin-196608",
@@ -416,19 +442,6 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-10-22T11:00:50.000Z"
-    },
-    {
-      "id": "lever-shieldai-427ac807-bc6a-4e8c-8f15-8322880ffcaf",
-      "title": "Staff Engineer, Test Automation - San Mateo (R5792)",
-      "company": "Shield AI",
-      "url": "https://jobs.lever.co/shieldai/427ac807-bc6a-4e8c-8f15-8322880ffcaf",
-      "source": "Shield AI",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, California",
-      "country": "United States",
-      "postedAt": "2026-10-21T21:43:26.294Z"
     },
     {
       "id": "greenhouse-stripe-8153331",
