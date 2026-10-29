@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-10-28T22:08:08.449Z",
+  "fetchedAt": "2026-10-29T04:11:27.173Z",
   "jobs": [
+    {
+      "id": "lever-shieldai-029739dd-9928-4877-93b3-29666e625cf4",
+      "title": "Team Lead, Software Test & Quality Assurance",
+      "company": "Shield AI",
+      "url": "https://jobs.lever.co/shieldai/029739dd-9928-4877-93b3-29666e625cf4",
+      "source": "Shield AI",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Melbourne",
+      "country": "Australia",
+      "postedAt": "2026-10-29T00:49:11.158Z"
+    },
     {
       "id": "greenhouse-robinhood-8329677",
       "title": "Senior Quality Engineer",
@@ -13,19 +26,6 @@
       "location": "New York, NY",
       "country": "United States",
       "postedAt": "2026-10-28T17:03:00-04:00"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer, Social",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-10-28T14:49:17-04:00"
     },
     {
       "id": "jobicy-157674",
@@ -91,32 +91,6 @@
       "location": "Paris office",
       "country": "France",
       "postedAt": "2026-10-27T15:40:33.000Z"
-    },
-    {
-      "id": "arbeitnow-test-engineer-70162",
-      "title": "Test Engineer (f/m/d)",
-      "company": "Think Cell",
-      "url": "https://www.arbeitnow.com/jobs/companies/think-cell/test-engineer-70162",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-10-27T00:55:19.000Z"
-    },
-    {
-      "id": "arbeitnow-test-engineer-automated-systems-ludwigsburg-93053",
-      "title": "Test Engineer - Automated Systems (f/m/d)",
-      "company": "Instagrid",
-      "url": "https://www.arbeitnow.com/jobs/companies/instagrid/test-engineer-automated-systems-ludwigsburg-93053",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Ludwigsburg, Baden-Württemberg, Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-26T21:51:28.000Z"
     },
     {
       "id": "greenhouse-testlio-8324756",
@@ -260,19 +234,6 @@
       "location": "Munich, Bavaria",
       "country": "Germany",
       "postedAt": "2026-10-24T05:55:16.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-manager-manchester-302187",
-      "title": "Quality Assurance Manager",
-      "company": "PHMG Careers",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/phmg-careers/quality-assurance-manager-manchester-302187",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Manchester, England, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-23T14:45:23.000Z"
     },
     {
       "id": "arbeitnow-remote-test-automation-engineer-strasbourg-449366",
