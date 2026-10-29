@@ -1,6 +1,110 @@
 {
-  "fetchedAt": "2026-10-29T12:13:24.961Z",
+  "fetchedAt": "2026-10-29T22:23:31.016Z",
   "jobs": [
+    {
+      "id": "arbeitnow-projektmanager-agentic-quality-engineering-refnr-48109-zurich-418009",
+      "title": "Projektmanager (m/w/d) Agentic Quality Engineering (Ref.Nr.: 48109)",
+      "company": "Wavestone Germany AG",
+      "url": "https://www.arbeitnow.ch/jobs/companies/wavestone-germany-ag/projektmanager-agentic-quality-engineering-refnr-48109-zurich-418009",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Zürich",
+      "country": "Other",
+      "postedAt": "2026-10-29T16:31:23.000Z"
+    },
+    {
+      "id": "jobicy-157888",
+      "title": "Software Quality Engineer",
+      "company": "Ping Identity",
+      "url": "https://jobicy.com/jobs/157888-software-quality-engineer",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Israel",
+      "country": "Other",
+      "postedAt": "2026-10-29T16:29:18+00:00"
+    },
+    {
+      "id": "greenhouse-testlio-8331513",
+      "title": "Freelance Software Tester (Remote in Réunion, Monaco)",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8331513",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Remote in EMEA",
+      "country": "Other",
+      "postedAt": "2026-10-29T11:03:56-04:00"
+    },
+    {
+      "id": "greenhouse-stripe-8153331",
+      "title": "Software Quality Assurance Engineer",
+      "company": "Stripe",
+      "url": "https://stripe.com/jobs/search?gh_jid=8153331",
+      "source": "Stripe",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Taipei,Taiwan",
+      "country": "Taiwan",
+      "postedAt": "2026-10-29T10:42:09-04:00"
+    },
+    {
+      "id": "greenhouse-stripe-8206729",
+      "title": "Team Lead, Quality Analyst, Product Support Operations",
+      "company": "Stripe",
+      "url": "https://stripe.com/jobs/search?gh_jid=8206729",
+      "source": "Stripe",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Mexico City",
+      "country": "Mexico",
+      "postedAt": "2026-10-29T10:42:09-04:00"
+    },
+    {
+      "id": "greenhouse-testlio-8333847",
+      "title": "Freelance Software Tester (Remote in Martinique)",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8333847",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Remote in AMER",
+      "country": "Other",
+      "postedAt": "2026-10-29T09:25:45-04:00"
+    },
+    {
+      "id": "arbeitnow-semiconductor-test-engineering-team-leader-london-jj-mack-6396",
+      "title": "Semiconductor Test Engineering Team Leader",
+      "company": "Fractile",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/fractile/semiconductor-test-engineering-team-leader-london-jj-mack-6396",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London - JJ Mack",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-29T12:40:37.000Z"
+    },
+    {
+      "id": "arbeitnow-user-acceptance-test-engineer-pressig-155748",
+      "title": "User Acceptance Test Engineer",
+      "company": "Booming Games",
+      "url": "https://www.arbeitnow.com/jobs/companies/booming-games/user-acceptance-test-engineer-pressig-155748",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Pressig",
+      "country": "Other",
+      "postedAt": "2026-10-29T12:00:56.000Z"
+    },
     {
       "id": "arbeitnow-senior-qa-engineer-berlin-462833",
       "title": "Senior QA Engineer (m/f/d)",
@@ -67,19 +171,6 @@
       "postedAt": "2026-10-29T03:33:30.000Z"
     },
     {
-      "id": "jobicy-151950",
-      "title": "QA Engineer",
-      "company": "Workwize",
-      "url": "https://jobicy.com/jobs/151950-qa-engineer-4",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Europe",
-      "country": "Other",
-      "postedAt": "2026-10-29T03:10:20+00:00"
-    },
-    {
       "id": "lever-shieldai-029739dd-9928-4877-93b3-29666e625cf4",
       "title": "Team Lead, Software Test & Quality Assurance",
       "company": "Shield AI",
@@ -91,19 +182,6 @@
       "location": "Melbourne",
       "country": "Australia",
       "postedAt": "2026-10-29T00:49:11.158Z"
-    },
-    {
-      "id": "jobicy-157674",
-      "title": "Freelance Software Tester for Payments testing (Remote in Germany & the Netherlands)",
-      "company": "Testlio",
-      "url": "https://jobicy.com/jobs/157674-freelance-software-tester-for-payments-testing-remote-in-germany-the-netherlands",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Germany,  Netherlands",
-      "country": "Germany",
-      "postedAt": "2026-10-28T16:54:55+00:00"
     },
     {
       "id": "arbeitnow-quality-assurance-engineer-research-participants-united-kingdom-243736",
@@ -366,58 +444,6 @@
       "postedAt": "2026-10-22T15:39:14.177+00:00"
     },
     {
-      "id": "arbeitnow-qa-engineer-amsterdam-349908",
-      "title": "QA Engineer",
-      "company": "Creative Clicks B.V.",
-      "url": "https://www.arbeitnow.nl/jobs/companies/creative-clicks-bv/qa-engineer-amsterdam-349908",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Amsterdam, Noord-Holland, Netherlands",
-      "country": "Netherlands",
-      "postedAt": "2026-10-22T11:51:51.000Z"
-    },
-    {
-      "id": "arbeitnow-software-test-engineer-eindhoven-229483",
-      "title": "Software Test Engineer",
-      "company": "GradeMatch",
-      "url": "https://www.arbeitnow.nl/jobs/companies/gradematch/software-test-engineer-eindhoven-229483",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Eindhoven, Noord-Brabant, Nederland",
-      "country": "Other",
-      "postedAt": "2026-10-22T11:51:51.000Z"
-    },
-    {
-      "id": "arbeitnow-test-engineer-almelo-397717",
-      "title": "Test Engineer",
-      "company": "Benchmark",
-      "url": "https://www.arbeitnow.nl/jobs/companies/benchmark/test-engineer-almelo-397717",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Almelo, Overijssel, Nederland",
-      "country": "Other",
-      "postedAt": "2026-10-22T11:51:51.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-quality-engineer-almelo-97779",
-      "title": "Senior Quality Engineer",
-      "company": "Benchmark",
-      "url": "https://www.arbeitnow.nl/jobs/companies/benchmark/senior-quality-engineer-almelo-97779",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Almelo, Overijssel, Nederland",
-      "country": "Other",
-      "postedAt": "2026-10-22T11:51:51.000Z"
-    },
-    {
       "id": "lever-shieldai-427ac807-bc6a-4e8c-8f15-8322880ffcaf",
       "title": "Staff Engineer, Test Automation - San Mateo (R5792)",
       "company": "Shield AI",
@@ -429,32 +455,6 @@
       "location": "San Mateo, California",
       "country": "United States",
       "postedAt": "2026-10-21T21:43:26.294Z"
-    },
-    {
-      "id": "greenhouse-stripe-8153331",
-      "title": "Software Quality Assurance Engineer",
-      "company": "Stripe",
-      "url": "https://stripe.com/jobs/search?gh_jid=8153331",
-      "source": "Stripe",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Taipei,Taiwan",
-      "country": "Taiwan",
-      "postedAt": "2026-10-21T14:53:01-04:00"
-    },
-    {
-      "id": "greenhouse-stripe-8206729",
-      "title": "Team Lead, Quality Analyst, Product Support Operations",
-      "company": "Stripe",
-      "url": "https://stripe.com/jobs/search?gh_jid=8206729",
-      "source": "Stripe",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Mexico City",
-      "country": "Mexico",
-      "postedAt": "2026-10-21T14:53:01-04:00"
     },
     {
       "id": "greenhouse-lyft-8767534002",
