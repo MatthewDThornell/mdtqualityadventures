@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-10-30T04:11:52.814Z",
+  "fetchedAt": "2026-10-30T12:03:36.087Z",
   "jobs": [
+    {
+      "id": "arbeitnow-softwaretester-qa-engineer-app-geratesoftware-konigs-wusterhausen-111844",
+      "title": "Softwaretester / QA Engineer – App & Gerätesoftware (m/w/d)",
+      "company": "Augletics GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/augletics-gmbh/softwaretester-qa-engineer-app-geratesoftware-konigs-wusterhausen-111844",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Königs Wusterhausen",
+      "country": "Other",
+      "postedAt": "2026-10-30T11:02:12.000Z"
+    },
+    {
+      "id": "arbeitnow-software-tester-qa-engineer-apps-connected-devices-konigs-wusterhausen-295688",
+      "title": "Software Tester / QA Engineer – Apps & Connected Devices (m/f/d)",
+      "company": "Augletics GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/augletics-gmbh/software-tester-qa-engineer-apps-connected-devices-konigs-wusterhausen-295688",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Königs Wusterhausen",
+      "country": "Other",
+      "postedAt": "2026-10-30T10:31:38.000Z"
+    },
+    {
+      "id": "arbeitnow-test-automation-engineer-uipath-zurich-440417",
+      "title": "Test Automation Engineer UiPath",
+      "company": "Infometis AG",
+      "url": "https://www.arbeitnow.ch/jobs/companies/infometis-ag/test-automation-engineer-uipath-zurich-440417",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Zürich",
+      "country": "Other",
+      "postedAt": "2026-10-30T07:31:06.000Z"
+    },
     {
       "id": "arbeitnow-remote-software-test-engineer-bern-463546",
       "title": "Software Test Engineer",
@@ -39,19 +78,6 @@
       "location": "Zürich",
       "country": "Other",
       "postedAt": "2026-10-29T16:31:23.000Z"
-    },
-    {
-      "id": "jobicy-157888",
-      "title": "Software Quality Engineer",
-      "company": "Ping Identity",
-      "url": "https://jobicy.com/jobs/157888-software-quality-engineer",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Israel",
-      "country": "Other",
-      "postedAt": "2026-10-29T16:29:18+00:00"
     },
     {
       "id": "greenhouse-testlio-8331513",
@@ -327,17 +353,17 @@
       "postedAt": "2026-10-26T15:40:12.000Z"
     },
     {
-      "id": "arbeitnow-test-engineer-automated-systems-ludwigsburg-75986",
-      "title": "Test Engineer - Automated Systems (f/m/d)",
-      "company": "Instagrid",
-      "url": "https://www.arbeitnow.com/jobs/companies/instagrid/test-engineer-automated-systems-ludwigsburg-75986",
+      "id": "arbeitnow-senior-qa-engineer-rennes-ille-et-vilaine-449682",
+      "title": "Senior QA Engineer (f/m/d)",
+      "company": "idnow",
+      "url": "https://www.arbeitnow.fr/jobs/companies/idnow/senior-qa-engineer-rennes-ille-et-vilaine-449682",
       "source": "Arbeitnow",
       "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
-      "workType": "On-site",
-      "location": "Ludwigsburg",
+      "workType": "Remote",
+      "location": "Rennes, Ille-et-Vilaine",
       "country": "Other",
-      "postedAt": "2026-10-26T10:20:12.000Z"
+      "postedAt": "2026-10-26T00:55:18.000Z"
     },
     {
       "id": "arbeitnow-qa-engineer-cadarache-81411",
@@ -403,19 +429,6 @@
       "location": "Munich, Bavaria",
       "country": "Germany",
       "postedAt": "2026-10-24T05:55:16.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-test-automation-engineer-strasbourg-449366",
-      "title": "Test Automation Engineer",
-      "company": "European Dynamics",
-      "url": "https://www.arbeitnow.fr/jobs/companies/european-dynamics/remote-test-automation-engineer-strasbourg-449366",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Strasbourg, France",
-      "country": "France",
-      "postedAt": "2026-10-23T10:20:08.000Z"
     },
     {
       "id": "greenhouse-thoughtworks-8200468",
