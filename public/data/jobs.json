@@ -1,9 +1,48 @@
 {
-  "fetchedAt": "2026-10-30T12:03:36.087Z",
+  "fetchedAt": "2026-10-30T21:54:33.522Z",
   "jobs": [
     {
+      "id": "arbeitnow-remote-senior-mobile-quality-engineer-206450",
+      "title": "Senior Mobile Quality Engineer",
+      "company": "Lendable",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/lendable/remote-senior-mobile-quality-engineer-206450",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "UK Remote",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-30T18:40:16.000Z"
+    },
+    {
+      "id": "arbeitnow-software-qa-engineer-ii-kassel-hesse-363426",
+      "title": "Software QA Engineer II",
+      "company": "Axon",
+      "url": "https://www.arbeitnow.com/jobs/companies/axon/software-qa-engineer-ii-kassel-hesse-363426",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Kassel, Hesse",
+      "country": "Other",
+      "postedAt": "2026-10-30T15:55:19.000Z"
+    },
+    {
+      "id": "greenhouse-robinhood-8329677",
+      "title": "Senior Quality Engineer",
+      "company": "Robinhood",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/8329677?t=gh_src=&gh_jid=8329677",
+      "source": "Robinhood",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "New York, NY",
+      "country": "United States",
+      "postedAt": "2026-10-30T11:27:13-04:00"
+    },
+    {
       "id": "arbeitnow-softwaretester-qa-engineer-app-geratesoftware-konigs-wusterhausen-111844",
-      "title": "Softwaretester / QA Engineer – App & Gerätesoftware (m/w/d)",
+      "title": "Softwaretester / QA Engineer als Scrum Master (m/w/d)",
       "company": "Augletics GmbH",
       "url": "https://www.arbeitnow.com/jobs/companies/augletics-gmbh/softwaretester-qa-engineer-app-geratesoftware-konigs-wusterhausen-111844",
       "source": "Arbeitnow",
@@ -12,20 +51,20 @@
       "workType": "On-site",
       "location": "Königs Wusterhausen",
       "country": "Other",
-      "postedAt": "2026-10-30T11:02:12.000Z"
+      "postedAt": "2026-10-30T15:17:28.000Z"
     },
     {
-      "id": "arbeitnow-software-tester-qa-engineer-apps-connected-devices-konigs-wusterhausen-295688",
-      "title": "Software Tester / QA Engineer – Apps & Connected Devices (m/f/d)",
-      "company": "Augletics GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/augletics-gmbh/software-tester-qa-engineer-apps-connected-devices-konigs-wusterhausen-295688",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
+      "id": "greenhouse-thoughtworks-8200468",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
       "workType": "Hybrid",
-      "location": "Königs Wusterhausen",
-      "country": "Other",
-      "postedAt": "2026-10-30T10:31:38.000Z"
+      "location": "Singapore, Singapore",
+      "country": "Singapore",
+      "postedAt": "2026-10-30T10:48:43-04:00"
     },
     {
       "id": "arbeitnow-test-automation-engineer-uipath-zurich-440417",
@@ -38,7 +77,7 @@
       "workType": "On-site",
       "location": "Zürich",
       "country": "Other",
-      "postedAt": "2026-10-30T07:31:06.000Z"
+      "postedAt": "2026-10-30T11:47:32.000Z"
     },
     {
       "id": "arbeitnow-remote-software-test-engineer-bern-463546",
@@ -169,45 +208,6 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-10-29T09:31:28.000Z"
-    },
-    {
-      "id": "greenhouse-robinhood-8329677",
-      "title": "Senior Quality Engineer",
-      "company": "Robinhood",
-      "url": "https://boards.greenhouse.io/robinhood/jobs/8329677?t=gh_src=&gh_jid=8329677",
-      "source": "Robinhood",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "New York, NY",
-      "country": "United States",
-      "postedAt": "2026-10-29T03:04:13-04:00"
-    },
-    {
-      "id": "arbeitnow-qa-automation-engineer-ai-london-276846",
-      "title": "QA Automation Engineer - AI",
-      "company": "Anaplan",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/anaplan/qa-automation-engineer-ai-london-276846",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-29T06:55:16.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-software-qa-engineer-london-102034",
-      "title": "Senior Software QA Engineer",
-      "company": "Comind",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/comind/senior-software-qa-engineer-london-102034",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "London, UK",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-29T06:40:15.000Z"
     },
     {
       "id": "arbeitnow-test-analyst-data-driven-applications-sql-python-almere-netherlands-272968",
@@ -418,32 +418,6 @@
       "postedAt": "2026-10-24T23:40:13.000Z"
     },
     {
-      "id": "arbeitnow-mechatronics-test-engineer-munich-bavaria-451948",
-      "title": "Mechatronics Test Engineer (m/f/d)",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/mechatronics-test-engineer-munich-bavaria-451948",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich, Bavaria",
-      "country": "Germany",
-      "postedAt": "2026-10-24T05:55:16.000Z"
-    },
-    {
-      "id": "greenhouse-thoughtworks-8200468",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
-      "postedAt": "2026-10-23T02:56:29-04:00"
-    },
-    {
       "id": "greenhouse-scaleai-4742042005",
       "title": "Systems Engineering Integration & Test Lead, Public Sector",
       "company": "Scale AI",
@@ -507,19 +481,6 @@
       "location": "Sunnyvale, CA",
       "country": "United States",
       "postedAt": "2026-10-19T17:20:23.739+00:00"
-    },
-    {
-      "id": "greenhouse-coursera-6141559004",
-      "title": "Senior Software Test Engineer",
-      "company": "Coursera",
-      "url": "https://job-boards.greenhouse.io/coursera/jobs/6141559004",
-      "source": "Coursera",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Toronto, Canada",
-      "country": "Canada",
-      "postedAt": "2026-10-16T14:34:41-04:00"
     }
   ]
 }
