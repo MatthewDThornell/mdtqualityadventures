@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-31T16:45:20.396Z",
+  "fetchedAt": "2026-10-31T20:56:07.707Z",
   "jobs": [
+    {
+      "id": "arbeitnow-senior-qa-engineer-mobile-berlin-8108",
+      "title": "(Senior) QA Engineer - Mobile (x/f/m)",
+      "company": "dkbcodefactory",
+      "url": "https://www.arbeitnow.com/jobs/companies/dkbcodefactory/senior-qa-engineer-mobile-berlin-8108",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-10-31T18:55:28.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-qa-engineer-backend-berlin-50464",
+      "title": "(Senior) QA Engineer - Backend (x/f/m)",
+      "company": "dkbcodefactory",
+      "url": "https://www.arbeitnow.com/jobs/companies/dkbcodefactory/senior-qa-engineer-backend-berlin-50464",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-10-31T18:55:28.000Z"
+    },
     {
       "id": "arbeitnow-internship-radiation-testing-of-electronic-components-and-test-automation-munich-351117",
       "title": "Internship - Radiation Testing of Electronic Components and Test Automation",
