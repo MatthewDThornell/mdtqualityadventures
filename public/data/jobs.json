@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-31T11:38:10.835Z",
+  "fetchedAt": "2026-10-31T16:45:20.396Z",
   "jobs": [
+    {
+      "id": "arbeitnow-internship-radiation-testing-of-electronic-components-and-test-automation-munich-351117",
+      "title": "Internship - Radiation Testing of Electronic Components and Test Automation",
+      "company": "The Exploration Company",
+      "url": "https://www.arbeitnow.com/jobs/companies/the-exploration-company/internship-radiation-testing-of-electronic-components-and-test-automation-munich-351117",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich, Germany",
+      "country": "Germany",
+      "postedAt": "2026-10-31T15:40:14.000Z"
+    },
+    {
+      "id": "jobicy-158203",
+      "title": "AI Data Quality Specialist - English (Philippines)",
+      "company": "Welo Global",
+      "url": "https://jobicy.com/jobs/158203-ai-data-quality-specialist-english-philippines",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Philippines",
+      "country": "Other",
+      "postedAt": "2026-10-31T10:57:31+00:00"
+    },
     {
       "id": "arbeitnow-junior-data-quality-analyst-london-42888",
       "title": "Junior Data Quality Analyst",
