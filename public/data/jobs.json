@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-31T03:53:49.768Z",
+  "fetchedAt": "2026-10-31T11:38:10.835Z",
   "jobs": [
+    {
+      "id": "arbeitnow-junior-data-quality-analyst-london-42888",
+      "title": "Junior Data Quality Analyst",
+      "company": "Kpler",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/kpler/junior-data-quality-analyst-london-42888",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-31T03:27:16.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-qa-engineer-uk-petersfield-490636",
+      "title": "Senior QA Engineer",
+      "company": "Keyloop",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/keyloop/senior-qa-engineer-uk-petersfield-490636",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "UK (Petersfield)",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-31T03:27:15.000Z"
+    },
     {
       "id": "arbeitnow-quality-assurance-engineer-zurich-31665",
       "title": "Quality Assurance Engineer",
@@ -182,6 +208,19 @@
       "location": "Remote in AMER",
       "country": "Other",
       "postedAt": "2026-10-29T09:25:45-04:00"
+    },
+    {
+      "id": "arbeitnow-semiconductor-test-engineering-team-leader-london-jj-mack-6396",
+      "title": "Semiconductor Test Engineering Team Leader",
+      "company": "Fractile",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/fractile/semiconductor-test-engineering-team-leader-london-jj-mack-6396",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London - JJ Mack",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-29T12:40:37.000Z"
     },
     {
       "id": "arbeitnow-user-acceptance-test-engineer-pressig-155748",
@@ -390,19 +429,6 @@
       "location": "Paris",
       "country": "France",
       "postedAt": "2026-10-25T12:07:45.000Z"
-    },
-    {
-      "id": "arbeitnow-test-automation-engineer-gilching-9716",
-      "title": "Test Automation Engineer (m/f/d)",
-      "company": "Quantum-Systems GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/quantum-systems-gmbh/test-automation-engineer-gilching-9716",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Gilching, Bayern, Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-25T09:31:16.000Z"
     },
     {
       "id": "greenhouse-scaleai-4742042005",
