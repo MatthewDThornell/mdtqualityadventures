@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-10-30T21:54:33.522Z",
+  "fetchedAt": "2026-10-31T03:53:49.768Z",
   "jobs": [
+    {
+      "id": "arbeitnow-quality-assurance-engineer-zurich-31665",
+      "title": "Quality Assurance Engineer",
+      "company": "Crypto Finance",
+      "url": "https://www.arbeitnow.ch/jobs/companies/crypto-finance/quality-assurance-engineer-zurich-31665",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Zürich, Switzerland",
+      "country": "Other",
+      "postedAt": "2026-10-30T21:20:17.000Z"
+    },
     {
       "id": "arbeitnow-remote-senior-mobile-quality-engineer-206450",
       "title": "Senior Mobile Quality Engineer",
@@ -171,19 +184,6 @@
       "postedAt": "2026-10-29T09:25:45-04:00"
     },
     {
-      "id": "arbeitnow-semiconductor-test-engineering-team-leader-london-jj-mack-6396",
-      "title": "Semiconductor Test Engineering Team Leader",
-      "company": "Fractile",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/fractile/semiconductor-test-engineering-team-leader-london-jj-mack-6396",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London - JJ Mack",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-29T12:40:37.000Z"
-    },
-    {
       "id": "arbeitnow-user-acceptance-test-engineer-pressig-155748",
       "title": "User Acceptance Test Engineer",
       "company": "Booming Games",
@@ -208,6 +208,32 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-10-29T09:31:28.000Z"
+    },
+    {
+      "id": "arbeitnow-qa-automation-engineer-ai-london-276846",
+      "title": "QA Automation Engineer - AI",
+      "company": "Anaplan",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/anaplan/qa-automation-engineer-ai-london-276846",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-29T06:55:16.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-software-qa-engineer-london-102034",
+      "title": "Senior Software QA Engineer",
+      "company": "Comind",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/comind/senior-software-qa-engineer-london-102034",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "London, UK",
+      "country": "United Kingdom",
+      "postedAt": "2026-10-29T06:40:15.000Z"
     },
     {
       "id": "arbeitnow-test-analyst-data-driven-applications-sql-python-almere-netherlands-272968",
@@ -286,32 +312,6 @@
       "location": "Paris office",
       "country": "France",
       "postedAt": "2026-10-27T15:40:33.000Z"
-    },
-    {
-      "id": "arbeitnow-test-engineer-70162",
-      "title": "Test Engineer (f/m/d)",
-      "company": "Think Cell",
-      "url": "https://www.arbeitnow.com/jobs/companies/think-cell/test-engineer-70162",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-10-27T00:55:19.000Z"
-    },
-    {
-      "id": "arbeitnow-test-engineer-automated-systems-ludwigsburg-93053",
-      "title": "Test Engineer - Automated Systems (f/m/d)",
-      "company": "Instagrid",
-      "url": "https://www.arbeitnow.com/jobs/companies/instagrid/test-engineer-automated-systems-ludwigsburg-93053",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Ludwigsburg, Baden-Württemberg, Germany",
-      "country": "Germany",
-      "postedAt": "2026-10-26T21:51:28.000Z"
     },
     {
       "id": "greenhouse-testlio-8324756",
@@ -403,19 +403,6 @@
       "location": "Gilching, Bayern, Germany",
       "country": "Germany",
       "postedAt": "2026-10-25T09:31:16.000Z"
-    },
-    {
-      "id": "arbeitnow-valve-test-engineer-bordeaux-296786",
-      "title": "Valve Test Engineer",
-      "company": "The Exploration Company",
-      "url": "https://www.arbeitnow.fr/jobs/companies/the-exploration-company/valve-test-engineer-bordeaux-296786",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Bordeaux, France",
-      "country": "France",
-      "postedAt": "2026-10-24T23:40:13.000Z"
     },
     {
       "id": "greenhouse-scaleai-4742042005",
