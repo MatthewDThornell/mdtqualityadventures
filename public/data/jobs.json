@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-11-01T12:37:19.809Z",
+  "fetchedAt": "2026-11-01T21:38:30.732Z",
   "jobs": [
+    {
+      "id": "greenhouse-toast-8302709",
+      "title": "QA Engineer II",
+      "company": "Toast",
+      "url": "https://careers.toasttab.com/jobs?gh_jid=8302709",
+      "source": "Toast",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Bengaluru, Karnataka ,India",
+      "country": "India",
+      "postedAt": "2026-11-01T14:59:07-05:00"
+    },
     {
       "id": "arbeitnow-senior-quality-engineer-monopoly-go-495119",
       "title": "Senior Quality Engineer - MONOPOLY GO!",
