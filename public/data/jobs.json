@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-01T04:06:40.170Z",
+  "fetchedAt": "2026-11-01T12:37:19.809Z",
   "jobs": [
     {
       "id": "arbeitnow-senior-quality-engineer-monopoly-go-495119",
@@ -65,19 +65,6 @@
       "location": "Munich, Germany",
       "country": "Germany",
       "postedAt": "2026-10-31T15:40:14.000Z"
-    },
-    {
-      "id": "jobicy-158203",
-      "title": "AI Data Quality Specialist - English (Philippines)",
-      "company": "Welo Global",
-      "url": "https://jobicy.com/jobs/158203-ai-data-quality-specialist-english-philippines",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Philippines",
-      "country": "Other",
-      "postedAt": "2026-10-31T10:57:31+00:00"
     },
     {
       "id": "arbeitnow-junior-data-quality-analyst-london-42888",
@@ -379,19 +366,6 @@
       "postedAt": "2026-10-29T00:49:11.158Z"
     },
     {
-      "id": "arbeitnow-quality-assurance-engineer-research-participants-united-kingdom-243736",
-      "title": "Quality Assurance Engineer - Research Participants - United Kingdom",
-      "company": "Prolificacademicltd",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/prolificacademicltd/quality-assurance-engineer-research-participants-united-kingdom-243736",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-10-27T18:55:32.000Z"
-    },
-    {
       "id": "arbeitnow-interim-qa-specialist-utrecht-458492",
       "title": "Interim QA Specialist",
       "company": "Rentman",
@@ -468,19 +442,6 @@
       "location": "Remote",
       "country": "Remote / Unspecified",
       "postedAt": "2026-10-26T15:40:12.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-qa-engineer-rennes-ille-et-vilaine-449682",
-      "title": "Senior QA Engineer (f/m/d)",
-      "company": "idnow",
-      "url": "https://www.arbeitnow.fr/jobs/companies/idnow/senior-qa-engineer-rennes-ille-et-vilaine-449682",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Rennes, Ille-et-Vilaine",
-      "country": "Other",
-      "postedAt": "2026-10-26T00:55:18.000Z"
     },
     {
       "id": "greenhouse-scaleai-4742042005",
