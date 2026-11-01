@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-10-31T20:56:07.707Z",
+  "fetchedAt": "2026-11-01T04:06:40.170Z",
   "jobs": [
+    {
+      "id": "arbeitnow-senior-quality-engineer-monopoly-go-495119",
+      "title": "Senior Quality Engineer - MONOPOLY GO!",
+      "company": "Scopely",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/scopely/senior-quality-engineer-monopoly-go-495119",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-11-01T00:55:22.000Z"
+    },
+    {
+      "id": "arbeitnow-sr-manager-quality-assurance-london-118965",
+      "title": "Sr Manager Quality Assurance",
+      "company": "Hasbro",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/hasbro/sr-manager-quality-assurance-london-118965",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-01T00:55:21.000Z"
+    },
     {
       "id": "arbeitnow-senior-qa-engineer-mobile-berlin-8108",
       "title": "(Senior) QA Engineer - Mobile (x/f/m)",
@@ -455,32 +481,6 @@
       "location": "Rennes, Ille-et-Vilaine",
       "country": "Other",
       "postedAt": "2026-10-26T00:55:18.000Z"
-    },
-    {
-      "id": "arbeitnow-qa-engineer-cadarache-81411",
-      "title": "QA Engineer",
-      "company": "ATG Europe",
-      "url": "https://www.arbeitnow.fr/jobs/companies/atg-europe/qa-engineer-cadarache-81411",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Cadarache, Provence-Alpes-Côte-d’Azur, France",
-      "country": "France",
-      "postedAt": "2026-10-25T15:31:13.000Z"
-    },
-    {
-      "id": "arbeitnow-lead-automation-engineer-paris-188197",
-      "title": "Lead Automation Engineer",
-      "company": "Odaseva",
-      "url": "https://www.arbeitnow.fr/jobs/companies/odaseva/lead-automation-engineer-paris-188197",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Paris",
-      "country": "France",
-      "postedAt": "2026-10-25T12:07:45.000Z"
     },
     {
       "id": "greenhouse-scaleai-4742042005",
