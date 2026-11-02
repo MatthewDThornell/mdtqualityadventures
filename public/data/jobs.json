@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-11-02T04:10:31.826Z",
+  "fetchedAt": "2026-11-02T14:40:17.519Z",
   "jobs": [
+    {
+      "id": "arbeitnow-staff-qa-automation-engineer-united-kingdom-170297",
+      "title": "Staff QA Automation Engineer",
+      "company": "tem",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/tem/staff-qa-automation-engineer-united-kingdom-170297",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-02T09:40:18.000Z"
+    },
     {
       "id": "arbeitnow-mechatronic-design-test-engineer-zurich-385014",
       "title": "Mechatronic Design & Test Engineer",
@@ -13,19 +26,6 @@
       "location": "Zürich",
       "country": "Other",
       "postedAt": "2026-11-02T03:27:31.000Z"
-    },
-    {
-      "id": "greenhouse-toast-8302709",
-      "title": "QA Engineer II",
-      "company": "Toast",
-      "url": "https://careers.toasttab.com/jobs?gh_jid=8302709",
-      "source": "Toast",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Bengaluru, Karnataka ,India",
-      "country": "India",
-      "postedAt": "2026-11-01T14:59:07-05:00"
     },
     {
       "id": "arbeitnow-senior-quality-engineer-monopoly-go-495119",
@@ -223,19 +223,6 @@
       "postedAt": "2026-10-30T00:31:24.000Z"
     },
     {
-      "id": "arbeitnow-robotics-test-automation-engineer-munich-bavaria-152983",
-      "title": "Robotics Test Automation Engineer (m/f/d)",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/robotics-test-automation-engineer-munich-bavaria-152983",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich, Bavaria",
-      "country": "Germany",
-      "postedAt": "2026-10-29T21:55:22.000Z"
-    },
-    {
       "id": "arbeitnow-projektmanager-agentic-quality-engineering-refnr-48109-zurich-418009",
       "title": "Projektmanager (m/w/d) Agentic Quality Engineering (Ref.Nr.: 48109)",
       "company": "Wavestone Germany AG",
@@ -366,19 +353,6 @@
       "postedAt": "2026-10-29T06:40:15.000Z"
     },
     {
-      "id": "arbeitnow-test-analyst-data-driven-applications-sql-python-almere-netherlands-272968",
-      "title": "Test Analyst | Data Driven Applications | SQL & Python | Almere, Netherlands",
-      "company": "Ilias Solutions",
-      "url": "https://www.arbeitnow.nl/jobs/companies/ilias-solutions/test-analyst-data-driven-applications-sql-python-almere-netherlands-272968",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Almere",
-      "country": "Other",
-      "postedAt": "2026-10-29T03:33:30.000Z"
-    },
-    {
       "id": "lever-shieldai-029739dd-9928-4877-93b3-29666e625cf4",
       "title": "Team Lead, Software Test & Quality Assurance",
       "company": "Shield AI",
@@ -455,19 +429,6 @@
       "location": "Bordeaux, France",
       "country": "France",
       "postedAt": "2026-10-26T15:40:14.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-senior-gtm-systems-ai-and-automation-engineer-436740",
-      "title": "Senior GTM Systems AI and Automation Engineer",
-      "company": "Camunda",
-      "url": "https://www.arbeitnow.com/jobs/companies/camunda/remote-senior-gtm-systems-ai-and-automation-engineer-436740",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Remote",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-10-26T15:40:12.000Z"
     },
     {
       "id": "greenhouse-scaleai-4742042005",
