@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-11-01T21:38:30.732Z",
+  "fetchedAt": "2026-11-02T04:10:31.826Z",
   "jobs": [
+    {
+      "id": "arbeitnow-mechatronic-design-test-engineer-zurich-385014",
+      "title": "Mechatronic Design & Test Engineer",
+      "company": "Wingtra 2",
+      "url": "https://www.arbeitnow.ch/jobs/companies/wingtra-2/mechatronic-design-test-engineer-zurich-385014",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Zürich",
+      "country": "Other",
+      "postedAt": "2026-11-02T03:27:31.000Z"
+    },
     {
       "id": "greenhouse-toast-8302709",
       "title": "QA Engineer II",
