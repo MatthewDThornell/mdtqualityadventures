@@ -1,6 +1,110 @@
 {
-  "fetchedAt": "2026-11-02T14:40:17.519Z",
+  "fetchedAt": "2026-11-03T00:26:50.256Z",
   "jobs": [
+    {
+      "id": "arbeitnow-test-engineer-aachen-north-rhine-westphalia-447583",
+      "title": "Test Engineer",
+      "company": "Asteralabs",
+      "url": "https://www.arbeitnow.com/jobs/companies/asteralabs/test-engineer-aachen-north-rhine-westphalia-447583",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Aachen, North Rhine-Westphalia",
+      "country": "Germany",
+      "postedAt": "2026-11-02T21:55:22.000Z"
+    },
+    {
+      "id": "arbeitnow-automation-engineer-all-genders-munich-bavaria-116743",
+      "title": "Automation Engineer (All genders)",
+      "company": "Skdse",
+      "url": "https://www.arbeitnow.com/jobs/companies/skdse/automation-engineer-all-genders-munich-bavaria-116743",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich, Bavaria",
+      "country": "Germany",
+      "postedAt": "2026-11-02T21:55:21.000Z"
+    },
+    {
+      "id": "jobicy-158572",
+      "title": "Freelance Software Tester (Remote in Martinique)",
+      "company": "Testlio",
+      "url": "https://jobicy.com/jobs/158572-freelance-software-tester-remote-in-martinique",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "France",
+      "country": "France",
+      "postedAt": "2026-11-02T18:04:51+00:00"
+    },
+    {
+      "id": "arbeitnow-senior-testmanager-test-engineer-katalon-studio-60-100-refnr-48146-zurich-142827",
+      "title": "Senior Testmanager / Test Engineer (m/w/d) - Katalon Studio (60-100%) (Ref.Nr.: 48146)",
+      "company": "Wavestone Germany AG",
+      "url": "https://www.arbeitnow.ch/jobs/companies/wavestone-germany-ag/senior-testmanager-test-engineer-katalon-studio-60-100-refnr-48146-zurich-142827",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Zürich",
+      "country": "Other",
+      "postedAt": "2026-11-02T17:30:44.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-manager-manchester-254215",
+      "title": "Quality Assurance Manager",
+      "company": "PHMG Careers",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/phmg-careers/quality-assurance-manager-manchester-254215",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Manchester, England, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-02T15:45:25.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-manager-manchester-185538",
+      "title": "Quality Assurance Manager",
+      "company": "PHMG Careers",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/phmg-careers/quality-assurance-manager-manchester-185538",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Manchester, England, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-02T15:45:25.000Z"
+    },
+    {
+      "id": "arbeitnow-professional-ict-test-manager-sip-viso-test-automation-60-80-refnr-47713-bern-391249",
+      "title": "Professional ICT Test Manager (m/w/d) - SIP / VISO / Test Automation (60-80%) (Ref.Nr.: 47713)",
+      "company": "Wavestone Germany AG",
+      "url": "https://www.arbeitnow.ch/jobs/companies/wavestone-germany-ag/professional-ict-test-manager-sip-viso-test-automation-60-80-refnr-47713-bern-391249",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Bern",
+      "country": "Other",
+      "postedAt": "2026-11-02T15:01:06.000Z"
+    },
+    {
+      "id": "jobicy-158530",
+      "title": "Junior Quality Specialist",
+      "company": "Luxury Presence",
+      "url": "https://jobicy.com/jobs/158530-junior-quality-specialist",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Philippines",
+      "country": "Other",
+      "postedAt": "2026-11-02T13:02:31+00:00"
+    },
     {
       "id": "arbeitnow-staff-qa-automation-engineer-united-kingdom-170297",
       "title": "Staff QA Automation Engineer",
@@ -223,6 +327,19 @@
       "postedAt": "2026-10-30T00:31:24.000Z"
     },
     {
+      "id": "arbeitnow-robotics-test-automation-engineer-munich-bavaria-152983",
+      "title": "Robotics Test Automation Engineer (m/f/d)",
+      "company": "Agilerobotsse",
+      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/robotics-test-automation-engineer-munich-bavaria-152983",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich, Bavaria",
+      "country": "Germany",
+      "postedAt": "2026-10-29T21:55:22.000Z"
+    },
+    {
       "id": "arbeitnow-projektmanager-agentic-quality-engineering-refnr-48109-zurich-418009",
       "title": "Projektmanager (m/w/d) Agentic Quality Engineering (Ref.Nr.: 48109)",
       "company": "Wavestone Germany AG",
@@ -418,19 +535,6 @@
       "postedAt": "2026-10-26T12:11:45-04:00"
     },
     {
-      "id": "arbeitnow-propulsion-test-engineer-bordeaux-411077",
-      "title": "Propulsion Test Engineer",
-      "company": "The Exploration Company",
-      "url": "https://www.arbeitnow.fr/jobs/companies/the-exploration-company/propulsion-test-engineer-bordeaux-411077",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Bordeaux, France",
-      "country": "France",
-      "postedAt": "2026-10-26T15:40:14.000Z"
-    },
-    {
       "id": "greenhouse-scaleai-4742042005",
       "title": "Systems Engineering Integration & Test Lead, Public Sector",
       "company": "Scale AI",
@@ -468,32 +572,6 @@
       "location": "San Mateo, California",
       "country": "United States",
       "postedAt": "2026-10-21T21:43:26.294Z"
-    },
-    {
-      "id": "greenhouse-lyft-8767534002",
-      "title": "Software Engineer Intern, Test Automation (Summer 2027)",
-      "company": "Lyft",
-      "url": "https://app.careerpuck.com/job-board/lyft/job/8767534002?gh_jid=8767534002",
-      "source": "Lyft",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Montreal, Canada",
-      "country": "Canada",
-      "postedAt": "2026-10-19T18:43:36-04:00"
-    },
-    {
-      "id": "ashby-cerebras-08ffd14b-cb60-4916-9946-735e49594308",
-      "title": "AI Inference Core - Senior SDET, Release Integration Testing",
-      "company": "Cerebras",
-      "url": "https://jobs.ashbyhq.com/cerebras/08ffd14b-cb60-4916-9946-735e49594308",
-      "source": "Cerebras",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Sunnyvale, CA",
-      "country": "United States",
-      "postedAt": "2026-10-19T17:20:23.739+00:00"
     }
   ]
 }
