@@ -1,6 +1,84 @@
 {
-  "fetchedAt": "2026-11-03T00:26:50.256Z",
+  "fetchedAt": "2026-11-03T13:33:15.631Z",
   "jobs": [
+    {
+      "id": "arbeitnow-test-automation-engineer-uipath-zurich-440417",
+      "title": "UiPath Test Automation Engineer (Professional/Senior)",
+      "company": "Infometis AG",
+      "url": "https://www.arbeitnow.ch/jobs/companies/infometis-ag/test-automation-engineer-uipath-zurich-440417",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Zürich",
+      "country": "Other",
+      "postedAt": "2026-11-03T12:32:35.000Z"
+    },
+    {
+      "id": "greenhouse-figma-6230562004",
+      "title": "Technical Quality Specialist (Bengaluru, India)",
+      "company": "Figma",
+      "url": "https://boards.greenhouse.io/figma/jobs/6230562004?gh_jid=6230562004",
+      "source": "Figma",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Bengaluru, India",
+      "country": "India",
+      "postedAt": "2026-11-03T04:49:04-05:00"
+    },
+    {
+      "id": "greenhouse-robinhood-8329677",
+      "title": "Senior Quality Engineer",
+      "company": "Robinhood",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/8329677?t=gh_src=&gh_jid=8329677",
+      "source": "Robinhood",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "New York, NY",
+      "country": "United States",
+      "postedAt": "2026-11-03T02:52:38-05:00"
+    },
+    {
+      "id": "arbeitnow-system-test-engineer-oxford-79265",
+      "title": "System Test Engineer",
+      "company": "Salience Labs",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/salience-labs/system-test-engineer-oxford-79265",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Oxford, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-03T03:40:17.000Z"
+    },
+    {
+      "id": "jobicy-152334",
+      "title": "Senior QA Automation Developer (Platform)",
+      "company": "Upgrade",
+      "url": "https://jobicy.com/jobs/152334-senior-qa-automation-developer-platform",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Canada",
+      "country": "Canada",
+      "postedAt": "2026-11-03T03:35:23+00:00"
+    },
+    {
+      "id": "jobicy-152333",
+      "title": "QA Analyst (Future Roles)",
+      "company": "Testlio",
+      "url": "https://jobicy.com/jobs/152333-qa-analyst-future-roles",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Argentina,  Brazil,  Canada,  Czechia,  Estonia,  Ireland,  Mexico,  Poland,  Portugal,  Romania,  Spain,  UK,  Ukraine,  USA",
+      "country": "United States",
+      "postedAt": "2026-11-03T03:35:22+00:00"
+    },
     {
       "id": "arbeitnow-test-engineer-aachen-north-rhine-westphalia-447583",
       "title": "Test Engineer",
@@ -54,32 +132,6 @@
       "postedAt": "2026-11-02T17:30:44.000Z"
     },
     {
-      "id": "arbeitnow-quality-assurance-manager-manchester-254215",
-      "title": "Quality Assurance Manager",
-      "company": "PHMG Careers",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/phmg-careers/quality-assurance-manager-manchester-254215",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Manchester, England, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-02T15:45:25.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-manager-manchester-185538",
-      "title": "Quality Assurance Manager",
-      "company": "PHMG Careers",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/phmg-careers/quality-assurance-manager-manchester-185538",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Manchester, England, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-02T15:45:25.000Z"
-    },
-    {
       "id": "arbeitnow-professional-ict-test-manager-sip-viso-test-automation-60-80-refnr-47713-bern-391249",
       "title": "Professional ICT Test Manager (m/w/d) - SIP / VISO / Test Automation (60-80%) (Ref.Nr.: 47713)",
       "company": "Wavestone Germany AG",
@@ -91,19 +143,6 @@
       "location": "Bern",
       "country": "Other",
       "postedAt": "2026-11-02T15:01:06.000Z"
-    },
-    {
-      "id": "jobicy-158530",
-      "title": "Junior Quality Specialist",
-      "company": "Luxury Presence",
-      "url": "https://jobicy.com/jobs/158530-junior-quality-specialist",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Philippines",
-      "country": "Other",
-      "postedAt": "2026-11-02T13:02:31+00:00"
     },
     {
       "id": "arbeitnow-staff-qa-automation-engineer-united-kingdom-170297",
@@ -262,32 +301,6 @@
       "postedAt": "2026-10-30T15:55:19.000Z"
     },
     {
-      "id": "greenhouse-robinhood-8329677",
-      "title": "Senior Quality Engineer",
-      "company": "Robinhood",
-      "url": "https://boards.greenhouse.io/robinhood/jobs/8329677?t=gh_src=&gh_jid=8329677",
-      "source": "Robinhood",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "New York, NY",
-      "country": "United States",
-      "postedAt": "2026-10-30T11:27:13-04:00"
-    },
-    {
-      "id": "arbeitnow-softwaretester-qa-engineer-app-geratesoftware-konigs-wusterhausen-111844",
-      "title": "Softwaretester / QA Engineer als Scrum Master (m/w/d)",
-      "company": "Augletics GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/augletics-gmbh/softwaretester-qa-engineer-app-geratesoftware-konigs-wusterhausen-111844",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Königs Wusterhausen",
-      "country": "Other",
-      "postedAt": "2026-10-30T15:17:28.000Z"
-    },
-    {
       "id": "greenhouse-thoughtworks-8200468",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -299,32 +312,6 @@
       "location": "Singapore, Singapore",
       "country": "Singapore",
       "postedAt": "2026-10-30T10:48:43-04:00"
-    },
-    {
-      "id": "arbeitnow-test-automation-engineer-uipath-zurich-440417",
-      "title": "Test Automation Engineer UiPath",
-      "company": "Infometis AG",
-      "url": "https://www.arbeitnow.ch/jobs/companies/infometis-ag/test-automation-engineer-uipath-zurich-440417",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Zürich",
-      "country": "Other",
-      "postedAt": "2026-10-30T11:47:32.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-software-test-engineer-bern-463546",
-      "title": "Software Test Engineer",
-      "company": "SwissPeak Partners GmbH",
-      "url": "https://www.arbeitnow.ch/jobs/companies/swisspeak-partners-gmbh/remote-software-test-engineer-bern-463546",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Remote job",
-      "country": "Other",
-      "postedAt": "2026-10-30T00:31:24.000Z"
     },
     {
       "id": "arbeitnow-robotics-test-automation-engineer-munich-bavaria-152983",
@@ -353,19 +340,6 @@
       "postedAt": "2026-10-29T16:31:23.000Z"
     },
     {
-      "id": "greenhouse-testlio-8331513",
-      "title": "Freelance Software Tester (Remote in Réunion, Monaco)",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8331513",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Remote in EMEA",
-      "country": "Other",
-      "postedAt": "2026-10-29T11:03:56-04:00"
-    },
-    {
       "id": "greenhouse-stripe-8153331",
       "title": "Software Quality Assurance Engineer",
       "company": "Stripe",
@@ -392,32 +366,6 @@
       "postedAt": "2026-10-29T10:42:09-04:00"
     },
     {
-      "id": "greenhouse-testlio-8333847",
-      "title": "Freelance Software Tester (Remote in Martinique)",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8333847",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Remote in AMER",
-      "country": "Other",
-      "postedAt": "2026-10-29T09:25:45-04:00"
-    },
-    {
-      "id": "arbeitnow-semiconductor-test-engineering-team-leader-london-jj-mack-6396",
-      "title": "Semiconductor Test Engineering Team Leader",
-      "company": "Fractile",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/fractile/semiconductor-test-engineering-team-leader-london-jj-mack-6396",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London - JJ Mack",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-29T12:40:37.000Z"
-    },
-    {
       "id": "arbeitnow-user-acceptance-test-engineer-pressig-155748",
       "title": "User Acceptance Test Engineer",
       "company": "Booming Games",
@@ -442,32 +390,6 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-10-29T09:31:28.000Z"
-    },
-    {
-      "id": "arbeitnow-qa-automation-engineer-ai-london-276846",
-      "title": "QA Automation Engineer - AI",
-      "company": "Anaplan",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/anaplan/qa-automation-engineer-ai-london-276846",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-29T06:55:16.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-software-qa-engineer-london-102034",
-      "title": "Senior Software QA Engineer",
-      "company": "Comind",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/comind/senior-software-qa-engineer-london-102034",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "London, UK",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-29T06:40:15.000Z"
     },
     {
       "id": "lever-shieldai-029739dd-9928-4877-93b3-29666e625cf4",
@@ -520,19 +442,6 @@
       "location": "Paris office",
       "country": "France",
       "postedAt": "2026-10-27T15:40:33.000Z"
-    },
-    {
-      "id": "greenhouse-testlio-8324756",
-      "title": "Freelance Software Tester for Payments testing (Remote in Germany & the Netherlands)",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8324756",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Remote in EMEA",
-      "country": "Other",
-      "postedAt": "2026-10-26T12:11:45-04:00"
     },
     {
       "id": "greenhouse-scaleai-4742042005",
