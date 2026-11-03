@@ -1,6 +1,136 @@
 {
-  "fetchedAt": "2026-11-03T13:33:15.631Z",
+  "fetchedAt": "2026-11-03T22:51:02.995Z",
   "jobs": [
+    {
+      "id": "arbeitnow-remote-software-test-engineer-bern-122043",
+      "title": "Software Test Engineer",
+      "company": "SwissPeak Partners GmbH",
+      "url": "https://www.arbeitnow.ch/jobs/companies/swisspeak-partners-gmbh/remote-software-test-engineer-bern-122043",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Remote job",
+      "country": "Other",
+      "postedAt": "2026-11-03T21:31:09.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-quality-engineer-chassis-and-powertrain-218196",
+      "title": "Senior Quality Engineer, Chassis and Powertrain",
+      "company": "Czinger",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/czinger/senior-quality-engineer-chassis-and-powertrain-218196",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-11-03T18:55:34.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-qa-specialist-utrecht-65997",
+      "title": "Senior QA Specialist",
+      "company": "Rentman",
+      "url": "https://www.arbeitnow.nl/jobs/companies/rentman/senior-qa-specialist-utrecht-65997",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Utrecht",
+      "country": "Other",
+      "postedAt": "2026-11-03T18:40:36.000Z"
+    },
+    {
+      "id": "greenhouse-duolingo-8927565002",
+      "title": "QA Specialist I, Recent Graduate",
+      "company": "Duolingo",
+      "url": "https://careers.duolingo.com/jobs/8927565002?gh_jid=8927565002",
+      "source": "Duolingo",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "New York, NY; Pittsburgh, PA",
+      "country": "United States",
+      "postedAt": "2026-11-03T13:15:12-05:00"
+    },
+    {
+      "id": "greenhouse-testlio-8324756",
+      "title": "Freelance Software Tester for Payments testing (Remote in Germany & the Netherlands)",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8324756",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Remote in EMEA",
+      "country": "Other",
+      "postedAt": "2026-11-03T11:17:43-05:00"
+    },
+    {
+      "id": "greenhouse-testlio-8331513",
+      "title": "Freelance Software Tester (Remote in Réunion, Monaco)",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8331513",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Remote in EMEA",
+      "country": "Other",
+      "postedAt": "2026-11-03T11:17:17-05:00"
+    },
+    {
+      "id": "greenhouse-testlio-8333847",
+      "title": "Freelance Software Tester (Remote in Martinique)",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8333847",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Remote in AMER",
+      "country": "Other",
+      "postedAt": "2026-11-03T11:17:08-05:00"
+    },
+    {
+      "id": "arbeitnow-test-engineer-324787",
+      "title": "Test Engineer (f/m/d)",
+      "company": "Think Cell",
+      "url": "https://www.arbeitnow.com/jobs/companies/think-cell/test-engineer-324787",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-11-03T15:55:21.000Z"
+    },
+    {
+      "id": "jobicy-158729",
+      "title": "Test Automation Engineer (f/m/d)",
+      "company": "ecosio",
+      "url": "https://jobicy.com/jobs/158729-test-automation-engineer-f-m-d",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Austria,  Croatia,  Germany,  Hungary,  Italy,  Portugal,  Spain,  UK",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-03T15:22:20+00:00"
+    },
+    {
+      "id": "arbeitnow-quality-engineer-london-153337",
+      "title": "Quality Engineer",
+      "company": "Isembard",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/isembard/quality-engineer-london-153337",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-03T12:40:14.000Z"
+    },
     {
       "id": "arbeitnow-test-automation-engineer-uipath-zurich-440417",
       "title": "UiPath Test Automation Engineer (Professional/Senior)",
@@ -54,32 +184,6 @@
       "postedAt": "2026-11-03T03:40:17.000Z"
     },
     {
-      "id": "jobicy-152334",
-      "title": "Senior QA Automation Developer (Platform)",
-      "company": "Upgrade",
-      "url": "https://jobicy.com/jobs/152334-senior-qa-automation-developer-platform",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Canada",
-      "country": "Canada",
-      "postedAt": "2026-11-03T03:35:23+00:00"
-    },
-    {
-      "id": "jobicy-152333",
-      "title": "QA Analyst (Future Roles)",
-      "company": "Testlio",
-      "url": "https://jobicy.com/jobs/152333-qa-analyst-future-roles",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Argentina,  Brazil,  Canada,  Czechia,  Estonia,  Ireland,  Mexico,  Poland,  Portugal,  Romania,  Spain,  UK,  Ukraine,  USA",
-      "country": "United States",
-      "postedAt": "2026-11-03T03:35:22+00:00"
-    },
-    {
       "id": "arbeitnow-test-engineer-aachen-north-rhine-westphalia-447583",
       "title": "Test Engineer",
       "company": "Asteralabs",
@@ -106,19 +210,6 @@
       "postedAt": "2026-11-02T21:55:21.000Z"
     },
     {
-      "id": "jobicy-158572",
-      "title": "Freelance Software Tester (Remote in Martinique)",
-      "company": "Testlio",
-      "url": "https://jobicy.com/jobs/158572-freelance-software-tester-remote-in-martinique",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "France",
-      "country": "France",
-      "postedAt": "2026-11-02T18:04:51+00:00"
-    },
-    {
       "id": "arbeitnow-senior-testmanager-test-engineer-katalon-studio-60-100-refnr-48146-zurich-142827",
       "title": "Senior Testmanager / Test Engineer (m/w/d) - Katalon Studio (60-100%) (Ref.Nr.: 48146)",
       "company": "Wavestone Germany AG",
@@ -130,6 +221,32 @@
       "location": "Zürich",
       "country": "Other",
       "postedAt": "2026-11-02T17:30:44.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-manager-manchester-254215",
+      "title": "Quality Assurance Manager",
+      "company": "PHMG Careers",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/phmg-careers/quality-assurance-manager-manchester-254215",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Manchester, England, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-02T15:45:25.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-manager-manchester-185538",
+      "title": "Quality Assurance Manager",
+      "company": "PHMG Careers",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/phmg-careers/quality-assurance-manager-manchester-185538",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Manchester, England, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-02T15:45:25.000Z"
     },
     {
       "id": "arbeitnow-professional-ict-test-manager-sip-viso-test-automation-60-80-refnr-47713-bern-391249",
@@ -301,6 +418,19 @@
       "postedAt": "2026-10-30T15:55:19.000Z"
     },
     {
+      "id": "arbeitnow-softwaretester-qa-engineer-app-geratesoftware-konigs-wusterhausen-111844",
+      "title": "Softwaretester / QA Engineer als Scrum Master (m/w/d)",
+      "company": "Augletics GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/augletics-gmbh/softwaretester-qa-engineer-app-geratesoftware-konigs-wusterhausen-111844",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Königs Wusterhausen",
+      "country": "Other",
+      "postedAt": "2026-10-30T15:17:28.000Z"
+    },
+    {
       "id": "greenhouse-thoughtworks-8200468",
       "title": "Lead Quality Analyst",
       "company": "Thoughtworks",
@@ -405,19 +535,6 @@
       "postedAt": "2026-10-29T00:49:11.158Z"
     },
     {
-      "id": "arbeitnow-interim-qa-specialist-utrecht-458492",
-      "title": "Interim QA Specialist",
-      "company": "Rentman",
-      "url": "https://www.arbeitnow.nl/jobs/companies/rentman/interim-qa-specialist-utrecht-458492",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Utrecht",
-      "country": "Other",
-      "postedAt": "2026-10-27T18:40:39.000Z"
-    },
-    {
       "id": "greenhouse-figma-6233207004",
       "title": "Technical Quality Specialist - Figma Weave (Singapore) ",
       "company": "Figma",
@@ -429,19 +546,6 @@
       "location": "Singapore",
       "country": "Singapore",
       "postedAt": "2026-10-27T13:40:12-04:00"
-    },
-    {
-      "id": "arbeitnow-qa-manager-paris-261424",
-      "title": "QA Manager",
-      "company": "Sonio",
-      "url": "https://www.arbeitnow.fr/jobs/companies/sonio/qa-manager-paris-261424",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Paris office",
-      "country": "France",
-      "postedAt": "2026-10-27T15:40:33.000Z"
     },
     {
       "id": "greenhouse-scaleai-4742042005",
