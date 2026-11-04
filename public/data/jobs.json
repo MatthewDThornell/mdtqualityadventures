@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-11-04T04:41:16.248Z",
+  "fetchedAt": "2026-11-04T13:43:20.952Z",
   "jobs": [
+    {
+      "id": "arbeitnow-production-assembly-test-engineer-reading-296878",
+      "title": "Production Assembly & Test Engineer",
+      "company": "Xyz Reality",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/xyz-reality/production-assembly-test-engineer-reading-296878",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Reading, UK",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-04T09:40:16.000Z"
+    },
     {
       "id": "arbeitnow-senior-qa-manager-fully-remote-berlin-156016",
       "title": "Senior QA Manager - Fully Remote",
@@ -221,6 +234,32 @@
       "location": "Zürich",
       "country": "Other",
       "postedAt": "2026-11-02T17:30:44.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-manager-manchester-254215",
+      "title": "Quality Assurance Manager",
+      "company": "PHMG Careers",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/phmg-careers/quality-assurance-manager-manchester-254215",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Manchester, England, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-02T15:45:25.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-manager-manchester-185538",
+      "title": "Quality Assurance Manager",
+      "company": "PHMG Careers",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/phmg-careers/quality-assurance-manager-manchester-185538",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Manchester, England, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-02T15:45:25.000Z"
     },
     {
       "id": "arbeitnow-professional-ict-test-manager-sip-viso-test-automation-60-80-refnr-47713-bern-391249",
@@ -457,6 +496,19 @@
       "postedAt": "2026-10-29T09:31:28.000Z"
     },
     {
+      "id": "lever-shieldai-029739dd-9928-4877-93b3-29666e625cf4",
+      "title": "Team Lead, Software Test & Quality Assurance",
+      "company": "Shield AI",
+      "url": "https://jobs.lever.co/shieldai/029739dd-9928-4877-93b3-29666e625cf4",
+      "source": "Shield AI",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Melbourne",
+      "country": "Australia",
+      "postedAt": "2026-10-29T00:49:11.158Z"
+    },
+    {
       "id": "greenhouse-figma-6233207004",
       "title": "Technical Quality Specialist - Figma Weave (Singapore) ",
       "company": "Figma",
@@ -494,6 +546,19 @@
       "location": "Arvada, CO - US",
       "country": "United States",
       "postedAt": "2026-10-22T15:39:14.177+00:00"
+    },
+    {
+      "id": "lever-shieldai-427ac807-bc6a-4e8c-8f15-8322880ffcaf",
+      "title": "Staff Engineer, Test Automation - San Mateo (R5792)",
+      "company": "Shield AI",
+      "url": "https://jobs.lever.co/shieldai/427ac807-bc6a-4e8c-8f15-8322880ffcaf",
+      "source": "Shield AI",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, California",
+      "country": "United States",
+      "postedAt": "2026-10-21T21:43:26.294Z"
     }
   ]
 }
