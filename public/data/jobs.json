@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-11-03T22:51:02.995Z",
+  "fetchedAt": "2026-11-04T04:41:16.248Z",
   "jobs": [
+    {
+      "id": "arbeitnow-senior-qa-manager-fully-remote-berlin-156016",
+      "title": "Senior QA Manager - Fully Remote",
+      "company": "SOFTGAMES",
+      "url": "https://www.arbeitnow.com/jobs/companies/softgames/senior-qa-manager-fully-remote-berlin-156016",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Remote job",
+      "country": "Other",
+      "postedAt": "2026-11-04T03:31:37.000Z"
+    },
+    {
+      "id": "greenhouse-duolingo-8927565002",
+      "title": "QA Specialist I, Recent Graduate",
+      "company": "Duolingo",
+      "url": "https://careers.duolingo.com/jobs/8927565002?gh_jid=8927565002",
+      "source": "Duolingo",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "New York, NY; Pittsburgh, PA",
+      "country": "United States",
+      "postedAt": "2026-11-03T17:55:27-05:00"
+    },
     {
       "id": "arbeitnow-remote-software-test-engineer-bern-122043",
       "title": "Software Test Engineer",
@@ -39,19 +65,6 @@
       "location": "Utrecht",
       "country": "Other",
       "postedAt": "2026-11-03T18:40:36.000Z"
-    },
-    {
-      "id": "greenhouse-duolingo-8927565002",
-      "title": "QA Specialist I, Recent Graduate",
-      "company": "Duolingo",
-      "url": "https://careers.duolingo.com/jobs/8927565002?gh_jid=8927565002",
-      "source": "Duolingo",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "New York, NY; Pittsburgh, PA",
-      "country": "United States",
-      "postedAt": "2026-11-03T13:15:12-05:00"
     },
     {
       "id": "greenhouse-testlio-8324756",
@@ -104,19 +117,6 @@
       "location": "",
       "country": "Remote / Unspecified",
       "postedAt": "2026-11-03T15:55:21.000Z"
-    },
-    {
-      "id": "jobicy-158729",
-      "title": "Test Automation Engineer (f/m/d)",
-      "company": "ecosio",
-      "url": "https://jobicy.com/jobs/158729-test-automation-engineer-f-m-d",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Austria,  Croatia,  Germany,  Hungary,  Italy,  Portugal,  Spain,  UK",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-03T15:22:20+00:00"
     },
     {
       "id": "arbeitnow-quality-engineer-london-153337",
@@ -223,32 +223,6 @@
       "postedAt": "2026-11-02T17:30:44.000Z"
     },
     {
-      "id": "arbeitnow-quality-assurance-manager-manchester-254215",
-      "title": "Quality Assurance Manager",
-      "company": "PHMG Careers",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/phmg-careers/quality-assurance-manager-manchester-254215",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Manchester, England, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-02T15:45:25.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-manager-manchester-185538",
-      "title": "Quality Assurance Manager",
-      "company": "PHMG Careers",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/phmg-careers/quality-assurance-manager-manchester-185538",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Manchester, England, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-02T15:45:25.000Z"
-    },
-    {
       "id": "arbeitnow-professional-ict-test-manager-sip-viso-test-automation-60-80-refnr-47713-bern-391249",
       "title": "Professional ICT Test Manager (m/w/d) - SIP / VISO / Test Automation (60-80%) (Ref.Nr.: 47713)",
       "company": "Wavestone Germany AG",
@@ -353,32 +327,6 @@
       "postedAt": "2026-10-31T15:40:14.000Z"
     },
     {
-      "id": "arbeitnow-junior-data-quality-analyst-london-42888",
-      "title": "Junior Data Quality Analyst",
-      "company": "Kpler",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/kpler/junior-data-quality-analyst-london-42888",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-31T03:27:16.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-qa-engineer-uk-petersfield-490636",
-      "title": "Senior QA Engineer",
-      "company": "Keyloop",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/keyloop/senior-qa-engineer-uk-petersfield-490636",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "UK (Petersfield)",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-31T03:27:15.000Z"
-    },
-    {
       "id": "arbeitnow-quality-assurance-engineer-zurich-31665",
       "title": "Quality Assurance Engineer",
       "company": "Crypto Finance",
@@ -390,19 +338,6 @@
       "location": "Zürich, Switzerland",
       "country": "Other",
       "postedAt": "2026-10-30T21:20:17.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-senior-mobile-quality-engineer-206450",
-      "title": "Senior Mobile Quality Engineer",
-      "company": "Lendable",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/lendable/remote-senior-mobile-quality-engineer-206450",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "UK Remote",
-      "country": "United Kingdom",
-      "postedAt": "2026-10-30T18:40:16.000Z"
     },
     {
       "id": "arbeitnow-software-qa-engineer-ii-kassel-hesse-363426",
@@ -522,19 +457,6 @@
       "postedAt": "2026-10-29T09:31:28.000Z"
     },
     {
-      "id": "lever-shieldai-029739dd-9928-4877-93b3-29666e625cf4",
-      "title": "Team Lead, Software Test & Quality Assurance",
-      "company": "Shield AI",
-      "url": "https://jobs.lever.co/shieldai/029739dd-9928-4877-93b3-29666e625cf4",
-      "source": "Shield AI",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Melbourne",
-      "country": "Australia",
-      "postedAt": "2026-10-29T00:49:11.158Z"
-    },
-    {
       "id": "greenhouse-figma-6233207004",
       "title": "Technical Quality Specialist - Figma Weave (Singapore) ",
       "company": "Figma",
@@ -572,19 +494,6 @@
       "location": "Arvada, CO - US",
       "country": "United States",
       "postedAt": "2026-10-22T15:39:14.177+00:00"
-    },
-    {
-      "id": "lever-shieldai-427ac807-bc6a-4e8c-8f15-8322880ffcaf",
-      "title": "Staff Engineer, Test Automation - San Mateo (R5792)",
-      "company": "Shield AI",
-      "url": "https://jobs.lever.co/shieldai/427ac807-bc6a-4e8c-8f15-8322880ffcaf",
-      "source": "Shield AI",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, California",
-      "country": "United States",
-      "postedAt": "2026-10-21T21:43:26.294Z"
     }
   ]
 }
