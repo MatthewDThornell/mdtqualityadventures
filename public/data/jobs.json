@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-11-04T13:43:20.952Z",
+  "fetchedAt": "2026-11-04T23:09:37.895Z",
   "jobs": [
+    {
+      "id": "greenhouse-verkada-5082745007",
+      "title": "Senior Test Engineer – Alarms",
+      "company": "Verkada",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5082745007",
+      "source": "Verkada",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA United States",
+      "country": "United States",
+      "postedAt": "2026-11-04T13:53:08-05:00"
+    },
+    {
+      "id": "jobicy-158931",
+      "title": "Freelance Software Tester for Payments testing (Remote in Germany & the Netherlands)",
+      "company": "Testlio",
+      "url": "https://jobicy.com/jobs/158931-freelance-software-tester-for-payments-testing-remote-in-germany-the-netherlands-2",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Germany,  Netherlands",
+      "country": "Germany",
+      "postedAt": "2026-11-04T13:47:37+00:00"
+    },
     {
       "id": "arbeitnow-production-assembly-test-engineer-reading-296878",
       "title": "Production Assembly & Test Engineer",
@@ -301,32 +327,6 @@
       "postedAt": "2026-11-02T03:27:31.000Z"
     },
     {
-      "id": "arbeitnow-senior-quality-engineer-monopoly-go-495119",
-      "title": "Senior Quality Engineer - MONOPOLY GO!",
-      "company": "Scopely",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/scopely/senior-quality-engineer-monopoly-go-495119",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-11-01T00:55:22.000Z"
-    },
-    {
-      "id": "arbeitnow-sr-manager-quality-assurance-london-118965",
-      "title": "Sr Manager Quality Assurance",
-      "company": "Hasbro",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/hasbro/sr-manager-quality-assurance-london-118965",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-01T00:55:21.000Z"
-    },
-    {
       "id": "arbeitnow-senior-qa-engineer-mobile-berlin-8108",
       "title": "(Senior) QA Engineer - Mobile (x/f/m)",
       "company": "dkbcodefactory",
@@ -483,19 +483,6 @@
       "postedAt": "2026-10-29T12:00:56.000Z"
     },
     {
-      "id": "arbeitnow-senior-qa-engineer-berlin-462833",
-      "title": "Senior QA Engineer (m/f/d)",
-      "company": "Boardwise GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/boardwise-gmbh/senior-qa-engineer-berlin-462833",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-10-29T09:31:28.000Z"
-    },
-    {
       "id": "lever-shieldai-029739dd-9928-4877-93b3-29666e625cf4",
       "title": "Team Lead, Software Test & Quality Assurance",
       "company": "Shield AI",
@@ -546,19 +533,6 @@
       "location": "Arvada, CO - US",
       "country": "United States",
       "postedAt": "2026-10-22T15:39:14.177+00:00"
-    },
-    {
-      "id": "lever-shieldai-427ac807-bc6a-4e8c-8f15-8322880ffcaf",
-      "title": "Staff Engineer, Test Automation - San Mateo (R5792)",
-      "company": "Shield AI",
-      "url": "https://jobs.lever.co/shieldai/427ac807-bc6a-4e8c-8f15-8322880ffcaf",
-      "source": "Shield AI",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, California",
-      "country": "United States",
-      "postedAt": "2026-10-21T21:43:26.294Z"
     }
   ]
 }
