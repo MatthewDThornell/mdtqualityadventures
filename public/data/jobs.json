@@ -1,6 +1,71 @@
 {
-  "fetchedAt": "2026-11-04T23:09:37.895Z",
+  "fetchedAt": "2026-11-05T04:56:03.802Z",
   "jobs": [
+    {
+      "id": "arbeitnow-senior-quality-assurance-engineer-london-282179",
+      "title": "Senior Quality Assurance Engineer",
+      "company": "Hudl",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/hudl/senior-quality-assurance-engineer-london-282179",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-05T03:55:18.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-qa-engineer-berlin-41727",
+      "title": "(Senior) QA Engineer",
+      "company": "Tilla Technologies",
+      "url": "https://www.arbeitnow.com/jobs/companies/tilla-technologies/senior-qa-engineer-berlin-41727",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-11-05T03:40:18.000Z"
+    },
+    {
+      "id": "arbeitnow-communications-test-engineer-i-milton-keynes-united-kingdom-169688",
+      "title": "Communications Test Engineer I",
+      "company": "CesiumAstro",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/cesiumastro/communications-test-engineer-i-milton-keynes-united-kingdom-169688",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Milton Keynes, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-05T03:08:37.000Z"
+    },
+    {
+      "id": "arbeitnow-staff-product-test-engineer-edinburgh-scotland-361823",
+      "title": "Staff Product Test Engineer",
+      "company": "Cirrus",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/cirrus/staff-product-test-engineer-edinburgh-scotland-361823",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Edinburgh, Scotland",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-05T03:08:34.000Z"
+    },
+    {
+      "id": "arbeitnow-embedded-system-test-engineer-edinburgh-scotland-305508",
+      "title": "Embedded System Test Engineer",
+      "company": "Cirrus",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/cirrus/embedded-system-test-engineer-edinburgh-scotland-305508",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Edinburgh, Scotland",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-05T03:08:34.000Z"
+    },
     {
       "id": "greenhouse-verkada-5082745007",
       "title": "Senior Test Engineer – Alarms",
