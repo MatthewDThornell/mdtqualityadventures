@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-05T13:55:49.527Z",
+  "fetchedAt": "2026-11-05T23:13:38.654Z",
   "jobs": [
     {
       "id": "greenhouse-roblox-8338120",
@@ -12,7 +12,72 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-11-05T06:04:33-05:00"
+      "postedAt": "2026-11-05T14:31:39-05:00"
+    },
+    {
+      "id": "greenhouse-scaleai-4742042005",
+      "title": "Systems Engineering Integration & Test Lead, Public Sector",
+      "company": "Scale AI",
+      "url": "https://job-boards.greenhouse.io/scaleai/jobs/4742042005",
+      "source": "Scale AI",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Washington, DC",
+      "country": "United States",
+      "postedAt": "2026-11-05T14:01:00-05:00"
+    },
+    {
+      "id": "ashby-crusoe-0027f489-8720-4bba-ba86-23d16799541e",
+      "title": "Senior QA Engineer, Client Interfaces",
+      "company": "Crusoe",
+      "url": "https://jobs.ashbyhq.com/crusoe/0027f489-8720-4bba-ba86-23d16799541e",
+      "source": "Crusoe",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Francisco, CA - US",
+      "country": "United States",
+      "postedAt": "2026-11-05T16:57:09.602+00:00"
+    },
+    {
+      "id": "arbeitnow-test-manager-output-ccm-dokumenten-management-systemen-bern-347745",
+      "title": "Test Manager - Output-/CCM-/Dokumenten-Management-Systemen",
+      "company": "Coopers Group AG",
+      "url": "https://www.arbeitnow.ch/jobs/companies/coopers-group-ag/test-manager-output-ccm-dokumenten-management-systemen-bern-347745",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Bern",
+      "country": "Other",
+      "postedAt": "2026-11-05T16:00:50.000Z"
+    },
+    {
+      "id": "arbeitnow-test-engineer-bern-487432",
+      "title": "Test Engineer",
+      "company": "Coopers Group AG",
+      "url": "https://www.arbeitnow.ch/jobs/companies/coopers-group-ag/test-engineer-bern-487432",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Bern",
+      "country": "Other",
+      "postedAt": "2026-11-05T15:31:06.000Z"
+    },
+    {
+      "id": "jobicy-159157",
+      "title": "Manual QA Engineer (Game Client)",
+      "company": "Playson",
+      "url": "https://jobicy.com/jobs/159157-manual-qa-engineer-game-client-2",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Europe",
+      "country": "Other",
+      "postedAt": "2026-11-05T14:03:48+00:00"
     },
     {
       "id": "arbeitnow-remote-qa-tester-299386",
@@ -52,19 +117,6 @@
       "location": "France,  Greece,  Italy,  Romania,  Spain",
       "country": "France",
       "postedAt": "2026-11-05T04:54:20+00:00"
-    },
-    {
-      "id": "jobicy-159098",
-      "title": "British Sign Language- Video Quality Specialist Remote (UK)",
-      "company": "Welo Global",
-      "url": "https://jobicy.com/jobs/159098-british-sign-language-video-quality-specialist-remote-uk",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "UK",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-05T04:54:06+00:00"
     },
     {
       "id": "arbeitnow-senior-quality-assurance-engineer-london-282179",
@@ -327,19 +379,6 @@
       "postedAt": "2026-11-03T02:52:38-05:00"
     },
     {
-      "id": "arbeitnow-system-test-engineer-oxford-79265",
-      "title": "System Test Engineer",
-      "company": "Salience Labs",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/salience-labs/system-test-engineer-oxford-79265",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Oxford, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-03T03:40:17.000Z"
-    },
-    {
       "id": "arbeitnow-test-engineer-aachen-north-rhine-westphalia-447583",
       "title": "Test Engineer",
       "company": "Asteralabs",
@@ -483,32 +522,6 @@
       "postedAt": "2026-10-30T15:17:28.000Z"
     },
     {
-      "id": "arbeitnow-robotics-test-automation-engineer-munich-bavaria-152983",
-      "title": "Robotics Test Automation Engineer (m/f/d)",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/robotics-test-automation-engineer-munich-bavaria-152983",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich, Bavaria",
-      "country": "Germany",
-      "postedAt": "2026-10-29T21:55:22.000Z"
-    },
-    {
-      "id": "arbeitnow-projektmanager-agentic-quality-engineering-refnr-48109-zurich-418009",
-      "title": "Projektmanager (m/w/d) Agentic Quality Engineering (Ref.Nr.: 48109)",
-      "company": "Wavestone Germany AG",
-      "url": "https://www.arbeitnow.ch/jobs/companies/wavestone-germany-ag/projektmanager-agentic-quality-engineering-refnr-48109-zurich-418009",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Zürich",
-      "country": "Other",
-      "postedAt": "2026-10-29T16:31:23.000Z"
-    },
-    {
       "id": "greenhouse-stripe-8153331",
       "title": "Software Quality Assurance Engineer",
       "company": "Stripe",
@@ -559,32 +572,6 @@
       "location": "Singapore",
       "country": "Singapore",
       "postedAt": "2026-10-27T13:40:12-04:00"
-    },
-    {
-      "id": "greenhouse-scaleai-4742042005",
-      "title": "Systems Engineering Integration & Test Lead, Public Sector",
-      "company": "Scale AI",
-      "url": "https://job-boards.greenhouse.io/scaleai/jobs/4742042005",
-      "source": "Scale AI",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Washington, DC",
-      "country": "United States",
-      "postedAt": "2026-10-22T14:10:38-04:00"
-    },
-    {
-      "id": "ashby-crusoe-d202513c-b746-4d86-a468-8f2cf2c3e37e",
-      "title": "Senior Supervisor, Quality Engineering",
-      "company": "Crusoe",
-      "url": "https://jobs.ashbyhq.com/crusoe/d202513c-b746-4d86-a468-8f2cf2c3e37e",
-      "source": "Crusoe",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Arvada, CO - US",
-      "country": "United States",
-      "postedAt": "2026-10-22T15:39:14.177+00:00"
     }
   ]
 }
