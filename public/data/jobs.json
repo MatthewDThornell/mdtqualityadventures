@@ -1,6 +1,71 @@
 {
-  "fetchedAt": "2026-11-05T04:56:03.802Z",
+  "fetchedAt": "2026-11-05T13:55:49.527Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-8338120",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-11-05T06:04:33-05:00"
+    },
+    {
+      "id": "arbeitnow-remote-qa-tester-299386",
+      "title": "QA Tester",
+      "company": "Plentific",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/plentific/remote-qa-tester-299386",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "remote",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-11-05T09:40:25.000Z"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8200468",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Singapore, Singapore",
+      "country": "Singapore",
+      "postedAt": "2026-11-05T03:48:50-05:00"
+    },
+    {
+      "id": "jobicy-159099",
+      "title": "Bulgarian Localization QA Tester / Proofreader",
+      "company": "Welo Global",
+      "url": "https://jobicy.com/jobs/159099-bulgarian-localization-qa-tester-proofreader",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "France,  Greece,  Italy,  Romania,  Spain",
+      "country": "France",
+      "postedAt": "2026-11-05T04:54:20+00:00"
+    },
+    {
+      "id": "jobicy-159098",
+      "title": "British Sign Language- Video Quality Specialist Remote (UK)",
+      "company": "Welo Global",
+      "url": "https://jobicy.com/jobs/159098-british-sign-language-video-quality-specialist-remote-uk",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "UK",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-05T04:54:06+00:00"
+    },
     {
       "id": "arbeitnow-senior-quality-assurance-engineer-london-282179",
       "title": "Senior Quality Assurance Engineer",
@@ -78,19 +143,6 @@
       "location": "San Mateo, CA United States",
       "country": "United States",
       "postedAt": "2026-11-04T13:53:08-05:00"
-    },
-    {
-      "id": "jobicy-158931",
-      "title": "Freelance Software Tester for Payments testing (Remote in Germany & the Netherlands)",
-      "company": "Testlio",
-      "url": "https://jobicy.com/jobs/158931-freelance-software-tester-for-payments-testing-remote-in-germany-the-netherlands-2",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Germany,  Netherlands",
-      "country": "Germany",
-      "postedAt": "2026-11-04T13:47:37+00:00"
     },
     {
       "id": "arbeitnow-production-assembly-test-engineer-reading-296878",
@@ -327,32 +379,6 @@
       "postedAt": "2026-11-02T17:30:44.000Z"
     },
     {
-      "id": "arbeitnow-quality-assurance-manager-manchester-254215",
-      "title": "Quality Assurance Manager",
-      "company": "PHMG Careers",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/phmg-careers/quality-assurance-manager-manchester-254215",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Manchester, England, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-02T15:45:25.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-manager-manchester-185538",
-      "title": "Quality Assurance Manager",
-      "company": "PHMG Careers",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/phmg-careers/quality-assurance-manager-manchester-185538",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Manchester, England, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-02T15:45:25.000Z"
-    },
-    {
       "id": "arbeitnow-professional-ict-test-manager-sip-viso-test-automation-60-80-refnr-47713-bern-391249",
       "title": "Professional ICT Test Manager (m/w/d) - SIP / VISO / Test Automation (60-80%) (Ref.Nr.: 47713)",
       "company": "Wavestone Germany AG",
@@ -364,19 +390,6 @@
       "location": "Bern",
       "country": "Other",
       "postedAt": "2026-11-02T15:01:06.000Z"
-    },
-    {
-      "id": "arbeitnow-staff-qa-automation-engineer-united-kingdom-170297",
-      "title": "Staff QA Automation Engineer",
-      "company": "tem",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/tem/staff-qa-automation-engineer-united-kingdom-170297",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-02T09:40:18.000Z"
     },
     {
       "id": "arbeitnow-mechatronic-design-test-engineer-zurich-385014",
@@ -470,19 +483,6 @@
       "postedAt": "2026-10-30T15:17:28.000Z"
     },
     {
-      "id": "greenhouse-thoughtworks-8200468",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
-      "postedAt": "2026-10-30T10:48:43-04:00"
-    },
-    {
       "id": "arbeitnow-robotics-test-automation-engineer-munich-bavaria-152983",
       "title": "Robotics Test Automation Engineer (m/f/d)",
       "company": "Agilerobotsse",
@@ -533,19 +533,6 @@
       "location": "Mexico City",
       "country": "Mexico",
       "postedAt": "2026-10-29T10:42:09-04:00"
-    },
-    {
-      "id": "arbeitnow-user-acceptance-test-engineer-pressig-155748",
-      "title": "User Acceptance Test Engineer",
-      "company": "Booming Games",
-      "url": "https://www.arbeitnow.com/jobs/companies/booming-games/user-acceptance-test-engineer-pressig-155748",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Pressig",
-      "country": "Other",
-      "postedAt": "2026-10-29T12:00:56.000Z"
     },
     {
       "id": "lever-shieldai-029739dd-9928-4877-93b3-29666e625cf4",
