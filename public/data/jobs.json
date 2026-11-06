@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-11-06T04:55:36.196Z",
+  "fetchedAt": "2026-11-06T13:41:20.321Z",
   "jobs": [
+    {
+      "id": "arbeitnow-quality-assurance-associate-for-csl-behring-50-bern-425640",
+      "title": "Quality Assurance Associate (m/w/d) for CSL Behring (50%)",
+      "company": "We make it GmbH",
+      "url": "https://www.arbeitnow.ch/jobs/companies/we-make-it-gmbh/quality-assurance-associate-for-csl-behring-50-bern-425640",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Bern",
+      "country": "Other",
+      "postedAt": "2026-11-06T11:05:09.000Z"
+    },
+    {
+      "id": "greenhouse-roblox-8338120",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-11-06T02:35:47-05:00"
+    },
+    {
+      "id": "arbeitnow-senior-qa-engineer-mobile-london-218254",
+      "title": "Senior QA Engineer - Mobile",
+      "company": "Waracle",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/waracle/senior-qa-engineer-mobile-london-218254",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "London, England, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-06T06:31:23.000Z"
+    },
     {
       "id": "arbeitnow-qa-engineer-breda-496087",
       "title": "QA Engineer",
@@ -26,19 +65,6 @@
       "location": "United Kingdom, London",
       "country": "United Kingdom",
       "postedAt": "2026-11-06T00:40:12.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-8338120",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-11-05T14:31:39-05:00"
     },
     {
       "id": "greenhouse-scaleai-4742042005",
@@ -93,19 +119,6 @@
       "postedAt": "2026-11-05T15:31:06.000Z"
     },
     {
-      "id": "jobicy-159157",
-      "title": "Manual QA Engineer (Game Client)",
-      "company": "Playson",
-      "url": "https://jobicy.com/jobs/159157-manual-qa-engineer-game-client-2",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Europe",
-      "country": "Other",
-      "postedAt": "2026-11-05T14:03:48+00:00"
-    },
-    {
       "id": "arbeitnow-remote-qa-tester-299386",
       "title": "QA Tester",
       "company": "Plentific",
@@ -130,19 +143,6 @@
       "location": "Singapore, Singapore",
       "country": "Singapore",
       "postedAt": "2026-11-05T03:48:50-05:00"
-    },
-    {
-      "id": "jobicy-159099",
-      "title": "Bulgarian Localization QA Tester / Proofreader",
-      "company": "Welo Global",
-      "url": "https://jobicy.com/jobs/159099-bulgarian-localization-qa-tester-proofreader",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "France,  Greece,  Italy,  Romania,  Spain",
-      "country": "France",
-      "postedAt": "2026-11-05T04:54:20+00:00"
     },
     {
       "id": "arbeitnow-senior-quality-assurance-engineer-london-282179",
@@ -273,19 +273,6 @@
       "location": "Remote job",
       "country": "Other",
       "postedAt": "2026-11-03T21:31:09.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-quality-engineer-chassis-and-powertrain-218196",
-      "title": "Senior Quality Engineer, Chassis and Powertrain",
-      "company": "Czinger",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/czinger/senior-quality-engineer-chassis-and-powertrain-218196",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-11-03T18:55:34.000Z"
     },
     {
       "id": "arbeitnow-senior-qa-specialist-utrecht-65997",
@@ -507,32 +494,6 @@
       "location": "Zürich, Switzerland",
       "country": "Other",
       "postedAt": "2026-10-30T21:20:17.000Z"
-    },
-    {
-      "id": "arbeitnow-software-qa-engineer-ii-kassel-hesse-363426",
-      "title": "Software QA Engineer II",
-      "company": "Axon",
-      "url": "https://www.arbeitnow.com/jobs/companies/axon/software-qa-engineer-ii-kassel-hesse-363426",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Kassel, Hesse",
-      "country": "Other",
-      "postedAt": "2026-10-30T15:55:19.000Z"
-    },
-    {
-      "id": "arbeitnow-softwaretester-qa-engineer-app-geratesoftware-konigs-wusterhausen-111844",
-      "title": "Softwaretester / QA Engineer als Scrum Master (m/w/d)",
-      "company": "Augletics GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/augletics-gmbh/softwaretester-qa-engineer-app-geratesoftware-konigs-wusterhausen-111844",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Königs Wusterhausen",
-      "country": "Other",
-      "postedAt": "2026-10-30T15:17:28.000Z"
     },
     {
       "id": "greenhouse-stripe-8153331",
