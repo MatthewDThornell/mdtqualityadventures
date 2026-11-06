@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-11-05T23:13:38.654Z",
+  "fetchedAt": "2026-11-06T04:55:36.196Z",
   "jobs": [
+    {
+      "id": "arbeitnow-qa-engineer-breda-496087",
+      "title": "QA Engineer",
+      "company": "YoungOnes",
+      "url": "https://www.arbeitnow.nl/jobs/companies/youngones/qa-engineer-breda-496087",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Breda, Noord-Brabant, Netherlands",
+      "country": "Netherlands",
+      "postedAt": "2026-11-06T03:31:51.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-software-engineer-quality-engineering-london-70715",
+      "title": "Senior Software Engineer (Quality Engineering)",
+      "company": "Thought Machine",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/thought-machine/senior-software-engineer-quality-engineering-london-70715",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "United Kingdom, London",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-06T00:40:12.000Z"
+    },
     {
       "id": "greenhouse-roblox-8338120",
       "title": "Quality Analyst",
@@ -325,19 +351,6 @@
       "location": "",
       "country": "Remote / Unspecified",
       "postedAt": "2026-11-03T15:55:21.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-engineer-london-153337",
-      "title": "Quality Engineer",
-      "company": "Isembard",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/isembard/quality-engineer-london-153337",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-03T12:40:14.000Z"
     },
     {
       "id": "arbeitnow-test-automation-engineer-uipath-zurich-440417",
