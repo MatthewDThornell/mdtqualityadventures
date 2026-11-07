@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-11-06T22:40:12.580Z",
+  "fetchedAt": "2026-11-07T04:27:58.434Z",
   "jobs": [
+    {
+      "id": "greenhouse-verkada-5237420007",
+      "title": "QA Automation Engineer",
+      "company": "Verkada",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5237420007",
+      "source": "Verkada",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Poland",
+      "country": "Other",
+      "postedAt": "2026-11-06T19:37:32-05:00"
+    },
+    {
+      "id": "greenhouse-verkada-5082745007",
+      "title": "Senior Test Engineer – Alarms",
+      "company": "Verkada",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5082745007",
+      "source": "Verkada",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA United States",
+      "country": "United States",
+      "postedAt": "2026-11-06T19:37:32-05:00"
+    },
     {
       "id": "ashby-openai-0369bd4b-bfb1-4c36-90cb-4e3a24365150",
       "title": "Robotics Test Engineer",
@@ -52,19 +78,6 @@
       "location": "Munich, Bavaria",
       "country": "Germany",
       "postedAt": "2026-11-06T18:55:22.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-engineer-automation-united-kingdom-252282",
-      "title": "Quality Assurance Engineer (Automation)",
-      "company": "Lyrebird Health",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/lyrebird-health/quality-assurance-engineer-automation-united-kingdom-252282",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-06T18:40:13.000Z"
     },
     {
       "id": "jobicy-159357",
@@ -182,19 +195,6 @@
       "location": "Breda, Noord-Brabant, Netherlands",
       "country": "Netherlands",
       "postedAt": "2026-11-06T03:31:51.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-software-engineer-quality-engineering-london-70715",
-      "title": "Senior Software Engineer (Quality Engineering)",
-      "company": "Thought Machine",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/thought-machine/senior-software-engineer-quality-engineering-london-70715",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "United Kingdom, London",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-06T00:40:12.000Z"
     },
     {
       "id": "greenhouse-scaleai-4742042005",
@@ -338,32 +338,6 @@
       "location": "Edinburgh, Scotland",
       "country": "United Kingdom",
       "postedAt": "2026-11-05T03:08:34.000Z"
-    },
-    {
-      "id": "greenhouse-verkada-5082745007",
-      "title": "Senior Test Engineer – Alarms",
-      "company": "Verkada",
-      "url": "https://job-boards.greenhouse.io/verkada/jobs/5082745007",
-      "source": "Verkada",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA United States",
-      "country": "United States",
-      "postedAt": "2026-11-04T13:53:08-05:00"
-    },
-    {
-      "id": "arbeitnow-production-assembly-test-engineer-reading-296878",
-      "title": "Production Assembly & Test Engineer",
-      "company": "Xyz Reality",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/xyz-reality/production-assembly-test-engineer-reading-296878",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Reading, UK",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-04T09:40:16.000Z"
     },
     {
       "id": "arbeitnow-senior-qa-manager-fully-remote-berlin-156016",
