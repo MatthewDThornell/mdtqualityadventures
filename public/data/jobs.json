@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-07T04:27:58.434Z",
+  "fetchedAt": "2026-11-07T12:22:31.621Z",
   "jobs": [
     {
       "id": "greenhouse-verkada-5237420007",
@@ -80,30 +80,17 @@
       "postedAt": "2026-11-06T18:55:22.000Z"
     },
     {
-      "id": "jobicy-159357",
-      "title": "Senior QA Engineer - US Remote",
-      "company": "PerfectServe",
-      "url": "https://jobicy.com/jobs/159357-senior-qa-engineer-us-remote",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "id": "arbeitnow-quality-assurance-engineer-automation-united-kingdom-252282",
+      "title": "Quality Assurance Engineer (Automation)",
+      "company": "Lyrebird Health",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/lyrebird-health/quality-assurance-engineer-automation-united-kingdom-252282",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
-      "workType": "Remote",
-      "location": "USA",
-      "country": "United States",
-      "postedAt": "2026-11-06T15:59:09+00:00"
-    },
-    {
-      "id": "jobicy-159347",
-      "title": "Sr. Staff SDET, Customer Engineering",
-      "company": "hims &#038; hers",
-      "url": "https://jobicy.com/jobs/159347-sr-staff-sdet-customer-engineering",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "USA",
-      "country": "United States",
-      "postedAt": "2026-11-06T15:58:27+00:00"
+      "workType": "On-site",
+      "location": "United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-06T18:40:13.000Z"
     },
     {
       "id": "arbeitnow-quality-assurance-manager-as-freelancer-net-c-all-genders-berlin-302572",
@@ -195,6 +182,19 @@
       "location": "Breda, Noord-Brabant, Netherlands",
       "country": "Netherlands",
       "postedAt": "2026-11-06T03:31:51.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-software-engineer-quality-engineering-london-70715",
+      "title": "Senior Software Engineer (Quality Engineering)",
+      "company": "Thought Machine",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/thought-machine/senior-software-engineer-quality-engineering-london-70715",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "United Kingdom, London",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-06T00:40:12.000Z"
     },
     {
       "id": "greenhouse-scaleai-4742042005",
@@ -312,32 +312,6 @@
       "location": "Milton Keynes, United Kingdom",
       "country": "United Kingdom",
       "postedAt": "2026-11-05T03:08:37.000Z"
-    },
-    {
-      "id": "arbeitnow-staff-product-test-engineer-edinburgh-scotland-361823",
-      "title": "Staff Product Test Engineer",
-      "company": "Cirrus",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/cirrus/staff-product-test-engineer-edinburgh-scotland-361823",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Edinburgh, Scotland",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-05T03:08:34.000Z"
-    },
-    {
-      "id": "arbeitnow-embedded-system-test-engineer-edinburgh-scotland-305508",
-      "title": "Embedded System Test Engineer",
-      "company": "Cirrus",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/cirrus/embedded-system-test-engineer-edinburgh-scotland-305508",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Edinburgh, Scotland",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-05T03:08:34.000Z"
     },
     {
       "id": "arbeitnow-senior-qa-manager-fully-remote-berlin-156016",
