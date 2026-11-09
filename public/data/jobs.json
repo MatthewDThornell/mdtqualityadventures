@@ -1,6 +1,32 @@
 {
-  "fetchedAt": "2026-11-09T04:27:11.201Z",
+  "fetchedAt": "2026-11-09T15:02:20.535Z",
   "jobs": [
+    {
+      "id": "arbeitnow-test-engineer-berlin-378661",
+      "title": "Test Engineer (m/w/d)",
+      "company": "citema group GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/citema-group-gmbh/test-engineer-berlin-378661",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-11-09T14:00:55.000Z"
+    },
+    {
+      "id": "jobicy-159997",
+      "title": "Freelance Software Tester (Remote in Réunion, Monaco)",
+      "company": "Testlio",
+      "url": "https://jobicy.com/jobs/159997-freelance-software-tester-remote-in-reunion-monaco",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "France",
+      "country": "France",
+      "postedAt": "2026-11-09T08:23:22+00:00"
+    },
     {
       "id": "greenhouse-roblox-8338120",
       "title": "Quality Analyst",
@@ -12,7 +38,20 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-11-08T14:34:23-05:00"
+      "postedAt": "2026-11-09T02:34:28-05:00"
+    },
+    {
+      "id": "greenhouse-thoughtworks-8200468",
+      "title": "Lead Quality Analyst",
+      "company": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
+      "source": "Thoughtworks",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Singapore, Singapore",
+      "country": "Singapore",
+      "postedAt": "2026-11-09T01:07:01-05:00"
     },
     {
       "id": "arbeitnow-system-test-automation-engineer-london-united-kingdom-401378",
@@ -249,19 +288,6 @@
       "postedAt": "2026-11-06T12:31:10.000Z"
     },
     {
-      "id": "arbeitnow-quality-assurance-associate-for-csl-behring-50-bern-425640",
-      "title": "Quality Assurance Associate (m/w/d) for CSL Behring (50%)",
-      "company": "We make it GmbH",
-      "url": "https://www.arbeitnow.ch/jobs/companies/we-make-it-gmbh/quality-assurance-associate-for-csl-behring-50-bern-425640",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Bern",
-      "country": "Other",
-      "postedAt": "2026-11-06T11:05:09.000Z"
-    },
-    {
       "id": "arbeitnow-senior-qa-engineer-mobile-london-218254",
       "title": "Senior QA Engineer - Mobile",
       "company": "Waracle",
@@ -338,19 +364,6 @@
       "location": "Bern",
       "country": "Other",
       "postedAt": "2026-11-05T15:31:06.000Z"
-    },
-    {
-      "id": "greenhouse-thoughtworks-8200468",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
-      "postedAt": "2026-11-05T03:48:50-05:00"
     },
     {
       "id": "arbeitnow-senior-qa-engineer-berlin-41727",
