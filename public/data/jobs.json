@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-08T21:38:23.718Z",
+  "fetchedAt": "2026-11-09T04:27:11.201Z",
   "jobs": [
     {
       "id": "greenhouse-roblox-8338120",
@@ -288,19 +288,6 @@
       "postedAt": "2026-11-06T03:31:51.000Z"
     },
     {
-      "id": "arbeitnow-senior-software-engineer-quality-engineering-london-70715",
-      "title": "Senior Software Engineer (Quality Engineering)",
-      "company": "Thought Machine",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/thought-machine/senior-software-engineer-quality-engineering-london-70715",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "United Kingdom, London",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-06T00:40:12.000Z"
-    },
-    {
       "id": "greenhouse-scaleai-4742042005",
       "title": "Systems Engineering Integration & Test Lead, Public Sector",
       "company": "Scale AI",
@@ -481,19 +468,6 @@
       "location": "Bern",
       "country": "Other",
       "postedAt": "2026-11-02T15:01:06.000Z"
-    },
-    {
-      "id": "arbeitnow-mechatronic-design-test-engineer-zurich-385014",
-      "title": "Mechatronic Design & Test Engineer",
-      "company": "Wingtra 2",
-      "url": "https://www.arbeitnow.ch/jobs/companies/wingtra-2/mechatronic-design-test-engineer-zurich-385014",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Zürich",
-      "country": "Other",
-      "postedAt": "2026-11-02T03:27:31.000Z"
     },
     {
       "id": "greenhouse-stripe-8153331",
