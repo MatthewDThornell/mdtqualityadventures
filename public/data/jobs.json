@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-11-09T15:02:20.535Z",
+  "fetchedAt": "2026-11-10T01:08:13.675Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-8338120",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-11-09T14:34:20-05:00"
+    },
+    {
+      "id": "arbeitnow-qa-engineer-london-greater-london-431582",
+      "title": "QA Engineer",
+      "company": "Hearst",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/hearst/qa-engineer-london-greater-london-431582",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "LONDON, Greater London",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-09T18:55:31.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-engineer-hildesheim-16538",
+      "title": "Quality Engineer (m/w/d)",
+      "company": "AutoGyro GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/autogyro-gmbh/quality-engineer-hildesheim-16538",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Hildesheim",
+      "country": "Other",
+      "postedAt": "2026-11-09T16:31:06.000Z"
+    },
     {
       "id": "arbeitnow-test-engineer-berlin-378661",
       "title": "Test Engineer (m/w/d)",
@@ -13,32 +52,6 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-11-09T14:00:55.000Z"
-    },
-    {
-      "id": "jobicy-159997",
-      "title": "Freelance Software Tester (Remote in Réunion, Monaco)",
-      "company": "Testlio",
-      "url": "https://jobicy.com/jobs/159997-freelance-software-tester-remote-in-reunion-monaco",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "France",
-      "country": "France",
-      "postedAt": "2026-11-09T08:23:22+00:00"
-    },
-    {
-      "id": "greenhouse-roblox-8338120",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-11-09T02:34:28-05:00"
     },
     {
       "id": "greenhouse-thoughtworks-8200468",
@@ -210,19 +223,6 @@
       "postedAt": "2026-11-06T18:55:23.000Z"
     },
     {
-      "id": "arbeitnow-quality-assurance-inspector-all-genders-munich-bavaria-295933",
-      "title": "Quality Assurance Inspector (All Genders)",
-      "company": "Skdse",
-      "url": "https://www.arbeitnow.com/jobs/companies/skdse/quality-assurance-inspector-all-genders-munich-bavaria-295933",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich, Bavaria",
-      "country": "Germany",
-      "postedAt": "2026-11-06T18:55:22.000Z"
-    },
-    {
       "id": "arbeitnow-quality-assurance-engineer-automation-united-kingdom-252282",
       "title": "Quality Assurance Engineer (Automation)",
       "company": "Lyrebird Health",
@@ -286,19 +286,6 @@
       "location": "Siegen, Nordrhein-Westfalen, Germany",
       "country": "Germany",
       "postedAt": "2026-11-06T12:31:10.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-qa-engineer-mobile-london-218254",
-      "title": "Senior QA Engineer - Mobile",
-      "company": "Waracle",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/waracle/senior-qa-engineer-mobile-london-218254",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "London, England, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-06T06:31:23.000Z"
     },
     {
       "id": "arbeitnow-qa-engineer-breda-496087",
@@ -379,19 +366,6 @@
       "postedAt": "2026-11-05T03:40:18.000Z"
     },
     {
-      "id": "arbeitnow-senior-qa-manager-fully-remote-berlin-156016",
-      "title": "Senior QA Manager - Fully Remote",
-      "company": "SOFTGAMES",
-      "url": "https://www.arbeitnow.com/jobs/companies/softgames/senior-qa-manager-fully-remote-berlin-156016",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Remote job",
-      "country": "Other",
-      "postedAt": "2026-11-04T03:31:37.000Z"
-    },
-    {
       "id": "greenhouse-duolingo-8927565002",
       "title": "QA Specialist I, Recent Graduate",
       "company": "Duolingo",
@@ -455,32 +429,6 @@
       "location": "New York, NY",
       "country": "United States",
       "postedAt": "2026-11-03T02:52:38-05:00"
-    },
-    {
-      "id": "arbeitnow-senior-testmanager-test-engineer-katalon-studio-60-100-refnr-48146-zurich-142827",
-      "title": "Senior Testmanager / Test Engineer (m/w/d) - Katalon Studio (60-100%) (Ref.Nr.: 48146)",
-      "company": "Wavestone Germany AG",
-      "url": "https://www.arbeitnow.ch/jobs/companies/wavestone-germany-ag/senior-testmanager-test-engineer-katalon-studio-60-100-refnr-48146-zurich-142827",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Zürich",
-      "country": "Other",
-      "postedAt": "2026-11-02T17:30:44.000Z"
-    },
-    {
-      "id": "arbeitnow-professional-ict-test-manager-sip-viso-test-automation-60-80-refnr-47713-bern-391249",
-      "title": "Professional ICT Test Manager (m/w/d) - SIP / VISO / Test Automation (60-80%) (Ref.Nr.: 47713)",
-      "company": "Wavestone Germany AG",
-      "url": "https://www.arbeitnow.ch/jobs/companies/wavestone-germany-ag/professional-ict-test-manager-sip-viso-test-automation-60-80-refnr-47713-bern-391249",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Bern",
-      "country": "Other",
-      "postedAt": "2026-11-02T15:01:06.000Z"
     },
     {
       "id": "greenhouse-stripe-8153331",
