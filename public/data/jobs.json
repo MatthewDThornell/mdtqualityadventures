@@ -1,6 +1,71 @@
 {
-  "fetchedAt": "2026-11-10T01:08:13.675Z",
+  "fetchedAt": "2026-11-10T14:14:48.542Z",
   "jobs": [
+    {
+      "id": "arbeitnow-senior-quality-engineer-parsdorf-bavaria-411511",
+      "title": "Senior Quality Engineer (m/f/d)",
+      "company": "isaraerospace",
+      "url": "https://www.arbeitnow.com/jobs/companies/isaraerospace/senior-quality-engineer-parsdorf-bavaria-411511",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Parsdorf, Bavaria",
+      "country": "Other",
+      "postedAt": "2026-11-10T12:55:22.000Z"
+    },
+    {
+      "id": "arbeitnow-test-engineer-test-automation-engineer-schwerpunkt-api-testing-hamburg-87282",
+      "title": "Test Engineer / Test Automation Engineer (m/w/d) Schwerpunkt API-Testing",
+      "company": "Nelta GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/nelta-gmbh/test-engineer-test-automation-engineer-schwerpunkt-api-testing-hamburg-87282",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Hamburg",
+      "country": "Germany",
+      "postedAt": "2026-11-10T11:30:58.000Z"
+    },
+    {
+      "id": "arbeitnow-test-engineer-qa-consultant-hamburg-291683",
+      "title": "Test Engineer - QA Consultant (m/w/d)",
+      "company": "Nelta GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/nelta-gmbh/test-engineer-qa-consultant-hamburg-291683",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Hamburg",
+      "country": "Germany",
+      "postedAt": "2026-11-10T11:01:20.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-test-automation-engineer-berlin-403737",
+      "title": "Senior Test Automation Engineer (m/w/d)",
+      "company": "Nelta GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/nelta-gmbh/senior-test-automation-engineer-berlin-403737",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-11-10T11:01:16.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-spezialist-furstenfeldbruck-bavaria-100249",
+      "title": "Quality Assurance Spezialist (m/w/d)",
+      "company": "Agilerobotsse",
+      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/quality-assurance-spezialist-furstenfeldbruck-bavaria-100249",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Fürstenfeldbruck, Bavaria",
+      "country": "Other",
+      "postedAt": "2026-11-10T09:55:16.000Z"
+    },
     {
       "id": "greenhouse-roblox-8338120",
       "title": "Quality Analyst",
@@ -12,7 +77,20 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-11-09T14:34:20-05:00"
+      "postedAt": "2026-11-10T02:34:40-05:00"
+    },
+    {
+      "id": "arbeitnow-data-quality-analyst-cdi-saint-denis-152136",
+      "title": "Data Quality Analyst - CDI - F/H/X",
+      "company": "Veepee",
+      "url": "https://www.arbeitnow.fr/jobs/companies/veepee/data-quality-analyst-cdi-saint-denis-152136",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Saint-Denis",
+      "country": "Other",
+      "postedAt": "2026-11-10T03:27:46.000Z"
     },
     {
       "id": "arbeitnow-qa-engineer-london-greater-london-431582",
@@ -223,17 +301,17 @@
       "postedAt": "2026-11-06T18:55:23.000Z"
     },
     {
-      "id": "arbeitnow-quality-assurance-engineer-automation-united-kingdom-252282",
-      "title": "Quality Assurance Engineer (Automation)",
-      "company": "Lyrebird Health",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/lyrebird-health/quality-assurance-engineer-automation-united-kingdom-252282",
+      "id": "arbeitnow-quality-assurance-inspector-all-genders-munich-bavaria-295933",
+      "title": "Quality Assurance Inspector (All Genders)",
+      "company": "Skdse",
+      "url": "https://www.arbeitnow.com/jobs/companies/skdse/quality-assurance-inspector-all-genders-munich-bavaria-295933",
       "source": "Arbeitnow",
       "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
       "workType": "On-site",
-      "location": "United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-06T18:40:13.000Z"
+      "location": "Munich, Bavaria",
+      "country": "Germany",
+      "postedAt": "2026-11-06T18:55:22.000Z"
     },
     {
       "id": "arbeitnow-quality-assurance-manager-as-freelancer-net-c-all-genders-berlin-302572",
@@ -260,19 +338,6 @@
       "location": "Munich, Bavaria",
       "country": "Germany",
       "postedAt": "2026-11-06T12:55:23.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-mobile-quality-engineer-139365",
-      "title": "Mobile Quality Engineer",
-      "company": "Lendable",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/lendable/remote-mobile-quality-engineer-139365",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "UK Remote",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-06T12:40:13.000Z"
     },
     {
       "id": "arbeitnow-qa-engineer-quantum-computing-siegen-172005",
@@ -353,19 +418,6 @@
       "postedAt": "2026-11-05T15:31:06.000Z"
     },
     {
-      "id": "arbeitnow-senior-qa-engineer-berlin-41727",
-      "title": "(Senior) QA Engineer",
-      "company": "Tilla Technologies",
-      "url": "https://www.arbeitnow.com/jobs/companies/tilla-technologies/senior-qa-engineer-berlin-41727",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-11-05T03:40:18.000Z"
-    },
-    {
       "id": "greenhouse-duolingo-8927565002",
       "title": "QA Specialist I, Recent Graduate",
       "company": "Duolingo",
@@ -390,19 +442,6 @@
       "location": "Utrecht",
       "country": "Other",
       "postedAt": "2026-11-03T18:40:36.000Z"
-    },
-    {
-      "id": "arbeitnow-test-automation-engineer-uipath-zurich-440417",
-      "title": "UiPath Test Automation Engineer (Professional/Senior)",
-      "company": "Infometis AG",
-      "url": "https://www.arbeitnow.ch/jobs/companies/infometis-ag/test-automation-engineer-uipath-zurich-440417",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Zürich",
-      "country": "Other",
-      "postedAt": "2026-11-03T12:32:35.000Z"
     },
     {
       "id": "greenhouse-figma-6230562004",
@@ -455,19 +494,6 @@
       "location": "Mexico City",
       "country": "Mexico",
       "postedAt": "2026-10-29T10:42:09-04:00"
-    },
-    {
-      "id": "lever-shieldai-029739dd-9928-4877-93b3-29666e625cf4",
-      "title": "Team Lead, Software Test & Quality Assurance",
-      "company": "Shield AI",
-      "url": "https://jobs.lever.co/shieldai/029739dd-9928-4877-93b3-29666e625cf4",
-      "source": "Shield AI",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Melbourne",
-      "country": "Australia",
-      "postedAt": "2026-10-29T00:49:11.158Z"
     },
     {
       "id": "greenhouse-figma-6233207004",
