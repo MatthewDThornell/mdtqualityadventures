@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-11-11T04:31:06.287Z",
+  "fetchedAt": "2026-11-11T13:29:09.326Z",
   "jobs": [
+    {
+      "id": "arbeitnow-quality-engineer-salem-123733",
+      "title": "Quality Engineer (m/w/d)",
+      "company": "ACE Advanced Composite Engineering GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/ace-advanced-composite-engineering-gmbh/quality-engineer-salem-123733",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Salem",
+      "country": "Other",
+      "postedAt": "2026-11-11T11:01:16.000Z"
+    },
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-11-11T02:46:16-05:00"
+    },
+    {
+      "id": "greenhouse-roblox-8338120",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-11-11T02:34:38-05:00"
+    },
     {
       "id": "arbeitnow-principal-sdet-united-kingdom-212191",
       "title": "Principal SDET",
@@ -26,45 +65,6 @@
       "location": "Hamburg",
       "country": "Germany",
       "postedAt": "2026-11-10T21:40:24.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-technical-quality-assurance-manager-bromley-326507",
-      "title": "Technical Quality Assurance Manager",
-      "company": "Bromcom Computers Plc",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/bromcom-computers-plc/remote-technical-quality-assurance-manager-bromley-326507",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Remote job",
-      "country": "Other",
-      "postedAt": "2026-11-10T21:31:19.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-11-10T14:47:02-05:00"
-    },
-    {
-      "id": "greenhouse-roblox-8338120",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-11-10T14:34:06-05:00"
     },
     {
       "id": "arbeitnow-professional-ict-test-manager-sip-viso-test-automation-60-80-refnr-47713-bern-391249",
@@ -119,19 +119,6 @@
       "postedAt": "2026-11-10T15:40:35.000Z"
     },
     {
-      "id": "jobicy-161171",
-      "title": "QA Engineer",
-      "company": "Neuroscale AI",
-      "url": "https://jobicy.com/jobs/161171-qa-engineer-6",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "USA",
-      "country": "United States",
-      "postedAt": "2026-11-10T15:11:50+00:00"
-    },
-    {
       "id": "arbeitnow-senior-quality-engineer-parsdorf-bavaria-411511",
       "title": "Senior Quality Engineer (m/f/d)",
       "company": "isaraerospace",
@@ -143,19 +130,6 @@
       "location": "Parsdorf, Bavaria",
       "country": "Other",
       "postedAt": "2026-11-10T12:55:22.000Z"
-    },
-    {
-      "id": "jobicy-161089",
-      "title": "Quality Assurance Engineer - Remote Europe",
-      "company": "Reedsy",
-      "url": "https://jobicy.com/jobs/161089-quality-assurance-engineer-remote-europe",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Europe",
-      "country": "Other",
-      "postedAt": "2026-11-10T11:51:15+00:00"
     },
     {
       "id": "arbeitnow-test-engineer-test-automation-engineer-schwerpunkt-api-testing-hamburg-87282",
@@ -275,6 +249,19 @@
       "postedAt": "2026-11-09T01:07:01-05:00"
     },
     {
+      "id": "arbeitnow-system-test-automation-engineer-london-united-kingdom-401378",
+      "title": "System Test Automation Engineer",
+      "company": "Wayve",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/wayve/system-test-automation-engineer-london-united-kingdom-401378",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "London, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-08T15:40:17.000Z"
+    },
+    {
       "id": "arbeitnow-remote-software-test-engineer-bern-255669",
       "title": "Software Test Engineer",
       "company": "SwissPeak Partners GmbH",
@@ -377,32 +364,6 @@
       "location": "San Francisco",
       "country": "United States",
       "postedAt": "2026-11-06T22:33:41.408+00:00"
-    },
-    {
-      "id": "arbeitnow-software-test-engineer-ground-systems-parsdorf-bavaria-429477",
-      "title": "Software Test Engineer, Ground Systems (m/f/d)",
-      "company": "isaraerospace",
-      "url": "https://www.arbeitnow.com/jobs/companies/isaraerospace/software-test-engineer-ground-systems-parsdorf-bavaria-429477",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Parsdorf, Bavaria",
-      "country": "Other",
-      "postedAt": "2026-11-06T18:55:23.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-inspector-all-genders-munich-bavaria-295933",
-      "title": "Quality Assurance Inspector (All Genders)",
-      "company": "Skdse",
-      "url": "https://www.arbeitnow.com/jobs/companies/skdse/quality-assurance-inspector-all-genders-munich-bavaria-295933",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich, Bavaria",
-      "country": "Germany",
-      "postedAt": "2026-11-06T18:55:22.000Z"
     },
     {
       "id": "arbeitnow-quality-assurance-manager-as-freelancer-net-c-all-genders-berlin-302572",
