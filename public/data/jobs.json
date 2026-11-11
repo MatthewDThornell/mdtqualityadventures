@@ -1,19 +1,6 @@
 {
-  "fetchedAt": "2026-11-11T13:29:09.326Z",
+  "fetchedAt": "2026-11-11T23:59:12.549Z",
   "jobs": [
-    {
-      "id": "arbeitnow-quality-engineer-salem-123733",
-      "title": "Quality Engineer (m/w/d)",
-      "company": "ACE Advanced Composite Engineering GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/ace-advanced-composite-engineering-gmbh/quality-engineer-salem-123733",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Salem",
-      "country": "Other",
-      "postedAt": "2026-11-11T11:01:16.000Z"
-    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior Quality Engineer",
@@ -25,7 +12,7 @@
       "workType": "On-site",
       "location": "San Mateo, CA, United States",
       "country": "United States",
-      "postedAt": "2026-11-11T02:46:16-05:00"
+      "postedAt": "2026-11-11T14:46:12-05:00"
     },
     {
       "id": "greenhouse-roblox-8338120",
@@ -38,7 +25,59 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-11-11T02:34:38-05:00"
+      "postedAt": "2026-11-11T14:34:13-05:00"
+    },
+    {
+      "id": "arbeitnow-payload-systems-test-engineer-lausanne-103679",
+      "title": "Payload Systems Test Engineer",
+      "company": "Enova Consulting",
+      "url": "https://www.arbeitnow.ch/jobs/companies/enova-consulting/payload-systems-test-engineer-lausanne-103679",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Lausanne",
+      "country": "Other",
+      "postedAt": "2026-11-11T16:30:49.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-sap-ewm-berater-test-lead-freelance-berlin-72500",
+      "title": "Senior SAP EWM Berater & Test Lead (Freelance)",
+      "company": "Sidekick Network GmbH & Co. KG",
+      "url": "https://www.arbeitnow.com/jobs/companies/sidekick-network-gmbh-co-kg/senior-sap-ewm-berater-test-lead-freelance-berlin-72500",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Mannheim",
+      "country": "Germany",
+      "postedAt": "2026-11-11T14:02:37.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-quality-assurance-officer-utrecht-68650",
+      "title": "Senior Quality Assurance Officer",
+      "company": "Vitestro",
+      "url": "https://www.arbeitnow.nl/jobs/companies/vitestro/senior-quality-assurance-officer-utrecht-68650",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Utrecht, Utrecht, Netherlands",
+      "country": "Netherlands",
+      "postedAt": "2026-11-11T12:52:06.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-engineer-salem-123733",
+      "title": "Quality Engineer (m/w/d)",
+      "company": "ACE Advanced Composite Engineering GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/ace-advanced-composite-engineering-gmbh/quality-engineer-salem-123733",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Salem",
+      "country": "Other",
+      "postedAt": "2026-11-11T11:01:16.000Z"
     },
     {
       "id": "arbeitnow-principal-sdet-united-kingdom-212191",
@@ -67,6 +106,19 @@
       "postedAt": "2026-11-10T21:40:24.000Z"
     },
     {
+      "id": "arbeitnow-remote-technical-quality-assurance-manager-bromley-326507",
+      "title": "Technical Quality Assurance Manager",
+      "company": "Bromcom Computers Plc",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/bromcom-computers-plc/remote-technical-quality-assurance-manager-bromley-326507",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Remote job",
+      "country": "Other",
+      "postedAt": "2026-11-10T21:31:19.000Z"
+    },
+    {
       "id": "arbeitnow-professional-ict-test-manager-sip-viso-test-automation-60-80-refnr-47713-bern-391249",
       "title": "Professional ICT Test Manager (m/w/d) - SIP / VISO / Test Automation (60-80%) (Ref.Nr.: 47713)",
       "company": "Wavestone Germany AG",
@@ -78,19 +130,6 @@
       "location": "Bern",
       "country": "Other",
       "postedAt": "2026-11-10T17:17:30.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-sap-ewm-berater-test-lead-freelance-berlin-72500",
-      "title": "Senior SAP EWM Berater & Test Lead (Freelance)",
-      "company": "Sidekick Network GmbH & Co. KG",
-      "url": "https://www.arbeitnow.com/jobs/companies/sidekick-network-gmbh-co-kg/senior-sap-ewm-berater-test-lead-freelance-berlin-72500",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-11-10T17:00:51.000Z"
     },
     {
       "id": "greenhouse-lyft-8767534002",
@@ -366,43 +405,30 @@
       "postedAt": "2026-11-06T22:33:41.408+00:00"
     },
     {
-      "id": "arbeitnow-quality-assurance-manager-as-freelancer-net-c-all-genders-berlin-302572",
-      "title": "Quality Assurance Manager as Freelancer (.NET C#) (all genders)",
-      "company": "Vexcash AG",
-      "url": "https://www.arbeitnow.com/jobs/companies/vexcash-ag/quality-assurance-manager-as-freelancer-net-c-all-genders-berlin-302572",
+      "id": "arbeitnow-software-test-engineer-ground-systems-parsdorf-bavaria-429477",
+      "title": "Software Test Engineer, Ground Systems (m/f/d)",
+      "company": "isaraerospace",
+      "url": "https://www.arbeitnow.com/jobs/companies/isaraerospace/software-test-engineer-ground-systems-parsdorf-bavaria-429477",
       "source": "Arbeitnow",
       "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
-      "workType": "Remote",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-11-06T14:31:18.000Z"
+      "workType": "On-site",
+      "location": "Parsdorf, Bavaria",
+      "country": "Other",
+      "postedAt": "2026-11-06T18:55:23.000Z"
     },
     {
-      "id": "arbeitnow-electronics-test-engineer-munich-bavaria-173460",
-      "title": "Electronics Test Engineer (m/f/d)",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/electronics-test-engineer-munich-bavaria-173460",
+      "id": "arbeitnow-quality-assurance-inspector-all-genders-munich-bavaria-295933",
+      "title": "Quality Assurance Inspector (All Genders)",
+      "company": "Skdse",
+      "url": "https://www.arbeitnow.com/jobs/companies/skdse/quality-assurance-inspector-all-genders-munich-bavaria-295933",
       "source": "Arbeitnow",
       "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
       "workType": "On-site",
       "location": "Munich, Bavaria",
       "country": "Germany",
-      "postedAt": "2026-11-06T12:55:23.000Z"
-    },
-    {
-      "id": "arbeitnow-qa-engineer-quantum-computing-siegen-172005",
-      "title": "QA Engineer - Quantum Computing (m/w/d)",
-      "company": "eleQtron GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/eleqtron-gmbh/qa-engineer-quantum-computing-siegen-172005",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Siegen, Nordrhein-Westfalen, Germany",
-      "country": "Germany",
-      "postedAt": "2026-11-06T12:31:10.000Z"
+      "postedAt": "2026-11-06T18:55:22.000Z"
     },
     {
       "id": "arbeitnow-qa-engineer-breda-496087",
