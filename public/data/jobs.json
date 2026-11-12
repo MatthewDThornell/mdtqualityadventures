@@ -1,18 +1,83 @@
 {
-  "fetchedAt": "2026-11-12T06:53:55.973Z",
+  "fetchedAt": "2026-11-12T19:29:17.049Z",
   "jobs": [
     {
-      "id": "arbeitnow-quality-assurance-engineer-united-kingdom-187888",
-      "title": "Quality Assurance Engineer",
-      "company": "Airalo",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/airalo/quality-assurance-engineer-united-kingdom-187888",
+      "id": "greenhouse-testlio-8333847",
+      "title": "Freelance Software Tester (Remote in Martinique)",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8333847",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Remote in Martinique",
+      "country": "Other",
+      "postedAt": "2026-11-12T12:01:07-05:00"
+    },
+    {
+      "id": "arbeitnow-quality-engineer-hildesheim-16538",
+      "title": "Quality Engineer (m/w/d)",
+      "company": "AutoGyro GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/autogyro-gmbh/quality-engineer-hildesheim-16538",
       "source": "Arbeitnow",
       "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
+      "workType": "On-site",
+      "location": "Hildesheim",
+      "country": "Other",
+      "postedAt": "2026-11-12T16:02:29.000Z"
+    },
+    {
+      "id": "jobicy-161629",
+      "title": "Senior QA Engineer",
+      "company": "Caylent",
+      "url": "https://jobicy.com/jobs/161629-senior-qa-engineer-4",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
       "workType": "Remote",
-      "location": "United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-12T03:08:03.000Z"
+      "location": "Mexico",
+      "country": "Mexico",
+      "postedAt": "2026-11-12T13:25:53+00:00"
+    },
+    {
+      "id": "jobicy-161535",
+      "title": "Contract | Senior SDET (MARVEL SNAP)",
+      "company": "Second Dinner",
+      "url": "https://jobicy.com/jobs/161535-contract-senior-sdet-marvel-snap",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "USA",
+      "country": "United States",
+      "postedAt": "2026-11-12T10:44:48+00:00"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-associate-fur-csl-behring-50-bern-135293",
+      "title": "Quality Assurance Associate (m/w/d) für CSL Behring (50%)",
+      "company": "We make it GmbH",
+      "url": "https://www.arbeitnow.ch/jobs/companies/we-make-it-gmbh/quality-assurance-associate-fur-csl-behring-50-bern-135293",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Bern",
+      "country": "Other",
+      "postedAt": "2026-11-12T10:31:22.000Z"
+    },
+    {
+      "id": "arbeitnow-qa-engineer-hamburg-18682",
+      "title": "QA Engineer (f/m/d)",
+      "company": "adjoe",
+      "url": "https://www.arbeitnow.com/jobs/companies/adjoe/qa-engineer-hamburg-18682",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Hamburg",
+      "country": "Germany",
+      "postedAt": "2026-11-12T09:40:27.000Z"
     },
     {
       "id": "greenhouse-roblox-7656541",
@@ -25,7 +90,7 @@
       "workType": "On-site",
       "location": "San Mateo, CA, United States",
       "country": "United States",
-      "postedAt": "2026-11-11T14:46:12-05:00"
+      "postedAt": "2026-11-12T02:45:33-05:00"
     },
     {
       "id": "greenhouse-roblox-8338120",
@@ -38,7 +103,20 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-11-11T14:34:13-05:00"
+      "postedAt": "2026-11-12T02:34:44-05:00"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-engineer-united-kingdom-187888",
+      "title": "Quality Assurance Engineer",
+      "company": "Airalo",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/airalo/quality-assurance-engineer-united-kingdom-187888",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-12T03:08:03.000Z"
     },
     {
       "id": "arbeitnow-payload-systems-test-engineer-lausanne-103679",
@@ -249,32 +327,6 @@
       "postedAt": "2026-11-10T03:27:46.000Z"
     },
     {
-      "id": "arbeitnow-qa-engineer-london-greater-london-431582",
-      "title": "QA Engineer",
-      "company": "Hearst",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/hearst/qa-engineer-london-greater-london-431582",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "LONDON, Greater London",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-09T18:55:31.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-engineer-hildesheim-16538",
-      "title": "Quality Engineer (m/w/d)",
-      "company": "AutoGyro GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/autogyro-gmbh/quality-engineer-hildesheim-16538",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Hildesheim",
-      "country": "Other",
-      "postedAt": "2026-11-09T16:31:06.000Z"
-    },
-    {
       "id": "arbeitnow-test-engineer-berlin-378661",
       "title": "Test Engineer (m/w/d)",
       "company": "citema group GmbH",
@@ -301,32 +353,6 @@
       "postedAt": "2026-11-09T01:07:01-05:00"
     },
     {
-      "id": "arbeitnow-system-test-automation-engineer-london-united-kingdom-401378",
-      "title": "System Test Automation Engineer",
-      "company": "Wayve",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/wayve/system-test-automation-engineer-london-united-kingdom-401378",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "London, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-08T15:40:17.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-software-test-engineer-bern-255669",
-      "title": "Software Test Engineer",
-      "company": "SwissPeak Partners GmbH",
-      "url": "https://www.arbeitnow.ch/jobs/companies/swisspeak-partners-gmbh/remote-software-test-engineer-bern-255669",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Remote job",
-      "country": "Other",
-      "postedAt": "2026-11-08T12:31:22.000Z"
-    },
-    {
       "id": "arbeitnow-senior-automation-engineer-uipath-munich-27512",
       "title": "Senior Automation Engineer  - UiPath",
       "company": "roboyo",
@@ -349,19 +375,6 @@
       "direct": true,
       "workType": "Remote",
       "location": "Remote in EMEA",
-      "country": "Other",
-      "postedAt": "2026-11-08T00:00:50-05:00"
-    },
-    {
-      "id": "greenhouse-testlio-8333847",
-      "title": "Freelance Software Tester (Remote in Martinique)",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8333847",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Remote in AMER",
       "country": "Other",
       "postedAt": "2026-11-08T00:00:50-05:00"
     },
@@ -457,32 +470,6 @@
       "postedAt": "2026-11-05T16:57:09.602+00:00"
     },
     {
-      "id": "arbeitnow-test-manager-output-ccm-dokumenten-management-systemen-bern-347745",
-      "title": "Test Manager - Output-/CCM-/Dokumenten-Management-Systemen",
-      "company": "Coopers Group AG",
-      "url": "https://www.arbeitnow.ch/jobs/companies/coopers-group-ag/test-manager-output-ccm-dokumenten-management-systemen-bern-347745",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Bern",
-      "country": "Other",
-      "postedAt": "2026-11-05T16:00:50.000Z"
-    },
-    {
-      "id": "arbeitnow-test-engineer-bern-487432",
-      "title": "Test Engineer",
-      "company": "Coopers Group AG",
-      "url": "https://www.arbeitnow.ch/jobs/companies/coopers-group-ag/test-engineer-bern-487432",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Bern",
-      "country": "Other",
-      "postedAt": "2026-11-05T15:31:06.000Z"
-    },
-    {
       "id": "greenhouse-duolingo-8927565002",
       "title": "QA Specialist I, Recent Graduate",
       "company": "Duolingo",
@@ -507,32 +494,6 @@
       "location": "New York, NY",
       "country": "United States",
       "postedAt": "2026-11-03T02:52:38-05:00"
-    },
-    {
-      "id": "greenhouse-stripe-8153331",
-      "title": "Software Quality Assurance Engineer",
-      "company": "Stripe",
-      "url": "https://stripe.com/jobs/search?gh_jid=8153331",
-      "source": "Stripe",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Taipei,Taiwan",
-      "country": "Taiwan",
-      "postedAt": "2026-10-29T10:42:09-04:00"
-    },
-    {
-      "id": "greenhouse-stripe-8206729",
-      "title": "Team Lead, Quality Analyst, Product Support Operations",
-      "company": "Stripe",
-      "url": "https://stripe.com/jobs/search?gh_jid=8206729",
-      "source": "Stripe",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Mexico City",
-      "country": "Mexico",
-      "postedAt": "2026-10-29T10:42:09-04:00"
     }
   ]
 }
