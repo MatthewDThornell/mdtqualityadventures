@@ -1,18 +1,18 @@
 {
-  "fetchedAt": "2026-11-13T13:51:54.017Z",
+  "fetchedAt": "2026-11-13T23:11:57.110Z",
   "jobs": [
     {
-      "id": "arbeitnow-remote-software-test-engineer-bern-98324",
-      "title": "Software Test Engineer",
-      "company": "SwissPeak Partners GmbH",
-      "url": "https://www.arbeitnow.ch/jobs/companies/swisspeak-partners-gmbh/remote-software-test-engineer-bern-98324",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
+      "id": "greenhouse-airbnb-7453190",
+      "title": "Senior Mobile Software Engineer, Quality Engineering",
+      "company": "Airbnb",
+      "url": "https://careers.airbnb.com/positions/7453190?gh_jid=7453190",
+      "source": "Airbnb",
+      "sourceUrl": null,
+      "direct": true,
       "workType": "Remote",
-      "location": "Remote job",
-      "country": "Other",
-      "postedAt": "2026-11-13T09:31:36.000Z"
+      "location": "Brazil - Remote",
+      "country": "Brazil",
+      "postedAt": "2026-11-13T16:27:52-05:00"
     },
     {
       "id": "greenhouse-roblox-7656541",
@@ -25,46 +25,7 @@
       "workType": "On-site",
       "location": "San Mateo, CA, United States",
       "country": "United States",
-      "postedAt": "2026-11-13T02:45:37-05:00"
-    },
-    {
-      "id": "jobicy-161767",
-      "title": "Freelance Software Tester | Remote in Italy",
-      "company": "Testlio",
-      "url": "https://jobicy.com/jobs/161767-freelance-software-tester-remote-in-italy",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Belgium,  Germany,  Italy",
-      "country": "Germany",
-      "postedAt": "2026-11-13T07:41:02+00:00"
-    },
-    {
-      "id": "jobicy-161756",
-      "title": "Freelance Software Tester | Remote in Germany",
-      "company": "Testlio",
-      "url": "https://jobicy.com/jobs/161756-freelance-software-tester-remote-in-germany",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Belgium,  Germany,  Italy",
-      "country": "Germany",
-      "postedAt": "2026-11-13T07:39:58+00:00"
-    },
-    {
-      "id": "jobicy-161742",
-      "title": "Freelance Software Tester | Remote in Belgium",
-      "company": "Testlio",
-      "url": "https://jobicy.com/jobs/161742-freelance-software-tester-remote-in-belgium",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Belgium,  Germany,  Italy",
-      "country": "Germany",
-      "postedAt": "2026-11-13T07:39:12+00:00"
+      "postedAt": "2026-11-13T14:46:02-05:00"
     },
     {
       "id": "greenhouse-roblox-8338120",
@@ -77,7 +38,46 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-11-13T02:34:50-05:00"
+      "postedAt": "2026-11-13T14:34:23-05:00"
+    },
+    {
+      "id": "arbeitnow-freelance-software-tester-remote-in-germany-365769",
+      "title": "Freelance Software Tester | Remote in Germany",
+      "company": "Testlio",
+      "url": "https://www.arbeitnow.com/jobs/companies/testlio/freelance-software-tester-remote-in-germany-365769",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-11-13T18:55:23.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-software-development-engineer-in-test-sdet-430568",
+      "title": "Senior Software Development Engineer in Test (SDET)",
+      "company": "capco",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/capco/senior-software-development-engineer-in-test-sdet-430568",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-11-13T15:55:19.000Z"
+    },
+    {
+      "id": "arbeitnow-remote-software-test-engineer-bern-98324",
+      "title": "Software Test Engineer",
+      "company": "SwissPeak Partners GmbH",
+      "url": "https://www.arbeitnow.ch/jobs/companies/swisspeak-partners-gmbh/remote-software-test-engineer-bern-98324",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Remote job",
+      "country": "Other",
+      "postedAt": "2026-11-13T09:31:36.000Z"
     },
     {
       "id": "arbeitnow-senior-board-test-engineer-bristol-271339",
@@ -156,19 +156,6 @@
       "location": "Remote in Martinique",
       "country": "Other",
       "postedAt": "2026-11-12T12:01:07-05:00"
-    },
-    {
-      "id": "arbeitnow-quality-engineer-hildesheim-16538",
-      "title": "Quality Engineer (m/w/d)",
-      "company": "AutoGyro GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/autogyro-gmbh/quality-engineer-hildesheim-16538",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Hildesheim",
-      "country": "Other",
-      "postedAt": "2026-11-12T16:02:29.000Z"
     },
     {
       "id": "arbeitnow-quality-assurance-associate-fur-csl-behring-50-bern-135293",
@@ -262,19 +249,6 @@
       "postedAt": "2026-11-11T11:01:16.000Z"
     },
     {
-      "id": "arbeitnow-principal-sdet-united-kingdom-212191",
-      "title": "Principal SDET",
-      "company": "Radiant",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/radiant/principal-sdet-united-kingdom-212191",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-11T00:40:17.000Z"
-    },
-    {
       "id": "arbeitnow-senior-quality-assurance-engineer-hamburg-20782",
       "title": "(Senior) Quality Assurance Engineer (f/m/d)",
       "company": "Zeal Network",
@@ -286,19 +260,6 @@
       "location": "Hamburg",
       "country": "Germany",
       "postedAt": "2026-11-10T21:40:24.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-technical-quality-assurance-manager-bromley-326507",
-      "title": "Technical Quality Assurance Manager",
-      "company": "Bromcom Computers Plc",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/bromcom-computers-plc/remote-technical-quality-assurance-manager-bromley-326507",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Remote job",
-      "country": "Other",
-      "postedAt": "2026-11-10T21:31:19.000Z"
     },
     {
       "id": "arbeitnow-professional-ict-test-manager-sip-viso-test-automation-60-80-refnr-47713-bern-391249",
@@ -325,19 +286,6 @@
       "location": "Montreal, Canada",
       "country": "Canada",
       "postedAt": "2026-11-10T10:52:40-05:00"
-    },
-    {
-      "id": "arbeitnow-qa-lead-data-platform-tl1-london-38241",
-      "title": "QA Lead - Data Platform (TL1)",
-      "company": "Kaluza",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/kaluza/qa-lead-data-platform-tl1-london-38241",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London, UK",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-10T15:40:35.000Z"
     },
     {
       "id": "arbeitnow-senior-quality-engineer-parsdorf-bavaria-411511",
@@ -416,19 +364,6 @@
       "location": "Saint-Denis",
       "country": "Other",
       "postedAt": "2026-11-10T03:27:46.000Z"
-    },
-    {
-      "id": "arbeitnow-test-engineer-berlin-378661",
-      "title": "Test Engineer (m/w/d)",
-      "company": "citema group GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/citema-group-gmbh/test-engineer-berlin-378661",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-11-09T14:00:55.000Z"
     },
     {
       "id": "greenhouse-thoughtworks-8200468",
