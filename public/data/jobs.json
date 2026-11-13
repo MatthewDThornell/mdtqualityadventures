@@ -1,6 +1,97 @@
 {
-  "fetchedAt": "2026-11-12T19:29:17.049Z",
+  "fetchedAt": "2026-11-13T04:53:34.619Z",
   "jobs": [
+    {
+      "id": "arbeitnow-senior-board-test-engineer-bristol-271339",
+      "title": "Senior Board Test Engineer",
+      "company": "Graphcore",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/graphcore/senior-board-test-engineer-bristol-271339",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Bristol",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-12T21:55:14.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-qa-manager-automation-ai-fully-remote-berlin-71172",
+      "title": "Senior QA Manager Automation & AI - Fully Remote",
+      "company": "SOFTGAMES",
+      "url": "https://www.arbeitnow.com/jobs/companies/softgames/senior-qa-manager-automation-ai-fully-remote-berlin-71172",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Remote job",
+      "country": "Other",
+      "postedAt": "2026-11-12T21:31:40.000Z"
+    },
+    {
+      "id": "greenhouse-testlio-8384253",
+      "title": "Freelance Software Tester | Remote in Germany",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8384253",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Germany",
+      "country": "Germany",
+      "postedAt": "2026-11-12T15:53:55-05:00"
+    },
+    {
+      "id": "greenhouse-testlio-8384250",
+      "title": "Freelance Software Tester | Remote in Italy",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8384250",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Italy",
+      "country": "Other",
+      "postedAt": "2026-11-12T15:52:47-05:00"
+    },
+    {
+      "id": "greenhouse-testlio-8384245",
+      "title": "Freelance Software Tester | Remote in Belgium",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8384245",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Belgium",
+      "country": "Other",
+      "postedAt": "2026-11-12T15:50:28-05:00"
+    },
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-11-12T14:46:15-05:00"
+    },
+    {
+      "id": "greenhouse-roblox-8338120",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-11-12T14:34:23-05:00"
+    },
     {
       "id": "greenhouse-testlio-8333847",
       "title": "Freelance Software Tester (Remote in Martinique)",
@@ -41,19 +132,6 @@
       "postedAt": "2026-11-12T13:25:53+00:00"
     },
     {
-      "id": "jobicy-161535",
-      "title": "Contract | Senior SDET (MARVEL SNAP)",
-      "company": "Second Dinner",
-      "url": "https://jobicy.com/jobs/161535-contract-senior-sdet-marvel-snap",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "USA",
-      "country": "United States",
-      "postedAt": "2026-11-12T10:44:48+00:00"
-    },
-    {
       "id": "arbeitnow-quality-assurance-associate-fur-csl-behring-50-bern-135293",
       "title": "Quality Assurance Associate (m/w/d) für CSL Behring (50%)",
       "company": "We make it GmbH",
@@ -78,45 +156,6 @@
       "location": "Hamburg",
       "country": "Germany",
       "postedAt": "2026-11-12T09:40:27.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-11-12T02:45:33-05:00"
-    },
-    {
-      "id": "greenhouse-roblox-8338120",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-11-12T02:34:44-05:00"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-engineer-united-kingdom-187888",
-      "title": "Quality Assurance Engineer",
-      "company": "Airalo",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/airalo/quality-assurance-engineer-united-kingdom-187888",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-12T03:08:03.000Z"
     },
     {
       "id": "arbeitnow-payload-systems-test-engineer-lausanne-103679",
@@ -429,19 +468,6 @@
       "location": "San Francisco",
       "country": "United States",
       "postedAt": "2026-11-06T22:33:41.408+00:00"
-    },
-    {
-      "id": "arbeitnow-qa-engineer-breda-496087",
-      "title": "QA Engineer",
-      "company": "YoungOnes",
-      "url": "https://www.arbeitnow.nl/jobs/companies/youngones/qa-engineer-breda-496087",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Breda, Noord-Brabant, Netherlands",
-      "country": "Netherlands",
-      "postedAt": "2026-11-06T03:31:51.000Z"
     },
     {
       "id": "greenhouse-scaleai-4742042005",
