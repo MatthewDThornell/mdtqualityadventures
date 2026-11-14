@@ -1,6 +1,58 @@
 {
-  "fetchedAt": "2026-11-13T23:11:57.110Z",
+  "fetchedAt": "2026-11-14T04:46:35.640Z",
   "jobs": [
+    {
+      "id": "arbeitnow-qa-automation-lead-bristol-139587",
+      "title": "QA Automation Lead",
+      "company": "Kaluza",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/kaluza/qa-automation-lead-bristol-139587",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Bristol, UK",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-14T03:40:28.000Z"
+    },
+    {
+      "id": "arbeitnow-integration-test-engineer-utrecht-434292",
+      "title": "Integration Test Engineer",
+      "company": "iwell",
+      "url": "https://www.arbeitnow.nl/jobs/companies/iwell/integration-test-engineer-utrecht-434292",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Utrecht, Utrecht, Netherlands",
+      "country": "Netherlands",
+      "postedAt": "2026-11-14T03:31:38.000Z"
+    },
+    {
+      "id": "arbeitnow-ui-test-engineer-nuremberg-129722",
+      "title": "UI Test Engineer",
+      "company": "Walaris",
+      "url": "https://www.arbeitnow.com/jobs/companies/walaris/ui-test-engineer-nuremberg-129722",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Nuremberg, Germany",
+      "country": "Germany",
+      "postedAt": "2026-11-14T00:20:10.000Z"
+    },
+    {
+      "id": "greenhouse-verkada-5083834007",
+      "title": "Senior Test Engineer, Cameras",
+      "company": "Verkada",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5083834007",
+      "source": "Verkada",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "San Mateo, CA United States",
+      "country": "United States",
+      "postedAt": "2026-11-13T18:43:52-05:00"
+    },
     {
       "id": "greenhouse-airbnb-7453190",
       "title": "Senior Mobile Software Engineer, Quality Engineering",
