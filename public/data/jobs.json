@@ -1,19 +1,6 @@
 {
-  "fetchedAt": "2026-11-15T13:23:13.649Z",
+  "fetchedAt": "2026-11-15T22:26:36.224Z",
   "jobs": [
-    {
-      "id": "arbeitnow-senior-systems-test-engineer-oxford-169032",
-      "title": "Senior Systems Test Engineer",
-      "company": "Salience Labs",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/salience-labs/senior-systems-test-engineer-oxford-169032",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Oxford, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-15T09:40:19.000Z"
-    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior Quality Engineer",
@@ -25,7 +12,7 @@
       "workType": "On-site",
       "location": "San Mateo, CA, United States",
       "country": "United States",
-      "postedAt": "2026-11-15T02:46:21-05:00"
+      "postedAt": "2026-11-15T14:44:52-05:00"
     },
     {
       "id": "greenhouse-roblox-8338120",
@@ -38,7 +25,46 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-11-15T02:36:05-05:00"
+      "postedAt": "2026-11-15T14:34:30-05:00"
+    },
+    {
+      "id": "arbeitnow-ait-test-engineer-munich-148999",
+      "title": "AIT Test Engineer",
+      "company": "The Exploration Company",
+      "url": "https://www.arbeitnow.com/jobs/companies/the-exploration-company/ait-test-engineer-munich-148999",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich, Germany",
+      "country": "Germany",
+      "postedAt": "2026-11-15T15:40:14.000Z"
+    },
+    {
+      "id": "jobicy-162439",
+      "title": "Web Automation Test Engineer",
+      "company": "Caylent",
+      "url": "https://jobicy.com/jobs/162439-web-automation-test-engineer-2",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Brazil",
+      "country": "Brazil",
+      "postedAt": "2026-11-15T13:19:37+00:00"
+    },
+    {
+      "id": "arbeitnow-senior-systems-test-engineer-oxford-169032",
+      "title": "Senior Systems Test Engineer",
+      "company": "Salience Labs",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/salience-labs/senior-systems-test-engineer-oxford-169032",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Oxford, United Kingdom",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-15T09:40:19.000Z"
     },
     {
       "id": "arbeitnow-director-of-quality-assurance-london-327419",
