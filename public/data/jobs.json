@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-14T21:56:13.956Z",
+  "fetchedAt": "2026-11-15T04:38:33.094Z",
   "jobs": [
     {
       "id": "arbeitnow-director-of-quality-assurance-london-327419",
@@ -260,19 +260,6 @@
       "location": "Hamburg",
       "country": "Germany",
       "postedAt": "2026-11-12T09:40:27.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-engineer-united-kingdom-187888",
-      "title": "Quality Assurance Engineer",
-      "company": "Airalo",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/airalo/quality-assurance-engineer-united-kingdom-187888",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-12T03:08:03.000Z"
     },
     {
       "id": "arbeitnow-payload-systems-test-engineer-lausanne-103679",
