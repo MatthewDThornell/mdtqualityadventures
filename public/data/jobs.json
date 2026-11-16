@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-16T04:34:28.076Z",
+  "fetchedAt": "2026-11-16T14:38:54.279Z",
   "jobs": [
     {
       "id": "greenhouse-roblox-7656541",
@@ -12,7 +12,7 @@
       "workType": "On-site",
       "location": "San Mateo, CA, United States",
       "country": "United States",
-      "postedAt": "2026-11-15T14:44:52-05:00"
+      "postedAt": "2026-11-16T02:46:21-05:00"
     },
     {
       "id": "greenhouse-roblox-8338120",
@@ -25,7 +25,59 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-11-15T14:34:30-05:00"
+      "postedAt": "2026-11-16T02:36:03-05:00"
+    },
+    {
+      "id": "arbeitnow-working-student-quality-assurance-legal-40-60-zurich-448162",
+      "title": "Working Student Quality Assurance - Legal (40-60%)",
+      "company": "DeepJudge",
+      "url": "https://www.arbeitnow.ch/jobs/companies/deepjudge/working-student-quality-assurance-legal-40-60-zurich-448162",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Zurich HQ",
+      "country": "Other",
+      "postedAt": "2026-11-16T06:40:16.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-senior-consultant-hybrid-newcastle-edinburgh-glasgow-leeds-manchester-birmingham-bristol-london-465098",
+      "title": "Quality Assurance - Senior Consultant",
+      "company": "Opencast",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/opencast/quality-assurance-senior-consultant-hybrid-newcastle-edinburgh-glasgow-leeds-manchester-birmingham-bristol-london-465098",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Hybrid - Newcastle, Edinburgh, Glasgow, Leeds, Manchester, Birmingham, Bristol, London",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-16T03:26:56.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-consultant-hybrid-newcastle-edinburgh-glasgow-leeds-manchester-birmingham-bristol-london-72471",
+      "title": "Quality Assurance - Consultant",
+      "company": "Opencast",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/opencast/quality-assurance-consultant-hybrid-newcastle-edinburgh-glasgow-leeds-manchester-birmingham-bristol-london-72471",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Hybrid - Newcastle, Edinburgh, Glasgow, Leeds, Manchester, Birmingham, Bristol, London",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-16T03:26:56.000Z"
+    },
+    {
+      "id": "jobicy-145995",
+      "title": "Ubuntu Linux Kernel Test Engineer",
+      "company": "Canonical",
+      "url": "https://jobicy.com/jobs/145995-ubuntu-linux-kernel-test-engineer",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "APAC,  China",
+      "country": "Other",
+      "postedAt": "2026-11-16T03:11:35+00:00"
     },
     {
       "id": "arbeitnow-ait-test-engineer-munich-148999",
@@ -41,19 +93,6 @@
       "postedAt": "2026-11-15T15:40:14.000Z"
     },
     {
-      "id": "jobicy-162439",
-      "title": "Web Automation Test Engineer",
-      "company": "Caylent",
-      "url": "https://jobicy.com/jobs/162439-web-automation-test-engineer-2",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Brazil",
-      "country": "Brazil",
-      "postedAt": "2026-11-15T13:19:37+00:00"
-    },
-    {
       "id": "arbeitnow-senior-systems-test-engineer-oxford-169032",
       "title": "Senior Systems Test Engineer",
       "company": "Salience Labs",
@@ -65,6 +104,19 @@
       "location": "Oxford, United Kingdom",
       "country": "United Kingdom",
       "postedAt": "2026-11-15T09:40:19.000Z"
+    },
+    {
+      "id": "arbeitnow-director-of-quality-assurance-london-327419",
+      "title": "Director of Quality Assurance",
+      "company": "Comind",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/comind/director-of-quality-assurance-london-327419",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "London, UK",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-14T21:40:12.000Z"
     },
     {
       "id": "arbeitnow-qa-engineer-intern-6-months-333718",
@@ -301,19 +353,6 @@
       "postedAt": "2026-11-11T16:30:49.000Z"
     },
     {
-      "id": "arbeitnow-senior-sap-ewm-berater-test-lead-freelance-berlin-72500",
-      "title": "Senior SAP EWM Berater & Test Lead (Freelance)",
-      "company": "Sidekick Network GmbH & Co. KG",
-      "url": "https://www.arbeitnow.com/jobs/companies/sidekick-network-gmbh-co-kg/senior-sap-ewm-berater-test-lead-freelance-berlin-72500",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Mannheim",
-      "country": "Germany",
-      "postedAt": "2026-11-11T14:02:37.000Z"
-    },
-    {
       "id": "arbeitnow-senior-quality-assurance-officer-utrecht-68650",
       "title": "Senior Quality Assurance Officer",
       "company": "Vitestro",
@@ -364,19 +403,6 @@
       "location": "Montreal, Canada",
       "country": "Canada",
       "postedAt": "2026-11-10T10:52:40-05:00"
-    },
-    {
-      "id": "arbeitnow-senior-quality-engineer-parsdorf-bavaria-411511",
-      "title": "Senior Quality Engineer (m/f/d)",
-      "company": "isaraerospace",
-      "url": "https://www.arbeitnow.com/jobs/companies/isaraerospace/senior-quality-engineer-parsdorf-bavaria-411511",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Parsdorf, Bavaria",
-      "country": "Other",
-      "postedAt": "2026-11-10T12:55:22.000Z"
     },
     {
       "id": "arbeitnow-data-quality-analyst-cdi-saint-denis-152136",
