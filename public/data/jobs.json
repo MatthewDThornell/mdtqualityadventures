@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-16T14:38:54.279Z",
+  "fetchedAt": "2026-11-17T01:30:31.562Z",
   "jobs": [
     {
       "id": "greenhouse-roblox-7656541",
@@ -12,7 +12,7 @@
       "workType": "On-site",
       "location": "San Mateo, CA, United States",
       "country": "United States",
-      "postedAt": "2026-11-16T02:46:21-05:00"
+      "postedAt": "2026-11-16T14:46:23-05:00"
     },
     {
       "id": "greenhouse-roblox-8338120",
@@ -25,7 +25,46 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-11-16T02:36:03-05:00"
+      "postedAt": "2026-11-16T14:34:37-05:00"
+    },
+    {
+      "id": "arbeitnow-software-test-engineer-80-100-bern-79595",
+      "title": "Software Test Engineer 80–100%",
+      "company": "machineMD",
+      "url": "https://www.arbeitnow.ch/jobs/companies/machinemd/software-test-engineer-80-100-bern-79595",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Bern",
+      "country": "Other",
+      "postedAt": "2026-11-16T16:00:48.000Z"
+    },
+    {
+      "id": "arbeitnow-qa-engineer-payments-berlin-110435",
+      "title": "QA Engineer - Payments",
+      "company": "SumUp",
+      "url": "https://www.arbeitnow.com/jobs/companies/sumup/qa-engineer-payments-berlin-110435",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Berlin, Germany",
+      "country": "Germany",
+      "postedAt": "2026-11-16T14:45:26.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-test-manager-teststrategie-qa-it-consulting-frankfurt-am-main-260701",
+      "title": "Senior Test Manager (m/w/d) Teststrategie, QA & IT Consulting",
+      "company": "Nelta GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/nelta-gmbh/senior-test-manager-teststrategie-qa-it-consulting-frankfurt-am-main-260701",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Frankfurt am Main",
+      "country": "Germany",
+      "postedAt": "2026-11-16T14:30:50.000Z"
     },
     {
       "id": "arbeitnow-working-student-quality-assurance-legal-40-60-zurich-448162",
@@ -67,19 +106,6 @@
       "postedAt": "2026-11-16T03:26:56.000Z"
     },
     {
-      "id": "jobicy-145995",
-      "title": "Ubuntu Linux Kernel Test Engineer",
-      "company": "Canonical",
-      "url": "https://jobicy.com/jobs/145995-ubuntu-linux-kernel-test-engineer",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "APAC,  China",
-      "country": "Other",
-      "postedAt": "2026-11-16T03:11:35+00:00"
-    },
-    {
       "id": "arbeitnow-ait-test-engineer-munich-148999",
       "title": "AIT Test Engineer",
       "company": "The Exploration Company",
@@ -91,19 +117,6 @@
       "location": "Munich, Germany",
       "country": "Germany",
       "postedAt": "2026-11-15T15:40:14.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-systems-test-engineer-oxford-169032",
-      "title": "Senior Systems Test Engineer",
-      "company": "Salience Labs",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/salience-labs/senior-systems-test-engineer-oxford-169032",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Oxford, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-15T09:40:19.000Z"
     },
     {
       "id": "arbeitnow-director-of-quality-assurance-london-327419",
