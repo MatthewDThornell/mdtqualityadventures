@@ -1,6 +1,110 @@
 {
-  "fetchedAt": "2026-11-18T00:28:05.249Z",
+  "fetchedAt": "2026-11-18T15:01:47.486Z",
   "jobs": [
+    {
+      "id": "arbeitnow-test-engineer-test-automation-engineer-schwerpunkt-api-testing-frankfurt-am-main-300918",
+      "title": "Test Engineer / Test Automation Engineer (m/w/d) Schwerpunkt API-Testing",
+      "company": "Nelta GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/nelta-gmbh/test-engineer-test-automation-engineer-schwerpunkt-api-testing-frankfurt-am-main-300918",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Frankfurt am Main",
+      "country": "Germany",
+      "postedAt": "2026-11-18T13:31:03.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-quality-engineer-london-270862",
+      "title": "Senior Quality Engineer",
+      "company": "Freetrade",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/freetrade/senior-quality-engineer-london-270862",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "London",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-18T09:40:12.000Z"
+    },
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-11-18T02:46:30-05:00"
+    },
+    {
+      "id": "greenhouse-roblox-8338120",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-11-18T02:36:31-05:00"
+    },
+    {
+      "id": "jobicy-155766",
+      "title": "Senior QA Engineer",
+      "company": "Airtm",
+      "url": "https://jobicy.com/jobs/155766-senior-qa-engineer-3",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "LATAM,  Canada,  USA",
+      "country": "United States",
+      "postedAt": "2026-11-18T04:15:30+00:00"
+    },
+    {
+      "id": "arbeitnow-manager-quality-assurance-quality-engineering-parsdorf-bavaria-112995",
+      "title": "Manager Quality Assurance & Quality Engineering (m/f/d)",
+      "company": "isaraerospace",
+      "url": "https://www.arbeitnow.com/jobs/companies/isaraerospace/manager-quality-assurance-quality-engineering-parsdorf-bavaria-112995",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Parsdorf, Bavaria",
+      "country": "Other",
+      "postedAt": "2026-11-18T03:55:23.000Z"
+    },
+    {
+      "id": "arbeitnow-remote-software-test-engineer-bern-271000",
+      "title": "Software Test Engineer",
+      "company": "SwissPeak Partners GmbH",
+      "url": "https://www.arbeitnow.ch/jobs/companies/swisspeak-partners-gmbh/remote-software-test-engineer-bern-271000",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Remote job",
+      "country": "Other",
+      "postedAt": "2026-11-18T03:31:18.000Z"
+    },
+    {
+      "id": "arbeitnow-test-engineer-zurich-36222",
+      "title": "Test Engineer",
+      "company": "Hyperscale Power",
+      "url": "https://www.arbeitnow.ch/jobs/companies/hyperscale-power/test-engineer-zurich-36222",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Zürich",
+      "country": "Other",
+      "postedAt": "2026-11-18T00:40:31.000Z"
+    },
     {
       "id": "arbeitnow-qa-engineer-payments-berlin-435071",
       "title": "QA Engineer - Payments",
@@ -26,32 +130,6 @@
       "location": "United Kingdom - Remote",
       "country": "United Kingdom",
       "postedAt": "2026-11-17T21:40:29.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-11-17T14:46:24-05:00"
-    },
-    {
-      "id": "greenhouse-roblox-8338120",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-11-17T14:35:02-05:00"
     },
     {
       "id": "arbeitnow-test-engineer-nederland-216783",
@@ -182,19 +260,6 @@
       "location": "Oxford, United Kingdom",
       "country": "United Kingdom",
       "postedAt": "2026-11-15T09:40:19.000Z"
-    },
-    {
-      "id": "arbeitnow-director-of-quality-assurance-london-327419",
-      "title": "Director of Quality Assurance",
-      "company": "Comind",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/comind/director-of-quality-assurance-london-327419",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "London, UK",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-14T21:40:12.000Z"
     },
     {
       "id": "arbeitnow-qa-engineer-intern-6-months-333718",
@@ -353,19 +418,6 @@
       "postedAt": "2026-11-11T16:30:49.000Z"
     },
     {
-      "id": "arbeitnow-senior-quality-assurance-officer-utrecht-68650",
-      "title": "Senior Quality Assurance Officer",
-      "company": "Vitestro",
-      "url": "https://www.arbeitnow.nl/jobs/companies/vitestro/senior-quality-assurance-officer-utrecht-68650",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Utrecht, Utrecht, Netherlands",
-      "country": "Netherlands",
-      "postedAt": "2026-11-11T12:52:06.000Z"
-    },
-    {
       "id": "greenhouse-lyft-8767534002",
       "title": "Software Engineer Intern, Test Automation (Summer 2027)",
       "company": "Lyft",
@@ -377,19 +429,6 @@
       "location": "Montreal, Canada",
       "country": "Canada",
       "postedAt": "2026-11-10T10:52:40-05:00"
-    },
-    {
-      "id": "greenhouse-thoughtworks-8200468",
-      "title": "Lead Quality Analyst",
-      "company": "Thoughtworks",
-      "url": "https://www.thoughtworks.com/careers/jobs/8200468?gh_jid=8200468",
-      "source": "Thoughtworks",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Singapore, Singapore",
-      "country": "Singapore",
-      "postedAt": "2026-11-09T01:07:01-05:00"
     },
     {
       "id": "greenhouse-testlio-8324756",
