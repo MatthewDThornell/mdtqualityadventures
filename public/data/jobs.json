@@ -1,6 +1,71 @@
 {
-  "fetchedAt": "2026-11-18T15:01:47.486Z",
+  "fetchedAt": "2026-11-18T23:51:20.065Z",
   "jobs": [
+    {
+      "id": "arbeitnow-test-automation-engineer-almere-488912",
+      "title": "Test Automation Engineer",
+      "company": "Infomedics",
+      "url": "https://www.arbeitnow.nl/jobs/companies/infomedics/test-automation-engineer-almere-488912",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Almere, Flevoland, Nederland",
+      "country": "Other",
+      "postedAt": "2026-11-18T21:51:37.000Z"
+    },
+    {
+      "id": "arbeitnow-test-automation-engineer-heemstede-370552",
+      "title": "Test Automation Engineer",
+      "company": "Infomedics",
+      "url": "https://www.arbeitnow.nl/jobs/companies/infomedics/test-automation-engineer-heemstede-370552",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Heemstede, Noord-Holland, Nederland",
+      "country": "Other",
+      "postedAt": "2026-11-18T21:51:37.000Z"
+    },
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-11-18T14:45:29-05:00"
+    },
+    {
+      "id": "greenhouse-roblox-8338120",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-11-18T14:34:55-05:00"
+    },
+    {
+      "id": "ashby-sardine-4237a126-68f1-495a-b8fc-39f9f59054f1",
+      "title": "QA Automation Engineer",
+      "company": "Sardine",
+      "url": "https://jobs.ashbyhq.com/sardine/4237a126-68f1-495a-b8fc-39f9f59054f1",
+      "source": "Sardine",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Japan",
+      "country": "Japan",
+      "postedAt": "2026-11-18T18:11:29.936+00:00"
+    },
     {
       "id": "arbeitnow-test-engineer-test-automation-engineer-schwerpunkt-api-testing-frankfurt-am-main-300918",
       "title": "Test Engineer / Test Automation Engineer (m/w/d) Schwerpunkt API-Testing",
@@ -15,6 +80,19 @@
       "postedAt": "2026-11-18T13:31:03.000Z"
     },
     {
+      "id": "jobicy-163106",
+      "title": "Senior QA Engineer",
+      "company": "Cross River",
+      "url": "https://jobicy.com/jobs/163106-senior-qa-engineer-5",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Spain",
+      "country": "Spain",
+      "postedAt": "2026-11-18T12:42:34+00:00"
+    },
+    {
       "id": "arbeitnow-senior-quality-engineer-london-270862",
       "title": "Senior Quality Engineer",
       "company": "Freetrade",
@@ -26,45 +104,6 @@
       "location": "London",
       "country": "United Kingdom",
       "postedAt": "2026-11-18T09:40:12.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-11-18T02:46:30-05:00"
-    },
-    {
-      "id": "greenhouse-roblox-8338120",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-11-18T02:36:31-05:00"
-    },
-    {
-      "id": "jobicy-155766",
-      "title": "Senior QA Engineer",
-      "company": "Airtm",
-      "url": "https://jobicy.com/jobs/155766-senior-qa-engineer-3",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "LATAM,  Canada,  USA",
-      "country": "United States",
-      "postedAt": "2026-11-18T04:15:30+00:00"
     },
     {
       "id": "arbeitnow-manager-quality-assurance-quality-engineering-parsdorf-bavaria-112995",
@@ -249,19 +288,6 @@
       "postedAt": "2026-11-15T15:40:14.000Z"
     },
     {
-      "id": "arbeitnow-senior-systems-test-engineer-oxford-169032",
-      "title": "Senior Systems Test Engineer",
-      "company": "Salience Labs",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/salience-labs/senior-systems-test-engineer-oxford-169032",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Oxford, United Kingdom",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-15T09:40:19.000Z"
-    },
-    {
       "id": "arbeitnow-qa-engineer-intern-6-months-333718",
       "title": "QA Engineer Intern (6 months)",
       "company": "shifttechnology",
@@ -288,19 +314,6 @@
       "postedAt": "2026-11-14T03:31:38.000Z"
     },
     {
-      "id": "arbeitnow-ui-test-engineer-nuremberg-129722",
-      "title": "UI Test Engineer",
-      "company": "Walaris",
-      "url": "https://www.arbeitnow.com/jobs/companies/walaris/ui-test-engineer-nuremberg-129722",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Nuremberg, Germany",
-      "country": "Germany",
-      "postedAt": "2026-11-14T00:20:10.000Z"
-    },
-    {
       "id": "greenhouse-verkada-5083834007",
       "title": "Senior Test Engineer, Cameras",
       "company": "Verkada",
@@ -325,19 +338,6 @@
       "location": "Brazil - Remote",
       "country": "Brazil",
       "postedAt": "2026-11-13T16:27:52-05:00"
-    },
-    {
-      "id": "arbeitnow-freelance-software-tester-remote-in-germany-365769",
-      "title": "Freelance Software Tester | Remote in Germany",
-      "company": "Testlio",
-      "url": "https://www.arbeitnow.com/jobs/companies/testlio/freelance-software-tester-remote-in-germany-365769",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-11-13T18:55:23.000Z"
     },
     {
       "id": "greenhouse-testlio-8384253",
@@ -403,19 +403,6 @@
       "location": "Bern",
       "country": "Other",
       "postedAt": "2026-11-12T10:31:22.000Z"
-    },
-    {
-      "id": "arbeitnow-payload-systems-test-engineer-lausanne-103679",
-      "title": "Payload Systems Test Engineer",
-      "company": "Enova Consulting",
-      "url": "https://www.arbeitnow.ch/jobs/companies/enova-consulting/payload-systems-test-engineer-lausanne-103679",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Lausanne",
-      "country": "Other",
-      "postedAt": "2026-11-11T16:30:49.000Z"
     },
     {
       "id": "greenhouse-lyft-8767534002",
