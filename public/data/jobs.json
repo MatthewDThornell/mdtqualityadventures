@@ -1,18 +1,31 @@
 {
-  "fetchedAt": "2026-11-17T15:27:09.759Z",
+  "fetchedAt": "2026-11-18T00:28:05.249Z",
   "jobs": [
     {
-      "id": "arbeitnow-software-test-engineer-80-100-bern-79595",
-      "title": "Software Test Engineer 80–100%",
-      "company": "machineMD",
-      "url": "https://www.arbeitnow.ch/jobs/companies/machinemd/software-test-engineer-80-100-bern-79595",
+      "id": "arbeitnow-qa-engineer-payments-berlin-435071",
+      "title": "QA Engineer - Payments",
+      "company": "sumup",
+      "url": "https://www.arbeitnow.com/jobs/companies/sumup/qa-engineer-payments-berlin-435071",
       "source": "Arbeitnow",
       "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
       "workType": "On-site",
-      "location": "Bern",
-      "country": "Other",
-      "postedAt": "2026-11-17T13:17:51.000Z"
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-11-17T21:55:26.000Z"
+    },
+    {
+      "id": "arbeitnow-remote-principal-sdet-12063",
+      "title": "Principal SDET",
+      "company": "Radiant",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/radiant/remote-principal-sdet-12063",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "United Kingdom - Remote",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-17T21:40:29.000Z"
     },
     {
       "id": "greenhouse-roblox-7656541",
@@ -25,7 +38,7 @@
       "workType": "On-site",
       "location": "San Mateo, CA, United States",
       "country": "United States",
-      "postedAt": "2026-11-17T02:46:54-05:00"
+      "postedAt": "2026-11-17T14:46:24-05:00"
     },
     {
       "id": "greenhouse-roblox-8338120",
@@ -38,7 +51,46 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-11-17T02:36:15-05:00"
+      "postedAt": "2026-11-17T14:35:02-05:00"
+    },
+    {
+      "id": "arbeitnow-test-engineer-nederland-216783",
+      "title": "Test Engineer",
+      "company": "Dura Vermeer",
+      "url": "https://www.arbeitnow.nl/jobs/companies/dura-vermeer/test-engineer-nederland-216783",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Nederland, Utrecht, Nederland",
+      "country": "Other",
+      "postedAt": "2026-11-17T18:31:21.000Z"
+    },
+    {
+      "id": "arbeitnow-software-full-stack-qa-engineer-amsterdam-195856",
+      "title": "Software / Full-Stack QA Engineer",
+      "company": "Aquablu B.V",
+      "url": "https://www.arbeitnow.nl/jobs/companies/aquablu-bv/software-full-stack-qa-engineer-amsterdam-195856",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Amsterdam, Noord-Holland, Netherlands",
+      "country": "Netherlands",
+      "postedAt": "2026-11-17T15:31:30.000Z"
+    },
+    {
+      "id": "arbeitnow-software-test-engineer-80-100-bern-79595",
+      "title": "Software Test Engineer 80–100%",
+      "company": "machineMD",
+      "url": "https://www.arbeitnow.ch/jobs/companies/machinemd/software-test-engineer-80-100-bern-79595",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Bern",
+      "country": "Other",
+      "postedAt": "2026-11-17T13:17:51.000Z"
     },
     {
       "id": "arbeitnow-qa-engineer-payments-berlin-110435",
@@ -158,19 +210,6 @@
       "postedAt": "2026-11-14T03:55:19.000Z"
     },
     {
-      "id": "arbeitnow-qa-automation-lead-bristol-139587",
-      "title": "QA Automation Lead",
-      "company": "Kaluza",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/kaluza/qa-automation-lead-bristol-139587",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Bristol, UK",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-14T03:40:28.000Z"
-    },
-    {
       "id": "arbeitnow-integration-test-engineer-utrecht-434292",
       "title": "Integration Test Engineer",
       "company": "iwell",
@@ -234,19 +273,6 @@
       "location": "",
       "country": "Remote / Unspecified",
       "postedAt": "2026-11-13T18:55:23.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-qa-manager-automation-ai-fully-remote-berlin-71172",
-      "title": "Senior QA Manager Automation & AI - Fully Remote",
-      "company": "SOFTGAMES",
-      "url": "https://www.arbeitnow.com/jobs/companies/softgames/senior-qa-manager-automation-ai-fully-remote-berlin-71172",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Remote job",
-      "country": "Other",
-      "postedAt": "2026-11-12T21:31:40.000Z"
     },
     {
       "id": "greenhouse-testlio-8384253",
@@ -314,19 +340,6 @@
       "postedAt": "2026-11-12T10:31:22.000Z"
     },
     {
-      "id": "arbeitnow-qa-engineer-hamburg-18682",
-      "title": "QA Engineer (f/m/d)",
-      "company": "adjoe",
-      "url": "https://www.arbeitnow.com/jobs/companies/adjoe/qa-engineer-hamburg-18682",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Hamburg",
-      "country": "Germany",
-      "postedAt": "2026-11-12T09:40:27.000Z"
-    },
-    {
       "id": "arbeitnow-payload-systems-test-engineer-lausanne-103679",
       "title": "Payload Systems Test Engineer",
       "company": "Enova Consulting",
@@ -351,19 +364,6 @@
       "location": "Utrecht, Utrecht, Netherlands",
       "country": "Netherlands",
       "postedAt": "2026-11-11T12:52:06.000Z"
-    },
-    {
-      "id": "arbeitnow-professional-ict-test-manager-sip-viso-test-automation-60-80-refnr-47713-bern-391249",
-      "title": "Professional ICT Test Manager (m/w/d) - SIP / VISO / Test Automation (60-80%) (Ref.Nr.: 47713)",
-      "company": "Wavestone Germany AG",
-      "url": "https://www.arbeitnow.ch/jobs/companies/wavestone-germany-ag/professional-ict-test-manager-sip-viso-test-automation-60-80-refnr-47713-bern-391249",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Bern",
-      "country": "Other",
-      "postedAt": "2026-11-10T17:17:30.000Z"
     },
     {
       "id": "greenhouse-lyft-8767534002",
@@ -481,19 +481,6 @@
       "location": "San Francisco, CA - US",
       "country": "United States",
       "postedAt": "2026-11-05T16:57:09.602+00:00"
-    },
-    {
-      "id": "greenhouse-duolingo-8927565002",
-      "title": "QA Specialist I, Recent Graduate",
-      "company": "Duolingo",
-      "url": "https://careers.duolingo.com/jobs/8927565002?gh_jid=8927565002",
-      "source": "Duolingo",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "New York, NY; Pittsburgh, PA",
-      "country": "United States",
-      "postedAt": "2026-11-03T17:55:27-05:00"
     }
   ]
 }
