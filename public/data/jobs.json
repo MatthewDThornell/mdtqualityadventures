@@ -1,6 +1,97 @@
 {
-  "fetchedAt": "2026-11-19T05:45:12.050Z",
+  "fetchedAt": "2026-11-19T15:10:41.721Z",
   "jobs": [
+    {
+      "id": "arbeitnow-qa-testers-needed-zurich-313813",
+      "title": "QA Testers Needed",
+      "company": "Global App Testing",
+      "url": "https://www.arbeitnow.ch/jobs/companies/global-app-testing/qa-testers-needed-zurich-313813",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Zürich",
+      "country": "Other",
+      "postedAt": "2026-11-19T12:17:38.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-associate-fur-csl-behring-50-bern-135293",
+      "title": "Quality Assurance Associate (m/w/d) für CSL Behring (50%)",
+      "company": "We make it GmbH",
+      "url": "https://www.arbeitnow.ch/jobs/companies/we-make-it-gmbh/quality-assurance-associate-fur-csl-behring-50-bern-135293",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Bern",
+      "country": "Other",
+      "postedAt": "2026-11-19T11:17:41.000Z"
+    },
+    {
+      "id": "arbeitnow-test-automation-engineer-ki-mcp-agents-bern-388710",
+      "title": "Test Automation Engineer - KI/MCP/Agents",
+      "company": "PROSTAFF Schweiz GmbH",
+      "url": "https://www.arbeitnow.ch/jobs/companies/prostaff-schweiz-gmbh/test-automation-engineer-ki-mcp-agents-bern-388710",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Bern",
+      "country": "Other",
+      "postedAt": "2026-11-19T10:30:49.000Z"
+    },
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-11-19T02:46:35-05:00"
+    },
+    {
+      "id": "greenhouse-roblox-8338120",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-11-19T02:36:34-05:00"
+    },
+    {
+      "id": "jobicy-155928",
+      "title": "Senior Software Development Engineer in Test (SDET)",
+      "company": "Flex",
+      "url": "https://jobicy.com/jobs/155928-senior-software-development-engineer-in-test-sdet-2",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Anywhere",
+      "country": "Other",
+      "postedAt": "2026-11-19T03:35:04+00:00"
+    },
+    {
+      "id": "jobicy-155930",
+      "title": "Quality Engineer",
+      "company": "StackAdapt",
+      "url": "https://jobicy.com/jobs/155930-quality-engineer-3",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Canada",
+      "country": "Canada",
+      "postedAt": "2026-11-19T03:30:08+00:00"
+    },
     {
       "id": "greenhouse-scaleai-4742042005",
       "title": "Systems Engineering Integration & Test Lead, Public Sector",
@@ -39,32 +130,6 @@
       "location": "Heemstede, Noord-Holland, Nederland",
       "country": "Other",
       "postedAt": "2026-11-18T21:51:37.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-11-18T14:45:29-05:00"
-    },
-    {
-      "id": "greenhouse-roblox-8338120",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-11-18T14:34:55-05:00"
     },
     {
       "id": "ashby-sardine-4237a126-68f1-495a-b8fc-39f9f59054f1",
@@ -143,19 +208,6 @@
       "location": "Zürich",
       "country": "Other",
       "postedAt": "2026-11-18T00:40:31.000Z"
-    },
-    {
-      "id": "arbeitnow-qa-engineer-payments-berlin-435071",
-      "title": "QA Engineer - Payments",
-      "company": "sumup",
-      "url": "https://www.arbeitnow.com/jobs/companies/sumup/qa-engineer-payments-berlin-435071",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-11-17T21:55:26.000Z"
     },
     {
       "id": "arbeitnow-remote-principal-sdet-12063",
@@ -247,32 +299,6 @@
       "location": "Zurich HQ",
       "country": "Other",
       "postedAt": "2026-11-16T06:40:16.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-senior-consultant-hybrid-newcastle-edinburgh-glasgow-leeds-manchester-birmingham-bristol-london-465098",
-      "title": "Quality Assurance - Senior Consultant",
-      "company": "Opencast",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/opencast/quality-assurance-senior-consultant-hybrid-newcastle-edinburgh-glasgow-leeds-manchester-birmingham-bristol-london-465098",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Hybrid - Newcastle, Edinburgh, Glasgow, Leeds, Manchester, Birmingham, Bristol, London",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-16T03:26:56.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-consultant-hybrid-newcastle-edinburgh-glasgow-leeds-manchester-birmingham-bristol-london-72471",
-      "title": "Quality Assurance - Consultant",
-      "company": "Opencast",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/opencast/quality-assurance-consultant-hybrid-newcastle-edinburgh-glasgow-leeds-manchester-birmingham-bristol-london-72471",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Hybrid - Newcastle, Edinburgh, Glasgow, Leeds, Manchester, Birmingham, Bristol, London",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-16T03:26:56.000Z"
     },
     {
       "id": "arbeitnow-ait-test-engineer-munich-148999",
@@ -390,19 +416,6 @@
       "location": "Remote in Martinique",
       "country": "Other",
       "postedAt": "2026-11-12T12:01:07-05:00"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-associate-fur-csl-behring-50-bern-135293",
-      "title": "Quality Assurance Associate (m/w/d) für CSL Behring (50%)",
-      "company": "We make it GmbH",
-      "url": "https://www.arbeitnow.ch/jobs/companies/we-make-it-gmbh/quality-assurance-associate-fur-csl-behring-50-bern-135293",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Bern",
-      "country": "Other",
-      "postedAt": "2026-11-12T10:31:22.000Z"
     },
     {
       "id": "greenhouse-lyft-8767534002",
