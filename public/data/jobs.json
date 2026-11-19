@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-11-18T23:51:20.065Z",
+  "fetchedAt": "2026-11-19T05:45:12.050Z",
   "jobs": [
+    {
+      "id": "greenhouse-scaleai-4742042005",
+      "title": "Systems Engineering Integration & Test Lead, Public Sector",
+      "company": "Scale AI",
+      "url": "https://job-boards.greenhouse.io/scaleai/jobs/4742042005",
+      "source": "Scale AI",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Washington, DC",
+      "country": "United States",
+      "postedAt": "2026-11-18T19:40:55-05:00"
+    },
     {
       "id": "arbeitnow-test-automation-engineer-almere-488912",
       "title": "Test Automation Engineer",
@@ -78,19 +91,6 @@
       "location": "Frankfurt am Main",
       "country": "Germany",
       "postedAt": "2026-11-18T13:31:03.000Z"
-    },
-    {
-      "id": "jobicy-163106",
-      "title": "Senior QA Engineer",
-      "company": "Cross River",
-      "url": "https://jobicy.com/jobs/163106-senior-qa-engineer-5",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Spain",
-      "country": "Spain",
-      "postedAt": "2026-11-18T12:42:34+00:00"
     },
     {
       "id": "arbeitnow-senior-quality-engineer-london-270862",
@@ -481,19 +481,6 @@
       "location": "San Francisco",
       "country": "United States",
       "postedAt": "2026-11-06T22:33:41.408+00:00"
-    },
-    {
-      "id": "greenhouse-scaleai-4742042005",
-      "title": "Systems Engineering Integration & Test Lead, Public Sector",
-      "company": "Scale AI",
-      "url": "https://job-boards.greenhouse.io/scaleai/jobs/4742042005",
-      "source": "Scale AI",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Washington, DC",
-      "country": "United States",
-      "postedAt": "2026-11-05T14:01:00-05:00"
     },
     {
       "id": "ashby-crusoe-0027f489-8720-4bba-ba86-23d16799541e",
