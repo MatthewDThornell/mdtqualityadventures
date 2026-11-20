@@ -1,9 +1,74 @@
 {
-  "fetchedAt": "2026-11-19T15:10:41.721Z",
+  "fetchedAt": "2026-11-20T00:14:58.126Z",
   "jobs": [
     {
+      "id": "arbeitnow-leiterin-test-engineering-elektronik-aoi-axi-ict-region-bodensee-stuttgart-152405",
+      "title": "Leiter:in Test Engineering Elektronik (AOI, AXI, ICT) (m/w/d) | Region Bodensee",
+      "company": "CONCAPE",
+      "url": "https://www.arbeitnow.com/jobs/companies/concape/leiterin-test-engineering-elektronik-aoi-axi-ict-region-bodensee-stuttgart-152405",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Stuttgart",
+      "country": "Germany",
+      "postedAt": "2026-11-19T21:00:40.000Z"
+    },
+    {
+      "id": "arbeitnow-leiterin-test-engineering-elektronik-aoi-axi-ict-region-bodensee-munich-395214",
+      "title": "Leiter:in Test Engineering Elektronik (AOI, AXI, ICT) (m/w/d) | Region Bodensee",
+      "company": "CONCAPE",
+      "url": "https://www.arbeitnow.com/jobs/companies/concape/leiterin-test-engineering-elektronik-aoi-axi-ict-region-bodensee-munich-395214",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich",
+      "country": "Germany",
+      "postedAt": "2026-11-19T21:00:40.000Z"
+    },
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-11-19T14:46:43-05:00"
+    },
+    {
+      "id": "greenhouse-roblox-8338120",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-11-19T14:35:13-05:00"
+    },
+    {
+      "id": "greenhouse-stripe-8153331",
+      "title": "Software Quality Assurance Engineer",
+      "company": "Stripe",
+      "url": "https://stripe.com/jobs/search?gh_jid=8153331",
+      "source": "Stripe",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Taipei,Taiwan",
+      "country": "Taiwan",
+      "postedAt": "2026-11-19T12:10:00-05:00"
+    },
+    {
       "id": "arbeitnow-qa-testers-needed-zurich-313813",
-      "title": "QA Testers Needed",
+      "title": "QA Tester (Remote): Test Real Apps, Flexible Hours",
       "company": "Global App Testing",
       "url": "https://www.arbeitnow.ch/jobs/companies/global-app-testing/qa-testers-needed-zurich-313813",
       "source": "Arbeitnow",
@@ -12,7 +77,7 @@
       "workType": "Remote",
       "location": "Zürich",
       "country": "Other",
-      "postedAt": "2026-11-19T12:17:38.000Z"
+      "postedAt": "2026-11-19T16:32:33.000Z"
     },
     {
       "id": "arbeitnow-quality-assurance-associate-fur-csl-behring-50-bern-135293",
@@ -39,58 +104,6 @@
       "location": "Bern",
       "country": "Other",
       "postedAt": "2026-11-19T10:30:49.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-11-19T02:46:35-05:00"
-    },
-    {
-      "id": "greenhouse-roblox-8338120",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-11-19T02:36:34-05:00"
-    },
-    {
-      "id": "jobicy-155928",
-      "title": "Senior Software Development Engineer in Test (SDET)",
-      "company": "Flex",
-      "url": "https://jobicy.com/jobs/155928-senior-software-development-engineer-in-test-sdet-2",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Anywhere",
-      "country": "Other",
-      "postedAt": "2026-11-19T03:35:04+00:00"
-    },
-    {
-      "id": "jobicy-155930",
-      "title": "Quality Engineer",
-      "company": "StackAdapt",
-      "url": "https://jobicy.com/jobs/155930-quality-engineer-3",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Canada",
-      "country": "Canada",
-      "postedAt": "2026-11-19T03:30:08+00:00"
     },
     {
       "id": "greenhouse-scaleai-4742042005",
@@ -210,6 +223,19 @@
       "postedAt": "2026-11-18T00:40:31.000Z"
     },
     {
+      "id": "arbeitnow-qa-engineer-payments-berlin-435071",
+      "title": "QA Engineer - Payments",
+      "company": "sumup",
+      "url": "https://www.arbeitnow.com/jobs/companies/sumup/qa-engineer-payments-berlin-435071",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-11-17T21:55:26.000Z"
+    },
+    {
       "id": "arbeitnow-remote-principal-sdet-12063",
       "title": "Principal SDET",
       "company": "Radiant",
@@ -299,19 +325,6 @@
       "location": "Zurich HQ",
       "country": "Other",
       "postedAt": "2026-11-16T06:40:16.000Z"
-    },
-    {
-      "id": "arbeitnow-ait-test-engineer-munich-148999",
-      "title": "AIT Test Engineer",
-      "company": "The Exploration Company",
-      "url": "https://www.arbeitnow.com/jobs/companies/the-exploration-company/ait-test-engineer-munich-148999",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich, Germany",
-      "country": "Germany",
-      "postedAt": "2026-11-15T15:40:14.000Z"
     },
     {
       "id": "arbeitnow-qa-engineer-intern-6-months-333718",
@@ -494,19 +507,6 @@
       "location": "San Francisco",
       "country": "United States",
       "postedAt": "2026-11-06T22:33:41.408+00:00"
-    },
-    {
-      "id": "ashby-crusoe-0027f489-8720-4bba-ba86-23d16799541e",
-      "title": "Senior QA Engineer, Client Interfaces",
-      "company": "Crusoe",
-      "url": "https://jobs.ashbyhq.com/Crusoe/0027f489-8720-4bba-ba86-23d16799541e",
-      "source": "Crusoe",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Francisco, CA - US",
-      "country": "United States",
-      "postedAt": "2026-11-05T16:57:09.602+00:00"
     }
   ]
 }
