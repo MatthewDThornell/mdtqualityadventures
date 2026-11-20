@@ -1,18 +1,44 @@
 {
-  "fetchedAt": "2026-11-20T14:50:39.763Z",
+  "fetchedAt": "2026-11-20T23:38:32.659Z",
   "jobs": [
     {
-      "id": "greenhouse-toast-8392140",
-      "title": "QA Engineer II",
-      "company": "Toast",
-      "url": "https://careers.toasttab.com/jobs?gh_jid=8392140",
-      "source": "Toast",
+      "id": "ashby-cerebras-a3f0196e-3ca9-40ca-a3d6-b0c4611b15b6",
+      "title": "Senior Product Quality Engineer",
+      "company": "Cerebras",
+      "url": "https://jobs.ashbyhq.com/cerebras/a3f0196e-3ca9-40ca-a3d6-b0c4611b15b6",
+      "source": "Cerebras",
       "sourceUrl": null,
       "direct": true,
       "workType": "Hybrid",
-      "location": "Bangalore, India",
-      "country": "India",
-      "postedAt": "2026-11-20T07:21:01-05:00"
+      "location": "Sunnyvale, CA",
+      "country": "United States",
+      "postedAt": "2026-11-20T21:50:46.517+00:00"
+    },
+    {
+      "id": "greenhouse-airbnb-8259224",
+      "title": "Quality Assurance & Standards Manager",
+      "company": "Airbnb",
+      "url": "https://careers.airbnb.com/positions/8259224?gh_jid=8259224",
+      "source": "Airbnb",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "United States ",
+      "country": "United States",
+      "postedAt": "2026-11-20T15:58:44-05:00"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-manager-gieres-26084",
+      "title": "Quality Assurance Manager",
+      "company": "eCential Robotics",
+      "url": "https://www.arbeitnow.fr/jobs/companies/ecential-robotics/quality-assurance-manager-gieres-26084",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Gières",
+      "country": "Other",
+      "postedAt": "2026-11-20T19:47:25.000Z"
     },
     {
       "id": "greenhouse-roblox-7656541",
@@ -25,7 +51,7 @@
       "workType": "On-site",
       "location": "San Mateo, CA, United States",
       "country": "United States",
-      "postedAt": "2026-11-20T02:46:54-05:00"
+      "postedAt": "2026-11-20T14:46:20-05:00"
     },
     {
       "id": "greenhouse-roblox-8338120",
@@ -38,7 +64,72 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-11-20T02:36:46-05:00"
+      "postedAt": "2026-11-20T14:35:10-05:00"
+    },
+    {
+      "id": "arbeitnow-qa-testers-needed-zurich-313813",
+      "title": "QA Tester (Remote): Test Real Apps, Flexible Hours",
+      "company": "Global App Testing",
+      "url": "https://www.arbeitnow.ch/jobs/companies/global-app-testing/qa-testers-needed-zurich-313813",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Zürich",
+      "country": "Other",
+      "postedAt": "2026-11-20T17:47:36.000Z"
+    },
+    {
+      "id": "arbeitnow-software-quality-engineer-gieres-154803",
+      "title": "Software Quality Engineer",
+      "company": "eCential Robotics",
+      "url": "https://www.arbeitnow.fr/jobs/companies/ecential-robotics/software-quality-engineer-gieres-154803",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Gières",
+      "country": "Other",
+      "postedAt": "2026-11-20T16:01:00.000Z"
+    },
+    {
+      "id": "arbeitnow-test-engineer-294842",
+      "title": "Test Engineer (f/m/d)",
+      "company": "Think Cell",
+      "url": "https://www.arbeitnow.com/jobs/companies/think-cell/test-engineer-294842",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-11-20T15:55:17.000Z"
+    },
+    {
+      "id": "jobicy-163545",
+      "title": "Senior QA Engineer",
+      "company": "HyperHug",
+      "url": "https://jobicy.com/jobs/163545-senior-qa-engineer-6",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Cyprus",
+      "country": "Other",
+      "postedAt": "2026-11-20T14:19:26+00:00"
+    },
+    {
+      "id": "greenhouse-toast-8392140",
+      "title": "QA Engineer II",
+      "company": "Toast",
+      "url": "https://careers.toasttab.com/jobs?gh_jid=8392140",
+      "source": "Toast",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "Bangalore, India",
+      "country": "India",
+      "postedAt": "2026-11-20T07:21:01-05:00"
     },
     {
       "id": "arbeitnow-industrialization-electronics-test-engineer-zurich-83872",
@@ -130,19 +221,6 @@
       "location": "Taipei,Taiwan",
       "country": "Taiwan",
       "postedAt": "2026-11-19T12:10:00-05:00"
-    },
-    {
-      "id": "arbeitnow-qa-testers-needed-zurich-313813",
-      "title": "QA Tester (Remote): Test Real Apps, Flexible Hours",
-      "company": "Global App Testing",
-      "url": "https://www.arbeitnow.ch/jobs/companies/global-app-testing/qa-testers-needed-zurich-313813",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Zürich",
-      "country": "Other",
-      "postedAt": "2026-11-19T16:32:33.000Z"
     },
     {
       "id": "arbeitnow-quality-assurance-associate-fur-csl-behring-50-bern-135293",
@@ -299,19 +377,6 @@
       "location": "Berlin",
       "country": "Germany",
       "postedAt": "2026-11-17T21:55:26.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-principal-sdet-12063",
-      "title": "Principal SDET",
-      "company": "Radiant",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/radiant/remote-principal-sdet-12063",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "United Kingdom - Remote",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-17T21:40:29.000Z"
     },
     {
       "id": "arbeitnow-test-engineer-nederland-216783",
@@ -520,19 +585,6 @@
       "location": "San Mateo, CA United States",
       "country": "United States",
       "postedAt": "2026-11-06T19:37:32-05:00"
-    },
-    {
-      "id": "ashby-openai-0369bd4b-bfb1-4c36-90cb-4e3a24365150",
-      "title": "Robotics Test Engineer",
-      "company": "OpenAI",
-      "url": "https://jobs.ashbyhq.com/openai/0369bd4b-bfb1-4c36-90cb-4e3a24365150",
-      "source": "OpenAI",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Francisco",
-      "country": "United States",
-      "postedAt": "2026-11-06T22:33:41.408+00:00"
     }
   ]
 }
