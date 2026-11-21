@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-20T23:38:32.659Z",
+  "fetchedAt": "2026-11-21T05:28:00.048Z",
   "jobs": [
     {
       "id": "ashby-cerebras-a3f0196e-3ca9-40ca-a3d6-b0c4611b15b6",
@@ -418,32 +418,6 @@
       "postedAt": "2026-11-17T13:17:51.000Z"
     },
     {
-      "id": "arbeitnow-qa-engineer-intern-6-months-333718",
-      "title": "QA Engineer Intern (6 months)",
-      "company": "shifttechnology",
-      "url": "https://www.arbeitnow.fr/jobs/companies/shifttechnology/qa-engineer-intern-6-months-333718",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-11-14T03:55:19.000Z"
-    },
-    {
-      "id": "arbeitnow-integration-test-engineer-utrecht-434292",
-      "title": "Integration Test Engineer",
-      "company": "iwell",
-      "url": "https://www.arbeitnow.nl/jobs/companies/iwell/integration-test-engineer-utrecht-434292",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Utrecht, Utrecht, Netherlands",
-      "country": "Netherlands",
-      "postedAt": "2026-11-14T03:31:38.000Z"
-    },
-    {
       "id": "greenhouse-verkada-5083834007",
       "title": "Senior Test Engineer, Cameras",
       "company": "Verkada",
@@ -559,32 +533,6 @@
       "location": "Remote in EMEA",
       "country": "Other",
       "postedAt": "2026-11-08T00:00:50-05:00"
-    },
-    {
-      "id": "greenhouse-verkada-5237420007",
-      "title": "QA Automation Engineer",
-      "company": "Verkada",
-      "url": "https://job-boards.greenhouse.io/verkada/jobs/5237420007",
-      "source": "Verkada",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Poland",
-      "country": "Other",
-      "postedAt": "2026-11-06T19:37:32-05:00"
-    },
-    {
-      "id": "greenhouse-verkada-5082745007",
-      "title": "Senior Test Engineer – Alarms",
-      "company": "Verkada",
-      "url": "https://job-boards.greenhouse.io/verkada/jobs/5082745007",
-      "source": "Verkada",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA United States",
-      "country": "United States",
-      "postedAt": "2026-11-06T19:37:32-05:00"
     }
   ]
 }
