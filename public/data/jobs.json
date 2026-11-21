@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-21T05:28:00.048Z",
+  "fetchedAt": "2026-11-21T14:07:59.820Z",
   "jobs": [
     {
       "id": "ashby-cerebras-a3f0196e-3ca9-40ca-a3d6-b0c4611b15b6",
@@ -104,19 +104,6 @@
       "location": "",
       "country": "Remote / Unspecified",
       "postedAt": "2026-11-20T15:55:17.000Z"
-    },
-    {
-      "id": "jobicy-163545",
-      "title": "Senior QA Engineer",
-      "company": "HyperHug",
-      "url": "https://jobicy.com/jobs/163545-senior-qa-engineer-6",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Cyprus",
-      "country": "Other",
-      "postedAt": "2026-11-20T14:19:26+00:00"
     },
     {
       "id": "greenhouse-toast-8392140",
@@ -312,19 +299,6 @@
       "location": "Frankfurt am Main",
       "country": "Germany",
       "postedAt": "2026-11-18T13:31:03.000Z"
-    },
-    {
-      "id": "arbeitnow-senior-quality-engineer-london-270862",
-      "title": "Senior Quality Engineer",
-      "company": "Freetrade",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/freetrade/senior-quality-engineer-london-270862",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-18T09:40:12.000Z"
     },
     {
       "id": "arbeitnow-manager-quality-assurance-quality-engineering-parsdorf-bavaria-112995",
