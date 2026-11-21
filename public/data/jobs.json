@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-11-21T14:07:59.820Z",
+  "fetchedAt": "2026-11-21T22:43:54.567Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-11-21T14:46:41-05:00"
+    },
+    {
+      "id": "greenhouse-roblox-8338120",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-11-21T14:36:20-05:00"
+    },
+    {
+      "id": "arbeitnow-mechatronics-test-engineer-munich-bavaria-471636",
+      "title": "Mechatronics Test Engineer (m/f/d)",
+      "company": "Agilerobotsse",
+      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/mechatronics-test-engineer-munich-bavaria-471636",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Munich, Bavaria",
+      "country": "Germany",
+      "postedAt": "2026-11-21T18:55:27.000Z"
+    },
     {
       "id": "ashby-cerebras-a3f0196e-3ca9-40ca-a3d6-b0c4611b15b6",
       "title": "Senior Product Quality Engineer",
@@ -41,32 +80,6 @@
       "postedAt": "2026-11-20T19:47:25.000Z"
     },
     {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-11-20T14:46:20-05:00"
-    },
-    {
-      "id": "greenhouse-roblox-8338120",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-11-20T14:35:10-05:00"
-    },
-    {
       "id": "arbeitnow-qa-testers-needed-zurich-313813",
       "title": "QA Tester (Remote): Test Real Apps, Flexible Hours",
       "company": "Global App Testing",
@@ -91,6 +104,19 @@
       "location": "Gières",
       "country": "Other",
       "postedAt": "2026-11-20T16:01:00.000Z"
+    },
+    {
+      "id": "remoteok-1137914",
+      "title": "Quality Engineer",
+      "company": "Quartermaster",
+      "url": "https://remoteOK.com/remote-jobs/remote-quality-engineer-quartermaster-1137914",
+      "source": "Remote OK",
+      "sourceUrl": "https://remoteok.com/remote-qa-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Arlington",
+      "country": "Other",
+      "postedAt": "2026-11-20T16:00:18+00:00"
     },
     {
       "id": "arbeitnow-test-engineer-294842",
@@ -249,19 +275,6 @@
       "postedAt": "2026-11-18T19:40:55-05:00"
     },
     {
-      "id": "arbeitnow-test-automation-engineer-almere-488912",
-      "title": "Test Automation Engineer",
-      "company": "Infomedics",
-      "url": "https://www.arbeitnow.nl/jobs/companies/infomedics/test-automation-engineer-almere-488912",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Almere, Flevoland, Nederland",
-      "country": "Other",
-      "postedAt": "2026-11-18T21:51:37.000Z"
-    },
-    {
       "id": "arbeitnow-test-automation-engineer-heemstede-370552",
       "title": "Test Automation Engineer",
       "company": "Infomedics",
@@ -338,19 +351,6 @@
       "location": "Zürich",
       "country": "Other",
       "postedAt": "2026-11-18T00:40:31.000Z"
-    },
-    {
-      "id": "arbeitnow-qa-engineer-payments-berlin-435071",
-      "title": "QA Engineer - Payments",
-      "company": "sumup",
-      "url": "https://www.arbeitnow.com/jobs/companies/sumup/qa-engineer-payments-berlin-435071",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Berlin",
-      "country": "Germany",
-      "postedAt": "2026-11-17T21:55:26.000Z"
     },
     {
       "id": "arbeitnow-test-engineer-nederland-216783",
