@@ -1,6 +1,71 @@
 {
-  "fetchedAt": "2026-11-22T13:58:58.524Z",
+  "fetchedAt": "2026-11-22T23:10:23.703Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-11-22T14:46:12-05:00"
+    },
+    {
+      "id": "greenhouse-roblox-8338120",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-11-22T14:36:10-05:00"
+    },
+    {
+      "id": "greenhouse-testlio-8410174",
+      "title": "Remote Software Tester (Freelance) | Test AT&T U-verse & Cox",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8410174",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "United States",
+      "country": "United States",
+      "postedAt": "2026-11-22T14:02:44-05:00"
+    },
+    {
+      "id": "arbeitnow-senior-propulsion-test-engineer-bordeaux-162552",
+      "title": "Senior Propulsion Test Engineer",
+      "company": "The Exploration Company",
+      "url": "https://www.arbeitnow.fr/jobs/companies/the-exploration-company/senior-propulsion-test-engineer-bordeaux-162552",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Bordeaux, France",
+      "country": "France",
+      "postedAt": "2026-11-22T15:40:13.000Z"
+    },
+    {
+      "id": "arbeitnow-management-consultant-test-manager-hamburg-259371",
+      "title": "Management Consultant Test Manager (m/w/d)",
+      "company": "QESTIT",
+      "url": "https://www.arbeitnow.com/jobs/companies/qestit/management-consultant-test-manager-hamburg-259371",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Hamburg",
+      "country": "Germany",
+      "postedAt": "2026-11-22T15:31:08.000Z"
+    },
     {
       "id": "arbeitnow-remote-software-test-engineer-bern-110215",
       "title": "Software Test Engineer",
@@ -28,19 +93,6 @@
       "postedAt": "2026-11-22T12:31:12.000Z"
     },
     {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-11-22T02:44:48-05:00"
-    },
-    {
       "id": "arbeitnow-senior-fsqa-manager-phf-all-genders-berlin-berlin-291816",
       "title": "Senior FSQA Manager - PHF (all genders)",
       "company": "hellofresh",
@@ -65,19 +117,6 @@
       "location": "London",
       "country": "United Kingdom",
       "postedAt": "2026-11-22T00:55:23.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-8338120",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-11-21T14:36:20-05:00"
     },
     {
       "id": "arbeitnow-mechatronics-test-engineer-munich-bavaria-471636",
@@ -314,19 +353,6 @@
       "postedAt": "2026-11-18T21:51:37.000Z"
     },
     {
-      "id": "arbeitnow-test-automation-engineer-heemstede-370552",
-      "title": "Test Automation Engineer",
-      "company": "Infomedics",
-      "url": "https://www.arbeitnow.nl/jobs/companies/infomedics/test-automation-engineer-heemstede-370552",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Heemstede, Noord-Holland, Nederland",
-      "country": "Other",
-      "postedAt": "2026-11-18T21:51:37.000Z"
-    },
-    {
       "id": "ashby-sardine-4237a126-68f1-495a-b8fc-39f9f59054f1",
       "title": "QA Automation Engineer",
       "company": "Sardine",
@@ -338,32 +364,6 @@
       "location": "Japan",
       "country": "Japan",
       "postedAt": "2026-11-18T18:11:29.936+00:00"
-    },
-    {
-      "id": "arbeitnow-test-engineer-test-automation-engineer-schwerpunkt-api-testing-frankfurt-am-main-300918",
-      "title": "Test Engineer / Test Automation Engineer (m/w/d) Schwerpunkt API-Testing",
-      "company": "Nelta GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/nelta-gmbh/test-engineer-test-automation-engineer-schwerpunkt-api-testing-frankfurt-am-main-300918",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Frankfurt am Main",
-      "country": "Germany",
-      "postedAt": "2026-11-18T13:31:03.000Z"
-    },
-    {
-      "id": "arbeitnow-manager-quality-assurance-quality-engineering-parsdorf-bavaria-112995",
-      "title": "Manager Quality Assurance & Quality Engineering (m/f/d)",
-      "company": "isaraerospace",
-      "url": "https://www.arbeitnow.com/jobs/companies/isaraerospace/manager-quality-assurance-quality-engineering-parsdorf-bavaria-112995",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Parsdorf, Bavaria",
-      "country": "Other",
-      "postedAt": "2026-11-18T03:55:23.000Z"
     },
     {
       "id": "arbeitnow-test-engineer-zurich-36222",
