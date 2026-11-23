@@ -1,18 +1,44 @@
 {
-  "fetchedAt": "2026-11-23T05:33:29.077Z",
+  "fetchedAt": "2026-11-23T17:16:05.094Z",
   "jobs": [
     {
-      "id": "arbeitnow-quality-assurance-specialist-hochheim-am-main-germany-385506",
-      "title": "Quality Assurance Specialist",
-      "company": "Ircagroup",
-      "url": "https://www.arbeitnow.com/jobs/companies/ircagroup/quality-assurance-specialist-hochheim-am-main-germany-385506",
+      "id": "arbeitnow-test-engineer-hil-autonomy-systems-land-domain-gilching-129132",
+      "title": "Test Engineer HIL Autonomy Systems – Land Domain (m/f/d)",
+      "company": "Quantum-Systems GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/quantum-systems-gmbh/test-engineer-hil-autonomy-systems-land-domain-gilching-129132",
       "source": "Arbeitnow",
       "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
       "workType": "On-site",
-      "location": "Hochheim am Main, Germany",
-      "country": "Germany",
-      "postedAt": "2026-11-23T00:07:15.000Z"
+      "location": "Gilching",
+      "country": "Other",
+      "postedAt": "2026-11-23T16:20:10.000Z"
+    },
+    {
+      "id": "arbeitnow-qa-testers-needed-zurich-313813",
+      "title": "QA Tester (Remote): Test Real Apps, Flexible Hours",
+      "company": "Global App Testing",
+      "url": "https://www.arbeitnow.ch/jobs/companies/global-app-testing/qa-testers-needed-zurich-313813",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Oslo",
+      "country": "Other",
+      "postedAt": "2026-11-23T13:02:36.000Z"
+    },
+    {
+      "id": "arbeitnow-integration-and-test-engineer-software-sydney-australia-139346",
+      "title": "Integration and Test Engineer (Software)",
+      "company": "Andurilindustries",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/andurilindustries/integration-and-test-engineer-software-sydney-australia-139346",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Sydney, Australia",
+      "country": "Australia",
+      "postedAt": "2026-11-23T09:55:24.000Z"
     },
     {
       "id": "greenhouse-roblox-7656541",
@@ -25,7 +51,7 @@
       "workType": "On-site",
       "location": "San Mateo, CA, United States",
       "country": "United States",
-      "postedAt": "2026-11-22T14:46:12-05:00"
+      "postedAt": "2026-11-23T02:44:54-05:00"
     },
     {
       "id": "greenhouse-roblox-8338120",
@@ -38,7 +64,20 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-11-22T14:36:10-05:00"
+      "postedAt": "2026-11-23T02:35:00-05:00"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-specialist-hochheim-am-main-germany-385506",
+      "title": "Quality Assurance Specialist",
+      "company": "Ircagroup",
+      "url": "https://www.arbeitnow.com/jobs/companies/ircagroup/quality-assurance-specialist-hochheim-am-main-germany-385506",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Hochheim am Main, Germany",
+      "country": "Germany",
+      "postedAt": "2026-11-23T00:07:15.000Z"
     },
     {
       "id": "greenhouse-testlio-8410174",
@@ -184,19 +223,6 @@
       "postedAt": "2026-11-20T19:47:25.000Z"
     },
     {
-      "id": "arbeitnow-qa-testers-needed-zurich-313813",
-      "title": "QA Tester (Remote): Test Real Apps, Flexible Hours",
-      "company": "Global App Testing",
-      "url": "https://www.arbeitnow.ch/jobs/companies/global-app-testing/qa-testers-needed-zurich-313813",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Zürich",
-      "country": "Other",
-      "postedAt": "2026-11-20T17:47:36.000Z"
-    },
-    {
       "id": "arbeitnow-software-quality-engineer-gieres-154803",
       "title": "Software Quality Engineer",
       "company": "eCential Robotics",
@@ -221,19 +247,6 @@
       "location": "Arlington",
       "country": "Other",
       "postedAt": "2026-11-20T16:00:18+00:00"
-    },
-    {
-      "id": "arbeitnow-test-engineer-294842",
-      "title": "Test Engineer (f/m/d)",
-      "company": "Think Cell",
-      "url": "https://www.arbeitnow.com/jobs/companies/think-cell/test-engineer-294842",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-11-20T15:55:17.000Z"
     },
     {
       "id": "greenhouse-toast-8392140",
