@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-11-22T23:10:23.703Z",
+  "fetchedAt": "2026-11-23T05:33:29.077Z",
   "jobs": [
+    {
+      "id": "arbeitnow-quality-assurance-specialist-hochheim-am-main-germany-385506",
+      "title": "Quality Assurance Specialist",
+      "company": "Ircagroup",
+      "url": "https://www.arbeitnow.com/jobs/companies/ircagroup/quality-assurance-specialist-hochheim-am-main-germany-385506",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Hochheim am Main, Germany",
+      "country": "Germany",
+      "postedAt": "2026-11-23T00:07:15.000Z"
+    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior Quality Engineer",
