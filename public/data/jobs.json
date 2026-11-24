@@ -1,6 +1,71 @@
 {
-  "fetchedAt": "2026-11-24T03:45:23.424Z",
+  "fetchedAt": "2026-11-24T16:55:06.552Z",
   "jobs": [
+    {
+      "id": "jobicy-164073",
+      "title": "Software Tester (Freelance) | Test AT&T U-verse & Cox",
+      "company": "Testlio",
+      "url": "https://jobicy.com/jobs/164073-software-tester-freelance-test-att-u-verse-cox",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "USA",
+      "country": "United States",
+      "postedAt": "2026-11-24T11:25:51+00:00"
+    },
+    {
+      "id": "jobicy-164036",
+      "title": "Semi Sr. - QA Engineer (Data) – E-Learning",
+      "company": "Truelogic",
+      "url": "https://jobicy.com/jobs/164036-semi-sr-qa-engineer-data-e-learning",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Brazil",
+      "country": "Brazil",
+      "postedAt": "2026-11-24T08:06:12+00:00"
+    },
+    {
+      "id": "jobicy-164032",
+      "title": "Jr. Semi Sr. - QA Engineer (Data) – E-Learning",
+      "company": "Truelogic",
+      "url": "https://jobicy.com/jobs/164032-jr-semi-sr-qa-engineer-data-e-learning",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Brazil",
+      "country": "Brazil",
+      "postedAt": "2026-11-24T08:06:02+00:00"
+    },
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-11-24T02:44:46-05:00"
+    },
+    {
+      "id": "greenhouse-roblox-8338120",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-11-24T02:35:24-05:00"
+    },
     {
       "id": "arbeitnow-professional-quality-engineer-testautomatisierung-ki-refnr-48375-bern-64980",
       "title": "Professional Quality Engineer (m/w/d) - Testautomatisierung & KI (Ref.Nr.: 48375)",
@@ -39,32 +104,6 @@
       "location": "Remote job",
       "country": "Other",
       "postedAt": "2026-11-23T21:31:12.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-11-23T14:47:01-05:00"
-    },
-    {
-      "id": "greenhouse-roblox-8338120",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-11-23T14:36:37-05:00"
     },
     {
       "id": "arbeitnow-quality-engineer-lille-btwin-village-nord-34523",
@@ -405,32 +444,6 @@
       "postedAt": "2026-11-19T21:09:05-05:00"
     },
     {
-      "id": "arbeitnow-leiterin-test-engineering-elektronik-aoi-axi-ict-region-bodensee-stuttgart-152405",
-      "title": "Leiter:in Test Engineering Elektronik (AOI, AXI, ICT) (m/w/d) | Region Bodensee",
-      "company": "CONCAPE",
-      "url": "https://www.arbeitnow.com/jobs/companies/concape/leiterin-test-engineering-elektronik-aoi-axi-ict-region-bodensee-stuttgart-152405",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Stuttgart",
-      "country": "Germany",
-      "postedAt": "2026-11-19T21:00:40.000Z"
-    },
-    {
-      "id": "arbeitnow-leiterin-test-engineering-elektronik-aoi-axi-ict-region-bodensee-munich-395214",
-      "title": "Leiter:in Test Engineering Elektronik (AOI, AXI, ICT) (m/w/d) | Region Bodensee",
-      "company": "CONCAPE",
-      "url": "https://www.arbeitnow.com/jobs/companies/concape/leiterin-test-engineering-elektronik-aoi-axi-ict-region-bodensee-munich-395214",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich",
-      "country": "Germany",
-      "postedAt": "2026-11-19T21:00:40.000Z"
-    },
-    {
       "id": "greenhouse-stripe-8153331",
       "title": "Software Quality Assurance Engineer",
       "company": "Stripe",
@@ -522,32 +535,6 @@
       "postedAt": "2026-11-17T18:31:21.000Z"
     },
     {
-      "id": "arbeitnow-software-full-stack-qa-engineer-amsterdam-195856",
-      "title": "Software / Full-Stack QA Engineer",
-      "company": "Aquablu B.V",
-      "url": "https://www.arbeitnow.nl/jobs/companies/aquablu-bv/software-full-stack-qa-engineer-amsterdam-195856",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Amsterdam, Noord-Holland, Netherlands",
-      "country": "Netherlands",
-      "postedAt": "2026-11-17T15:31:30.000Z"
-    },
-    {
-      "id": "arbeitnow-software-test-engineer-80-100-bern-79595",
-      "title": "Software Test Engineer 80–100%",
-      "company": "machineMD",
-      "url": "https://www.arbeitnow.ch/jobs/companies/machinemd/software-test-engineer-80-100-bern-79595",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Bern",
-      "country": "Other",
-      "postedAt": "2026-11-17T13:17:51.000Z"
-    },
-    {
       "id": "greenhouse-airbnb-7453190",
       "title": "Senior Mobile Software Engineer, Quality Engineering",
       "company": "Airbnb",
@@ -611,19 +598,6 @@
       "location": "Remote in Martinique",
       "country": "Other",
       "postedAt": "2026-11-12T12:01:07-05:00"
-    },
-    {
-      "id": "greenhouse-lyft-8767534002",
-      "title": "Software Engineer Intern, Test Automation (Summer 2027)",
-      "company": "Lyft",
-      "url": "https://app.careerpuck.com/job-board/lyft/job/8767534002?gh_jid=8767534002",
-      "source": "Lyft",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Montreal, Canada",
-      "country": "Canada",
-      "postedAt": "2026-11-10T10:52:40-05:00"
     }
   ]
 }
