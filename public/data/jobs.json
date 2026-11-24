@@ -1,6 +1,123 @@
 {
-  "fetchedAt": "2026-11-23T17:16:05.094Z",
+  "fetchedAt": "2026-11-24T03:45:23.424Z",
   "jobs": [
+    {
+      "id": "arbeitnow-professional-quality-engineer-testautomatisierung-ki-refnr-48375-bern-64980",
+      "title": "Professional Quality Engineer (m/w/d) - Testautomatisierung & KI (Ref.Nr.: 48375)",
+      "company": "Wavestone Germany AG",
+      "url": "https://www.arbeitnow.ch/jobs/companies/wavestone-germany-ag/professional-quality-engineer-testautomatisierung-ki-refnr-48375-bern-64980",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Bern",
+      "country": "Other",
+      "postedAt": "2026-11-23T22:47:32.000Z"
+    },
+    {
+      "id": "greenhouse-robinhood-8329677",
+      "title": "Senior Quality Engineer",
+      "company": "Robinhood",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/8329677?t=gh_src=&gh_jid=8329677",
+      "source": "Robinhood",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "New York, NY",
+      "country": "United States",
+      "postedAt": "2026-11-23T16:58:09-05:00"
+    },
+    {
+      "id": "arbeitnow-remote-test-engineer-hil-autonomy-systems-land-domain-gilching-417479",
+      "title": "Test Engineer HIL Autonomy Systems – Land Domain (m/f/d)",
+      "company": "Quantum-Systems GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/quantum-systems-gmbh/remote-test-engineer-hil-autonomy-systems-land-domain-gilching-417479",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Remote job",
+      "country": "Other",
+      "postedAt": "2026-11-23T21:31:12.000Z"
+    },
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-11-23T14:47:01-05:00"
+    },
+    {
+      "id": "greenhouse-roblox-8338120",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-11-23T14:36:37-05:00"
+    },
+    {
+      "id": "arbeitnow-quality-engineer-lille-btwin-village-nord-34523",
+      "title": "Quality Engineer (f/m/d)",
+      "company": "Decathlontechnology",
+      "url": "https://www.arbeitnow.fr/jobs/companies/decathlontechnology/quality-engineer-lille-btwin-village-nord-34523",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Lille - Btwin Village, Nord",
+      "country": "Other",
+      "postedAt": "2026-11-23T18:55:33.000Z"
+    },
+    {
+      "id": "greenhouse-verkada-5237420007",
+      "title": "QA Automation Engineer",
+      "company": "Verkada",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5237420007",
+      "source": "Verkada",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Poland",
+      "country": "Other",
+      "postedAt": "2026-11-23T12:58:24-05:00"
+    },
+    {
+      "id": "greenhouse-verkada-5082745007",
+      "title": "Senior Test Engineer – Alarms",
+      "company": "Verkada",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5082745007",
+      "source": "Verkada",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA United States",
+      "country": "United States",
+      "postedAt": "2026-11-23T12:58:24-05:00"
+    },
+    {
+      "id": "greenhouse-verkada-5083834007",
+      "title": "Senior Test Engineer, Cameras",
+      "company": "Verkada",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5083834007",
+      "source": "Verkada",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Hybrid",
+      "location": "San Mateo, CA United States",
+      "country": "United States",
+      "postedAt": "2026-11-23T12:58:24-05:00"
+    },
     {
       "id": "arbeitnow-test-engineer-hil-autonomy-systems-land-domain-gilching-129132",
       "title": "Test Engineer HIL Autonomy Systems – Land Domain (m/f/d)",
@@ -13,6 +130,19 @@
       "location": "Gilching",
       "country": "Other",
       "postedAt": "2026-11-23T16:20:10.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-associate-fur-csl-behring-50-bern-135293",
+      "title": "Quality Assurance Associate (m/w/d) für CSL Behring (50%)",
+      "company": "We make it GmbH",
+      "url": "https://www.arbeitnow.ch/jobs/companies/we-make-it-gmbh/quality-assurance-associate-fur-csl-behring-50-bern-135293",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Bern",
+      "country": "Other",
+      "postedAt": "2026-11-23T16:17:30.000Z"
     },
     {
       "id": "arbeitnow-qa-testers-needed-zurich-313813",
@@ -39,32 +169,6 @@
       "location": "Sydney, Australia",
       "country": "Australia",
       "postedAt": "2026-11-23T09:55:24.000Z"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-11-23T02:44:54-05:00"
-    },
-    {
-      "id": "greenhouse-roblox-8338120",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-11-23T02:35:00-05:00"
     },
     {
       "id": "arbeitnow-quality-assurance-specialist-hochheim-am-main-germany-385506",
@@ -249,6 +353,19 @@
       "postedAt": "2026-11-20T16:00:18+00:00"
     },
     {
+      "id": "arbeitnow-test-engineer-294842",
+      "title": "Test Engineer (f/m/d)",
+      "company": "Think Cell",
+      "url": "https://www.arbeitnow.com/jobs/companies/think-cell/test-engineer-294842",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "",
+      "country": "Remote / Unspecified",
+      "postedAt": "2026-11-20T15:55:17.000Z"
+    },
+    {
       "id": "greenhouse-toast-8392140",
       "title": "QA Engineer II",
       "company": "Toast",
@@ -325,19 +442,6 @@
       "location": "Taipei,Taiwan",
       "country": "Taiwan",
       "postedAt": "2026-11-19T12:10:00-05:00"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-associate-fur-csl-behring-50-bern-135293",
-      "title": "Quality Assurance Associate (m/w/d) für CSL Behring (50%)",
-      "company": "We make it GmbH",
-      "url": "https://www.arbeitnow.ch/jobs/companies/we-make-it-gmbh/quality-assurance-associate-fur-csl-behring-50-bern-135293",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Bern",
-      "country": "Other",
-      "postedAt": "2026-11-19T11:17:41.000Z"
     },
     {
       "id": "arbeitnow-test-automation-engineer-ki-mcp-agents-bern-388710",
@@ -442,19 +546,6 @@
       "location": "Bern",
       "country": "Other",
       "postedAt": "2026-11-17T13:17:51.000Z"
-    },
-    {
-      "id": "greenhouse-verkada-5083834007",
-      "title": "Senior Test Engineer, Cameras",
-      "company": "Verkada",
-      "url": "https://job-boards.greenhouse.io/verkada/jobs/5083834007",
-      "source": "Verkada",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "San Mateo, CA United States",
-      "country": "United States",
-      "postedAt": "2026-11-13T18:43:52-05:00"
     },
     {
       "id": "greenhouse-airbnb-7453190",
