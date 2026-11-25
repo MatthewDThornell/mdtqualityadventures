@@ -1,6 +1,84 @@
 {
-  "fetchedAt": "2026-11-25T01:52:35.902Z",
+  "fetchedAt": "2026-11-25T16:44:10.083Z",
   "jobs": [
+    {
+      "id": "arbeitnow-quality-assurance-specialist-kaufbeuren-bavaria-91755",
+      "title": "Quality Assurance Specialist",
+      "company": "Agilerobotsse",
+      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/quality-assurance-specialist-kaufbeuren-bavaria-91755",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Kaufbeuren, Bavaria",
+      "country": "Other",
+      "postedAt": "2026-11-25T12:55:26.000Z"
+    },
+    {
+      "id": "arbeitnow-remote-senior-java-test-automation-engineer-416793",
+      "title": "(Senior) Java Test Automation Engineer (m/f/d)",
+      "company": "ecosio",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/ecosio/remote-senior-java-test-automation-engineer-416793",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Austria, Germany, Spain, Italy, Hungary, Portugal, Croatia - Remote",
+      "country": "Germany",
+      "postedAt": "2026-11-25T12:55:23.000Z"
+    },
+    {
+      "id": "arbeitnow-remote-senior-java-test-automation-engineer-110894",
+      "title": "(Senior) Java Test Automation Engineer (m/f/d)",
+      "company": "ecosio",
+      "url": "https://www.arbeitnow.com/jobs/companies/ecosio/remote-senior-java-test-automation-engineer-110894",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Austria, Spain, UK, Italy, Hungary, Portugal, Croatia - Remote",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-25T12:55:22.000Z"
+    },
+    {
+      "id": "arbeitnow-remote-mobile-quality-engineer-20289",
+      "title": "Mobile Quality Engineer",
+      "company": "Lendable",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/lendable/remote-mobile-quality-engineer-20289",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "UK Remote",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-25T12:40:24.000Z"
+    },
+    {
+      "id": "jobicy-164241",
+      "title": "(Senior) Java Test Automation Engineer (m/f/d)",
+      "company": "ecosio",
+      "url": "https://jobicy.com/jobs/164241-senior-java-test-automation-engineer-m-f-d",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Austria,  Croatia,  Germany,  Hungary,  Italy,  Portugal,  Spain,  UK",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-25T11:36:44+00:00"
+    },
+    {
+      "id": "jobicy-164236",
+      "title": "1199 - QA Engineer",
+      "company": "GoFasti",
+      "url": "https://jobicy.com/jobs/164236-1199-qa-engineer",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Mexico",
+      "country": "Mexico",
+      "postedAt": "2026-11-25T11:33:15+00:00"
+    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior Quality Engineer",
@@ -12,7 +90,7 @@
       "workType": "On-site",
       "location": "San Mateo, CA, United States",
       "country": "United States",
-      "postedAt": "2026-11-24T14:46:32-05:00"
+      "postedAt": "2026-11-25T02:45:02-05:00"
     },
     {
       "id": "greenhouse-roblox-8338120",
@@ -25,20 +103,33 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-11-24T14:36:35-05:00"
+      "postedAt": "2026-11-25T02:35:37-05:00"
     },
     {
-      "id": "jobicy-164073",
-      "title": "Software Tester (Freelance) | Test AT&T U-verse & Cox",
-      "company": "Testlio",
-      "url": "https://jobicy.com/jobs/164073-software-tester-freelance-test-att-u-verse-cox",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "id": "arbeitnow-quality-assurance-specialist-brighton-359377",
+      "title": "Quality Assurance Specialist",
+      "company": "Motorway",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/motorway/quality-assurance-specialist-brighton-359377",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
       "direct": false,
-      "workType": "Remote",
-      "location": "USA",
-      "country": "United States",
-      "postedAt": "2026-11-24T11:25:51+00:00"
+      "workType": "On-site",
+      "location": "Brighton",
+      "country": "Other",
+      "postedAt": "2026-11-25T06:40:13.000Z"
+    },
+    {
+      "id": "arbeitnow-senior-qa-engineer-bonn-101696",
+      "title": "Senior QA Engineer*",
+      "company": "Haeger Consulting GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/haeger-consulting-gmbh/senior-qa-engineer-bonn-101696",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Bonn",
+      "country": "Germany",
+      "postedAt": "2026-11-25T06:31:12.000Z"
     },
     {
       "id": "arbeitnow-quality-assurance-documentation-technician-dresden-375755",
@@ -288,19 +379,6 @@
       "postedAt": "2026-11-22T00:55:23.000Z"
     },
     {
-      "id": "arbeitnow-senior-fsqa-manager-phf-all-genders-london-80030",
-      "title": "Senior FSQA Manager - PHF (all genders)",
-      "company": "hellofresh",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/hellofresh/senior-fsqa-manager-phf-all-genders-london-80030",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "London",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-22T00:55:23.000Z"
-    },
-    {
       "id": "arbeitnow-mechatronics-test-engineer-munich-bavaria-471636",
       "title": "Mechatronics Test Engineer (m/f/d)",
       "company": "Agilerobotsse",
@@ -377,32 +455,6 @@
       "location": "Arlington",
       "country": "Other",
       "postedAt": "2026-11-20T16:00:18+00:00"
-    },
-    {
-      "id": "arbeitnow-test-engineer-294842",
-      "title": "Test Engineer (f/m/d)",
-      "company": "Think Cell",
-      "url": "https://www.arbeitnow.com/jobs/companies/think-cell/test-engineer-294842",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "",
-      "country": "Remote / Unspecified",
-      "postedAt": "2026-11-20T15:55:17.000Z"
-    },
-    {
-      "id": "greenhouse-toast-8392140",
-      "title": "QA Engineer II",
-      "company": "Toast",
-      "url": "https://careers.toasttab.com/jobs?gh_jid=8392140",
-      "source": "Toast",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Hybrid",
-      "location": "Bangalore, India",
-      "country": "India",
-      "postedAt": "2026-11-20T07:21:01-05:00"
     },
     {
       "id": "arbeitnow-industrialization-electronics-test-engineer-zurich-83872",
