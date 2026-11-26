@@ -1,6 +1,97 @@
 {
-  "fetchedAt": "2026-11-25T16:44:10.083Z",
+  "fetchedAt": "2026-11-26T01:29:35.658Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-11-25T14:46:46-05:00"
+    },
+    {
+      "id": "greenhouse-roblox-8338120",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-11-25T14:36:46-05:00"
+    },
+    {
+      "id": "greenhouse-testlio-8417708",
+      "title": "Freelance Software Tester | Remote (Malaysia)",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8417708",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Malaysia",
+      "country": "Other",
+      "postedAt": "2026-11-25T13:11:03-05:00"
+    },
+    {
+      "id": "greenhouse-testlio-8412854",
+      "title": "Freelance Software Tester | Remote (Panama)",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8412854",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Panama",
+      "country": "Other",
+      "postedAt": "2026-11-25T12:56:30-05:00"
+    },
+    {
+      "id": "greenhouse-testlio-8412852",
+      "title": "Freelance Software Tester | Remote (Guatemala)",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8412852",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Guatemala",
+      "country": "Other",
+      "postedAt": "2026-11-25T12:51:25-05:00"
+    },
+    {
+      "id": "greenhouse-testlio-8412847",
+      "title": "Freelance Software Tester | Remote (Chile)",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8412847",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Chile",
+      "country": "Other",
+      "postedAt": "2026-11-25T12:33:43-05:00"
+    },
+    {
+      "id": "greenhouse-testlio-8412843",
+      "title": "Freelance Software Tester | Remote (Argentina)",
+      "company": "Testlio",
+      "url": "https://job-boards.greenhouse.io/testlio/jobs/8412843",
+      "source": "Testlio",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "Remote",
+      "location": "Argentina",
+      "country": "Other",
+      "postedAt": "2026-11-25T12:29:15-05:00"
+    },
     {
       "id": "arbeitnow-quality-assurance-specialist-kaufbeuren-bavaria-91755",
       "title": "Quality Assurance Specialist",
@@ -13,19 +104,6 @@
       "location": "Kaufbeuren, Bavaria",
       "country": "Other",
       "postedAt": "2026-11-25T12:55:26.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-senior-java-test-automation-engineer-416793",
-      "title": "(Senior) Java Test Automation Engineer (m/f/d)",
-      "company": "ecosio",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/ecosio/remote-senior-java-test-automation-engineer-416793",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Austria, Germany, Spain, Italy, Hungary, Portugal, Croatia - Remote",
-      "country": "Germany",
-      "postedAt": "2026-11-25T12:55:23.000Z"
     },
     {
       "id": "arbeitnow-remote-senior-java-test-automation-engineer-110894",
@@ -78,32 +156,6 @@
       "location": "Mexico",
       "country": "Mexico",
       "postedAt": "2026-11-25T11:33:15+00:00"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-11-25T02:45:02-05:00"
-    },
-    {
-      "id": "greenhouse-roblox-8338120",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-11-25T02:35:37-05:00"
     },
     {
       "id": "arbeitnow-quality-assurance-specialist-brighton-359377",
@@ -366,32 +418,6 @@
       "postedAt": "2026-11-22T12:31:12.000Z"
     },
     {
-      "id": "arbeitnow-senior-fsqa-manager-phf-all-genders-berlin-berlin-291816",
-      "title": "Senior FSQA Manager - PHF (all genders)",
-      "company": "hellofresh",
-      "url": "https://www.arbeitnow.com/jobs/companies/hellofresh/senior-fsqa-manager-phf-all-genders-berlin-berlin-291816",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Berlin, Berlin",
-      "country": "Germany",
-      "postedAt": "2026-11-22T00:55:23.000Z"
-    },
-    {
-      "id": "arbeitnow-mechatronics-test-engineer-munich-bavaria-471636",
-      "title": "Mechatronics Test Engineer (m/f/d)",
-      "company": "Agilerobotsse",
-      "url": "https://www.arbeitnow.com/jobs/companies/agilerobotsse/mechatronics-test-engineer-munich-bavaria-471636",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Munich, Bavaria",
-      "country": "Germany",
-      "postedAt": "2026-11-21T18:55:27.000Z"
-    },
-    {
       "id": "ashby-cerebras-a3f0196e-3ca9-40ca-a3d6-b0c4611b15b6",
       "title": "Senior Product Quality Engineer",
       "company": "Cerebras",
@@ -522,19 +548,6 @@
       "postedAt": "2026-11-18T19:40:55-05:00"
     },
     {
-      "id": "arbeitnow-test-automation-engineer-almere-488912",
-      "title": "Test Automation Engineer",
-      "company": "Infomedics",
-      "url": "https://www.arbeitnow.nl/jobs/companies/infomedics/test-automation-engineer-almere-488912",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Almere, Flevoland, Nederland",
-      "country": "Other",
-      "postedAt": "2026-11-18T21:51:37.000Z"
-    },
-    {
       "id": "ashby-sardine-4237a126-68f1-495a-b8fc-39f9f59054f1",
       "title": "QA Automation Engineer",
       "company": "Sardine",
@@ -559,45 +572,6 @@
       "location": "Brazil - Remote",
       "country": "Brazil",
       "postedAt": "2026-11-13T16:27:52-05:00"
-    },
-    {
-      "id": "greenhouse-testlio-8384253",
-      "title": "Freelance Software Tester | Remote in Germany",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8384253",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Germany",
-      "country": "Germany",
-      "postedAt": "2026-11-12T15:53:55-05:00"
-    },
-    {
-      "id": "greenhouse-testlio-8384250",
-      "title": "Freelance Software Tester | Remote in Italy",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8384250",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Italy",
-      "country": "Other",
-      "postedAt": "2026-11-12T15:52:47-05:00"
-    },
-    {
-      "id": "greenhouse-testlio-8384245",
-      "title": "Freelance Software Tester | Remote in Belgium",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8384245",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Belgium",
-      "country": "Other",
-      "postedAt": "2026-11-12T15:50:28-05:00"
     },
     {
       "id": "greenhouse-testlio-8333847",
