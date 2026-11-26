@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-11-26T01:29:35.658Z",
+  "fetchedAt": "2026-11-26T16:18:17.298Z",
   "jobs": [
+    {
+      "id": "arbeitnow-quality-engineer-paris-373340",
+      "title": "Quality Engineer",
+      "company": "Odaseva",
+      "url": "https://www.arbeitnow.fr/jobs/companies/odaseva/quality-engineer-paris-373340",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Paris",
+      "country": "France",
+      "postedAt": "2026-11-26T12:07:38.000Z"
+    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior Quality Engineer",
@@ -12,7 +25,7 @@
       "workType": "On-site",
       "location": "San Mateo, CA, United States",
       "country": "United States",
-      "postedAt": "2026-11-25T14:46:46-05:00"
+      "postedAt": "2026-11-26T02:44:21-05:00"
     },
     {
       "id": "greenhouse-roblox-8338120",
@@ -25,7 +38,7 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-11-25T14:36:46-05:00"
+      "postedAt": "2026-11-26T02:35:23-05:00"
     },
     {
       "id": "greenhouse-testlio-8417708",
@@ -106,6 +119,19 @@
       "postedAt": "2026-11-25T12:55:26.000Z"
     },
     {
+      "id": "arbeitnow-remote-senior-java-test-automation-engineer-416793",
+      "title": "(Senior) Java Test Automation Engineer (m/f/d)",
+      "company": "ecosio",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/ecosio/remote-senior-java-test-automation-engineer-416793",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Austria, Germany, Spain, Italy, Hungary, Portugal, Croatia - Remote",
+      "country": "Germany",
+      "postedAt": "2026-11-25T12:55:23.000Z"
+    },
+    {
       "id": "arbeitnow-remote-senior-java-test-automation-engineer-110894",
       "title": "(Senior) Java Test Automation Engineer (m/f/d)",
       "company": "ecosio",
@@ -117,45 +143,6 @@
       "location": "Austria, Spain, UK, Italy, Hungary, Portugal, Croatia - Remote",
       "country": "United Kingdom",
       "postedAt": "2026-11-25T12:55:22.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-mobile-quality-engineer-20289",
-      "title": "Mobile Quality Engineer",
-      "company": "Lendable",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/lendable/remote-mobile-quality-engineer-20289",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "UK Remote",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-25T12:40:24.000Z"
-    },
-    {
-      "id": "jobicy-164241",
-      "title": "(Senior) Java Test Automation Engineer (m/f/d)",
-      "company": "ecosio",
-      "url": "https://jobicy.com/jobs/164241-senior-java-test-automation-engineer-m-f-d",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Austria,  Croatia,  Germany,  Hungary,  Italy,  Portugal,  Spain,  UK",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-25T11:36:44+00:00"
-    },
-    {
-      "id": "jobicy-164236",
-      "title": "1199 - QA Engineer",
-      "company": "GoFasti",
-      "url": "https://jobicy.com/jobs/164236-1199-qa-engineer",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Mexico",
-      "country": "Mexico",
-      "postedAt": "2026-11-25T11:33:15+00:00"
     },
     {
       "id": "arbeitnow-quality-assurance-specialist-brighton-359377",
@@ -392,32 +379,6 @@
       "postedAt": "2026-11-22T15:31:08.000Z"
     },
     {
-      "id": "arbeitnow-remote-software-test-engineer-bern-110215",
-      "title": "Software Test Engineer",
-      "company": "SwissPeak Partners GmbH",
-      "url": "https://www.arbeitnow.ch/jobs/companies/swisspeak-partners-gmbh/remote-software-test-engineer-bern-110215",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Remote job",
-      "country": "Other",
-      "postedAt": "2026-11-22T12:31:14.000Z"
-    },
-    {
-      "id": "arbeitnow-remote-senior-sap-test-manager-berlin-189737",
-      "title": "Senior SAP Test Manager (m/w/d)",
-      "company": "Natuvion GmbH",
-      "url": "https://www.arbeitnow.com/jobs/companies/natuvion-gmbh/remote-senior-sap-test-manager-berlin-189737",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Remote job",
-      "country": "Other",
-      "postedAt": "2026-11-22T12:31:12.000Z"
-    },
-    {
       "id": "ashby-cerebras-a3f0196e-3ca9-40ca-a3d6-b0c4611b15b6",
       "title": "Senior Product Quality Engineer",
       "company": "Cerebras",
@@ -444,19 +405,6 @@
       "postedAt": "2026-11-20T15:58:44-05:00"
     },
     {
-      "id": "arbeitnow-quality-assurance-manager-gieres-26084",
-      "title": "Quality Assurance Manager",
-      "company": "eCential Robotics",
-      "url": "https://www.arbeitnow.fr/jobs/companies/ecential-robotics/quality-assurance-manager-gieres-26084",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Gières",
-      "country": "Other",
-      "postedAt": "2026-11-20T19:47:25.000Z"
-    },
-    {
       "id": "arbeitnow-software-quality-engineer-gieres-154803",
       "title": "Software Quality Engineer",
       "company": "eCential Robotics",
@@ -468,19 +416,6 @@
       "location": "Gières",
       "country": "Other",
       "postedAt": "2026-11-20T16:01:00.000Z"
-    },
-    {
-      "id": "remoteok-1137914",
-      "title": "Quality Engineer",
-      "company": "Quartermaster",
-      "url": "https://remoteOK.com/remote-jobs/remote-quality-engineer-quartermaster-1137914",
-      "source": "Remote OK",
-      "sourceUrl": "https://remoteok.com/remote-qa-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Arlington",
-      "country": "Other",
-      "postedAt": "2026-11-20T16:00:18+00:00"
     },
     {
       "id": "arbeitnow-industrialization-electronics-test-engineer-zurich-83872",
@@ -520,19 +455,6 @@
       "location": "Taipei,Taiwan",
       "country": "Taiwan",
       "postedAt": "2026-11-19T12:10:00-05:00"
-    },
-    {
-      "id": "arbeitnow-test-automation-engineer-ki-mcp-agents-bern-388710",
-      "title": "Test Automation Engineer - KI/MCP/Agents",
-      "company": "PROSTAFF Schweiz GmbH",
-      "url": "https://www.arbeitnow.ch/jobs/companies/prostaff-schweiz-gmbh/test-automation-engineer-ki-mcp-agents-bern-388710",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Bern",
-      "country": "Other",
-      "postedAt": "2026-11-19T10:30:49.000Z"
     },
     {
       "id": "greenhouse-scaleai-4742042005",
