@@ -1,19 +1,6 @@
 {
-  "fetchedAt": "2026-11-26T16:18:17.298Z",
+  "fetchedAt": "2026-11-27T01:27:19.731Z",
   "jobs": [
-    {
-      "id": "arbeitnow-quality-engineer-paris-373340",
-      "title": "Quality Engineer",
-      "company": "Odaseva",
-      "url": "https://www.arbeitnow.fr/jobs/companies/odaseva/quality-engineer-paris-373340",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "Paris",
-      "country": "France",
-      "postedAt": "2026-11-26T12:07:38.000Z"
-    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior Quality Engineer",
@@ -25,7 +12,7 @@
       "workType": "On-site",
       "location": "San Mateo, CA, United States",
       "country": "United States",
-      "postedAt": "2026-11-26T02:44:21-05:00"
+      "postedAt": "2026-11-26T14:46:30-05:00"
     },
     {
       "id": "greenhouse-roblox-8338120",
@@ -38,7 +25,33 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-11-26T02:35:23-05:00"
+      "postedAt": "2026-11-26T14:36:52-05:00"
+    },
+    {
+      "id": "arbeitnow-senior-quality-assurance-engineer-hamburg-195098",
+      "title": "(Senior) Quality Assurance Engineer (f/m/d)",
+      "company": "Zeal Network",
+      "url": "https://www.arbeitnow.com/jobs/companies/zeal-network/senior-quality-assurance-engineer-hamburg-195098",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Hamburg",
+      "country": "Germany",
+      "postedAt": "2026-11-26T15:40:13.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-engineer-paris-373340",
+      "title": "Quality Engineer",
+      "company": "Odaseva",
+      "url": "https://www.arbeitnow.fr/jobs/companies/odaseva/quality-engineer-paris-373340",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Paris",
+      "country": "France",
+      "postedAt": "2026-11-26T12:07:38.000Z"
     },
     {
       "id": "greenhouse-testlio-8417708",
@@ -143,6 +156,19 @@
       "location": "Austria, Spain, UK, Italy, Hungary, Portugal, Croatia - Remote",
       "country": "United Kingdom",
       "postedAt": "2026-11-25T12:55:22.000Z"
+    },
+    {
+      "id": "arbeitnow-remote-mobile-quality-engineer-20289",
+      "title": "Mobile Quality Engineer",
+      "company": "Lendable",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/lendable/remote-mobile-quality-engineer-20289",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "UK Remote",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-25T12:40:24.000Z"
     },
     {
       "id": "arbeitnow-quality-assurance-specialist-brighton-359377",
@@ -314,19 +340,6 @@
       "postedAt": "2026-11-23T13:02:36.000Z"
     },
     {
-      "id": "arbeitnow-integration-and-test-engineer-software-sydney-australia-139346",
-      "title": "Integration and Test Engineer (Software)",
-      "company": "Andurilindustries",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/andurilindustries/integration-and-test-engineer-software-sydney-australia-139346",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Sydney, Australia",
-      "country": "Australia",
-      "postedAt": "2026-11-23T09:55:24.000Z"
-    },
-    {
       "id": "arbeitnow-quality-assurance-specialist-hochheim-am-main-germany-385506",
       "title": "Quality Assurance Specialist",
       "company": "Ircagroup",
@@ -403,6 +416,19 @@
       "location": "United States ",
       "country": "United States",
       "postedAt": "2026-11-20T15:58:44-05:00"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-manager-gieres-26084",
+      "title": "Quality Assurance Manager",
+      "company": "eCential Robotics",
+      "url": "https://www.arbeitnow.fr/jobs/companies/ecential-robotics/quality-assurance-manager-gieres-26084",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Gières",
+      "country": "Other",
+      "postedAt": "2026-11-20T19:47:25.000Z"
     },
     {
       "id": "arbeitnow-software-quality-engineer-gieres-154803",
@@ -494,19 +520,6 @@
       "location": "Brazil - Remote",
       "country": "Brazil",
       "postedAt": "2026-11-13T16:27:52-05:00"
-    },
-    {
-      "id": "greenhouse-testlio-8333847",
-      "title": "Freelance Software Tester (Remote in Martinique)",
-      "company": "Testlio",
-      "url": "https://job-boards.greenhouse.io/testlio/jobs/8333847",
-      "source": "Testlio",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Remote in Martinique",
-      "country": "Other",
-      "postedAt": "2026-11-12T12:01:07-05:00"
     }
   ]
 }
