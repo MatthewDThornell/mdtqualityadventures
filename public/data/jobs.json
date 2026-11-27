@@ -1,6 +1,84 @@
 {
-  "fetchedAt": "2026-11-27T01:27:19.731Z",
+  "fetchedAt": "2026-11-27T16:03:37.864Z",
   "jobs": [
+    {
+      "id": "arbeitnow-freelancer-quality-assurance-manager-c-net-all-genders-berlin-236265",
+      "title": "Freelancer Quality Assurance Manager C# .NET (all genders)",
+      "company": "Vexcash AG",
+      "url": "https://www.arbeitnow.com/jobs/companies/vexcash-ag/freelancer-quality-assurance-manager-c-net-all-genders-berlin-236265",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-11-27T15:00:59.000Z"
+    },
+    {
+      "id": "arbeitnow-automation-test-engineer-aachen-225432",
+      "title": "Automation Test Engineer (f/m/d)",
+      "company": "Black Semiconductor GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/black-semiconductor-gmbh/automation-test-engineer-aachen-225432",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Aachen, Germany",
+      "country": "Germany",
+      "postedAt": "2026-11-27T12:40:15.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-assurance-associate-fur-csl-behring-50-bern-135293",
+      "title": "Quality Assurance Associate (m/w/d) für CSL Behring (50%)",
+      "company": "We make it GmbH",
+      "url": "https://www.arbeitnow.ch/jobs/companies/we-make-it-gmbh/quality-assurance-associate-fur-csl-behring-50-bern-135293",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Bern",
+      "country": "Other",
+      "postedAt": "2026-11-27T12:32:54.000Z"
+    },
+    {
+      "id": "arbeitnow-quality-engineer-munich-170469",
+      "title": "Quality Engineer (m/f/d)",
+      "company": "Guldberg GmbH",
+      "url": "https://www.arbeitnow.com/jobs/companies/guldberg-gmbh/quality-engineer-munich-170469",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Munich",
+      "country": "Germany",
+      "postedAt": "2026-11-27T09:01:50.000Z"
+    },
+    {
+      "id": "jobicy-164482",
+      "title": "Freelance Software Tester | Remote (Malaysia)",
+      "company": "Testlio",
+      "url": "https://jobicy.com/jobs/164482-freelance-software-tester-remote-malaysia",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Malaysia",
+      "country": "Other",
+      "postedAt": "2026-11-27T08:10:55+00:00"
+    },
+    {
+      "id": "jobicy-164475",
+      "title": "Freelance Software Tester | Remote (Argentina)",
+      "company": "Testlio",
+      "url": "https://jobicy.com/jobs/164475-freelance-software-tester-remote-argentina",
+      "source": "Jobicy",
+      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Argentina",
+      "country": "Other",
+      "postedAt": "2026-11-27T08:10:26+00:00"
+    },
     {
       "id": "greenhouse-roblox-7656541",
       "title": "Senior Quality Engineer",
@@ -12,7 +90,7 @@
       "workType": "On-site",
       "location": "San Mateo, CA, United States",
       "country": "United States",
-      "postedAt": "2026-11-26T14:46:30-05:00"
+      "postedAt": "2026-11-27T02:45:30-05:00"
     },
     {
       "id": "greenhouse-roblox-8338120",
@@ -25,7 +103,59 @@
       "workType": "On-site",
       "location": "Gurugram, Haryana, India",
       "country": "India",
-      "postedAt": "2026-11-26T14:36:52-05:00"
+      "postedAt": "2026-11-27T02:35:37-05:00"
+    },
+    {
+      "id": "arbeitnow-senior-intelligent-automation-engineer-uipath-berlin-424460",
+      "title": "Senior Intelligent Automation Engineer  - UiPath",
+      "company": "roboyo",
+      "url": "https://www.arbeitnow.com/jobs/companies/roboyo/senior-intelligent-automation-engineer-uipath-berlin-424460",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Berlin",
+      "country": "Germany",
+      "postedAt": "2026-11-27T06:55:24.000Z"
+    },
+    {
+      "id": "arbeitnow-qa-engineer-manchester-248364",
+      "title": "QA Engineer",
+      "company": "Foundation Health",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/foundation-health/qa-engineer-manchester-248364",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Manchester",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-27T03:43:05.000Z"
+    },
+    {
+      "id": "arbeitnow-qa-lead-manchester-493506",
+      "title": "QA Lead",
+      "company": "Foundation Health",
+      "url": "https://www.arbeitnow.co.uk/jobs/companies/foundation-health/qa-lead-manchester-493506",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Hybrid",
+      "location": "Manchester",
+      "country": "United Kingdom",
+      "postedAt": "2026-11-27T03:43:05.000Z"
+    },
+    {
+      "id": "arbeitnow-remote-software-test-engineer-bern-365909",
+      "title": "Software Test Engineer",
+      "company": "SwissPeak Partners GmbH",
+      "url": "https://www.arbeitnow.ch/jobs/companies/swisspeak-partners-gmbh/remote-software-test-engineer-bern-365909",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "Remote",
+      "location": "Remote job",
+      "country": "Other",
+      "postedAt": "2026-11-27T00:31:33.000Z"
     },
     {
       "id": "arbeitnow-senior-quality-assurance-engineer-hamburg-195098",
@@ -171,19 +301,6 @@
       "postedAt": "2026-11-25T12:40:24.000Z"
     },
     {
-      "id": "arbeitnow-quality-assurance-specialist-brighton-359377",
-      "title": "Quality Assurance Specialist",
-      "company": "Motorway",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/motorway/quality-assurance-specialist-brighton-359377",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Brighton",
-      "country": "Other",
-      "postedAt": "2026-11-25T06:40:13.000Z"
-    },
-    {
       "id": "arbeitnow-senior-qa-engineer-bonn-101696",
       "title": "Senior QA Engineer*",
       "company": "Haeger Consulting GmbH",
@@ -314,19 +431,6 @@
       "postedAt": "2026-11-23T16:20:10.000Z"
     },
     {
-      "id": "arbeitnow-quality-assurance-associate-fur-csl-behring-50-bern-135293",
-      "title": "Quality Assurance Associate (m/w/d) für CSL Behring (50%)",
-      "company": "We make it GmbH",
-      "url": "https://www.arbeitnow.ch/jobs/companies/we-make-it-gmbh/quality-assurance-associate-fur-csl-behring-50-bern-135293",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Bern",
-      "country": "Other",
-      "postedAt": "2026-11-23T16:17:30.000Z"
-    },
-    {
       "id": "arbeitnow-qa-testers-needed-zurich-313813",
       "title": "QA Tester (Remote): Test Real Apps, Flexible Hours",
       "company": "Global App Testing",
@@ -442,19 +546,6 @@
       "location": "Gières",
       "country": "Other",
       "postedAt": "2026-11-20T16:01:00.000Z"
-    },
-    {
-      "id": "arbeitnow-industrialization-electronics-test-engineer-zurich-83872",
-      "title": "Industrialization / Electronics Test Engineer",
-      "company": "Anybotics",
-      "url": "https://www.arbeitnow.ch/jobs/companies/anybotics/industrialization-electronics-test-engineer-zurich-83872",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Zurich",
-      "country": "Other",
-      "postedAt": "2026-11-20T03:08:35.000Z"
     },
     {
       "id": "greenhouse-figma-6253961004",
