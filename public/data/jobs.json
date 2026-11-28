@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-28T01:01:18.421Z",
+  "fetchedAt": "2026-11-28T14:58:43.444Z",
   "jobs": [
     {
       "id": "greenhouse-roblox-7656541",
@@ -262,19 +262,6 @@
       "postedAt": "2026-11-25T12:55:26.000Z"
     },
     {
-      "id": "arbeitnow-remote-senior-java-test-automation-engineer-416793",
-      "title": "(Senior) Java Test Automation Engineer (m/f/d)",
-      "company": "ecosio",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/ecosio/remote-senior-java-test-automation-engineer-416793",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Austria, Germany, Spain, Italy, Hungary, Portugal, Croatia - Remote",
-      "country": "Germany",
-      "postedAt": "2026-11-25T12:55:23.000Z"
-    },
-    {
       "id": "arbeitnow-remote-senior-java-test-automation-engineer-110894",
       "title": "(Senior) Java Test Automation Engineer (m/f/d)",
       "company": "ecosio",
@@ -288,19 +275,6 @@
       "postedAt": "2026-11-25T12:55:22.000Z"
     },
     {
-      "id": "arbeitnow-remote-mobile-quality-engineer-20289",
-      "title": "Mobile Quality Engineer",
-      "company": "Lendable",
-      "url": "https://www.arbeitnow.co.uk/jobs/companies/lendable/remote-mobile-quality-engineer-20289",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "Hybrid",
-      "location": "UK Remote",
-      "country": "United Kingdom",
-      "postedAt": "2026-11-25T12:40:24.000Z"
-    },
-    {
       "id": "arbeitnow-senior-qa-engineer-bonn-101696",
       "title": "Senior QA Engineer*",
       "company": "Haeger Consulting GmbH",
@@ -312,19 +286,6 @@
       "location": "Bonn",
       "country": "Germany",
       "postedAt": "2026-11-25T06:31:12.000Z"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-documentation-technician-dresden-375755",
-      "title": "Quality Assurance & Documentation Technician (m/f/d)",
-      "company": "Esmc",
-      "url": "https://www.arbeitnow.com/jobs/companies/esmc/quality-assurance-documentation-technician-dresden-375755",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Dresden",
-      "country": "Germany",
-      "postedAt": "2026-11-24T03:33:00.000Z"
     },
     {
       "id": "arbeitnow-professional-quality-engineer-testautomatisierung-ki-refnr-48375-bern-64980",
