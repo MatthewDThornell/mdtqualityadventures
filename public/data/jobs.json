@@ -1,6 +1,58 @@
 {
-  "fetchedAt": "2026-11-27T16:03:37.864Z",
+  "fetchedAt": "2026-11-28T01:01:18.421Z",
   "jobs": [
+    {
+      "id": "greenhouse-roblox-7656541",
+      "title": "Senior Quality Engineer",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "San Mateo, CA, United States",
+      "country": "United States",
+      "postedAt": "2026-11-27T14:46:39-05:00"
+    },
+    {
+      "id": "greenhouse-roblox-8338120",
+      "title": "Quality Analyst",
+      "company": "Roblox",
+      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
+      "source": "Roblox",
+      "sourceUrl": null,
+      "direct": true,
+      "workType": "On-site",
+      "location": "Gurugram, Haryana, India",
+      "country": "India",
+      "postedAt": "2026-11-27T14:37:15-05:00"
+    },
+    {
+      "id": "arbeitnow-qa-engineer-en-breda-216701",
+      "title": "QA Engineer (EN)",
+      "company": "YoungOnes",
+      "url": "https://www.arbeitnow.nl/jobs/companies/youngones/qa-engineer-en-breda-216701",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Breda, Noord-Brabant, Netherlands",
+      "country": "Netherlands",
+      "postedAt": "2026-11-27T15:31:26.000Z"
+    },
+    {
+      "id": "arbeitnow-qa-engineer-nl-breda-74273",
+      "title": "QA Engineer (NL)",
+      "company": "YoungOnes",
+      "url": "https://www.arbeitnow.nl/jobs/companies/youngones/qa-engineer-nl-breda-74273",
+      "source": "Arbeitnow",
+      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
+      "direct": false,
+      "workType": "On-site",
+      "location": "Breda, Noord-Brabant, Netherlands",
+      "country": "Netherlands",
+      "postedAt": "2026-11-27T15:31:26.000Z"
+    },
     {
       "id": "arbeitnow-freelancer-quality-assurance-manager-c-net-all-genders-berlin-236265",
       "title": "Freelancer Quality Assurance Manager C# .NET (all genders)",
@@ -52,58 +104,6 @@
       "location": "Munich",
       "country": "Germany",
       "postedAt": "2026-11-27T09:01:50.000Z"
-    },
-    {
-      "id": "jobicy-164482",
-      "title": "Freelance Software Tester | Remote (Malaysia)",
-      "company": "Testlio",
-      "url": "https://jobicy.com/jobs/164482-freelance-software-tester-remote-malaysia",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Malaysia",
-      "country": "Other",
-      "postedAt": "2026-11-27T08:10:55+00:00"
-    },
-    {
-      "id": "jobicy-164475",
-      "title": "Freelance Software Tester | Remote (Argentina)",
-      "company": "Testlio",
-      "url": "https://jobicy.com/jobs/164475-freelance-software-tester-remote-argentina",
-      "source": "Jobicy",
-      "sourceUrl": "https://jobicy.com/remote-quality-assurance-jobs",
-      "direct": false,
-      "workType": "Remote",
-      "location": "Argentina",
-      "country": "Other",
-      "postedAt": "2026-11-27T08:10:26+00:00"
-    },
-    {
-      "id": "greenhouse-roblox-7656541",
-      "title": "Senior Quality Engineer",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/7656541?gh_jid=7656541",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "San Mateo, CA, United States",
-      "country": "United States",
-      "postedAt": "2026-11-27T02:45:30-05:00"
-    },
-    {
-      "id": "greenhouse-roblox-8338120",
-      "title": "Quality Analyst",
-      "company": "Roblox",
-      "url": "https://careers.roblox.com/jobs/8338120?gh_jid=8338120",
-      "source": "Roblox",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "On-site",
-      "location": "Gurugram, Haryana, India",
-      "country": "India",
-      "postedAt": "2026-11-27T02:35:37-05:00"
     },
     {
       "id": "arbeitnow-senior-intelligent-automation-engineer-uipath-berlin-424460",
@@ -444,19 +444,6 @@
       "postedAt": "2026-11-23T13:02:36.000Z"
     },
     {
-      "id": "arbeitnow-quality-assurance-specialist-hochheim-am-main-germany-385506",
-      "title": "Quality Assurance Specialist",
-      "company": "Ircagroup",
-      "url": "https://www.arbeitnow.com/jobs/companies/ircagroup/quality-assurance-specialist-hochheim-am-main-germany-385506",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Hochheim am Main, Germany",
-      "country": "Germany",
-      "postedAt": "2026-11-23T00:07:15.000Z"
-    },
-    {
       "id": "greenhouse-testlio-8410174",
       "title": "Remote Software Tester (Freelance) | Test AT&T U-verse & Cox",
       "company": "Testlio",
@@ -483,19 +470,6 @@
       "postedAt": "2026-11-22T15:40:13.000Z"
     },
     {
-      "id": "arbeitnow-management-consultant-test-manager-hamburg-259371",
-      "title": "Management Consultant Test Manager (m/w/d)",
-      "company": "QESTIT",
-      "url": "https://www.arbeitnow.com/jobs/companies/qestit/management-consultant-test-manager-hamburg-259371",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Hamburg",
-      "country": "Germany",
-      "postedAt": "2026-11-22T15:31:08.000Z"
-    },
-    {
       "id": "ashby-cerebras-a3f0196e-3ca9-40ca-a3d6-b0c4611b15b6",
       "title": "Senior Product Quality Engineer",
       "company": "Cerebras",
@@ -520,32 +494,6 @@
       "location": "United States ",
       "country": "United States",
       "postedAt": "2026-11-20T15:58:44-05:00"
-    },
-    {
-      "id": "arbeitnow-quality-assurance-manager-gieres-26084",
-      "title": "Quality Assurance Manager",
-      "company": "eCential Robotics",
-      "url": "https://www.arbeitnow.fr/jobs/companies/ecential-robotics/quality-assurance-manager-gieres-26084",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Gières",
-      "country": "Other",
-      "postedAt": "2026-11-20T19:47:25.000Z"
-    },
-    {
-      "id": "arbeitnow-software-quality-engineer-gieres-154803",
-      "title": "Software Quality Engineer",
-      "company": "eCential Robotics",
-      "url": "https://www.arbeitnow.fr/jobs/companies/ecential-robotics/software-quality-engineer-gieres-154803",
-      "source": "Arbeitnow",
-      "sourceUrl": "https://www.arbeitnow.com/?search=QA",
-      "direct": false,
-      "workType": "On-site",
-      "location": "Gières",
-      "country": "Other",
-      "postedAt": "2026-11-20T16:01:00.000Z"
     },
     {
       "id": "greenhouse-figma-6253961004",
@@ -598,19 +546,6 @@
       "location": "Japan",
       "country": "Japan",
       "postedAt": "2026-11-18T18:11:29.936+00:00"
-    },
-    {
-      "id": "greenhouse-airbnb-7453190",
-      "title": "Senior Mobile Software Engineer, Quality Engineering",
-      "company": "Airbnb",
-      "url": "https://careers.airbnb.com/positions/7453190?gh_jid=7453190",
-      "source": "Airbnb",
-      "sourceUrl": null,
-      "direct": true,
-      "workType": "Remote",
-      "location": "Brazil - Remote",
-      "country": "Brazil",
-      "postedAt": "2026-11-13T16:27:52-05:00"
     }
   ]
 }
